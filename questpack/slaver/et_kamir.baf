@@ -1,0 +1,7 @@
+IF
+  Global("D0SlaveGirl","GLOBAL",6)
+  !Detect("d0qpslav")
+THEN
+  RESPONSE #100
+    StartDialogNoSet("arenthis")
+END

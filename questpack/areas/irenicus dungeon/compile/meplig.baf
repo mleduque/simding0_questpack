@@ -1,0 +1,150 @@
+IF
+    Detect(Myself)
+    False()
+THEN
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(EASIEST)
+    OR(2)
+        StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(10,5)
+    See(SecondNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(EASY)
+    OR(2)
+        StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(8,3)
+    See(ThirdNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(NORMAL)
+    OR(2)
+        StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(6,2)
+    See(FourthNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(HARD)
+    OR(2)
+        StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(4,1)
+    See(FifthNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(FifthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(2,1)
+    See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(TenthNearestEnemyOf(Myself))
+    False()
+THEN
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    !GlobalTimerNotExpired("LightningTime","LOCALS")
+    Global("HeartOfFury","GLOBAL",1)
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    GlobalLT("Lightning","LOCALS",5)
+THEN
+	RESPONSE #100
+        SetGlobalTimer("LightningTime","LOCALS",6)
+		IncrementGlobal("Lightning","LOCALS",1)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+    RESPONSE #100
+        SetGlobalTimer("LightningTime","LOCALS",6)
+		IncrementGlobal("Lightning","LOCALS",2)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+    !GlobalTimerNotExpired("LightningTime","LOCALS")
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    GlobalLT("Lightning","LOCALS",5)
+THEN
+	RESPONSE #100
+        SetGlobalTimer("LightningTime","LOCALS",6)
+		IncrementGlobal("Lightning","LOCALS",1)
+		ForceSpell(NearestEnemyOf(Myself),MEPHIT_LIGHTNING_BOLT)
+    RESPONSE #100
+        SetGlobalTimer("LightningTime","LOCALS",6)
+		IncrementGlobal("Lightning","LOCALS",2)
+		ForceSpell(NearestEnemyOf(Myself),MEPHIT_LIGHTNING_BOLT)
+END
+
+IF
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+	OR(2)
+	    !Range(NearestEnemyOf(Myself),7)
+	    !GlobalLT("Lightning","LOCALS",5)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+	RandomNum(4,1)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackOneRound(LastSeenBy(Myself))
+    RESPONSE #100
+        RandomWalkContinuous()
+END
+
+IF
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+	RandomNum(4,2)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackOneRound(LastSeenBy(Myself))
+    RESPONSE #100
+        RandomWalkContinuous()
+END
+
+IF
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+	RandomNum(4,3)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackOneRound(LastSeenBy(Myself))
+    RESPONSE #100
+        RandomWalkContinuous()
+END
+
+IF
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+	RandomNum(4,4)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackOneRound(LastSeenBy(Myself))
+    RESPONSE #100
+        RandomWalkContinuous()
+END

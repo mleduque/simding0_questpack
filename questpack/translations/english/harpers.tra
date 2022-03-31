@@ -1,0 +1,196 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~I will most certainly not be a party to the slaughter of Harpers, <CHARNAME>.  Your path has strayed from mine, and I will not stand by idle.~
+@1    = ~<CHARNAME>, we should waste no time in taking the blade from Prebek's home to Bernard. I trust that such is still your intent?~
+@2    = ~So it seems you do not intend to comply with my requests. I have misjudged you, <CHARNAME>, if you will further the course of a weapon designed to kill Harpers— designed to kill me. I would have expected better! We may meet again, for this blade cannot be allowed to continue unchecked.~
+@3    = ~So it seems you do not intend to comply with my requests. I have misjudged you, <CHARNAME>, if you would further the course of a weapon designed to kill Harpers— designed to kill me. I would have expected better! I shall take the blade myself, and do what must be done. We will not meet again.~
+@4    = ~<CHARNAME>, that weapon from Prebek's home... it is a weapon of evil, and many a Harper has fallen to its blade.~
+@5    = ~<CHARNAME>, this weapon from Prebek's home... it is a weapon of evil, and many a Harper has fallen to its blade.~
+@6    = ~<CHARNAME>, pass that weapon to me. The one from Prebek's home.~
+@7    = ~It is as I suspected. I recognise this blade... it is a weapon of evil, and many a Harper has fallen to it.~
+@8    = ~<CHARNAME>, this weapon from Prebek's home... something about it makes me uneasy. Let me examine it.~
+@9    = ~How it came to be in Prebek's possession, I do not know, but I cannot allow it to continue travelling unchecked, even in your hands.~
+@10   = ~It must be destroyed. I ask that we hand it over to the Harpers as soon as possible so that they may take the necessary action.~
+@11   = ~Very well. Whom do you suggest we hand it over to?.~
+@12   = ~Wait, why should it be destroyed just because it kills Harpers? Surely that simply serves to "balance" the Harpers' own influence?~
+@13   = ~As if I'm going to give up such a useful weapon just like that! I'm keeping the scimitar, whether you like it or not.~
+@14   = ~Bernard in the Copper Coronet should be able to contact somebody capable of dealing with the matter. I have faith in his abilities, and he may be trusted.~
+@15   = ~Then I have misjudged you, <CHARNAME>, if you will further the course of a weapon designed to kill Harpers— designed to kill me. I would have expected better from you! We may meet again, for this blade cannot be allowed to continue unchecked.~
+@16   = ~The Harpers *are* the balancing force, <CHARNAME>. This weapon makes no pretense of neutrality; it is evil to the core.~
+@17   = ~Really? Why is something that keeps neutrality in check automatically evil? What's to say it doesn't come from the other end of the spectrum?~
+@18   = ~As if I'm going to give up such a useful weapon just like that anyway! I'm keeping the scimitar, whether you like it or not.~
+@19   = ~If that is how you think, <CHARNAME>, then there is no hope for you. I have explained what must be done. I suggest you assist.~
+@20   = ~<CHARNAME>, I wish it had not come to this. I offer you one more opportunity to surrender Shazzellim so that it may be destroyed.~
+@21   = ~My mind remains unchanged. I will not part with such a valuable weapon.~
+@22   = ~I am sorry Jaheira. Here, take the blade, along with my apologies.~
+@23   = ~Take the darned blade if it's so important to you. I didn't realise you'd kick up such a fuss!~
+@24   = ~Eat steel, bitch!~
+@25   = ~Then I cannot stand by idle— we must take it from you. If I must oppose you, then so be it!~
+@26   = ~Thank you, <CHARNAME>. The apology is appreciated, and I offer fair payment for the weapon. Perhaps we will meet again, in time.~
+@27   = ~Thank you, <CHARNAME>, although it disappoints me to see you so dismissive of my wishes. I offer you fair payment for the weapon. Perhaps we will meet again, in time.~
+@28   = ~Gorion would be ashamed, <CHARNAME>. If I must oppose you, then so be it!~
+@29   = ~I have something for you, Bernard. A weapon deserving of some attention.~
+@30   = ~What do you mean, Jaheira? A weapon? Pass it here.~
+@31   = ~Here you go.~
+@32   = ~Pass it to you? I'm not parting with it.~
+@33   = ~Now, can I do anything else for you?~
+@34   = ~My, my, what have we here? Where did you find this?~
+@35   = ~It was right here, in Athkatla. How it came to be, I do not know.~
+@36   = ~Its presence here cannot be a good sign. We must take care.~
+@37   = ~Then I shall keep an eye out for further activity that might threaten the Harpers.~
+@38   = ~'Twould be a wise course of action.~
+@39   = ~I will take care of this weapon. No doubt Cromwell will be able to deal with it, but perhaps some of the Harpers would be interested in examining it first.~
+@40   = ~And I suppose payment is warranted for your friends in exchange for the item. Very well.~
+@41   = ~And I suppose payment is warranted for your friend in exchange for the item. Very well.~
+@42   = ~Thank you, Bernard. And you, <CHARNAME>.~
+@43   = ~A mage named Xzar asked me to enter the compound and retrieve his companion.~
+@44   = ~I am <CHARNAME>.  A mage named Xzar asked me to enter the compound and retrieve his companion.~
+@45   = ~Fine, so that wasn't true.  A mage named Xzar asked me to enter the compound and retrieve his companion.~
+@46   = ~A mage named Xzar told me.  He wanted to gain entry to the compound and retrieve his companion.~
+@47   = ~Eh?  So what does this have to do with us?  Are we supposed to know about it?~
+@48   = ~I would have thought you Harpers would know what went on in your own compound.~
+@49   = ~Don't play dumb with me, Harper.  You know exactly what I'm talking about.~
+@50   = ~I just thought you might have heard something of it.~
+@51   = ~Maybe.  But if you don't, I suspected you might like to.~
+@52   = ~Ah.  So you are working with him?  Well, perhaps we can come to some manner of arrangement?~
+@53   = ~What do you have in mind?~
+@54   = ~How about you let me in, or your blood stains the ground?~
+@55   = ~I'm not interested in any arrangement with you.  Where is Montaron?~
+@56   = ~Shhh!  Keep your voice down!  Revealing our existence could endanger us more than you know!  So... the wizard has told you our secret?  Well, perhaps we can come to some manner of arrangement?~
+@57   = ~How about you let me in, or everyone learns of your secret?~
+@58   = ~In which case, you thought wrong.  I'm sorry, my <PRO_LADYLORD>, but while you may have returned Renfeld to us, we know little more of your intent, and our concerns are none of yours.~
+@59   = ~So the Harpers do not wish to co-operate?~
+@60   = ~Fine.  I'll be on my way, then.~
+@61   = ~You have done us a favour, but that doesn't mean I can let you in.  Listen... if you do a small task for us, I'll let you take a look around.  Deal?~
+@62   = ~Patience!  You have done us a favour, but that doesn't mean I can let you in.  Listen... if you do a small task for us, I'll let you take a look around.  Deal?~
+@63   = ~There is only one way you are likely to find him.  You have done us a favour, but that doesn't mean I can let you in.  Listen... if you do a small task for us, I'll let you take a look around.  Deal?~
+@64   = ~I am looking for a captured thief, Montaron.~
+@65   = ~You had better give me Montaron, or you all die, right now.~
+@66   = ~I... ah. I see. You should talk with Meronia, she'll probably be able to help you. I have other things to attend to. Is there anything else you need?~
+@67   = ~So you plan to resort to violence? Not a wise course, I fear. Nevertheless, we are not unprepared.~
+@68   = ~Um, nothing to do with me. Talk to Berinvar or Meronia... they might be able to help.~
+@69   = ~Care to give me a tour of the compound?~
+@70   = ~Fine then. I'll be going.~
+@71   = ~I, umm, this doesn't really have anything to do with me. You should probably threaten Berinvar or Meronia if anyone.~
+@72   = ~I have been sent here by a mage to retrieve his captured companion.~
+@73   = ~Perhaps I can help you act against Xzar, if you wish.~
+@74   = ~You tricked me! The bird was not Montaron, but an assassin!~
+@75   = ~I know not of what you speak. You were permitted inside the compound, but I ask that you do not pry into our affairs.~
+@76   = ~What if I told you the mage's name was Xzar and he sent me to retrieve Montaron? Perhaps that information might be useful to you?~
+@77   = ~Then could I ask you some other questions?~
+@78   = ~Look, give me Montaron now, or there will be trouble!~
+@79   = ~Very well, sorry for being nosy.~
+@80   = ~Ah, uh... I see. Strange of you to reveal your present allegiance. I thank you for the information. We shall ponder upon it, and act accordingly.~
+@81   = ~Wait. I can help you if you wish to act against him.~
+@82   = ~Any time.~
+@83   = ~Know that the Harpers are grateful that you did not attempt any deception.~
+@84   = ~Well, Rylock evidently considered it wise to allow you in; perhaps you can help us.~
+@85   = ~I would ask that you aid us in bringing to justice the mage, Xzar. He has caused us many problems, and until now we have lacked a fitting way of dealing with him.~
+@86   = ~I will not play the assassin for you!~
+@87   = ~Then tell me, what do you intend?~
+@88   = ~This does not interest me. Goodbye.~
+@89   = ~Indeed. Is there something that I can help you with?~
+@90   = ~Maybe not after all. Thank you anyway.~
+@91   = ~You think to intimidate us? Then you shall not find us unprepared. I suggest you take your threats and accusations elsewhere.~
+@92   = ~I... suggest you do not waste your time searching for the intruder. He may not be in quite the form you remember.~
+@93   = ~Then there is little more for us to discuss. I suggest you do not waste your time searching for the thief, since you endanger only yourself.~
+@94   = ~One of our assassins will pose as the thief, and strike at an appropriate moment. You are to deliver her to the wizard.~
+@95   = ~Deliver? You make her sound like a package.~
+@96   = ~You are not far from the truth. Take this bird to the wizard and inform him that it is his friend... he will find it believable.~
+@97   = ~That is a shame. But you may have your thief back... I should hope he has learned the penalty of interference. You will find him in the aviary upstairs.~
+@98   = ~It is not safe to venture there without the proper identification. This amulet should suffice.~
+@99   = ~This seems too easy. What is your game?~
+@100  = ~My thanks. I will take Montaron off your hands.~
+@101  = ~The aviary? What is he doing there?~
+@102  = ~About time too. People are so awkward around here.~
+@103  = ~There is no game. The thief is yours, to take and deal with as you see fit. Go now, and find him.~
+@104  = ~Then go now, and find him.~
+@105  = ~You will see when you find him. Go now.~
+@106  = ~You were tricked, but it was a necessity. The necromancer was troublesome, and we saw no easier way to remove him. Your help, no matter how unwitting, is appreciated.~
+@107  = ~So you decided not to help us after all, and now you resort to violence? So be it. We are not unprepared.~
+@108  = ~Ah, yes.  Those Harpers... well, what do you want with them?~
+@109  = ~I have not found out what happened to Montaron, but the Harpers asked me to bring you an assassin in the form of a bird.  I have it here.~
+@110  = ~As I said, I would have you perform a service for me, if you are remotely capable.~
+@111  = ~So the Harpers think they can assassinate me, eh?  They take Monty, they murder both my apprentices, and now they dare try this?~
+@112  = ~Well, let's put an end to their preposterous scheme, and pay them back in kind!~
+@113  = ~And the assassin is revealed!~
+@114  = ~Hah!  That will most certainly teach them!  But there is still the matter of finding the real Monty.~
+@115  = ~Go back into the Harpers' headquarters, and find him...do a proper job this time.~
+@116  = ~You said you knew something of Irenicus.  Tell me!~
+@117  = ~Fine, fine.  I'll go.~
+@118  = ~I'd prefer a rather less subtle approach.~
+@119  = ~I want no further part in your games.  Find Montaron for yourself.~
+@120  = ~I agreed to tell you after you'd brought me Monty.  So get on with it!~
+@121  = ~How you do it is none of my concern.  In truth, it might prove quite amusing to see the carnage of battle amidst the Harpers.  Do what you will.~
+@122  = ~You have come this far, will you not continue to aid so noble a cause?  So be it.  Return when you reconsider.~
+@123  = ~Ah, back again?  Are you going to save me the trouble of waiting for someone less inept to aid me?~
+@124  = ~I'm willing to do the job.~
+@125  = ~Then stop wasting time.  Poor Monty is suffering in there!~
+@126  = ~Back again?  Have you succeeded in your mission, or are you planning to waste more of my time?~
+@127  = ~The Harpers did not co-operate, so I had to kill them all.~
+@128  = ~Montaron is dead.  I have found his body.~
+@129  = ~I have not yet learned of Montaron's whereabouts.~
+@130  = ~But what about Monty?  Is he safe?~
+@131  = ~I have not yet learned of his whereabouts.~
+@132  = ~Then stop wasting time.  He is suffering in there!~
+@133  = ~He is...dead?  Monty?  Those blasted Harpers must pay for this!~
+@134  = ~They are already dead, you need not worry.~
+@135  = ~Then let us slaughter them together!~
+@136  = ~Your problem, not mine.  Our dealings are at an end.~
+@137  = ~I have found you Montaron.  Now tell me what you know about Irenicus.~
+@138  = ~I will tell you once we have made the Harpers pay!  They will not get away with this!~
+@139  = ~Hmm, I might have expected you to take such a direct approach.  Well, it has been entertaining at least.~
+@140  = ~I suppose I will take my leave now.  Oh, and...er, give me the body.  I must get him back to the lab.  Poor, poor Monty!~
+@141  = ~Yes, that could prove enjoyable.  Go, then, and we will begin the battle.  Oh, and...er, give me the body.  I must get him back to the lab afterwards.~
+@142  = ~Bah.  I won't be challenging the Harpers on my own.  Perhaps another time, when my experiments are done.  Oh, and...er, give me the body.  I must get him back to the lab for now.  Poor, poor Monty.~
+@143  = ~Well, that was interesting.  But at least the Harpers have payed for what they did.~
+@144  = ~I suppose I will take my leave now, and return to my work.  Poor, poor Monty!~
+@145  = ~Find out what happened to Montaron.
+
+The guile of the Harpers has lived up to their reputation.  I aided them in tricking Xzar into believing that the bird I brought him would be Montaron, while it was actually a Harper assassin.  Xzar's Zhentarim background made him a target, and I have been led the entire way, a dupe.  I don't know what actually became of Montaron, although it seems likely that the evil thief is dead.~
+@146  = ~I have no quarrel with you. This fool did perish, as well he should.~
+@147  = ~So now that we're done, what was his crime? What is the reasoning for this murder?~
+@148  = ~And am I to receive any payment for my part in this?~
+@149  = ~The Harpers are cunning indeed. You seem like people who'd be worth associating with.~
+@150  = ~Now that we're done, perhaps you could answer a few questions for me.~
+@151  = ~Did you not think him strange? He was spying on the Harpers, an intolerable act, and one which you were right to co-operate with us to put an end to.~
+@152  = ~Measure your words carefully, for you are as guilty as us. Did he not seem suspicious? Did you not know what he was?~
+@153  = ~Measure your words carefully, for while you served well, we owe nothing. We knew of your initial consent to aid him. Did he not seem suspicious? Did you not know what he was?~
+@154  = ~Do not think that we intend to reveal anything to you. You may know of the fool's crime, but we owe nothing more.~
+@155  = ~While you served well, do not consider us allies, for we owe nothing. We knew of your initial consent to aid him. Did he not seem suspicious? Did you not know what he was?~
+@156  = ~He could not lay low with such a flamboyant manner, and we knew of him quickly. You merely helped in the inevitable.~
+@157  = ~You served well, and your original agreement to help him is forgotten in the wake of your assistance. Begone, and hopefully your next dealings with the Harpers will be more pleasant.~
+@158  = ~Find out what happened to Montaron.
+
+The guile of the Harpers has lived up to their reputation.  I aided them in tricking Xzar into believing that the bird I brought him would be Montaron, while it was actually a Harper assassin.  I don't know what actually became of Montaron, although it seems likely that the evil thief is dead.~
+@159  = ~Make your business quick. Our doors do not remain open to anyone for long.~
+@160  = ~Harpers are ruthless in their justice, <CHARNAME>, but if Xzar was doing as she said, he deserved his fate.~
+@161  = ~Ah, the old the-bird-is-really-the-assassin trick never fails.  Cousin Belar once pulled that on my great Uncle Tookar, although to be fair he didn't actually mean to kill anyone.  He turned from a hummingbird into his original form just as a practical joke on my uncle's birthday... and startled the old gnome so much he went and had a heart attack on the spot.  The elders were so upset they turned Belar into a hummingbird for good.  He liked it, though, and flew off (that branch of the family was always a bit odd in the head, if you catch my meaning)... only to get eaten by a griffon a week later, I hear.  Now, that's justice if there ever was, I suppose.~
+@162  = ~Ah, you again.  Are you following me?  Never mind, you may now witness the success of my experiments!~
+@163  = ~Monty will be mine once again.  Curse those Harpers!~
+@164  = ~You see?  His body begins to reanimate!  Success!~
+@165 = ~Jaheira insists I destroy a weapon.
+
+Jaheira has demanded that the weapon we found in Prebek's home must be destroyed. I am to hand it over to Bernard in the Copper Coronet, who will take care of the matter.~
+@166 = ~Jaheira insists I destroy a weapon.
+
+At Jaheira's insistence, I took the scimitar from Prebek's home to Bernard, who has taken it to pass on to somebody who may destroy it.~
+@167 = ~Find out what happened to Montaron.
+
+I foiled the plan of the Harpers to assassinate Xzar, by warning him of the danger and allowing him to kill the assassin.  Finding Montaron remains a problem, however, and I must re-enter the Harper headquarters to do so.~
+@168 = ~Find out what happened to Montaron.
+
+I assisted the wizard Xzar in retrieving the body of his companion Montaron from the Harper headquarters, slaughtering the Harpers in the process.  Xzar seemed most entertained at the turn of events.~
+@169 = ~Find out what happened to Montaron.
+
+I assisted the wizard Xzar in retrieving the body of his companion Montaron from the Harper headquarters.  I drew the line at killing the Harpers, however, and he seemed displeased at this.~
+@170 = ~Find out what happened to Montaron.
+
+I assisted the wizard Xzar in retrieving the body of his companion Montaron from the Harper headquarters, subsequently slaughtering the Harpers in retribution.  Xzar seemed most entertained at the turn of events.~
+@171 = ~Xzar's Demise.
+
+I encountered the mad wizard Xzar once again, this time in Prebek's home. He sought to reanimate Montaron's corpse, but it seems that there are reasons such tricks are granted only by the gods, for his mindless creation attacked him, and he was consumed by his own magic.~
+@172 = ~Uhh...uhhhhh...uuuaaaAARRGHH!~
+@173 = ~Monty!  Monty!  Noooooo!~
+@174 = ~I will save you yet!~
+

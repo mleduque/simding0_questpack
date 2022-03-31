@@ -1,0 +1,53 @@
+IF
+	Dead("cefaldor")
+	Global("D0KillFaldornWrong","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D0KillFaldornWrong","GLOBAL",1)
+		DisplayStringHead("cefaldor",@220)
+END
+
+IF
+	Dead("cefaldor")
+	Global("D0KillFaldornWrong","GLOBAL",1)
+	CombatCounter(0)
+	InParty("Cernd")
+	!StateCheck("Cernd",STATE_STUNNED)
+	!StateCheck("Cernd",STATE_HELPLESS)
+	!StateCheck("Cernd",STATE_SLEEPING)
+	!StateCheck("Cernd",STATE_SILENCED)
+	!StateCheck("Cernd",STATE_CHARMED)
+	!StateCheck("Cernd",STATE_CONFUSED)
+	!StateCheck("Cernd",STATE_FEEBLEMINDED)
+THEN
+	RESPONSE #100
+		SetGlobal("D0KillFaldornWrong","GLOBAL",2)
+		ActionOverride("Cernd",StartDialogNoSet(Player1))
+END
+
+IF
+	Dead("cefaldor")
+	Global("D0KillFaldornWrong","GLOBAL",1)
+	CombatCounter(0)
+	InParty("Jaheira")
+	!StateCheck("Jaheira",STATE_STUNNED)
+	!StateCheck("Jaheira",STATE_HELPLESS)
+	!StateCheck("Jaheira",STATE_SLEEPING)
+	!StateCheck("Jaheira",STATE_SILENCED)
+	!StateCheck("Jaheira",STATE_CHARMED)
+	!StateCheck("Jaheira",STATE_CONFUSED)
+	!StateCheck("Jaheira",STATE_FEEBLEMINDED)
+	OR(8)
+		!InParty("Cernd")
+		StateCheck("Cernd",STATE_STUNNED)
+		StateCheck("Cernd",STATE_HELPLESS)
+		StateCheck("Cernd",STATE_SLEEPING)
+		StateCheck("Cernd",STATE_SILENCED)
+		StateCheck("Cernd",STATE_CHARMED)
+		StateCheck("Cernd",STATE_CONFUSED)
+		StateCheck("Cernd",STATE_FEEBLEMINDED)
+THEN
+	RESPONSE #100
+		SetGlobal("D0KillFaldornWrong","GLOBAL",2)
+		ActionOverride("Jaheira",StartDialogNoSet(Player1))
+END

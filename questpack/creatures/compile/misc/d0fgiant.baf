@@ -1,0 +1,229 @@
+IF
+  Global("Berserk","LOCALS",0)
+  !GlobalTimerNotExpired("DelayBerserk","LOCALS")
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  !Difficulty(EASIEST)
+THEN
+  RESPONSE #100
+    SetGlobal("Berserk","LOCALS",1)
+    SpellNoDec(Myself,4321)
+  RESPONSE #200
+    SetGlobalTimer("DelayBerserk","LOCALS",6)
+END
+
+IF
+  Global("Berserk","LOCALS",0)
+  !GlobalTimerNotExpired("DelayBerserk","LOCALS")
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  Difficulty(EASIEST)
+THEN
+  RESPONSE #100
+    SetGlobal("Berserk","LOCALS",1)
+    SpellNoDec(Myself,4321)
+  RESPONSE #200
+    SetGlobal("Berserk","LOCALS",1)
+  RESPONSE #200
+    SetGlobalTimer("DelayBerserk","LOCALS",6)
+END
+
+IF
+  Global("StoneFormPotion","LOCALS",0)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN46",Myself) // Potion of Stone Form
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("StoneFormPotion","LOCALS",1)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN46",Myself) // Potion of Stone Form
+END
+
+IF
+  HPPercentLT(Myself,50)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN55",Myself) // Potion of Superior Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN55",Myself) // Potion of Superior Healing
+END
+
+IF
+  HPPercentLT(Myself,50)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN52",Myself) // Potion of Extra Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN52",Myself) // Potion of Extra Healing
+END
+
+IF
+  HPPercentLT(Myself,50)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN08",Myself) // Potion of Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN08",Myself) // Potion of Healing
+END
+
+IF
+  HPPercentLT(Myself,60)
+  Global("InvulnerabilityPotion","LOCALS",0)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN11",Myself) // Potion of Invulnerability
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("InvulnerabilityPotion","LOCALS",1)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN11",Myself) // Potion of Invulnerability
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Allegiance(Myself,ENEMY)
+  Global("HastePotion","LOCALS",0)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN14",Myself) // Oil of Speed
+THEN
+  RESPONSE #100
+    SetGlobal("HastePotion","LOCALS",1)
+    SetGlobalTimer("SawEnemy","LOCALS",3)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Allegiance(Myself,ENEMY)
+  Global("HastePotion","LOCALS",1)
+  GlobalTimerExpired("SawEnemy","LOCALS")
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN14",Myself) // Oil of Speed
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("HastePotion","LOCALS",2)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN14",Myself) // Oil of Speed
+END
+
+IF
+  HPPercentLT(Myself,25)
+  HPGT(Myself,1)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  Global("Whined","LOCALS",0)
+  See(NearestMyGroupOfType)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("Whined","LOCALS",1)
+    Shout(153)
+    DisplayStringHead(Myself,46151) // help!
+END
+
+IF
+  Heard([ANYONE],153)
+THEN
+  RESPONSE #100
+    RunAwayFrom(NearestEnemyOf(Myself),45)
+END
+
+IF
+  Heard([ANYONE],154)
+THEN
+  RESPONSE #100
+    AttackReevaluate([PC.0.0.MAGE],45)
+END
+
+IF
+  //	OR(4)
+  OR(3)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+  //		InMyGroup(LastSeenBy(Myself))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  //	OR(4)
+  OR(3)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+  //		InMyGroup(LastSeenBy(Myself))
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,4)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,5)
+  See(FourthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(FifthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(SixthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(TenthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+  RandomNumGT(6,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END

@@ -1,0 +1,109 @@
+IF
+	Global("HeartOfFury","GLOBAL",1)
+	Global("HoFArrows","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("HoFArrows","LOCALS",1)
+		TakeItemReplace("arow12","arow01",Myself)
+END
+
+IF
+	Global("HeartOfFury","GLOBAL",0)
+	Global("HoFArrows","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("HoFArrows","LOCALS",0)
+		TakeItemReplace("arow01","arow12",Myself)
+END
+
+IF
+	Help([ENEMY])
+    !See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+        Help()
+        MoveToObject(LastHelp(Myself))
+END
+
+IF
+    Detect(Myself)
+    False()
+THEN
+    RESPONSE #100
+        Continue()
+END
+
+IF
+	OR(3)
+		!See(LastAttackerOf(Myself))
+		StateCheck(LastAttackerOf(Myself),STATE_HELPLESS)
+		RandomNumGT(5,3)
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(8,4)
+	See(SecondNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(9,5)
+	See(ThirdNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,6)
+	See(FourthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(11,7)
+	See(FifthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(12,8)
+	See(SixthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(13,9)
+	See(TenthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(14,10)
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	Help([ENEMY])
+    See(LastAttackerOf(LastHelp(Myself)))
+    False()
+THEN
+	RESPONSE #100
+        Continue()
+END
+
+IF
+	See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    Range(LastSeenBy(Myself),7)
+THEN
+	RESPONSE #100
+        EquipMostDamagingMelee()
+        Help()
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),7)
+THEN
+	RESPONSE #100
+        EquipRanged()
+        Help()
+		AttackOneRound(NearestEnemyOf(Myself))
+END

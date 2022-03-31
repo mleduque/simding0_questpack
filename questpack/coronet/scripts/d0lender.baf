@@ -1,0 +1,31 @@
+IF
+  AreaCheck("ar1602")
+  NumTimesTalkedTo(0)
+  See([PC])
+THEN
+  RESPONSE #100
+    ChangeClass(Myself,FIGHTER)
+    ChangeAIScript("d0lender",GENERAL)
+    StartDialogNoSet([PC])
+END
+
+IF
+  AreaCheck("ar1602")
+  Allegiance(Myself,ENEMY)
+  !AttackedBy([ANYONE],DEFAULT)
+  !HitBy([ANYONE],CRUSHING)
+THEN
+  RESPONSE #100
+    RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+
+IF
+  AreaCheck("ar1602")
+  Allegiance(Myself,ENEMY)
+  OR(2)
+    AttackedBy([ANYONE],DEFAULT)
+    HitBy([ANYONE],CRUSHING)
+THEN
+  RESPONSE #100
+    Panic()
+END

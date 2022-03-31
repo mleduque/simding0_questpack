@@ -1,0 +1,159 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Je vous ai prévenu, cher enfant. Idiot que vous êtes, vous n'avez pas livré les glands dans les Collines de Lancevent. Ils seront miens !~~Je vous ai prévenu, cher enfant. Idiote que vous êtes, vous n'avez pas livré les glands dans les Collines de Lancevent. Ils seront miens !~
+@1    = ~Vous m'avez mis très en colère. Je vais vous écraser les yeux comme des petites figues !~ [SUDRY01]
+@2    = ~Je  vous avais prévenu, mon garçon. Quelqu'un avec une tête bien pleine m'aurait laissé faire mon boulot au lieu d'être impertinent. L'heure est venue pour vous de recevoir ce que vous méritez.~~Je  vous avais prévenu, ma fille. Quelqu'un avec une tête bien pleine m'aurait laissé faire mon boulot au lieu d'être impertinente. L'heure est venue pour vous de recevoir ce que vous méritez.~
+@3    = ~Ho, là, mortel ! Un beau garçon comme vous, errant dans les bois... Qu'est-ce que vous avez à raconter ?~~Ho, là, mortelle ! Une belle fille comme vous, errante dans les bois... Qu'est-ce que vous avez à raconter ?~ [SUDRY02]
+@4    = ~Je suis sur une mission urgente ! Hors de mon chemin !~
+@5    = ~C'est vous qui discutez. Est-ce que vous attendez quelque chose de moi ?~
+@6    = ~Euh. Errant dans les bois... ? Que faites-vous sur mes terres ?~~Euh. Errante dans les bois... ? Que faites-vous sur mes terres ?~
+@7    = ~Chut... il y a peut-être des trolls dans le coin.~
+@8    = ~Très cher enfant ! Je me réjouis de votre retour !~~Très chère enfant ! Je me réjouis de votre retour !~
+@9    = ~Sauf que... Je peux sentir dans le vent ma sœur, Vaelasa, toujours aussi vivante et parfaite !~
+@10   = ~Partez, petit plaisantin ! Partez jusqu'à ce que vous ayez fait ce que vous m'avez promis !~
+@11   = ~Génial ! Je sens qu'en mourant, ma sœur Vaelasa a arrosé la terre de ses larmes ! Oh, comme vous me faites plaisir, délicieuse crapule !~
+@12   = ~Voici votre or, mon vicieux amour, bien mérité ! Adieu. Puissions-nous nous retrouver pour célébrer nos victoires. Le vrai pouvoir sera vôtre un jour, le mauvais, je peux le dire.~
+@13   = ~En attendant, ta-ta !~
+@14   = ~Oh, pourquoi se précipiter, mon cher, alors que nous pourrions avoir un splendide interlude de compagnie ? Juste des bouffées de plaisir.~
+@15   = ~Uhh... ce qui veut dire ?~
+@16   = ~De la compagnie, hein ? J'aime ce que j’entends.~
+@17   = ~Vous n'avez rien... de fâcheux à l'esprit, n'est-ce pas ?~
+@18   = ~Je ne souhaite pas plus de compagnie. Poussez-vous, ou sinon ...~
+@19   = ~Oh, vous êtes le plus malin, en sautant directement au sommet inévitable de la conséquence d'une succussion de mots.~
+@20   = ~Les faits. Pourriez-vous, s'il vous plaît, en venir aux faits ?~
+@21   = ~Oui, je suis celui qui réfléchi, alors allez droit au but, et n'essayez pas de m'entourlouper.~~Oui, je suis celle qui réfléchi, alors allez droit au but, et n'essayez pas de m'entourlouper.~
+@22   = ~Bafouilles, bafouilles, bafouilles. Quel ennui...~
+@23   = ~Wow. Vous sentez bon.~
+@24   = ~Oooh ! Vraiment ? Heureusement qu'un noble héros comme vous soit passé par là ! Oui, vraiment.~~Oooh ! Vraiment ? Heureusement qu'une noble héroïne comme vous soit passée par là ! Oui, vraiment.~
+@25   = ~Oui, c'est vraiment une chance pour vous.~
+@26   = ~Qu'est-ce qui vous fait penser que je suis un noble héros, plutôt qu'un dangereux fou-furieux ?~~Qu'est-ce qui vous fait penser que je suis une noble héroïne, plutôt qu'une dangereuse folle-furieuse ?~
+@27   = ~J'ai le sentiment que vous n'avez pas entamé cette conversation pour discuter de mon titre. Avez-vous quelque chose à me demander ? Si c'est le cas, veuillez énoncer votre problème.~
+@28   = ~Oooh ! Vraiment ? C'est si effrayant ! Heureusement qu'un noble héros comme vous soit passé par là ! Oui, vraiment.~~Oooh ! Vraiment ? C'est si effrayant ! Heureusement qu'une noble héroïne comme vous soit passée par là ! Oui, vraiment.~ [SUDRY04]
+@29   = ~Vous pensez que les trolls font peur ? Amateur.~
+@30   = ~Qu'est-ce qui vous fait croire que je suis moins dangereux que les trolls ?~~Qu'est-ce qui vous fait croire que je suis moins dangereuse que les trolls ?~
+@31   = ~J'ai le sentiment que vous n'avez pas commencé cette conversation à cause d'une quelconque inquiétude concernant les trolls. Avez-vous quelque chose à me demander ? Si c'est le cas, veuillez énoncer votre problème.~
+@32   = ~Ce qui signifie que je peux sentir que vous avez quelque chose sur vous qui me serviraient bien.~
+@33   = ~Sur... moi ? Vous n'avez rien... de fâcheux en tête, n'est-ce pas ?~
+@34   = ~Écoutez, ce qui est sur moi, reste sur moi. Vous comprenez ?~
+@35   = ~Sur moi ? Rrrrroowrr.~
+@36   = ~D'après les gouttes vaporeuses de votre regard, je peux vous dire que vous vous trompez sur mes intentions.~
+@37   = ~Bien. Je ne suis pas intéressé par les choses fâcheuses. Honnêtement.~~Bien. Je ne suis pas intéressée par les choses fâcheuses. Honnêtement.~
+@38   = ~Eh bien, ce n'est pas drôle !~
+@39   = ~Alors, quelles SONT vos intentions ?~
+@40   = ~Vous vous trompez sur MES intentions. Mes yeux sont simplement vitreux d'ennui en attendant que vous m'expliquiez ce que vous attendez de moi.~
+@41   = ~De la terreur panique de votre regard, je peux vous dire que vous vous trompez sur mes intentions.~
+@42   = ~Zut ! En fait. J'espérais secrètement quelque chose de fâcheux.~
+@43   = ~Vous vous trompez sur MES intentions. Mon regard s'est rempli de confusion, si tant est que ce soit possible, en attendant que vous m'expliquiez ce que vous attendez de moi.~
+@44   = ~Quel entêté ! S'il vous plaît, très cher. Chut ! Écoute-moi :~~Quel entêtée ! S'il vous plaît, très chère. Chut ! Écoute-moi :~ [SUDRY05]
+@45   = ~J'espère que mon offre vous plaira et vous intéressera. Mon affaire est parfaitement simple, et ce serait une occasion pour vous d'être vraiment serviable.~ [SUDRY12]
+@46   = ~Vous transportez un paquet de glands originaires des Collines de Lancevent. Ils appartiennent à mes sœurs et, en tant que tels, ils me sont très chers.~ [SUDRY11]
+@47   = ~Voudriez-vous, pourriez-vous, vous en séparer ? Me les rendre ? Je leur donnerai les précieux soins qu'ils méritent !~ [SUDRY06]
+@48   = ~Ces glands ? Je ne sais pas. J'ai promis aux dryades que je les ramènerais dans les Collines de Lancevent proprement dites.~
+@49   = ~Je suis censé les ramener dans les Collines de Lancevent, pas les remettre à qui que ce soit qui le demande.~
+@50   = ~Certainement. Voilà.~
+@51   = ~Bien sûr, mais n'y aurait-il pas une récompense pour mon aide ?~
+@52   = ~Des glands ? J'avais oublié que je les avais. Il semble étrange que vous apparaissiez de nulle part en les désirant, même si vous êtes une dryade. Vos congénères du donjon m'ont donné des instructions précises, vous savez.~
+@53   = ~Ces glands ? J'ai soudain un petit creux. (grignote)~
+@54   = ~Non, une promesse est une promesse. J'ai juré de livrer ces glands en toute sécurité dans les Collines de Lancevent, et c'est ce que je vais faire. Sans coup férir.~
+@55   = ~Si vous le dites, mon enfant.~
+@56   = ~Ou peut-être ai-je parlé trop vite. Je vous en prie, cher enfant. Faites preuve d'un peu de patience et écoutez mes paroles :~~Ou peut-être ai-je parlé trop vite. Je vous en prie, chère enfant. Faites preuve d'un peu de patience et écoutez mes paroles :~
+@57   = ~Les dryades sentent les fleurs et la brume et sont une promesse de plaisir. Enivrant, n'est-ce pas ? J'ai une proposition à vous faire, mon cher garçon...~~Les dryades sentent les fleurs et la brume et sont une promesse de plaisir. Enivrant, n'est-ce pas ? J'ai une proposition à partager avec toi, ma chère fille...~
+@58   = ~A plus d'un titre, vous allez entendre...~
+@59   = ~Mon Dieu ! Vous êtes dur à cuire et puissant ! Arrêtez un instant de vous pavaner, mon cher garçon, et écoutez-moi :~~Mon Dieu ! Vous êtes dure à cuire et puissante ! Arrêtez un instant de vous pavaner, ma chère fille, et écoutez-moi :~  [SUDRY07]
+@60   = ~Le danger est sans conséquence pour notre problème. J'ai une proposition à vous faire. Tout à fait inoffensive, comme vous allez l'entendre...~
+@61   = ~Mais oui ! Comme vous avez été rapide pour comprendre !~
+@62   = ~Oh, précieux garçon, vous vous méprenez sur mes intentions !~~Oh, précieuse fille, vous vous méprenez sur mes intentions !~
+@63   = ~Ce qui veut dire que j'ai une toute petite demande à vous faire :~
+@64   = ~Mais je suis une dryade ! vous pouvez sûrement me confier les glands de mes sœurs !?~
+@65   = ~Oh, très bien. Les Collines de Lancevent sont très loin. Voilà.~
+@66   = ~Je suppose que je pourrais... s'il y a une récompense pour mon aide.~
+@67   = ~Je ne sais pas. Il y a quelque chose qui cloche.~
+@68   = ~A-ha ! Mes sœurs qui pleurnichent sont à nouveau à ma merci ! C'est une bonne chose que vous ne soyez pas si à cheval sur votre parole donnée, sinon je ne bénéficierais pas de votre crédulité. De plus, j'aurais pu devenir très fâchée, vraiment.~
+@69   = ~Maintenant, trouver un autre client qui cherche désespérément un harem de dryade. Je pense que je vais essayer Calimshan.~
+@70   = ~Bien sûr. Je ne suis pas une entité déraisonnable. Une pluie de pièces d'or vous apaiserait-elle ?~ [SUDRY10]
+@71   = ~Que l'apaisement commence.~
+@72   = ~Non, il y a quelque chose qui cloche. Vous les désirez trop, nymphe.~
+@73   = ~Une promesse est une promesse. J'ai juré de livrer ces glands en toute sécurité dans les Collines de Lancevent, et c'est ce que je vais faire. Sans coup férir.~
+@74   = ~Vous... LES... MANGEZ ?!?!?~
+@75   = ~Quelle précieuse, précieuse boulette vous faites ! C'est vrai que ça aurait été agréable de changer mes sœurs simiesques en concubines, mais au moins, comme vous avez détruit leurs glands, personne ne saura jamais que j'étais responsable de la première tentative. Continuez à mâcher, splendide garçon. Ta !~~Quelle précieuse, précieuse boulette vous faites ! C'est vrai que ça aurait été agréable de changer mes sœurs simiesques en concubines, mais au moins, comme vous avez détruit leurs glands, personne ne saura jamais que j'étais responsable de la première tentative. Continuez à mâcher, splendide fille. Ta !~
+@76   = ~Ahh, vous avez votre or, et j'ai les glands. Le commerce équitable n'est-il pas MERVEILLEUX ?~ [SUDRY08]
+@77   = ~Pour ma part, mes sœurs simplistes sont à nouveau à ma merci. C'est une bonne chose que vous ne soyez pas si à cheval sur votre parole donnée, sinon vous ne profiteriez pas de votre or, et je ne profiterais pas de votre cupidité. De plus, j'aurais pu devenir très fâchée, vraiment.~
+@78   = ~Maintenant, trouver un autre client qui cherche désespérément un harem de dryade. Je pense que je vais essayer Calimshan.~
+@79   = ~Vous êtes perspicace. Je ne voulais pas dire de mal, mais vous devez être averti.~~Vous êtes perspicace. Je ne voulais pas dire de mal, mais vous devez être avertie.~
+@80   = ~Mes sœurs des Collines ne sont pas aussi sages qu'elles pourraient l'être. Vaelasa a été assez stupide pour laisser se perdre les trois petites, qui se sont retrouvées dans le harem de ce fou d'Irenicus. Qu'est-ce qui vous fait penser qu'elle les protégerait mieux une deuxième fois ? S'il vous plaît, laissez moi prendre soin des glands. Je veillerai à ce que mes sœurs aient ce qu'elles méritent.~
+@81   = ~Quand vous le dites ainsi, cela semble être la bonne chose à faire.~
+@82   = ~Vous présentez un argument convaincant, et je suis d'accord, mais n'y aurait-il pas une récompense pour ma serviabilité ?~
+@83   = ~Attendez une seconde. Comment connaissez-vous Irenicus ? Je vois la vérité maintenant ! Vous avez été impliqué dans l'esclavage de vos sœurs, n'est-ce pas ?~
+@84   = ~Hmm. Un peu de chance se faufile devant vos yeux d'aigle, doux <PRO_RACE>. J'ai peut-être abandonné mes sœurs à Irenicus pour un petit peu plus de pouvoir à contrôler, mais ces imbéciles simplistes le méritaient. En quoi leur sort importe-t-il vraiment ? Nous n'avons pas besoin d'exposer ma vilenie, n'est-ce pas ? Pourquoi ne pas simplement me remettre les glands, et je vous donnerai une belle somme d'argent, hmm ? Tout le monde en serait satisfait !~
+@85   = ~Non ! Vile traîtresse de vos propres soeurs ! Je veux vous voir punie !~
+@86   = ~L'argent, c'est bien beau et amusant, mais qu'en est-il du méfait ? Ça revient à dire que cette trahison n'est faite que pour l'argent. Tout ça est si banal.~
+@87   = ~Ça me paraît équitable.~
+@88   = ~Oh mon Dieu, cela ne s'est pas du tout passé comme je l'avais prévu. Eeek !~ [SUDRY09]
+@89   = ~J'apprécie que vous ayez été si raisonnable dans cette histoire. Pendant une seconde, j'ai pensé que vous alliez peut-être vous lancer dans un saccage vertueux. Cela aurait été très décevant.~
+@90   = ~Méfait ? Contre mes sœurs ? Quelles belles paroles vous prononcez, mon cher garçon !~~Méfait ? Contre mes sœurs ? Quelles belles paroles vous prononcez, ma chère fille !~
+@91   = ~L'optimisme et la gentillesse de Vaelasa méritent vraiment d'être assommés par un bloc de réalité. Il est temps que mes autres soeurs et elle apprennent que la vraie beauté du multivers vient du pouvoir !~
+@92   = ~Si cela  vous intéresse de m'aider à jouer un tour, nous allons attirer mes sœurs dans de grandes souffrances.~
+@93   = ~Oui, s'il y a quelqu’un à tromper, je me réjoui de cette opportunité.~
+@94   = ~À bien y réfléchir, vos petites rivalités ne m’intéressent pas. Donnez-moi de l'or pour les glands, et qu'on en finisse.~
+@95   = ~En fait, je vais aller droit au but. Je peux vous faire souffrir, prendre votre or, puis aller vers vos sœurs ! Muahaha !~
+@96   = ~Maintenant que j'y pense, pourquoi devrais-je vous aider ? Je vais déposer ces glands dans les Collines de Lancevent, comme c'était prévu~
+@97   = ~Oh, vous vous y conformez, maintenant ? Je vous aurais récompensé pour votre aide si vous aviez été disposé à coopérer, mais non, vous devez tenir votre parole. Rabat-joie !~
+@98   = ~Oh, bien. Dommage pour vous. Vous souffrirez de votre erreur tôt ou tard.~
+@99   = ~Le plus tôt sera le mieux.~
+@100  = ~Ahh, vous avez votre or, et j'ai les glands. C'est malheureux que vous évitez les grandes intrigues, mais je me satisferai d'un merveilleux commerce équitable.~
+@101  = ~Pour ma part, mes sœurs simplistes sont à nouveau à ma merci. C'est une bonne chose que vous ne soyez pas si à cheval sur votre parole donnée, sinon vous ne profiteriez pas de votre or, et je ne profiterais pas de votre cupidité.~
+@102  = ~Je vais vous échanger les glands de mes soeurs contre ces répliques. Vous devez les apporter à Vaelasa, dans les Collines de Lancevent, et user de toute votre ruse pour la convaincre qu'elles sont vraies.~
+@103  = ~Ils sont piégés, voyez vous. Lorsqu'elles seront plantées dans le bosquet de mes sœurs, elles feront germer une mauvaise et fatale surprise !~
+@104  = ~Quand elle sera morte, vous pourrez piller le cadavre de Vaelasa comme paiement supplémentaire, puis revenir me voir ici. Je vous couvrirai d'or quand je pourrai me consoler à la pensée de mes semblables qui tombent en poussière.~
+@105  = ~Ce plan me plaît. Marché conclu.~
+@106  = ~J'aime l'idée de votre plan, mais il y a un certain danger. J'exige de l'argent d'avance pour mes ennuis.~
+@107  = ~En y repensant, je ne veux pas être dérangé par vos rivalités mesquines. Donnez-moi juste de l'or pour les glands, et finissons-en.~
+@108  = ~Maintenant que j'y pense, pourquoi devrais-je vous aider ? Je vais déposer ces glands dans les Collines de Lancevent, comme c'était prévu. Première arrivée, première servie.~
+@109  = ~Comme vous me faites plaisir, charmant garçon ! Voici les fausses graines. Bonne chance, mes délicieux faussaires !~~Comme vous me faites plaisir, charmante fille ! Voici les fausses graines. Bonne chance, mes délicieux faussaires !~
+@110  = ~Je ne suis pas une entité déraisonnable. Une somme symbolique est un commerce équitable pour sceller le pacte entre nous. Trois cents pièces d'or, peut-être ?~
+@111  = ~Voilà. Vous êtes plus riche pour votre peine. Maintenant, allez réaliser votre mauvais coup, mon cher garçon !~~Voilà. Vous êtes plus riche pour votre peine. Maintenant, allez réaliser votre mauvais coup, ma chère fille !~
+@112  = ~Des étrangers ? Vous n'êtes pas une de mes beautés ! Pourquoi êtes-vous ici ?~
+@113  = ~Je suis désolé de vous déranger. Je m'en vais bientôt.~~Je suis désolée de vous déranger. Je m'en vais bientôt.~
+@114  = ~Je m'excuse de m'immiscer dans votre beau sanctuaire, mais j'ai apporté quelques glands de vos sœurs dryades. Elles ont été piégées par un mage maléfique pendant de nombreuses années. Heureusement, j'ai pu leur proposer mes services et leur venir en aide.~
+@115  = ~Je m'excuse de vous avoir dérangé. J'ai apporté des glands de vos sœurs dryades. Elles ont été piégées par un mage maléfique pendant de nombreuses années, mais heureusement, j'ai pu leur venir en aide.~
+@116  = ~Désolé, désolé. Euh... Je déteste vous embêter, mais j'ai des glands que j'ai pris à des dryades rencontrées dans un donjon. Elles ont été piégées par un mage maléfique pendant de nombreuses années. Plutôt minable, hein ? Alors vous avez de la chance que je les ai aidé !~~Désolée, désolée. Euh... Je déteste vous embêter, mais j'ai des glands que j'ai pris à des dryades rencontrées dans un donjon. Elles ont été piégées par un mage maléfique pendant de nombreuses années. Plutôt minable, hein ? Alors vous avez de la chance que je les ai aidé !~
+@117  = ~Alors partez et quittez le cercle. Cet endroit n'est pas destiné à accueillir des promeneurs. Vous n'auriez jamais dû venir ici sans invitation. Allez vous en, mortel !~
+@118  = ~Vous êtes galant et gentil de venir en aide à mes sœurs. Ulene, Cania et Elyme doivent avoir leurs arbres replantés pour qu'elles puissent être libres. Donnez-moi les glands, mon frère.~~Vous êtes galante et gentille de venir en aide à mes sœurs. Ulene, Cania et Elyme doivent avoir leurs arbres replantés pour qu'elles puissent être libres. Donnez-moi les glands, ma sœur.~
+@119  = ~Vos paroles me troublent, mais elles vibrent avec la logique de la vérité. Mes pauvres, pauvres fées, d'avoir ainsi flétri..~
+@120  = ~Je vous remercie, aimable étranger, pour votre noble geste !~ ~Je vous remercie, aimable étrangère, pour votre noble geste !~
+@121  = ~Attendez. Comme c'est étrange.~
+@122  = ~Ces glands ne chantent pas avec la pure douceur de mes sœurs. Une... une odeur fétide émane d'eux. Quelque chose de sombre et de cruel.~
+@123  = ~Qu'est-ce que c'est ? Seraient-ce les glands de Cania, d'Elyme et d'Ulene ?~
+@124  = ~Bien sûr que ce sont eux. Je ne vous mentirais pas.~
+@125  = ~Je vous assure que ce sont eux. Vous comprenez sûrement comment vos sœurs ont dû souffrir aux mains de leur infâme ravisseur ? Une telle expérience assombrirait l'esprit le plus brillant.~
+@126  = ~Bon sang ! Je ne peux par garder ce faux air de gentillesse plus longtemps ! Votre sœur, Phluafae, a les glands de vos sœurs. C'est elle qui les a vendus comme concubines au départ, et maintenant elle veut votre tête. Ne bougez pas pendant que je la découpe, hein ?~
+@127  = ~Trompeur maladroit ! Ça ne suffisait pas que mes sœurs dryades souffrent des mains du sorcier qui les a mises en cage... mais vous essayeriez de me tromper avec ces pitoyables mensonges ?!~
+@128  = ~Je ne sais pas ce qui est arrivé à mes sœurs, mais ce ne sont pas leurs glands. Quelles que soient vos cruelles intentions, mortel, vous avez misérablement échoué.~~Je ne sais pas ce qui est arrivé à mes sœurs, mais ce ne sont pas leurs glands. Quelles que soient vos cruelles intentions, mortelle, vous avez misérablement échoué.~
+@129  = ~Mes sœurs, je vengerai leur perte par votre défaite ! Pour Cania, Elyme et Ulene, vous périrez, <RACE> !~
+@130  = ~Monstre ! Vous avez failli me tromper !~
+@131  = ~Et dire que notre propre sœur pourrait être si corrompue qu'elle nous trahirait si cruellement ! C'est un fardeau trop horrible à porter, mais le jugement de Phluafae sera rapide et sévère, je le jure.~
+@132  = ~Mais d'abord, VOUS devez être punis ! Pour Cania, Elyme et Ulene, vous périrez, <RACE> !~
+@133  = ~Vous avez vu que les dryades et leur forêt vont souffrir, <CHARNAME>. La prochaine fois, réfléchissez un peu plus sérieusement.~
+@134  = ~Quoi ?!? Tu viens de céder un harem de dryades en parfait état ? Gah ! (Est-ce que quelqu'un va S'IL VOUS PLAÎT commencer à me confier les décisions vraiment importantes) ?~
+@135  = ~Vous avez vu que les dryades et leur forêt vont souffrir, <CHARNAME>. Qui sait ce que manger les glands peut leur faire. La prochaine fois, réfléchissez un peu plus sérieusement.~
+@136  = ~Quoi ?!? Tu viens de MANGER un harem de dryades en parfait état ? Gah ! (Est-ce que quelqu'un va S'IL VOUS PLAÎT commencer à me confier les décisions vraiment importantes)~
+@137  = ~Aider les dryades captives d'Irenicus.
+
+Après avoir parlé avec une dryade près du donjon de De'Arnise, j'ai accepté de trahir les dryades retenues en captivité par Irénicus en remettant de faux glands à leur sœur Vaelasa dans les Collines de Lancevent.~
+@138  = ~Aider les dryades captives d'Irénicus.
+
+Vaelasa a été prise par les faux glands que je lui ai donnés, et elle a péri en conséquence. Phluafae devrait être satisfait de ce résultat.~
+@139  = ~Aider les dryades captives d'Irenicus.
+
+Vaelasa ne croyait pas que les faux glands étaient ceux de ses sœurs, et m'a attaqué. La tournure des événements ne plaira sans doute pas à Phluafae.~
+@140  = ~Aider les dryades captives d'Irenicus.
+
+J'ai rompu mon accord avec les dryades retenues en captivité par Irenicus, et j'ai plutôt remis à Vaelasa, dans les collines de Lancevent, des faux glands fournis par une de leurs sœurs. Elle a ainsi péri, et j'ai été bien récompensé pour mes efforts.~
+@141  = ~Aider les dryades captives d'Irenicus.
+
+J'ai rompu mon accord avec les dryades retenues en captivité par Irenicus, et j'ai plutôt remis leurs glands à une autre dryade qui s'est approchée de moi près du donjon de De'Arnise. Elle m'a parlé d'un harem de dryades, il semble donc que je ne leur ai pas rendu service.~
+@142  = ~Aider les dryades captives d'Irénicus.
+
+J'ai rompu mon accord avec les dryades retenues en captivité par Irénicus, choisissant plutôt de, euh, manger les glands. La dryade qui m'a approché à leur sujet près du donjon de De'Arnise semblait très surprise.~
+
+@999 = ~Si les dryades vous ont demandé de les emmener à Lancevent, alors c'est là qu'ils doivent être, <CHARNAME>. C'est une règle de base du transport - ne jamais rien laisser se mettre en travers du chemin entre le point A et le point B.~

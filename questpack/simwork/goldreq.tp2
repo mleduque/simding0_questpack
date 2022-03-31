@@ -1,0 +1,39 @@
+STRING_SET 22046 ~You have arrived, but all is not well.  Your employers ask you to collect 100,000 gold; I will deal for 75,000, so return when you have your spending under control.~
+STRING_SET 20944 ~It may seem to be costly, but think of the danger in crossin' the Cowled Wizards. A fair price, if ye think about it. It be 100,000 gold pieces for their help.~
+STRING_SET 20945 ~100,000 gold pieces!  That's an outrageous sum!!~
+STRING_SET 20970 ~None.  It be 100,000 gp or me friends canna' be helping ye.~
+20990 ~Ye has the 100,000 gold pieces as a payment for it, then?~
+STRING_SET 20991 ~100,000 gold pieces!  That's an outrageous sum!!~
+STRING_SET 34187 ~Collect the fee for Gaelan Bayle.
+
+Gaelan Bayle will connect me with a group who will aid in finding Imoen, but the price is 100,000 gp!  A steep cost, but he did mention that it entailed crossing the Cowled Wizards, not something to be done lightly.  Once I have the 100,000 gp, I am to speak to him again.~
+STRING_SET 6601 ~Return to Valen's mistress with 75,000 gp.
+
+I encountered the mistress that Valen spoke of, but she refused to deal with me as I do not have 75,000 gp... her price for dealing with me.  She left, telling me to return to the Graveyard District to meet with her when I have 75,000 gp.~
+STRING_SET 21032 ~Coo!  Ye be already above 75,000, and need go no further. My masters changed their hearts, and they will accept 75,000 alone. It is a competitive rate, I think.~
+STRING_SET 21512 ~I would offer an alternative. I would help you find your friend for...oh... 75,000 gold? It is a sizeable amount less than the Shadow Thieves have asked and, coincidentally, it is what you have now.~
+STRING_SET 49071 ~75,000 is a lot, but I will compensate you well for it. You will ultimately have Imoen, and a few magical trinkets too.~
+
+COPY_EXISTING ~ar0800.bcs~ ~override~
+              ~baldur.bcs~ ~override~
+DECOMPILE_BCS_TO_BAF
+REPLACE_TEXTUALLY ~PartyGoldGT(14999)~ ~PartyGoldGT(74999)~
+COMPILE_BAF_TO_BCS
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gaelan.dlg~ ~override~
+              ~bodhi.dlg~ ~override~
+DECOMPILE_DLG_TO_D
+REPLACE_TEXTUALLY ~PartyGoldLT(20000)~ ~PartyGoldLT(100000)~
+REPLACE_TEXTUALLY ~PartyGoldGT(19999)~ ~PartyGoldGT(99999)~
+REPLACE_TEXTUALLY ~PartyGoldLT(15000)~ ~PartyGoldLT(75000)~
+REPLACE_TEXTUALLY ~PartyGoldGT(14999)~ ~PartyGoldGT(74999)~
+REPLACE_TEXTUALLY ~PartyGoldLT(50000)~ ~PartyGoldLT(100000)~
+REPLACE_TEXTUALLY ~PartyGoldGT(49999)~ ~PartyGoldGT(99999)~
+REPLACE_TEXTUALLY ~PartyGoldLT(5000)~ ~PartyGoldLT(20000)~
+REPLACE_TEXTUALLY ~PartyGoldGT(4999)~ ~PartyGoldGT(19999)~
+REPLACE_TEXTUALLY ~TakePartyGold(20000)~ ~TakePartyGold(100000) DestroyGold(100000)~
+REPLACE_TEXTUALLY ~TakePartyGold(15000)~ ~TakePartyGold(75000) DestroyGold(75000)~
+REPLACE_TEXTUALLY ~DestroyGold(15000)~ ~~
+COMPILE_D_TO_DLG
+BUT_ONLY_IF_IT_CHANGES

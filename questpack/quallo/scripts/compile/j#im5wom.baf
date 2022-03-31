@@ -1,0 +1,17 @@
+IF
+GGT("SPRITE_IS_DEADJ#IM5wog",1)
+NumTimesTalkedTo(0)
+See([PC])
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([ANYONE])
+END
+
+IF
+GGT("SPRITE_IS_DEADJ#IM5wog",1)
+NumTimesTalkedTo(0)
+!See([PC])
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END

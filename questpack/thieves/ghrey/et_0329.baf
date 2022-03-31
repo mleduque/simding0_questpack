@@ -1,0 +1,21 @@
+IF
+  OR(2)
+    G("J#im8booterrack",1)
+    G("J#im8booterrack",2)
+THEN
+  RESPONSE #100
+    SG("J#im8booterrack",9)
+    ActionOverride("booter02",DestroySelf())
+    CreateCreature("J#im8to2",[2136.2423],6) // Torturer
+END
+
+IF
+  OR(2)
+    G("J#im8guardcorpse",1)
+    G("J#im8guardcorpse",2)
+THEN
+  RESPONSE #100
+    SG("J#im8guardcorpse",9)
+    CreateCreature("deadb01",[993.2112],8)
+    CreateCreature("d0qpgude",[993.2112],8)
+END

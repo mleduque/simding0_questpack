@@ -1,0 +1,341 @@
+IF
+  HPLT(Myself,15)
+  Allegiance(Myself,ENEMY)
+  !AreaCheck("AR6200")
+  !AreaCheck("AR2100")
+  !AreaCheck("AR1508")
+  !AreaCheck("AR3021")
+  !Name("ppmind01",Myself)
+  Global("Flee","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Flee","LOCALS",1)
+    IncrementGlobal("D0FledFlayers2","MYAREA",1)
+    SetGlobalTimer("D0FlayersReturn","MYAREA",2400)
+    DropInventory()
+    SpellNoDecRES("d0qpflay",Myself)
+  RESPONSE #100
+    SetGlobal("Flee","LOCALS",2)
+END
+
+IF
+  Die()
+  Global("Flee","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("Flee","LOCALS",3)
+    IncrementGlobal("D0FledFlayers2","MYAREA",-1)
+END
+
+IF
+  HPLT(Myself,15)
+  Allegiance(Myself,ENEMY)
+  !AreaCheck("AR6200")
+  !AreaCheck("AR2100")
+  !AreaCheck("AR1508")
+  !AreaCheck("AR3021")
+  !Name("ppmind01",Myself)
+  Global("Flee","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Flee","LOCALS",1)
+    DropInventory()
+    SpellNoDecRES("d0qpflay",Myself)
+END
+
+IF
+  HPPercentLT(Myself,50)
+  Global("A3","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A3","LOCALS",1)
+    ForceSpell(Myself,ULITHARID_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("A4","LOCALS",0)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    SetGlobal("A4","LOCALS",1)
+    ForceSpell(Myself,PSIONIC_INERTIAL_BARRIER)
+  RESPONSE #100
+    SetGlobal("A4","LOCALS",1)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    !GlobalTimerNotExpired("A1","LOCALS")
+    !GlobalTimerNotExpired("A2","LOCALS")
+  Detect(Myself)
+  See(Myself)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    !GlobalTimerNotExpired("A1","LOCALS")
+    !GlobalTimerNotExpired("A2","LOCALS")
+  !Allegiance(Myself,ENEMY)
+  OR(3)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(4,1)
+  OR(3)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(5,2)
+  OR(3)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(6,3)
+  OR(3)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(7,4)
+  OR(3)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(8,5)
+  OR(3)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(9,6)
+  OR(3)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(10,7)
+  OR(3)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(11,8)
+  OR(3)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(12,9)
+  OR(3)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(13,11)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    !GlobalTimerNotExpired("A1","LOCALS")
+    !GlobalTimerNotExpired("A2","LOCALS")
+  Allegiance(Myself,ENEMY)
+  OR(3)
+    !See([PC])
+    StateCheck([PC],0x00000029)
+    RandomNumGT(10,4)
+  OR(3)
+    !See(SecondNearest([PC]))
+    StateCheck(SecondNearest([PC]),0x00000029)
+    RandomNumGT(11,5)
+  OR(3)
+    !See(ThirdNearest([PC]))
+    StateCheck(ThirdNearest([PC]),0x00000029)
+    RandomNumGT(12,6)
+  OR(3)
+    !See(FourthNearest([PC]))
+    StateCheck(FourthNearest([PC]),0x00000029)
+    RandomNumGT(13,7)
+  OR(3)
+    !See(FifthNearest([PC]))
+    StateCheck(FifthNearest([PC]),0x00000029)
+    RandomNumGT(14,8)
+  OR(3)
+    !See(SixthNearest([PC]))
+    StateCheck(SixthNearest([PC]),0x00000029)
+    RandomNumGT(15,9)
+  OR(3)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(4,1)
+  OR(3)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(5,2)
+  OR(3)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(6,3)
+  OR(3)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(7,4)
+  OR(3)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(8,5)
+  OR(3)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(9,6)
+  OR(3)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(10,7)
+  OR(3)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(11,8)
+  OR(3)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(12,9)
+  OR(3)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(13,11)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  !GlobalTimerNotExpired("A1","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  !StateCheck(LastSeenBy(Myself),0x00000029)
+  OR(2)
+    RandomNum(2,1)
+    GlobalTimerNotExpired("A2","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobalTimer("A1","LOCALS",9)
+    ForceSpell(LastSeenBy(Myself),ULITHARID_PSIONIC_BLAST)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  !GlobalTimerNotExpired("A2","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  !StateCheck(LastSeenBy(Myself),0x00000029)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobalTimer("A2","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),MIND_FLAYER_DOMINATION)
+  RESPONSE #125
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobalTimer("A2","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),3547)
+  RESPONSE #150
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobalTimer("A2","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),3543)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck([PC],0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate([PC],45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(SecondNearest([PC]),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(SecondNearest([PC]),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(ThirdNearest([PC]),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(ThirdNearest([PC]),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(FourthNearest([PC]),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(FourthNearest([PC]),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(FifthNearest([PC]),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(FifthNearest([PC]),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(SixthNearest([PC]),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(SixthNearest([PC]),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(NearestEnemyOf(Myself),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(SecondNearestEnemyOf(Myself),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(SecondNearestEnemyOf(Myself),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(ThirdNearestEnemyOf(Myself),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(ThirdNearestEnemyOf(Myself),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(FourthNearestEnemyOf(Myself),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(FourthNearestEnemyOf(Myself),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(FifthNearestEnemyOf(Myself),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(FifthNearestEnemyOf(Myself),45)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  StateCheck(SixthNearestEnemyOf(Myself),0x00000029)
+THEN
+  RESPONSE #100
+    AttackReevaluate(SixthNearestEnemyOf(Myself),45)
+END

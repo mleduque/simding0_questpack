@@ -1,0 +1,1238 @@
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn55",Myself) // Potion of Superior Healing
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  HPPercentLT(Myself,50)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn55",Myself) // Potion of Superior Healing
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn52",Myself) // Potion of Extra Healing
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  HPPercentLT(Myself,65)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn52",Myself) // Potion of Extra Healing
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn17",Myself)
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  HPPercentLT(Myself,75)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn17",Myself)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn08",Myself) // Potion of Healing
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  HPPercentLT(Myself,80)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn08",Myself) // Potion of Healing
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn10",Myself) // Potion of Invisibility
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn10",Myself) // Potion of Invisibility
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("ring05",Myself) // Ring of Invisibility
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    UseItem("ring05",Myself) // Ring of Invisibility
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn14",Myself) // Oil of Speed
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_HASTED)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn14",Myself) // Oil of Speed
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn09",Myself) // Potion of Heroism
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(3,1)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn09",Myself) // Potion of Heroism
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn11",Myself) // Potion of Invulnerability
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatGT(Myself,2,ARMORCLASS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn11",Myself) // Potion of Invulnerability
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn24",Myself) // Potion of Defense
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatGT(Myself,2,ARMORCLASS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn24",Myself) // Potion of Defense
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn07",Myself) // Potion of Storm Giant Strength
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatLT(Myself,23,STR)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn07",Myself) // Potion of Storm Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn06",Myself) // Potion of Cloud Giant Strength
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatLT(Myself,22,STR)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn06",Myself) // Potion of Cloud Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn05",Myself) // Potion of Fire Giant Strength
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatLT(Myself,21,STR)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn05",Myself) // Potion of Fire Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn04",Myself) // Potion of Frost Giant Strength
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatLT(Myself,20,STR)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn04",Myself) // Potion of Frost Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn12",Myself) // Potion of Stone Giant Strength
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatLT(Myself,19,STR)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn12",Myself) // Potion of Stone Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("potn03",Myself) // Potion of Hill Giant Strength
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatLT(Myself,18,STR)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn03",Myself) // Potion of Hill Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand10",Myself) // Wand of Monster Summoning
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand10",Myself) // Wand of Monster Summoning
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand02",Myself) // Wand of Fear
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  OR(6)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(NearestEnemyOf(Myself))
+    !Allegiance(NearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,4)
+  OR(6)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(SecondNearestEnemyOf(Myself))
+    !Allegiance(SecondNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,5)
+  OR(6)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(ThirdNearestEnemyOf(Myself))
+    !Allegiance(ThirdNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,6)
+  OR(6)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(FourthNearestEnemyOf(Myself))
+    !Allegiance(FourthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,7)
+  OR(6)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(FifthNearestEnemyOf(Myself))
+    !Allegiance(FifthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,8)
+  OR(6)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(SixthNearestEnemyOf(Myself))
+    !Allegiance(SixthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,9)
+  OR(5)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(SeventhNearestEnemyOf(Myself))
+    !Allegiance(SeventhNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(EighthNearestEnemyOf(Myself))
+    !Allegiance(EighthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(NinthNearestEnemyOf(Myself))
+    !Allegiance(NinthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_PANIC)
+    HasBounceEffects(TenthNearestEnemyOf(Myself))
+    !Allegiance(TenthNearestEnemyOf(Myself),GOODCUTOFF)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand02",Myself) // Wand of Fear
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !StateCheck(LastSeenBy(Myself),STATE_PANIC)
+  !HasBounceEffects(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand02",LastSeenBy(Myself)) // Wand of Fear
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand04",Myself) // Wand of Paralyzation
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  OR(6)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(NearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(NearestEnemyOf(Myself))
+    !Allegiance(NearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,4)
+  OR(6)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(SecondNearestEnemyOf(Myself))
+    !Allegiance(SecondNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,5)
+  OR(6)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(ThirdNearestEnemyOf(Myself))
+    !Allegiance(ThirdNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,6)
+  OR(6)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(FourthNearestEnemyOf(Myself))
+    !Allegiance(FourthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,7)
+  OR(6)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(FifthNearestEnemyOf(Myself))
+    !Allegiance(FifthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,8)
+  OR(6)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(SixthNearestEnemyOf(Myself))
+    !Allegiance(SixthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,9)
+  OR(5)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(SeventhNearestEnemyOf(Myself))
+    !Allegiance(SeventhNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(EighthNearestEnemyOf(Myself))
+    !Allegiance(EighthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(NinthNearestEnemyOf(Myself))
+    !Allegiance(NinthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_STUNNED)
+    HasBounceEffects(TenthNearestEnemyOf(Myself))
+    !Allegiance(TenthNearestEnemyOf(Myself),GOODCUTOFF)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand04",Myself) // Wand of Paralyzation
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  !HasBounceEffects(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand04",LastSeenBy(Myself)) // Wand of Paralyzation
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(4)
+    HasItem("wand05",Myself)
+    HasItem("wand06",Myself)
+    HasItem("wand07",Myself)
+    HasItem("wand09",Myself)
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  OR(5)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(NearestEnemyOf(Myself))
+    !Allegiance(NearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,4)
+  OR(5)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(SecondNearestEnemyOf(Myself))
+    !Allegiance(SecondNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,5)
+  OR(5)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(ThirdNearestEnemyOf(Myself))
+    !Allegiance(ThirdNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,6)
+  OR(5)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(FourthNearestEnemyOf(Myself))
+    !Allegiance(FourthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,7)
+  OR(5)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(FifthNearestEnemyOf(Myself))
+    !Allegiance(FifthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,8)
+  OR(5)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(SixthNearestEnemyOf(Myself))
+    !Allegiance(SixthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,9)
+  OR(4)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(SeventhNearestEnemyOf(Myself))
+    !Allegiance(SeventhNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(4)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(EighthNearestEnemyOf(Myself))
+    !Allegiance(EighthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(4)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(NinthNearestEnemyOf(Myself))
+    !Allegiance(NinthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(4)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    HasBounceEffects(TenthNearestEnemyOf(Myself))
+    !Allegiance(TenthNearestEnemyOf(Myself),GOODCUTOFF)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand05",Myself)
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !HasBounceEffects(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand05",LastSeenBy(Myself))
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand06",Myself)
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !HasBounceEffects(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand06",LastSeenBy(Myself))
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand07",Myself)
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !HasBounceEffects(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand07",LastSeenBy(Myself))
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand09",Myself)
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !HasBounceEffects(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand09",LastSeenBy(Myself))
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand08",Myself) // Wand of Sleep
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  OR(6)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(NearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(NearestEnemyOf(Myself))
+    !Allegiance(NearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,4)
+  OR(6)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(SecondNearestEnemyOf(Myself))
+    !Allegiance(SecondNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,5)
+  OR(6)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(ThirdNearestEnemyOf(Myself))
+    !Allegiance(ThirdNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,6)
+  OR(6)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(FourthNearestEnemyOf(Myself))
+    !Allegiance(FourthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,7)
+  OR(6)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(FifthNearestEnemyOf(Myself))
+    !Allegiance(FifthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,8)
+  OR(6)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(SixthNearestEnemyOf(Myself))
+    !Allegiance(SixthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,9)
+  OR(5)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(SeventhNearestEnemyOf(Myself))
+    !Allegiance(SeventhNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(EighthNearestEnemyOf(Myself))
+    !Allegiance(EighthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(NinthNearestEnemyOf(Myself))
+    !Allegiance(NinthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(5)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_SLEEPING)
+    HasBounceEffects(TenthNearestEnemyOf(Myself))
+    !Allegiance(TenthNearestEnemyOf(Myself),GOODCUTOFF)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand08",Myself) // Wand of Sleep
+  OR(2)
+    Class(Myself,MAGE_ALL)
+    Class(Myself,BARD_ALL)
+  OR(3)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+    General(Myself,UNDEAD)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !StateCheck(LastSeenBy(Myself),STATE_SLEEPING)
+  !HasBounceEffects(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand08",LastSeenBy(Myself)) // Wand of Sleep
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand11",Myself) // Wand of the Heavens
+  Class(Myself,CLERIC_ALL)
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  OR(7)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(NearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(NearestEnemyOf(Myself))
+    HasBounceEffects(NearestEnemyOf(Myself))
+    !Allegiance(NearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,4)
+  OR(7)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(SecondNearestEnemyOf(Myself))
+    HasBounceEffects(SecondNearestEnemyOf(Myself))
+    !Allegiance(SecondNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,5)
+  OR(7)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(ThirdNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(ThirdNearestEnemyOf(Myself))
+    HasBounceEffects(ThirdNearestEnemyOf(Myself))
+    !Allegiance(ThirdNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,6)
+  OR(7)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(FourthNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(FourthNearestEnemyOf(Myself))
+    HasBounceEffects(FourthNearestEnemyOf(Myself))
+    !Allegiance(FourthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,7)
+  OR(7)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(FifthNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(FifthNearestEnemyOf(Myself))
+    HasBounceEffects(FifthNearestEnemyOf(Myself))
+    !Allegiance(FifthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,8)
+  OR(7)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(SixthNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(SixthNearestEnemyOf(Myself))
+    HasBounceEffects(SixthNearestEnemyOf(Myself))
+    !Allegiance(SixthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,9)
+  OR(6)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(SeventhNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(SeventhNearestEnemyOf(Myself))
+    HasBounceEffects(SeventhNearestEnemyOf(Myself))
+    !Allegiance(SeventhNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(6)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(EighthNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(EighthNearestEnemyOf(Myself))
+    HasBounceEffects(EighthNearestEnemyOf(Myself))
+    !Allegiance(EighthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(6)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(NinthNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(NinthNearestEnemyOf(Myself))
+    HasBounceEffects(NinthNearestEnemyOf(Myself))
+    !Allegiance(NinthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(6)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    CheckStatGT(TenthNearestEnemyOf(Myself),50,RESISTMAGICFIRE)
+    HasImmunityEffects(TenthNearestEnemyOf(Myself))
+    HasBounceEffects(TenthNearestEnemyOf(Myself))
+    !Allegiance(TenthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(4)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(NearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,4)
+  OR(4)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(SecondNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,5)
+  OR(4)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(ThirdNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,6)
+  OR(4)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(FourthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,7)
+  OR(4)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(FifthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,8)
+  OR(4)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(SixthNearestEnemyOf(Myself),GOODCUTOFF)
+    RandomNumGT(10,9)
+  OR(3)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(SeventhNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(3)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(EighthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(3)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(NinthNearestEnemyOf(Myself),GOODCUTOFF)
+  OR(3)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+    !Allegiance(TenthNearestEnemyOf(Myself),GOODCUTOFF)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HasItem("wand11",Myself) // Wand of the Heavens
+  Class(Myself,CLERIC_ALL)
+  OR(2)
+    General(Myself,HUMANOID)
+    General(Myself,GIANTHUMANOID)
+  !Gender(Myself,ILLUSIONARY)
+  !Race(Myself,MIND_FLAYER)
+  !Race(Myself,TROLL)
+  !Race(Myself,GOLEM)
+  !Race(Myself,LYCANTHROPE)
+  !Race(Myself,GIBBERLING)
+  Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(LastSeenBy(Myself))
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand11",LastSeenBy(Myself)) // Wand of the Heavens
+    Continue()
+END
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  //	OR(4)
+  OR(3)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+  //		InMyGroup(LastSeenBy(Myself))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !Race(Myself,ZOMBIE)
+  //	OR(4)
+  OR(3)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+  //		InMyGroup(LastSeenBy(Myself))
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,6)
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,7)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,8)
+  See(FourthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,9)
+  See(FifthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(11,9)
+  See(SixthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(12,8)
+  See(TenthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(13,9)
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+  !Race(Myself,ZOMBIE)
+  RandomNumGT(6,3)
+  OR(2)
+    Range(LastAttackerOf(Myself),7)
+    RandomNumGT(8,4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  See(LastSeenBy(Myself))
+  Range(LastSeenBy(Myself),5)
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    RandomWalk()
+END

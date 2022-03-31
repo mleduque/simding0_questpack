@@ -1,0 +1,9 @@
+IF
+  OR(2)
+    Global("D0Reynald","GLOBAL",8)
+    Global("D0Reynald","GLOBAL",9)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Reynald","GLOBAL",10)
+    CreateCreatureObject("d0kaypal",Player1,0,0,0)
+END

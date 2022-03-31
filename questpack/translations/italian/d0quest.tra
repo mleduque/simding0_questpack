@@ -1,0 +1,412 @@
+// -*- coding: cp1252 -*-
+
+
+@101 = ~Lettera Contraffatta~
+@102 = ~Questa è la lettera che Mae'Var ti ha dato e con la quale puoi incriminare Renal Bloodscalp. Descrive le uccisioni di alcuni Ladri Tenebrosi di alto rango da parte degli assassini dei Coltelli della Notte.~
+@103 = ~Larell~
+
+@105 = ~Guanti dei Coltelli~
+@106 = ~Guanti dei Coltelli
+Questi rari guanti magici sono riservati solo agli assassini dei Coltelli della Notte di più alto rango. Si dice che il modello magico originale appartenesse ad un assassino del Sembia e che fu copiato da numerose gilde in tutto il continente. Comunque, questi guanti dimostrano che gli assassini dei Coltelli della Notte sono temibili avversari con cui fare i conti.
+
+STATISTICHE:
+
+Modificatore del Pugnalare alle Spalle aumentato di 1 se equipaggiati
+
+Non utilizzabile da:
+ Guerriero
+ Druido
+ Chierico
+ Mago
+ Bardo~
+
+@107 = ~Anello di Aran dell'Invisibilità~
+@108 = ~Anello di Aran dell'Invisibilità
+Questo anello ti è stato dato come ricompensa dal capo dei Ladri Tenebrosi, Aran Linvail. La sua creazione fu commissionata in passato da un membro di spicco dei Ladri Tenebrosi, come mezzo per sfuggire da scomode situazioni. Sfortunatamente non è stato in grado di aiutare il suo possessore durante l'ascesa al potere di Linvail.
+
+STATISTICHE:
+
+Speciale: Lancia Invisibilità sul portatore 3 volte al giorno~
+
+@109 = ~Assassino dei Coltelli della Notte~
+@110 = ~Questo è l'uccello che ti è stato dato da Meronia. È un assassino da portare all'ignaro mago, Xzar.~
+
+@114 = ~Celile~
+@115 = ~Svelto, sparisci prima che i suoi compagni si sveglino!~
+@116 = ~Questo t'insegni a pagare i tuoi debiti!~
+@117 = ~Esattore~
+@118 = ~Moiya~
+@119 = ~Mamma! Sei ferita?!~
+@120 = ~Uccidiamola e andiamo via da qui!~
+@121 = ~Lorick~
+@122 = ~Sarem~
+@123 = ~Dahlia~
+@124 = ~Besamen~
+@125 = ~Baisera~
+@126 = ~Alyce~
+@127 = ~Dagny~
+@128 = ~Sahen~
+@129 = ~Nazariel~
+@130 = ~In guardia, intrusi!~ [d0qpnaz1]
+@131 = ~Filatterio di Nazariel~
+@132 = ~Seguendo lo stretto tunnel per un po' di tempo, ti accorgi che esso conduce sempre più in profondità. Infine, si allarga, mostrando una luce sul fondo.~
+@133 = ~Indigo~
+@134 = ~Jadarath~
+@135 = ~Phluafae~
+@136 = ~Apprendista Incappucciato~
+@137 = ~Questo è il filatterio contenente l'essenza dell'antico lich Nazariel, il cui ultimo desiderio era visitare la superficie ed essere libero.~
+@138 = ~Ghiande di Phluafae~
+@139 = ~Sebbene, all'apparenza, simili alle ghiande delle driadi che hai dato a Phluafae, il duro rivestimento di questi semi ha una sfumatura leggermente più scura. Forse per colpa del loro malvagio utilizzo.~
+@140 = ~Gemma a Forma di Lacrima~
+@141 = ~Lacrima di Driade~
+@142 = ~Una pallida pietra viola. Splende di una fiocca luce interna.~
+@143 = ~Acquisita ad un sanguinoso, spietato prezzo, pochi avventurieri avrebbero lo stomaco di portare un trofeo come questo. L'ultima lacrima di una driade, cristallizzata dal suo ultimo, algido respiro, questa pietra splende di una luce sinistra. Coloro che la indossano si sentono sfiorati dalla sua svanente eredità di bellezza, ma questa benedizione reclama un caro prezzo, poiché la gemma rappresenta la fragilità della vita della vittima, spenta da una mano crudele.
+
+STATISTICHE:
+  Immunità allo Charme se equipaggiato
+  +1 bonus al Carisma
+  -1 penalità alla Costituzione
+
+Non utilizzabile da:
+ Personaggi Buoni
+ Cacciatore di Maghi~
+
+@144 = ~Questo è l'anello di famiglia indossato da Rayic Gethras. Racchiude un potere minore, ma a parte ciò il suo valore è solo sentimentale.
+
+STATISTICHE:
+
++1 bonus ai tiri salvezza se indossato
+
+Non utilizzabile da:
+ Cacciatore di Maghi~
+@145 = ~Anello di famiglia di Rayic~
+@146 = ~Guardia Incappucciata~
+@147 = ~Abbassate le armi, uomini!~
+@148 = ~Alle armi, uomini! Il figlio di Bhaal ci ha ingannato!~
+@149 = ~Lista delle Pozioni di Jadarath~
+@150 = ~Questa è la lista delle pozione che ti ha dato Jadarath. Ha promesso di ricompensarti per ogni pozione che gli porterai.
+
+1. Pozione di Invisibilità
+2. Olio di Velocità
+3. Pozione di Resistenza al Freddo
+4. Pozione di Esplosioni
+5. Pozione di Coraggio
+6. Pozione di Isolamento
+7. Pozione di Paralisi Magica
+8. Pozione di Occhi Riflessi
+9. Pozione di Potere
+10. Pozione di Intuito
+11. Pozione di Libertà
+12. Pozione di Forma di Pietra~
+
+@151 = ~Hai guadagnato +2 alla destrezza.~
+@152 = ~Hai guadagnato +30% alla resistenza alle armi da taglio.~
+@153 = ~Hai guadagnato +2 alla THAC0.~
+@154 = ~Hai guadagnato +30% alla resistenza ai danni magici.~
+@155 = ~Hai guadagnato +2 all'intelligenza.~
+@156 = ~Il tuo allineamento è cambiato in Legale Buono.~
+@157 = ~Il tuo allineamento è cambiato in Neutrale Buono.~
+@158 = ~Il tuo allineamento è cambiato in Caotico Buono.~
+@159 = ~Il tuo allineamento è cambiato in Legale Malvagio.~
+@160 = ~Il tuo allineamento è cambiato in Neutrale Malvagio.~
+@161 = ~Il tuo allineamento è cambiato in Caotico Malvagio.~
+@162 = ~Il tuo allineamento è cambiato in Legale Neutrale.~
+@163 = ~Il tuo allineamento è cambiato in Neutrale Vero.~
+@164 = ~Il tuo allineamento è cambiato in Caotico Neutrale.~
+@165 = ~Hai perso le speciali abilità concesse dal tuo dio.~
+
+@166 = ~Benedizione di Jadarath~
+@167 = ~Questa cintura ti è stata data da Jadarath, che è appena partito per i reami sconosciuti. In essa si trova una piccola parte della sua strana magia che può salvare da morte certa il portatore, in talune occasioni. Un maestro della magia nel suo strano modo, Jadarath sfortunatamente non era un sarto esperto per cui la cintura è stretta e scomoda da indossare.
+
+STATISTICHE
+
+Speciale: Lancia Guarigione sul portatore una volta al dì.
+
+Non utilizzabile da:
+ Cacciatore di Maghi~
+
+
+@175 = ~Guardia del Corpo Pirata~
+@176 = ~Tredor~
+
+@178 = ~Sidhe~
+@179 = ~Janie~
+@180 = ~Questa pozione protegge chi la beve da tutti gli attacchi visivi, inclusi quelli dei Basilischi, Mummie, Umber Hulk, Vampiri e altre creature. L'effetto dura per 10 turni o finché non viene disperso.~
+@181 = ~Sguardo di Disperazione~
+@182 = ~Contingenza - Invisibilità Potenziata~
+@183 = ~Aiiiiee!!!~
+@184 = ~Vi semino, sorelle, nel nostro sacro bosco.~
+@185 = ~Alzatevi e siate libere!~
+@186 = ~Cosa?~
+@187 = ~Cosa sta succedendo?!~
+@188 = ~Cania...?~
+@189 = ~Elyme...?~
+@190 = ~Ulene...?~
+@191 = ~Sono dannato! Siamo tutti dannati!~
+
+@192 = ~Non gettare via la tua vita per documenti politici di poca importanza dei Coltelli della Notte. Mae'var è autorizzato da loro; i Coltelli sono i suoi alleati segreti.~
+@193 = ~Mae'Var sta corteggiando i Coltelli della Notte per sostenere la sua posizione e tradire Renal. Piano magistrale, ma ho capito di quello che si trattava.~
+@194 = ~I Coltelli della Notte sono una gilda di taglia gole, briganti e rapinatori, con sede nella sovraffollata fogna della Porta Occidentale. Logicamente desiderano espandersi.~
+@195 = ~Si, ho le prove di cui hai bisogno in queste lettere. Sembra che Mae'var stia facendo amicizia con i Coltelli della Notte.~
+@196 = ~Sei caduto nella trappola, preso all'amo. Ora sei vulnerabile, e i miei assassini sono qui! Lascia che i Coltelli della Notte ti prendano!~
+@197 = ~Er, salve. Io... io vi ho seguiti e... sono terribilmente dispiaciuto per la confusione con quella Ama. Il mio informatore mi dice che i suoi uomini portavano le insegne dei Coltelli della Notte.~
+@198 = ~Una lettera di Mae'var agli assassini dei Coltelli della Notte in cui richiede la morte di Renal Bloodscalp. Questo è proprio il tipo di prova di cui Renal ha bisogno.~
+@199 = ~Portatore di Scudo del Tethyr~
+@200 = ~Bastione~
+@201 = ~Colpo di Scudo~
+@202 = ~Come attraversi questa particolare sezione delle buie caverne, una leggera eco proveniente dalle pareti rocciose richiama la tua attenzione. C'è un passaggio nascosto da qualche parte nell'oscurità.~
+@203 = ~Trovi molti segni sulle pareti. Le tracce di Kua-Toa sono presenti attorno al punto in cui il tunnel si allarga, ma si fermano all'improvviso poco dopo.~
+@204 = ~Questo è il corpo di Montaron, il compatriota del mago Xzar. E' come se gli arpisti lo avessero nascosto in questo modo per far si che tu portassi a Xzar, al suo posto, l'assassino.~
+@205 = ~Mago Autorizzato~
+@206 = ~Lemure~
+@207 = ~Cuore di Diavolo~
+@208 = ~Questo Cuore di Diavolo è stranamente freddo al tatto. Un gran numero di spine circonda la parte carnosa più interna dell'organo, e si deve fare molta attenzione per evitare di ferirsi con le punte affilate come rasoi. Il battito regolare più va avanti e più diventa difficile da sopportare. Pian piano inizia a fare improvvisi movimenti nel tuo zaino, come se cercasse di fuggire, spinto da una propria vita.~
+@209 = ~In assenza di una soluzione migliore, hai nutrito col Cuore di Diavolo una delle numerose bocche conficcate nella carne della struttura, nella speranza che sia un accettabile sostituto per il Cuore di Demone precedentemente usato. Un istante dopo la sfera ha un fremito ed avverti che si sta caricando.~
+@210 = ~Adrozel~
+@211 = ~Kram~
+@212 = ~Scimitarra +1, Shazzellim
+La scimitarra è di qualità abbastanza scadente, ma sotto la sua superficie nasconde grande potere e malvagità. Creata con il solo scopo di uccidere gli Arpisti, Shazzellim è più che efficace nel suo compito. Ad ogni singolo colpo della spada, un Arpista deve superare un Tiro-salvezza contro Incantesimi o morire. Creata da un Mago Rosso del Thay, la spada è in grado anche di vocalizzare, ed è per questo che essa è spesso data ai guerrieri-maghi al servizio del Mago. Non c'è bisogno di dire che gli Arpisti non sono bendisposti a trasportare quest'arma.
+
+STATISTICHE:
+
+Abilità di Utilizzo:
+Vocalizza
+
+Abilità di Combattimento:
+Ogni Arpista colpito deve effettuare un Tiro-salvezza contro Incantesimi con penalità -2 o morire
+
+Danno:  1d8+1
+THAC0: +1
+Tipo di Danno: tagliente
+Peso:  3
+Fattore Velocità: 4
+Competenza: Scimitarra/Wakizashi/Ninja-To
+Tipo: 1 mano
+Richiede: forza 10
+Non Utilizzabile da:
+ Chierico
+ Mago
+ Ladro
+ Maestro delle Bestie
+ Personaggi Buoni
+Richiede: forza 10~
+@213 = ~Jaheira indietreggia di fronte all'arma. "Questa spada ha ucciso molti arpisti, <CHARNAME>. Non la brandirò."~ [GAM_47]
+@214 = ~Con la Lacrima di Bhaal rimossa, non c'è più nulla di interessante qui.~
+@215 = ~Noooo! Perché non funziona?!~
+
+@220 = ~Con Faldorn morto, ed il suo collegamento con il bosco violentemente reciso, la terra stessa sembra emettere un lieve sospiro. Il tuo disinteresse per il rituale druidico deve aver causato molte vittime.~
+@221 = ~Mentre la tua mente combatte contro la magia sinistra che Quallo controlla, o che controlla Quallo, il tuo corpo viene trasformato in una orribile creatura uscita dagli incubi. Senza volontà, colpisci i tuoi primi compagni, e una voce silenziosa bisbiglia nella tua testa, "Avrebbero dovuto tenerti lontano da me, amico. Loro non sono amici. Loro muoiono."
+
+La tua mente barcolla per l'orrore mentre ogni tuo compagno cade in terra per mano di colui che così a lungo hai combattuto per impedire che uscisse allo scoperto. L'essenza di Bhaal. Quali poteri possiede la creatura che ti ha fatto cadere nel suo tranello, che può così facilmente controllare te e la tua furiosa corruzione? Forse non si saprà mai.
+
+Sei calmo, e nonostante tu non lo voglia, puoi solo guardare con grande interesse le ultime gocce di sangue che fuoriescono dai corpi dei tuoi amici. La tua vista si offusca, ma puoi distinguere l'oscura figura di Quallo che si piega in terra sui loro corpi, e inizia a bere il loro sangue. Di nuovo la sua voce repulsiva e sinistra fa eco nei tuoi pensieri. "Amici per sempre, saremo. E tu sei un potente amico, in vero."
+
+L'eternità aspetta, ma non ci sarà nessun gesto leggendario o grande ricchezza ora. Per te, c'è solo questa umida fogna, e questo pazzo vecchio.~
+@222 = ~IL PREZZO DELL'AMICIZIA~
+@223 = ~Schiava~
+@224 = ~Coboldo Solitario~
+@225 = ~Hobgoblin~
+@226 = ~Hobgoblin Mercenario~
+@227 = ~Bibliotecario~
+@228 = ~Storia di Shadowdale, Vol. 1~
+@229 = ~Storia di Shadowdale, Vol. 2~
+@230 = ~Storia di Shadowdale, Vol. 3~
+@231 = ~Storia di Shadowdale, Vol. 4~
+@232 = ~Storia di Shadowdale, Vol. 5~
+@233 = ~Storia di Shadowdale, Vol. 6~
+@234 = ~Storia di Shadowdale, Vol. 7~
+@235 = ~Storia di Shadowdale, Vol. 8~
+@236 = ~Storia di Shadowdale, Vol. 9~
+@237 = ~Storia di Shadowdale, Vol. 10~
+@238 = ~Storia di Shadowdale, Vol. 11~
+@239 = ~Storia di Shadowdale, Vol. 12~
+@240 = ~Storia di Shadowdale, Vol. 13~
+@241 = ~Storia dei Drow, Vol. 1~
+@242 = ~Storia dei Drow, Vol. 2~
+@243 = ~Storia del Nord, Vol. 1~
+@244 = ~Storia del Nord, Vol. 2~
+@245 = ~Storia del Nord, Vol. 3~
+@246 = ~Storia del Nord, Vol. 4~
+@247 = ~Storia del Nord, Vol. 5~
+@248 = ~Storia del Nord, Vol. 6~
+@249 = ~Storia del Nord, Vol. 7~
+@250 = ~Storia del Nord, Vol. 8~
+@251 = ~Storia del Nord, Vol. 9~
+@252 = ~Storia del Nord, Vol. 10~
+@253 = ~Storia di Waterdeep, Vol. 1~
+@254 = ~Storia di Waterdeep, Vol. 2~
+@255 = ~Storia di Waterdeep, Vol. 3~
+@256 = ~Storia di Waterdeep, Vol. 4~
+@257 = ~Storia di Waterdeep, Vol. 5~
+@258 = ~Storia di Waterdeep, Vol. 6~
+@259 = ~Ma non è quello che ti ho chiesto di fare, vero? Avevo bisogno di prove prima di ordinare la morte di Mae'Var! Ora sembrerà che abbia creato le prove dopo il fatto!!~
+@260 = ~Ma ho le prove del tradimento di Mae'Var proprio qui!~
+@261 = ~Carrack~
+@262 = ~Lillian~
+@263 = ~Cora~
+@264 = ~Arris~
+@265 = ~Torturatore~
+@266 = ~Carrack, evidentemente, non è andato lontano con il suo tentativo di vendetta. Il suo corpo è stato depredato e abbandonato, probabilmente come avvertimento per gli altri.~
+@267 = ~Occhio~
+@268 = ~Abraxxi~
+@269 = ~Arkanis e Kachiko e gli altri, i nostri migliori assassini, si uniranno a te quando entrerai nelle catacombe di Bodhi. Voglio essere sicuro che Bodhi non mi dia più fastidio.~
+@270 = ~Contingenza Concatenata - Protezione dalle Armi Magiche~
+@271 = ~Contingenza Concatenata - Defletti Incantesimo~
+@272 = ~Contingenza Concatenata - Ingannare~
+@273 = ~Attivatore di Incantesimi - Scudo di Fuoco~
+@274 = ~Contingenza Concatenata - Pelle di Pietra~
+@275 = ~Spettro~
+@276 = ~Castigo dei Rimpianti ~
+@277 = ~Belva Distorcente~
+@278 = ~Belva Distorcente Capo Branco~
+
+@279 = ~Globo delle Tenebre~
+@280 = ~Globo delle Tenebre (Scuola di magia non specificata)
+Livello: 1
+Raggio d'azione: Campo visivo dello stregone
+Durata: 1 round ogni 2 livelli
+Tempo di lancio: 2
+Area d'effetto: Una creatura
+Tiro-salvezza: Nessuno
+
+Questa capacità innata degli elfi oscuri provoca cecità su un bersaglio, che dura per un turno per ogni due livelli dello stregone, o fino a quando dissipato.~
+
+@281 = ~Globo delle Tenebre Potenziato ~
+@282 = ~Globo delle Tenebre Potenziato (Scuola di magia non specificata)
+Livello: 1
+Raggio d'azione: Campo visivo dello stregone
+Durata: 1 round ogni 2 livelli
+Tempo di lancio: 2
+Area d'effetto: Una creatura
+Tiro salvezza: Nessuno
+
+Questa capacità innata degli elfi oscuri provoca cecità su un bersaglio, che dura per un turno per ogni due livelli dello stregone, o fino a quando dissipato.~
+
+@283 = ~ Luci Danzanti~
+@284 = ~ Luci Danzanti (Scuola di magia non specificata)
+Livello: 1
+Raggio d'azione: Campo visivo dello stregone
+Durata: 3 round
+Tempo di lancio: 2
+Area d'effetto: Una creatura
+Tiro salvezza: Nessuno
+
+Questa capacità innata degli elfi oscuri provoca confusione ad un bersaglio per 3 round.~
+@285 = ~Sotto gli effetti di Luci Danzanti.~
+@286 = ~Distratto.~
+
+@287 = ~Fata Infuocata~
+@288 = ~Fata Infuocata (Scuola di magia non specificata)
+Livello: 1
+Sfera: combattimento
+Raggio d'azione: 0
+Durata: 6 turni
+Tempo di lancio: 1
+Area d'effetto: Una creatura
+Tiro salvezza: Nessuno
+
+Questo incantesimo avvolge il bersaglio con un bagliore bianco che dà un -2 alla classe armatura.~
+@289 = ~Peduncolo Oculare Danneggiato~
+@290 = ~Occhio Centrale Danneggiato ~
+@291 = ~Vampiro~
+@292 = ~Vampiro d'Elite~
+@293 = ~Aiuto!~
+@294 = ~Ho bisogno di assistenza!~
+@295 = ~Non lo sopporto!~
+@296 = ~Non più!~
+@297 = ~Yuan-Ti Mago~
+@298 = ~Sguardo Ammaliante~
+@299 = ~Sguardo Dominante~
+@300 = ~Sguardo Nauseante~
+@301 = ~Scimitarra Rossa +3~
+@302 = ~Questa scimitarra, caratterizzata da una sfumatura di rosso opaco, è forgiata con un metallo che non sei in grado di riconoscere. Anche se risulta leggermente più grande e più pesante di quanto ci si potrebbe aspettare da una tale arma, ciò non ne impedisce il perfetto bilanciamento. Sembra progettata per scatenare una raffica rapida di colpi permettendo al portatore di mantenere il completo controllo.
+
+STATISTICHE:
+
+Abilità di Combattimento: Ogni colpo andato a segno concede al portatore un bonus di THAC0 +1 per 1 round.
+
+THAC0: +3
+Danni: 1d8+3
+Tipo di Danno: tagliente
+Peso: 1
+Fattore-Velocità: 2
+Tipo di competenza: Scimitarra/Wakizashi/Ninja-To
+Tipo: 1 mano
+Richiede: Forza 10
+Non Utilizzabile da:
+ Chierico
+ Mago
+ Ladro~
+@303 = ~Wilbur~
+@304 = ~Soldato Sythillisian~
+@305 = ~Fekir~
+@306 = ~Porta Astrale~
+@307 = ~Claire era sposata con Sanik il commerciante. Stavano per cominciare il loro viaggio sulla prima nave in partenza, ma non avevano messo in conto la natura di Lady Galvena. Questa ha inviato un assassino sulle tracce di Sanik ed ha rapito Claire catturandola ai moli dove stava aspettando.~
+@308 = ~Claire stava aspettando fuori dalla gilda il suo uomo, ma Miss Galvena ha mandato un assassino sulle tracce del marito, e ha rapito Claire portandola all'interno della gilda. Ora la tiene rinchiusa li dentro.~
+@309 = ~Capitano della Guardia~
+@310 = ~Ormand ~
+@311 = ~Elfo Arciere~
+@312 = ~Elfo Cacciatore~
+@313 = ~Elfo Chierico~
+@314 = ~Elfo Domatore~
+@315 = ~Arco Lungo +3: Arco della Corte degli Elfi
+Questo arco di tasso è tanto un'opera d'arte, quanto un arma da guerra. È intarsiato con fini incisioni che danzano sul legno lucido assieme ai bagliori della corda dorata. Fu un arco cerimoniale presso la Corte degli Elfi per migliaia di anni, un lasso di tempo che costituisce solo una parte della vita di un elfo. Ogni 50 anni ne veniva concesso l'uso a che aveva fornito un grande servizio alla Corte. Il destinatario avrebbe poi scelto il successivo portatore. Due secoli fa un essere umano, Yin Pon, dopo aver salvato un principe elfico, ricevette in dono l'arco e lo portò con se fino alla città di Baldur, dove, successivamente, se ne persero le tracce.
+Mentre la fattura è impeccabile e si presta alla precisione, l'arco è un elemento prezioso e simbolico, ed è solo con la benedizione dell'uso da parte di un elfo, che la vera magia di questo arco si manifesta.
+STATISTICHE:
+
+THAC0: +4
+Peso: 2
+Fattore-Velocità: 4
+Tipo di competenza: Arco Lungo
+Tipo: 2 mani
+Richiede: Forza 6
+Non Utilizzabile da:
+ Druido
+ Chierico
+ Mago
+ Ladro
+ Monaco
+ Kensai
+ Cavaliere~
+@316 = ~Dardo della Tranquillità +2~
+@317 = ~Dardo della Tranquillità +2
+Questi dardi sono dotati di una tossina magica capace di rendere inconscia una vittima. Simili munizioni sono le preferite tra i ladri e gli assassini. Essi potrebbero attendere nell'ombra una persona ignara e colpirla con una rapida puntura al collo per renderla inerme, prima di tagliarle la gola.
+
+STATISTICHE:
+
+Il dardo ritorna istantaneamente nella mano del lanciatore dopo essere stato scagliato.
+Abilità da Combattimento: Il bersaglio deve effettuare un Tiro-salvezza contro la morte con una penalità di -2 o addormentarsi per 1 turno.
+THAC0: +2
+Danni: 1d3 +2
+Tipo di danno: missile (perforante)
+Peso: 0
+Fattore-Velocità: 0
+Tipo di Competenza: Dardi
+Tipo: 1 mano
+Non Utilizzabile da:
+ Chierico
+ Kensai
+ Cavaliere~
+@318 = ~Costrutto del Mago~
+@319 = ~Contingenza Concatenata - Pelle di Pietra~
+@320 = ~Contingenza Concatenata - Defletti Incantesimo~
+@321 = ~Contingenza Concatenata - Scudo di Fuoco (Rosso)~
+@322 = ~Attivatore d'Incantesimi - Velocità~
+@323 = ~Attivatore d'Incantesimi - Fuorviare~
+@324 = ~Attivatore d'Incantesimi - Protezione dalle Armi Magiche~
+@325 = ~Attivatore d'Incantesimi - Globo di Invulnerabilità ~
+@326 = ~Contingenza - Pelle di Pietra~
+@327 = ~Discoteca Segreta Gnoll scoperto!~
+@328 = ~Nella discoteca Gnoll si suona disco-music!~
+
+@99948 = ~Trovare le prove del tradimento di Mae'Var.
+
+L'assistente di Mae'Var si è rivelato essere, niente di meno che, il mago Thay che ho incontrato nella Costa della Spada. Mi ha affibbiato una missione, uccidere Rayic Gethras, uno Stregone Incappucciato che vive in una casa grigia a tre piani nella parte più occidentale del Quartiere dei Moli. Se la porta sarà aperta saprò che Gethras è in casa. Quando sarà morto, dovrò portare a Edwin, come prova, il suo anello di riconoscimento.~
+
+@99906 = ~Le uova di Adalon tenute dalla Casata Despana?
+
+Secondo con un anziano drow nella taverna, le uova del drago d'argento devono per forza trovarsi in un contenitore da qualche parte all'interno della Casata Despana. Non c'è dubbio che trovare un modo per entrare non sarà facile.~
+
+@99902 = ~Dentro al Manicomio
+
+Ho convinto uno dei cortigiani a dirmi quello che è successo a Claire. Sembra che Lady Galvena non fosse contenta che Sanik se ne andasse con lei e abbia deciso di imprigionarla nella gilda, inviando un assassino da Sanik.~

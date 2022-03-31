@@ -1,0 +1,288 @@
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    StateCheck(Myself,STATE_SILENCED)
+    HaveSpell(WIZARD_VOCALIZE)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    OR(2)
+		See(NearestEnemyOf(Myself))
+		HPPercentLT(Myself,100)
+	CheckStatLT(Myself,1,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(Myself,1,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    HaveSpell(WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
+    OR(2)
+		See(NearestEnemyOf(Myself))
+		HPPercentLT(Myself,100)
+	CheckStatLT(Myself,1,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+	CheckStatLT(Myself,1,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
+	RandomNumGT(4,2)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	HaveSpell(WIZARD_STONE_SKIN)
+	CheckStatLT(Myself,3,STONESKINS)
+THEN
+	RESPONSE #100
+          SetGlobalTimer("CAST","LOCALS",6)
+          Spell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    See(NearestEnemyOf(Myself))
+    !Range(NearestEnemyOf(Myself),10)
+    HaveSpell(WIZARD_TIME_STOP)
+	RandomNumGT(3,1)
+THEN
+    RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_TIME_STOP)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TURNING)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TRAP)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_DEFLECTION)
+    OR(5)
+        Exists(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.SORCERER]))
+        Exists(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    HaveSpell(WIZARD_SPELL_TRAP)
+	See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_SPELL_TRAP)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TURNING)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TRAP)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_DEFLECTION)
+    OR(5)
+        Exists(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.SORCERER]))
+        Exists(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    HaveSpell(WIZARD_SPELL_TURNING)
+	See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TURNING)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TRAP)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_DEFLECTION)
+    OR(5)
+        Exists(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.SORCERER]))
+        Exists(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    HaveSpell(WIZARD_SPELL_DEFLECTION)
+	See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_SPELL_DEFLECTION)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TURNING)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_TRAP)
+    !CheckStatGT(Myself,0,WIZARD_SPELL_DEFLECTION)
+    OR(5)
+        Exists(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+        Exists(NearestEnemyOfType([0.0.0.SORCERER]))
+        Exists(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    HaveSpell(WIZARD_MINOR_SPELL_TURNING)
+	See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_MINOR_SPELL_TURNING)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	!CheckStatGT(Myself,0,TRUE_SIGHT)
+	HaveSpell(WIZARD_TRUE_SIGHT)
+	!See([GOODCUTOFF])
+	OR(10)
+		!See(LastAttackerOf(Myself))
+		!See(LastHitter(Myself))
+		HitBy([GOODCUTOFF],CRUSHING)
+		SpellCast([GOODCUTOFF],WIZARD_PROJECT_IMAGE)
+		SpellCast([GOODCUTOFF],WIZARD_MISLEAD)
+		SpellCast([GOODCUTOFF],WIZARD_MIRROR_IMAGE)
+		SpellCast([GOODCUTOFF],WIZARD_IMPROVED_INVISIBILITY)
+		SpellCast([EVILCUTOFF],WIZARD_INVISIBILITY)
+		StateCheck(LastAttackerOf(Myself),STATE_BLUR)
+		StateCheck(LastAttackerOf(Myself),STATE_MIRRORIMAGE)
+	!StateCheck(LastTrigger,STATE_DEAD)
+	!StateCheck(LastTrigger,STATE_CHARMED)
+	Detect(LastTrigger)
+	OR(2)
+		InParty(LastTrigger)
+		Allegiance(LastTrigger,GOODCUTOFF)
+	!Allegiance(LastTrigger,EVILCUTOFF)
+	!CheckStatGT(LastTrigger,0,SANCTUARY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	!StateCheck(Myself,STATE_IMPROVED_INVISIBILITY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+    CheckStat(Player1,0,TRUE_SIGHT)
+    CheckStat(Player2,0,TRUE_SIGHT)
+    CheckStat(Player3,0,TRUE_SIGHT)
+    CheckStat(Player4,0,TRUE_SIGHT)
+    CheckStat(Player5,0,TRUE_SIGHT)
+    CheckStat(Player6,0,TRUE_SIGHT)
+	HaveSpell(WIZARD_SHADOW_DOOR)
+	See(Myself)
+    OR(2)
+        HPPercentLT(Myself,75)
+        HitBy([ANYONE],CRUSHING)
+	RandomNumGT(5,3)
+THEN
+    RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_SHADOW_DOOR)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	!StateCheck(Myself,STATE_IMPROVED_INVISIBILITY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	CheckStat(Myself,0,WIZARD_MISLEAD)
+    CheckStat(Player1,0,TRUE_SIGHT)
+    CheckStat(Player2,0,TRUE_SIGHT)
+    CheckStat(Player3,0,TRUE_SIGHT)
+    CheckStat(Player4,0,TRUE_SIGHT)
+    CheckStat(Player5,0,TRUE_SIGHT)
+    CheckStat(Player6,0,TRUE_SIGHT)
+	HaveSpell(WIZARD_MISLEAD)
+	See(Myself)
+    OR(2)
+        HPPercentLT(Myself,75)
+        HitBy([ANYONE],CRUSHING)
+	RandomNumGT(6,4)
+THEN
+    RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_MISLEAD)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    !GlobalTimerNotExpired("ShieldRed","LOCALS")
+	CheckStatLT(Myself,50,RESISTFIRE)
+	HaveSpell(WIZARD_FIRE_SHIELD_RED)
+	OR(2)
+		See(NearestEnemyOf(Myself))
+		HPPercentLT(Myself,100)
+	RandomNumGT(3,1)
+THEN
+    RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+        SetGlobalTimer("ShieldRed","LOCALS",32)
+        Spell(Myself,WIZARD_FIRE_SHIELD_RED)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    !GlobalTimerNotExpired("ShieldBlue","LOCALS")
+	CheckStatLT(Myself,50,RESISTFIRE)
+	HaveSpell(WIZARD_FIRE_SHIELD_BLUE)
+	OR(2)
+		See(NearestEnemyOf(Myself))
+		HPPercentLT(Myself,100)
+	RandomNumGT(3,1)
+THEN
+    RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+        SetGlobalTimer("ShieldBlue","LOCALS",32)
+        Spell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+END
+
+IF
+	!GlobalTimerNotExpired("CAST","LOCALS")
+	OR(2)
+		!Detect(NearestEnemyOf(Myself))
+		HPPercentLT(Myself,25)
+	HPPercentLT(Myself,100)
+	HasItem("potn52",Myself)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		UseItem("potn52",Myself)
+	RESPONSE #20
+		SetGlobalTimer("CAST","LOCALS",6)
+		GiveItemCreate("potn52",Myself,1,0,0)
+		UseItem("potn52",Myself)
+END

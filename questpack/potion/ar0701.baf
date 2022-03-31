@@ -1,0 +1,7 @@
+IF
+  Global("D0SpawnPotion","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("D0QPPOTN",[175.2567],4)
+    SetGlobal("D0SpawnPotion","GLOBAL",1)
+END

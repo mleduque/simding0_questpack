@@ -1,0 +1,53 @@
+IF
+  G("J#im8guardchat",3)
+  AreaCheck("AR0307")
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
+  G("J#im8guardchat",5)
+  AreaCheck("AR0500")
+  !Detect([ENEMY])
+  GlobalGT("SPRITE_IS_DEADJ#IM8THG","GLOBAL",2)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([2949.821])
+    OpenDoor("Door0527")
+    MoveToPointNoInterrupt([2981.777])
+    SmallWait(1)
+    MoveBetweenAreas("AR0527",[384.395],6)
+END
+
+IF
+  AreaCheck("AR0527")
+  Detect([ENEMY])
+  GlobalLT("SPRITE_IS_DEADJ#im8thg","GLOBAL",6)
+  Global("D0Scum","LOCALS",0)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("D0Scum","LOCALS",1)
+    StartDialogNoSet([PC])
+END
+
+IF
+  G("J#im8guardchat",6)
+  AreaCheck("AR0527")
+  !Detect([ENEMY])
+  GlobalGT("SPRITE_IS_DEADJ#IM8THG","GLOBAL",5)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([210.356])
+    MoveBetweenAreas("AR0528",[257.412],8)
+END
+
+IF
+  G("J#im8guardchat",7)
+  AreaCheck("AR0528")
+  See([PC])
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END

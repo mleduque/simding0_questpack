@@ -1,0 +1,609 @@
+IF
+  HPLT(Myself,10)
+  GlobalLT("Begin","LOCALS",5)
+THEN
+  RESPONSE #100
+    SetGlobal("Begin","LOCALS",5)
+    StartDialogNoSet([PC])
+END
+
+IF
+  Global("Taunt","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("Taunt","LOCALS",1)
+    TakeItemReplace("nocirc","lich",Myself)
+    TakeItemReplace("impinvis","lichel01",Myself)
+    EquipItem("nocirc")
+    EquipItem("impinvis")
+    Polymorph(DOOM_GUARD)
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("Taunt","LOCALS",1)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("Taunt","LOCALS",2)
+    StartCutSceneMode()
+    MoveViewObject(Myself,VERY_FAST)
+    Wait(1)
+    DisplayString(Myself,@130)
+    Wait(3)
+    CreateVisualEffectObject("SPGFLSH1",Myself)
+    Polymorph(LICH)
+    TakeItemReplace("lich","nocirc",Myself)
+    TakeItemReplace("lichel01","impinvis",Myself)
+    EquipItem("lich")
+    EquipItem("lichel01")
+    Wait(1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("Begin","LOCALS",1)
+  Global("Taunt","LOCALS",2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("Begin","LOCALS",2)
+    CreateVisualEffectObject("SPFIREPI",Myself)
+    TakeItemReplace("nocirc","lich",Myself)
+    TakeItemReplace("impinvis","lichel01",Myself)
+    EquipItem("nocirc")
+    EquipItem("impinvis")
+    Polymorph(DOOM_GUARD)
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    CreateCreatureObjectOffset("d0lich02",Myself,[0.-50])
+    CreateCreatureObjectOffset("d0lich02",Myself,[-45.45])
+    CreateCreatureObjectOffset("d0lich02",Myself,[50.45])
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !Exists("d0lich02")
+    GlobalGT("SPRITE_IS_DEADd0lich02","GLOBAL",2)
+  Global("Begin","LOCALS",2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("Begin","LOCALS",3)
+    CreateVisualEffectObject("SPGFLSH1",Myself)
+    Polymorph(LICH)
+    ChangeEnemyAlly(Myself,ENEMY)
+    DestroyItem("invulner")
+    TakeItemReplace("lich","nocirc",Myself)
+    TakeItemReplace("lichel01","impinvis",Myself)
+    EquipItem("lich")
+    EquipItem("lichel01")
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("Begin","LOCALS",2)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([GOODCUTOFF])
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_FIREBALL)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  StateCheck(Myself,STATE_SILENCED)
+  HaveSpell(WIZARD_VOCALIZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  Global("Contingency","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Contingency","LOCALS",1)
+    DisplayString(Myself,@319)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    DisplayString(Myself,@320)
+    ReallyForceSpell(Myself,WIZARD_SPELL_DEFLECTION)
+    DisplayString(Myself,@321)
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  Global("Contingency","LOCALS",1)
+  HPPercentLT(Myself,75)
+THEN
+  RESPONSE #100
+    SetGlobal("Contingency","LOCALS",2)
+    DisplayString(Myself,@322)
+    DisplayString(Myself,@323)
+    ReallyForceSpell(Myself,WIZARD_MISLEAD)
+    DisplayString(Myself,@324)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    DisplayString(Myself,@325)
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  Global("Contingency","LOCALS",2)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    SetGlobal("Contingency","LOCALS",3)
+    DisplayString(Myself,@326)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_TIME_STOP)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_TIME_STOP)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_METEOR_SWARM)
+  See(NearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,6)
+  See(SecondNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,7)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,8)
+  See(FourthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,9)
+  See(FifthNearestEnemyOf(Myself))
+  OR(6)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SixthNearestEnemyOf(Myself))
+  OR(6)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SeventhNearestEnemyOf(Myself))
+  OR(6)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(EighthNearestEnemyOf(Myself))
+  OR(6)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NinthNearestEnemyOf(Myself))
+  OR(6)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(TenthNearestEnemyOf(Myself))
+  OR(6)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_METEOR_SWARM)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_METEOR_SWARM)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_METEOR_SWARM)
+  !See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_METEOR_SWARM)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_SUN_FIRE)
+  Range(NearestEnemyOf(Myself),15)
+  OR(2)
+    !HaveSpell(WIZARD_FIREBALL)
+    Range(SecondNearestEnemyOf(Myself),15)
+  OR(2)
+    !HaveSpell(WIZARD_FLAME_ARROW)
+    Range(SecondNearestEnemyOf(Myself),15)
+  OR(2)
+    !HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+    Range(SecondNearestEnemyOf(Myself),15)
+  OR(2)
+    !HaveSpell(WIZARD_MAGIC_MISSILE)
+    Range(SecondNearestEnemyOf(Myself),15)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SUN_FIRE)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  RandomNum(2,1)
+  OR(3)
+    HaveSpell(WIZARD_FIREBALL)
+    HaveSpell(WIZARD_FLAME_ARROW)
+    HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  See(NearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,6)
+  See(SecondNearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,7)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,8)
+  See(FourthNearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,9)
+  See(FifthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SixthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SeventhNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(EighthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NinthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(TenthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,RESISTFIRE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_FIREBALL)
+  See(LastSeenBy(Myself))
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  RandomNum(3,1)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FIREBALL)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_FLAME_ARROW)
+  See(LastSeenBy(Myself))
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  RandomNum(3,2)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  See(LastSeenBy(Myself))
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  RandomNum(3,3)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+END
+
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  See(NearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,6)
+  See(SecondNearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,7)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,8)
+  See(FourthNearestEnemyOf(Myself))
+  OR(8)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+    RandomNumGT(10,9)
+  See(FifthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SixthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SeventhNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(EighthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NinthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(TenthNearestEnemyOf(Myself))
+  OR(7)
+    HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStatGT(LastSeenBy(Myself),60,MAGICDAMAGERESISTANCE)
+    CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  See(LastSeenBy(Myself))
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  OR(7)
+    HaveSpell(WIZARD_FIREBALL)
+    HaveSpell(WIZARD_FLAME_ARROW)
+    HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+    HaveSpell(WIZARD_MAGIC_MISSILE)
+    HaveSpell(WIZARD_SUN_FIRE)
+    HaveSpell(WIZARD_METEOR_SWARM)
+    HaveSpell(WIZARD_TIME_STOP)
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    RunAwayFrom(LastAttackerOf(Myself),15)
+END
+
+IF
+  Global("Begin","LOCALS",3)
+  !HaveSpell(WIZARD_FIREBALL)
+  !HaveSpell(WIZARD_FLAME_ARROW)
+  !HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  !HaveSpell(WIZARD_MAGIC_MISSILE)
+  !HaveSpell(WIZARD_SUN_FIRE)
+  !HaveSpell(WIZARD_METEOR_SWARM)
+  !HaveSpell(WIZARD_TIME_STOP)
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END
+
+IF
+  Global("Begin","LOCALS",3)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END

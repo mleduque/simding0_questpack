@@ -1,0 +1,30 @@
+currently balor stats
+
+ANIM							4352
+ALIGN							33
+RACE							121
+CLASS							160
+RESIST_FIRE						100
+RESIST_COLD						50
+RESIST_ELECTRICAL				100
+RESIST_ACID						0
+RESIST_MAGIC					70
+NONE
+RESIST_SLASHING					40
+RESIST_PIERCING					40
+RESIST_CRUSHING					40
+RESIST_MISSILE					40
+HP								120
+AC								-8
+THAC0							5
+ATTACKS							2
+STR								21
+DEX								17
+CON								15
+INT								20
+WIS								16
+CHR								25
+WEAPON
+GENERIC_SCRIPT					d0demnab
+LEVEL							13
+XP_VALUE						32000

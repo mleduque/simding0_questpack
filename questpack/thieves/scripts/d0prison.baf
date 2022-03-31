@@ -1,0 +1,27 @@
+IF
+  Global("D0PrisonersFree","GLOBAL",1)
+  !Name("arnman07",Myself)
+  !Name("arnman05",Myself)
+THEN
+  RESPONSE #100
+    EscapeAreaDestroy(15)
+END
+
+IF
+  Global("D0PrisonersFree","GLOBAL",1)
+  Name("arnman07",Myself)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+IF
+  See([PC])
+  Allegiance(Myself,ENEMY)
+  Name("arnman05",Myself)
+  Global("D0Interact","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Interact","LOCALS",1)
+    StartDialogNoSet([PC])
+END

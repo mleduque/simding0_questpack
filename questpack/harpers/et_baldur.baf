@@ -1,0 +1,32 @@
+IF
+  Global("D0JahShaz","GLOBAL",4)
+  GlobalTimerExpired("D0JahShazTimer","GLOBAL")
+  PartyHasItem("sw1h50")
+  OR(8)
+    AreaCheckObject("AR0020",Player1)
+    AreaCheckObject("AR0300",Player1)
+    AreaCheckObject("AR0400",Player1)
+    AreaCheckObject("AR0500",Player1)
+    AreaCheckObject("AR0700",Player1)
+    AreaCheckObject("AR0800",Player1)
+    AreaCheckObject("AR0900",Player1)
+    AreaCheckObject("AR1000",Player1)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0JahShaz","GLOBAL",10)
+    CreateCreatureObjectOffScreen("d0jahrev",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("d0jahre2",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("d0jahre2",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("d0jahre2",Player1,0,0,0)
+//    ActionOverride("d0jahrev",StartDialogNoSet(Player1))
+END
+
+IF
+  Dead("d0jahrev")
+  !Dead("Jaheira")
+THEN
+  RESPONSE #100
+    SetGlobal("SPRITE_IS_DEADJaheira","GLOBAL",1)
+    Continue()
+END

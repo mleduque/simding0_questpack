@@ -1,0 +1,29 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Then I ask you to turn your will towards getting my fellow knights and I back to where we belong.~
+@1    = ~I don't believe it's possible. This sphere is not capable of further travel. You will have to make do.~
+@2    = ~I don't know. I am not knowledgeable in magic, but there must be some way. If you do not know, at least make some inquiries. Perhaps some of the magic-users in your world might know of a means. I beg of you, this is not our home.~
+@3    = ~I'm looking to send some knights from another plane home through magical means. Since you have a monopoly on magic in the city, I was wondering if you could help?~
+@4    = ~We are not in the habit of wasting time over such issues. You might try speaking with Ribald Barterman. He has various involvements with a number of sanctioned wizards.~
+@5    = ~Trapped Solamnic Knights.
+
+The Solamnic Knights that were trapped in the Planar Sphere and brought to this plane have asked that I try and find a way for them to get home. I will look into it. Perhaps the Cowled Wizards or other magic-users could help me.~
+@6    = ~Solamnic Knights at the Order.
+
+I have spoken with the prelate of the Most Noble Order of the Radiant Heart. He has said that the Solamnic Knights can stay with them as honoured guests. It's a viable alternative if they can't get home another way.~
+@7    = ~Ribald can free the Solamnic Knights.
+
+Ribald in the Adventurers' Mart has the means to send the Solamnic Knights in the Planar Sphere home, but he requires 9000 gold.~
+@8    = ~I have paid for the Knights.
+
+Ribald has taken 9000 gold and has promised to send a mage to the sphere and teleport the knights home. At these prices, she better show up!~
+@9    = ~The Solamnic Knights are free.
+
+Khollynnus Paac arrived at the Planar Sphere as was foretold and the Solamnic Knights have been sent home. It is good to see them get what they wished.~
+@10   = ~Sending the Solamnic Knights home.
+
+I have apprised the Solamnic Knights of the offer that was made by the Prelate of the Most Noble Order of the Radiant Heart. They have decided to accept, and have left for the Order. It is a bittersweet ending, as they would have much rather gone back to their true home.~
+@11   = ~Sending the Solamnic Knights home.
+
+I asked the representative of the Cowled Wizards in the Council building about sending the knights home. While he himself was unwilling to help, he suggested that I speak with Ribald, who has some involvement with high-standing sanctioned wizards.~
+@12   = ~Trapped Solamnic Knights~

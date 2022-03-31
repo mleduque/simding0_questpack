@@ -1,0 +1,9 @@
+IF
+  AreaCheck("AR1602")
+  See([PC])
+  Range(LastSeenBy(Myself),10)
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END

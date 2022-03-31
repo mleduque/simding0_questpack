@@ -1,0 +1,13 @@
+IF
+  GlobalTimerExpired("D0HarperCrierRevenge","GLOBAL")
+  !Global("D0HarperCrierRevenge2","GLOBAL",1)
+  GlobalGT("RandomEncounters","GLOBAL",2)
+  !InParty("Jaheira")
+THEN
+  RESPONSE #100
+    SetGlobal("D0HarperCrierRevenge2","GLOBAL",1)
+    CreateCreature("D0QPHAR1",[222.664],8)
+    CreateCreature("JAHEI4",[261.619],6)
+    CreateCreature("JAHEI4",[268.567],4)
+    CreateCreature("JAHEI3",[301.613],14)
+END

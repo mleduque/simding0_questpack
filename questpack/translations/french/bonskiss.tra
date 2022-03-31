@@ -1,0 +1,84 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Je marche sans repos
+La blanche neige, en spectre,
+Martèle le tombeau
+Où je ne puis plus être.
+Je vis pour mon trépas,
+Chacun de mes soupirs
+Me rappelant, hélas !
+Qu'à nouveau, je respire.~ [SUKISS01]
+@1    = ~Vous me parlez ? Oh, comme mes oreilles détestent le son de la vie miaulant son existence !~ [SUKISS04]
+@2    = ~Oui, je suis heureux de vous rencontrer, moi aussi.~~Oui, je suis heureuse de vous rencontrer, moi aussi.~
+@3    = ~Vous aviez l'air plutôt triste là. Y a-t-il quelque chose que je puisse faire pour vous aider ?~
+@4    = ~D'accord...~
+@5    = ~Vous vous êtes encore une fois immiscé dans mon champ de vision, vivant. Avez-vous décidé de m'embrasser, après tout ?~~Vous vous êtes encore une fois immiscé dans mon champ de vision, vivante. Avez-vous décidé de m'embrasser, après tout ?~[SUKISS02]
+@6    = ~Oui, je vais faire de mon mieux.~
+@7    = ~Lève-toi, salope. Finissons-en avec ça.~
+@8    = ~Non. J'ai décidé de vous tuer, à la place !~
+@9    = ~Pas avec cette bouche. Je ne sais pas où vos lèvres ont traîné.~
+@10   = ~Je suis guérie ! Je suis de nouveau un bel os !~ [SUKISS03]
+@11   = ~Alors... est-ce que ça vous à plu ?~
+@12   = ~Qu'est-ce que c'est ? Vous faites partie des morts-vivants ? ! MEURS, CRÉATURE IMMONDE ! RESSENT MA COLÈRE ! !~
+@13   = ~Chérie, je déteste dire cela, mais c'est fini entre nous. Qu'est-ce que je peux dire ? J'aime mes amantes avec un peu plus de chair sur les os.~
+@14   = ~Qu'est-ce que j'ai fait ?~
+@15   = ~Votre charabia de chansons est un affront à cet endroit. Pourquoi pensez-vous que j'erre parmi les pierres tombales ? J'ai envie du silence pourrissant, du goutte à goutte de la rosée qui s'infiltre dans la terre infestée de vers. Vous m'irritez, vivant.~~Votre charabia de chansons est un affront à cet endroit. Pourquoi pensez-vous que j'erre parmi les pierres tombales ? J'ai envie du silence pourrissant, du goutte à goutte de la rosée qui s'infiltre dans la terre infestée de vers. Vous m'irritez, vivante.~
+@16   = ~Je vous promets que ce sentiment est de plus en plus réciproque.~
+@17   = ~Dans ce cas, je vais y aller, d'accord ?~
+@18   = ~Dieux, femme, qui a tiré sur votre chaîne ? J'offrais juste de l'aide !~
+@19   = ~De l'aide ? De l'aide d'un autre sac de chair florissant ? Vous me dégoûtez, éleveur.~
+@20   = ~Dégoût ? Je vous promets que ce sentiment est de plus en plus réciproque.~
+@21   = ~Hé, je ne sais pas ce que vous avez entendu, mais une chose est sûre : je n'élève rien.~
+@22   = ~C'est l'hôpital qui se moque de la charité. Si je suis un sac de chair, vous êtes un sac de... enfin, quelque chose.~
+@23   = ~Votre stupeur devant l'imperfection agresse mes yeux. Oh, que ceux qui marchent avec le sang chaud s'étouffent avec leur langue !~
+@24   = ~Whoa, madame. Vous êtes folle !~
+@25   = ~Puisque vous le prenez comme ça, je vais m'en aller, d'accord ?~
+@26   = ~C'est une réaction assez forte si l'on considère que j'ai à peine prononcé plus de deux syllabes.~
+@27   = ~Ah, il y a donc des os dans la colonne vertébrale du bavard. Cela me plaît.~~Ah, il y a donc des os dans la colonne vertébrale de la bavarde. Cela me plaît.~
+@28   = ~Pas si vite. Même si cela me répugne, j'ai besoin de votre chair vivante pour engager mon sauvetage.~
+@29   = ~De tous les mots doux que j'ai entendus à Amn, vous venez de débiter le pire, madame.~
+@30   = ~(toux) Répétez ça ?~
+@31   = ~Mais oui, bien sûr. Je vais tout essayer au moins une fois.~
+@32   = ~Je ne parle pas de l'état de la vie, mais de la capacité de la vie. Elle naît en vous lorsque nous gloussons nos mots. La vie... la mort... Je la sens sur vous, le cycle se répétant dans votre chair et vos os... dans MA chair et mes os. Si seulement je pouvais retourner dans la tombe. Vraiment retourner !~
+@33   = ~Ma malédiction. Ma malédiction est de marcher sur la terre dans cet abominable boîtier de peau lisse et d'excroissances molles. Je suis vivante ! Si vivante !~
+@34   = ~Ma folie vient de ma malédiction. Ma malédiction est de marcher sur la terre dans cet abominable boîtier de peau lisse et d'excroissances molles. Je suis vivante ! Si vivante !~
+@35   = ~Et chaque parole fouette mes oreilles avec du poison !~
+@36   = ~Je parie que vous vous amusez beaucoup dans les festivals.~
+@37   = ~Très bien, j'ai compris ! Vous êtes pleine de dégoût !~
+@38   = ~Je suis sur le point de vous écorcher avec autre chose.~
+@39   = ~Votre matière cérébrale véreuse ne peut pas comprendre les besoins au-delà de vos désirs sordides ? Je vous crache dessus !~
+@40   = ~Mais vous pouvez encore m'être utile, vivant.~~Mais vous pouvez encore m'être utile, vivante.~
+@41   = ~J'ai été guérie, transformée, contre ma volonté, en cette parodie de corps par un clerc moins sensé qu'un lapin qui saute dans une fosse à loups.~
+@42   = ~Bien que cette forme soit insipide et fragile, le clerc était un imbécile, pensant que je serais submergée de gratitude pour son acte béni. Comme si je devais être contente ! Il aurait mieux valu qu'il me détruise ! C'était pourtant sa vision de la guérison.~
+@43   = ~Mais j'ai eu ma revanche. Il ne fera plus cette erreur, pas sans yeux ni sans langue. Il a fait ses progrès, et par conséquent j'ai fait les miens, en arrachant la chair frêle de ses os, pour lui accorder un visage aussi reconnaissable que le mien.~
+@44   = ~Vous voulez dire que vous ne l'avez pas tué ?~
+@45   = ~J'avais raison, vous êtes une folle ! Une meurtrière !~
+@46   = ~Alors, qu'attendez-vous de moi ?~
+@47   = ~Et le récompenser par la mort ? ! JAMAIS !~
+@48   = ~Imbécile ! Votre ignorance est accablante !~
+@49   = ~Mais tuez-moi ! Dégainez votre épée et sentez mon baiser de gratitude !~
+@50   = ~Simple. J'ai cherché la réponse parmi les tomes des vivants. C'est un acte de générosité putride qui m'a transformé, j'ai donc besoin d'un acte de symbolisme égal pour me libérer.~
+@51   = ~Tout ce dont j'ai besoin, c'est d'un baiser pour mettre fin à ma malédiction.~
+@52   = ~Sur les lèvres ?~
+@53   = ~Mais nous venons juste de se rencontrer !~
+@54   = ~Très bien, mais juste un rapide.~
+@55   = ~D'accord, mais sans la langue. Je ne suis pas si aventureux.~~D'accord, mais sans la langue. Je ne suis pas si aventureuse.~
+@56   = ~Pas question !~
+@57   = ~À bien y réfléchir, vous êtes une personne vile à tous égards. Je devrais plutôt vous tuer.~
+@58   = ~Désolé, mais je vois en quelque sorte quelqu'un...~~Désolée, mais je vois en quelque sorte quelqu'un...~
+@59   = ~Oui.~
+@60   = ~Désolé, mais je vois en quelque sorte quelqu'un...~~Désolée, mais je vois en quelque sorte quelqu'un...~
+@61   = ~Vous gaspillez votre souffle pathétique avec ce bavardage, vivant. Allez-vous m'embrasser ou non ?~~Vous gaspillez votre souffle pathétique avec ce bavardage, vivante. Allez-vous m'embrasser ou non ?~
+@62   = ~Oh, les premiers mots bénis que j'ai entendus des lèvres d'ordure ! Viens, embrasse-moi. Laisse tes lèvres être la mort de ma douleur !~
+@63   = ~Fermez les yeux. C'est difficile de garder la motivation pendant que vous me fixez du regard.~
+@64   = ~Juste une seconde. Je dois mâcher une feuille de menthe. Comme le dit Volo, "Les baisers puants ne brisent pas les malédictions puantes."~
+@65   = ~Je ne peux pas vous embrasser si vous n'arrêtez pas de parler.~
+@66   = ~Alors, allez vous en, moulin à paroles ! Restez hors de ma vue ! Je ne veux pas de miaulement, seulement un baiser !~
+@67   = ~C'est fait. Nous allons maintenant commencer les embrassades.~
+@68   = ~Alors Volo est un imbécile qui devrait avoir ses extrémités transpercées sur des pieux et être enflammées ! Embrassez-moi !~
+@69   = ~Je m'excuse d'avoir fait affront à vos orifices auditifs avec mon bavardage putréfiant.~
+@70   = ~La perfection. Je suis comme je devrais être - un cadavre pourri marchant parmi vos fermes de chair vivante et immonde. Vous avez ma gratitude, vivant.~~La perfection. Je suis comme je devrais être - un cadavre pourri marchant parmi vos fermes de chair vivante et immonde. Vous avez ma gratitude, vivante.~
+@71   = ~Les dieux m'en sont témoins, je ne vivrai plus jamais !~
+@72   = ~NOOOON !!! PAS QUAND JE VIENS DE RÉCUPÉRER MA CARCASSE POURRIE !~
+@73   = ~Votre pathétique tentative de légèreté pue l'insignifiance. Je suis comme je devrais être - un cadavre pourri marchant parmi vos fermes de chair vivante et immonde. Vous avez ma gratitude, vivant.~~Votre pathétique tentative de légèreté pue l'insignifiance. Je suis comme je devrais être - un cadavre pourri marchant parmi vos fermes de chair vivante et immonde. Vous avez ma gratitude, vivante.~
+@74   = ~Vous m'avez libéré, <RACE>. Je suis comme je devrais être - un cadavre pourri marchant parmi vos fermes de chair vivante et immonde. Vous avez ma gratitude, vivant.~~Vous m'avez libéré, <RACE>. Je suis comme je devrais être - un cadavre pourri marchant parmi vos fermes de chair vivante et immonde. Vous avez ma gratitude, vivante.~

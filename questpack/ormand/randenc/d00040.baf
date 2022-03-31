@@ -1,0 +1,25 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		CreateCreature("d0qpore1",[777.346],0)
+		CreateCreature("d0qpore1",[528.295],0)
+		CreateCreature("d0qpore1",[279.700],0)
+		CreateCreature("d0qpore1",[299.804],0)
+		CreateCreature("d0qpore1",[795.855],0)
+		CreateCreature("d0qpore1",[994.674],0)
+
+		CreateCreature("d0qpore2",[290.340],0)
+//		CreateCreature("d0qpore2",[433.291],0)
+		CreateCreature("d0qpore2",[231.549],0)
+//		CreateCreature("d0qpore2",[555.896],0)
+//		CreateCreature("d0qpore2",[919.591],0)
+		CreateCreature("d0qpore2",[793.810],0)
+
+		CreateCreature("d0qpore3",[887.715],0)
+		CreateCreature("d0qpore3",[643.236],0)
+
+		CreateCreature("d0qpore4",[309.773],0)
+
+		CreateCreature("d0qpore0",[897.787],6)
+END

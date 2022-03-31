@@ -1,0 +1,8 @@
+IF
+  !Global("D0SpawnHorrors","AR1514",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SpawnHorrors","AR1514",1)
+    CreateCreature("d0batho",[779.599],5)
+    CreateCreature("d0batho",[559.746],10)
+END

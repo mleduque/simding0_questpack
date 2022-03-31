@@ -1,0 +1,7 @@
+IF
+  Global("D0SpawnBaisera","AR0406",0)
+THEN
+  RESPONSE #100
+    CreateCreature("Baisera",[1790.828],2)
+    SetGlobal("D0SpawnBaisera","AR0406",1)
+END

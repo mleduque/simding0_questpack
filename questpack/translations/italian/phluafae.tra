@@ -1,0 +1,159 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Ti avevo avvertito <PRO_GIRLBOY>. Che idiota che sei, non hai consegnato le ghiande alle Colline di Windspear. Ora saranno mie!~
+@1    = ~Mi hai fatto veramente incazzare. Ti spremerò i bulbi oculari come degli acini d'uva!~ [SUDRY01]
+@2    = ~Ti avevo avvertito <PRO_GIRLBOY>. Qualcuno con una cervello pensante avrebbe dovuto lasciarmi in pace piuttosto che essere impertinente. Ora il tempo è giunto per il tuo giusto castigo.~
+@3    = ~Ho, eccoti, mortale! Un affascinante <PRO_GIRLBOY> che passeggia per il bosco... che ti succede?~ [SUDRY02]
+@4    = ~Sto svolgendo una missione urgente! Via dalla mia strada!~
+@5    = ~Sei tu che parli. C'è qualcosa che vuoi da me?~
+@6    = ~Uh. Tu vagabondi per il bosco...? Cosa ci fai nelle mie terre?~
+@7    = ~Shh... Ci potrebbero essere dei troll qua in giro.~
+@8    = ~Finalmente, <PRO_GIRLBOY>! Accolgo con gioia il tuo ritorno!~
+@9    = ~Solo che... posso ancora sentire mia sorella, Vaelasa, nel vento, ancora viva e perfetta, come sempre!~
+@10   = ~Andiamo... tu mi prendi in giro! Vattene finché non avrai compiuto quello che mi hai promesso!~
+@11   = ~Fantastico! Riesco a percepire che le ultime lacrime di mia sorella Vaelasa morente, hanno bagnato la terra! Oh, mi hai gratificato, tu affascinante furfante!~
+@12   = ~Ecco il tuo oro, dolce essere vizioso, ben meritato! Addio. Ma possiamo incontrarci nuovamente per celebrare le nostre vittorie. Il vero potere sarà tuo un giorno, essere empio, questo te lo posso dire.~
+@13   = ~Fino ad allora, ciao ciao!~
+@14   = ~Oh, ma perché correre, tesoro, quando potremmo avere uno splendido intermezzo, in compagnia? Una abbuffata di divertimento.~
+@15   = ~Uhh... cosa intendi?~
+@16   = ~Compagnia, eh? Mi piace il suono di quella parola.~
+@17   = ~Non hai nulla... di spiacevole in mente, vero?~
+@18   = ~Io non desidero più... compagnia. Togliti di mezzo!~
+@19   = ~Oh, tu sei quello molto intelligente, che balza diretto alla conclusione del discorso, senza spreco di parole e parole~
+@20   = ~Il punto. Potresti per favore giungere subito al punto?~
+@21   = ~Si, solo il genio della festa, ora, arriviamo al punto... e non pensare di avere ancora molto tempo a disposizione.~
+@22   = ~Chiacchiere, chiacchiere, chiacchiere. Che noia.~
+@23   = ~Wow. Hai un buon odore.~
+@24   = ~Oooh! Davvero? Che fortuna, incontrare un nobile eroe come te! Sì, certo.~
+@25   = ~Sì, questa è una vera fortuna per te.~
+@26   = ~Che cosa ti fa pensare che io sia un nobile eroe, piuttosto che un pazzo pericoloso?~
+@27   = ~Ho la sensazione che tu non abbia avviato questa conversazione per discutere dei miei titoli. Hai bisogno di qualcosa da me? In caso affermativo, ti pregherei di dirmi di cosa si tratta.~
+@28   = ~Oooh! Davvero? Questo è così spaventoso! Allora è una vera fortuna incontrare un grande eroe come te! Sì, certo.~ [SUDRY04]
+@29   = ~Tu pensi che i troll siano spaventosi? Dilettante.~
+@30   = ~Cosa ti fa pensare che io sia meno pericoloso dei troll?~
+@31   = ~Ho la sensazione che tu non abbia avviato questa conversazione per il timore dei troll. Hai bisogno di qualcosa da me? In caso affermativo, ti pregherei di dirmi di cosa si tratta.~
+@32   = ~Intendo dire che sento che tu potresti avere alcune cosucce sulla tua persona che mi potrebbero essere d'aiuto.~
+@33   = ~Sulla mia... persona? Non hai nulla... di spiacevole in mente, vero?~
+@34   = ~Guarda che, quello che si trova sulla mia persona, rimane sulla mia persona. Hai capito?~
+@35   = ~Sulla mia persona? Rrrrroowrr.~
+@36   = ~A giudicare dal tuo sguardo trasudante lussuria, posso dire che hai senz'altro frainteso le mie intenzioni.~
+@37   = ~Bene. Non sono interessato a qualcosa di... spiacevole. Lo dico in tutta onestà ~
+@38   = ~Beh, questo non è affatto divertente!~
+@39   = ~Infine dimmi, quali SONO le tue intenzioni?~
+@40   = ~Hai frainteso le MIE intenzioni. I miei occhi erano soltanto vitrei per la devastante noia che mi ha assalito nell'attesa che tu giungessi finalmente al punto del discorso.~
+@41   = ~Dal terrore atavico che si percepisce nel tuo sguardo, posso dirti che hai frainteso le mie intenzioni.~
+@42   = ~Ach! In realtà. Segretamente io... speravo in qualcosa di... spiacevole.~
+@43   = ~Hai frainteso le MIE intenzioni. Il mio sguardo era colmo di confusione, e null'altro, mentre ero nell'attesa che tu mi spiegassi il tuo piano.~
+@44   = ~Che <PRO_GIRLBOY> tenace! Uffa! Ora ti prego, tesoro, silenzio! Ed ascoltami:~ [SUDRY05]
+@45   = ~Spero che la mia offerta possa interessarti e compiacerti. Sì tratta di una richiesta molto semplice e un'opportunità per te per dimostrare ancora una volta la tua gentilezza.~ [SUDRY12]
+@46   = ~Stai portando un fascio di ghiande originarie delle Colline di Windspear al loro luogo nativo. Appartengono alle mie sorelle, e come tali, mi sono molto care~ [SUDRY11]
+@47   = ~Vorresti, potresti, separarti da loro? Restituirle a me? Darò loro la cura preziosa che meritano!~ [SUDRY06]
+@48   = ~Queste ghiande? Non lo so. Ho promesso alle driadi di riportarle alle colline di Windspear.~
+@49   = ~Mi è stato chiesto di riportarle alle Colline di Windspear, non di farle maneggiare da chiunque me lo chieda.~
+@50   = ~Certamente. Eccole.~
+@51   = ~Naturalmente se lo desideri, ma potrebbe esserci una qualche ricompensa per la mia gentilezza?~
+@52   = ~Ghiande? Avevo dimenticato di averle con me. Tuttavia, mi sembra strano che tu appaia dal nulla chiedendomi di loro, anche se sei una Driade. Le tue sorelle, la nel dungeons, mi hanno dato precise istruzioni in merito, sai....~
+@53   = ~Queste ghiande? Ehi, improvvisamente mi sento un po' affamato.(munch) ~
+@54   = ~No, una promessa è una promessa. Ho giurato di trasportare ed accudire queste ghiande fino alle Colline di Windspear ed è quello che farò. Senza eccezioni.~
+@55   = ~Come desideri, <PRO_GIRLBOY>.~
+@56   = ~Oh.. forse ho parlato troppo presto. Per favore, <PRO_GIRLBOY>. Calmati e raccogli quel pizzico di pazienza necessario ad ascoltare le mie parole:~
+@57   = ~Le driadi odorano di fiori e nebbia e della promessa del piacere. Inebriante, vero? Ho una proposta da condividere con te, <PRO_GIRLBOY>, tesoruccio caro...~
+@58   = ~Fortuna o no, tu ascolterai...~
+@59   = ~Miei dèi! Tu non sei un cavaliere duro e possente! Finiscila con il tuo pavoneggiamento per un momento, <PRO_GIRLBOY> e ascoltami.~ [SUDRY07]
+@60   = ~Il pericolo è irrilevante nel nostro affare. Ho una proposta per te. Piuttosto innocua, come udirai...~
+@61   = ~Ma certo, ho bisogno di qualcosa! Vedrò di fartelo capire!~
+@62   = ~Oh, <PRO_GIRLBOY>, hai frainteso le mie intenzioni!~
+@63   = ~Intendo dire che ho una richiesta facile facile per te.~
+@64   = ~Ma io sono una Driade! Sicuramente puoi affidare a me le ghiande delle mie sorelle?~
+@65   = ~Oh, molto bene. Le Colline di Windspear sono molto lontane da qui. Ecco, tieni.~
+@66   = ~Suppongo di potere farlo... se c'è una ricompensa per la mia gentilezza.~
+@67   = ~Non so. C'è qualcosa che sembra un po' strano.~
+@68   = ~A-ha! Ancora una volta le mie smorfiose sorelle sono alla mia mercé! È una buona cosa che tu non sia così saldo nei tuoi propositi, altrimenti non avrei potuto approfittare della tua ... credulità. Tra l'altro avrei potuto diventare molto... fastidiosa.~
+@69   = ~Ora, devo trovare un altro cliente alla ricerca disperata di un harem di driadi. Penso che proverò con Calimshan.~
+@70   = ~Naturalmente. Io non sono un essere irragionevole. Potrebbe una pioggia di pezzi d'oro rilassare il tuo atteggiamento?~ [SUDRY10]
+@71   = ~Che il rilassamento abbia inizio.~
+@72   = ~No, qualcosa in questo sembra un po' troppo strano. I tuoi pensieri non sono limpidi, ninfa.~
+@73   = ~Una promessa è una promessa. Ho giurato di trasportare queste ghiande alle Colline di Windspear ed è quello che farò. Senza ripensamenti.~
+@74   = ~Tu... LE... HAI MANGIATE?!?!~
+@75   = ~Che demente! E che insperata fortuna! Vero è che sarebbe stato delizioso vendere come concubine le mie smorfiose sorelle ancora una volta, ma almeno adesso che tu hai distrutto le ghiande, nessuno potrà mai incolparmi di nulla. Ora dedicati con meticolosità alla masticazione, affascinante <PRO_GIRLBOY>. Tah!~
+@76   = ~Ahh, ora tu hai il tuo oro, e io ho le mie ghiande. Non è un commercio equo e solidale? ECCELLENTE!~ [SUDRY08]
+@77   = ~Da parte mia, le mie smorfiose sorelle sono alla mia mercé una volta di più. È una buona cosa che tu non sia stato così saldo nei tuoi propositi, altrimenti tu non avresti avuto il tuo oro ed io non avrei approfittato della tua avidità. Tra l'altro avrei potuto diventare molto... fastidiosa.~
+@78   = ~Ora, bisogna trovare un altro cliente disperato per un harem di driadi. Penso che proverò con Calimshan.~
+@79   = ~Sei perspicace. Non desidero parlare in modo duro, ma è necessario darti un avviso.~
+@80   = ~Le mie sorelle delle colline non sono poi così sagge, come dovrebbero essere. Vaelasa è stata abbastanza stupida da perdere le tre piccole nell'harem di quel pazzo di Irenicus. Cosa ti fa pensare che potrebbe proteggerle meglio in un secondo tempo? Per favore, affida le ghiande alle mie cure. Mi assicurerò che le mie sorelle ottengano quello che si meritano.~
+@81   = ~Se la metti in questo modo, sembra la cosa giusta da fare.~
+@82   = ~Hai un'argomentazione persuasiva, e sono d'accordo, ma non c'è una qualche ricompensa per la mia accondiscendenza?~
+@83   = ~Aspetta un secondo. Come fai a sapere di Irenicus? Ora vedo la verità! Eri coinvolta nell'asservimento delle tue sorelle, vero?~
+@84   = ~Hmm. Vedo dei piccoli serpentelli che guizzano nel tuo sguardo, dolce <PRO_RACE>. Forse ho consegnato le mie sorelle a Irenicus per ottenere un pochino di potere in più, ma quelle sciocche smorfiose se lo meritavano. Che ci importa del loro destino? Non c'è bisogno di ragionare sulla mia... cattiveria! Perché non mi passi le ghiande e prendi una bella somma di denaro in cambio? Tutti saranno soddisfatti!~
+@85   = ~No! Malvagia traditrice del tuo stesso sangue! Sarai punita!~
+@86   = ~Il denaro è bello e divertente, ma per quanto riguarda la malizia? Uno spietato tradimento che decade nel commercio sembra così banale.~
+@87   = ~Mi sembra giusto.~
+@88   = ~Oh tesoro, le cose non sono andate affatto come avevo pianificato. EEEK!~ [SUDRY09]
+@89   = ~Apprezzo che tu sia così ragionevole in questa materia. Per un attimo, ho pensato che potessi essere coinvolto da un raptus di legalità. Sarebbe stato molto deludente.~
+@90   = ~Malizia? Contro le mie sorelle? Quali parole deliziose utilizzi, <PRO_GIRLBOY>!~
+@91   = ~L'ottimismo e la gentilezza di Vaelasa meritano davvero di essere cancellati con un colpo di realismo. È ora che lei e le altre mie sorelle imparino che la vera bellezza del multiverso proviene dal potere!~
+@92   = ~Se tu fossi interessato ad aiutarmi con un trucchetto, noi potremo adescare le mie sorelle e condannarle ad una grande sofferenza.~
+@93   = ~Sì, se c'è dell'inganno, gradirei molto approfittare dell'opportunità. ~
+@94   = ~Ripensandoci, non posso essere annoiato dalle tue meschine rivalità. Dammi l'oro per le ghiande e facci quello che vuoi.~
+@95   = ~Realisticamente, fammi giungere al sodo. Posso farti soffrire, prendere il tuo oro quindi procedere verso le tue sorelle! Muaha!~
+@96   = ~Ora che ci penso, perché dovrei aiutarti? Devo portare queste ghiande alle Colline di Windspear secondo il piano originale.~
+@97   = ~Oh, ma sarà mai possibile? Saresti ricompensato per il tuo aiuto e la tua gentilezza, ma no, tu devi mantenere la tua ridicola parola. Guastafeste!~
+@98   = ~Oh, bene. Per te è veramente un peccato. Soffrirai per il tuo errore prima o poi.~
+@99   = ~Speriamo presto.~
+@100  = ~Ahh, ora tu hai il tuo oro, e io ho le mie ghiande. Ti sei perso un bell'intrigo coinvolgente, ma sarai soddisfatto per il tuo meraviglioso equo commercio.~
+@101  = ~Da parte mia, le mie smorfiose sorelle sono alla mia mercé una volta di più. È una buona cosa che tu non sia stato così saldo nei tuoi propositi, altrimenti tu non avresti avuto il tuo oro ed io non avrei approfittato della tua avidità.~
+@102  = ~Scambierai le ghiande delle mie sorelle per queste copie. È necessario portarle a Vaelasa alle Colline di Windspear e impiegare tutta la tua astuzia per convincerla ad accettarle come vere.~
+@103  = ~All'interno c'è una trappola, vedrai. Quando verranno piantate nel boschetto delle mie sorelle, germineranno una sorpresa... sgradevole e irreversibile!~
+@104  = ~Quando sarà morta, potrai saccheggiare il corpo di Vaelasa come pagamento aggiuntivo, quindi tornare da me qui. Devo riempirti di oro non appena avrò il conforto del pensiero delle mie sorelle ridotte in cenere.~
+@105  = ~Mi piace questo piano. Abbiamo un accordo.~
+@106  = ~Mi piace come suona il tuo piano, ma ci vedo qualche serio pericolo. Esigo il denaro in anticipo per il mio disturbo.~
+@107  = ~Ripensandoci, non mi va di essere annoiato dalle tue meschine rivalità. Dammi solo l'oro per le ghiande e non mi rompere più con le tue storie.~
+@108  = ~Ora che ci penso, perché dovrei aiutarti? Io devo piantare queste ghiande nelle Colline di Windspear secondo il piano originale. Primo arrivo e prima finisco.~
+@109  = ~Sapessi che piacere mi fai, affascinante <PRO_GIRLBOY>! Qui ci sono le ghiande false. Buona fortuna, mia affascinante persona ingannatrice!~
+@110  = ~Io non sono un'entità irragionevole. Un giusto ammontare di denaro può siglare il nostro accordo. Trecento monete d'oro, possono andare bene?~
+@111  = ~Prendi. Ora tu sei diventato più ricco grazie al tuo impegno. Adesso vai e continua a fare del male, affascinante <PRO_GIRLBOY>!~
+@112  = ~Straniero? Tu non sei uno dei miei congiunti! Perché sei qui?~
+@113  = ~Mi dispiace disturbarti. Me ne andrò al più presto.~
+@114  = ~Mi scuso per l'intrusione nel tuo bel santuario, ma ho portato alcune ghiande per conto delle tue sorelle. Sono state intrappolate da un mago malvagio ormai da molti anni. Fortunatamente ero in grado di dare una mano.~
+@115  = ~Mi scuso per il disturbo, ma ho portato alcune ghiande per conto delle tue sorelle. Sono state intrappolate da un mago malvagio ormai da molti anni, ma per fortuna sono riuscito a dare loro un aiuto.~
+@116  = ~Scusa, scusa. Ehm... detesto disturbarti, ma ho alcune ghiande che ho ricevuto da alcune driadi incontrate in un dungeon. Sono state intrappolate da un mago malvagio orma da molti anni. Che misera storia, vero? Ragazzi, non mi sembravano affatto fortunate ed io ho aiutato!~
+@117  = ~Vai, dunque, e lascia il cerchio. Questo posto non è creato per chi perde tempo inutilmente. Non saresti dovuto venire qui senza invito. Sparisci, mortale!~
+@118  = ~Molto galante e gentile ad aiutare le mie sorelle. Bisogna ripiantare gli alberi di Ulene, Cania ed Elyme per poterle liberare. Dammi le ghiande, <BROTHERSISTER>.~
+@119  = ~Le tue parole che vibrano con la forza impietosa della verità riempiono il mio cuore di apprensione. Povere, povere anime mie, appassire così.~
+@120  = ~Ti ringrazio, spirito gentile, per il nobile gesto!~
+@121  = ~Aspetta. Succede qualcosa di strano.~
+@122  = ~Queste ghiande non cantano con la dolcezza pura delle mie sorelle. Una... una macchia fallace emana da loro. Qualcosa di oscuro e crudele.~
+@123  = ~Cosa sono queste? Ma.. potrebbero essere i semi di Cania, Elyme e Ulene?~
+@124  = ~Ma certo che lo sono. Non potrei mentirti.~
+@125  = ~Ti assicuro che lo sono. Sicuramente avrai capito come le tue sorelle abbiano sofferto nelle mani del loro vile rapitore. Tale esperienza è in grado di oscurare anche lo spirito più luminoso.~
+@126  = ~Cacchio! Non posso assolutamente più continuare con questa squallida messinscena di gentilezza! Phluafae, l'altra tua sorella, ha le ghiande. Lei le ha vendute come concubine ed ora vuole la tua testa. Tienila ferma, mentre provvedo a staccartela, eh?~
+@127  = ~Ingannatore maledetto! Non basta che le mie sorelle abbiano sofferto per mano del mago che le ha imprigionate... ma tu tenti anche di ingannarmi con queste patetiche menzogne?!~
+@128  = ~Non so quello che è successo alle mie sorelle, ma queste... queste non sono le loro ghiande. Qualunque sia il tuo intento crudele, mortale, hai fallito miseramente.~
+@129  = ~Sorelle mie, Devo vendicare la loro perdita con tua sconfitta! Per Cania, Elyme e Ulene tu morirai, <RACE>!~
+@130  = ~Demonio! Per poco non mi ingannavi!~
+@131  = ~E pensare che è stata proprio la nostra corrotta sorella a tradirci in modo così crudele! È un fardello troppo orribile da sopportare, ma la resa dei conti per Phluafae sarà rapida e severa, lo giuro.~
+@132  = ~Ma innanzitutto, devi essere punito TU! Per Cania, Elyme e Ulene tu morirai, <RACE>!~
+@133  = ~Avrai capito come ora, sia le driadi che la loro foresta, ne dovranno soffrire, <CHARNAME>. La prossima volta, pondera le cose un po' più attentamente.~
+@134  = ~Cosa?!? Hai appena dilapidato un magnifico harem di driadi? GAH! (Qualcuno vorrebbe, per favore, iniziare a lasciare le decisioni veramente importanti a me?)~
+@135  = ~Avrai capito come ora, sia le driadi che la loro foresta, ne dovranno soffrire, <CHARNAME>. Chi può sapere che cosa può succedere mangiando delle ghiande. La prossima volta, pondera le cose un po' più attentamente.~
+@136  = ~Cosa?!? Hai appena MANGIATO un magnifico harem di driadi? GAH! (Qualcuno vorrebbe, per favore, iniziare a lasciare le decisioni veramente importanti a me?)~
+@137  = ~Aiutare le driadi prigioniere di Irenicus.
+
+Dopo avere parlato con una driade nei pressi del Castello De'Arnise, ho accettato di tradire le driadi tenute prigioniere da Irenicus dando delle ghiande false alla loro sorella Vaelasa che si trova nelle Colline di Windspear.~
+@138  = ~Aiutare le driadi prigioniere di Irenicus.
+
+Sono riuscito ad ingannare Vaelasa dandole le ghiande false e, di conseguenza, è morta. Phluafae dovrebbe essere soddisfatta di questo risultato.~
+@139  = ~Aiutare le driadi prigioniere di Irenicus.
+
+Vaelasa non ha creduto che le ghiande false provenissero dalle sue sorelle e quindi mi ha attaccato. Phluafae è ancora più contenta di come sono andate le cose.~
+@140  = ~Aiutare le driadi prigioniere di Irenicus.
+
+Ho rotto il patto con le driadi tenute prigioniere da Irenicus, dando delle ghiande false avute da una delle loro sorelle a Vaelasa che si trova nelle Colline Windspear. Valeasa è morta, ed io sono stato ben ricompensato per i miei sforzi.~
+@141  = ~Aiutare le driadi prigioniere di Irenicus.
+
+Ho rotto il patto con le driadi tenute prigioniere da Irenicus, ed ho dato le loro ghiande ad una altra driade che ho incontrato nei pressi del Maniero De'Arnise. Mi ha parlato di un harem di driadi, quindi sembra che io abbia fatto loro un bello...scherzetto.~
+@142  = ~Aiutare le driadi prigioniere di Irenicus.
+
+Ho rotto il patto con le driadi tenute prigioniere da Irenicus e ho scelto di erh... uhm... mangiare le ghiande. La driade che mi si è avvicinata nei pressi del Castello De'Arnise è rimasta molto sorpresa di ciò.~
+
+@999  = ~Se le driadi ti hanno chiesto di portarle a Windspear, è questo quello che volevano, <CHARNAME>. È una regola di base di trasporto, mai lasciare nulla per la strada tra il punto A e il punto B.~

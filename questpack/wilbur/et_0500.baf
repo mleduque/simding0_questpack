@@ -1,0 +1,49 @@
+IF
+  Global("D0Wilbur","GLOBAL",1)
+  GlobalTimerExpired("D0WilburTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffScreen("d0qpwiwi",Player1,0,0,0)
+    SetGlobal("D0Wilbur","GLOBAL",2)
+END
+
+IF
+  Global("D0Wilbur","GLOBAL",3)
+  PartyHasItem("d0qpwisw")
+THEN
+  RESPONSE #100
+    SetGlobal("D0Wilbur","GLOBAL",4)
+END
+
+IF
+  Global("D0Wilbur","GLOBAL",4)
+  GlobalTimerExpired("fl#qpAbraxxiTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    CreateCreatureDoor("d0qpwigi",[168.3287],0)
+    SetGlobal("D0Wilbur","GLOBAL",5)
+END
+
+IF
+  Global("D0Wilbur","GLOBAL",4)
+  !GlobalTimerNotExpired("fl#qpAbraxxiTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("fl#qpAbraxxiTimer","GLOBAL",30)
+END
+
+IF
+  Global("D0Wilbur","GLOBAL",6)
+  GlobalTimerExpired("D0WilburTimer","GLOBAL")
+  !Dead("d0qpwima")
+  Exists("d0qpwima")
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("d0qpwii1","d0qpwima",[-50.-50])
+    CreateCreatureObjectOffset("d0qpwii2","d0qpwima",[50.50])
+    CreateCreatureObjectOffset("d0qpwii2","d0qpwima",[50.-50])
+//    CreateCreatureObjectDoor("d0qpwic1","d0qpwima",0,0,0)
+//    CreateCreatureObjectDoor("d0qpwic2","d0qpwima",0,0,0)
+//    CreateCreatureObjectDoor("d0qpwic2","d0qpwima",0,0,0)
+    SetGlobal("D0Wilbur","GLOBAL",7)
+END

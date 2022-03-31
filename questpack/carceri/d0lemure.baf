@@ -1,0 +1,36 @@
+IF
+	Heard([0.0.DEMONIC.0.0.0.LAWFUL_EVIL],111)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	OR(4)
+		See([ANYONE])
+		See([0.0.DEMONIC.0.0.0.CHAOTIC_EVIL])
+		See([0.0.0.TANARI.0.0.CHAOTIC_EVIL])
+		See([0.0.0.0.0.SUMMONED_DEMON.CHAOTIC_EVIL])
+	OR(2)
+		!Alignment(LastSeenBy(Myself),LAWFUL_EVIL)
+		!Race(LastSeenBy(Myself),DEMONIC)
+	!Name("ICSALFIR",LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END

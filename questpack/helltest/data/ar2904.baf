@@ -1,0 +1,263 @@
+IF
+  OnCreation()
+  Global("DisableExit","AR2904",0)
+THEN
+  RESPONSE #100
+    SetGlobal("DisableExit","AR2904",1)
+    TriggerActivation("Tran2900",FALSE)
+END
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+IF
+  OpenState("DOOR01",TRUE)
+  Global("OpenedDoor1","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor1","AR2904",1)
+    CreateVisualEffectObject("SPFLESHS",Player1)
+    DisplayString(Player1,306) // You have lost 2 hit points from your maximum hit point level.
+    ReallyForceSpell(Player1,HELL_LOSE_HP)
+END
+
+IF
+  OpenState("DOOR02",TRUE)
+  Global("OpenedDoor2","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  NumInPartyGT(1)
+  InPartyAllowDead(Player2)
+  InParty(Player2)
+  Global("C7SelfishFight","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor2","AR2904",1)
+    MoveViewPoint([502.1313],INSTANT)
+    Wait(1)
+    ReallyForceSpell(Player2,HELL_DAMAGE_HALF)
+    Wait(1)
+    MoveViewObject(Player1,INSTANT)
+END
+
+IF
+  OpenState("DOOR02",TRUE)
+  Global("OpenedDoor2","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  NumInPartyGT(1)
+  InPartyAllowDead(Player2)
+  InParty(Player2)
+  Global("C7SelfishFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor2","AR2904",1)
+    ReallyForceSpell(Player2,HELL_DAMAGE_HALF)
+END
+
+IF
+  OpenState("DOOR02",TRUE)
+  Global("OpenedDoor2","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  Global("C7SelfishFight","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor2","AR2904",1)
+    MoveViewPoint([502.1313],INSTANT)
+    Wait(1)
+    ReallyForceSpell("hellvict",HELL_DAMAGE_HALF)
+    Wait(1)
+    MoveViewObject(Player1,INSTANT)
+END
+
+IF
+  OpenState("DOOR02",TRUE)
+  Global("OpenedDoor2","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  Global("C7SelfishFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor2","AR2904",1)
+    ReallyForceSpell("hellvict",HELL_DAMAGE_HALF)
+END
+
+IF
+  OpenState("DOOR03",TRUE)
+  Global("OpenedDoor1","AR2904",1)
+  Global("OpenedDoor3","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor3","AR2904",1)
+    CreateVisualEffectObject("SPFLESHS",Player1)
+    DisplayString(Player1,307) // You have lost one dexterity point.
+    ReallyForceSpell(Player1,HELL_LOSE_DEX)
+END
+
+IF
+  OpenState("DOOR04",TRUE)
+  Global("OpenedDoor2","AR2904",1)
+  Global("OpenedDoor4","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  NumInPartyGT(1)
+  InPartyAllowDead(Player2)
+  InParty(Player2)
+  Global("C7SelfishFight","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor4","AR2904",1)
+    MoveViewPoint([502.1313],INSTANT)
+    Wait(1)
+    ReallyForceSpell(Player2,HELL_DAMAGE_HALF)
+    Wait(1)
+    MoveViewObject(Player1,INSTANT)
+END
+
+IF
+  OpenState("DOOR04",TRUE)
+  Global("OpenedDoor2","AR2904",1)
+  Global("OpenedDoor4","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  NumInPartyGT(1)
+  InPartyAllowDead(Player2)
+  InParty(Player2)
+  Global("C7SelfishFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor4","AR2904",1)
+    ReallyForceSpell(Player2,HELL_DAMAGE_HALF)
+END
+
+IF
+  OpenState("DOOR04",TRUE)
+  Global("OpenedDoor2","AR2904",1)
+  Global("OpenedDoor4","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  Global("C7SelfishFight","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor4","AR2904",1)
+    MoveViewPoint([502.1313],INSTANT)
+    Wait(1)
+    ReallyForceSpell("hellvict",HELL_DAMAGE_HALF)
+    Wait(1)
+    MoveViewObject(Player1,INSTANT)
+END
+
+IF
+  OpenState("DOOR04",TRUE)
+  Global("OpenedDoor2","AR2904",1)
+  Global("OpenedDoor4","AR2904",0)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  Global("C7SelfishFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor4","AR2904",1)
+    ReallyForceSpell("hellvict",HELL_DAMAGE_HALF)
+END
+
+IF
+  OpenState("DOOR05",TRUE)
+  Global("OpenedDoor3","AR2904",1)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor5","AR2904",1)
+    CreateVisualEffectObject("SPFLESHS",Player1)
+    DisplayString(Player1,308) // You have lost experience points.
+    ReallyForceSpell(Player1,HELL_LOSE_XP)
+END
+
+IF
+  OpenState("DOOR06",TRUE)
+  Global("OpenedDoor4","AR2904",1)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  NumInPartyGT(1)
+  InPartyAllowDead(Player2)
+  InParty(Player2)
+  Global("C7SelfishFight","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor6","AR2904",1)
+    MoveViewPoint([502.1313],INSTANT)
+    Wait(1)
+    ReallyForceSpell(Player2,HELL_EXPLODE)
+    Wait(1)
+    MoveViewObject(Player1,INSTANT)
+END
+
+IF
+  OpenState("DOOR06",TRUE)
+  Global("OpenedDoor4","AR2904",1)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  NumInPartyGT(1)
+  InPartyAllowDead(Player2)
+  InParty(Player2)
+  Global("C7SelfishFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor6","AR2904",1)
+    ReallyForceSpell(Player2,HELL_EXPLODE)
+END
+
+IF
+  OpenState("DOOR06",TRUE)
+  Global("OpenedDoor4","AR2904",1)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  Global("C7SelfishFight","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor6","AR2904",1)
+    MoveViewPoint([502.1313],INSTANT)
+    Wait(1)
+    ReallyForceSpell("hellvict",HELL_EXPLODE)
+    Wait(1)
+    MoveViewObject(Player1,INSTANT)
+END
+
+IF
+  OpenState("DOOR06",TRUE)
+  Global("OpenedDoor4","AR2904",1)
+  Global("OpenedDoor5","AR2904",0)
+  Global("OpenedDoor6","AR2904",0)
+  Global("C7SelfishFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("OpenedDoor6","AR2904",1)
+    ReallyForceSpell("hellvict",HELL_EXPLODE)
+END
+
+IF
+  Global("OpenedDoor6","AR2904",1)
+  Global("AbyssPaladinGone","GLOBAL",0)
+  Class(Player1,PALADIN_ALL)
+THEN
+  RESPONSE #100
+    SetGlobal("AbyssPaladinGone","GLOBAL",1)
+    ActionOverride(Player1,RemovePaladinHood())
+END
+
+IF
+  Global("OpenedDoor6","AR2904",1)
+  Global("AbyssRangerGone","GLOBAL",0)
+  Class(Player1,RANGER_ALL)
+  !Class(Player1,CLERIC_RANGER) // Apparently do not fall
+THEN
+  RESPONSE #100
+    SetGlobal("AbyssRangerGone","GLOBAL",1)
+    ActionOverride(Player1,RemoveRangerHood())
+END

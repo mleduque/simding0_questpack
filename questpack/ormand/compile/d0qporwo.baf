@@ -1,0 +1,109 @@
+IF
+	Global("D0Ormand","GLOBAL",4)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	OR(2)
+		Dead("d0qpore4")
+		Global("D0Ormand","GLOBAL",5)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		FaceObject(Player1)
+		Continue()
+END
+
+IF
+	OR(4)
+		!See(LastSeenBy(Myself))
+		!GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+		StateCheck(Myself,STATE_CHARMED)
+		InMyGroup(LastSeenBy(Myself))
+	Detect(Myself)
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(4)
+		!See(LastSeenBy(Myself))
+		!GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+		StateCheck(Myself,STATE_CHARMED)
+		InMyGroup(LastSeenBy(Myself))
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SecondNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,4)
+	See(ThirdNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,5)
+	See(FourthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(FifthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SixthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(TenthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	HPPercentLT("d0qpore4",50)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf("d0qpore4"))
+END
+
+IF
+	!Range(LastSeenBy(Myself),7)
+	Range(NearestEnemyOf(Myself),7)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",5)
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	See(LastSeenBy(Myself))
+	!Range(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",5)
+		EquipMostDamagingMelee()
+		Attack(LastSeenBy(Myself))
+END

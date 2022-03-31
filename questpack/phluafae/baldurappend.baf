@@ -1,0 +1,11 @@
+IF
+  AreaType(OUTDOOR)
+  !AreaType(CITY)
+  GlobalTimerExpired("SUPissedDryad", "GLOBAL")
+  Global("SURevengeSpawn", "GLOBAL", 0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetGlobal("SURevengeSpawn", "GLOBAL", 1)
+    CreateCreatureObjectDoor("sudryad",Player1,0,0,0)
+END

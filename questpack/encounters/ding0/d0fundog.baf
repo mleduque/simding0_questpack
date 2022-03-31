@@ -1,0 +1,198 @@
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    RunAwayFrom(NearestEnemyOf(Myself),150)
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    RunAwayFrom(LastAttackerOf(Myself),150)
+END
+
+IF
+  !GlobalTimerNotExpired("D0ScanForCats","LOCALS")
+  See([0.0.CAT])
+  OR(2)
+    !GlobalTimerNotExpired("D0GetBored","LOCALS")
+    RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0ScanForCats","LOCALS",6)
+    ActionOverride([0.0.CAT],RunAwayFrom("d0fundog",15))
+    Attack([0.0.CAT])
+  RESPONSE #100
+    SetGlobalTimer("D0ScanForCats","LOCALS",6)
+    ActionOverride([0.0.CAT],RunAwayFrom("d0fundog",5))
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",0)
+  InParty(Player6)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",6)
+    SetGlobalTimer("D0GetBored","LOCALS",2400)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",6)
+    SetGlobalTimer("D0GetBored","LOCALS",2000)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",6)
+    SetGlobalTimer("D0GetBored","LOCALS",3000)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",0)
+  InParty(Player5)
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",5)
+    SetGlobalTimer("D0GetBored","LOCALS",2400)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",5)
+    SetGlobalTimer("D0GetBored","LOCALS",2000)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",5)
+    SetGlobalTimer("D0GetBored","LOCALS",3000)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",0)
+  InParty(Player4)
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",4)
+    SetGlobalTimer("D0GetBored","LOCALS",2400)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",4)
+    SetGlobalTimer("D0GetBored","LOCALS",2000)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",4)
+    SetGlobalTimer("D0GetBored","LOCALS",3000)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",0)
+  InParty(Player3)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",3)
+    SetGlobalTimer("D0GetBored","LOCALS",2400)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",3)
+    SetGlobalTimer("D0GetBored","LOCALS",2000)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",3)
+    SetGlobalTimer("D0GetBored","LOCALS",3000)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",0)
+  InParty(Player2)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",2)
+    SetGlobalTimer("D0GetBored","LOCALS",2400)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",2)
+    SetGlobalTimer("D0GetBored","LOCALS",2000)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",2)
+    SetGlobalTimer("D0GetBored","LOCALS",3000)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",1)
+    SetGlobalTimer("D0GetBored","LOCALS",2400)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",1)
+    SetGlobalTimer("D0GetBored","LOCALS",2000)
+  RESPONSE #100
+    SetGlobal("D0SelectPlayer","LOCALS",1)
+    SetGlobalTimer("D0GetBored","LOCALS",3000)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",1)
+  GlobalTimerNotExpired("D0GetBored","LOCALS")
+  InParty(Player1)
+  !Range(Player1,7)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player1)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",2)
+  GlobalTimerNotExpired("D0GetBored","LOCALS")
+  InParty(Player2)
+  !Range(Player2,7)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player2)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",3)
+  GlobalTimerNotExpired("D0GetBored","LOCALS")
+  InParty(Player3)
+  !Range(Player3,7)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player3)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",4)
+  GlobalTimerNotExpired("D0GetBored","LOCALS")
+  InParty(Player4)
+  !Range(Player4,7)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player4)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",5)
+  GlobalTimerNotExpired("D0GetBored","LOCALS")
+  InParty(Player5)
+  !Range(Player5,7)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player5)
+END
+
+IF
+  Global("D0SelectPlayer","LOCALS",6)
+  GlobalTimerNotExpired("D0GetBored","LOCALS")
+  InParty(Player6)
+  !Range(Player6,7)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player6)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    RandomWalk()
+END

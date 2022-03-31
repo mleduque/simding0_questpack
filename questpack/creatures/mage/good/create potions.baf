@@ -1,0 +1,109 @@
+// Every mage should have some potions (or wands!) in reserve!
+
+IF
+	Global("CheatPotions","LOCALS",0)
+	LevelLT(Myself,10)
+	!General(Myself,UNDEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn52",1,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn52",2,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn11",1,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+END
+
+IF
+	Global("CheatPotions","LOCALS",0)
+	LevelGT(Myself,9)
+	LevelLT(Myself,20)
+	!General(Myself,UNDEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn52",3,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn34",1,0,0)
+		CreateItem("potn52",1,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn35",1,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn40",1,0,0)
+		CreateItem("potn52",2,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn42",2,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn52",2,0,0)
+		CreateItem("potn11",1,0,0)
+	RESPONSE #200
+		SetGlobal("CheatPotions","LOCALS",1)
+END
+
+IF
+	Global("CheatPotions","LOCALS",0)
+	LevelGT(Myself,19)
+	!General(Myself,UNDEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn52",4,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn35",2,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn34",2,0,0)
+		CreateItem("potn52",2,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn52",3,0,0)
+		CreateItem("potn11",1,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn40",2,0,0)
+		CreateItem("potn52",2,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",1)
+		CreateItem("potn42",3,0,0)
+	RESPONSE #200
+		SetGlobal("CheatPotions","LOCALS",1)
+END
+
+IF
+	Global("CheatPotions","LOCALS",1)
+	LevelGT(Myself,15)
+THEN
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",2)
+		CreateItem("wand02",3,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",2)
+		CreateItem("wand04",2,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",2)
+		CreateItem("wand05",1,0,0)
+		CreateItem("wand06",1,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",2)
+		CreateItem("wand04",3,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",2)
+		CreateItem("wand06",3,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",2)
+		CreateItem("wand02",2,0,0)
+		CreateItem("wand05",1,0,0)
+	RESPONSE #100
+		SetGlobal("CheatPotions","LOCALS",2)
+		CreateItem("wand08",4,0,0)
+END

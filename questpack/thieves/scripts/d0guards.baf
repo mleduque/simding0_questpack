@@ -1,0 +1,136 @@
+IF
+  Dead("Aran")
+  Global("D0Maevar2","GLOBAL",36)
+  !See(NearestEnemyOf(Myself))
+  OR(3)
+    AreaCheck("ar0327")
+    AreaCheck("ar0328")
+    AreaCheck("ar0329")
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
+  !Allegiance(Myself,ENEMY)
+  OR(2)
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    Global("D0AttackedGuards","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0AttackedGuards","GLOBAL",1)
+    Enemy()
+END
+
+IF
+  AreaCheck("ar0300")
+  See("door0305")
+  OpenState("door0305",FALSE)
+  Global("D0AttackThieves","GLOBAL",1)
+THEN
+  RESPONSE #100
+    MoveToObject(LastSeenBy(Myself))
+    OpenDoor(LastSeenBy(Myself))
+END
+
+IF
+  AreaCheck("ar0300")
+  OpenState("door0305",TRUE)
+  Global("D0AttackThieves","GLOBAL",1)
+THEN
+  RESPONSE #100
+    MoveToObject("door0305")
+    MoveBetweenAreas("ar0327",[974.798],7)
+END
+
+/*
+IF
+  AreaCheck("ar0327")
+  !See([ENEMY])
+  !See(NearestEnemyOf(Myself))
+  ActionListEmpty()
+  Name("d0guard",Myself)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow("d0guard2")
+    ClearActions(Myself)
+END */
+
+IF
+  Global("D0Interact","LOCALS",0)
+  AreaCheck("ar0327")
+  !See([ENEMY])
+  !See(NearestEnemyOf(Myself))
+  ActionListEmpty()
+  Name("d0guard2",Myself)
+THEN
+  RESPONSE #100
+    MoveToPoint([732.744])
+END
+
+/*
+IF
+  OR(2)
+    Global("D0Interact","LOCALS",1)
+    !Name("d0guard2",Myself)
+  AreaCheck("ar0327")
+  !See([ENEMY])
+  !See(NearestEnemyOf(Myself))
+  See("SECRET01")
+  OpenState("SECRET01",TRUE)
+THEN
+  RESPONSE #100
+    MoveToObject("SECRET01")
+    MoveBetweenAreas("ar0329",[1120.1801],7)
+END */
+
+IF
+  Global("D0Interact","LOCALS",1)
+  AreaCheck("ar0327")
+  !See([ENEMY])
+  !See(NearestEnemyOf(Myself))
+  Name("d0guard2",Myself)
+  !See("SECRET01")
+THEN
+  RESPONSE #100
+    MoveToPoint([1233.685])
+    OpenDoor("DOOR02")
+    MoveToPoint([1362.557])
+    MoveToPoint([1267.464])
+END
+
+IF
+  Name("d0guard2",Myself)
+  AreaCheck("ar0327")
+  CombatCounter(0)
+  !Detect(NearestEnemyOf(Myself))
+  !Detect([0.0.0.0.240])
+  !Detect([0.0.0.0.241])
+  !Detect([0.0.0.0.242])
+  Global("D0Interact","LOCALS",0)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  Name("d0guard2",Myself)
+  AreaCheck("ar0329")
+  GlobalLT("D0Interact","LOCALS",2)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  OR(4)
+    See([0.0.0.0.240])
+    See([0.0.0.0.241])
+    See([0.0.0.0.242])
+    See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(LastSeenBy(Myself))
+END

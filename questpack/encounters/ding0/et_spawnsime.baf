@@ -1,0 +1,11 @@
+IF
+  GlobalGT("ThiefGroup","GLOBAL",0)
+  !Dead("ppsime")
+  Global("D0SimeVampire","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("vammat01",DestroySelf())
+    CreateCreature("d0vamsim",[1999.1181],0) // Sime
+    SetGlobal("D0SimeVampire","GLOBAL",1)
+    Continue()
+END

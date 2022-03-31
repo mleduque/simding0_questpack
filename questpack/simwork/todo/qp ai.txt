@@ -1,0 +1,18 @@
+The first bug is that when such a spellcaster sees a partially visible
+    character who is under the effect of Improved Invisibility, his/her global variables are set
+    to the wrong numbers as if he/she has already cast his/her spells. The second bug occurs when
+    a silenced spellcaster sees an enemy. Again, his/her global variables will be set to wrong
+    numbers.
+
+
+
+In the original game, Clay and Stone golems would cast their Haste and Slow spells even
+    during time stop. The same bug existed for Vortext Spiders casting their Voretx Web spells.
+    The bug is fixed.
+
+
+
+Vampyre creature in the old crypt (Korgan's book plot) would stand at his place doing nothing
+    if the party were not in his line of sight (he would not move to appraoch the party). His
+    script is revised and he will move forward as soon as he is spawned. He is also tweaked to be
+    able to see invisible creatures.

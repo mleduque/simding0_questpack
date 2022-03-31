@@ -1,0 +1,212 @@
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HPPercentLT(Myself,50)
+	HasItem("potn55",Myself) // Potion of Superior Healing
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn55",Myself) // Potion of Superior Healing
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HPPercentLT(Myself,65)
+	HasItem("potn52",Myself) // Potion of Extra Healing
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn52",Myself) // Potion of Extra Healing
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HPPercentLT(Myself,75)
+	HasItem("potn17",Myself)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn17",Myself)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HPPercentLT(Myself,80)
+	HasItem("potn08",Myself) // Potion of Healing
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn08",Myself) // Potion of Healing
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	HasItem("potn10",Myself) // Potion of Invisibility
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn10",Myself) // Potion of Invisibility
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	HasItem("ring05",Myself) // Ring of Invisibility
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		UseItem("ring05",Myself) // Ring of Invisibility 
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_HASTED)
+	HasItem("potn14",Myself) // Oil of Speed
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn14",Myself) // Oil of Speed
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(3,1)
+	HasItem("potn09",Myself) // Potion of Heroism
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn09",Myself) // Potion of Heroism
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatGT(Myself,2,ARMORCLASS)
+	HasItem("potn11",Myself) // Potion of Invulnerability
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn11",Myself) // Potion of Invulnerability
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatGT(Myself,2,ARMORCLASS)
+	HasItem("potn24",Myself) // Potion of Defense
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn24",Myself) // Potion of Defense
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatLT(Myself,23,STR)
+	HasItem("potn07",Myself) // Potion of Storm Giant Strength
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn07",Myself) // Potion of Storm Giant Strength
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatLT(Myself,22,STR)
+	HasItem("potn06",Myself) // Potion of Cloud Giant Strength
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn06",Myself) // Potion of Cloud Giant Strength
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatLT(Myself,21,STR)
+	HasItem("potn05",Myself) // Potion of Fire Giant Strength
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn05",Myself) // Potion of Fire Giant Strength
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatLT(Myself,20,STR)
+	HasItem("potn04",Myself) // Potion of Frost Giant Strength
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn04",Myself) // Potion of Frost Giant Strength
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatLT(Myself,19,STR)
+	HasItem("potn12",Myself) // Potion of Stone Giant Strength
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn12",Myself) // Potion of Stone Giant Strength
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+	CheckStatLT(Myself,18,STR)
+	HasItem("potn03",Myself) // Potion of Hill Giant Strength
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		DisplayStringHead(Myself,46150) // quaffs a potion
+		UseItem("potn03",Myself) // Potion of Hill Giant Strength
+		Continue()
+END

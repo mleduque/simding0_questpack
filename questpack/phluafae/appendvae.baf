@@ -1,0 +1,10 @@
+IF
+  HPLT(Myself,10)
+  Global("SummonDryads","AR1200",5)
+THEN
+  RESPONSE #100
+    SetGlobal("SummonDryads","AR1200",6)
+    StartCutSceneMode()
+    StartCutScene("sufakeb")
+END
+

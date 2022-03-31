@@ -1,0 +1,25 @@
+mind flayer's ability detonate hits the entire party even when the victim is on another area side from others
+
+
+
+
+Here's my idea:  You get some priest to cast greater Restoration on Minsc and there is no effect.  The priest then explains that he can't sense any damage at all.  He refers you to a friend who has helped others that magic couldn't help and you go on a wild goose chase to find his friend, who is a psionicist.  (But not an Illithid.....too cliche.  Make it a kobold or a gibberling, instead. Wink)  When  you finally find the psionicist, He is able to find the damage and repair it.  Minsc's intelligence and wisdom go up by........one point.
+
+"Minsc sees clearly again!!  He sees the mysteries of life unravel themselves before him!  He hears the advice of Boo even more clearly than before!  Now that Minsc is restored, Minsc will be a rash on evils backside that doesn't go away no matter how hard it scratches, forever itchihng until it meets with the boot of Minsc!!"  Or something like that. 
+
+
+Finish town crier harper stuff.
+
+
+Finish new Lehtinan quest.
+
+
+I did the alternate option with Rayic and bought the ring off him, but then I went back and told him I wasn't going to go along with his plan (or whatever that dlg option is) and killed him.  Then I went back to Edwin and told him Rayic was dead.  I finished the next two quests (papers from Marcus and dagger from thief) and reported back to Mae'Var.  I asked him if there was anything else I should do and then went upstairs to talk to Edwin like he told me.  But Edwin only asks me if I'm so stupid as to need directions to the basement where Mae'Var is and tells me to go there.  That's all he says, and talking to Mae'Var again doesn't change this.  I think the variable that says I completed the dagger part of the quest wasn't changed.  I also have the Edwin Romance installed, but that shouldn't make any difference before I even have Edwin.  Does anyone know the CLUA commond to fix this (in exact syntax please :-) )?
+
+
+In the Twisted Rune stronghold, Laverne (sp?) doesn't appear to make much use of the staff of the magi - Haven't seen her use its spell trap or any other functions and she still casts protection from evil before Gate, even though the staff grants automatic protection from evil, thus wasting a time stop slot.
+
+It is possible to fool Jaheira about Shazzelim. After she started complaining about it, I gave it to Yoshimo and kicked him out. The next time we spoke to Bernard, Jaheira and Bernard automatically did the "disposing of shazellim" dialogue and gave me the XP for doing so, even though we no longer had it. I took Yoshimo back in later and Shazzelim was still there - in fact I frequently have Jaheira wielding it. If you leave shazellim in the house and get it later, Jaheira will still complain about it even if she's left the Harpers and thinks they are misguided fools who she is justified in fighting against.
+
+
+Invisible servants downstairs in the slaver guarded compound are way too easy as opponents. Went through them like a knife through hot butter. The former mix including a hakeashar and efreeti were at least irritating, in particular the Hakeashar could slow my effectiveness if he managed to get close to my mages. If you want something more appropriate, why not some human guards (use the Fallen Paladins?) as there is clearly a guard's barracks, with more beds than there are NPC enemies, along with a mage with  summoning spells who then summons the original lot?

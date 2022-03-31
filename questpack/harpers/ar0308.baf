@@ -1,0 +1,84 @@
+IF
+  Global("D0Harpers","GLOBAL",8)
+  !Global("D0HarperBackup","AR0308",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Harpers","GLOBAL",9)
+    SetGlobal("D0HarperBackup","AR0308",1)
+    CreateCreature("JAHEI4",[687.886],6)
+    CreateCreature("JAHEI4",[841.671],14)
+    CreateCreature("JAHEI4",[769.1040],9)
+    CreateVisualEffect("SPDIMNDR",[757.840])
+    Wait(2)
+    CreateCreature("Lyros",[757.840],0)
+    ActionOverride("Lyros",SetNumTimesTalkedTo(1))
+    ActionOverride("Lyros",DialogInterrupt(FALSE))
+    ActionOverride("Lyros",ReallyForceSpell(Myself,WIZARD_STONE_SKIN))
+    ActionOverride("Lyros",ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_FIRE))
+END
+
+IF
+  Global("D0Harpers","GLOBAL",8)
+  Global("D0HarperBackup","AR0308",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Harpers","GLOBAL",9)
+    CreateVisualEffect("SPDIMNDR",[757.840])
+    Wait(2)
+    CreateCreature("Lyros",[757.840],0)
+    ActionOverride("Lyros",SetNumTimesTalkedTo(1))
+    ActionOverride("Lyros",DialogInterrupt(FALSE))
+    ActionOverride("Lyros",ReallyForceSpell(Myself,WIZARD_STONE_SKIN))
+    ActionOverride("Lyros",ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_FIRE))
+END
+
+IF
+  OR(3)
+    Allegiance("meronia",ENEMY)
+    Allegiance("berinvar",ENEMY)
+    Allegiance("pace",ENEMY)
+  !Global("D0Harpers","GLOBAL",8)
+  !Global("D0HarperBackup","AR0308",1)
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("D0HarperBackup","AR0308",1)
+    CreateCreatureObjectOffScreen("JAHEI4",Player1,1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[PC],1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[GOODCUTOFF],1,0,0)
+END
+
+IF
+  OR(3)
+    Allegiance("meronia",ENEMY)
+    Allegiance("berinvar",ENEMY)
+    Allegiance("pace",ENEMY)
+  !Global("D0Harpers","GLOBAL",8)
+  !Global("D0HarperBackup","AR0308",1)
+  Difficulty(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("D0HarperBackup","AR0308",1)
+    CreateCreatureObjectOffScreen("JAHEI4",Player1,1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[PC],1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[PC],1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[GOODCUTOFF],1,0,0)
+END
+
+IF
+  OR(3)
+    Allegiance("meronia",ENEMY)
+    Allegiance("berinvar",ENEMY)
+    Allegiance("pace",ENEMY)
+  !Global("D0Harpers","GLOBAL",8)
+  !Global("D0HarperBackup","AR0308",1)
+  DifficultyGT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("D0HarperBackup","AR0308",1)
+    CreateCreatureObjectOffScreen("JAHEI4",Player1,1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",Player1,1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[PC],1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[PC],1,0,0)
+    CreateCreatureObjectOffScreen("JAHEI4",[GOODCUTOFF],1,0,0)
+END

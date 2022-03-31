@@ -1,0 +1,8 @@
+IF
+	InMyArea([GOODCUTOFF])
+	!Detect([GOODCUTOFF])
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		MoveToObject([GOODCUTOFF])
+END

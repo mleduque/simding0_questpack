@@ -1,0 +1,19 @@
+IF
+  Detect([PC])
+  Range([PC],7)
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    FaceObject([PC])
+    SmallWait(2)
+    StartDialogNoSet([PC])
+END
+
+IF
+  Detect([PC])
+  !Range([PC],7)
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow([PC])
+END

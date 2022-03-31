@@ -1,0 +1,20 @@
+IF
+  AreaCheck("ar0500")
+  See([PC])
+  See("D0QPMOM")
+  GlobalLT("PotionFam","GLOBAL",2)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  AreaCheck("ar0500")
+  See([PC])
+  !See("D0QPMOM")
+  !See("D0QPJAN")
+  Global("PotionFam","GLOBAL",2)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END

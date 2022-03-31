@@ -1,0 +1,16 @@
+IF
+  Global("D0Lender","GLOBAL",2)
+  GlobalTimerExpired("D0Day1","GLOBAL")
+  Global("D0Beat","GLOBAL",0)
+  !GlobalGT("D0Poor","GLOBAL",9)
+  AreaType(CITY)
+  AreaType(OUTDOOR)
+  TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Beat","GLOBAL",1)
+    SetGlobalTimer("D0BeatTimer","GLOBAL",ONE_DAY)
+    StartCutSceneMode()
+    StartCutScene("D0Beat")
+END
+

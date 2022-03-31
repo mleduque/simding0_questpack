@@ -1,0 +1,206 @@
+IF
+	OR(3)
+		!See(LastAttackerOf(Myself))
+		StateCheck(LastAttackerOf(Myself),STATE_HELPLESS)
+		RandomNumGT(6,3)
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SecondNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,4)
+	See(ThirdNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,5)
+	See(FourthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(FifthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SixthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(TenthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.LONG_BOW]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	!InWeaponRange(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		EquipRanged()
+		Continue()
+END
+
+IF
+	OR(3)
+		InWeaponRange(NearestEnemyOf(Myself))
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	InWeaponRange(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",0)
+		Attack(LastSeenBy(Myself))
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",0)
+		Continue()
+END
+
+IF
+	OR(3)
+		InWeaponRange(NearestEnemyOf(Myself))
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	OR(2)
+		!Range(LastSeenBy(Myself),5)
+		Range(LastSeenBy(Myself),5)
+	OR(2)
+		Range(NearestEnemyOf(Myself),5)
+		Range(LastSeenBy(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	RandomNum(4,1)
+	Global("D0_MOVE","LOCALS",0)
+	GlobalTimerExpired("D0_ATTACK","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",1)
+		RandomWalkContinuous()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	RandomNum(4,2)
+	Global("D0_MOVE","LOCALS",0)
+	GlobalTimerExpired("D0_ATTACK","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",1)
+		RandomWalkContinuous()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	RandomNum(4,3)
+	Global("D0_MOVE","LOCALS",0)
+	GlobalTimerExpired("D0_ATTACK","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",1)
+		RandomWalkContinuous()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	RandomNum(4,4)
+	Global("D0_MOVE","LOCALS",0)
+	GlobalTimerExpired("D0_ATTACK","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",1)
+		RandomWalkContinuous()
+END
+
+IF
+	OR(3)
+		InWeaponRange(NearestEnemyOf(Myself))
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	!Range(NearestEnemyOf(Myself),7)
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",0)
+		EquipRanged()
+		Attack(LastSeenBy(Myself))
+END
+
+IF
+	OR(3)
+		InWeaponRange(NearestEnemyOf(Myself))
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	Range(LastSeenBy(Myself),7)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Attack(LastSeenBy(Myself))
+END
+
+IF
+	OR(3)
+		InWeaponRange(NearestEnemyOf(Myself))
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	OR(3)
+		InWeaponRange(NearestEnemyOf(Myself))
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	OR(3)
+		AttackedBy([ANYONE],DEFAULT)
+		HitBy([ANYONE],CRUSHING)
+		InWeaponRange(LastAttackerOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastAttackerOf(Myself),30)
+END

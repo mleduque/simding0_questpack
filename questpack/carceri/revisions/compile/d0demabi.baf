@@ -1,0 +1,91 @@
+IF
+	See([ANYONE])
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Detect(Myself)
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	See([ANYONE])
+	See(NearestEnemyOf(Myself))
+	RandomNumGT(10,6)
+	See(SecondNearestEnemyOf(Myself))
+	RandomNumGT(11,7)
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNumGT(12,8)
+	See(FourthNearestEnemyOf(Myself))
+	RandomNumGT(13,9)
+	See(FifthNearestEnemyOf(Myself))
+	RandomNumGT(14,10)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		See([0.0.DEMONIC.0.0.0.CHAOTIC_EVIL])
+		See([0.0.IMP.0.0.0.CHAOTIC_EVIL])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!AreaCheck("ar3003")
+	!AreaCheck("ar3004")
+	!AreaCheck("ar3005")
+	!AreaCheck("ar3006")
+	!AreaCheck("ar3007")
+	!AreaCheck("ar3008")
+	!AreaCheck("ar3009")
+	!AreaCheck("ar3010")
+	!AreaCheck("ar3011")
+	!AreaCheck("ar3012")
+	!AreaCheck("ar3013")
+	!AreaCheck("ar3014")
+	!AreaCheck("ar3015")
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("Gate","LOCALS")
+	See(LastSeenBy(Myself))
+	!Range(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Gate","LOCALS",ONE_DAY)
+		SetGlobalTimer("Cast","LOCALS",2)
+		CreateCreatureObjectEffect("D0LEMURE","SPUNHOLY",Myself)
+		CreateCreatureObjectEffect("D0LEMURE","SPUNHOLY",Myself)
+		CreateCreatureObjectEffect("D0LEMURE","SPUNHOLY",Myself)
+	RESPONSE #100
+		SetGlobalTimer("Gate","LOCALS",ONE_DAY)
+		SetGlobalTimer("Cast","LOCALS",2)
+		CreateCreatureObjectEffect("IMP01","SPUNHOLY",Myself)
+		CreateCreatureObjectEffect("IMP01","SPUNHOLY",Myself)
+	RESPONSE #150
+		SetGlobalTimer("Gate","LOCALS",ONE_DAY)
+		SetGlobalTimer("Cast","LOCALS",2)
+		CreateCreatureObjectEffect("ABISRED1","SPUNHOLY",Myself)
+		CreateCreatureObjectEffect("ABISRED1","SPUNHOLY",Myself)
+	RESPONSE #200
+		SetGlobalTimer("Gate","LOCALS",ONE_DAY)
+END
+
+IF
+	See(LastSeenBy(Myself))
+	!Range(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END

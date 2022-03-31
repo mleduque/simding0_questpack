@@ -1,0 +1,36 @@
+IF
+  Dead("pirmur02")
+  Global("D0Sanik","GLOBAL",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("D0Sanik","GLOBAL",1)
+    StartDialogNoSet([PC])
+END
+
+IF
+  See("pirmur02")
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("pirmur02",WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  See("pirmur02")
+  HaveSpell(WIZARD_MELF_ACID_ARROW)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("pirmur02",WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+  See("pirmur02")
+THEN
+  RESPONSE #100
+    Attack("pirmur02")
+END

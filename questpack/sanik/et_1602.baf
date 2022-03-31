@@ -1,0 +1,40 @@
+IF
+  Global("D0Sanik","GLOBAL",3)
+  GlobalGT("SavedClaire","GLOBAL",0)
+  !Global("D0SpawnOthers","AR1602",1)
+  !Global("D0SpawnOthers","AR1602",2)
+  GlobalLT("AsylumPlot","GLOBAL",20)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SpawnOthers","AR1602",1)
+    CreateCreature("pirmur09",[446.492],0)
+    CreateCreature("pirmur10",[549.462],5)
+    ActionOverride("pirmur10",FaceObject("ppsanik"))
+END
+
+IF
+  GlobalGT("D0Sanik","GLOBAL",2)
+  GlobalGT("SavedClaire","GLOBAL",0)
+  Global("D0SpawnOthers","AR1602",1)
+  !GlobalLT("AsylumPlot","GLOBAL",20)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SpawnOthers","AR1602",2)
+    ActionOverride("ppsanik",DestroySelf())
+    ActionOverride("pirmur09",DestroySelf())
+    ActionOverride("pirmur10",DestroySelf())
+END
+
+/*
+ * If both Sanik and the assassin dies at inopportune times,
+ * make as if things had played out the vanilla way
+ */
+IF
+  Dead("pirmur02")
+  Dead("ppsanik")
+  Global("AssassinAttacks","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AssassinAttacks","GLOBAL",1)
+    SetGlobal("SpawnAssassin","GLOBAL",2)
+END

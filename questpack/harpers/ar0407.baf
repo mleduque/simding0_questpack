@@ -1,0 +1,17 @@
+IF
+  Global("D0Harpers","GLOBAL",10)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Harpers","GLOBAL",11)
+    CreateCreature("D0Monty",[293.412],0)
+    CreateCreature("D0Xzar",[464.289],0)
+    ActionOverride("D0Xzar",FaceObject("D0Monty"))
+    ReallyForceSpell("D0Monty",WIZARD_MINOR_SPELL_TURNING) // This ain't legal
+END
+
+IF
+  Global("D0Harpers","GLOBAL",11)
+THEN
+  RESPONSE #100
+    ActionOverride("D0Xzar",StartDialogNoSet([PC])
+END

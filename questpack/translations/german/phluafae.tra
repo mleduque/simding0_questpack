@@ -1,0 +1,159 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Ich habe Euch gewarnt, mein <PRO_GIRLBOY>. Als der Narr, der Ihr seid, habt ihr die Eicheln nicht zu den Windspeerhügeln gebracht. Sie sollen mein sein!~
+@1    = ~Ihr habt mich sehr verärgert. Ich sollte Eure Augäpfel zerquetschen wie kleine reife Feigen!~ [SUDRY01]
+@2    = ~Ich habe Euch gewarnt, mein <PRO_GIRLBOY>. Jemand mit einem klugen Kopf zwischen seinen Schultern hätte mich meines Weges ziehen lassen statt so unverfrohen zu sein. Die Zeit für Eure wohlverdiente Strafe ist gekommen.~
+@3    = ~Ho, ihr da, Sterblicher! Jemand redliches wie ihr, der durch die Wälder streift... was habt Ihr vor?~ [SUDRY02]
+@4    = ~Ich bin auf einer dringenden Mission! Aus dem Weg!~
+@5    = ~Ihr habt mich angesprochen. Gibt es etwas, das Ihr von mir wollt?~
+@6    = ~Öhm. Durch die Wälder streifen...? Was tut IHR auf meinem Land?~
+@7    = ~Pst... hier könnten Trolle sein.~
+@8    = ~Mein <PRO_GIRLBOY>! Ich begrüße Eure Rückkehr!~
+@9    = ~Ausgenommen... ich kann meine Schwester, Vaelasa, im Wind spüren, noch genauso lebendig und perfekt wie immer!~
+@10   = ~Fort mit Euch, Ihr Plagegeist! Fort mit Euch, bis Ihr das tut, was Ihr mir versprochen habt!~
+@11   = ~Prima! Ich spüre, dass die Tränen des Todes meiner Schwester Vaelasa die Erde benetzt haben! Oh, wie Ihr mich erfreut, Ihr fabelhafter Schuft!~
+@12   = ~Hier ist Euer Gold, mein bosärtiger Liebling, Ihr habt es Euch verdient! Gehabt Euch wohl. Mögen wir uns nochmals treffen, um unsere Siege zu feiern. Wahre Macht wird eines Tages Euch gehören, Boshafter, das kann ich Euch sagen.~
+@13   = ~Bis dann, auf Wiedersehen!~
+@14   = ~Oh, warum lauft Ihr davon, Liebling, wenn wir doch zusammen ein herrliches Zwischenspiel haben könnten? Das reinste Verschlingen von Spaß.~
+@15   = ~Öhm... das heißt?~
+@16   = ~Zusammen, hm? Ich finde, das klingt gut.~
+@17   = ~Ihr habt nichts... Ungehöriges im Sinn, oder?~
+@18   = ~Ich habe nicht den Wunsch nach weiteren Gefährten. Geht mir aus dem Weg, sonst...~
+@19   = ~Oh, Ihr seid ja ein Kluger, Ihr springt geradewegs zum unvermeidbaren Höhepunkt der Folgen von Wörtern und noch mehr Wörtern.~
+@20   = ~Das Wesentliche. Könntet Ihr bitte zum Wesentlichen kommen?~
+@21   = ~Ja, ich bin ein ganz Schlauer, also kommt zum Wesentlichen und glaubt nicht, dass ihr mir einen Bären aufbinden könnt.~
+@22   = ~Geplapper, Geplapper, Geplapper. Nun bin ich gelangweilt.~
+@23   = ~Wow. Ihr riecht gut.~
+@24   = ~Oooh! Wirklich? Was habe ich doch für ein Glück, dass ein so edler Held wie Ihr vorbeigekommen ist! Ja, in der Tat.~
+@25   = ~Ja, da habt ihr wahrlich Glück~
+@26   = ~Was lässt Euch glauben, dass ich ein edler Held und kein gefährlicher Verrückter bin?~
+@27   = ~Ich habe das Gefühl, dass Ihr diese Unterhaltung nicht begonnen habt, um meinen Anrede zu diskutieren. Wollt Ihr etwas von mir? Wenn dem so ist, dann legt Euer Anliegen bitte dar.~
+@28   = ~Oooh! Wirklich? Das ist so furchterregend! Was habe ich doch für ein Glück, dass ein so feiner Held wie Ihr vorbeigekommen ist! Ja, in der Tat.~ [SUDRY04]
+@29   = ~Ihr denkt, Trolle sind furchterregend? Anfänger.~
+@30   = ~Was lässt Euch glauben, dass ich weniger gefährlich bin als die Trolle?~
+@31   = ~Ich habe das Gefühl, dass Ihr diese Unterhaltung nicht begonnen habt, weil Ihr Euch über die Trolle sorgt. Wollt Ihr etwas von mir? Wenn dem so ist, dann legt Euer Anliegen bitte dar.~
+@32   = ~Das heißt, ich kann spüren, dass Ihr ein paar Züge an Eurer Person habt, die mir von großem Nutzen wären.~
+@33   = ~An meiner... Person? Ihr habt nichts... Ungehöriges im Sinn, oder?~
+@34   = ~Seht, was an meiner Person ist, bleibt an meiner Person. Verstanden?~
+@35   = ~An meiner Person? Rrrrroowrr.~
+@36   = ~Aus dem Lüstern Eures Blicks kann ich erkennen, dass Ihr meine Absichten falsch interpretiert habt.~
+@37   = ~Gut. Ich bin nicht daran interessiert, etwas Ungehöriges zu tun. Ehrlich.~
+@38   = ~Nun, das ist kein Spaß!~
+@39   = ~Also was IST Eure Absicht?~
+@40   = ~Ihr habt MEINE Absichten falsch interpretiert. Mein Blick war einfach nur von Langeweile erfüllt, während ich darauf gewartet habe, dass Ihr endlich Euer Vorhaben erläutert.~
+@41   = ~Aus der panischen Angst Eures Blicks kann ich erkennen, dass Ihr meine Absichten falsch interpretiert habt.~
+@42   = ~Verdammt! Eigentlich habe ich insgeheim auf etwas Ungehöriges gehofft.~
+@43   = ~Ihr habt MEINE Absichten falsch interpretiert. Mein Blick war, wenn überhaupt, dann von Verwirrung erfüllt, während ich darauf gewartet habe, dass Ihr endlich Euer Vorhaben erläutert.~
+@44   = ~Wie widerspenstig! Bitte, Liebling. Pst! Hört mich an:~ [SUDRY05]
+@45   = ~Ich hoffe mein Angebot wird Euch erfreuen und interessieren. Die Aufgabe ist absolut einfach und eine Möglichkeit für Euch, recht hilfreich zu sein.~ [SUDRY12]
+@46   = ~Ihr tragt ein paar Eicheln mit Euch herum, die aus den Windspeerhügeln stammen. Sie gehören meinen Schwestern und als solche sind sie mir lieb und teuer.~ [SUDRY11]
+@47   = ~Würdet Ihr, könntet Ihr Euch von ihnen trennen? Sie mir zurückgeben? Ich würde ihnen die sorgfältige Pflege zuteil werden lassen, die sie verdienen!~ [SUDRY06]
+@48   = ~Diese Eicheln? Ich weiß nicht. Ich habe den Dryaden versprochen, dass ich sie sicher zu den Windspeerhügeln zurückbringe.~
+@49   = ~Ich soll sie zu den Windspeerhügeln zurückbringen und nicht an irgendjemand, der danach fragt, aushändigen.~
+@50   = ~Sicher. Hier bitte.~
+@51   = ~Natürlich würdet Ihr, aber könnte es für meine Hilfsbereitschaft nicht vielleicht eine Belohnung geben?~
+@52   = ~Eicheln? Ich hatte ganz vergessen, dass ich sie habe. Es scheint seltsam, dass ihr einfach so aus dem Nichts auftaucht und sie haben wollt, selbst wenn Ihr eine Dryade seid. Eure Schwestern im Kerker gaben mir strikte Anweisungen, wisst Ihr.~
+@53   = ~Diese Eicheln? Hey, plötzlich fühl ich mich ein bisschen hungrig. (mampf)~
+@54   = ~Nein, ein Versprechen ist ein Versprechen. Ich habe geschworen, dass ich diese Eicheln sicher zu den Windspeerhügeln bringen würde und das ist es auch, was ich tun werde. Keine Ausnahmen.~
+@55   = ~Was auch immer Ihr sagt, mein <PRO_GIRLBOY>.~
+@56   = ~Oder vielleicht habe ich zu früh gesprochen. Bitte, mein <PRO_GIRLBOY>. Zeigt ein klein wenig Geduld und hört mich an:~
+@57   = ~Dryaden riechen nach Blumen und Nebel und nach Versprechen von Lust. Berauschend, nicht wahr? Ich habe Euch einen Plan mitzuteilen, mein <PRO_GIRLBOY>...~
+@58   = ~Ihr sollt auf mehr als nur eine Weise hören...~
+@59   = ~Oh! Seid Ihr nicht stark und mächtig?! Haltet Euer Brüsten für einen Moment ein, mein <PRO_GIRLBOY>, und hört mich an:~ [SUDRY07]
+@60   = ~Gefahr ist belanglos für unseren Sachverhalt. Ich habe eine Aufgabe für Euch. Ziemlich harmlos, wie Ihr hören werdet...~
+@61   = ~Warum, ja! Wie geschickt von Euch, das zu erkennen!~
+@62   = ~Oh, mein <PRO_GIRLBOY>, Ihr habt meine Absichten falsch interpretiert!~
+@63   = ~Das bedeutet, dass ich eine winzigkleine Anfrage an Euch habe:~
+@64   = ~Aber ich bin eine Dryade! Sicher könnt ihr mir die Eicheln meiner Schwestern anvertrauen!?~
+@65   = ~Oh, sehr gut. Die Windspeerhügel sind weit entfernt. Hier bitte.~
+@66   = ~Ich nehme an, ich könnte... wenn es eine Belohnung für meine Hilfsbereitschaft gäbe.~
+@67   = ~Ich weiß nicht. Irgendetwas scheint hier seltsam zu sein.~
+@68   = ~A-ha! Meine einfältigen Schwestern sind einmal mehr meiner Gnade ausgeliefert! Es ist gut, dass Ihr Euch nicht zu genau an den Wortlaut Eurer Versprechen haltet, sonst hätte ich nicht von Eurer Leichtgläubigkeit profitieren können. Darüber hinaus hätte ich in der Tat auch sehr ärgerlich werden können.~
+@69   = ~Nun muss ich nur noch einen neuen Kunden finden, der verzweifelt nach einem Dryaden-Harem sucht. Ich glaube, ich sollte es in Calimshan versuchen.~
+@70   = ~Natürlich. Ich bin kein unverschämtes Wesen. Würde Euch ein Goldregen besänftigen?~ [SUDRY10]
+@71   = ~Lasst die Besänftigung beginnen.~
+@72   = ~Nein, irgendetwas scheint hier seltsam zu sein. Ihr wollt dies zu sehr, Nymphe.~
+@73   = ~Ein Versprechen ist ein Versprechen. Ich habe geschworen, dass ich diese Eicheln sicher zu den Windspeerhügeln bringen würde und das ist es auch, was ich tun werde. Keine Ausnahmen.~
+@74   = ~Ihr... habt SIE... GEGESSEN?!?!?~
+@75   = ~Was für ein wertvoller, wertvoller Kloß Ihr seid! Sicher, es wäre entzückend gewesen, meine einfältigen Schwestern ein weiteres Mal als Konkubinen zu verkaufen, aber da Ihr ihre Eicheln zerstört habt, wird niemand jemals herausfinden, dass ich für das erste Mal verantwortlich bin. Kaut nur richtig, mein <PRO_GIRLBOY>. Auf Wiedersehen!~
+@76   = ~Ahh, Ihr habt Euer Gold und ich habe die Eicheln. Ist ein gerechter Tausch nicht etwas WUNDERVOLLES?~ [SUDRY08]
+@77   = ~Meinetwegen, dann sind meine einfältigen Schwestern einmal mehr meiner Gnade ausgeliefert! Es ist gut, dass Ihr Euch nicht zu genau an den Wortlaut Eurer Versprechen haltet, sonst hättet Ihr nicht von meinem Gold und ich nicht von Eurer Habgier profitieren können. Darüber hinaus hätte ich in der Tat auch sehr ärgerlich werden können.~
+@78   = ~Nun muss ich nur noch einen neuen Kunden finden, der verzweifelt nach einem Dryaden-Harem sucht. Ich glaube, ich sollte es in Calimshan versuchen.~
+@79   = ~Ihr seid scharfsinnig. Ich will nichts Böses sprechen, aber Ihr braucht die Warnung.~
+@80   = ~Meine Schwestern in den Hügeln sind nicht so weise, wie sie sein könnten. Vaelasa war närrisch genug die drei Kleinen an den Harem dieses verrückten Irenicus zu verlieren. Was lässt Euch vermuten, dass sie sie dieses zweite Mal besser beschützen würde? Bitte, übergebt die Eicheln meiner Obhut. Ich werde dafür sorgen, dass meine Schwestern das bekommen, was sie verdienen.~
+@81   = ~Wenn Ihr es auf diese Weise auslegt, dann scheint es das Richtige zu sein.~
+@82   = ~Ihr habt da ein überzeugendes Argument und ich stimme zu, aber könnte es für meine Hilfsbereitschaft nicht vielleicht eine Belohnung geben?~
+@83   = ~Wartet eine Sekunde. Wie könnt ihr von Irenicus wissen? Ich erkenne jetzt die Wahrheit! Ihr wart in die Versklavung Eurer Schwestern verwickelt, nicht wahr?~
+@84   = ~Hmm. Nur sehr wenig entgeht Euren Adleraugen, süßer <PRO_RACE>. Vielleicht habe ich meine Schwestern für den kleinen Preis von Macht an Irenicus verraten, aber diese einfältigen Närrinnen haben es verdient. was macht ihr Schicksal schon aus? Wir müssen meine Unanständigkeit nicht verstecken, oder? Warum übergebt Ihr mir nicht einfach diese Eicheln und ich gebe Euch dafür einen schönen Berg Gold, hmm? Dann ist jeder zufrieden gestellt!~
+@85   = ~Nein! Boshafte Betrügerin Eurer eigenen Schwestern! Ich werde Euch bestraft sehen!~
+@86   = ~Geld ist gut und schön, aber was ist mit dem Unrecht? Verrat auf reines Geschäft herunterzukochen scheint irgendwie so banal.~
+@87   = ~Klingt angemessen für mich.~
+@88   = ~Oh schade, das ist nicht wirklich so gelaufen, wie ich das geplant hatte. Eeek!~ [SUDRY09]
+@89   = ~Ich begrüße es, dass Ihr in dieser Sache so vernünftig seid. Für einen Moment dachte ich, Ihr würdet einen rechtschaffenen Amoklauf starten. Das wäre sehr enttäuschend gewesen.~
+@90   = ~Unrecht? Gegen meine Schwestern? Welch entzückende Worte sprecht Ihr da, mein <PRO_GIRLBOY>!~
+@91   = ~Vaelasas Optimismus und ihre freundliche Stimmung verdienen es wahrlich mit einem Brocken Realität verprügelt zu werden. Es wird Zeit, dass sie und meine anderen Schwestern lernen, dass die wahre Schönheit im Multiversums von Macht kommt!~
+@92   = ~Wenn Ihr daran interessiert seid, mir bei einer List zu helfen, werden wir meine Schwestern in großes Leid locken.~
+@93   = ~Ja, wenn Täuschung beteiligt ist, dann würde mir diese Möglichkeit gefallen.~
+@94   = ~Wenn ich nochmal darüber nachdenke, dann kann ich mich eigentlich nicht mit Euren kleinlichen Rivalitäten beschäftigen. Gebt mir Gold für die Eicheln und lasst es uns dann dabei belassen.~
+@95   = ~Lasst uns diese Jagd abkürzen. Ich kann Euch leiden lassen, Euer Gold nehmen und dann weiter zu Euren Schwestern ziehen! Muaha!~
+@96   = ~Jetzt, wo ich darüber nachdenke, wieso sollte ich Euch helfen? Ich werde die Eicheln in den Winderspeerhügeln abliefern, so wie es ursprünglich geplant war.~
+@97   = ~Oh, werdet Ihr jetzt? Ich hätte Euch für Eure Hilfe belohnt, wenn Ihr gewollt hättet, aber nein, Ihr musstet ja Euer Wort halten. Spielverderber!~
+@98   = ~Oh, gut. Zu dumm für Euch. Ihr sollt für Euren Fehler früher oder später leiden.~
+@99   = ~Hoffentlich früher.~
+@100  = ~Ahh, Ihr habt Euer Gold und ich habe die Eicheln. Unglücklicherweise wart Ihr zu feige für eine große Intrige, aber ich werde mit diesem wundervollen, gerechten Tausch zufrieden sein.~
+@101  = ~Meinetwegen, dann sind meine einfältigen Schwestern einmal mehr meiner Gnade ausgeliefert! Es ist gut, dass Ihr Euch nicht zu genau an den Wortlaut Eurer Versprechen haltet, sonst hätte Ihr nicht von meinem Gold und ich nicht von Eurer Habgier profitieren können.~
+@102  = ~Ich werde Euch die Eicheln meiner Schwestern für diese Kopien abnehmen. Ihr müsst sie zu Vaelasa in den Windspeerhügeln bringen und benutzt Eure ganze Arglist um sie davon zu überzeugen, dass diese die Echten sind.~
+@103  = ~Sie sind mit einer Falle versehen, wisst Ihr. Wenn sie in den Hain meiner Schwestern gepflanzt werden, dann wird aus ihnen eine gemeine und verhängnisvolle Überraschung keimen!~
+@104  = ~Wenn sie tot ist, könnt Ihr als zusätzliche Belohnung Vaelasas Leichnam plündern, kehrt dann zu mir hier her zurück. Ich werde Euch mit Gold überschütten, wenn ich durch den Gedanken, wie meine Schwestern zu Staub zerfallen, genug ermutigt werde.~
+@105  = ~Dieser Plan gefällt mir. Wir sind im Geschäft.~
+@106  = ~Der Plan gefällt mir, aber er scheint auch eine gewisse Gefahr zu beinhalten. Ich fordere einen Vorschuss für meine Mühen.~
+@107  = ~Wenn ich nochmal darüber nachdenke, dann kann ich mich eigentlich nicht mit Euren kleinlichen Rivalitäten beschäftigen. Gebt mir Gold für die Eicheln und lasst es uns dann dabei belassen.~
+@108  = ~Jetzt, wo ich darüber nachdenke, wieso sollte ich Euch helfen? Ich werde die Eicheln in den Winderspeerhügeln abliefern, so wie es ursprünglich geplant war. Wer zuerst kommt, mahlt zuerst.~
+@109  = ~Wie Ihr mich erfreut, mein <PRO_GIRLBOY>! Hier sind die falschen Samen. Viel Glück, mein herrlicher Überbringer!~
+@110  = ~Ich bin kein unverschämtes Wesen. Eine symbolische Summe ist nur fair, um den Vertag zwischen uns zu besiegeln. Vielleicht 300 Goldstücke?~
+@111  = ~Bitte. Nun seid Ihr für Eure Mühen belohnt. Jetzt geht und vollbringt Euer Unheil, mein <PRO_GIRLBOY>!~
+@112  = ~Ein Außenstehender? Ihr seid keine von meinen Schönen! Warum seid Ihr hier?~
+@113  = ~Es tut mir leid, Euch zu belästigen. Ich werde Euch bald wieder verlassen.~
+@114  = ~Ich entschuldige mich dafür in Euer wunderschönes Heiligtum einzudringen, aber ich habe ein paar Eicheln von Euren Dryaden-Schwestern mitgebracht. Sie wurden über viele Jahre von einem bösen Magier gefangen gehalten. Glücklicherweise konnte ich meine bescheidenen Dienste zur Verfügung stellen und ihnen zu Hilfe kommen.~
+@115  = ~Ich entschuldige mich dafür Euch zu belästigen. Ich habe ein paar Eicheln von Euren Dryaden-Schwestern mitgebracht. Sie wurden über viele Jahre von einem bösen Magier gefangen gehalten, aber glücklicherweise konnte ich ihnen zu Hilfe kommen.~
+@116  = ~Es tut mir leid, es tut mir leid. Ähm... ich hasse es euch zu stören, aber ich habe ein paar Eicheln, die ich von einigen Dryaden, die ich in einem Kerker getroffen habe, bekommen habe, mitgebracht. Sie wurden über viele Jahre von einem bösen Magier gefangen gehalten. Ziemlich lausig, hm? Junge, haben die ein Glück, dass ich ihnen helfe!~
+@117  = ~Dann geht und verlasst den Kreis. Dieser Ort ist nicht für nutzlosen Verkehr gedacht. Ihr hättet niemals ohne eine Einladung hierher kommen sollen. Hinfort mit Euch, Sterblicher!~
+@118  = ~Dass ihr meinen Schwester helft, ist sowohl ritterlich als auch gütig. Die Bäume von Ulene, Cania und Elyme müssen neu gepflanzt werden, damit sie wieder frei sein können. Gebt mir die Eicheln, <BROTHERSISTER>.~
+@119  = ~Eure Worte plagen mein Herz, dennoch pulsieren sie mit der Logik der Wahrheit. Meine armen, armen Seelen, die ihr so verkümmern musstet.~
+@120  = ~Ich danke Euch, gütiger Fremder, für Eure edle Tat!~
+@121  = ~Wartet. Wie merkwürdig.~
+@122  = ~Diese Eicheln singen nicht mit der reinen Süße meiner Schwestern. Ein... ein stinkender Makel strömt von ihnen aus. Etwas Dunkles und Grausames.~
+@123  = ~Was sind sie? Könnten das möglicherweise die Samen von Cania, Elyme und Ulene sein?~
+@124  = ~Natürlich sind sie das. Ich würde Euch nie anlügen.~
+@125  = ~Ich versichere Euch, dass sie es sind. Sicherlich versteht Ihr, wie sehr Eure Schwestern unter den Händen ihres widerlichen Peinigers leiden mussten? Solche Erfahrungen würden die leuchtendste Seele trüben.~
+@126  = ~Verdammt! Ich kann diese freundliche Atmosphäre nicht länger aufrecht erhalten! Eure Schwester, Phluafae, hat die Eicheln Eurer Schwester. Es war sie, die sie das erste Mal als Konkubinen verkauft hat und nun will sie Euren Kopf. Haltet still, während ich ihn abschlage, hm?~
+@127  = ~Ungeschickter Überbringer! Als wäre es nicht genug, dass meine Dryaden-Schwestern unter den Händen des Magiers, der sie gefangen hält, leiden... aber Ihr wolltet auch noch versuchen, mich mit diesen kläglichen Lügen zu täuschen?!~
+@128  = ~Ich weiß nicht, was mit meinen Schwestern geschehen ist, aber das... das sind nicht ihre Eicheln. Was auch immer Eure grausame Absicht war, Sterblicher, Ihr seid elendig gescheitert.~
+@129  = ~Meine Schwestern, ich sollte ihren Verlust mit Eurem Niedergang rächen! Ihr sollt für Cania, Elyme und Ulene zugrunde gehen, <RACE>!~
+@130  = ~Teufel! Ihr hättet mich beinahe betrogen!~
+@131  = ~Und allein daran zu denken, dass unsere eigene Schwester so verdorben sein kann, dass sie uns so grausam zu betrügt! Das ist eine schreckliche Bürde, die ich tragen muss, aber die Abrechnung mit Phluafae wird bald und streng sein, das schwöre ich.~
+@132  = ~Aber zunächst müsst IHR bestraft werden! Ihr sollt für Cania, Elyme und Ulene zugrunde gehen, <RACE>!~
+@133  = ~Ihr habt erkannt, dass sowohl die Dryaden als auch ihr Wald leiden werden, <CHARNAME>. Denkt die Dinge das nächste Mal ein bisschen sorgfältiger durch.~
+@134  = ~Was?!? Ihr habt gerade einen perfekten Dryaden-Harem weggegeben? Gah! (Würde BITTE jemand die wirklich wichtigen Entscheidungen an mich übergeben?)~
+@135  = ~Ihr habt erkannt, dass sowohl die Dryaden als auch ihr Wald leiden werden, <CHARNAME>. Wer weiß, was das Essen der Eicheln ihnen antut. Denkt die Dinge das nächste Mal ein bisschen sorgfältiger durch.~
+@136  = ~Was?!? Ihr habt gerade einen perfekten Dryaden-Harem GEGESSEN? Gah! (Würde BITTE jemand die wirklich wichtigen Entscheidungen an mich übergeben?)~
+@137 = ~Den Dryaden von Irenicus helfen.
+
+Nachdem ich mit einer Dryade in der Nähe der Festung De'Arnise gesprochen hatte, stimmte ich zu, die Dryaden, die von Irenicus gefangen gehalten werden, zu betrügen indem ich falsche Eicheln an ihre Schwester Vaelasa in den Windspeerhügeln übergebe.~
+@138 = ~Den Dryaden von Irenicus helfen.
+
+Vaelasa glaubte mir, dass die falschen Eicheln, die ich ihr gab, die echten seien, und als Folge davon kam sie ums Leben. Phluafae sollte mit diesem Ausgang recht zufrieden sein.~
+@139 = ~Den Dryaden von Irenicus helfen.
+
+Vaelasa glaubte nicht, dass die falschen Eicheln die ihrer Schwestern seien und griff mich an. Phluafae ist durch diesen Verlauf der Ereignisse wahrscheinlich nicht besonders erfreut.~
+@140 = ~Den Dryaden von Irenicus helfen.
+
+Ich brach das Versprechen, dass ich den Dryaden, die von Irenicus gefangen gehalten werden, gegeben hatte, und übergab stattdessen falsche Eicheln, die ich von einer ihrer Schwestern erhalten hatte, an Vaelasa in den Windspeerhügeln. Als Folge davon kam sie ums Leben und ich wurde für meine Anstrengungen reich belohnt.~
+@141 = ~Den Dryaden von Irenicus helfen.
+
+Ich brach das Versprechen, dass ich den Dryaden, die von Irenicus gefangen gehalten werden, gegeben hatte, und beschloss stattdessen ihre Eicheln einer anderen Dryade zu geben, die in der Nähe der Festung De'Arnise auf mich zukam. Sie sprach von einem Dryaden-Harem, also scheint es, als hätte ich ihnen damit keinen Gefallen getan.~
+@142 = ~Den Dryaden von Irenicus helfen.
+
+Ich brach das Versprechen, dass ich den Dryaden, die von Irenicus gefangen gehalten werden, gegeben hatte, und beschloss stattdessen ihre Eicheln zu, hm, essen. Die Dryade, die wegen ihnen in der Näde der Festung De'Arnise auf mich zukam, schien davon sehr überrascht zu sein.~
+
+@999 = ~When Euch die Dryaden gebeten haben, sie zu den Windspeerhügeln zu bringen, dann gehören sie dort hin, <CHARNAME>. Das ist eine grundsätzlich Regel des Transportwesens—lass niemals etwas zwischen Punkt A und Punkt B gelangen.~

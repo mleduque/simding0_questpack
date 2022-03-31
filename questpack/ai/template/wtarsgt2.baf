@@ -1,0 +1,512 @@
+IF
+	Global("PartOfGroup","LOCALS",0)
+	Detect(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		SetGlobal("PartOfGroup","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("PartOfGroup","LOCALS",0)
+	!Detect(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		SetGlobal("PartOfGroup","LOCALS",2)
+		Continue()
+END
+
+IF
+	Global("Seen","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF])
+	OR(2)
+		!StateCheck(Myself,STATE_SILENCED)
+		RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobal("Seen","LOCALS",1)
+		SetGlobalTimer("Shout","LOCALS",6)
+		Shout(254)
+		Continue()
+END
+
+IF
+	Global("Seen","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF])
+	StateCheck(Myself,STATE_SILENCED)
+	!RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobal("Seen","LOCALS",1)
+		SetGlobalTimer("Shout","LOCALS",6)
+		Continue()
+END
+
+IF
+	GlobalTimerExpired("Shout","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF])
+	OR(2)
+		!StateCheck(Myself,STATE_SILENCED)
+		RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Shout","LOCALS",6)
+		SetGlobal("Seen","LOCALS",1)
+		Shout(254)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Shout","LOCALS")
+	Allegiance(Myself,ENEMY)
+	!See([GOODCUTOFF])
+	!See(NearestEnemyOf(Myself))
+	Heard([ENEMY],254)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Shout","LOCALS",6)
+		Shout(254)
+		MoveToObjectFollow(LastHeardBy(Myself))
+END
+
+IF
+	TookDamage()
+	!See(NearestEnemyOf(Myself))
+	!Detect(LastHitter(Myself))
+	OR(2)
+		!StateCheck(Myself,STATE_BLIND)
+		RandomNum(3,1)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastHitter(Myself),GOODCUTOFF)
+THEN
+	RESPONSE #100
+		MoveToObject(LastHitter(Myself))
+END
+
+IF
+	TookDamage()
+	!See(NearestEnemyOf(Myself))
+	!Detect(LastHitter(Myself))
+	StateCheck(Myself,STATE_BLIND)
+	!RandomNum(3,1)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastHitter(Myself),GOODCUTOFF)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck([GOODCUTOFF],STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject([GOODCUTOFF])
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player1,STATE_INVISIBLE)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player2,STATE_INVISIBLE)
+	RandomNum(6,2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player3,STATE_INVISIBLE)
+	RandomNum(6,3)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player4,STATE_INVISIBLE)
+	RandomNum(6,4)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player5,STATE_INVISIBLE)
+	RandomNum(6,5)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player6,STATE_INVISIBLE)
+	RandomNum(6,6)
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+
+IF
+//	OR(4)
+	OR(3)
+		!See(LastSeenBy(Myself))
+		!GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+		StateCheck(Myself,STATE_CHARMED)
+//		InMyGroup(LastSeenBy(Myself))
+	OR(3)
+		!See(LastAttackerOf(Myself))
+		StateCheck(LastAttackerOf(Myself),STATE_HELPLESS)
+		RandomNumGT(6,3)
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SecondNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,4)
+	See(ThirdNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,5)
+	See(FourthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(FifthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SixthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(TenthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(3)
+		GlobalTimerNotExpired("Hide","LOCALS")
+		StateCheck(Myself,STATE_INVISIBLE)
+		StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",6)
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	OR(2)
+		!Range(LastSeenBy(Myself),7)
+		Range(LastSeenBy(Myself),7)
+	OR(2)
+		Range(NearestEnemyOf(Myself),7)
+		Range(LastSeenBy(Myself),7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",6)
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	Global("D0_MOVE","LOCALS",0)
+	GlobalTimerExpired("D0_ATTACK","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",1)
+		RandomWalkContinuous()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	!Range(NearestEnemyOf(Myself),7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",6)
+		SetGlobal("D0_MOVE","LOCALS",0)
+		EquipRanged()
+		Attack(LastSeenBy(Myself))
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	Range(LastSeenBy(Myself),7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",6)
+		EquipMostDamagingMelee()
+		Attack(LastSeenBy(Myself))
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+	!Range(LastSeenBy(Myself),7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",6)
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastAttackerOf(Myself),30)
+END
+
+IF
+	Global("StartPatrol","LOCALS",0)
+	!Race(Myself,DRAGON)
+	OR(2)
+		Global("PartOfGroup","LOCALS",2)
+		Detect(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		SetGlobalTimer("Patrol","LOCALS",12)
+		SaveObjectLocation("LOCALS","DefaultLocation",Myself)
+END
+
+IF
+	Global("StartPatrol","LOCALS",0)
+	!Race(Myself,DRAGON)
+	Global("PartOfGroup","LOCALS",1)
+	!Detect(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestMyGroupOfType)
+END
+
+IF
+	OR(2)
+		GlobalTimerExpired("Patrol","LOCALS")
+		!Detect(NearestMyGroupOfType)
+	OR(2)
+		GlobalTimerExpired("Patrol","LOCALS")
+		Global("PartOfGroup","LOCALS",1)
+THEN
+	RESPONSE #100
+		MoveToSavedLocationn("DefaultLocation","LOCALS")
+		SetGlobal("StartPatrol","LOCALS",0)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,1)
+	RandomNum(4,1)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([30.30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,1)
+	RandomNum(4,2)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([30.-30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,1)
+	RandomNum(4,3)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([-30.30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,1)
+	RandomNum(4,4)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([-30.-30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,2)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToObjectFollow(NearestMyGroupOfType)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,3)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToObject(NearestMyGroupOfType)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,4)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,1,2)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,2,2)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,3,2)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,1,3)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,2,3)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,3,3)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,5)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		RandomWalk()
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",2)
+	RandomNum(6,6)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		RandomWalkContinuous()
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		NoAction()
+END

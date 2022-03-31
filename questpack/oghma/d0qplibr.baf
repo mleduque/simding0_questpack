@@ -1,0 +1,29 @@
+IF
+	Allegiance(Myself,NEUTRAL)
+	!See([ENEMY])
+	!See(NearestEnemyOf(Myself))
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		MoveToPoint([436.227])
+		Face(6)
+		Wait(15)
+	RESPONSE #100
+		MoveToPoint([282.315])
+		Face(6)
+		Wait(15)
+	RESPONSE #100
+		MoveToPoint([683.317])
+		Face(10)
+		Wait(15)
+	RESPONSE #100
+		MoveToPoint([447.310])
+		Face(13)
+		Wait(15)
+	RESPONSE #100
+		MoveToPoint([517.193])
+		FaceObject("oghmonk1")
+		ActionOverride("oghmonk1",FaceObject("d0qplibr"))
+		Wait(10)
+		ActionOverride("oghmonk1",ClearActions())
+END

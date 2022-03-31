@@ -1,0 +1,99 @@
+IF
+	See("Cernd")
+	!InParty("Cernd")
+	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+	Global("change","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell("Cernd",CERND_BEAR)
+		SetGlobal("change","LOCALS",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Global("didOnce","LOCALS",0)
+	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+		See("Cernd")
+THEN
+	RESPONSE #100
+		SetGlobal("didOnce","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+		ReallyForceSpell(Myself,CLERIC_PROTECTION_FROM_LIGHTNING)
+		ReallyForceSpell(Myself,CLERIC_REGENERATE)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(CLERIC_IRONSKIN)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+		See("Cernd")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		PickUpItem("staf04") // Quarterstaff
+		FillSlot(SLOT_WEAPON1)
+		Spell(Myself,CLERIC_IRONSKIN)
+END
+
+IF
+	!Global("FaldornIsPanther","MYAREA",1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	DifficultyGT(NORMAL)
+	Global("DreadWolf","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("DreadWolf","LOCALS",1)
+		ForceSpellRES("spin114",Myself)
+END
+
+IF
+	!Global("FaldornIsPanther","MYAREA",1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+		See("Cernd")
+	!Range(LastSeenBy(Myself),4)
+	HPPercentLT(Myself,15)
+	HaveSpell(CLERIC_HEAL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(Myself,CLERIC_HEAL)
+END
+
+IF
+	!Global("FaldornIsPanther","MYAREA",1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(CLERIC_SUMMON_INSECTS)
+	See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),CLERIC_SUMMON_INSECTS)
+END
+
+IF
+	!Global("FaldornIsPanther","MYAREA",1)
+	HPLT(Myself,20)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+		See("Cernd")
+THEN
+	RESPONSE #100
+		SetGlobal("FaldornIsPanther","MYAREA",1)
+		ReallyForceSpell(Myself,FALDORN_PANTHER)
+END
+
+IF
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+		See("Cernd")
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Attack(LastSeenBy(Myself))
+END

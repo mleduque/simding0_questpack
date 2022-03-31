@@ -1,0 +1,84 @@
+// -*- coding: cp1252 -*-
+
+@0 = ~Vado e vengo
+Come un fiocco di neve.
+Un pallido fantasma
+sopra la tomba.
+Io vivo per morire
+E ad ogni sospiro
+maledico il
+respiro che mi salva.~ [SUKISS01]
+@1    = ~Parli con me? Oh, le mie orecchie detestano la voce della vita e della sua esistenza piagnucolante!~ [SUKISS04]
+@2    = ~Sì, anch'io sono lieto di incontrarti.~
+@3    = ~Sembravi piuttosto abbattuta. Posso fare qualcosa per aiutarti?~
+@4    = ~Va bene...~
+@5    = ~Hai nuovamente attirato la mia attenzione, vivente. Hai deciso di baciarmi, alla fine?~ [SUKISS02]
+@6    = ~Sì, farò quello che posso.~
+@7    = ~Ritirati, puttana. Facciamola finita con questa storia.~
+@8    = ~No. Ho deciso di ucciderti, invece!~
+@9    = ~Non con la bocca. Non so dove hai posato quelle specie di labbra.~
+@10   = ~Sono guarita! Io sono nuovamente bella!~ [SUKISS03]
+@11   = ~Allora...così può andare per te?~
+@12   = ~Che significa questo? Tu sei una non morta?! MUORI, CREATURA FOLLE! SUBISCI LA MIA COLLERA!!~
+@13   = ~Tesoro, mi dispiace dire questo, ma è finita tra noi. Che cosa posso dire? Preferirei che le mie amanti avessero un po' più carne sulle loro ossa.~
+@14   = ~Che cosa ho fatto?~
+@15   = ~Il tuo borbottio cantilenante è un affronto a questo posto. Secondo te perché mi aggiro tra le lapidi? Bramo il silenzio opprimente, la goccia della rugiada che affonda nella terra brulicante di vermi. Mi infastidisci, vivente.~
+@16   = ~Ti assicuro che la sensazione è reciproca.~
+@17   = ~In tal caso, me ne andrò. Devo farlo?~
+@18   = ~Per gli dèi, donna, chi ti ha strappato la catena? Stavo per offrirti aiuto!~
+@19   = ~Aiutarmi? Aiuto da un altro sacco di carne palpitante? Mi fai ribrezzo, animale.~
+@20   = ~Disgusto? Ti assicuro che la sensazione è reciproca.~
+@21   = ~Hey, non so cosa tu abbia sentito in giro, ma una cosa è certa: io non sono un animale.~
+@22   = ~Ma senti un po': il bue che dice cornuto all'asino. Se io sono un sacco di carne, tu allora sei un sacco di... beh, qualcos'altro.~
+@23   = ~Il tuo livore per l'imperfezione ferisce le mie orecchie. Oh, lascia che coloro che camminano con il sangue caldo soffochino per opera delle loro stesse lingue!~
+@24   = ~Whoa, signora. Tu sei pazza!~
+@25   = ~Beh, se la metti così, me ne andrò. Devo farlo?~
+@26   = ~Questa è una reazione piuttosto forte considerando che ho a malapena pronunciato un paio di sillabe.~
+@27   = ~Ah, quindi ci sono delle ossa nella spina dorsale di un chiacchierone. Questo mi fa piacere.~
+@28   = ~Non così in fretta. Per quanto mi faccia schifo, ho bisogno della tua carne viva per perseguire il mio salvataggio.~
+@29   = ~Di tutti i corteggiamenti di cui ho sentito nell'Amn, il tuo è decisamente il peggiore, mia signora.~
+@30   = ~(cough) Dillo un'altra volta?~
+@31   = ~Perché, sicuramente... proverò qualsiasi altra cosa.~
+@32   = ~Non parlo dello stato della vita, ma della possibilità di vita. Si genera al vostro interno come il chiocciare delle vostre parole. Vita... morte... Sento l'odore in te, il ciclo si ripete nella tua carne e ossa... nella MIA carne e ossa. Se solo potessi tornare alla tomba. Vero ritorno!~
+@33   = ~Mia maledizione. La mia maledizione è quella di camminare sulla terra in questo involucro ripugnante di pelle liscia e morbide sporgenze. Io sono viva! Così viva!~
+@34   = ~La mia follia deriva dalla mia maledizione. La mia maledizione è quella di camminare sulla terra in questo involucro ripugnante di pelle liscia e morbide sporgenze. Io sono viva! Così viva!~
+@35   = ~Ed ogni parola scortica le mie orecchie come veleno!~
+@36   = ~Scommetto che alle feste sei una grande fonte di divertimento.~
+@37   = ~Va bene, ho capito! Sei piena di disgusto!~
+@38   = ~Io sono quasi pronto a scorticarti con qualcos'altro.~
+@39   = ~La tua putrida materia cerebrale non può comprendere i bisogni oltre ai tuoi desideri di cattivo gusto? Io sputo su di te!~
+@40   = ~Ma potresti ancora essermi utile, vivente.~
+@41   = ~Ero guarita, trasformata, contro la mia volontà, in questa beffa di corpo da un chierico con meno giudizio di un coniglio che salta dentro la tana di un lupo.~
+@42   = ~Anche se questa forma è insipida e fragile, il chierico era un pazzo a pensare che sarei stata ricolma di gratitudine per il suo atto benedetto. Come avrei potuto essere contenta! Sarebbe stato meglio se mi avesse distrutto! Ma questa era la sua visione di guarigione.~
+@43   = ~Ah.. ma ho avuto la mia vendetta. Egli non commetterà più un simile errore, non senza occhi o senza la sua lingua. Lui ha realizzato i suoi miglioramenti e, di conseguenza, io ho realizzato i miei, strappando la carne fragile dalle sue ossa per concedergli un volto riconoscibile come il mio.~
+@44   = ~Vuol dire che non l'hai ucciso?~
+@45   = ~Avevo ragione, tu sei una pazza! Un assassina!~
+@46   = ~Dunque, cosa vuoi da me?~
+@47   = ~Ricompensarlo con la morte?! MAI!~
+@48   = ~Idiota! La tua ignoranza è opprimente!~
+@49   = ~Ma uccidimi! Estrai la spada e sentirai il mio languido bacio di gratitudine!~
+@50   = ~Semplice. Ho cercato la risposta tra i tomi del vivente. È stato un corrotto atto di generosità che mi ha trasformato, dunque ho bisogno di un altro atto simile per liberarmi.~
+@51   = ~Tutto quello di cui ho bisogno è un bacio che ponga fine alla mia maledizione.~
+@52   = ~Sulle labbra?~
+@53   = ~Ma ci siamo appena conosciuti!~
+@54   = ~Va bene, ma rapido per favore.~
+@55   = ~Va bene, ma senza lingua. Io non sono così...avventuroso.~
+@56   = ~Per nessuna ragione!~
+@57   = ~Ripensandoci, tu sei una persona vile sotto tutti gli aspetti. Dovrei ucciderti, invece.~
+@58   = ~Mi dispiace, ma al momento mi sto vedendo con qualcuno...~
+@59   = ~Si.~
+@60   = ~Mi dispiace, ma al momento mi sto vedendo con qualcuno...~
+@61   = ~Stai sprecando il tuo patetico fiato con questo ignobile balbettio, vivente. Mi bacerai o no?~
+@62   = ~Oh, le prime sante parole che ho sentito dalle labbra dei rifiuti ambulanti! Vieni, abbracciami. Lascia che le tue labbra pongano fine al mio dolore!~
+@63   = ~Chiudi gli occhi. È difficile mantenere l'atmosfera romantica mentre mi guardi.~
+@64   = ~Un attimo. Ho bisogno di masticare una foglia di menta. Come Volo dice, "Baci fetenti non rompono maledizioni puzzolenti".~
+@65   = ~Non posso baciarti se non la smetti di parlare.~
+@66   = ~Dunque vattene, progenie di chiacchiera! Vai fuori dalla mia vista! Non voglio più udire piagnucolii, voglio solo un bacio!~
+@67   = ~É fatta. Noi dovremo iniziare a baciarci ora.~
+@68   = ~Volo è uno sciocco che meriterebbe di avere la sua inutile testa impalata e data alle fiamme! Ora baciami!~
+@69   = ~Le mie scuse per doverti chiedere di appoggiare il tuo orifizio aureo alla mia putrescente dentiera.~
+@70   = ~Perfetto. Ora sono come dovrei essere: un cadavere decomposto vagante tra i disgustosi, che perde brani di carne putrida. Hai la mia gratitudine, vivente.~
+@71   = ~Gli dèi mi siano testimoni, mai vivrò nuovamente!~
+@72   = ~NOOOO!!! NON ORA CHE HO APPENA RITROVATO LA MIA CARCASSA MARCIA!~
+@73   = ~Il tuo patetico umorismo trasuda insignificanza. Ora sono come dovrei essere: un cadavere decomposto vagante tra i disgustosi, che perde brani di carne putrida. Hai la mia gratitudine, vivente.~
+@74   = ~Mi hai liberato, <RACE>. Ora sono come dovrei essere - un cadavere decomposto vagante tra i disgustosi, che perde brani di carne putrida. Hai la mia gratitudine, vivente.~

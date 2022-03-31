@@ -1,0 +1,21 @@
+IF
+  Global("D0Gracen","GLOBAL",1)
+  GlobalLT("AranJob","GLOBAL",3)
+  OR(2)
+    TimeOfDay(NIGHT)
+    TimeOfDay(DUSK)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Gracen","GLOBAL",2)
+    CreateCreature("BODFGT03",[1501.1162],13)
+    ActionOverride("BODFGT03",Enemy())
+END
+
+IF
+  !GlobalLT("AranJob","GLOBAL",3)
+  Global("D0Gracen","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Gracen","GLOBAL",3)
+    ActionOverride("BODFGT03",DestroySelf())
+END

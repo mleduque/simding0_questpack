@@ -1,0 +1,26 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~There is something amiss about you. You do not belong in this place.~
+@1    = ~Can it be, after so long? The air of the surface clings to you still. It brings me so close once again.~
+@2    = ~I must be free... this is my chance.~
+@3    = ~What manner of creature are you?~
+@4    = ~How is it that you can tell I do not belong here?~
+@5    = ~Be free? What is it you want?~
+@6    = ~Be free? You wish to travel to the surface?~
+@7    = ~Yet more evil lurking in the depths of the Underdark? Will it never end?~
+@8    = ~Yet more pathetic creatures hiding in the depths of the Underdark? Will it never end?~
+@9    = ~In the Dawnbringer's name, I banish you back to the depths of the Abyss, foul undead abomination!~
+@10   = ~In the Watcher's name, I banish you back to the depths of the Abyss, foul undead abomination!~
+@11   = ~No longer do I even understand my own nature. It has been... so long.~
+@12   = ~Once before, long ago, I neared my goal. My sight, taste and smell long gone, I sensed the air of freedom. Only the warring of the infernal elves halted my resolve, and I was driven back into the depths.~
+@13   = ~I know not whether years or centuries have passed since then. I have feared to venture out, for should the Drow defeat me, they would not hesitate to imprison my essence within the cavernous confines of their city.~
+@14   = ~But you... you will return to the surface. At long last, perhaps I may rest, my wish fulfilled.~
+@15   = ~It is over, finally. You are capable. Set me free.~
+@16   = ~Nazariel's final wish.
+
+While exploring the Underdark, I stumbled upon a lich named Nazariel. He made some allusion to my helping him reach the surface, before attacking me. I can only imagine that he was testing my worthiness to bear his phylactery from the Underdark after his death.~
+
+@17   = ~Nazariel's final wish.
+
+I carried the phylactery of a lich I encountered in the Underdark to the surface, fulfilling his final wish prior to death. As the fresh air touched it, the item dissolved in my hands, setting the creature free.~
+@18 = ~As the fresh surface air touches Nazarial's phylactery, it crumbles away, setting the ancient lich free at last.~

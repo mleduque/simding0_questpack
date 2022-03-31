@@ -1,0 +1,13 @@
+IF
+	!Global("D0Spawn","AR0414",1)
+THEN
+	RESPONSE #100
+		SetGlobal("D0Spawn","AR0414",1)
+		CreateCreature("D0QPPITB",[2913.1624],0)
+		CreateCreature("D0LEMURE",[1898.2539],0)
+		CreateCreature("D0LEMURE",[1839.2626],0)
+		CreateCreature("D0LEMURE",[2006.2591],0)
+		CreateCreature("D0QUAS01",[1958.2625],0)
+		ActionOverride("OBSDEM01",FaceObject("D0QPPITB"))
+		ActionOverride("D0QPPITB",FaceObject("OBSDEM01"))
+END

@@ -1,0 +1,29 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Given the nature of the magical objects I have brought back, it shall be difficult to divide them perfectly equally, but I shall endeavor to—wait a moment—it's gone! You have stolen from me! This was quite uncalled for.~
+@1    = ~Given the nature of the magical objects I have brought back, it shall be difficult to divide them perfectly equally, but I shall allow you to choose items amounting to roughly one fourth of the total worth. There are a number of magical scrolls available, and two other items of significant power. The scroll of Time Stop is worth much more than a fourth share, so I must reserve that for myself.~
+@2    = ~The Rod I retrieved has the power to cast a powerful protective enchantment, although I expect only wizards and clerics would be able to learn how to use it effectively. The enchantment will, I believe, deflect spells cast against the wielder. It works in a manner similar to most wands, and I estimate that there is enough power in it to work maybe a dozen times before it must be recharged.~
+@3    = ~This helm is actually made of bones... rather gruesome. But effective, nonetheless: it is imbued with magic capable of extinguishing the life of weaker foes. Personally, I am rather hoping you will choose this, as I have no use for it—or, indeed, any desire to be seen with it. It is hardly pleasing to the eye.~
+@4    = ~So. I did most of the research and experimentation behind this endeavor, and thus I deserve the greater part of the material rewards. But I do not forget your part in saving me from imprisonment, or re-obtaining my book of rituals, so I shall allow you the first pick of the trove.~
+@5    = ~My choice is the Rod of Absorption and the scroll of Horrid Wilting.~
+@6    = ~I select the scroll of Wail of the Banshee, and the Skull of Death.~
+@7    = ~Give me the scrolls of Simulacrum and Incendiary Cloud.~
+@8    = ~I have no need of spell scrolls. I'll take the Rod of Absorption and Skull of Death.~
+@9    = ~Let me have the scrolls of Horrid Wilting and Incendiary Cloud.~
+@10   = ~Wail of the Banshee and Simulacrum look good to me.~
+@11   = ~Hmmm... perhaps my portion of the prize is a little small. One fourth share? That seems rather paltry to me.~
+@12   = ~Here, then, is your reward for assisting me.~
+@13   = ~Still, if you are so insistent I suppose that I could up your reward a bit more, though I reserve the right to take the majority for myself.~
+@14   = ~You may choose up to a third of the total prize. But that must suffice, as I will give no more.~
+@15   = ~I'll take Incendiary Cloud, Simulacrum, and the Rod of Absorption.~
+@16   = ~Give me the scrolls of Horrid Wilting and Wail of the Banshee, and also the Skull of Death.~
+@17   = ~I choose the scroll of Time Stop.~
+@18   = ~My share will be the Rod of Absorption, Skull of Death, and scroll of Incendiary Cloud.~
+@19   = ~I think I shall take Simulacrum, Horrid Wilting, and Incendiary Cloud.~
+@20   = ~I still want a little more. Let us divide the booty in half.~
+@21   = ~I think I deserve it all. Hand it over or I will be forced to take it from you.~
+@22   = ~Very well. So what are you offering, again?~
+@23   = ~I deserve it all! Hand it over!~
+@24   = ~A Mage's Proposal.
+
+I helped Vithal retrieve the items he sought. I stole part of the spoils from him before he could divide them, however, and he did not react well. In the end I got what I deserved.~

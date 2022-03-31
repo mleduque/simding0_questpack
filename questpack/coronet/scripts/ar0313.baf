@@ -1,0 +1,10 @@
+IF
+  !Dead("thumb")
+  !Dead("surly")
+  Global("D0Surly","GLOBAL",9)
+  !Global("SurlyReturns","AR0313",1)
+THEN
+  RESPONSE #100
+    SetGlobal("SurlyReturns","AR0313",1)
+    CreateCreature("surly",[274.521],12)
+END

@@ -1,0 +1,415 @@
+// -*- coding: cp1252 -*-
+
+
+@101 = ~Forged Letter~
+@102 = ~This is the letter given to you by Mae'Var with which to incriminate Renal Bloodscalp. It details the murder of some high-ranking Shadow Thief by the Night Masks assassins.~
+@103 = ~Larell~
+
+@105 = ~Gloves of Backstabbing~
+@106 = ~Gloves of Backstabbing
+These rare enchanted gloves are issued only to the highest-ranking assassins of the Night Masks.  It is rumoured that the original design was that of a magic-wielding assassin in Sembia, and has since been copied by various guilds across the continent.  Regardless, these gloves mean that important assassins of the Night Masks are dangerous foes to be reckoned with.
+
+STATISTICS:
+
+Increase backstab modifier by 1 while equipped
+
+Not Usable By:
+ Fighter
+ Druid
+ Cleric
+ Mage
+ Bard~
+
+@107 = ~Aran's Ring of Invisibility~
+@108 = ~Aran's Ring of Invisibility
+This ring was obtained from the leader of the Shadow Thieves, Aran Linvail.  Its creation was commissioned in the past by a leading Shadow Thief as a means of escape from awkward situations; sadly it was not able to help its wielder as Linvail ascended the political ladder.
+
+STATISTICS:
+
+Special:  Cast Invisibility on the wearer 3 times/day
+
+Not Usable By:
+ Wizard Slayer~
+
+@109 = ~Night Masks Assassin~
+@110 = ~This is the bird given to you by Meronia. It is an assassin to be delivered to the unsuspecting mage, Xzar.~
+
+@114 = ~Celile~
+@115 = ~Quick, let's be gone before <PRO_HISHER> companions wake up!~
+@116 = ~Teach you not to pay back your debts!~
+@117 = ~Debt Collector~
+@118 = ~Moiya~
+@119 = ~Mummy! Are you hurt?!~
+@120 = ~Let's kill her and get out of here!~
+@121 = ~Lorick~
+@122 = ~Sarem~
+@123 = ~Dahlia~
+@124 = ~Besamen~
+@125 = ~Baisera~
+@126 = ~Alyce~
+@127 = ~Dagny~
+@128 = ~Sahen~
+@129 = ~Nazariel~
+@130 = ~Hold, intruders!~ [d0qpnaz1]
+@131 = ~Nazariel's Phylactery~
+@132 = ~Having followed the narrow tunnel for some time, you notice that it begins to lead deeper beneath the ground. Eventually, it widens out, revealing a light ahead.~
+@133 = ~Indigo~
+@134 = ~Jadarath~
+@135 = ~Phluafae~
+@136 = ~Cowled Apprentice~
+@137 = ~This is the phylactery containing the essence of the ancient lich Nazariel, whose final wish was to visit the surface and be free.~
+@138 = ~Phluafae's Acorns~
+@139 = ~Though similar in appearance to the dryad acorns you gave to Phluafae, the hard casings of these seeds bear a slightly darker hue. Perhaps the shading is a consequence of their malicious purpose.~
+@140 = ~Tear-Shaped Gem~
+@141 = ~Dryad's Tear~
+@142 = ~A pale, purple stone. It glows with a dim inner light.~
+@143 = ~Acquired at a bloody, merciless price, few adventurers would have the stomach to carry a trophy such as this. The final tear of a dryad, crystallized by her last, cooling breath, this stone glows with unearthly light. Those who carry it feel touched by its lingering legacy of beauty, but this blessing comes with a heavy price, for the gem represents the frailty of its victim's life, crushed by a cruel hand. You could tie it around your neck if you wished.
+
+STATISTICS:
+  Immunity to Charm while equipped
+  +1 bonus to Charisma
+  -1 penalty to Constitution
+
+Not Usable By:
+ Good Alignment
+ Wizard Slayer~
+
+@144 = ~This is the signet ring worn by Rayic Gethras. It carries a minor enchantment, but aside from that is of purely sentimental value.
+
+STATISTICS:
+
++1 bonus to all saving throws while equipped
+
+Not Usable By:
+ Wizard Slayer~
+@145 = ~Rayic's Signet Ring~
+@146 = ~Cowled Escort~
+@147 = ~Lay down your arms, men!~
+@148 = ~To arms, men!  The Bhaalspawn has tricked us!~
+@149 = ~Jadarath's List of Potions~
+@150 = ~This is the list of potions given to you by Jadarath. He has agreed to provide payment for every potion on the list that you return to him.
+
+1. Potion of Invisibility
+2. Oil of Speed
+3. Potion of Cold Resistance
+4. Potion of Explosions
+5. Potion of Fortitude
+6. Potion of Insulation
+7. Potion of Magic Blocking
+8. Potion of Mirrored Eyes
+9. Potion of Power
+10. Potion of Insight
+11. Potion of Freedom
+12. Potion of Stone Form~
+
+@151 = ~You have been granted +2 to your dexterity.~
+@152 = ~You have been granted +30% resistance to slashing weapons.~
+@153 = ~You have been granted +2 to your THAC0.~
+@154 = ~You have been granted +30% resistance to magical damage.~
+@155 = ~You have been granted +2 to your intelligence.~
+@156 = ~Your alignment has been adjusted to Lawful Good.~
+@157 = ~Your alignment has been adjusted to Neutral Good.~
+@158 = ~Your alignment has been adjusted to Chaotic Good.~
+@159 = ~Your alignment has been adjusted to Lawful Evil.~
+@160 = ~Your alignment has been adjusted to Neutral Evil.~
+@161 = ~Your alignment has been adjusted to Chaotic Evil.~
+@162 = ~Your alignment has been adjusted to Lawful Neutral.~
+@163 = ~Your alignment has been adjusted to True Neutral.~
+@164 = ~Your alignment has been adjusted to Chaotic Neutral.~
+@165 = ~You have lost the special abilities granted by your god.~
+
+@166 = ~Jadarath's Blessing~
+@167 = ~This belt was given to you by Jadarath, who has since departed for realms unknown. Imbued with a small portion of his strange magics, it may on occasion save the wearer from almost certain death. While a master of magic in his own strange way, Jadarath was unfortunately not an experienced tailor, and the belt is awkward and uncomfortable to wear.
+
+STATISTICS:
+
+Special: Cast Heal on the wearer once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+@175 = ~Pirate Bodyguard~
+@176 = ~Tredor~
+
+@178 = ~Sidhe~
+@179 = ~Janie~
+@180 = ~This potion will protect the drinker from all gaze attacks, including those of Basilisks, Umber Hulks, Vampires, and other creatures.  The effect will last for 10 rounds or until dispelled.~
+@181 = ~Gaze of Despair~
+@182 = ~Contingency - Improved Invisibility~
+@183 = ~Aiiiiee!!!~
+@184 = ~I plant thee, sisters, in our sacred grove.~
+@185 = ~Rise up and be free!~
+@186 = ~What?~
+@187 = ~What is happening?!~
+@188 = ~Cania...?~
+@189 = ~Elyme...?~
+@190 = ~Ulene...?~
+@191 = ~I am forsaken! We are all forsaken!~
+
+@192 = ~Don't throw your life away over minor political documents from the Night Masks.  Mae'Var is entitled to them; the Masks are apparently his secretive allies.~
+@193 = ~Mae'Var has been courting the Night Masks in order to bolster his own strategic position and betray Renal.  Masterfully planned, but I have seen through it.~
+@194 = ~The Masks are a cutthroat guild of footpads, brigands and highwaymen based in the congested cesspool of Westgate.  Obviously they wish to expand.~
+@195 = ~Yes, I have the evidence you need in these writings.  It seems that Mae'Var has been making overtures to the Night Masks.~
+@196 = ~You have fallen for the trap, taken the bait. Now you are vulnerable, and my assassins are in place! Let the Night Masks take you!~
+@197 = ~Er, hello. I... I had you followed and... and I'm awfully sorry about the mess with that Ama person. My informant tells me her cohorts wore the insignia of the Night Masks.~
+@198 = ~A letter from Mae'Var to the Night Masks assassins requesting the death of Renal Bloodscalp. This is just the kind of proof that Renal requires.~
+@199 = ~Tethyrian Shieldbearer~
+@200 = ~Bastion~
+@201 = ~Shieldbash~
+@202 = ~As you make your way through this particular section of the gloomy caverns, a faint echoing sound coming from the rocky wall catches your attention. There is a passage concealed somewhere in the darkness.~
+@203 = ~You find many scorched marks on the rock. The tracks of Kua-Toa are present around the point at which the tunnel widens, but stop abruptly shortly after.~
+@204 = ~This is the body of Montaron, the compatriot of Xzar the wizard. It looks as if the Harpers hid it so that they could have you deliver the assassin to Xzar instead.~
+@205 = ~Sanctioned Wizard~
+@206 = ~Lemure~
+@207 = ~Devil Heart~
+@208 = ~This devil's heart is strangely chilling to touch. A number of spikes enclose the fleshy core of the organ, and you must take great care to avoid drawing blood on their razor-sharp tips. The rhythmic thudding as it continues to beat is hard to bear, and from time to time it makes a sudden movement within your pack, as if trying to escape with a life of its own.~
+@209 = ~For lack of a more obvious solution, you feed the devil's heart to one of the many mouths that are embedded in the flesh of the structure, hoping that it will prove an acceptable substitute for the demon heart previously used. A moment later the sphere shudders and you can sense it powering up.~
+@210 = ~Adrozel~
+@211 = ~Kram~
+@212 = ~Scimitar +1, Shazzellim
+This scimitar is of rather poor quality, but beneath its surface lies great power and evil.  Created for the sole purpose of slaying Harpers, Shazzellim is more than capable of that task.  With one strike of the blade a Harper must make a saving throw vs. spells or die.  Crafted by a Red Wizard of Thay, the sword also has the ability to vocalize, which is why it was often given to fighter-mages in the service of the Wizards.  Needless to say, possession of this sword would not be looked upon very highly by Harpers.
+
+STATISTICS
+
+Equipped Abilities:
+ Vocalize
+
+Combat Abilities:
+ Any Harper hit must make saving throw vs. spells with a -2 penalty or die
+
+Damage:  1D8 +1
+THAC0: +1
+Damage type:  slashing
+Weight:  3
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type:  1-handed
+Requires: 10 Strength
+Not Usable By:
+ Cleric
+ Mage
+ Thief
+ Beastmaster
+ Good-Aligned Characters~
+@213 = ~Jaheira recoils in disgust from the weapon. "This blade has killed many Harpers, <CHARNAME>. I will not wield it."~ [GAM_47]
+@214 = ~With the Tear of Bhaal removed, there is nothing more of interest here.~
+@215 = ~Noooo! Why isn't it working?!~
+
+@220 = ~With Faldorn dead, and her link to the grove violently severed, the earth itself seems to let out a low moan. It seems likely that your disregard for the druidic rituals has taken its toll.~
+@221 = ~As your mind fights against whatever sinister magics Quallo controls—or are controlling him—your body is transformed into a hideous creature of nightmare.  Unbidden, you strike down your former companions, as a voice silently whispers through your mind, "They would take you away from me, friend.  They are not friends.  They die."
+
+Your mind reels in horror as each of your comrades is struck down by that which you have fought so long to keep buried.  The essence of Bhaal.  What inestimable powers does the creature that tricked you wield, that he can so easily control you and your berserk taint?  Perhaps it will never be known.
+
+You are calm, and though you would have it otherwise, you can only look on in bemused interest as the last of the lifeblood of your friends flows from their mangled bodies.  Your vision blurs, and you can make out the dim outline of Quallo as he stoops over their prone forms, and begins to lap up their spilled blood.  Again his repulsive and sinister voice echoes in your thoughts, "Friends forever, we shall be.  And you are a powerful friend, indeed."
+
+Eternity awaits, but there will be no legendary exploits or vast wealth now.  For you, there is only this dank sewer, and this insane old man.~
+@222 = ~THE PRICE OF FRIENDSHIP~
+@223 = ~Slave Woman~
+@224 = ~Lone Kobold~
+@225 = ~Hobgoblin~
+@226 = ~Hobgoblin Mercenary~
+@227 = ~Librarian~
+@228 = ~History of Shadowdale, Vol. 1~
+@229 = ~History of Shadowdale, Vol. 2~
+@230 = ~History of Shadowdale, Vol. 3~
+@231 = ~History of Shadowdale, Vol. 4~
+@232 = ~History of Shadowdale, Vol. 5~
+@233 = ~History of Shadowdale, Vol. 6~
+@234 = ~History of Shadowdale, Vol. 7~
+@235 = ~History of Shadowdale, Vol. 8~
+@236 = ~History of Shadowdale, Vol. 9~
+@237 = ~History of Shadowdale, Vol. 10~
+@238 = ~History of Shadowdale, Vol. 11~
+@239 = ~History of Shadowdale, Vol. 12~
+@240 = ~History of Shadowdale, Vol. 13~
+@241 = ~History of the Drow, Vol. 1~
+@242 = ~History of the Drow, Vol. 2~
+@243 = ~History of the North, Vol. 1~
+@244 = ~History of the North, Vol. 2~
+@245 = ~History of the North, Vol. 3~
+@246 = ~History of the North, Vol. 4~
+@247 = ~History of the North, Vol. 5~
+@248 = ~History of the North, Vol. 6~
+@249 = ~History of the North, Vol. 7~
+@250 = ~History of the North, Vol. 8~
+@251 = ~History of the North, Vol. 9~
+@252 = ~History of the North, Vol. 10~
+@253 = ~History of Waterdeep, Vol. 1~
+@254 = ~History of Waterdeep, Vol. 2~
+@255 = ~History of Waterdeep, Vol. 3~
+@256 = ~History of Waterdeep, Vol. 4~
+@257 = ~History of Waterdeep, Vol. 5~
+@258 = ~History of Waterdeep, Vol. 6~
+@259 = ~But that's not what I asked you to do, is it?  I needed the evidence before I could order Mae'Var's death!  Now it will look like I made the evidence after the fact!!~
+@260 = ~But I have the evidence of Mae'Var's treachery right here!~
+@261 = ~Carrack~
+@262 = ~Lillian~
+@263 = ~Cora~
+@264 = ~Arris~
+@265 = ~Torturer~
+@266 = ~Carrack evidently did not make it far in his attempt at revenge. His body has been looted and left, possibly as a warning to others.~
+@267 = ~Eye~
+@268 = ~Abraxxi~
+@269 = ~I will have Arkanis and Kachiko and others, our best assassins, join you when you enter Bodhi's catacombs.  I want to be sure Bodhi is forever out of my hair.~
+@270 = ~Chain Contingency - Protection from Magical Weapons~
+@271 = ~Chain Contingency - Spell Turning~
+@272 = ~Chain Contingency - Mislead~
+@273 = ~Spell Trigger - Fire Shield~
+@274 = ~Chain Contingency - Stoneskin~
+@275 = ~Spectre~
+@276 = ~Retribution of Regrets~
+@277 = ~Displacer Beast~
+@278 = ~Greater Displacer Beast~
+
+@279 = ~Globe of Darkness~
+@280 = ~Globe of Darkness (Schoolless/Unspecified)
+Level: 1
+Range:  Sight
+Duration: 1 round/ two levels of the caster
+Casting Time: 2
+Area of Effect: One Target
+Saving Throw: Neg
+
+This innate ability of the deep elves causes blindness on a target that lasts for a round for every two levels of the caster, or until dispelled.~
+
+@281 = ~Improved Globe of Darkness~
+@282 = ~Improved Globe of Darkness (Schoolless/Unspecified)
+Level: 1
+Range:  Sight
+Duration: 1 round/ two levels of the caster
+Casting Time: 2
+Area of Effect: One Target
+Saving Throw: Neg
+
+This innate ability of the deep elves causes blindness on a target that lasts for a round for every two levels of the caster, or until dispelled.~
+
+@283 = ~Dancing Lights~
+@284 = ~Dancing Lights (Schoolless/Unspecified)
+Level: 1
+Range:  Sight
+Duration: 3 rounds
+Casting Time: 2
+Area of Effect: One Target
+Saving Throw: Neg
+
+This innate ability of the dark elves causes confusion in a target for 3 rounds.~
+@285 = ~Under the effects of Dancing Lights.~
+@286 = ~Distracted.~
+
+@287 = ~Faerie Fire~
+@288 = ~Faerie Fire (Schoolless/Unspecified)
+Level: 1
+Sphere: Combat
+Range: 0
+Duration: 6 rounds
+Casting Time: 1
+Area of Effect: One Target
+Saving Throw: None
+
+This spell outlines the target in a white glow which gives a -2 to armor class.~
+@289 = ~Eyestalk Destroyed~
+@290 = ~Central Eye Damaged~
+@291 = ~Elder Vampire~
+@292 = ~Ancient Vampire~
+@293 = ~Help!~
+@294 = ~I require assistance!~
+@295 = ~I can't take this!~
+@296 = ~No more!~
+@297 = ~Yuan-Ti Mage~
+@298 = ~Confusing Gaze~
+@299 = ~Dominating Gaze~
+@300 = ~Nauseating Gaze~
+@301 = ~Red Scimitar +3~
+@302 = ~This scimitar, a dull red in hue, is made of no metal you recognize. While it is slightly larger and heavier than you might expect from such a weapon, this does not impede its perfect balance; it seems almost designed to unleash a rapid flurry of blows while allowing the wielder to retain complete control.
+
+STATISTICS:
+
+Combat Abilities: Each successful hit grants the wielder a +1 THAC0 bonus for 1 round.
+
+THAC0:  +3 bonus
+Damage:  1D8 +3
+Damage type:  slashing
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type:  1-handed
+Requires: 10 Strength
+Not Usable By:
+ Cleric
+ Mage
+ Thief~
+@303 = ~Wilbur~
+@304 = ~Sythillisian Soldier~
+@305 = ~Fekir~
+@306 = ~Astral Door~
+@307 = ~Claire was married to Sanik the Trader. He was going to take her away with him on the next ship out but he didn't count on Lady Galvena's nature. She sent an assassin after him and took Claire from the docks where she waited.~
+@308 = ~Claire were waitin' outside the guildhouse fer her boyo, but Miss Galvena sent an assassin after him, an' she took Claire inside the guildhouse.  Has her locked up inside.~
+@309 = ~Guard Captain~
+@310 = ~Ormand~
+@311 = ~Elven Archer~
+@312 = ~Elven Stalker~
+@313 = ~Elven Cleric~
+@314 = ~Elven Beastmaster~
+@315 = ~Longbow +3: Elven Court Bow
+This yew bow is as much a work of art as a weapon of war; fine engravings dance over the polished wood, and the bowstring gleams of gold, almost singing when drawn.  This was a ceremonial bow in the Elven Court for a thousand years, though that is scarcely a single lifetime in elven terms.  Every 50 years or so it was granted to someone who had performed a great service, the recipient eventually choosing who would hold it next.  Two centuries ago a human, Yin Pon, rescued an elven prince and was gifted the bow, which he carried with him to Baldur's Gate, where it was subsequently lost.
+While the flawless craftsmanship lends itself to accuracy, the bow is a cherished and symbolic item, and it is only with the elven blessing of a rightful wielder that the true magic of this bow is unlocked.
+
+STATISTICS:
+
+THAC0: +4 bonus
+Weight: 2
+Speed Factor: 4
+Proficiency Type: Long Bow
+Type: 2-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief
+ Monk
+ Kensai
+ Cavalier~
+@316 = ~Tranquil Dart +2~
+@317 = ~Dart +2: 'Tranquil Dart'
+Because they are tipped with a magical toxin capable of rendering a victim unconscious, darts such as these are favourites among thieves and assassins. They would wait in the shadows for their unsuspecting persons, and aim for a swift puncture in the neck before slitting the fallen victim's throat, swiping their possessions, or whatever the goal might be.
+
+STATISTICS:
+
+Dart returns instantly to the user's hand after being thrown.
+
+Combat Ability: Target must save vs. death with a -2 penalty or fall asleep for 1 round.
+THAC0: +2 bonus
+Damage: 1D3 + 2
+Damage type: missile (piercing)
+Weight: 0
+Speed Factor: 0
+Proficiency Type: Dart
+Type: 1-handed
+Not Usable By:
+ Cleric
+ Kensai
+ Cavalier~
+@318 = ~Wizard Construct~
+@319 = ~Chain Contingency - Stoneskin~
+@320 = ~Chain Contingency - Spell Deflection~
+@321 = ~Chain Contingency - Fire Shield Red~
+@322 = ~Spell Trigger - Fired~
+@323 = ~Spell Trigger - Mislead~
+@324 = ~Spell Trigger - Protection from Magical Weapons~
+@325 = ~Spell Trigger - Globe of Invulnerability~
+@326 = ~Contingency - Stoneskin~
+@327 = ~Secret Disco Gnoll discovered!~
+@328 = ~Disco Gnoll likes disco music!~
+
+@99948 = ~Find proof of Mae'Var's treachery.
+
+Mae'Var's assistant has turned out to be none other than the Thayvian wizard I met on the Sword Coast.  He has set me a task to kill one Rayic Gethras, a Cowled Wizard who lives in a three-story grey building on the westward end of the Docks District.  I will know that Gethras is home if his door is open.  When Rayic is dead, I am to bring Edwin his signet ring as proof.~
+
+@99906 = ~Adalon's eggs held by House Despana?
+
+According to an ageing drow in the tavern, the silver dragon's eggs are likely to be held in the compound of House Despana if anywhere. No doubt gaining access will be tricky.~
+
+@99902 = ~Getting Inside the Asylum
+
+I convinced one of the courtesans to tell me what happened to Claire.  It seems Lady Galvena was not very impressed with the fact that Sanik was going to leave with her, and so decided to have Claire locked up within the Guildhouse and an assassin sent after Sanik.~

@@ -1,0 +1,85 @@
+IF
+  Global("Open0306","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("Open0306","GLOBAL",2)
+    OpenDoor("DOOR0306")
+    Unlock("DOOR0306")
+    Continue()
+END
+
+IF
+  Global("Open0307","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("Open0307","GLOBAL",2)
+    TriggerActivation("Tran0329a",TRUE)
+    TriggerActivation("Tran0329b",TRUE)
+    TriggerActivation("Info307a",FALSE)
+    TriggerActivation("Info307b",FALSE)
+    Continue()
+END
+
+IF
+  Global("D0Maevar2","GLOBAL",34)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Maevar2","GLOBAL",35)
+    SetGlobal("HQEntry","GLOBAL",1)
+    SetGlobal("ETG2Dave","AR0300",2)
+    SetGlobal("DTG2Dave","AR0300",2)
+    Lock("DOOR0305")
+    Lock("DOOR0306")
+    CloseDoor("DOOR0305")
+    CloseDoor("DOOR0306")
+    TriggerActivation("Tran0305",FALSE)
+    TriggerActivation("Tran0306",FALSE)
+    TriggerActivation("Tran0327",TRUE)
+    TriggerActivation("Tran0328",TRUE)
+    TriggerActivation("Tran0307a",FALSE)
+    TriggerActivation("Tran0307b",FALSE)
+    TriggerActivation("Info307a",TRUE)
+    TriggerActivation("Info307b",TRUE)
+    ActionOverride("stguard1",DestroySelf())
+    ActionOverride("stguard1",DestroySelf())
+    ActionOverride("stguard1",DestroySelf())
+    CreateCreature("d0guard2",[1550.842],13)
+    CreateCreature("d0guard3",[1342.982],0)
+    CreateCreature("d0guard3",[1433.877],0)
+    CreateCreature("d0guard3",[974.1234],0)
+    CreateCreature("d0guard3",[729.1586],0)
+END
+
+IF
+  GlobalGT("D0Maevar2","GLOBAL",36)
+  Global("D0LockAran","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0LockAran","GLOBAL",1)
+    Lock("DOOR0305")
+    Lock("DOOR0306")
+    CloseDoor("DOOR0305")
+    CloseDoor("DOOR0306")
+    TriggerActivation("Tran0307a",FALSE)
+    TriggerActivation("Tran0307b",FALSE)
+    TriggerActivation("Info307a",TRUE)
+    TriggerActivation("Info307b",TRUE)
+    TriggerActivation("Tran0305",FALSE)
+    TriggerActivation("Tran0306",FALSE)
+    TriggerActivation("Tran0327",FALSE)
+    TriggerActivation("Tran0328",FALSE)
+    TriggerActivation("Tran0329a",FALSE)
+    TriggerActivation("Tran0329b",FALSE)
+    ActionOverride("stguard1",DestroySelf())
+    ActionOverride("stguard1",DestroySelf())
+    ActionOverride("stguard1",DestroySelf())
+    ActionOverride("d0guard2",DestroySelf())
+    ActionOverride("d0guard3",DestroySelf())
+    ActionOverride("d0guard3",DestroySelf())
+    ActionOverride("d0guard3",DestroySelf())
+    CreateCreature("d0guard2",[1550.842],13)
+    CreateCreature("d0guard3",[1342.982],0)
+    CreateCreature("d0guard3",[1433.877],0)
+    CreateCreature("d0guard3",[974.1234],0)
+    CreateCreature("d0guard3",[729.1586],0)
+END

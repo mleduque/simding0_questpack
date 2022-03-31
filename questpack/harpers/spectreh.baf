@@ -1,0 +1,8 @@
+IF
+  GlobalGT("D0Harpers","GLOBAL",6)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("BadHarper","AR0309",1)
+    Enemy()
+END

@@ -1,0 +1,29 @@
+IF
+  !Global("D0OasisDirection","GLOBAL",0)
+  GlobalGT("SaradushSacked","GLOBAL",0)
+  Global("D0Spawn6300","GLOBAL",0)
+  OR(5)
+    AreaCheckObject("ar5202",Player1)
+    AreaCheckObject("ar5200",Player1)
+    AreaCheckObject("ar6400",Player1)
+    AreaCheckObject("ar5203",Player1)
+    AreaCheckObject("ar3000",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0OasisDirection","GLOBAL",0)
+    Continue()
+END
+
+IF
+  !Global("D0OasisDirection","GLOBAL",1)
+  GlobalGT("SaradushSacked","GLOBAL",0)
+  Global("D0Spawn6300","GLOBAL",0)
+  OR(3)
+    AreaCheckObject("ar6000",Player1)
+    AreaCheckObject("ar5500",Player1)
+    AreaCheckObject("ar6100",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0OasisDirection","GLOBAL",1)
+    Continue()
+END

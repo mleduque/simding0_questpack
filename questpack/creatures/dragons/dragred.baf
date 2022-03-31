@@ -1,0 +1,249 @@
+Spells he should use:
+WIZARD_FLAME_ARROW x 3
+WIZARD_FIREBALL x 2
+WIZARD_SUN_FIRE x 1
+CLERIC_FLAME_STRIKE x 2 (insane only)
+CLERIC_FIRE_STORM x 1 (insane only)
+WIZARD_DISPEL_MAGIC x 1
+CLERIC_HEAL x 1 (and at 50% on difficulties above easy)
+WIZARD_SECRET_WORD x 1
+
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(17)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		HitBy([GOODCUTOFF],CRUSHING)
+		HPPercentLT(Myself,100)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([0.0.0.0.0.SUMMONED_DEMON],DEFAULT)
+		HitBy([GOODCUTOFF.0.0.0.0.SUMMONED],CRUSHING)
+		HitBy([0.0.0.0.0.SUMMONED_DEMON],CRUSHING)
+		SpellCastInnate([GOODCUTOFF],SET_SNARE_TRAP)
+		SpellCastInnate([GOODCUTOFF],SET_SPECIAL_SNARE_TRAP)
+		SpellCastInnate([GOODCUTOFF],ROGUE_SET_SPIKE_TRAP)
+		SpellCastInnate([GOODCUTOFF],ROGUE_SET_EXPLODING_TRAP)
+		SpellCastInnate([GOODCUTOFF],ROGUE_SET_TIME_TRAP)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	Global("Prep","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Prep","LOCALS",1)
+		ForceSpell(Myself,DRAGON_STONE_SKIN)
+		ForceSpell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(2)
+		PartyRested()
+		!Detect([PC])
+	OR(2)
+		PartyRested()
+		CombatCounter(0)
+	OR(2)
+		PartyRested()
+		!ActuallyInCombat()
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","LOCALS",0)
+		SetGlobal("Fear","LOCALS",0)
+		ReallyForceSpell(Myself,CLERIC_HEAL)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	Global("Fear","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+	RandomNumGT(6,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Fear","LOCALS",1)
+		ReallyForceSpell(LastSeenBy(Myself),DRAGON_FEAR)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	Global("Fear","LOCALS",0)
+	See(SecondNearestEnemyOf(Myself))
+	RandomNumGT(6,2)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Fear","LOCALS",1)
+		ReallyForceSpell(LastSeenBy(Myself),DRAGON_FEAR)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	Global("Fear","LOCALS",0)
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNumGT(6,3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Fear","LOCALS",1)
+		ReallyForceSpell(LastSeenBy(Myself),DRAGON_FEAR)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	Global("Fear","LOCALS",0)
+	See(FourthNearestEnemyOf(Myself))
+	RandomNumGT(6,4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Fear","LOCALS",1)
+		ReallyForceSpell(LastSeenBy(Myself),DRAGON_FEAR)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	Global("Fear","LOCALS",0)
+	See(FifthNearestEnemyOf(Myself))
+	RandomNumGT(6,5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Fear","LOCALS",1)
+		ReallyForceSpell(LastSeenBy(Myself),DRAGON_FEAR)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	Global("Fear","LOCALS",0)
+	See(SixthNearestEnemyOf(Myself))
+	RandomNumGT(6,6)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Fear","LOCALS",1)
+		ReallyForceSpell(LastSeenBy(Myself),DRAGON_FEAR)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	Global("Lower","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+	CheckStatGT(LastSeenBy(Myself),25,RESISTFIRE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("Lower","LOCALS",1)
+		ReallyForceSpell(LastSeenBy(Myself),DRAGON_LOWER_FIRE)
+END
+
+
+		SetGlobalTimer("REDDRAGONBREATH","GLOBAL",1)
+		ForceSpell(LastSeenBy(Myself),DRAGON_WING_BUFFET)
+END
+
+IF
+	GlobalTimerExpired("REDDRAGONBREATH","GLOBAL")
+	See(NearestEnemyOf(Myself))
+	Range(LastSeenBy(Myself),11)
+	Global("WingBuffet","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),DRAGON_WING_BUFFET)
+		Wait(1)
+		SetGlobal("WingBuffet","LOCALS",1)
+	RESPONSE #60
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),10)
+	GlobalTimerExpired("REDDRAGONBREATH","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("WingBuffet","LOCALS",0)
+		ForceSpell(LastSeenBy(Myself),RED_DRAGON_BREATH)
+		ReallyForceSpell(LastSeenBy(Myself),RED_DRAGON_HIT)
+		SetGlobalTimer("REDDRAGONBREATH","GLOBAL",18)
+END
+
+IF
+	Global("WingBuffet","LOCALS",1)
+	See(NearestEnemyOf(Myself))
+	Range(LastSeenBy(Myself),11)
+THEN
+	RESPONSE #100
+		SetGlobal("WingBuffet","LOCALS",0)
+		SetGlobalTimer("REDDRAGONBREATH","GLOBAL",18)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Offense1","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_GREATER_MALISON)
+		SetGlobal("Offense1","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Haste","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_HASTE)
+		SetGlobal("Haste","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("HoldPerson","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+		SetGlobal("HoldPerson","LOCALS",1)
+END
+
+IF
+	Global("Silence","LOCALS",0)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+		See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),DRAGON_SILENCE)
+		SetGlobal("Silence","LOCALS",1)
+		AttackOneRound(LastSeenBy(Myself))
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Delay(6)
+	GlobalLT("CharmPerson","LOCALS",3)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CHARM_PERSON)
+		IncrementGlobal("CharmPerson","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),35)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		MoveToObject([PC])
+END

@@ -1,0 +1,363 @@
+// Level 8 Cleric
+// No real information on Priests of Cyrics' special abilities, so I figure he gets one force-casting of Chaos.
+
+/*
+IF
+  OR(2)
+    Die()
+    Allegiance(Myself,ENEMY)
+Global("EraseJournal","LOCALS",0)
+GlobalGT("D0ClericThiefQuest","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("EraseJournal","LOCALS",1)
+    EraseJournalEntry(blah)
+    Continue()
+END */
+
+IF
+  OR(5)
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    HitBy([GOODCUTOFF],CRUSHING)
+    Die()
+    Heard([ANYONE],151)
+    Global("D0MaeVarHostile","GLOBAL",1)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Shout(151)
+    Enemy()
+    Continue()
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  See([GOODCUTOFF])
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    Shout(151)
+    Continue()
+END
+
+IF
+  OR(2)
+    GlobalTimerNotExpired("Cast","LOCALS")
+    HitBy([GOODCUTOFF.UNDEAD],CRUSHING)
+  GlobalTimerNotExpired("Turn","LOCALS")
+  Detect([GOODCUTOFF.UNDEAD])
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Turn","LOCALS",6)
+    Turn()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Global("Chaos","LOCALS",0)
+  !Range(NearestEnemyOf(Myself),10)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Chaos","LOCALS",1)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(CLERIC_DEFENSIVE_HARMONY)
+  !Range(NearestEnemyOf(Myself),10)
+  RandomNum(2,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_DEFENSIVE_HARMONY)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,50)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  !Range(LastAttackerOf(Myself),4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    HPPercentLT("Maevar",60)
+    Range("Maevar",10)
+  OR(2)
+    HPPercentLT("Maevar",60)
+    HPPercentLT("Maevar",35)
+  !StateCheck("Maevar",STATE_INVISIBLE)
+  !StateCheck("Maevar",STATE_IMPROVEDINVISIBILITY)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  !Range(LastAttackerOf(Myself),4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Maevar",CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+    HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  OR(4)
+    !See(NearestMyGroupOfType)
+    !HPPercentLT(NearestMyGroupOfType,75)
+    StateCheck(NearestMyGroupOfType,STATE_INVISIBLE)
+    StateCheck(NearestMyGroupOfType,STATE_IMPROVEDINVISIBILITY)
+  OR(4)
+    !See(SecondNearestMyGroupOfType)
+    !HPPercentLT(NearestMyGroupOfType,75)
+    StateCheck(SecondNearestMyGroupOfType,STATE_INVISIBLE)
+    StateCheck(SecondNearestMyGroupOfType,STATE_IMPROVEDINVISIBILITY)
+  OR(4)
+    !See(ThirdNearestMyGroupOfType)
+    !HPPercentLT(NearestMyGroupOfType,75)
+    StateCheck(ThirdNearestMyGroupOfType,STATE_INVISIBLE)
+    StateCheck(ThirdNearestMyGroupOfType,STATE_IMPROVEDINVISIBILITY)
+  OR(4)
+    !See(FourthNearestMyGroupOfType)
+    !HPPercentLT(NearestMyGroupOfType,75)
+    StateCheck(FourthNearestMyGroupOfType,STATE_INVISIBLE)
+    StateCheck(FourthNearestMyGroupOfType,STATE_IMPROVEDINVISIBILITY)
+  OR(4)
+    !See(FifthNearestMyGroupOfType)
+    !HPPercentLT(NearestMyGroupOfType,75)
+    StateCheck(FifthNearestMyGroupOfType,STATE_INVISIBLE)
+    StateCheck(FifthNearestMyGroupOfType,STATE_IMPROVEDINVISIBILITY)
+  OR(4)
+    !See(SixthNearestMyGroupOfType)
+    !HPPercentLT(NearestMyGroupOfType,75)
+    StateCheck(SixthNearestMyGroupOfType,STATE_INVISIBLE)
+    StateCheck(SixthNearestMyGroupOfType,STATE_IMPROVEDINVISIBILITY)
+  See(Myself)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),ENEMY)
+  HPPercentLT(LastSeenBy(Myself),75)
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_MEDIUM_WOUNDS)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),ENEMY)
+  HPPercentLT(LastSeenBy(Myself),80)
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_LIGHT_WOUNDS)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    StateCheck("Maevar",STATE_HELPLESS)
+    StateCheck("Maevar",STATE_STUNNED)
+  !StateCheck("Maevar",STATE_INVISIBLE)
+  !StateCheck("Maevar",STATE_IMPROVEDINVISIBILITY)
+  HaveSpell(CLERIC_REMOVE_PARALYSIS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Maevar",CLERIC_REMOVE_PARALYSIS)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  StateCheck("Maevar",STATE_SLOWED)
+  !StateCheck("Maevar",STATE_INVISIBLE)
+  !StateCheck("Maevar",STATE_IMPROVEDINVISIBILITY)
+  HaveSpell(CLERIC_FREE_ACTION)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Maevar",CLERIC_FREE_ACTION)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_BLESS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_BLESS)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    HaveSpell(CLERIC_MISCAST_MAGIC)
+    HaveSpell(CLERIC_SILENCE_15_FOOT)
+  OR(4)
+    HasBounceEffects(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+    HasImmunityEffects(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+    !See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+    RandomNumGT(20,1)
+  OR(4)
+    HasBounceEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+    HasImmunityEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+    !See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+    RandomNumGT(20,2)
+  OR(4)
+    HasBounceEffects(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+    HasImmunityEffects(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+    !See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+    RandomNumGT(20,3)
+  OR(4)
+    HasBounceEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+    HasImmunityEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+    !See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+    RandomNumGT(20,4)
+  OR(4)
+    HasBounceEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+    HasImmunityEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+    !See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+    RandomNumGT(20,5)
+  OR(4)
+    HasBounceEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+    HasImmunityEffects(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+    !See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+    RandomNumGT(20,6)
+  OR(7)
+    !See(NearestEnemyOf(Myself))
+    !See(SecondNearestEnemyOf(Myself))
+    !See(ThirdNearestEnemyOf(Myself))
+    !See(FourthNearestEnemyOf(Myself))
+    !See(FifthNearestEnemyOf(Myself))
+    !See(SixthNearestEnemyOf(Myself))
+    RandomNum(2,1)
+  OR(7)
+    !See(SixthNearestEnemyOf(Myself))
+    !See(FifthNearestEnemyOf(Myself))
+    !See(FourthNearestEnemyOf(Myself))
+    !See(ThirdNearestEnemyOf(Myself))
+    !See(SecondNearestEnemyOf(Myself))
+    !See(NearestEnemyOf(Myself))
+    RandomNumGT(5,2)
+  OR(6)
+    !See(FifthNearestEnemyOf(Myself))
+    !See(SecondNearestEnemyOf(Myself))
+    !See(NearestEnemyOf(Myself))
+    !See(FourthNearestEnemyOf(Myself))
+    !See(ThirdNearestEnemyOf(Myself))
+    !See(SixthNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  OR(5)
+    Class(LastSeenBy(Myself),MAGE_ALL)
+    Class(LastSeenBy(Myself),CLERIC_ALL)
+    Class(LastSeenBy(Myself),BARD_ALL)
+    Class(LastSeenBy(Myself),DRUID_ALL)
+    Class(LastSeenBy(Myself),SORCERER)
+  HaveSpell(CLERIC_MISCAST_MAGIC)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Maevar",CLERIC_MISCAST_MAGIC)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  OR(5)
+    Class(LastSeenBy(Myself),MAGE_ALL)
+    Class(LastSeenBy(Myself),CLERIC_ALL)
+    Class(LastSeenBy(Myself),BARD_ALL)
+    Class(LastSeenBy(Myself),DRUID_ALL)
+    Class(LastSeenBy(Myself),SORCERER)
+  HaveSpell(CLERIC_SILENCE_15_FOOT)
+  RandomNum(2,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Maevar",CLERIC_SILENCE_15_FOOT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  HaveSpell(CLERIC_CHARM_PERSON)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CHARM_PERSON)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveAnySpells()
+  OR(2)
+    HitBy([ANYONE],CRUSHING)
+    AttackedBy([ANYONE],DEFAULT)
+  Range(LastAttackerOf(Myself),5)
+THEN
+  RESPONSE #100
+    RunAwayFrom(LastAttackerOf(Myself),2)
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+  RESPONSE #100
+    MoveToObject(NearestMyGroupOfType)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    !HaveAnySpells()
+    RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  !RandomNum(2,1)
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END

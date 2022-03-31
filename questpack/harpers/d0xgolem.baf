@@ -1,0 +1,8 @@
+IF
+  !Allegiance("XAPPREN1",ENEMY)
+  !Allegiance("XAPPREN2",ENEMY)
+  !Dead("XAPPREN1")
+  !Dead("XAPPREN2")
+THEN
+  RESPONSE #100
+END

@@ -1,0 +1,35 @@
+IF
+  NumTimesTalkedTo(0)
+  See([PC])
+  Global("D0Poor","GLOBAL",0)
+  CombatCounter(0)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  NumTimesTalkedTo(0)
+  See([PC])
+  GlobalGT("D0Poor","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("D0Poor","GLOBAL",7)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+IF
+  Global("D0Poor","GLOBAL",8)
+  !See("d0boy")
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END

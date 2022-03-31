@@ -1,0 +1,275 @@
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+    Allegiance(Myself,ENEMY)
+    Detect([GOODCUTOFF])
+    !See(LastSeenBy(Myself))
+    StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+    See(NearestMyGroupOfType)
+    !BreakingPoint()
+    !GlobalTimerNotExpired("SeeInvis","GLOBAL",0)
+    RandomNum(4,1)
+    Global("Seen","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("SeeInvis","GLOBAL",TWO_DAYS)
+        SetGlobal("Seen","LOCALS",1)
+        DisplayStringHead(Myself,~What was that?~)
+    RESPONSE #100
+        SetGlobalTimer("SeeInvis","GLOBAL",TWO_DAYS)
+        SetGlobal("Seen","LOCALS",1)
+        DisplayStringHead(Myself,~Did you hear something?~)
+    RESPONSE #200
+        SetGlobalTimer("SeeInvis","GLOBAL",TWO_DAYS)
+        SetGlobal("Seen","LOCALS",1)
+END
+
+
+IF
+    OR(8)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+        Race(Myself,VAMPIRE)
+    Allegiance(Myself,ENEMY)
+    See([PC])
+    StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+    See(NearestEnemyOf(Myself))
+    !BreakingPoint()
+    Global("Winning","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~Yes! Fight amongst yourselves!~)
+END
+
+
+IF
+    OR(8)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+    CheckStatGT(Myself,75,SPELLFAILUREMAGE)
+THEN
+    RESPONSE #100
+        DisplayStringHead(Myself,~My magic! No!~)
+
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+    Allegiance(Myself,ENEMY)
+    See([GOODCUTOFF.0.MAGE_ALL])
+    See(NearestMyGroupOfType)
+    HPLT(LastSeenBy(Myself),20)
+    !BreakingPoint()
+    Global("Winning","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~Your magic cannot save you now!~)
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~This will end soon!~)
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~Come! We can win this!~)
+END
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+    Allegiance(Myself,ENEMY)
+    See([GOODCUTOFF.0.MAGE_ALL])
+    HPLT(LastSeenBy(Myself),20)
+    !BreakingPoint()
+    Global("Winning","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~Your magic cannot save you now!~)
+END
+
+IF
+    Race(Myself,VAMPIRE)
+    See(NearestEnemyOf(Myself))
+    HPLT(LastSeenBy(Myself),20)
+    !BreakingPoint()
+    Global("Winning","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~Soon I will feast upon your blood!~)
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~The smell of your flesh calls me!~)
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~Yes! Die, fleshling!~)
+    RESPONSE #100
+        SetGlobal("Winning","LOCALS",1)
+        DisplayStringHead(Myself,~I can taste your blood on the air!~)
+END
+
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+    Global("Winning","LOCALS",1)
+	BreakingPoint()
+	Global("Panic","LOCALS",0)
+THEN
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,~The tide of battle has turned!~)
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49767) // No more!
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49768) // Mercy!
+    RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+        DisplayStringHead(Myself,~I yield!~)
+END
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+	BreakingPoint()
+	Global("Panic","LOCALS",0)
+THEN
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49766) // I can't take this!
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49767) // No more!
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49768) // Mercy!
+    RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+        DisplayStringHead(Myself,~I yield!~)
+END
+
+IF
+    Race(Myself,OGRE)
+    OR(2)
+        Class(Myself,OGRE_HALFOGRE)
+        Class(Myself,OGRE)
+        Class(Myself,OGRE_OGRILLON)
+	BreakingPoint()
+	Global("Panic","LOCALS",0)
+THEN
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,~You stop hitting!~)
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,~RRRRrrrgh!~)
+    RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+        DisplayStringHead(Myself,~No hurt! No hurt!~)
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49767) // No more!
+END
+
+IF
+    Race(Myself,SAHUAGIN)
+	BreakingPoint()
+	Global("Panic","LOCALS",0)
+THEN
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,~Sekolah save me!~)
+END
+
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+	HPPercentLT(Myself,20)
+	HPGT(Myself,1)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("Whined","LOCALS",0)
+	See(NearestMyGroupOfType)
+	Allegiance(Myself,ENEMY)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,46151) // Help!
+		Shout(153)
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,49763) // I require assistance!
+		Shout(153)
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,49764) // Defend me!
+		Shout(153)
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,~I need healing!~)
+		Shout(153)
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,49765) // Slay my attacker!
+		Shout(153)
+END
+
+
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+    Class(Myself,INNOCENT)
+    See(an amnish guard)
+THEN
+    RESPONSE #100
+        DisplayStringHead(Myself,~Guards, help me!~)

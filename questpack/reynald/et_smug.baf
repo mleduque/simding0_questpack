@@ -1,0 +1,11 @@
+IF
+  Dead("kaypall")
+  NumDeadGT("kaypal",3)
+  !See(NearestEnemyOf(Myself))
+  See([PC])
+  Global("RindusLeaves","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("RindusLeaves","LOCALS",1)
+    StartDialogNoSet([PC])
+END

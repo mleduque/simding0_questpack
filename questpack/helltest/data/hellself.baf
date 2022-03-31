@@ -1,0 +1,140 @@
+IF
+  GlobalTimerNotExpired("C7SelfishFightTime","AR2904")
+  OR(2)
+    Dead("hellvict")
+    Global("D0TookInnocent","LOCALS",2)
+  OR(2)
+    Dead("hellvict")
+    Died(Player2)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("D0Scar","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Scar","LOCALS",1)
+    SetGlobalTimer("ScarTimer","LOCALS",12)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("D0Scar","LOCALS",1)
+  GlobalTimerExpired("ScarTimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobal("D0Scar","LOCALS",2)
+    SetGlobalTimer("ScarTimer","LOCALS",12)
+    CreateVisualEffectObject("SPFLESHS",Player1)
+    DisplayStringHead(Player1,308) // You have lost experience points.
+    ReallyForceSpell(Player1,HELL_LOSE_XP)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("D0Scar","LOCALS",2)
+  GlobalTimerExpired("ScarTimer","LOCALS")
+  NumInPartyGT(1)
+  InPartyAllowDead(Player2)
+  InParty(Player2)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Scar","LOCALS",3)
+    CreateVisualEffectObject("SPFLESHS",Player2)
+    DisplayStringHead(Player2,306) // You have lost 2 hit points from your maximum hit point level.
+    ForceSpell(Player2,HELL_LOSE_HP)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("D0Scar","LOCALS",2)
+  GlobalTimerExpired("ScarTimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobal("D0Scar","LOCALS",3)
+    CreateVisualEffectObject("SPFLESHS","hellvict")
+    ForceSpell("hellvict",HELL_DAMAGE_HALF)
+END
+
+IF
+  OR(3)
+    Global("OpenedDoor5","AR2904",1)
+    Global("OpenedDoor6","AR2904",1)
+    GlobalTimerExpired("C7SelfishFightTime","AR2904")
+  OR(3)
+    Global("OpenedDoor5","AR2904",1)
+    Global("OpenedDoor6","AR2904",1)
+    Global("D0Scar","LOCALS",3)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(Player1)
+END
+
+/* IF
+!GlobalTimerNotExpired("Cast","LOCALS")
+See(NearestEnemyOf(Myself))
+Allegiance(Myself,ENEMY)
+!StateCheck(LastSeenBy,STATE_HELPLESS)
+GlobalLT("TANARIPARALYZE","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ForceSpell(LastSeenBy,TANARI_PARALYZE)
+    IncrementGlobal("TANARIPARALYZE","LOCALS",1)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([0.0.0.LONG_BOW])
+  Allegiance(Myself,ENEMY)
+  Global("Prep","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ForceSpell(LastSeenBy,WIZARD_DISPEL_MAGIC)
+    SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  Allegiance(Myself,ENEMY)
+  Global("Prep","LOCALS",2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CONFUSION)
+    SetGlobal("Prep","LOCALS",3)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  Allegiance(Myself,ENEMY)
+  !StateCheck(LastSeenBy,STATE_HELPLESS)
+  GlobalLT("TANARIPARALYZE","LOCALS",5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ForceSpell(LastSeenBy,TANARI_PARALYZE)
+    IncrementGlobal("TANARIPARALYZE","LOCALS",1)
+END */
+
+IF
+  Allegiance(Myself,ENEMY)
+  See(Player1)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END

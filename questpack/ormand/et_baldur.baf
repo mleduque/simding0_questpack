@@ -1,0 +1,17 @@
+IF
+	Global("D0Ormand","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D0Ormand","GLOBAL",1)
+		CreateCreatureObjectOffScreen("D0Ormand",Player1,0,0,0)
+END
+
+
+IF
+	Global("D0Ormand","GLOBAL",2)
+	GlobalTimerExpired("D0OrmandReturn","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("D0Ormand","GLOBAL",3)
+		Continue()
+END

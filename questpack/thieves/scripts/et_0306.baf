@@ -1,0 +1,114 @@
+IF
+  InMyArea(Player1)
+//  OR(2)
+  GlobalGT("D0Maevar2","GLOBAL",33)
+//    GlobalGT("BodhiJob","GLOBAL",0)
+  Global("Open0306","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Open0306","GLOBAL",1)
+    Continue()
+END
+
+IF
+  OR(10)
+    HasItem("d0letter","Chest 1")
+    HasItem("d0letter","Chest 2")
+    HasItem("d0letter","Chest 3")
+    HasItem("d0letter","Chest 4")
+    HasItem("d0letter","Chest 5")
+    HasItem("d0letter","Drawer 1")
+    HasItem("d0letter","Table 1")
+    HasItem("d0letter","Table 2")
+    HasItem("d0letter","Table 3")
+    HasItem("d0letter","Hidden 1")
+  Global("D0Maevar","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Maevar","GLOBAL",2)
+END
+
+IF
+  !HasItem("d0letter","Chest 1")
+  !HasItem("d0letter","Chest 2")
+  !HasItem("d0letter","Chest 3")
+  !HasItem("d0letter","Chest 4")
+  !HasItem("d0letter","Chest 5")
+  !HasItem("d0letter","Drawer 1")
+  !HasItem("d0letter","Table 1")
+  !HasItem("d0letter","Table 2")
+  !HasItem("d0letter","Table 3")
+  !HasItem("d0letter","Hidden 1")
+  Global("D0Maevar","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Maevar","GLOBAL",1)
+END
+
+IF
+  GlobalGT("D0Maevar2","GLOBAL",33)
+  !Global("D0CreateKey","MYAREA",1)
+  !Dead("Renal Bloodscalp")
+THEN
+  RESPONSE #100
+    SetGlobal("D0CreateKey","MYAREA",1)
+    CreateCreature("Renal",[817.541],0)
+    CreateCreature("FLYFGT01",[570.653],0) // Shadow Thief
+    CreateCreature("FLYFGT02",[235.474],0) // Shadow Thief
+    CreateCreature("FLYFGT02",[659.335],0) // Shadow Thief
+    CreateCreature("STASS1",[659.335],0) // Shadow Thief
+    CreateCreature("FLYFGT02",[436.323],0) // Shadow Thief
+    CreateCreature("FLYFGT03",[542.717],6) // Shadow Thief
+    CreateCreature("FLYFGT03",[627.286],0) // Shadow Thief
+    CreateCreature("STASS1",[627.286],0) // Shadow Thief
+    CreateCreature("FLYFGT04",[519.285],0) // Shadow Thief
+//    ActionOverride("Container 2",CreateItem("misc4s",1,0,0))
+//    ActionOverride("Drawer 1",CreateItem("misc4s",1,0,0))
+END
+
+IF
+  GlobalGT("D0Maevar2","GLOBAL",33)
+  !Global("D0CreateKey","MYAREA",1)
+  Dead("Renal Bloodscalp")
+THEN
+  RESPONSE #100
+    SetGlobal("D0CreateKey","MYAREA",1)
+    CreateCreature("FLYFGT01",[570.653],0) // Shadow Thief
+    CreateCreature("FLYFGT02",[235.474],0) // Shadow Thief
+    CreateCreature("FLYFGT02",[659.335],0) // Shadow Thief
+    CreateCreature("STASS1",[659.335],0) // Shadow Thief
+    CreateCreature("FLYFGT02",[436.323],0) // Shadow Thief
+    CreateCreature("FLYFGT03",[542.717],6) // Shadow Thief
+    CreateCreature("STASS1",[627.286],0) // Shadow Thief
+    CreateCreature("FLYFGT03",[627.286],0) // Shadow Thief
+    CreateCreature("FLYFGT04",[519.285],0) // Shadow Thief
+    ActionOverride("Container 2",CreateItem("misc4s",1,0,0))
+    ActionOverride("Drawer 1",CreateItem("misc4s",1,0,0))
+END
+
+IF
+  GlobalGT("D0Maevar","GLOBAL",2)
+  InMyArea("Renal Bloodscalp")
+THEN
+  RESPONSE #100
+    ActionOverride("Renal Bloodscalp",DestroySelf())
+    CreateCreature("d0nightk",[817.541],2)
+    ActionOverride("Chest 1",DestroyItem("d0letter"))
+    ActionOverride("Chest 2",DestroyItem("d0letter"))
+    ActionOverride("Chest 3",DestroyItem("d0letter"))
+    ActionOverride("Chest 4",DestroyItem("d0letter"))
+    ActionOverride("Chest 5",DestroyItem("d0letter"))
+    ActionOverride("Drawer 1",DestroyItem("d0letter"))
+    ActionOverride("Table 1",DestroyItem("d0letter"))
+    ActionOverride("Table 2",DestroyItem("d0letter"))
+    ActionOverride("Table 3",DestroyItem("d0letter"))
+    ActionOverride("Hidden 1",DestroyItem("d0letter"))
+END
+
+IF
+  Dead("Aran")
+  InMyArea("d0nightk")
+THEN
+  RESPONSE #100
+    ActionOverride("d0nightk",DestroySelf())
+END

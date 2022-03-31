@@ -1,0 +1,16 @@
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",300)
+    Continue()
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",30)
+    Continue()
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1000)
+    Continue()
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",6)
+    Continue()
+END

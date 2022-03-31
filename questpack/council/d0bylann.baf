@@ -1,0 +1,26 @@
+IF
+	OR(6)
+		Die()
+		Allegiance(Myself,ENEMY)
+		Heard([ANYONE],57)
+		Heard([ANYONE],99)
+		HitBy([GOODCUTOFF],CRUSHING)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+	!Global("D0AttackCouncil","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",1)
+		SetGlobalTimer("CallTheGuard","AR1002",6)
+		Shout(99)
+		Enemy()
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		Shout(99)
+		ForceSpell(Myself,DRYAD_TELEPORT)
+END

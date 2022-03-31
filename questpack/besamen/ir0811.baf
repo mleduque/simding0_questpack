@@ -1,0 +1,25 @@
+IF
+  Global("IMUndeadSpawn","AR0811",0)
+THEN
+  RESPONSE #100
+    SetGlobal("IMUndeadSpawn","AR0811",1)
+    CreateCreature("Besamen",[531.338],1)
+    SpawnPtDeactivate("SpawnPoint1")
+END
+
+IF
+  Global("BaiseraCrypt","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("BaiseraCrypt","GLOBAL",2)
+    SetGlobal("BaiseraSpeaks","GLOBAL",1)
+    CreateCreature("Baisera",[500.332],12)
+END
+
+IF
+  Global("BesamenDead","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("BesamenDead","GLOBAL",4)
+    SpawnPtActivate("SpawnPoint1")
+END

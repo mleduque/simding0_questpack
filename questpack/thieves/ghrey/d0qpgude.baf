@@ -1,0 +1,10 @@
+IF
+  Global("D0Text","LOCALS",0)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("D0Text","LOCALS",1)
+    DisplayStringHead(Myself,@266)
+    Wait(1)
+    DestroySelf()
+END

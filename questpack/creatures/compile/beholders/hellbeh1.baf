@@ -1,0 +1,874 @@
+/* Normal Beholders:
+-----------------
+Domination
+Fear
+Paralyze
+(10% chance of one of the above being damaged)
+Cause Serious Wounds (Favoured)
+EITHER Disintegrate OR Flesh To Stone OR Both
+Death Ray
+EITHER Slow OR Antimagic Ray
+Dispel Magic (Central Eye)
+Death Spell (Central Eye)
+
+Gauths:
+-------
+Slow
+Hold Person
+Lightning Bolt (Favoured - Central Eye)
+Cause Serious Wounds
+Paralyzation */
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Some Beholders already have damaged eyestalks.
+IF
+  RandomNum(10,2)
+  OR(2)
+    Difficulty(EASIEST)
+    RandomNum(20,5)
+  OR(2)
+    RandomNum(20,5)
+    RandomNum(20,6)
+  !Difficulty(HARDEST)
+  Global("AlreadyDamaged","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("DominationEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #200
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("ParalyzeEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #300
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("FearEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("DominationEyeLost","LOCALS",2)
+    SetGlobal("FearEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #200
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("ParalyzeEyeLost","LOCALS",2)
+    SetGlobal("DominationEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #300
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("FearEyeLost","LOCALS",2)
+    SetGlobal("ParalyzeEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("CauseWoundsEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("DeathRayEyeLost","LOCALS",2)
+    Continue()
+END
+
+IF
+  RandomNum(10,2)
+  OR(2)
+    !RandomNum(20,5)
+    Difficulty(HARDEST)
+  Global("AlreadyDamaged","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("DominationEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #200
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("ParalyzeEyeLost","LOCALS",2)
+    Continue()
+  RESPONSE #300
+    SetGlobal("AlreadyDamaged","LOCALS",1)
+    SetGlobal("FearEyeLost","LOCALS",2)
+    Continue()
+END
+
+// Beholders have EITHER Slow OR Antimagic eyes, and EITHER Disintegrate OR Flesh To Stone OR both.
+IF
+  GlobalLT("AlreadyDamaged","LOCALS",2)
+  RandomNum(2,1)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("SlowEyeLost","LOCALS",3)
+    SetGlobal("DisintegrateEyeLost","LOCALS",3)
+    SetGlobal("AlreadyDamaged","LOCALS",2)
+    Continue()
+END
+
+IF
+  GlobalLT("AlreadyDamaged","LOCALS",2)
+  !RandomNum(2,1)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("AntimagicEyeLost","LOCALS",3)
+    SetGlobal("DisintegrateEyeLost","LOCALS",3)
+    SetGlobal("AlreadyDamaged","LOCALS",2)
+    Continue()
+END
+
+IF
+  GlobalLT("AlreadyDamaged","LOCALS",2)
+  RandomNum(2,1)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    SetGlobal("SlowEyeLost","LOCALS",3)
+    SetGlobal("StoneEyeLost","LOCALS",3)
+    SetGlobal("AlreadyDamaged","LOCALS",2)
+    Continue()
+END
+
+IF
+  GlobalLT("AlreadyDamaged","LOCALS",2)
+  !RandomNum(2,1)
+  RandomNum(3,3)
+THEN
+  RESPONSE #100
+    SetGlobal("AntimagicEyeLost","LOCALS",3)
+    SetGlobal("StoneEyeLost","LOCALS",3)
+    SetGlobal("AlreadyDamaged","LOCALS",2)
+    Continue()
+END
+
+IF
+  GlobalLT("AlreadyDamaged","LOCALS",2)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobal("SlowEyeLost","LOCALS",3)
+    SetGlobal("AlreadyDamaged","LOCALS",2)
+    Continue()
+END
+
+IF
+  GlobalLT("AlreadyDamaged","LOCALS",2)
+  !RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobal("AntimagicEyeLost","LOCALS",3)
+    SetGlobal("AlreadyDamaged","LOCALS",2)
+    Continue()
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Shouts
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Global("Seen","LOCALS",1)
+  Difficulty(HARDEST)
+THEN
+  RESPONSE #100
+    SetGlobal("Seen","LOCALS",1)
+    SetGlobalTimer("IgnoreBounce","LOCALS",6)
+    SetGlobalTimer("IgnoreImmunity","LOCALS",12)
+    Shout(254)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Global("Seen","LOCALS",1)
+  Difficulty(HARD)
+THEN
+  RESPONSE #100
+    SetGlobal("Seen","LOCALS",1)
+    SetGlobalTimer("IgnoreBounce","LOCALS",6)
+    SetGlobalTimer("IgnoreImmunity","LOCALS",15)
+    Shout(254)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Global("Seen","LOCALS",1)
+  Difficulty(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("Seen","LOCALS",1)
+    SetGlobalTimer("IgnoreBounce","LOCALS",6)
+    SetGlobalTimer("IgnoreImmunity","LOCALS",18)
+    Shout(254)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Global("Seen","LOCALS",1)
+  Difficulty(EASY)
+THEN
+  RESPONSE #100
+    SetGlobal("Seen","LOCALS",1)
+    SetGlobalTimer("IgnoreBounce","LOCALS",9)
+    SetGlobalTimer("IgnoreImmunity","LOCALS",18)
+    Shout(254)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Global("Seen","LOCALS",1)
+  Difficulty(EASIEST)
+THEN
+  RESPONSE #100
+    SetGlobal("Seen","LOCALS",1)
+    SetGlobalTimer("IgnoreBounce","LOCALS",9)
+    SetGlobalTimer("IgnoreImmunity","LOCALS",21)
+    Shout(254)
+    Continue()
+END
+
+IF
+  Heard([0.0.BEHOLDER],254)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Damaging Eyestalks
+// (If the RandomNum selects an eye the beholder doesn't have, we assume the dud stalk was hit.)
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,1)
+  Global("ParalyzeEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("ParalyzeEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,2)
+  Global("FearEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("FearEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,3)
+  Global("DominationEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("DominationEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,4)
+  Global("CauseWoundsEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("CauseWoundsEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,5)
+  Global("DisintegrateEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("DisintegrateEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,6)
+  Global("StoneEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("StoneEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,7)
+  Global("DeathEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("DeathEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,8)
+  Global("SlowEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("SlowEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(15)
+  HPPercentLT(Myself,75)
+  RandomNum(10,9)
+  Global("AntimagicEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("AntimagicEyeLost","LOCALS",1)
+    DisplayString(Myself,@289) // ~Eyestalk Destroyed~
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  TookDamage()
+  DamageTakenGT(20)
+  HPPercentLT(Myself,50)
+  RandomNum(10,10)
+  Global("CentralEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("CentralEyeLost","LOCALS",1)
+    DisplayString(Myself,@290) // ~Central Eye Damaged~
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  Detect(Myself)
+  See(Myself)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  OR(3)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(4,1)
+  OR(3)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(5,2)
+  OR(3)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(6,3)
+  OR(3)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(7,4)
+  OR(3)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(8,5)
+  OR(3)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(9,6)
+  OR(3)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(10,7)
+  OR(3)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(11,8)
+  OR(3)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(12,9)
+  OR(3)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(13,11)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("CauseWounds","LOCALS")
+  Global("CauseWoundsEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNumGT(7,3)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("CauseWounds","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Domination","LOCALS")
+  Global("DominationEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Domination","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DOMINATION)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Fear","LOCALS")
+  Global("FearEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Fear","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FEAR)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Paralyze","LOCALS")
+  Global("ParalyzeEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNumGT(3,1)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Paralyze","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Disintegrate","LOCALS")
+  Global("DisintegrateEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Disintegrate","LOCALS",8)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DISINTEGRATE)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Stone","LOCALS")
+  Global("StoneEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Stone","LOCALS",8)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FLESH_TO_STONE)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Death","LOCALS")
+  Global("DeathEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Death","LOCALS",8)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DEATH_RAY)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Slow","LOCALS")
+  Global("SlowEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Slow","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_SLOW)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Antimagic","LOCALS")
+  Global("AntimagicEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Antimagic","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("DeathSpell","LOCALS")
+  Global("CentralEyeLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  OR(2)
+    Gender(LastSeenBy(Myself),SUMMONED)
+    LevelLT(LastSeenBy(Myself),9)
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("DeathSpell","LOCALS",8)
+    FaceObject(LastSeenBy(Myself))
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !GlobalTimerNotExpired("Dispel","LOCALS")
+  Global("CentralLost","LOCALS",0)
+  !StateCheck(Myself,STATE_BLIND)
+  See(LastSeenBy(Myself))
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",2)
+    SetGlobalTimer("Dispel","LOCALS",8)
+    FaceObject(LastSeenBy(Myself))
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player1)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player1,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player1,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(Player1)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player2)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player2,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player2,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(Player2)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player3)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player3,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player3,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(Player3)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player4)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player4,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player4,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(Player4)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player5)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player5,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player5,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(Player5)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player6)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player6,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player6,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(Player6)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  !HPPercentGT(Myself,50)
+  !Range(NearestMyGroupOfType([0.0.BEHOLDER]),5)
+  InMyArea(NearestMyGroupOfType([0.0.BEHOLDER]))
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(NearestMyGroupOfType([0.0.BEHOLDER]))
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  !HPPercentGT(Myself,50)
+  OR(2)
+    Range(NearestMyGroupOfType([0.0.BEHOLDER]),5)
+    !InMyArea(NearestMyGroupOfType([0.0.BEHOLDER]))
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+  RESPONSE #100
+    Face(-1)
+END
+
+IF
+  OR(5)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+    !Allegiance(Myself,ENEMY)
+    Allegiance(LastSeenBy(Myself),ENEMY)
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(NearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SecondNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,4)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(ThirdNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,5)
+  See(FourthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FourthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(FifthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FifthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(SixthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SixthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(TenthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(TenthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !StateCheck(Myself,STATE_CHARMED)
+  Allegiance(Myself,ENEMY)
+  !Allegiance(LastSeenBy(Myself),ENEMY)
+  OR(2)
+    See(LastSeenBy(Myself))
+    CheckStat(Myself,1,SEEINVISIBLE)
+  OR(2)
+    CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+    CheckStat(Myself,1,SEEINVISIBLE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    AttackOneRound(LastSeenBy(Myself))
+END

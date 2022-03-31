@@ -1,0 +1,55 @@
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  !Global("D0Reinforce","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Reinforce","MYAREA",1)
+    CreateCreature("FLYFGT02",[979.810],0) // Shadow Thief
+    CreateCreature("FLYFGT02",[964.861],0) // Shadow Thief
+    CreateCreature("FLYFGT03",[527.475],6) // Shadow Thief
+    CreateCreature("FLYFGT03",[599.443],0) // Shadow Thief
+    CreateCreature("FLYFGT04",[896.889],0) // Shadow Thief
+END
+
+IF
+  Dead("Aran")
+  InMyArea("d0nightk")
+THEN
+  RESPONSE #100
+    ActionOverride("d0nightk",DestroySelf())
+END
+
+IF
+  GlobalGT("D0Maevar2","GLOBAL",33)
+  GlobalLT("D0Maevar2","GLOBAL",37)
+  Global("D0SoldierSpawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SoldierSpawn","GLOBAL",1)
+    SetGlobalTimer("D0SanctionedSpawn","MYAREA",6)
+    CreateCreature("d0guard",[678.667],0)
+    CreateCreature("d0guard",[678.667],0)
+    CreateCreature("stass1",[678.667],0)
+    CreateCreature("d0guard",[888.893],0)
+    CreateCreature("d0guard",[440.521],0)
+    CreateCreature("d0guard",[440.521],0)
+    CreateCreature("stass1",[440.521],0)
+    CreateCreature("d0guard",[544.460],0)
+    CreateCreature("d0guard",[1014.685],0)
+    CreateCreature("stguard2",[1014.685],0)
+    CreateCreature("d0guard",[1014.685],0)
+    CloseDoor("SECRET01")
+    Lock("SECRET01")
+END
+
+IF
+  GlobalGT("D0Maevar2","GLOBAL",33)
+  GlobalLT("D0Maevar2","GLOBAL",37)
+  Global("D0SoldierSpawn","GLOBAL",1)
+  GlobalTimerExpired("D0SanctionedSpawn","MYAREA")
+  !Global("D0SoldierSpawn2","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SoldierSpawn2","MYAREA",1)
+    CreateCreatureDoor("d0guard4",[987.691],0)
+END

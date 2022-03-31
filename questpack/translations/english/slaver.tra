@@ -1,0 +1,72 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~What is going on here?  What are you doing with this man?~
+@1    = ~You monster!  Free this poor slave at once!~
+@2    = ~Sorry. I'll move along.~
+@3    = ~None o' yer business, as I said.  Now, ye'd best be turnin' away now, or ye'll regret it.~
+@4    = ~This is horrific! I'll be reporting this to the proper authorities. You may be bribing the guards, but I doubt the council will turn a blind eye to this.~
+@5    = ~Very well. Sorry for the trouble.~
+@6    = ~Perhaps we could come to some agreement to free this man?~
+@7    = ~I could turn away. For a price.~
+@8    = ~Ye'd best be turnin' away now, or ye'll regret it.~
+@9    = ~Afraid not. If you won't free this man, I'll force you to.~
+@10   = ~This is yer last chance.  Don't be stickin' yer nose in where it don't belong.~
+@11   = ~Afraid you're out of luck. If you won't free this man, I'll force you to.~
+@12   = ~Will ye now? Looks like we've got a fight on our hands. Ready yerself!~
+@13   = ~Will ye now? We can't have that. Looks like we've got a fight on our hands. Ready yerself!~
+@14   = ~Aye.  Just move along.~
+@15   = ~This ain't anythin' to do with ya.  We don't do business with strangers, so get lost.~
+@16   = ~Ye're expectin' us to pay ye?!  Get lost, stranger!~
+@17   = ~Then I'm afraid I'll have to stop you right now.~
+@18   = ~In that case, I'll be reporting this to the proper authorities. You may be bribing the guards, but I doubt the council will turn a blind eye to this.~
+@19   = ~Wait! What is this? What has happened to this poor man?~
+@20   = ~You can't do this! Let this man go at once!~
+@21   = ~Fine. I'm not looking for trouble.~
+@22   = ~I don't have time for idle banter. Get away from me.~
+@23   = ~Good. Now get out of my way!~
+@24   = ~I don't suppose you'd be interested in, um, taking charge of a homeless young orphan?~
+@25   = ~(Hurmm).  I'm... listening.  Tell me more about this most unfortunate child.~
+@26   = ~In the city graveyard, there is a young girl under the protection of a Cleric of Lathander.  Perhaps, by some arrangement, she could come into your care.~
+@27   = ~Maybe you're not the best person after all.  I'm not sure I like your tone.~
+@28   = ~Actually, never mind.  It was just a hypothetical question.~
+@29   = ~Ah, I see.  (hurrm)  Yes, I would gladly offer shelter to such a girl.  Perhaps one of my... associates should pay a visit to this priest in the graveyard?~
+@30   = ~Very well.  I will try to persuade the priest that he is worthy of taking care of the girl.~
+@31   = ~Excellent.  I will make the necessary... arrangements.~
+@32   = ~(Hurmm).  Excellent doing business with you.  I believe you will find this a... more than generous payment for the girl.~
+@33   = ~She will make an excellent cleaning wench, and who knows, maybe Madam Nin will find some use for her when she comes of age.  Again, I thank you.~
+@34   = ~If there is anything further you wish, do not hesitate to ask.~
+@35   = ~Perhaps you would also appreciate some of our... extra entertainment? (hurrrmm...hurrm)~
+@36   = ~(Hurrm).  Disappointing to see business slip by.  I regret that I cannot offer you any payment without the girl.  (hurrrrm)  Unfortunate that a Paladin chose to intervene.~
+@37   = ~Ah, <CHARNAME>.  Lehtinan sent me.  Let's not delay... lead the way to the priest and orphan.~
+@38   = ~Greetings, good priest.  I am Tredor: retired merchant sailor, and father of two.  <CHARNAME> informed me that little Risa here was in need of a caring home.~
+@39   = ~Then I would gladly offer myself, if it would make Risa happy.~
+@40   = ~Bah!  Our plan is ruined!  Keep the girl!~
+@41   = ~Thank you, kind priest.  My only hope is that I can provide as good a guardian for Risa as you have.~
+@42   = ~I will visit the Temple of Lathander in a few days' time, to let you know all is well.  Come, Risa.~
+@43   = ~O-okay... I'll come.~
+@44   = ~... (sniff!)~
+@45   = ~Are you a knight?  Your armor's awfully shiny.~
+@46   = ~Perhaps Lathander smiles upon us this day.  Yes, Risa is very much in need of a proper guardian.~
+@47   = ~Yes, yes.  Perhaps you are indeed a suitable choice.  I would not wish to make a decision that would hurt poor Risa, but I will trust <CHARNAME>'s judgement in this matter. It seems that you are good of heart.~
+@48   = ~Take Risa then.  I hope you are able to bring her the care and joy she deserves.~
+@49   = ~Perhaps you are a suitable choice, then.  I would not wish to make a decision that would hurt poor Risa, but it seems that you are good of heart.~
+@50   = ~You have my gratitude for this, as do you, <CHARNAME>.  Go, Risa, and enjoy your new home.~
+@51   = ~Hold!  I recognise this man, although I know not from where.  He has an aura of suspicion about him, and I believe his intent may not be as it seems!~
+@52   = ~As I suspected!  He is of evil intent, and has likely deceived his accomplice!  Do not yet allow this girl to part from your sight, good priest.~
+@53   = ~As I suspected!  He is of evil intent, as is his accomplice!  Do not yet allow this girl to part from your sight, good priest.~
+@54   = ~I tire of evil darkening even this consecrated ground.  I witnessed that man approach, and sensed something devious about him. And so, I watched from afar.~
+@55   = ~There have been similar strange occurrences in the city recently. It seems... it seems even our children are not safe from the criminal underworld.~
+@56   = ~Come... I shall show you the church.  Thank you, cleric... and you, my <LADYLORD>... you have been lucky this day.  Pray that our paths do not cross again.~
+@57   = ~I am most pleased at this wonderful turn of events.  May Lathander forgive you, my <LADYLORD>, for some good has come of your actions.  Sometimes... sometimes Faerun can be a kind place...~
+@58   = ~Investigate activities in the Copper Coronet's rooms.
+
+Lehtinan has asked me to perform another task: I am to navigate through the sewers beneath the Copper Coronet and receive a delivery of slaves from the compound at the other end.  The sewers can be accessed via a secret entrance in the backrooms.~
+@59   = ~Selling Risa to Lehtinan.
+
+Lehtinan has expressed an interest in purchasing the orphan Risa as part of his slave trading activities. He has sent a contact to the Graveyard to meet Risa and her current guardian.~
+@60   = ~Selling Risa to Lehtinan.
+
+I was able to trick the priest of Lathander looking after the orphan Risa to hand her over to one of Lehtinan's slaver contacts. Presumably Lehtinan will be able to put her to good use in the Copper Coronet.~
+@61   = ~Locate a caretaker for the orphan, Risa.
+
+While attempting to indulge in a little slave trading, I inadvertently managed to bring together two people whom I met in the Graveyard District... a paladin named Kamir whose son had died, and a little girl named Risa whose parents had died.  The paladin agreed to raise the girl and they left together.  Lehtinan will likely be displeased that his agent was unable to procure the girl, but presumably Risa will be happy.~

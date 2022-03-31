@@ -1,0 +1,300 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Greetings! So few people come to visit Jadarath in his laboratory.~
+@1    = ~Now, feel free to chat, but please don't try to stymie my work. Roger hates that, and I suspect the authorities would find your arrow-filled body lying in an alleyway.~
+@2    = ~Whoa! A little hostile today aren't we? I've done nothing to you.~
+@3    = ~What laboratory are you talking about? I see no such thing. Why are you down here in this barren cesspit?~
+@4    = ~Laboratory? Are you some kind of wizard or alchemist?~
+@5    = ~Whatever sort of work can you possibly be doing down here?~
+@6    = ~What business do you have with Roger?~
+@7    = ~Who is Roger?~
+@8    = ~Uh, you do realise there was a sea troll right behind you?~
+@9    = ~Uh, you do realise there was a sea troll right behind you when we first met?~
+@10   = ~That's nice. I'll be taking my leave now.~
+@11   = ~Ah, yes. But not to worry— it won't come any closer. The smell of the chemicals keeps away all the nasty creatures that dwell down here.~
+@12   = ~Wait, you have troll repellant?! I don't suppose you could spare any?~
+@13   = ~Weren't you a little hostile before? I have done nothing to you.~
+@14   = ~I see no laboratory down here. Why are you working in this barren cesspit?~
+@15   = ~Are you some sort of wizard or alchemist, then?~
+@16   = ~Interesting. Anyway, I'll be taking my leave now.~
+@17   = ~I don't recall exactly what it was that keeps them at bay. Pest control isn't my top priority though, I fear.~
+@18   = ~Fine. Are you some sort of wizard or alchemist, then?~
+@19   = ~Ah, never mind then. I'll be taking my leave now.~
+@20   = ~Now, feel free to chat, but please don't try to stymie my work. Roger hates that, and I suspect your friend would find your arrow-filled body lying in an alleyway.~
+@21   = ~Now, feel free to chat, but please don't try to stymie my work. Roger hates that, and I suspect your friends would find your arrow-filled body lying in an alleyway.~
+@22   = ~But you might. Anyone might. I can't have anyone disrupting my work. Just don't interfere with what I'm doing, and we'll be friends. Good friends. Best friends.~
+@23   = ~Anyway, I don't see a laboratory. What are you doing down here in this barren cesspit?~
+@24   = ~I see. Well, I'll be taking my leave now.~
+@25   = ~Rent is low, and the good restaurants are merely a ladder away. Same reason anyone is down here!~
+@26   = ~I'm busy, and I don't want people disrupting my work. I do not require any laboratory more complicated than the human mind and body: a truth that many in my line of work seem to overlook.~
+@27   = ~Although it is pretty crowded down here, what with the strange goings-on lately... so don't get snippy with me!~
+@28   = ~Are you some sort of mage? Could you craft potions for me?~
+@29   = ~Fine then. I'll be taking my leave now.~
+@30   = ~I'm no sage or wizard, merely a humble herbalist who knows a few minor magics. All my excess potions are sold to Roger, who maintains an excellent inventory. Why not buy from him?~
+@31   = ~Beyond simply brewing potions, I would be quite interested to know exactly what work you're engaged in down here.~
+@32   = ~Perhaps I could be persuaded to share some of my work. Perhaps not. First, you'll have to do something for me.~
+@33   = ~Roger can't supply me with all the materials I require, so presumably I need someone more travelled to find them. You would certainly be furthering the cause of knowledge and discovery.~
+@34   = ~I would be happy to undertake the task for you.~
+@35   = ~What's in it for me? Knowledge is well and good, but I will need a greater incentive than education and exercise, I'm afraid.~
+@36   = ~Run errands for a madman sitting around in the sewers? That sounds like a wonderful use of my time. I bid you good day.~
+@37   = ~Or, how about I just kill you now?~
+@38   = ~Please. I don't have time to waste with idle threats. I assure you, Roger's contacts are quite sufficient to deal with any threat you might pose.~
+@39   = ~I sell him the potions I create and he brings me the ones I need for my work. Of course, there are some that the lazy lout just can't find for the life of him.~
+@40   = ~You need some potions? Maybe I can help you out.~
+@41   = ~Oh, a vendor of potions, mostly. You'll find him somewhere around here, I suspect. I lose track of exactly where he tends to situate himself.~
+@42   = ~While not exactly on the straight and narrow, he's about the only company available in a place like this. He has contacts in some guild or other, from what I understand... nothing that I let bother me.~
+@43   = ~Weren't you a little hostile before? I'd done nothing to you.~
+@44   = ~What work could you be doing down here?~
+@45   = ~Wait! Don't go anywhere just yet! What with Roger's shortcomings, I could use the help of an experienced adventurer.~
+@46   = ~Someone who could leave the sewer and obtain the assortment of potions I'm lacking would be most valuable to me. You would certainly be furthering the cause of knowledge and discovery.~
+@47   = ~I'll give you a list of the potions I require. For each one you bring me, I will naturally offer appropriate payment.~
+@48   = ~Heh heh! Who knows. If you're fortunate, you may well witness the culmination of my work, and receive a fantastic reward in knowledge and power!~
+@49   = ~Very well, I shall return with what you need.~
+@50   = ~I'm not helping you. Goodbye, you lunatic. I'm sorry I ever found your pathetic little hole.~
+@51   = ~I can see it in your eyes. You crave it as well: the base desire, possessed by every man, yet to which few admit. Of course, I speak of power.~
+@52   = ~I believe that I am close to unlocking a power that could bring all of Faerûn to its knees. Bring me what I want, and I will share it with you.~
+@53   = ~You would be foolish to expect an equal share, of course, as I would be to offer one. Rest assured, however, you shall have the power you so crave.~
+@54   = ~Very well, I shall do as you wish. But you'd best be speaking the truth, or you'll regret it.~
+@55   = ~Share what you know with me, or prepare to face dire consequences!~
+@56   = ~I don't want power. I want wealth. Can you offer that too?~
+@57   = ~Run errands for a madman sitting around in the sewers? That sounds like wonderful use of my time. I bid you good day.~
+@58   = ~You sound like an evil madman... exactly the sort of person I smite for a living!~
+@59   = ~As I have come to learn, true genius is rarely appreciated. It is, of course, your loss. Naturally you are most welcome to return, should you decide to comply.~
+@60   = ~Your help is much appreciated, and this will most assuredly be a decision you won't regret. Here is the list of potions I require.~
+@61   = ~Now, now... insults are certainly uncalled for. Naturally you are most welcome to return, should you decide to comply with me.~
+@62   = ~On the other hand, if you only wish to rudely disrupt me, then I'll thank you to stay away from my laboratory. All manner of "accidents" can occur down here, with the authorities none the wiser.~
+@63   = ~Ah, threats. The eternal symbol of intellectual inferiority. Yet still, even now, I am no more compelled to share my discoveries with you. Your leverage is feeble.~
+@64   = ~That's nice. I'm going to kill you anyway.~
+@65   = ~Very well, I shall do your mundane task. But you'd best be speaking the truth, or you'll regret it.~
+@66   = ~Then I'm not helping you. Goodbye, you lunatic. I'm sorry I ever found your pathetic little hole.~
+@67   = ~I suspect not. Regardless, this will be a decision you will ultimately come to regret.~
+@68   = ~The visitor returns. Have you reconsidered your acceptance of my simple task, or are you merely enjoying the putrid essence of my laboratory?~
+@69   = ~Fine, I'll get your potions.~
+@70   = ~Are you some kind of wizard or alchemist, then?~
+@71   = ~Just passing through. I am going now.~
+@72   = ~How goes the collection of resources, my vulture?~
+@73   = ~Yes, I have a Potion of Invisibility.~
+@74   = ~Yes, I have the Oil of Speed.~
+@75   = ~Yes, I have a Potion of Cold Resistance.~
+@76   = ~Yes, I have a Potion of Explosions.~
+@77   = ~Yes, I have a Potion of Insulation.~
+@78   = ~Yes, I have a Potion of Fortitude.~
+@79   = ~Yes, I have a Potion of Magic Blocking.~
+@80   = ~Yes, I have a Potion of Mirrored Eyes.~
+@81   = ~Yes, I have a Potion of Power.~
+@82   = ~Yes, I have a Potion of Insight.~
+@83   = ~Yes, I have a Potion of Freedom.~
+@84   = ~Yes, I have a Potion of Stone Form.~
+@85   = ~Didn't you promise me a reward greater than mere money?~
+@86   = ~Well, your work's progressing, but I'm sure you get crazier every time I speak to you.~
+@87   = ~You mentioned a family: a wife, and a child. What happened to them?~
+@88   = ~I believe I've found your family, Jadarath. I encountered them in the Bridge District not long ago.~
+@89   = ~Are you sure you don't want to speak with your family?~
+@90   = ~I have nothing for you.~
+@91   = ~How goes the collection of resources, my vultures?~
+@92   = ~So, do you bring any other potions with you?~
+@93   = ~Ah, one step closer to perfection! And of course, here is payment as promised.~
+@94   = ~Then what have you been doing out there?! This is a matter of vital importance. You must get me what I need!~
+@95   = ~Ahh, I'm finally progressing. After so long stuck in this dank sewer... soon the sweet power will be mine. So soon.~
+@96   = ~It seems we are able to work together. You complement Roger's efforts well. And I think you have waited long enough for me to tell you what we're doing here.~
+@97   = ~You should understand already, my friend, you who thrive on adventure and battle. Have you ever taken many potions... a dozen potions in rapid succession? I suppose not, for it has always been said that to mix too many magical effects at once is fatal.~
+@98   = ~I used to believe what I was told... foolish of me indeed. I once lived in Imnesvale: a town not far from here. You must understand that when thieves attack your shop, when they threaten your wife and child, you have no choice.~
+@99   = ~And so, I mixed as many potions as I could grab in time. By all accounts, I should have died that night. Yet instead, I became something more than human. The rogues were no obstacle... it seemed as if nothing in the Realms could stop me.~
+@100  = ~Nothing could stop me, I said! So I ran. In the days that followed, I ran clear across Amn. I ran for the pleasure of running, killing everything that stood in my way. Such, of course, is the temptation of power.~
+@101  = ~It breeds insanity, as you observe. Yet for one more taste of such sheer ecstasy, I would have given up everything. For one last taste, I did indeed.~
+@102  = ~Logic told me that it was pure chance... that never again would I duplicate my experience. But now, I believe I am well on the way to unlocking the secret once more, thanks to your efforts.~
+@103  = ~When I made the discovery, circumstances naturally did not permit me to record the exact combination of potions involved. Soon I am bound to stumble upon the crucial ingredient, however.~
+@104  = ~What if someone else duplicates the discovery? We must act quickly! The glory will be mine, and my name revered throughout the Realms. It will be known that Jadarath is no madman!~
+@105  = ~Oh, how I shall laugh at the others, when I have proven them wrong. Jadarath will return to the surface, triumphant!~
+@106  = ~Have I told you what became of my family?~
+@107  = ~As my powers began to fade, I returned to Imnesvale, to the wreck that had once been my home. To my sadness and disgust, I found that they had fled.~
+@108  = ~I should have looked for them, but they are no longer of any concern. I don't need them to complete my experiments. They will regret their loss!~
+@109  = ~I believe I will return to Imnesvale when the concoction is complete. For years, I suffered in that squalid dump. The sewers were a relief by comparison.~
+@110  = ~Yet to find that the town was full of nothing but common thieves and brigands was insulting. They will pay for what happened to me.~
+@111  = ~Although... I suppose I owe them thanks. I do not believe that the attack was coincidence. It was fate thrust upon me, for this discovery is my destiny.~
+@112  = ~HAHAHAHAHA! It is finally complete! *I* will finally be complete! And you, my friend... you will be well rewarded for your part in this.~
+@113  = ~Now that I have the correct mixture, it will be a simple matter to just imbibe the potions, and...~
+@114  = ~And what? You've had me run all over the world for this stuff. Drink it and get it over with.~
+@115  = ~Maybe you should take care, if this is supposedly fatal.~
+@116  = ~Wait! I cannot allow such a scheme as this to continue. You are evidently quite insane, and should not be entrusted with such power. I will stop you by force if necessary!~
+@117  = ~No! After all this time, I will not allow you to interfere! With the power of the potion, you will have no chance of stopping me.~
+@118  = ~No sense in delaying any longer. In just one moment, I shall be free once again!~
+@119  = ~But I fear it is not so simple. I cannot be sure of what will happen. Having lived down here for so long has been far from beneficial to my health. I suspect that even the smallest mistake could quite easily kill me.~
+@120  = ~The effects of this concoction must be tested. I must observe its effect when imbibed in a small portion... imbibed by another, that is.~
+@121  = ~Only then will I know whether it is truly the mixture upon which I originally chanced. Oh, how frustrating to be so close, yet on a path clouded with such uncertainty.~
+@122  = ~No way! I'm not testing your concoction for you. How do I know it won't kill me too?~
+@123  = ~Fine, I will do it. But the reward had better be worthwhile.~
+@124  = ~Won't you reconsider this? Your obsession has unhinged you. Abandon this pursuit and rejoin the surface world.~
+@125  = ~In a minute portion, it should have very little discernible effect on a hardy soul such as yourself.~
+@126  = ~Won't you reconsider? This is it... this is the culmination of my work!~
+@127  = ~Fine, I will do it. But for power, not for money! And, actually, I'll have the money as well.~
+@128  = ~Forget it. Test your concoction yourself!~
+@129  = ~I cannot allow such a scheme as this to continue. You are evidently quite insane, and should not be entrusted with such power. I will stop you by force if necessary!~
+@130  = ~Good, good! Your name shall echo through the annals of history for this act alone; this, I will ensure.~
+@131  = ~Now, you must take the potions in rapid succession, and in the sequence I have arranged them. Do it now, before you lose your will!~
+@132  = ~Wait, I'm not sure I should. It might—~
+@133  = ~Very well... let us get it over with. ~
+@134  = ~Then I shall do it myself. I thank you for your help, although your reluctance is unfortunate. Nevertheless, you shall receive the reward I promised.~
+@135  = ~You've done it! And you're alive! Quickly, allow me a drop of your blood for testing.~
+@136  = ~I feel strange... stronger, yet weaker. I'm not sure what you've done to me.~
+@137  = ~What happened? That hurt!~
+@138  = ~Hah! My magical analysis reveals the secret in your blood! It was so obvious. So simple.~
+@139  = ~Just give me a moment... and... yes, this is the combination! And no, I won't let you see it. You'll not have my secret!~
+@140  = ~But I will reward you. Oh, you will be rewarded for your invaluable assistance. Without your aid this glorious awakening could never have happened.~
+@141  = ~But not the formula! The formula is mine and shall always be mine! Forever!~
+@142  = ~I am...whole. The missing power is restored, and I finally feel complete. I can see clearly again, and I understand why you once thought me insane.~
+@143  = ~But that insanity served its purpose, to make me what I am. No, I am no god. But I am no man.~
+@144  = ~Out of respect for the hardiness and iron constitution which allowed you to succeed in the test I know I would have failed, I give you this. Look upon this girdle as a symbol of the perpetual protection you deserve.~
+@145  = ~Perhaps we will meet again, somewhere else. For now, I did much wrong in my former life, wrong that I must now repair. I bid thee farewell and wish thee well, friend.~
+@146  = ~My family abandoned me! I care not for their fate! Live or die, 'tis of no concern to me.~
+@147  = ~But it was you who abandoned them to go on a jaunt with your new powers.~
+@148  = ~Don't you wish to know what became of them? At least tell me their names. Perhaps I can find them.~
+@149  = ~So be it. Your personal affairs are no business of mine. Let us continue our work.~
+@150  = ~I see. I will take my leave of you now.~
+@151  = ~It is not for you to question me, hireling! Finish your task! I have already promised you a fantastic reward. I have promised to share my power with you! Must you have my soul as well?~
+@152  = ~Fine, fine. I will take my leave of you now.~
+@153  = ~Fine, if it will quiet your badgering, go scour the earth for that faithless woman and my blasted offspring. Sidhe was the woman and Janie the girl, and they shall both receive their due when I am complete! When I am whole again! Yeeeessss!~
+@154  = ~Are you kidding? Scour the world? They're right here in the city. I encountered them in the Bridge District not long ago.~
+@155  = ~If you don't care about them, then neither do I. Your work is far more important.~
+@156  = ~Interesting. I will take my leave of you now, then.~
+@157  = ~Finally! Someone who understands priorities!~
+@158  = ~On the contrary, I grow happier. I come ever closer to the goal I have sought for so many years. I am positively glowing!~
+@159  = ~How long have you been down here?~
+@160  = ~If you say so. There had better be something worthwhile at the end of all this.~
+@161  = ~I will take my leave of you now.~
+@162  = ~I can so clearly remember the day the miracle struck me. The day I became more than I was. It was five years and two months ago.~
+@163  = ~The rapture lasted for a mere three weeks. All told, these sewers have been my world for nearly four years.~
+@164  = ~I'll actually be sad to leave the place. Much happens down here. Much that is not seen above. Here we have both adventure and serenity. Truly a marvellous world!~
+@165  = ~I... suppose. Let's get back to business.~
+@166  = ~That's certainly unusual. In any case, I will take my leave of you now.~
+@167  = ~Be patient! Once I have completed my experiments, I will nearly be all-powerful! I will be able to command tremendous magical energies with a mere thought. I will be able to whip up relics of tremendous power on a whim!~
+@168  = ~And in any case, I am paying you well for each of these potions.~
+@169  = ~This had better pan out.~
+@170  = ~Very well, go find me the potions I require!~
+@171  = ~What? They are so close? I always pictured them far away, as slaves in Thay or colonists in Maztica. Not a few hundred meters...~
+@172  = ~It doesn't matter! I no longer care for them. My work! Let's get back to work!~
+@173  = ~Shouldn't you at least talk to them?~
+@174  = ~You're better off without them. They are poor and hungry; mere obstacles to your success.~
+@175  = ~Yes, you're right. The work is more important than the personal affairs of one man.~
+@176  = ~No! The work is more important. I don't need or want them. They'll cast me out, just like all the others!~
+@177  = ~Now stop questioning me! I hired you to do a job, not to be my confessor. Fetch what I asked for!~
+@178  = ~No. I won't collect your precious potions until you at least speak to the family you abandoned.~
+@179  = ~So be it, your personal affairs are no business of mine.~
+@180  = ~I knew I was well rid of them. Now. Back to work.~
+@181  = ~You would turn your back on power? On the immense power I can offer you... just for two females who mean nothing to me?~
+@182  = ~The way you're hiding down here isn't right. It's not healthy. You need to rejoin the mainstream. You need to at least speak to them.~
+@183  = ~Oh, I see where you're coming from. Very well.~
+@184  = ~Fine, fool! I will speak to them.~
+@185  = ~They're in the Bridge District you say? As much as it pains me to return to the surface, I will speak to them and tell the sniveling brat and nagging witch what I think.~
+@186  = ~With that done, we will return here and you will help me complete one of the greatest undertakings ever imagined by mortal men!~
+@187  = ~Please <SIRMAAM>, could you spare a coin for little Janie here? She can't go hungry much longer.~
+@188  = ~Janie? Are you Jadarath's wife, Sidhe? I bring news of your husband!~
+@189  = ~Can't the authorities take care of the beggars on the streets?~
+@190  = ~Here, take this.~
+@191  = ~I'm sorry, I don't have anything to give.~
+@192  = ~Oh, yes, feel free to take all my money. Why don't I throw in a few magical items while I'm at it? Please.~
+@193  = ~We... aaah, please <SIRMAAM>, leave me be. I... do not discuss things with strangers... especially where it may stir up the past.~
+@194  = ~We... aaah, please <SIRMAAM>, leave me be. As kind as you are, I... do not discuss things with strangers... especially where it may stir up the past.~
+@195  = ~The authorities care not for street beggars. They have more important concerns, I suppose. I do not enjoy asking money from strangers.~
+@196  = ~Oh, thank you, kind <SIRMAAM>! Your generosity is most appreciated!~
+@197  = ~Your generosity is most appreciated, kind <SIRMAAM>.~
+@198  = ~Any time.~
+@199  = ~You'd better appreciate it. Don't waste it all on Black Lotus.~
+@200  = ~Thank you!~
+@201  = ~I assure you, I will not. Thank you!~
+@202  = ~(sigh) It does not matter. I expect nothing from strangers.~
+@203  = ~I'm not supposed to talk to strangers.~
+@204  = ~Sidhe, you faithless hussy! Ignorant baggage! Shameless wench! Backstabbing whore!~
+@205  = ~You abandoned me when I needed you. You deserve this squalid life!~
+@206  = ~You? Stay back! I won't let you near Janie!~
+@207  = ~A man disappears after defending his family and you abandon him? You sell of all his belongings and take his child from him!~
+@208  = ~Defending your family?! Begone, you monster!~
+@209  = ~Mommy? Is this—?~
+@210  = ~Stay back, Janie. Be ready to run with me.~
+@211  = ~Silence, strumpet. I don't need either of you! It's taken me five long years, but I've excised you from my heart. My work will give me far more than my faithless wife ever did.~
+@212  = ~Then why have you returned? To open old wounds? You have some nerve, showing Janie your face, after what you did!~
+@213  = ~What *I* did? I protected my family, and for what? You betrayed me!~
+@214  = ~You... you really believe that, don't you? You don't remember.~
+@215  = ~Remember what? Remember the day those brigands took Leah from us? Is *that* what you mean?~
+@216  = ~I remember it all too vividly, Sidhe. I remember being powerless to stop it.~
+@217  = ~(sob) You... you don't remember.~
+@218  = ~There were no thieves, Jadarath.~
+@219  = ~You did it all... you, and your infernal potions. You went insane. You tore up the house. You... you... murdered little Leah before Janie's very eyes.~
+@220  = ~What? No! You lie! I saved you. Ungrateful bitch!~
+@221  = ~(sob) How can you forget such a thing? (sniff) How can you forget your other daughter?~
+@222  = ~I never had another daughter, deceptive wench!~
+@223  = ~Mommy! I'm scared!~
+@224  = ~Janie? Do not worry, little one.~
+@225  = ~Mommmmmy!~
+@226  = ~Run Janie! Now!~
+@227  = ~Wait! Sidhe! Janie!~
+@228  = ~What should I do, <CHARNAME>? My work is... everything! Everything! And yet, in the open air, I feel that I should pursue my family, and resolve this mystery.~
+@229  = ~You disgust me! I want nothing further to do with you! You can rot in the sewer for all I care.~
+@230  = ~Your work be damned! Pursue them, and perhaps there is a chance you can atone for what you did.~
+@231  = ~Better that you leave them now. It is too late for you to make amends.~
+@232  = ~You are right on the cusp of something glorious! Remember how dissatisfied you were with your old life? Remember how you detested the meaninglessness of it? Your family is beyond your reach now anyway... leave it that way.~
+@233  = ~I cannot make this decision for you.~
+@234  = ~I disgust you? You believe Sidhe's tale is true? I must think upon this, <CHARNAME>. You shall hear nothing more from me.~
+@235  = ~Does not a lonely god envy the loved man?~
+@236  = ~I will stay here, for 'tis better that I am the latter. I am sorry I won't be able to offer you the power I promised, but at least take my cache of potions.~
+@237  = ~I suspect... that I will no longer be needing them.~
+@238  = ~Power is worth any price. My research is more important.~
+@239  = ~Goodbye, Sidhe. Goodbye, Janie. Never fear... in the sewers, I see all! Perhaps one day, I will return for you.~
+@240  = ~Come, <CHARNAME>. I will await you in my laboratory. Gather the rest of my components!~
+@241  = ~Perhaps you are right, <CHARNAME>. Reason seems beyond the woman, and my research is more important.~
+@242  = ~Yes. This is a decision that I must make myself.~
+@243  = ~Who is the disturbed man down here? Jadarath?~
+@244  = ~Him? Oh, I found him in the sewers. He was starving and raving, and littered round him were potions. Potions of all sorts.~
+@245  = ~I gave him a few essentials and finally gained his trust, so we set up shop here. He trades me his potions in return for food and materials.~
+@246  = ~But even after all this time, he won't tell me what he's working on. He muttered once or twice about a family topside, but I couldn't tell you more. ~
+@247  = ~I'm waiting for them.~
+@248  = ~You're the innkeep, you must hear of goings on around the town. Know anything about a man called Jadarath?~
+@249  = ~I'm 'fraid I don't recall any mention of that name.  Sorry I can't be of any help, me <LADYLORD>.~
+@250  = ~Ah, I think I 'member 'im.  Some people were saying 'twas the witch that did it.  She's come back, and that Jadarath offended 'er somehow.~
+@251  = ~Bah!  Ignore the boy, ma <LADYLORD>.  He's no idea what he's talkin' about.  Is there anythin' I can do for ye?~
+@252  = ~Like ye hear anythin' important that's going on 'round 'ere, Vinny.  Aye, I can tell ya a bit 'bout Jadarath if ye want, <SIRMAAM>.~
+@253  = ~Used to live in a l'il hut with naught but 'is fam'ly and potions.  Decent fella, ya mighta thought, 'cept one day they all upped and left.  Home was trashed... rumours tellin' 'bout how he murdered 'em all started goin' round, hehehe.~
+@254  = ~But I also 'eard they was seen leavin' town.  Goin' south to Tethyr, a few were sayin'.  Then there was others sayin' they were 'eaded towards Athkatla.  Who knows, eh?~
+@255  = ~I dun' think so, Vinny.  This was years back, way before ye reckon yer darned witch popped back up.~
+@256  = ~Jadarath's Family.
+
+Jadarath mentioned that he had once had a family, with whom he lived in Imnesvale. The wife's name was Sidhe, and the daughter Janie. Perhaps I can find them if I have the time.~
+@257  = ~Jadarath's Family.
+
+I found Jadarath's wife and child in the Bridge District of Athkatla. However, Sidhe did not seem pleased when I mentioned knowing of Jadarath... more afraid.~
+@258  = ~Jadarath's Family.
+
+According to Sidhe's account of events, Jadarath had never saved his family from brigands, but had in fact murdered a daughter he has no memory of in front of Janie. After this shocking revelation, I want nothing further to do with the man, and have sent him on his way. Whether he will seek out his family or continue his research, I know not.~
+@259 = ~Constitution permanently reduced.~
+@260 = ~Potions for Jadarath.
+
+A herbalist named Jadarath, who resides in the sewers under the Temples District, has asked me me to collect potions for some mysterious experiments of his. He will pay me for each he receives, and also alluded to some other reward should I provide all he needs. The potions he requires are as follows:
+
+1. Potion of Invisibility
+2. Oil of Speed
+3. Potion of Cold Resistance
+4. Potion of Explosions
+5. Potion of Fortitude
+6. Potion of Insulation
+7. Potion of Magic Blocking
+8. Potion of Mirrored Eyes
+9. Potion of Power
+10. Potion of Insight
+11. Potion of Freedom
+12. Potion of Stone Form~
+
+@261 = ~Potions for Jadarath.
+
+After I delivered him the potions he needed for his experiments in the sewers, Jadarath needed to mix and imbibe them all to complete his research. Apparently he underestimated the fearful consequences of such an action, however, for his body was destroyed by the confluence of powerful magic. It seems the power towards which he worked will have to remain a mystery. Or perhaps it never existed.~
+@262 = ~Potions for Jadarath.
+
+After I delivered him the potions he needed for his experiments in the sewers, I agreed to test the concoction for Jadarath. The mixture seems to have some fairly unpleasant side effects, but he claims that it has completed his "work". After examining my blood he took something which granted him a strange energy and disappeared. I can only wonder what I've unleashed upon the world.~
+@263 = ~Jadarath's Family.
+
+Jadarath has gone to confront Sidhe and Janie, his wife and daughter, in the southwest of the Bridge District.~
+@264 = ~Jadarath's Family.
+
+According to Sidhe's account of events, Jadarath had never saved his family from brigands, but had in fact murdered a daughter he has no memory of in front of Janie. After spending so much time performing strange experiments in the sewers, my intervention led Jadarath to abandon his research in order to atone for his actions, somehow.~
+@265 = ~Jadarath's Family.
+
+According to Sidhe's account of events, Jadarath had never saved his family from brigands, but had in fact murdered a daughter he has no memory of in front of Janie. After this painful reunion, Jadarath decided to return underground to continue his work in the sewers.~

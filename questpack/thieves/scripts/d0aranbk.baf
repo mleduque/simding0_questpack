@@ -1,0 +1,257 @@
+IF
+  OR(2)
+    Global("D0LarellAssault","GLOBAL",1)
+    GlobalGT("D0Maevar2","GLOBAL",33)
+  !Specifics(Myself,240)
+THEN
+  RESPONSE #100
+    ChangeSpecifics(Myself,240)
+    Enemy()
+END
+
+IF
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  Global("Prep","LOCALS",0)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_MINOR_SPELL_TURNING)
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+    SetGlobal("Prep","LOCALS",1)
+END
+
+IF
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_STONE_SKIN)
+  CheckStatLT(Myself,1,STONESKINS)
+  Global("Prep","LOCALS",1)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,29736) // Contingency - Stoneskin
+    ApplySpell(Myself,WIZARD_STONE_SKIN)
+    SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  See([0.0.0.0.240])
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  Global("SpellSequencer","LOCALS",0)
+THEN
+  RESPONSE #100
+    DisplayString(LastSeenBy(Myself),39969) // Spell Sequencer - Fired
+    DisplayString(LastSeenBy(Myself),40697) // Spell Sequencer - Haste
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_HASTE)
+    DisplayString(LastSeenBy(Myself),40242) // Spell Sequencer - Improved Invisibility
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_IMPROVED_INVISIBILITY)
+    DisplayString(LastSeenBy(Myself),40696) // Spell Sequencer - Strength
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_STRENGTH)
+    SetGlobal("SpellSequencer","LOCALS",1)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+    See([0.0.0.MAGE_ALL.242])
+    See([0.0.0.MAGE_ALL.241])
+  HaveSpell(WIZARD_SECRET_WORD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_SECRET_WORD)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  StateCheck(Myself,STATE_SILENCED)
+  HaveSpell(WIZARD_VOCALIZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
+  See([0.0.0.0.240])
+  !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_DEATH_SPELL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_CHAOS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_CHAOS)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_SHADOW_DOOR)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHADOW_DOOR)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_CONFUSION)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_CONFUSION)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_DOMINATION)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DOMINATION)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_ANIMATE_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_ANIMATE_DEAD)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HaveSpell(WIZARD_HOLD_PERSON)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_HOLD_PERSON)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_SKULL_TRAP)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_SKULL_TRAP)
+END
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+
+IF
+  Global("D0LarellAssault","GLOBAL",1)
+  OR(3)
+    See(NearestEnemyOf(Myself))
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+THEN
+  RESPONSE #100
+    Attack(LastSeenBy(Myself))
+END

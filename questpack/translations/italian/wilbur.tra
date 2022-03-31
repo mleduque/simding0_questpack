@@ -1,0 +1,47 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Viaggiatore, avventuriero, mercenario, qualunque cosa tu sia, fermati un attimo, perché devo dirti qualcosa.~
+@1    = ~Sembri senza fiato. Che cosa hai fatto?~
+@2    = ~Chi sei?~
+@3    = ~Perché proprio a me? Trova qualcun altro con cui parlare.~
+@4    = ~Io non ho tempo per le domande. Ti farò la mia offerta e tu devi prendere o lasciare.~
+@5    = ~Mentre parliamo, mio padre si trova sul letto di morte. Uno degli Incappucciati sarebbe in grado di curarlo, ma solo per un prezzo che posso a malapena permettersi.~
+@6    = ~Ma ho un oggetto che potrebbe farmi guadagnare una tale somma in fretta. Per favore, dai un'occhiata, per vedere se ti interessa.~
+@7    = ~Mi rammarico della tua decisione, veramente. Ma ora, devo scappare. Addio!~
+@8    = ~Una decisione saggia. Hai la mia gratitudine. Ma ora, devo scappare. Addio!~
+@9    = ~Misfatto trascendente obbliga viaggio vessatorio. Giochi un gioco pericoloso, primo.~ [D0nosnd]
+@10   = ~Niente meno~
+@11   = ~Calunniare la mia lama con il tuo tocco, sporco mortale. Ho la sensazione che non sei il ladro, quindi ti risparmierò la vita oggi, ma restituisci quello che è mio.~
+@12   = ~Intendi la spada Wilbur mi ha dato. Non ce l'ho più.~
+@13   = ~Questa strana scimitarra rossa? Certo, ecco qui.~
+@14   = ~Non ho assolutamente idea cosa intendi. Quale lama?~
+@15   = ~Prendi, demone. Per lo meno, dimmi ciò che è accaduto qui, prima di attaccarmi.~
+@16   = ~Vattene da questo piano. La tua specie non è benvenuta qui.~
+@17   = ~Giochi un gioco pericoloso, apparendo così apertamente.~
+@18   = ~Preferisco non consegnarti nulla.~
+@19   = ~Muori, demonio!~
+@20   = ~Dici la verità. Pfah! La andrai a prendere ora. No no. Lo farò io. Pagherai per l'inconveniente.~
+@21   = ~Rubare da un demone
+
+Ho scoperto che una spada che avevo comprato da un uomo di nome Wilbur era stata rubata, in qualche modo, da una marilith che mi ha raggiunto. Però, non avevo più l'arma, lasciandomi era affranta.~
+@22   = ~Menti. Pfah! La riconsegnerai in questo istante. No no. Lo prenderò io. Pagherai per l'insulto.~
+@23   = ~Rubare da un demone
+
+Ho scoperto che una spada che avevo comprato da un uomo di nome Wilbur era stata rubata, in qualche modo, da una marilith che mi ha raggiunto. Io non ero disposto a rinunciare a una tale arma senza combattere, però.~
+@24   = ~Godrò nel vederti lacerato.~
+@25   = ~Sei stato saggio. La tua vita è risparmiata, e io parto alla ricerca di una sanguinosa vendetta.~
+@26   = ~Rubare da un demone
+
+Si è scoperto che una spada che ho comprato da un uomo di nome Wilbur era stata rubata, in qualche modo, da una marilith che mi ha raggiunto. Ho restituito l'arma, ma lei era comunque arrabbiata.~
+@27   = ~Sciocco. Mi piacerà dilaniarti.~
+@28   = ~Sì. Beg, come è il vostro posto, e forse in cambio io nutrirò un boccone. O non forse, per la mia pazienza si assottiglia. Mano l'arma in una volta. ~
+@29   = ~Non ho assolutamente idea di cosa vuoi dire. Quale arma? ~
+@30   = ~Forse è così, ma qui mi trovo. Non perdere tempo, per la mia pazienza si assottiglia. Mano l'arma in una volta. ~
+@31   = ~Sì. Certo. Forse in cambio ti nutrirò di conoscenza. O forse no. Ti chiedo ancora una volta la lama, sei un essere fortunato, se sei ancora vivo.~
+@32   = ~Se cerchi la spada che Wilbur mi ha dato, temo di non averla più con me.~
+@33   = ~Desideri questa strana scimitarra rossa? Certo, ecco qui.~
+@34   = ~Non mettere alla prova la mia pazienza, sciocco. La lama di sangue cremisi. Consegnamela, ora.~
+@35   = ~Ah, la spada che Wilbur mi ha dato. Temo di non averla più.~
+@36   = ~Come se io volessi venire in questo posto ignobile. Ma la mia parola? Io non darò niente del genere. Spera e prega, mortale, perché questo è tutto quello che puoi fare.~
+@37   = ~Aspetta, demone. Prima di partire, voglio la tua parola che non tornerai mai più in questo piano.~
+@38   = ~Imbecille! Ciò che per tutti gli inferi possiedi può attirare marilith nel centro di Athkatla?! Bah! Per il tuo bene sarà meglio che non causi più nessun "problema". Ci saranno conseguenze. Buona giornata.~

@@ -1,0 +1,132 @@
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+	HPGT(Myself,1)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+    HPPercentLT(Myself,30)
+    !Class(Myself,INNOCENT)
+    Allegiance(Myself,ENEMY)
+    See([EVILCUTOFF.0.CLERIC_ALL])
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+    !HasItem(potion,Myself)
+THEN
+    RESPONSE #100
+        Shout(NEED_POTION)
+        DisplayStringHead(Myself,~I need healing!~)
+    RESPONSE #100
+        Shout(NEED_POTION)
+        DisplayStringHead(Myself,~I'm hurt!~)
+    RESPONSE #100
+        Shout(NEED_POTION)
+        DisplayStringHead(Myself,~Heal me!~)
+END
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+	HPGT(Myself,1)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+    HPPercentLT(Myself,30)
+    !Class(Myself,INNOCENT)
+    Allegiance(Myself,ENEMY)
+    See(NearestMyGroupOfType)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+    !HasItem(potion,Myself)
+THEN
+    RESPONSE #100
+        Shout(NEED_POTION)
+        DisplayStringHead(Myself,~I need healing!~)
+    RESPONSE #100
+        Shout(NEED_POTION)
+        DisplayStringHead(Myself,~I'm hurt!~)
+END
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+	HPGT(Myself,1)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+    !HitBy([ANYONE],CRUSHING)
+    HPPercentGT(Myself,50)
+    Allegiance(Myself,ENEMY)
+    Heard([EVILCUTOFF],NEED_POTION)
+    See(LastHeardBy(Myself))
+    !Alignment(Myself,MASK_EVIL)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+    HasItem(potion,Myself)
+THEN
+    RESPONSE #100
+        DisplayStringHead(Myself,~Here you go!~)
+        GiveItem(potion,LastSeenBy(Myself))
+        Wait(1)
+        DisplayStringHead(LastSeenBy(Myself)),~Got it!~)
+    RESPONSE #100
+        DisplayStringHead(Myself,~Take this!~)
+        GiveItem(potion,LastSeenBy(Myself))
+        Wait(1)
+        DisplayStringHead(LastSeenBy(Myself)),~Got it!~)
+    RESPONSE #100
+        DisplayStringHead(Myself,~Here you go!~)
+        GiveItem(potion,LastSeenBy(Myself))
+        Wait(1)
+        DisplayStringHead(LastSeenBy(Myself)),~Thanks!~)
+    RESPONSE #100
+        DisplayStringHead(Myself,~Take this!~)
+        GiveItem(potion,LastSeenBy(Myself))
+        Wait(1)
+        DisplayStringHead(LastSeenBy(Myself)),~Thanks!~)
+END
+
+IF
+    OR(7)
+        Race(Myself,HUMAN)
+        Race(Myself,ELF)
+        Race(Myself,HALF_ELF)
+        Race(Myself,DWARF)
+        Race(Myself,GNOME)
+        Race(Myself,HALFLING)
+        Race(Myself,HALFORC)
+	HPGT(Myself,1)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+    !HitBy([ANYONE],CRUSHING)
+    HPPercentGT(Myself,50)
+    Allegiance(Myself,ENEMY)
+    Heard([EVILCUTOFF],NEED_POTION)
+    See(LastHeardBy(Myself))
+    Alignment(Myself,MASK_EVIL)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+    HasItem(potion,Myself)
+THEN
+    RESPONSE #100
+        DisplayStringHead(Myself,~Bah. Use this if you must.~)
+        GiveItem(potion,LastSeenBy(Myself))
+        Wait(1)
+        DisplayStringHead(LastSeenBy(Myself)),~Thanks!~)
+    RESPONSE #100
+        DisplayStringHead(Myself,~Take this!~)
+        GiveItem(potion,LastSeenBy(Myself))
+        Wait(1)
+        DisplayStringHead(LastSeenBy(Myself)),~Got it!~)
+    RESPONSE #100
+        DisplayStringHead(Myself,~Take care of yourself!~)
+    RESPONSE #100
+        DisplayStringHead(Myself,~Pfah! Pathetic!~)
+END

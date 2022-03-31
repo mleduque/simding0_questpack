@@ -1,0 +1,50 @@
+IF
+  Global("C7CounterInitiate","GLOBAL",0)
+  Alignment(Player1,MASK_GOOD)
+THEN
+  RESPONSE #100
+    SetGlobal("C7CounterInitiate","GLOBAL",1)
+    SetGlobal("C7Counter","GLOBAL",5)
+    SetGlobal("C7OriginalAlignment","GLOBAL",1)
+END
+
+IF
+  Global("C7CounterInitiate","GLOBAL",0)
+  Alignment(Player1,MASK_EVIL)
+THEN
+  RESPONSE #100
+    SetGlobal("C7CounterInitiate","GLOBAL",1)
+    SetGlobal("C7Counter","GLOBAL",3)
+    SetGlobal("C7OriginalAlignment","GLOBAL",2)
+END
+
+IF
+  Global("C7CounterInitiate","GLOBAL",0)
+  Alignment(Player1,MASK_GENEUTRAL)
+THEN
+  RESPONSE #100
+    SetGlobal("C7CounterInitiate","GLOBAL",1)
+    SetGlobal("C7Counter","GLOBAL",4)
+    SetGlobal("C7OriginalAlignment","GLOBAL",3)
+END
+
+IF
+  Global("C7CounterInitiate","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TearDoor","GLOBAL",10)
+    SetGlobal("C7SinCounter","GLOBAL",0)
+    SetGlobal("AbyssPaladinGone","GLOBAL",1)
+    SetGlobal("AbyssRangerGone","GLOBAL",1)
+    SetGlobal("PaladinGone","AR2904",1)
+    SetGlobal("RangerGone","AR2904",1)
+    SetGlobal("C7CounterInitiate","GLOBAL",2)
+END
+
+IF
+  Global("TearDoor","GLOBAL",15)
+  GlobalTimerExpired("C7TearDoorTime","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("TearDoor","GLOBAL",5)
+END

@@ -1,0 +1,12 @@
+IF
+  Global("GaelanSpawn2","GLOBAL",0)
+  OR(2)
+    Global("D0AranHostile","GLOBAL",1)
+    Global("AttackedThieves","GLOBAL",1)
+  !Dead("gaelan2")
+THEN
+  RESPONSE #100
+    SetGlobal("GaelanSpawn2","GLOBAL",1)
+    ActionOverride("Gaelan",DestroySelf())
+    CreateCreature("GAELAN2",[451.267],0) // Gaelan Bayle
+END

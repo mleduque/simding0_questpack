@@ -1,0 +1,76 @@
+// -*- coding: cp1252 -*-
+
+// Pride Silver Dragon
+
+@1 = ~Ich zweifle nicht daran, dass das Kind des toten Gottes gekommen ist, um das furchterregende Monster niederzustrecken, das über die Träne seines Vaters wacht.  Nun denn, bringen wir es hinter uns.~
+@2 = ~Koste meinen Stahl, Wurm!~
+@3 = ~Wartet! Sollten wir nicht noch einmal darüber reden?~
+@4 = ~Reden? Ich hatte ein solch zögerliches Verhalten nicht von Euch erwartet. Über was wollt Ihr mit mir reden? Oder ist das nur ein Ablenkungsmanöver, damit Ihr Euch besser auf den kommenden Kampf vorbereiten könnt?~
+@5 = ~Ich bin nur hierher gekommen, um die Träne des Bhaal zu erlangen, nicht um zu kämpfen.  Gewiss hat ein Wesen von Eurer Weisheit kein Interesse an einer solch sinnlosen Auseinandersetzung.~
+@6 = ~Eure Worte zeugen von Ehre.  Es gibt auch wirklich keinen Grund, warum ich Euch die Träne nicht aushändigen sollte.~
+@7 = ~Ich hätte nicht gedacht, dass Ihr mich zu solch einem Angebot überreden könntet.  Hier habt Ihr den Edelstein, nach dem Ihr strebt. Für einen Sterblichen habt Ihr schon sehr vernünftige Ansichten.  Gehabt Euch wohl.~
+@8 = ~Wartet... Was ist das hier?~
+@9 = ~Ihr habt zuvor schon andere meiner Art getötet, nicht wahr? Der Gestank ihres Todes dringt deutlich aus Eurer Kleidung.  Ich glaube nicht, dass Ihr beabsichtigt, mich am Leben zu lassen.  Wart Ihr in der Hoffnung, mich mit Euren hübschen Worten, Euren Lügen zu umgarnen, um mich in einem Moment der Unaufmerksamkeit zu überraschen?~
+@10 = ~Es ist mein Schicksal, gegen Euch zu kämpfen. Lasst uns sehen, wer am Ende der Sieger sein wird.~
+
+// Fear Demon
+
+@11 = ~...wie zum Beispiel dieser Umhang. Er ist aus den Häuten von lieblichen Nymphen gefertigt. Tragt ihn und seine mächtige Magie wird Euch ermutigen... nie wieder wird Furcht Euch übermannen.~ [HELFEA13]
+@12 = ~Sagt Dämon, ist dieser Mantel schon gefertigt und die Nymphen bereits tot?  Oder würdet Ihr sie erst umbringen, wenn ich auf Euer Angebot eingehe?~
+@13 = ~Dies ist eine seltsame Frage.  Warum versucht Ihr das zu ergründen?~
+@14 = ~Ach nicht weiter wichtig. Ich werde einen solch verderbten Gegenstand sowieso nicht annehmen. Mein Mut wird mir genügen müssen.~
+@15 = ~Es war nur aus reiner Neugierde. Gebt mir einfach den Umhang.~
+@16 = ~Wenn Ihr die Nymphen nur meinetwegen töten würdet, hätte ich kein Interesse an dem Umhang. Aber wenn sie bereits tot sind, kann ich ihn auch an mich nehmen. Mein Verhalten hätte keine Konsequenzen für sie.~
+@17 = ~Ich verstehe. Ein interessanter Standpunkt. Die Antwort auf Eure Frage ist: die Nymphen sind schon lange tot. Ich übergebe Euch nun den Umhang.~
+
+// Greed Genie
+
+@18 = ~Nun, ich werde das Schwert dringend benötigen, wenn ich Irenicus gegenüber stehe! Aber ich will Euch auch nicht wegen der Träne umbringen. Seid Ihr Euch sicher, dass es keine andere Möglichkeit gibt?~
+@19 = ~Ich habe über Euer Angebot nachgedacht und akzeptiere den Geas-Zauber.~
+@20 = ~Das kann ich Euch nicht sagen, <PRO_LADYLORD>.~
+@21 = ~Es scheint, dass ich ohne das Schwert auskommen muss. So nehmt es denn.~
+@22 = ~Kann ich nicht das Schwert noch eine Weile bei mir behalten, später wiederkommen und es euch dann übergeben?~
+@23 = ~Verzeiht, <PRO_LADYLORD>, aber ich kann mir nicht sicher sein, dass Eure Absichten auch wahrhaftig sind. Zu viel steht für mich auf dem Spiel. Dies ist für mich wahrscheinlich die einzige Möglichkeit, dieser Verdammnis hier zu entfliehen.~ 
+@24 = ~Was wäre, wenn ich einen Eid auf meine Rückkehr leisten würde? Ich wäre sogar geneigt, einen Geas-Zauber auf mich zu nehmen!~
+@25 = ~Ja, das wäre vielleicht eine Möglichkeit. Ich würde dann einen Geas-Zauber über Euch sprechen, der Euch an Euer Versprechen bindet. Wenn Ihr Euer Versprechen brecht, würdet Ihr sterben. Seid Ihr Euch sicher, dass Ihr dazu bereit wäret, <PRO_LADYLORD>?~
+@26 = ~Wenn ich darüber nachdenke, wäre es mir lieber, wenn ich mich nicht an Euch binden würde. Ich überlege es mir noch einmal.~
+@27 = ~Ich bin bereit. Sprecht Euren Zauber.~
+@28 = ~Wie Ihr wünscht, <PRO_LADYLORD>.~
+@29 = ~Es ist geschehen, <PRO_LADYLORD>. Ich wünsche Euch gutes Gelingen und erwarte sehnlichst Eure Rückkehr. Wie werden uns wiedersehen.~
+@30 = ~Ihr findet Irenicus in der Hölle
+
+Das Schwert des Dämonen ist scheinbar für den Genie der Schlüssel für sein Entkommen aus der Gefangenschaft der Hölle. Er erlaubte mir, es zu behalten bis ich Irenicus zerstört habe. Er sprach einen Zauber, um sich meiner Rückkehr zu versichern, wenn es vollbracht ist. Ich hoffe nur, dass sich ein Weg findet, zurückzukehren.~
+@31 = ~Bitte, <PRO_LADYLORD>, beeilt Euch mit Eurer Aufgabe. Ich möchte nicht länger als unbedingt notwendig an diesem Ort verweilen.~
+@32 = ~Ihr seid zurückgekehrt, <PRO_LADYLORD>, und der Magier ist besiegt! Ich hoffe Ihr werdet Euch an unsere Übereinkunft halten und mir das Schwert übergeben? Ich brenne darauf, diese Höllenebene zu verlassen.~
+@33 = ~Selbstverständlich. Nehmt es.~
+@34 = ~Vergesst das Schwert. Es gehört mir und es ist mir egal, was ich zuvor dazu gesagt habe.~
+@35 = ~Ich kann Euch das Schwert nicht geben. Scheinbar habe ich es irgendwo verloren.~
+@36 = ~Das kann nicht Euer Ernst sein, <PRO_LADYLORD>! Auch wenn Euch die Schmerzen, die ich erleide, nicht kümmern, wenn Ihr Euer Versprechen nicht haltet werdet Ihr unausweichlich sterben!~
+@37 = ~Oh natürlich, vergesst meine Worte. Nehmt das Schwert.~
+@38 = ~Ihr habt mich schon richtig verstanden. Und behaltet Eure Beleidigungen für Euch, bevor ich noch auf die Idee komme, das Schwert an Euch auszuprobieren.~
+@39 = ~Ich habe es geahnt, dass ich Euch nicht trauen kann. Der Tod wäre jetzt eine Erlösung, aber es ist zu spät. Zumindest der Gedanke an Eurer Ableben wird mir eine kleine Freude während der ewigen Verdammnis sein, die mich erwartet. Seid Euch gewiss, dass ich Euch für alle Tage verfluchen werde.~
+@40 = ~Ihr... Ihr habt es verloren? Aber... seid Ihr Euch darüber im Klaren, was das bedeutet? Wie konntet Ihr nur so unvorsichtig sein?~
+
+// Wrath Sarevok
+
+@41 = ~Haltet Ihr mich wirklich für so beschränkt, dass ich auf Euer Angebot eingehe? Ich würde keiner Sache, die von Euch, Sarevok, kommt, vertrauen und Ihr besitzt auch nichts, was ich bräuchte.~
+@42 = ~Was immer auch das Schicksal mit mir noch für Pläne hat, sei es Macht oder Armut; bei einer Sache bin ich mir absolut sicher: Ich werde nichts von Euch annehmen.~
+
+// Selfishness Demon
+
+@43 = ~Dann habe ich wohl keine andere Wahl und muss mich selbst opfern. Ich möchte nicht, dass jemand meinetwegen Schmerzen erleiden muss.~
+@44 = ~Tut, was Ihr nicht lassen könnt. Tötet sie. Nichts bedeutet mir weniger.~
+@45 = ~Ich weiss nicht, was ich jetzt tun soll.~
+@46 = ~Nein! Ich werde nichts opfern, aber ich werde auch nicht zulassen, dass Ihr irgendjemand anderem Schaden zufügt! Ihr werdet sterben, Ihr Teufel!~
+@47 = ~Tut, was Ihr nicht lassen könnt. Tötet ihn. Nichts bedeutet mir weniger.~
+@48 = ~Es ist allein Eure Entscheidung, Kind des Bhaal. Wägt Eure Entscheidung wohl ab und schreitet durch die Tür Eurer Wahl.~
+@49 = ~Seid nicht närrisch, Kind. Ihr könnt nicht ernsthaft hoffen, gegen mich bestehen zu können? Trotz allem seid Ihr immer noch sterblich, und könnt mich, eine Ausgeburt Eures Bewusstseins, nicht zerstören. Solange Ihr existiert wird es auch mich geben. Mich zu bekämpfen wäre töricht, denn letzten Endes würdet Ihr umkommen, ebenso wie diejenigen, die Ihr eigentlich schützen wollt.~
+@50 = ~Eure Worte enthalten Wahres, schätze ich. Dann werde ich selbst die Last auf meine Schultern nehmen.~
+@51 = ~Nun... wenn ich darüber nachdenke, muss ich zugeben, dass Ihr recht habt. Nun denn, tötet die Geisel und vergesst, was ich zuvor gesprochen habe.~
+@52 = ~Ich habe schon mächtigere Wesen als Ihr es seid getötet. Redet soviel Ihr wollt, diesem Kampf werdet Ihr nicht entkommen.~
+@53 = ~Nun, wenn dies Euer Wunsch ist, werde ich nicht weiter versuchen, Euch davon abzubringen. Das könnte sehr amüsant werden.~
+@54 = ~Genug, das reicht mir. Ihr habt bewiesen, dass Ihr auch einen Kampf kämpft, den Ihr nicht gewinnen könnt, wenn es darum geht, diejenigen aufzuhalten, die versuchen, das Schicksal anderer zu bestimmen. Geht Euren Weg.~
+@55 = ~Ihr findet Irenicus in der Hölle
+
+Ich lehnte es ab, durch eine der beiden Türen zu gehen und bekämpfte den Dämonen. Auch wenn ich während des langen Kampfes die Bestie nicht töten konnte, gab sie auf und übergab mir die Träne des Bhaal. Dieses Ereignis hatte für den Dämon irgendeine Bedeutung, ich weiss nur nicht, welche.~
+@56 = ~Genug, das reicht mir. Ihr habt bewiesen, dass Ihr auch einen Kampf kämpft, den Ihr nicht gewinnen könnt, wenn es darum geht, diejenigen aufzuhalten, die versuchen, das Schicksal anderer zu bestimmen. Geht Euren Weg.~

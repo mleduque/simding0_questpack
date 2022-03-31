@@ -1,0 +1,23 @@
+IF
+  PartyHasItem("d0qpliph")
+  Global("D0DestroyNaz","AR2500",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0DestroyNaz","AR2500",1)
+    DisplayStringHeadOwner("d0qpliph",@18)
+    ActionOverride(Player1,DestroyItem("d0qpliph"))
+    ActionOverride(Player2,DestroyItem("d0qpliph"))
+    ActionOverride(Player3,DestroyItem("d0qpliph"))
+    ActionOverride(Player4,DestroyItem("d0qpliph"))
+    ActionOverride(Player5,DestroyItem("d0qpliph"))
+    ActionOverride(Player6,DestroyItem("d0qpliph"))
+    EraseJournalEntry(@16)
+    AddJournalEntry(@17,QUEST_DONE)
+    AddXPObject(Player1,7500)
+    AddXPObject(Player2,7500)
+    AddXPObject(Player3,7500)
+    AddXPObject(Player4,7500)
+    AddXPObject(Player5,7500)
+    AddXPObject(Player6,7500)
+    Continue()
+END

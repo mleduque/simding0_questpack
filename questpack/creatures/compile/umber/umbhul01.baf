@@ -1,0 +1,188 @@
+IF
+  OR(2)
+    GlobalGT("OgronAttack","GLOBAL",0)
+    GlobalTimerExpired("KidsRunOff","GLOBAL")
+  AreaCheck("AR1106")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  RandomNumGT(4,2)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  AttackedBy([ANYONE],DEFAULT)
+  Allegiance(LastAttackerOf(Myself),GOODCUTOFF)
+  Allegiance(Myself,ENEMY)
+  See(LastAttackerOf(Myself))
+  !StateCheck(LastAttackerOf(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastAttackerOf(Myself),HULK_CONFUSION)
+END
+
+IF
+  RandomNum(8,1)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),HULK_CONFUSION)
+END
+
+IF
+  RandomNum(8,2)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  See(SecondNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),HULK_CONFUSION)
+END
+
+IF
+  RandomNum(8,3)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  See(ThirdNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),HULK_CONFUSION)
+END
+
+IF
+  RandomNum(8,4)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  See(FourthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),HULK_CONFUSION)
+END
+
+IF
+  RandomNum(8,5)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  See(FifthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),HULK_CONFUSION)
+END
+
+IF
+  RandomNum(8,6)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  See(SixthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),HULK_CONFUSION)
+END
+
+IF
+  RandomNum(8,7)
+  !GlobalTimerNotExpired("Confuse","LOCALS")
+  See(SeventhNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Confuse","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),HULK_CONFUSION)
+END
+
+IF
+  //	OR(4)
+  OR(3)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+  //		InMyGroup(LastSeenBy(Myself))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !Race(Myself,ZOMBIE)
+  //	OR(4)
+  OR(3)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+  //		InMyGroup(LastSeenBy(Myself))
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,4)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,5)
+  See(FourthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(FifthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(SixthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(TenthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+  !Race(Myself,ZOMBIE)
+  RandomNumGT(6,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END

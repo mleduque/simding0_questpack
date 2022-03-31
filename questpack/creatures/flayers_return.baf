@@ -1,0 +1,38 @@
+IF
+	GlobalGT("D0FledFlayers1","MYAREA",3)
+	GlobalTimerExpired("D0FlayersReturn","MYAREA")
+THEN
+	RESPONSE #100
+		IncrementGlobal("D0FledFlayers1","MYAREA",-1)
+		CreateCreatureObjectDoor("MINDFL01",[PC],0,0,0)
+END
+
+IF
+	GlobalGT("D0FledFlayers2","MYAREA",2)
+	GlobalTimerExpired("D0FlayersReturn","MYAREA")
+THEN
+	RESPONSE #100
+		IncrementGlobal("D0FledFlayers2","MYAREA",-1)
+		CreateCreatureObjectDoor("MINDFL01",[PC],0,0,0)
+END
+
+IF
+	Global("D0FledFlayers1","MYAREA",3)
+	GlobalTimerExpired("D0FlayersReturn","MYAREA")
+THEN
+	RESPONSE #100
+		SetGlobal("D0FledFlayers1","MYAREA",0)
+		CreateCreatureObjectDoor("MINDFL01",[PC],0,0,0)
+		CreateCreatureObjectDoor("MINDFL01",[PC],0,0,0)
+		CreateCreatureObjectDoor("MINDFL01",Player1,0,0,0)
+END
+
+IF
+	Global("D0FledFlayers2","MYAREA",2)
+	GlobalTimerExpired("D0FlayersReturn","MYAREA")
+THEN
+	RESPONSE #100
+		SetGlobal("D0FledFlayers2","MYAREA",0)
+		CreateCreatureObjectDoor("MINDFL01",[PC],0,0,0)
+		CreateCreatureObjectDoor("MINDFL01",Player1,0,0,0)
+END

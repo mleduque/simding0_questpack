@@ -1,0 +1,33 @@
+IF
+  Global("D0SlaveGirl","GLOBAL",2)
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  Global("D0SlaveGirl","GLOBAL",3)
+  !Detect("arenthis")
+  !Range(Player1,5)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player1)
+END
+
+IF
+  Global("D0SlaveGirl","GLOBAL",3)
+  !Detect("arenthis")
+  Range(Player1,5)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("D0SlaveGirl","GLOBAL",3)
+  Detect("arenthis")
+THEN
+  RESPONSE #100
+    StartDialogNoSet("arenthis")
+END

@@ -1,0 +1,10 @@
+IF
+  HasItem("d0qpwisw",Myself)
+  OR(2)
+    PartyHasItem("d0qpwisw")
+    GlobalGT("D0Wilbur","GLOBAL",3)
+THEN
+  RESPONSE #100
+    TakeItemReplace("sw1h22","d0qpwisw",Myself)
+    EquipItem("sw1h22")
+END

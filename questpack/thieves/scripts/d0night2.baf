@@ -1,0 +1,156 @@
+IF
+  !Allegiance(Myself,ENEMY)
+  !See(NearestEnemyOf(Myself))
+  !Dead("d0nightk")
+  !Range("d0nightk",10)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow("d0nightk")
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_HASTED)
+  HasItem("potn14",Myself)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn14",Myself)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,75)
+  HasItem("potn52",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn52",Myself)
+END
+
+IF
+//  OR(4)
+  OR(3)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+//    InMyGroup(LastSeenBy(Myself))
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,4)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,5)
+  See(FourthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(FifthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(SixthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  See(TenthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+    RandomNumGT(10,3)
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    StateCheck(Myself,STATE_INVISIBLE)
+    StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    EquipMostDamagingMelee()
+    Attack(NearestEnemyOf(Myself))
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  OR(2)
+    !Range(LastSeenBy(Myself),7)
+    Range(LastSeenBy(Myself),7)
+  OR(2)
+    Range(NearestEnemyOf(Myself),7)
+    Range(LastSeenBy(Myself),7)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    EquipMostDamagingMelee()
+    Attack(NearestEnemyOf(Myself))
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  Global("D0_MOVE","LOCALS",0)
+  GlobalTimerExpired("D0_ATTACK","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobal("D0_MOVE","LOCALS",1)
+    RandomWalkContinuous()
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  !Range(NearestEnemyOf(Myself),7)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    SetGlobal("D0_MOVE","LOCALS",0)
+    EquipRanged()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  Range(LastSeenBy(Myself),7)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  !Range(LastSeenBy(Myself),7)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    EquipMostDamagingMelee()
+    Attack(NearestEnemyOf(Myself))
+END

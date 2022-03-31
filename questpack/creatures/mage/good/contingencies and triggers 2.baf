@@ -1,0 +1,207 @@
+IF
+	Global("Conting","LOCALS",1)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,29736) // Contingency - Stoneskin
+        ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+	Global("Conting","LOCALS",2)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,~Contingency - Mislead~)
+        ReallyForceSpell(Myself,WIZARD_MISLEAD)
+END
+
+IF
+	Global("Conting","LOCALS",3)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,~Contingency - Protection From Magical Weapons~)
+        ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+END
+
+IF
+	Global("Conting","LOCALS",4)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,~Contingency - Spell Deflection~)
+        ReallyForceSpell(Myself,WIZARD_SPELL_DEFLECTION)
+END
+
+IF
+	Global("Conting","LOCALS",5)
+    HPPercentLT(Myself,50)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,29736) // Contingency - Stoneskin
+        ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+	Global("Conting","LOCALS",6)
+    HPPercentLT(Myself,50)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,~Contingency - Mislead~)
+        ReallyForceSpell(Myself,WIZARD_MISLEAD)
+END
+
+IF
+	Global("Conting","LOCALS",7)
+    HPPercentLT(Myself,75)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,~Contingency - Shadow Door~)
+        ReallyForceSpell(Myself,WIZARD_SHADOW_DOOR)
+END
+
+IF
+	Global("Conting","LOCALS",8)
+    HPPercentLT(Myself,25)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("Conting","LOCALS",10)
+        DisplayString(Myself,~Contingency - Mirror Image~)
+        ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+	Global("ChainConting","LOCALS",1)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Simulacrum~)
+        ReallyForceSpell(Myself,WIZARD_SIMULACRUM)
+        DisplayString(Myself,~Chain Contingency - Mislead~)
+        ReallyForceSpell(Myself,WIZARD_MISLEAD)
+        DisplayString(Myself,~Chain Contingency - Immunity: Divination~)
+        ReallyForceSpell(Myself,2592)
+END
+
+IF
+	Global("ChainConting","LOCALS",2)
+    HPPercentLT(Myself,50)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Simulacrum~)
+        ReallyForceSpell(Myself,WIZARD_SIMULACRUM)
+        DisplayString(Myself,~Chain Contingency - Improved Mantle~)
+        ReallyForceSpell(Myself,WIZARD_IMPROVED_MANTLE)
+        DisplayString(Myself,~Chain Contingency - Spell Turning~)
+        ReallyForceSpell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+	Global("ChainConting","LOCALS",3)
+    HPPercentLT(Myself,50)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Protection From The Elements~)
+        ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_THE_ELEMENTS)
+        DisplayString(Myself,~Chain Contingency - Protection From Magic Energy~)
+        ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+        DisplayString(Myself,~Chain Contingency - Stoneskin~)
+        ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+	Global("ChainConting","LOCALS",4)
+    HitBy([ANYONE],CRUSHING)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Mislead~)
+        ReallyForceSpell(Myself,WIZARD_MISLEAD)
+        DisplayString(Myself,~Chain Contingency - Stoneskin~)
+        ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+        DisplayString(Myself,~Chain Contingency - Spell Turning~)
+        ReallyForceSpell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+	Global("ChainConting","LOCALS",5)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Mirror Image~)
+        ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+        DisplayString(Myself,~Chain Contingency - Globe Of Invulnerability~)
+        ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+        DisplayString(Myself,~Chain Contingency - Protection From Magical Weapons~)
+        ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+END
+
+IF
+	Global("ChainConting","LOCALS",6)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Protection From Evil~)
+        ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_EVIL)
+        DisplayString(Myself,~Chain Contingency - Summon Fiend~)
+        ReallyForceSpell(Myself,WIZARD_SUMMON_FIEND)
+        DisplayString(Myself,~Chain Contingency - Improved Invisibility~)
+        ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+	Global("ChainConting","LOCALS",7)
+    HPPercentLT(Myself,25)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Mirror Image~)
+        ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+        DisplayString(Myself,~Chain Contingency - Improved Invisibility~)
+        ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+        DisplayString(Myself,~Chain Contingency - Immunity: Divination~)
+        ReallyForceSpell(Myself,2592)
+END
+
+IF
+	Global("ChainConting","LOCALS",8)
+    HitBy([ANYONE],CRUSHING)
+    !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+    RESPONSE #100
+    	SetGlobal("ChainConting","LOCALS",10)
+        DisplayString(Myself,~Chain Contingency - Spell Turning~)
+        ReallyForceSpell(Myself,WIZARD_SPELL_TURNING)
+        DisplayString(Myself,~Chain Contingency - Immunity: Abjuration~)
+        ReallyForceSpell(Myself,2590)
+        DisplayString(Myself,~Chain Contingency - Spell Shield~)
+        ReallyForceSpell(Myself,WIZARD_SPELL_SHIELD)
+END

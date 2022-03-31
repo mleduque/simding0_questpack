@@ -1,0 +1,372 @@
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF.UNDEAD])
+	RandomNumGT(5,3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_CONTROL_UNDEAD)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	HaveSpell(WIZARD_DEATH_FOG)
+	!See([GOODCUTOFF.0.0.0.0.0.SUMMONNED])
+	OR(3)
+		!See(NearestEnemyOf(Myself))
+		CheckStatGT(NearestEnemyOf(Myself),50,RESISTACID)
+		Range(NearestEnemyOf(Myself),15)
+	OR(3)
+		!See(SecondNearestEnemyOf(Myself))
+		CheckStatGT(SecondNearestEnemyOf(Myself),50,RESISTACID)
+		Range(SecondNearestEnemyOf(Myself),15)
+	OR(3)
+		!See(ThirdNearestEnemyOf(Myself))
+		CheckStatGT(ThirdNearestEnemyOf(Myself),50,RESISTACID)
+		Range(ThirdNearestEnemyOf(Myself),15)
+	OR(3)
+		!See(FourthNearestEnemyOf(Myself))
+		CheckStatGT(FourthNearestEnemyOf(Myself),50,RESISTACID)
+		Range(FourthNearestEnemyOf(Myself),15)
+	OR(3)
+		!See(FifthNearestEnemyOf(Myself))
+		CheckStatGT(FifthNearestEnemyOf(Myself),50,RESISTACID)
+		Range(FifthNearestEnemyOf(Myself),15)
+	OR(3)
+		!See(SixthNearestEnemyOf(Myself))
+		CheckStatGT(SixthNearestEnemyOf(Myself),50,RESISTACID)
+		Range(SixthNearestEnemyOf(Myself),15)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(LastSeenBy(Myself))
+	OR(2)
+		CheckStatLT(LastSeenBy(Myself),50,RESISTACID)
+		Gender(LastSeenBy(Myself),SUMMONNED)
+	OR(2)
+		!Range(LastSeenBy(Myself),15)
+		CheckStatGT(Myself),99,RESISTACID)
+	HaveSpell(WIZARD_DEATH_FOG)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_DEATH_FOG)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	HaveSpell(WIZARD_POWER_WORD_BLIND)
+	RandomNumGT(6,3)
+	OR(2)
+		!See(NearestEnemyOf(Myself))
+		StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(SecondNearestEnemyOf(Myself))
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(ThirdNearestEnemyOf(Myself))
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(FourthNearestEnemyOf(Myself))
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(FifthNearestEnemyOf(Myself))
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(SixthNearestEnemyOf(Myself))
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(SeventhNearestEnemyOf(Myself))
+		StateCheck(SeventhNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(EighthNearestEnemyOf(Myself))
+		StateCheck(EighthNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(NinthNearestEnemyOf(Myself))
+		StateCheck(NinthNearestEnemyOf(Myself),STATE_HELPLESS)
+	OR(2)
+		!See(TenthNearestEnemyOf(Myself))
+		StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(LastSeenBy(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	HaveSpell(WIZARD_POWER_WORD_BLIND)
+	RandomNumGT(6,3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_BLIND)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+    NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
+	HaveSpell(WIZARD_MORDENKAINENS_SWORD)
+	RandomNumLT(6,5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(Myself,WIZARD_MORDENKAINENS_SWORD)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+	CheckStatGT(Myself,0,WIZARD_PROTECTION_FROM_EVIL)
+	OR(6)
+		CheckStatLT(NearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(SecondNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(ThirdNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(FourthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(FifthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(SixthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+	HaveSpell(WIZARD_GATE)
+	RandomNumGT(5,3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS")
+		Spell(Myself,WIZARD_GATE)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	HaveSpell(WIZARD_ENERGY_DRAIN)
+	RandomNumGT(8,5)
+	OR(3)
+		!See(NearestEnemyOf(Myself)
+		CheckStatGT(NearestEnemyOf(Myself),0,SCRIPTINGSTATE3)
+		!Range(NearestEnemyOf(Myself),7)
+	OR(3)
+		!See(SecondNearestEnemyOf(Myself)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,SCRIPTINGSTATE3)
+		!Range(SecondNearestEnemyOf(Myself),7)
+	OR(3)
+		!See(ThirdNearestEnemyOf(Myself)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,SCRIPTINGSTATE3)
+		!Range(ThirdNearestEnemyOf(Myself),7)
+	OR(3)
+		!See(FourthNearestEnemyOf(Myself)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,SCRIPTINGSTATE3)
+		!Range(FourthNearestEnemyOf(Myself),7)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(LastSeenBy(Myself))
+	Range(LastSeenBy(Myself),7)
+	!CheckStatGT(LastSeenBy(Myself),0,SCRIPTINGSTATE3)
+	HaveSpell(WIZARD_ENERGY_DRAIN)
+	RandomNumGT(8,5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS")
+		Spell(LastSeenBy(Myself),WIZARD_ENERGY_DRAIN)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+    Range(LastSeenBy(Myself),7)
+    !HasItem("BLAKBLAD",Myself) // Black Blade of Disaster
+    !HasItem("PHANBLAD",Myself) // Phantom Blade
+    !HasItem("MELFMET",Myself) // Melf's Minute Meteor
+    HaveSpell(WIZARD_BLACK_BLADE_OF_DISASTER)
+	RandomNumGT(4,2)
+THEN
+    RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS")
+        Spell(Myself,WIZARD_BLACK_BLADE_OF_DISASTER)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+	CheckStatGT(Myself,0,WIZARD_PROTECTION_FROM_EVIL)
+	OR(6)
+		CheckStatLT(NearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(SecondNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(ThirdNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(FourthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(FifthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(SixthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+	HaveSpell(WIZARD_SUMMON_FIEND)
+	RandomNumGT(5,4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS")
+		Spell(Myself,WIZARD_SUMMON_FIEND)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+	CheckStatGT(Myself,0,WIZARD_PROTECTION_FROM_EVIL)
+	OR(6)
+		CheckStatLT(NearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(SecondNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(ThirdNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(FourthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(FifthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+		CheckStatLT(SixthNearestEnemyOf(Myself),0,WIZARD_PROTECTION_FROM_EVIL)
+	HaveSpell(WIZARD_CACOFIEND)
+	RandomNumGT(5,4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS")
+		Spell(Myself,WIZARD_CACOFIEND)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+    NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
+	HaveSpell(WIZARD_INVISIBLE_STALKER)
+	RandomNumGT(4,2)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(Myself,WIZARD_INVISIBLE_STALKER)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+	CheckStatGT(NearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(SecondNearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(FourthNearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(FifthNearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(SixthNearestMyGroupOfType,99,RESISTFIRE)
+	OR(2)
+		CheckStatGT(Myself,99,RESISTFIRE)
+		!Range(NearestEnemyOf(Myself),20)
+	OR(6)
+		CheckStatLT(NearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(SecondNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(ThirdNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(FourthNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(FifthNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(SixthNearestEnemyOf(Myself),75,RESISTFIRE)
+	HaveSpell(WIZARD_INCENDIARY_CLOUD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),7)
+	HaveSpell(WIZARD_PRISMATIC_SPRAY)
+	RandomNumGT(5,2)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_PRISMATIC_SPRAY)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+	CheckStatGT(NearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(SecondNearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(FourthNearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(FifthNearestMyGroupOfType,99,RESISTFIRE)
+	CheckStatGT(SixthNearestMyGroupOfType,99,RESISTFIRE)
+	OR(2)
+		CheckStatGT(Myself,99,RESISTFIRE)
+		!Range(NearestEnemyOf(Myself),20)
+	OR(6)
+		CheckStatLT(NearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(SecondNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(ThirdNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(FourthNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(FifthNearestEnemyOf(Myself),75,RESISTFIRE)
+		CheckStatLT(SixthNearestEnemyOf(Myself),75,RESISTFIRE)
+	HaveSpell(WIZARD_DELAYED_BLAST_FIREBALL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(NearestEnemyOf(Myself),WIZARD_DELAYED_BLAST_FIREBALL)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_CARRION)
+    NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
+    RandomNumGT(5,4)
+THEN
+    RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+        Spell(Myself,WIZARD_CARRION)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(NearestEnemyOf(Myself))
+    NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
+	HaveSpell(WIZARD_WYVERN_CALL)
+	RandomNumGT(6,4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(Myself,WIZARD_WYVERN_CALL)
+END

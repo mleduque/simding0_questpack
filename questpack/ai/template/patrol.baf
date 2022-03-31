@@ -1,0 +1,174 @@
+IF
+	Global("StartPatrol","LOCALS",0)
+	!Race(Myself,DRAGON)
+	OR(2)
+		Global("PartOfGroup","LOCALS",0)
+		Detect(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		SetGlobalTimer("Patrol","LOCALS",12)
+		SaveObjectLocation("LOCALS","DefaultLocation",Myself)
+END
+
+IF
+	Global("StartPatrol","LOCALS",0)
+	!Race(Myself,DRAGON)
+	Global("PartOfGroup","LOCALS",1)
+	!Detect(NearestMyGroupOfType)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestMyGroupOfType)
+END
+
+IF
+	OR(2)
+		GlobalTimerExpired("Patrol","LOCALS")
+		!Detect(NearestMyGroupOfType)
+	OR(2)
+		GlobalTimerExpired("Patrol","LOCALS")
+		Global("PartOfGroup","LOCALS",1)
+THEN
+	RESPONSE #100
+		MoveToSavedLocationn("DefaultLocation","LOCALS")
+		SetGlobal("StartPatrol","LOCALS",0)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,1)
+	RandomNum(4,1)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([30.30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,1)
+	RandomNum(4,2)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([30.-30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,1)
+	RandomNum(4,3)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([-30.30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,1)
+	RandomNum(4,4)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToOffset([-30.-30])
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,2)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToObjectFollow(NearestMyGroupOfType)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,3)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		MoveToObject(NearestMyGroupOfType)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,4)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,1,2)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,2,2)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,3,2)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,1,3)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,2,3)
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		FollowObjectFormation(NearestMyGroupOfType,3,3)
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,5)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		RandomWalk()
+END
+
+IF
+	GlobalTimerNotExpired("Patrol","LOCALS")
+	Global("StartPatrol","LOCALS",1)
+	OR(2)
+		Detect(NearestMyGroupOfType)
+		Global("PartOfGroup","LOCALS",0)
+	RandomNum(6,6)
+THEN
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		RandomWalkContinuous()
+	RESPONSE #100
+		SetGlobal("StartPatrol","LOCALS",1)
+		NoAction()
+END

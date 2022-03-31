@@ -1,0 +1,45 @@
+IF
+  Global("D0Poor","GLOBAL",10)
+  NumTimesTalkedTo(0)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+IF
+  Global("D0Poor","GLOBAL",11)
+  GlobalTimerNotExpired("D0KillGirl","GLOBAL")
+  HPPercentLT(Myself,20)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+IF
+  OR(2)
+    Global("D0Poor","GLOBAL",11)
+    GlobalGT("D0Poor","GLOBAL",13)
+  OR(2)
+    GlobalTimerExpired("D0KillGirl","GLOBAL")
+    GlobalGT("D0Poor","GLOBAL",13)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
+  AreaCheck("ar0400")
+  OR(2)
+    Global("D0Poor","GLOBAL",11)
+    GlobalGT("D0Poor","GLOBAL",13)
+  OR(2)
+    GlobalTimerExpired("D0KillGirl","GLOBAL")
+    GlobalGT("D0Poor","GLOBAL",13)
+  !Detect([PC])
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

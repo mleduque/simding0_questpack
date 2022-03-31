@@ -1,0 +1,9 @@
+IF
+  See(Player1)
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+//    MoveToObject([PC])
+    Wait(1)
+    StartDialogueNoSet(Player1)
+END

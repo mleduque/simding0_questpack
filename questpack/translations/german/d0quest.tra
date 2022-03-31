@@ -1,0 +1,355 @@
+// -*- coding: cp1252 -*-
+
+@101 = ~Gefälschter Brief~
+@102 = ~Dies ist der Brief, der Euch von Mae'Var übergeben wurde und mit dem ihr Renal Blutskalp belasten sollt. Er schilder detailiert die Ermordung einiger hochrangiger Schattendiebe durch Attentäter der Masken der Nacht.~
+@103 = ~Larell~
+
+@105 = ~Hinterhältige Handschuhe~
+@106 = ~Diese seltenen verzauberten Handschuhe werden nur an die hochrangisten Attentäter der Masken der Nacht ausgegeben. Es wird gemutmaßt, dass das Original von einem magie-nutzenden Attentäter aus Sembia entworfen wurde. Seitdem wurde es von verschieden Gilden auf dem ganzen Kontinent kopiert.  Dessen ungeachtet bedeuten diese Handschuhe, dass die hochrangigen Attentäter der Masken der Nacht gefährliche Gegner sind, mit denen gerechnet werden muss.
+
+EIGENSCHAFTEN:
+
+Der Multiplikator beim Hinterhältigen Angriff erhöht sich um 1.
+
+Kann nur verwendet werden von:
+- Dieben~
+
+@107 = ~Arans Unsichtbarkeitsring~
+@108 = ~Arans Unsichtbarkeitsring
+
+Diesen Ring habt Ihr vom Anführer der Schattendiebe, Aran Linvail, erhalten.  Seine Herstellung wurde vor einiger Zeit von einem führenden Schattendieb als Fluchtmöglichkeit für heikle Situationen in Auftrag gegeben; traurigerweise konnte dieser Ring seinem Träger nicht helfen, als Linvail in der politischen Leiter nach oben kletterte.
+
+EIGENSCHAFTEN:
+
+Unsichtbarkeit (3x täglich)
+ Bereich: Anwender~
+
+@109 = ~Attentäter der Masken der Nacht~
+@110 = ~Das ist der Vogel, der Euch von Meronia übergeben wurde. Er ist ein Attentäter, der an den ahnungslosen Magier, Xzar, ausgeliefert werden soll.~
+
+@114 = ~Celile~
+@115 = ~Schnell, wir sollten verschwunden sein bevor seine Gefährten aufwachen!~
+@116 = ~Ich werde Euch lehren, Eure Schulden nicht zurückzuzahlen!~
+@117 = ~Schuldeneintreiber~
+@118 = ~Moiya~
+@119 = ~Mami! Bist du verletzt?!~
+@120 = ~Lasst uns sie töten und dann von hier verschwinden!~
+@121 = ~Lorick~
+@122 = ~Sarem~
+@123 = ~Dahlia~
+@124 = ~Besamen~
+@125 = ~Baisera~
+@126 = ~Alyce~
+@127 = ~Dagny~
+@128 = ~Sahen~
+@129 = ~Nazariel~
+@130 = ~Halt, Eindringlinge!~ [d0qpnaz1]
+@131 = ~Nazariels Phylakterion~
+@132 = ~Nachdem Ihr dem engen Tunnel einige Zeit gefolgt seid, bemerkt Ihr, dass er tiefer unter die Erde führt. Schließlich wird er breiter und Licht ist zu sehen.~
+@133 = ~Indigo~
+@134 = ~Jadarath~
+@135 = ~Phluafae~
+@136 = ~Verkleideter Lehrling~
+@137 = ~Dieses Phylakterion enthält die Essenz des alten Leichnams Nazariel, dessen letzter Wunsch es war, die Erdoberfläche zu sehen und frei zu sein.~
+@138 = ~Phluafaes Eicheln~
+@139 = ~Obwohl sie genauso aussehen, wie die Dryaden-Eicheln, die Ihr Phluafae gegeben habt, scheinen die harten Schalen dieser Samen einen leicht dunkleren Farbton zu besitzen. Vielleicht ist diese Schattierung ja eine Folge ihres boshaften Zwecks.~
+@140 = ~Tränenförmiger Edelstein~
+@141 = ~Dryadenträne~
+@142 = ~Ein blasser, violetter Stein. Er glüht leicht mit einem trüben, inneren Licht.~
+@143 = ~Erworben zu einem blutigen, gnadenlosen Preis, hätten nur wenige Abenteurer den Magen, um solch eine Trophäe mit sich herumzutragen. Als letzte Träne einer Dryade, die durch ihren letzten, kühlenden Atemhauch kristallisiert wurde, glüht dieser Stein in einem unheimlichen Licht. Die, die ihn tragen, fühlen sich vom bleibenden Vermächtnis der Schönheit berührt, aber dieser Segen kommt zu einem hohen Preis, denn der Edelstein spiegelt die Zerbrechlichkeit des Lebens des Opfers wieder, das durch eine grausame Hand vernichtet wurde.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Bezauberung.
+
+Konstitution: -1
+Charisma: +1
+
+Kann nicht verwendet werden von:
+- Guten Wesen~
+
+@144 = ~Dies ist der Siegelring, der von Rayic Gethras getragen wurde. Er trägt zwar eine kleinere Verzauberung, aber davon abgesehen ist er von rein sentimentalem Wert.
+
+EIGENSCHAFTEN:
+
+RW-Bonus: -1~
+@145 = ~Rayics Siegelring~
+@146 = ~Verkleidete Eskorte~
+@147 = ~Legt Eure Waffen nieder, Männer!~
+@148 = ~Zu den Waffen, Männer!  Die Bhaalbrut hat uns hereingelegt!~
+@149 = ~Jadaraths Trankliste~
+@150 = ~Dies ist die Trankliste, die Euch von Jadarath geben wurde. Er hat mit Euch vereinbart, dass er Euch jeden Trank, der auf die Liste steht, abkauft, wenn Ihr damit zu ihm zurückkehrt.
+
+1. Unsichtbarkeitstrank
+2. Schnelligkeitsöl
+3. Kälteschutztrank
+4. Explosionstrank
+5. Trank der Lebenskraft
+6. Trank der Geschütztheit
+7. Magieabwehrtrank
+8. Trank der Spiegelaugen
+9. Trank der Macht
+10. Trank der Einsicht
+11. Trank der Freiheit
+12. Trank der Steinform~
+@151 = ~Eure Geschicklichkeit wurde um +2 erhöht.~
+@152 = ~Ihr habt +30% Widerstand gegen Klingenwaffen erhalten.~
+@153 = ~Eure ETW0 wurde um 2 verbessert.~
+@154 = ~Ihr habt +30% Widerstand gegen magischen Schaden erhalten.~
+@155 = ~Eure Intelligenz wurde um +2 erhöht.~
+@156 = ~Eure Gesinnung wurde nun auf rchtschaffen guteingestellt.~
+@157 = ~Eure Gesinnung wurde nun auf neutral gut eingestellt.~
+@158 = ~Eure Gesinnung wurde nun auf chaotisch gut eingestellt.~
+@159 = ~Eure Gesinnung wurde nun auf rechtschaffen böse eingestellt.~
+@160 = ~Eure Gesinnung wurde nun auf neutral böse eingestellt.~
+@161 = ~Eure Gesinnung wurde nun auf chaotisch böse eingestellt.~
+@162 = ~Eure Gesinnung wurde nun auf rechtschaffen neutral eingestellt.~
+@163 = ~Eure Gesinnung wurde nun auf absolut neutral eingestellt.~
+@164 = ~Eure Gesinnung wurde nun auf chaotisch neutral eingestellt.~
+@165 = ~Ihr habt die Fähigkeiten, die Euch von Eurem Gott gewährt wurden, verloren.~
+@166 = ~Jadaraths Segen~
+@167 = ~Dieser Gürtel wurde Euch von Jadarath überreicht, der seither die Reiche mit unbekanntem Ziel verlassen hat. Er wurde mit einer kleinen Portion seltsamer Magie gefertig und kann den Träger vom beinahe sicheren Tod bewahren. Während Jadarath auf seine eigene, seltsame Weise ein Meister der Zauberei war, war er unglücklicherweise kein erfahrener Schneider und so ist der Gürtel schwierig und unbequem zu tragen.
+
+EIGENSCHAFTEN:
+
+Heilung (1x täglich)
+ Bereich: Anwender~
+
+
+@175 = ~Piraten-Leibwächter~
+@176 = ~Tredor~
+
+@178 = ~Sidhe~
+@179 = ~Janie~
+@180 = ~Dieser Trank schützt den Anwender vor allen Blick-Angriffen, einschließlich denen von Basilisken, Erdkolossen, Vampiren und anderen Kreaturen.  Die Auswirkungen halten 10 Runden oder bis sie gebannt werden.~
+@181 = ~Blick der Verzweiflung~
+@182 = ~Notfall - Verbesserte Unsichbarkeit~
+@183 = ~Aiiiiee!!!~
+@184 = ~Ich hab sie in unserem geheiligten Hain gepflanzt, Schwestern.~
+@185 = ~Erhebt Euch und seid frei!~
+@186 = ~Was?~
+@187 = ~Was passiert gerade?!~
+@188 = ~Cania...?~
+@189 = ~Elyme...?~
+@190 = ~Ulene...?~
+@191 = ~Ich bin verlassen! Wir sind alle verlassen!~
+
+@192 = ~Werft Euer Leben nicht aufgrund von unwichtigen politischen Schriftstücken von den Masken der Nacht weg.  Mae'Var ist mit ihnen verbunden; die Messer sind offensichtlich seine geheimen Verbündeten.~
+@193 = ~Mae'Var hat auf die Masken der Nacht gezählt, um seine eigene strategische Position zu stärken und Renal zu betrügen.  Meisterlich geplant, aber ich habe es durchschaut.~
+@194 = ~Die Masken sind eine Halsabschneider-Gilde von Straßenräubern, Banditen und Wegelagerern ansässig in der verstopften Klärgrube von Westtor.  Offenbar wollen sie expandieren.~
+@195 = ~Ja, ich habe die Beweise, die Ihr benötigt in diesen Schriftstücken.  Es scheint, dass Mae'Var Angebote an die Masken der Nacht gemacht hat.~
+@196 = ~Ihr seid in die Falle gegangen und habt den Köder geschluckt. Nun seid Ihr verwundbar und meine Attentäter sind in Bereitschaft! Lasst die Masken der Nacht Euch erledigen!~
+@197 = ~Ähm, hallo. Ich... ich bin Euch gefolgt und... und es tut mir schrecklich leid wegen der Sauerei mit dieser Ama Person. Mein Informant sagt, dass ihre Gefolgschaft die Abzeichen der Masken der Nacht trägt.~
+@198 = ~Ein Brief von Mae'Var an die Attentäter der Masken der Nacht, in dem er den Tod von Renal Blutskalp fordert. Das ist genau die Art von Beweis, die Renal benötigt.~
+@199 = ~Tethyrscher Schildknappe~
+@200 = ~Bastion~
+@201 = ~Schildschlag~
+@202 = ~Als Ihr Euch durch diesen bestimmten Teil der finsteren Höhlen bewegt, erregt ein undeutliches, widerhallendes Geräusch, das von der felsigen Wand kommt, Eure Aufmerksamkeit. Da ist irgendwo in der Dunkelheit ein Durchgang verborgen.~
+@203 = ~Ihr findet verbrannte Male auf dem Fels. Die Spuren von Kua-Toas sind um den Punkt herum, an dem sich der Tunnel aufweitet, allgegenwärtig, aber sie hören kurz danach unvermittelt auf.~
+@204 = ~Dies ist der Körper von Montaron, dem Landsmann von Xzar dem Magier. Es sieht aus, als ob die Harfner ihn so versteckt hätten, dass sie Euch dazu bringen konnten, den Attentäter an seiner Stelle an Xzar zu liefern.~
+@205 = ~Sanktionierter Magier~
+@206 = ~Lemure~
+@207 = ~Herz eines Teufels~
+@208 = ~Dieses Herz eines Teufels ist bei Berührung seltsam kalt. Eine Reihe von Stacheln umschließen den fleischigen Kern des Organs und Ihr müsst höllisch aufpassen, damit Ihr Euch an den rasiermesserscharfen Spitzen keine blutende Wunde zuzieht. Das rhythmische Dröhnen, weil es weiter schlägt, ist kaum auszuhalten und von Zeit zu Zeit macht es in Eurem Rucksack eine plötzliche Bewegung, als wäre es selbst lebendig und versuche zu fliehen.~
+@209 = ~Aus Mangel einer einleuchtenderen Lösung, verfüttert Ihr das Teufelsherz an einen der vielen Münder, die in das Fleisch der Struktur eingebettet sind, während Ihr hofft, dass sich dieses als ein akzeptabler Ersatz für das zuvor verwendete Dämonenherz herausstellt. Einen Moment später erzittert die Sphäre und Ihr könnt spüren, wie sie Energie gewinnt.~
+@210 = ~Adrozel~
+@211 = ~Kram~
+@212 = ~Krummsäbel +1, Shazzellim
+Dieser Krummsäbel ist von ziemlich schlechter Qualität, aber unter seiner Oberfläche liegen große Macht und Bosheit.  Er wurde nur zum Zweck Harfner zu töten erschaffen und dieser Aufgabe ist Shazzellim mehr als gewachsen.  Bei jedem Streich dieser Klinge muss ein Harfner einen Rettungswurf gegen Zauber bestehen oder sterben.  Gefertigt von den Roten Magiern von Thay, verleiht dieses Schwert auch die Fähigkeit, wortlos zu zaubern, weshalb es oft an Kampfer-Magier im Dienste der Magier ausgegeben wurde.  Unnötig zu sagen, dass der Besitz dieser Waffe von den Harfnern nicht besonders gern gesehen wird.
+
+EIGENSCHAFTEN:
+
+Wird ein Harfner getroffen, stirbt dieser sofort (Rettungswurf gg. Zauber, -2 Malus).
+Auf dem Träger liegt Wortlos Zaubern.
+
+Schaden: 1W8 +1 (Klinge)
+ETW0-Bonus: -1
+Gewicht: 3
+Initiativefaktor: 4
+Fertigkeit: Krummsäbel
+Typ: 1-händig
+Mindeststärke: 10
+
+Kann nicht verwendet werden von:
+- Guten Wesen
+- Dieben
+- Klerikern
+- Hexenmeistern
+- Magiern
+- Mönchen~
+@213 = ~Jaheira tritt angeekelt von der Waffe zurück. "Diese Klinge hat viele Harfner getötet, <CHARNAME>. Ich werde sie nicht führen."~ [GAM_47]
+@214 = ~Nachdem die Träne des Bhaal entfernt wurde gibt nichts mehr von Interesse hier.~
+@215 = ~Neeiinn! Warum funktioniert es nicht?!~
+
+@220 = ~Nachdem Faldorn tot ist und ihre Verbindung zum Hain gewaltsam getrennt wurde, scheint die Erde selbst ein tiefes Säufzen loszulassen. Es scheint wahrscheinlich, dass Eure Missachtung der druidischen Rituale Ihren Preis gefordert hat.~
+@221 = ~Während Euer Geist gegen die unheimliche Magie, die von Quallo kontrolliert wird —oder von der er kontrolliert wird—kämpft, wird Euer Körper in eine abscheuliche Albtraum-Kreatur verwandelt.  Unaufgefordert schlagt Ihr Eure früheren Gefährten zu Boden, während eine Stimme leise in Eurem Geist flüstert, "Sie würden Euch von mir wegnehmen, Freund.  Sie sind keine Freunde.  Sie sterben."
+
+Euer Geist taumelt in Schrecken, während alle Eure Kameraden von dem niedergestreckt wurden, gegen das Ihr so lange gekämpft hattet, um es begraben zu halten.  Die Essenz von Bhaal.  Über welch unvorstellbar Macht verfügt diese Kreatur, die Euch überlistet hat, dass sie so einfach die Kontrolle über Euch und Euren Berserker-Makel übernehmen kann?  Vielleicht werdet Ihr das nie erfahren.
+
+Ihr seid ruhig und obwohl Ihr es gerne anders hättet, könnt Ihr nur mit irritierendem Interesse zusehen wie die letzen Tropfen Leben aus den verstümmelten Körpern Eurer Freunde herausfließen.  Eure Vision wird unscharf und Ihr könnt die verschwommenen Umrisse Quallos ausmachen, wie er sich über iIhre daliegenden Leichen bückt und beginnt, ihr vergossenes Blut aufzuwischen.  Wieder hallt seine seine abstoßende und bösartige Stimme durch Euren Gedanken, "Freunde für immer, das sollen wir sein.  Und Ihr seid in der Tat ein mächtiger Freund."
+
+Die Ewigkeit wartet, aber nun wird es keine legendären Heldentaten oder große Reichtümer mehr geben.  Für Euch wird es nur diese feuchte Kanalisation und diesen verrückten alten Mann geben.~
+@222 = ~DER PREIS DER FREUNDSCHAFT~
+@223 = ~Sklavenfrau~
+@224 = ~Einsamer Kobold~
+@225 = ~Hobgoblin~
+@226 = ~Hobgoblin Söldner~
+@227 = ~Bibliothekar~
+@228 = ~Die Geschichte des Schattentals I~
+@229 = ~Die Geschichte des Schattentals II~
+@230 = ~Die Geschichte des Schattentals III~
+@231 = ~Die Geschichte des Schattentals IV~
+@232 = ~Die Geschichte des Schattentals V~
+@233 = ~Die Geschichte des Schattentals VI~
+@234 = ~Die Geschichte des Schattentals VII~
+@235 = ~Die Geschichte des Schattentals VIII~
+@236 = ~Die Geschichte des Schattentals IX~
+@237 = ~Die Geschichte des Schattentals X~
+@238 = ~Die Geschichte des Schattentals XI~
+@239 = ~Die Geschichte des Schattentals XII~
+@240 = ~Die Geschichte des Schattentals XIII~
+@241 = ~Die Geschichte der Drow I~
+@242 = ~Die Geschichte der Drow II~
+@243 = ~Die Geschichte des Nordens I~
+@244 = ~Die Geschichte des Nordens II~
+@245 = ~Die Geschichte des Nordens III~
+@246 = ~Die Geschichte des Nordens IV~
+@247 = ~Die Geschichte des Nordens V~
+@248 = ~Die Geschichte des Nordens VI~
+@249 = ~Die Geschichte des Nordens VII~
+@250 = ~Die Geschichte des Nordens VIII~
+@251 = ~Die Geschichte des Nordens IX~
+@252 = ~Die Geschichte des Nordens X~
+@253 = ~Die Geschichte von Tiefwasser I~
+@254 = ~Die Geschichte von Tiefwasser II~
+@255 = ~Die Geschichte von Tiefwasser III~
+@256 = ~Die Geschichte von Tiefwasser IV~
+@257 = ~Die Geschichte von Tiefwasser V~
+@258 = ~Die Geschichte von Tiefwasser VI~
+@259 = ~Aber das ist nicht das, was ich Euch gebeten habe zu tun, oder?  Ich brauche Beweise bevor ich Mae'Vars Tod anordnen kann!  Nun wird es aussehen, als ob ich die Beweise erst nach den Tatsachen geschaffen hätte!!~
+@260 = ~Aber ich habe die Beweise für Mae'Vars Verrat gleich hier!~
+@261 = ~Carrack~
+@262 = ~Lillian~
+@263 = ~Cora~
+@264 = ~Arris~
+@265 = ~Folterknecht~
+@266 = ~Carrack kam offensichtlich nicht weit mit seinem Racheversuch. Seine Leiche wurde geplündert und zurückgelassen, möglicherweise als Warnung für andere.~
+@267 = ~Auge~
+@268 = ~Abraxxi~
+@269 = ~Ich werde dafür sorgen, dass sich Arkanis, Kachiko und ein paar andere, unsere besten Meuchelmörder, Euch anschließen, wenn Ihr Bodhis Katakomben betretet.  Ich will sicher sein, dass ich Bodhi für immer los bin.~
+@270 = ~Kombinierter Notfall - Schutz vor magischen Waffen~
+@271 = ~Kombinierter Notfall - Zauber Zurückwerfen~
+@272 = ~Kombinierter Notfall - Ablenkung~
+@273 = ~Zauberauslöser - Feuerschild~
+@274 = ~Kombinierter Notfall - Steinhaut~
+@275 = ~Schreckgespenst~
+@276 = ~Strafe des Bereuens~
+@277 = ~Versetzertier~
+@278 = ~Höheres Versetzertier~
+
+@279 = ~Kugel der Dunkelheit~
+@280 = ~Kugel der Dunkelheit
+
+Grad: 1
+Schule: Allgemein
+Reichweite: Lang
+Dauer: 1 Runde/2 Stufen
+Zeitaufwand: 2
+Bereich: 1 Wesen
+Rettungswurf: Ja (gg. Zauber)
+
+Diese angeborene Fähigkeit der Dunkelelfen verursacht beim Ziel Blindheit, die für 1 Runde je 2 Stufen des Anwenders anhält oder bis sie gebannt wird.~
+
+@281 = ~Verbesserte Kugel der Dunkelheit~
+@282 = ~Verbesserte Kugel der Dunkelheit
+
+Grad: 1
+Schule: Allgemein
+Reichweite: Lang
+Dauer: 1 Runde/2 Stufen
+Zeitaufwand: 2
+Bereich: 1 Wesen
+Rettungswurf: Ja (gg. Zauber)
+
+Diese angeborene Fähigkeit der Dunkelelfen verursacht beim Ziel Blindheit, die für 1 Runde je 2 Stufen des Anwenders anhält oder bis sie gebannt wird.~
+
+@283 = ~Tanzende Lichter~
+@284 = ~Tanzende Lichter
+
+Grad: 1
+Schule: Allgemein
+Reichweite: Lang
+Dauer: 3 Runden
+Zeitaufwand: 2
+Bereich: 1 Wesen
+Rettungswurf: Ja (gg. Zauber)
+
+Diese angeborene Fähigkeit der Dunkelelfen verwirrt das Ziel für 3 Runden.~
+@285 = ~Unter dem Einfluss von Tanzenden Lichtern.~
+@286 = ~Abgelenkt.~
+
+@287 = ~Feenfeuer~
+@288 = ~Feenfeuer
+
+Grad: 1
+Schule: Allgemein
+Reichweite: Berührung
+Dauer: 6 Runden
+Zeitaufwand: 1
+Bereich: 1 Wesen
+Rettungswurf: Nein
+
+Dieser Zauber umhüllt das Ziel mit einem weißen Glühen. Da es dadruch leichter getroffen werden kann, erhält es einen Rüstungsklasse-Malus von +2.~
+@289 = ~Augenstiel zerstört~
+@290 = ~Zentrales Auge beschädigt~
+@291 = ~Älterer Vampir~
+@292 = ~Uralter Vampir~
+@293 = ~Hilfe!~
+@294 = ~Ich brache Unterstützung!~
+@295 = ~Ich kann das nicht nehmen!~
+@296 = ~Nichts mehr!~
+@297 = ~Yuan-Ti Magier~
+@298 = ~Verwirrender Blick~
+@299 = ~Beherrschender Blick~
+@300 = ~Ekelerregender Blick~
+@301 = ~Roter Krummsäbel +3~
+@302 = ~Dieser Krummsäbel, der einen mattroten Farbton besitzt, ist aus keinem Metal gefertigt, das Ihr kennt. Während er etwas größer und schwerer ist, als man es von so einer Waffe erwarten würde, verhindert dies nicht seine perfekte Balance; es scheint beinahe so, als wäre er dafür geschaffen worden, einen schnellen Schlaghagel loszulassen, während der Träger die absolute Kontrolle behält.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erhält der Träger für 1 Runden einen ETW0-Bonus von -1.
+
+Schaden: 1W8 +3 (Klinge)
+ETW0-Bonus: -3
+Gewicht: 1
+Initiativefaktor: 2
+Fertigkeit: Krummsäbel
+Typ: 1-händig
+Mindeststärke: 10
+
+Kann nicht verwendet werden von:
+- Dieben
+- Hexenmeistern
+- Klerikern
+- Magiern
+- Mönchen~
+@303 = ~Wilbur~
+@304 = ~Sythillisianischer Soldat~
+@305 = ~Fekir~
+@306 = ~Astraltür~
+@307 = ~Claire war mit Sanik dem Händler verheiratet. Er wollte sie mit dem nächsten Schiff, das hinausging, mitnehmen, aber er rechnete nicht mit Lady Galvena. Sie schickte einen Attentäter zu ihm und holte Claire vom Hafen, wo sie wartete.~
+@308 = ~Claire wartete vor dem Gildenhaus auf ihren Mann, aber Miss Galvena schickte ihm einen Attentäter und sie holte Claire ins Gildenhaus.  Dann sperrte sie sie im Inneren ein.~
+@309 = ~Anführer der Wache~
+
+@99948 = ~Beweise für Mae'Vars Verrat finden.
+
+Es stellte sich heraus, dass Mae'Vars Gehilfe niemand anderes als der Rote Magier von Thay war, den ich einst an der Schwertküste getoffen hatte.  Er gab mir den Auftrag Rayic Gethras zu töten, einen Verhüllten Magier, der in einem grauen, drei-stöckigen Gebäude am westlichen Ende des Hafenviertels wohnte.  Ich würde wissen, dass Gethras zu Hause ist, wenn seine Tür offensteht.  Wenn Rayic tot ist, soll ich als Beweis seinen Siegelring zu Edwin bringen.~
+
+@99906 = ~Adalons Eier vom Haus Despana aufbewahrt?
+
+Laut eines alternden Drow in der Taverne werden die Eier des Silberdrachen wahrscheinlich, wenn überhaupt irgendwo, dann im Anwesen des Hauses Despana aufbewahrt. Zugang dazu zu erlangen wird ohne Zweifel kompliziert werden.~
+
+@99902 = ~In die Zauberfeste gelangen.
+
+Ich überzeugte eine der Kurtisanen davon, mir zu erzählen, was mit Claire passiert war.  Es schien, als sei Lady Galvena von der Tatsache, dass Sanik mit ihr weggehen wollte, nicht allzu begeistert gewesen, und so beschloss sie Claire in das Bordell einzusperren und einen Meuchelmörder auf Sanik anzusetzen.~
+

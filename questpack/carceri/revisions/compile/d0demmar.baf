@@ -1,0 +1,104 @@
+IF
+	See([ANYONE])
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("prep","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobalTimer("prep","LOCALS",EIGHT_HOURS)
+		DisplayString(Myself,2469) // Spell Trigger - Protection from Magical Weapons
+		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+		DisplayString(Myself,40248) // Spell Trigger - True Sight
+		ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HPPercentLT(Myself,50)
+	See(NearestEnemyOf(Myself))
+	RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		ForceSpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	CheckStatLT(Myself,1,STONESKINS)
+	!GlobalTimerNotExpired("onecontin","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobalTimer("onecontin","LOCALS",EIGHT_HOURS)
+		DisplayString(Myself,29736) // Contingency - Stoneskin
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+	Detect(Myself)
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	See([ANYONE])
+	See(NearestEnemyOf(Myself))
+	RandomNumGT(10,6)
+	See(SecondNearestEnemyOf(Myself))
+	RandomNumGT(11,7)
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNumGT(12,8)
+	See(FourthNearestEnemyOf(Myself))
+	RandomNumGT(13,9)
+	See(FifthNearestEnemyOf(Myself))
+	RandomNumGT(14,10)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		See([0.0.DEMONIC.0.0.0.LAWFUL_EVIL])
+		See([0.0.IMP.0.0.0.LAWFUL_EVIL])
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(LastSeenBy(Myself))
+	!Range(LastSeenBy(Myself),20)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	RandomNum(4,1)
+	Global("cloud","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SetGlobal("cloud","LOCALS",1)
+		SpellNoDec(NearestEnemyOf(Myself),WIZARD_CLOUDKILL)
+END
+
+IF
+	See(LastSeenBy(Myself))
+	!Range(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END

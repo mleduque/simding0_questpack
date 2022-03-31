@@ -1,0 +1,9 @@
+IF
+  Global("D0QPSpawnCowled","AR0500",0)
+  Global("Reveal0500","AR0500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPSpawnCowled","AR0500",1)
+    CreateCreature("d0qpcow3",[3543.866],0)
+    Continue()
+END

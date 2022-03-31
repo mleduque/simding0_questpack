@@ -1,0 +1,94 @@
+DEFINE_ACTION_FUNCTION questpack_audio
+  STR_VAR
+    audio_path = ~~
+BEGIN
+  LAF HANDLE_AUDIO
+    STR_VAR
+      audio_path
+      oggdec_path = ~questpack/bin~
+      sox_path = ~questpack/bin~
+  END
+END
+
+DEFINE_ACTION_FUNCTION questpack_tilesets
+  STR_VAR
+    tiz_path = ~~
+BEGIN
+  LAF HANDLE_TILESETS
+    STR_VAR
+      tiz_path
+      tisunpack_path = ~questpack/bin~
+  END
+END
+
+DEFINE_PATCH_FUNCTION add_rest_encounter
+  STR_VAR
+    creature = ""
+BEGIN
+  READ_LONG 0xc0 restoff
+  READ_SHORT restoff + 0x98 num
+  PATCH_IF num <= 9 BEGIN
+    FOR (i = 0; i < 10; ++i) BEGIN
+      off = restoff + 0x48 + 0x8 * i
+      READ_ASCII off slot
+      PATCH_IF "%slot%" STRING_EQUAL "" OR
+               "%slot%" STRING_EQUAL_CASE "none"
+      BEGIN
+        WRITE_ASCIIE off "%creature%" #8
+      END
+      i = 10
+    END
+    WRITE_SHORT restoff + 0x98 THIS + 1
+  END ELSE BEGIN
+    PATCH_PRINT "WARNING: did not add the creature %creature% to the rest encounters of %SOURCE_FILE% because there was not enough room"
+  END
+END
+
+DEFINE_PATCH_FUNCTION get_effect_info
+  INT_VAR
+    target_opcode = 0
+    header_off = 0x72
+  RET
+    target
+    resist_dispel
+BEGIN
+  target = 1
+  resist_dispel = 3
+
+  GET_OFFSET_ARRAY2 effects header_off 0x6a 4 0x1e 2 0x20 2 0x30
+  got = 0
+  PHP_EACH effects AS i => off BEGIN
+    READ_SHORT off opcode
+    PATCH_IF opcode = target_opcode AND !got BEGIN
+      READ_BYTE off + 0x2 target
+      READ_BYTE off + 0xd resist_dispel
+      got = 1
+    END
+  END
+END
+
+DEFINE_ACTION_FUNCTION fix_c6scripts BEGIN
+  ACTION_IF !FILE_EXISTS_IN_GAME fl#qpfixedc6scripts.mrk BEGIN
+    COPY_EXISTING c6arkan.bcs override
+                  c6thief.bcs override
+                  c6eric.bcs override
+                  c6paladn.bcs override
+                  c6drizz2.bcs override
+                  c6bruen2.bcs override
+                  c6catti2.bcs override
+                  c6regis2.bcs override
+                  c6wulf2.bcs override
+                  c6guen2.bcs override
+      DECOMPILE_AND_PATCH BEGIN
+        PATCH_FOR_EACH var IN
+                       AttackedShadow
+                       AttackedOrder
+                       AttackedDrizzt
+        BEGIN
+          REPLACE_TEXTUALLY ~\(Global("%var%","GLOBAL",0)\)~ ~!Allegiance(Myself,EVILCUTOFF) \1~
+        END
+      END
+    BUT_ONLY
+    COPY_EXISTING sw1h01.itm ~override/fl#qpfixedc6scripts.mrk~
+  END
+END

@@ -1,0 +1,51 @@
+// -*- coding: cp1252 -*-
+
+// Translators, please note well: please translate component names only of the components you plan to translate fully.
+// Untranslated components should retain their english titles to distinguish them from those which have been translated.
+// Components without TRAs should not be translated as their text is subject to change. Check "Fully TRAified components.txt".
+@1 = ~Additional Shadow Thieves Content~
+@2 = ~Alternative Harper/Xzar Plot~
+@3 = ~Extended Reynald Sequence~
+@4 = ~Intrigue In The Copper Coronet~
+@5 = ~Escaping Brynnlaw~
+@6 = ~Miscellaneous Enhancements~
+
+@8 = ~Rahul Kanakia's Potion Quest~
+@9 = ~Expanded Druid Stronghold~
+@10 = ~Revised Hell Trials~
+@11 = ~IO2 Dialogue & Combat Enhancement~
+@12 = ~IO2 Dialogue Enhancement Only~
+@13 = ~Improved Oasis II~
+@14 = ~General AI Improvements~
+@15 = ~Enhanced Council Building~
+@16 = ~Blood War On Carceri~
+@17 = ~Saving Sanik In Brynnlaw~
+@18 = ~Burglary Of The Bookkeeper~
+@19 = ~New Fate For The Dryads' Acorns~
+@20 = ~The Tragedy Of Besamen~
+@21 = ~Further Slaver Involvement~
+@22 = ~Sending The Solamnic Knights Home~
+@23 = ~Nazariel The Lich~
+@24 = ~Quallo's Friendship~
+@25 = ~Word And Wisdom~
+@26 = ~Underdark Shortcut~
+@27 = ~AI Improvements Only~
+@28 = ~AI Improvements & Shout Expansion~
+
+@30 = ~Infernal Thievery~
+@31 = ~Elven Court~
+@32 = ~Boss Improvements Only~
+@33 = ~Reward Negotiation~
+@34 = ~Creature & Area Improvements~
+@35 = ~All Creature Improvements~
+@36 = ~All Creature & Area Improvements~
+@37 = ~Quest Content Only~
+@38 = ~Quest Content & Fiend Revisions~
+@39 = ~With Additional Random Encounters~
+@40 = ~Without Additonal Random Encounters~
+
+@98 = ~Quest Pack is only available for BG2 and BGT~
+@99 = ~BP detected, skipping AI enhancements.~
+@100 = ~Skipping ToB-specific component.~
+
+// d0quest.tra starts at @101

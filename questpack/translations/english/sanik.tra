@@ -1,0 +1,55 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Actually, Sanik lives. Your assassination attempt did not succeed.~
+@1    = ~The assassin failed, Galvena. The only thing Sanik exemplifies is that you are weaker than you give yourself credit for.~
+@2    = ~What in the—? Who are you, <MANWOMAN>? Where are my useless guards?~
+@3    = ~Sanik wanted payment, and I... don't have enough gold. So, uh, I was wondering if you had any to lend toward the cause?~
+@4    = ~Sanik left without telling me how to get inside!~
+@5    = ~As you can see, it is not safe here. However, as much as it is essential that we flee now, there are... complications.~
+@6    = ~The assassin you saw was sent by Lady Galvena, the owner of the local festhall.~
+@7    = ~Perhaps we can help one another. You seek an entrance to the asylum, and maybe I can provide that, if you will assist me.~
+@8    = ~Very well. What do you require?~
+@9    = ~I fear not. I am in too much of a hurry.~
+@10   = ~Perhaps we can help one another. I am familiar with this town, and would be more than willing to assist you in any endeavour, if you would be willing to return the favour.~
+@11   = ~I need to gain entrance to the asylum. Do you have any idea how I might do so?~
+@12   = ~My new wife, Claire, was once the "property" of the festhall owner, Galvena. However, knowing of our intent to marry, Galvena is unwilling to free the girl from her service.~
+@13   = ~It would seem that now she has learned of our plans to flee the island. I would guess that Claire is now being held somewhere in the festhall.~
+@14   = ~I would ask that you save Claire from the clutches of the bitch Galvena. Then, I will help you as best I can.~
+@15   = ~Fine. I'll do it, but your way had better be good.~
+@16   = ~Then I must bid you farewell. The time has come for my departure.~
+@17   = ~You might be in luck. I may know a way in, but first, you must be willing to perform a favour for me.~
+@18   = ~Thank you. Meet me here when you have found Claire.~
+@19   = ~Quickly, please! Save my Claire and I will tell you what you wish to know.~
+@20   = ~<CHARNAME>! You have my eternal gratitude for saving Claire. We will be leaving this island soon, and will be happy together, thanks to you.~
+@21   = ~But first, I will naturally fulfill my part of the bargain. I believe my captain, Golin, has some information that may be of use to you.~
+@22   = ~Very well. I hope we have been able to repay some of our debt to you, <CHARNAME>. Farewell.~
+@23   = ~Sanik tells me you seek entry to the asylum. I know a little of the magical prison, so perhaps I can assist you.~
+@24   = ~I know not what use my knowledge may be. However, if you seek admission, then you should know that only two types of people are able to gain entry: Cowled Wizards, or magical 'deviants'.~
+@25   = ~All right then. Still don't know why you'd want to get in there. I've heard even more screams than usual from there.~
+@26   = ~In any case, you have all of our thanks for your assistance, and I wish you well. Sanik, Claire, now may be a wise time to depart.~
+@27   = ~Oh! Here <PRO_HESHE> comes!~
+@28   = ~By Umberlee's teat! Who does Galvena think she is? Assassination attempts in the Vulgar Monkey! That uppity wench!~
+@29   = ~That is my business. Who was the assassin, and what is this involvement with Galvena?~
+@30   = ~I have need of information that only he could have given me. Tell me what you know!~
+@31   = ~I have need of information that only he can give me. Tell me what you know!~
+@32   = ~I know the story. Do you have any idea where Galvena would have taken Claire?~
+@33   = ~So much is obvious. What disagreement does she have with Sanik?~
+@34   = ~You seemed to know something of Sanik's predicament. Perhaps you can help me out.~
+@35   = ~I have come to free her, whether you like it or not. Nothing personal.~
+@36   = ~Yes, Sanik sent me. You should go to him in the tavern now.~
+@37   = ~I must be brief. Sanik was attacked by Galvena's assassin just before he was going to tell me how I might gain access to the Asylum. After the attack, he left before helping me.~
+@38   = ~From all accounts Galvena deserved to die. You are free to go but I was wondering if you couldn't help me gain entry to the Asylum first.~
+@39   = ~Oh, thank you! I'm so glad Sanik isn't hurt! I shall go to him now.~
+@40   = ~I fear I know nothing of such things. I wish you the best of luck in your quest, but I must find Sanik now. Farewell!~
+@41   = ~Getting Inside the Asylum
+
+I met Sanik at the Vulgar Monkey, and witnessed an attempt on his life. However, although he survived the attack, he departed before telling me how to gain entry to the asylum.~
+@42   = ~Getting Inside the Asylum
+
+I met Sanik at the Vulgar Monkey, and witnessed an attempt on his life. He has promised to aid me in gaining entry to the Asylum if I will rescue his wife, Claire, from the clutches of the local festhall owner, Lady Galvena.~
+@43   = ~Getting Inside the Asylum
+
+The barkeep at the Vulgar Monkey told me that the assassin who attempted to kill Sanik was sent by Lady Galvena, the mistress of the local Courtesan's Guild and a woman of power and wealth in Brynnlaw.~
+@44   = ~A Happy Ending for Sanik and Claire
+
+Sanik and Claire were delighted and relieved to be reunited, and have set off to depart the island swiftly. I can only hope that I will be able to make a similarly swift exit soon.~

@@ -1,0 +1,746 @@
+IF
+  Global("D0Rayic","GLOBAL",2)
+  !AreaCheck("ar5500")
+  !Dead("Edwin")
+  AreaCheck("ar0317")
+  AreaCheckObject("ar0316","Edwin")
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToPoint([400.700])
+END
+
+IF
+  Global("D0Rayic","GLOBAL",2)
+  !AreaCheck("ar5500")
+  !Dead("Edwin")
+  AreaCheck("ar0316")
+  AreaCheckObject("ar0317","Edwin")
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToPoint([350.700])
+END
+
+IF
+  !AreaCheck("ar5500")
+  Detect("Edwin")
+  Global("SeenEdwin","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SeenEdwin","LOCALS",1)
+    DialogueInterrupt(TRUE)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  !AreaCheck("ar5500")
+  Dead("Edwin")
+  Global("SeenEdwin","LOCALS",1)
+  !See(NearestEnemyOf(Myself))
+//  Global("EdwinHadRing","LOCALS",1)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("SeenEdwin","LOCALS",2)
+    DialogueInterrupt(TRUE)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Detect([PC])
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("RayicWaits","GLOBAL",1)
+  GlobalGT("D0Rayic","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("RayicWaitsPC","GLOBAL",15)
+    SetGlobal("RayicWaits","GLOBAL",2)
+END
+
+IF
+  Global("RayicWaits","GLOBAL",1)
+  GlobalLT("D0Rayic","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("RayicWaitsPC","GLOBAL",10)
+    SetGlobal("RayicWaits","GLOBAL",2)
+END
+
+IF
+  OR(2)
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    GlobalTimerExpired("RayicWaitsPC","GLOBAL")
+  !Allegiance(Myself,ENEMY)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  !Detect(NearestEnemyOf(Myself))
+  !Detect("Edwin")
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  Global("Prep","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    DisplayString(Myself,39968) // Spell Trigger - Fired
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+    SetGlobal("Prep","LOCALS",1)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  Global("D0Prep","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("D0Prep","LOCALS",1)
+    DisplayString(Myself,39969) // Spell Sequencer - Fired
+    ReallyForceSpell(Myself,WIZARD_MELF_METEOR)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  StateCheck(Myself,STATE_SILENCED)
+  HaveSpell(WIZARD_VOCALIZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Detect("Edwin")
+  !See(LastSeenBy(Myself))
+  HaveSpell(WIZARD_TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HaveSpell(WIZARD_SPELL_TURNING)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_STONE_SKIN)
+  CheckStatLT(Myself,1,STONESKINS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_NPC_SYMBOL_FEAR)
+  RandomNumGT(3,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_FEAR)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_SUN_FIRE)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_SUN_FIRE)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_SHADOW_DOOR)
+  Global("Prep","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHADOW_DOOR)
+    SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  OR(2)
+    HasImmunityEffects("Edwin")
+    HasBounceEffects("Edwin")
+  HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  HPLT(LastSeenBy(Myself),90)
+  RandomNumGT(5,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+  RandomNumGT(6,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FINGER_OF_DEATH)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_TRUE_SIGHT)
+  RandomNumGT(3,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_DISINTEGRATE)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DISINTEGRATE)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_INVISIBLE_STALKER)
+  RandomNumGT(5,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_INVISIBLE_STALKER)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_SPIDER_SPAWN)
+  RandomNumGT(6,4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPIDER_SPAWN)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_SHADOW_DOOR)
+  RandomNumGT(5,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHADOW_DOOR)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_DOMINATION)
+  RandomNumGT(7,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DOMINATION)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_DEATH_SPELL)
+  RandomNumGT(8,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  RandomNumGT(9,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_HOLD_PERSON)
+  RandomNumGT(4,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_HOLD_PERSON)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_FIREBALL)
+  RandomNumGT(6,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FIREBALL)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+  RandomNumGT(7,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_FLAME_ARROW)
+  RandomNumGT(9,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_MELF_ACID_ARROW)
+  RandomNumGT(10,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+  !Dead("Edwin")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Edwin")
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  RandomNumGT(11,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  !Dead("Edwin")
+  See("Edwin")
+THEN
+  RESPONSE #75
+    RandomWalkContinuous()
+  RESPONSE #100
+    Attack(LastSeenBy(Myself))
+  RESPONSE #50
+    RunAwayFrom(LastSeenBy(Myself),10)
+END
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  Global("Prep","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    DisplayString(Myself,39968) // Spell Trigger - Fired
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+    SetGlobal("Prep","LOCALS",1)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  Global("D0Prep","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("D0Prep","LOCALS",1)
+    DisplayString(Myself,39969) // Spell Sequencer - Fired
+    ReallyForceSpell(Myself,WIZARD_MELF_METEOR)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  StateCheck(Myself,STATE_SILENCED)
+  HaveSpell(WIZARD_VOCALIZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Detect(NearestEnemyOf(Myself))
+  !See(LastSeenBy(Myself))
+  HaveSpell(WIZARD_TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HaveSpell(WIZARD_SPELL_TURNING)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_STONE_SKIN)
+  CheckStatLT(Myself,1,STONESKINS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_NPC_SYMBOL_FEAR)
+  RandomNumGT(3,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_FEAR)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SUN_FIRE)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_SUN_FIRE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SHADOW_DOOR)
+  Global("Prep","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHADOW_DOOR)
+    SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  OR(2)
+    HasImmunityEffects(LastSeenBy(Myself))
+    HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  HPLT(LastSeenBy(Myself),90)
+  RandomNumGT(5,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+  RandomNumGT(6,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FINGER_OF_DEATH)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_TRUE_SIGHT)
+  RandomNumGT(3,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_DISINTEGRATE)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DISINTEGRATE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_INVISIBLE_STALKER)
+  RandomNumGT(5,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_INVISIBLE_STALKER)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SPIDER_SPAWN)
+  RandomNumGT(6,4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPIDER_SPAWN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SHADOW_DOOR)
+  RandomNumGT(5,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHADOW_DOOR)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_DOMINATION)
+  RandomNumGT(7,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DOMINATION)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_DEATH_SPELL)
+  RandomNumGT(8,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  RandomNumGT(9,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_HOLD_PERSON)
+  RandomNumGT(4,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_HOLD_PERSON)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_FIREBALL)
+  RandomNumGT(6,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FIREBALL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+  RandomNumGT(7,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_FLAME_ARROW)
+  RandomNumGT(9,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_MELF_ACID_ARROW)
+  RandomNumGT(10,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  RandomNumGT(11,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #75
+    RandomWalkContinuous()
+  RESPONSE #100
+    Attack(LastSeenBy(Myself))
+  RESPONSE #50
+    RunAwayFrom(LastSeenBy(Myself),15)
+END

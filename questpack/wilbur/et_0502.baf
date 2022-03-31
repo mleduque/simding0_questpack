@@ -1,0 +1,8 @@
+IF
+  Global("D0Wilbur","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Wilbur","GLOBAL",1)
+    SetGlobalTimer("D0WilburTimer","GLOBAL",THREE_DAYS)
+END
+

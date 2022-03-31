@@ -1,0 +1,529 @@
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  DifficultyLT(NORMAL)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  DifficultyLT(NORMAL)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  DifficultyLT(NORMAL)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  DifficultyLT(NORMAL)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  DifficultyLT(NORMAL)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  DifficultyLT(NORMAL)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(NORMAL)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(NORMAL)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(NORMAL)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[448.749],4)
+    CreateCreature("d0shield",[488.749],4)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(NORMAL)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(NORMAL)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(NORMAL)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[1861.436],11)
+    CreateCreature("d0shield",[1901.436],11)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(HARD)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(HARD)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[448.749],4)
+    CreateCreature("d0shield",[488.749],4)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(HARD)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[448.749],4)
+    CreateCreature("d0shield",[488.749],4)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(HARD)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(HARD)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[1861.436],11)
+    CreateCreature("d0shield",[1901.436],11)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(HARD)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[1861.436],11)
+    CreateCreature("d0shield",[1901.436],11)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(HARDEST)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(HARDEST)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[448.749],4)
+    CreateCreature("d0shield",[488.749],4)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[0.-15])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",0)
+  Difficulty(HARDEST)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[448.749],4)
+    CreateCreature("d0shield",[488.749],4)
+    CreateCreature("d0shield",[468.729],4)
+    CreateCreature("d0shield",[468.769],4)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[0.-15])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[0.15])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(HARDEST)
+  NumInPartyLT(3)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(HARDEST)
+  OR(2)
+    NumInParty(3)
+    NumInParty(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[1861.436],11)
+    CreateCreature("d0shield",[1881.416],11)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[0.-15])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("D0Spawn6300","GLOBAL",0)
+  Global("D0OasisDirection","GLOBAL",1)
+  Difficulty(HARDEST)
+  NumInPartyGT(4)
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",JumpToPoint([1881.436]))
+    SetGlobal("D0Spawn6300","GLOBAL",1)
+    CreateCreature("d0shield",[1861.436],11)
+    CreateCreature("d0shield",[1901.436],11)
+    CreateCreature("d0shield",[1881.416],11)
+    CreateCreature("d0shield",[1881.456],11)
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[-15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[15.0])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[0.-15])
+//    CreateCreatureObjectOffset("d0shield","amtgen01",[0.15])
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[396.652],4)
+    CreateCreature("d0shield",[377.720],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[394.826],4)
+    CreateCreature("d0shield",[426.908],4)
+    CreateCreature("d0shield",[418.1002],4)
+    CreateCreature("d0shield",[418.1002],4)
+    ActionOverride("d0shield",FaceObject(Player1))
+    ActionOverride("amtgen01",FaceObject(Player1))
+    ActionOverride("amtgen01",StartDialogNoSet(Player1))
+END

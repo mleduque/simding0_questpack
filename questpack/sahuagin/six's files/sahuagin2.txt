@@ -1,0 +1,68 @@
+  This file lists the stats of all Sahuagin AFTER Weimer's Improved Sahuagin City is installed.
+
+SAH prefix: All of these creatures are located in the Underwater City.
+FILENAME	NAME			TYPE		LEVEL	STR	STR+	DEX	CON	INT	WIS	CHA	HP	AC	THAC0	APR	EXP	CLASS		KIT	APPEARANCE	WEAPON1		WEAPON2		QUIVER1		QUIVER2		QUIVER3		MEMORIZATION		INNATE		SAVING THROWS	PROFICIENCIES	RESISTANCES
+sahkng01	King Ixilthetocal	Overridden	20	22	0	9	9	13	9	18	90	5	1	5	4000	Sahuagin	none	Sahuagin Large	Skull		none		none		none		none		none			none		8,10,9,9,11	none		Fire 231, MFire 231
+sahkng02	King Ixilthetocal	Overridden	2	22	0	9	9	13	9	18	90	5	1	2	4000	Sahuagin	none	Sahuagin Large	Impaler+3	none		none		none		none		none			none		8,10,9,9,11	none		Fire 231, MFire 231
+sahkin01	Sahuagin King		Original	13	22	0	18	9	13	9	18	90	5	1	5	4000	Sahuagin	none	Sahuagin Large	Skull		none		none		none		none		none			none		4,7,6,7,4	none		Fire 231, MFire 231
+sahreb02	Prince Villynaty	Original	20	20	0	9	9	13	9	18	76	5	2	5	2000	Sahuagin	none	Sahuagin Large	Skull		none		none		none		none		none			none		10,12,11,12,13	none		Fire 231, MFire 231
+sahpr2		Prince Villynaty	Original	20	20	0	9	9	13	9	18	76	5	2	2	2000	Sahuagin	none	Sahuagin Large	Impaler+3	none		none		none		none		none			none		10,12,11,12,13	none		Fire 231, MFire 231
+sahpri01	Sahuagin Prince		Original	2	20	0	9	9	13	9	18	72	5	2	5	2000	Sahuagin	none	Sahuagin Large	Skull		none		none		none		none		none			none		10,12,11,12,13	none		Fire 231, MFire 231
+sahbar03	Baron Thelokassyil	Original	2	19	0	9	9	13	9	18	46	5	13	2	975	Sahuagin	none	Sahuagin	Quarterstaff	L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		11,13,12,13,14	none		Fire 231, MFire 231
+sahbar02	Sahuagin Baron		Original	2	19	0	9	9	13	9	18	46	5	13	2	975	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		11,13,12,13,14	none		Fire 231, MFire 231
+sahextra	Sahuagin Royal Guard	Overridden	16	21	0	19	18	13	9	18	89	-1	5	1	9000	Ranger		Archer	Sahuagin Large	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		4,6,5,4,7	XBow5, Spear4	Fire 231, MFire 231
+sahgrd01	Sahuagin Royal Guard	Overridden	16	21	0	19	18	13	9	18	89	-1	5	1	9000	Ranger		Archer	Sahuagin Large	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		4,6,5,4,7	XBow5, Spear4	Fire 231, MFire 231
+sahgrd02	Sahuagin Royal Guard	Overridden	16	21	0	19	18	13	9	18	89	-1	5	1	9000	Ranger		Archer	Sahuagin Large	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		4,6,5,4,7	XBow5, Spear4	Fire 231, MFire 231
+sahgrd03	Sahuagin Royal Guard	Overridden	16	21	0	19	18	13	9	18	89	-1	5	1	9000	Ranger		Archer	Sahuagin Large	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		4,6,5,4,7	XBow5, Spear4	Fire 231, MFire 231
+sahryl01	Sahuagin Royal Guard	Original	2	21	0	9	9	13	9	18	81	5	4	2	3000	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		8,10,9,9,11	none		Fire 231, MFire 231
+sahramb3	Priestess		Overridden	14/14	21	0	9	16	18	18	18	100	-5	11	1	15000	Cleric/Mage	none	Sahuagin Large	Quarterstaff	none		none		none		none		P1111111, W53321111	none		5,7,8,11,8	none		none
+sahchf01	Sahuagin Chieftain	Original	16	20	0	9	9	13	9	18	36	5	13	2	420	Sahuagin	none	Sahuagin	Quarterstaff	L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		13,15,14,16,16	none		Fire 231, MFire 231
+sahchf02	Sahuagin Chieftain	Original	14	17	0	9	9	13	9	18	36	5	13	2	420	Sahuagin	none	Sahuagin	Quarterstaff	none		none		none		none		none			none		13,15,14,16,16	none		Fire 231, MFire 231
+sahcapt0	Captain Alyittyl	Original	2	21	0	9	9	13	9	18	81	5	11	1	3000	none		none	Sahuagin	Skull		none		none		none		none		none			none		8,10,9,9,11	none		Fire 231, MFire 231
+sahcapt1	Captain Alyittyl	Original	2	21	0	9	9	13	9	18	81	5	11	1	3000	Sahuagin	none	Sahuagin	Spear		none		none		none		none		none			none		8,10,9,9,11	none		Fire 231, MFire 231
+sahcpt01	Captain Alyittyl	Overridden	18	21	0	20	18	13	9	18	95	-1	3	1	11000	Ranger		Archer	Sahuagin Large	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		3,5,4,4,6	XBow5, Spear5	Fire 231, MFire 231
+sahcpt02	Captain Feerlattiys	Original	18	16	0	9	9	13	9	18	27	5	17	2	270	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Bolt Biting x3	Bolt x20	none		none			none		13,15,14,16,16	none		Fire 231, MFire 231
+sahpr1		R.H.P. Senityili	Original	20	21	0	9	9	13	9	18	81	5	11	2	5000	Cleric		none	Sahuagin	Spear		none		none		none		none		P3333310, W000000000	none		8,10,9,9,11	none		Fire 231, MFire 231
+sahpri02	Royal High Priestess	Original	2	21	0	9	9	13	9	18	81	5	11	1	5000	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt Biting x3	P2524220, W000000000	none		8,10,9,9,11	none		Fire 231, MFire 231
+sahbar01	Sahuagin Baronial Guard	Original	2	16	0	9	9	13	9	18	27	5	17	2	270	Sahuagin	none	Sahuagin	L.Crossbow	Spear		Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		13,15,14,16,16	none		Fire 231, MFire 231
+sahpr3		H.P. Tlyysixxous	Original	20	21	0	9	9	13	9	18	81	5	11	2	5000	Cleric		none	Sahuagin	none		none		none		none		none		P3454230, W000000000	none		8,10,9,9,11	none		Fire 231, MFire 231
+sahpr4		S.P. Sallinithyl	Original	20	21	0	9	9	13	9	18	8100	-20	11	1	5000	Cleric		none	Sahuagin	Skull		none		none		none		none		none			none		1,1,1,1,1	none		Fire & MFire 127, others 100
+sahpr5		Priestess of Sekolah	Original	9	18	0	9	9	13	9	18	51	5	11	2	2000	Cleric		none	Sahuagin	Spear		none		none		none		none		P3333310, W000000000	none		8,10,9,9,11	none		Fire 231, MFire 231
+sahamb04	Sahuagin		Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahamb05	Sahuagin		Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahamb06	Sahuagin		Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahuag01	Sahuagin		Original	2	9	0	9	9	13	9	18	19	5	19	2	175	Sahuagin	none	Sahuagin	H.Crossbow	Spear		Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		14,16,15,17,17	none		Fire 231, MFire 231
+sahamb01	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahamb02	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahamb03	Rebel			Original	8	15	0	18	9	18	9	9	32	10	18	1	3000	Sahuagin	none	Sahuagin	Quarterstaff	none		none		none		none		P1111111, W533211111	none		13,9,11,13,10	none		none
+sahramb1	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahramb2	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahramb4	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahramb5	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahrar01	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahrgr01	Rebel			Overridden	16	21	0	19	18	13	9	18	89	-1	5	1	9000	Ranger		Archer	Sahuagin Large	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		4,6,5,4,7	XBow5, Spear4	Fire 231, MFire 231
+sahrgr02	Rebel			Overridden	16	21	0	19	18	13	9	18	89	-1	5	1	9000	Ranger		Archer	Sahuagin Large	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		4,6,5,4,7	XBow5, Spear4	Fire 231, MFire 231
+sahrgr03	Rebel			Original	2	21	0	9	9	13	9	18	81	5	11	2	3000	Sahuagin	none	Sahuagin	L.Crossbow	Quarterstaff	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		8,10,9,9,11	none		Fire 231, MFire 231
+sahrnt01	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahsss01	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahsss02	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahsss03	Rebel			Overridden	14	21	0	18	18	13	9	18	83	-1	7	1	3000	Ranger		Archer	Sahuagin	Spear+3		L.C. of Speed	Para.Bolt x120	none		none		none			none		5,7,6,4,8	XBow5, Spear3	Fire 231, MFire 231
+sahangu		Anguiliian		Original	2	21	0	9	9	13	9	18	81	5	4	2	3000	none		none	Ic Salamander2	Spear		none		none		none		none		none			none		8,10,9,9,11	none		Fire 231, MFire 231
+
+Other prefixes: These creatures are located outside the Underwater City, as follows:
+OBS- Planar Sphere
+UD- Underdark
+CH- Pocket Plane
+PP- Brynnlaw or Saemon's ship
+ELE- Tests in Spellhold
+udsaha		Sahuagin Prince		Original	2	20	0	9	9	13	9	18	72	5	2	5	2000	Sahuagin	none	Sahuagin Large	Skull		none		none		none		none		none			none		10,12,11,12,13	none		Fire 231, MFire 231
+obssah01	Sahuagin Baron		Original	2	19	0	9	9	13	9	18	46	5	13	2	975	Sahuagin	none	Sahuagin	L.Crossbow	Spear		Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		11,13,12,13,14	none		Fire 231, MFire 231
+ppsahale	Sahuagin Baron		Original	2	19	0	9	9	13	9	18	46	5	13	2	975	Sahuagin	none	Sahuagin	Spear		none		none		none		none		none			none		11,13,12,13,14	none		Fire 231, MFire 231
+elesah01	Sahuagin Baron		Original	2	19	0	9	9	13	9	18	46	5	13	2	975	Sahuagin	none	Sahuagin	L.Crossbow	Spear		Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		11,13,12,13,14	none		Fire 231, MFire 231
+obssah03	Sahuagin Baronial Guard	Original	2	16	0	9	9	13	9	18	27	5	17	2	270	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		13,15,14,16,16	none		Fire 231, MFire 231
+elesah02	Sahuagin Baronial Guard	Original	2	16	0	9	9	13	9	18	27	5	17	2	270	Sahuagin	none	Sahuagin	L.Crossbow	Spear		Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		13,15,14,16,16	none		Fire 231, MFire 231
+obssah02	Sahuagin Priestess	Original	8	13	0	15	9	14	16	13	64	10	16	2	650	Sahuagin	none	Sahuagin	Spear		none		none		none		none		P3342111, W111111111	none		7,11,10,13,12	none		none
+obssah04	Sahuagin		Original	2	9	0	9	9	13	9	18	19	5	19	2	175	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		14,16,15,17,17	none		Fire 321, MFire 231
+obssah05	Sahuagin		Original	2	9	0	9	9	13	9	18	19	5	19	2	175	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt Biting x3	none			none		14,16,15,17,17	none		Fire 231, MFire 231
+chevil04	Sahuagin		Original	6	20	0	9	9	13	9	18	42	4	14	1	2000	Fighter		none	Sahuagin	Skull		none		none		none		none		none			none		8,10,9,9,11	none		Fire 231, MFire 231
+ppsaha		Sahuagin		Original	2	9	0	9	9	13	9	18	19	5	19	2	175	Sahuagin	none	Sahuagin	Spear		L.Crossbow	Para.Bolt x2	Bolt Biting x3	Bolt x20	none			none		14,16,15,17,17	none		Fire 231, MFire 231

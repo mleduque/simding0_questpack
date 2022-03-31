@@ -1,0 +1,10 @@
+IF
+  Global("ArledHostile","AR0312",0)
+  OR(2)
+    Global("D0AranHostile","GLOBAL",1)
+    Global("AttackedThieves","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ArledHostile","GLOBAL",1)
+    ActionOverride("Arledrian",Enemy())
+END

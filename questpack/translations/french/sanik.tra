@@ -1,0 +1,55 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~En fait, Sanik est vivant. Votre tentative d'assassinat a échoué.~
+@1    = ~L'assassin a échoué, Galvena. La seule chose dont Sanik est l'exemple est que vous êtes plus faible que vous ne le pensez.~
+@2    = ~Qu'est-ce que... Qui êtes-vous, l'homme ? Où sont mes incompétents de gardes ?~~Qu'est-ce que... Qui êtes-vous, femme ? Où sont mes incompétents de gardes ?~
+@3    = ~Sanik voulait être payé, et je... n'ai pas assez d'or. Donc, euh, je me demandais si vous en aviez à prêter pour la cause ?~
+@4    = ~Sanik est parti sans me dire comment entrer !~
+@5    = ~Comme vous pouvez le voir, ce n'est pas sûr ici. Cependant, bien qu'il soit essentiel que nous fuyions maintenant, il y a des... complications.~
+@6    = ~L'assassin que vous avez vu a été envoyé par Dame Galvena, la propriétaire de la salle des fêtes locale.~
+@7    = ~Peut-être pouvons-nous nous aider mutuellement. Vous cherchez une entrée à l'asile, et je peux peut-être vous la fournir, si vous m'aidez.~
+@8    = ~Très bien. De quoi avez-vous besoin ?~
+@9    = ~Je crains que non. Je suis trop pressé.~~Je crains que non. Je suis trop pressée.~
+@10   = ~Peut-être pouvons-nous nous aider mutuellement. Je connais bien cette ville et je serais plus que disposé à vous aider dans n'importe quelle entreprise, si vous étiez prêt à me rendre la pareille.~
+@11   = ~Je dois entrer à l'asile. Avez-vous une idée de la façon dont je pourrais le faire ?~
+@12   = ~Ma nouvelle femme, Claire, était autrefois la "propriété" de la propriétaire du hall des fêtes, Galvena. Toutefois, connaissant notre intention de nous marier, Galvena n'est pas disposé à libérer la fille de son service.~
+@13   = ~Il semblerait maintenant qu'elle ait appris nos projets de fuite de l'île. Je suppose que Claire est actuellement retenue quelque part dans la salle de fête.~
+@14   = ~Je vous demande de sauver Claire des griffes de la garce Galvena. Ensuite, je vous aiderai du mieux que je peux.~
+@15   = ~Bien. Je vais le faire, mais votre moyen d'entrer a intérêt à être bon.~
+@16   = ~Alors je dois vous faire mes adieux. L'heure de mon départ est venue.~
+@17   = ~Vous devez avoir de la chance. Je connais peut-être un moyen d'entrer, mais d'abord, vous devez être prêt à me rendre un service.~~Vous devez avoir de la chance. Je connais peut-être un moyen d'entrer, mais d'abord, vous devez être prête à me rendre un service.~
+@18   = ~Je vous remercie. Retrouvez-moi ici quand vous aurez trouvé Claire.~
+@19   = ~Vite, s'il vous plaît ! Sauvez ma Claire et je vous dirai ce que vous souhaitez savoir.~
+@20   = ~<CHARNAME> ! Vous avez ma gratitude éternelle pour avoir sauvé Claire. Nous allons bientôt quitter cette île et nous serons heureux ensemble, grâce à vous.~
+@21   = ~Mais d'abord, je vais naturellement remplir ma part du marché. Je crois que mon capitaine, Golin, a des informations qui pourraient vous être utiles.~
+@22   = ~Très bien. J'espère que nous avons pu rembourser une partie de notre dette envers vous, <CHARNAME>. Adieu.~
+@23   = ~Sanik me dit que vous cherchez à entrer à l'asile. Je connais un peu la prison magique, alors je peux peut-être vous aider.~
+@24   = ~Je ne sais pas à quoi peuvent servir mes connaissances. Toutefois, si vous demandez à être admis, sachez que seuls deux types de personnes peuvent y accéder : Les mages cagoulés, et les "déviants" magiques.~
+@25   = ~Très bien, alors. Je ne sais toujours pas pourquoi vous voudriez entrer là-dedans. J'ai entendu encore plus de cris que d'habitude venant de là-bas.~
+@26   = ~En tout cas, vous avez tous nos remerciements pour votre aide, et je vous souhaite bonne chance. Sanik, Claire, le moment est peut-être venu de partir.~
+@27   = ~Oh ! Le voilà qui arrive !~~Oh ! La voilà qui arrive !~
+@28   = ~Par la tétine d'Umberlee ! Pour qui Galvena se prend-elle ? Tentatives d'assassinat dans le Singe Vulgaire ! Cette petite crâneuse !~
+@29   = ~C'est mon affaire. Qui était l'assassin, et quelle est cette implication avec Galvena ?~
+@30   = ~J'ai besoin d'informations que lui seul aurait pu me donner. Dites-moi ce que vous savez !~
+@31   = ~J'ai besoin d'informations que lui seul peut me donner. Dites-moi ce que vous savez !~
+@32   = ~Je connais l'histoire. Avez-vous une idée de l'endroit où Galvena aurait emmené Claire ?~
+@33   = ~C'est tellement évident. Quel est son désaccord avec Sanik ?~
+@34   = ~Vous semblez connaître un peu la situation de Sanik. Peut-être que vous pourriez m'aider.~
+@35   = ~Je suis venu pour la libérer, que cela vous plaise ou non. Rien de personnel.~
+@36   = ~Oui, c'est Sanik qui m'envoie. Vous devriez aller le rejoindre à la taverne tout de suite.~
+@37   = ~Je vais être bref. Sanik a été attaqué par l'assassin de Galvena juste avant qu'il ne me dise comment je pourrais accéder à l'asile. Après l'attaque, il est parti avant de m'aider.~
+@38   = ~De l'avis général, Galvena méritait de mourir. Vous êtes libre de partir, mais je me demandais si vous ne pourriez pas d'abord m'aider à entrer à l'asile.~
+@39   = ~Oh, merci ! Je suis si contente que Sanik ne soit pas blessé ! Je vais le rejoindre tout de suite.~
+@40   = ~Je crains de ne rien savoir de tout ceci. Je vous souhaite bonne chance dans votre quête, mais je dois trouver Sanik maintenant. Adieu !~
+@41   = ~Comment entrer dans l'asile
+
+J'ai rencontré Sanik au Singe Vulgaire, et j'ai été témoin d'une tentative de meurtre. Cependant, bien qu'il ait survécu à l'attaque, il est parti avant de me dire comment entrer à l'asile.~
+@42   = ~Comment entrer dans l'asile
+
+J'ai rencontré Sanik au Singe Vulgaire, et j'ai été témoin d'une tentative de meurtre. Il a promis de m'aider à entrer à l'asile si je sauvais sa femme, Claire, des griffes de la propriétaire de la salle de fête locale, Dame Galvena.~
+@43   = ~Comment entrer dans l'asile
+
+Le barman du Singe Vulgaire m'a dit que l'assassin qui a tenté de tuer Sanik a été envoyé par Dame Galvena, la maîtresse de la Guilde des Courtisanes locale et une femme de pouvoir et de richesse à Brynnlaw.~
+@44   = ~Une fin heureuse pour Sanik et Claire
+
+Sanik et Claire ont été ravies et soulagées d'être réunies, et sont parties rapidement de l'île. Je ne peux qu'espérer que je pourrai bientôt faire une sortie aussi rapide.~

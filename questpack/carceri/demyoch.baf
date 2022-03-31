@@ -1,0 +1,10 @@
+IF
+	HPLT(Myself,30)
+	Global("Transform","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Transform","LOCALS",1)
+		CreateVisualEffectObject("firenc01",Myself)
+		SmallWait(2)
+		Polymorph(SLIME_MUSTARD)
+END

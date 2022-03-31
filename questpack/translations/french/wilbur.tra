@@ -1,0 +1,47 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Voyageurs, aventuriers, mercenaires - peu importe ce que vous êtes - arrêtez-vous un instant, car je voudrais vous parler.~
+@1    = ~Vous semblez à bout de souffle. Qu'avez-vous fait ?~
+@2    = ~Qui êtes-vous ?~
+@3    = ~Pourquoi moi ? Trouvez quelqu'un d'autre à qui parler.~
+@4    = ~Je n'ai pas le temps pour des questions. Je vais présenter mon offre, et vous devez la prendre ou la laisser.~
+@5    = ~Au moment même où nous parlons, mon père est couché sur son lit de mort. Un des cagoulés est capable de le guérir, mais seulement pour un prix que je peux à peine me permettre.~
+@6    = ~Je n'ai qu'un seul objet qui pourrait permettre de réunir une telle somme rapidement. Regardez, s'il vous plaît, et voyez si cela vous intéresse.~
+@7    = ~Je regrette votre décision, vraiment. Mais maintenant, je dois filer. Adieu !~
+@8    = ~Une sage décision. Vous avez toute ma gratitude. Mais maintenant, je dois filer. Adieu !~
+@9    = ~Les méfaits transcendants obligent à des voyages vexatoires. Vous jouez à un jeu dangereux, primaire.~ [d0nosnd]
+@10   = ~Qu'est-ce que...~
+@11   = ~Tu as souillé ma lame avec ton contact, sale mortel. Je sens que tu n'es pas le voleur, j'épargnerai donc ta vie aujourd'hui, mais tu me rendras ce qui m'appartient.~~Tu as souillé ma lame avec ton contact, sale mortelle. Je sens que tu n'es pas le voleur, j'épargnerai donc ta vie aujourd'hui, mais tu me rendras ce qui m'appartient.~
+@12   = ~Vous devez parler de l'épée que Wilbur m'a donnée. J'ai peur de ne plus l'avoir.~
+@13   = ~Cet étrange cimeterre rouge ? Certainement, voilà.~
+@14   = ~Je n'ai absolument aucune idée de ce que vous voulez dire. Quelle lame ?~
+@15   = ~Tiens, démone. Au moins, dis-moi ce qui s'est passé ici avant de me découper.~
+@16   = ~Part de ce plan. Vos semblables ne sont pas les bienvenues ici.~
+@17   = ~Vous jouez aussi un jeu dangereux, en apparaissant si ouvertement. Vous n'êtes pas de taille face aux autorités.~
+@18   = ~Je préfère ne rien vous remettre.~
+@19   = ~Meurs, diablesse !~
+@20   = ~Tu dis la vérité. Pfah ! Tu vas aller le chercher tout de suite. Non. NON. Je vais le chercher. Tu paieras pour le dérangement.~
+@21   = ~Voler un démon
+
+Il s'est avéré qu'une épée que j'avais achetée à un homme nommé Wilbur avait été volée - d'une certaine manière - à une Marilith. Mais lorsqu'elle est venue me trouver, je n'avais plus l'arme, ce qui l'a beaucoup contrariée.~
+@22   = ~Tu mens. Pfah ! Tu vas me la remettre tout de suite. Non. NON. Je vais la prendre. Tu vas payer pour l'insulte.~
+@23   = ~Voler un démon
+
+Il s'est avéré qu'une épée que j'avais achetée à un homme nommé Wilbur avait été volée - d'une certaine manière - à une Marilith. Mais je n'étais pas prêt à abandonner une telle arme sans me battre.~
+@24   = ~Je vais prendre du plaisir à te mettre en pièces, primaire.~
+@25   = ~Tu es sage, primaire. J’épargne ta vie, et je pars en quête d'une vengeance sanglante.~
+@26   = ~Voler un démon
+
+Il s'est avéré qu'une épée que j'avais achetée à un homme nommé Wilbur avait été volée - d'une certaine manière - à une Marilith. Je lui ai rendu l'arme, mais elle était très mécontente.~
+@27   = ~Tu es stupide, primaire. Je vais prendre du plaisir à te mettre en pièces.~
+@28   = ~Oui, supplie, comme il se doit, et peut-être qu'en retour je te nourrirais. Ou peut-être pas, car ma patience s'amenuise. Donne-moi l'arme immédiatement.~
+@29   = ~Je n'ai absolument aucune idée de ce que vous voulez dire. Quelle arme ?~
+@30   = ~Peut-être, mais je suis là. Ne tarde pas, car ma patience s'amenuise. Donne-moi l'arme immédiatement.~
+@31   = ~Oui, supplie, comme il se doit, et peut-être qu'en retour je te nourrirais. Ou peut-être pas. Je te le demande encore une fois, et tu as de la chance d'avoir vécu aussi longtemps.~
+@32   = ~Si vous cherchez l'épée que Wilbur m'a donnée, j'ai bien peur de ne plus l'avoir.~
+@33   = ~Vous voulez cet étrange cimeterre rouge ? Certainement, voilà.~
+@34   = ~Ne mets pas ma patience à l'épreuve, imbécile. La lame pourpre. Donnez-la-moi, immédiatement.~
+@35   = ~Ah, l'épée que Wilbur m'a donnée. Je crains de ne plus l'avoir.~
+@36   = ~Comme si je voulais retourner sur ce plan immonde. Mais ma parole ? Je ne donnerai pas une telle chose. Espère et prie, chevalier, car c'est tout ce que tu peux faire.~
+@37   = ~Attends, démon. Avant que tu ne partes, j'aimerais avoir ta parole que tu ne reviendras pas sur le plan primaire.~
+@38   = ~Imbécile ! Qu'est-ce qui vous a pris d'attirer une Marilith dans le centre d'Athkatla ? Bah ! Pour votre propre bien, vous feriez mieux de ne pas causer de futurs *troubles*. Les conséquences de celui-ci restent à voir. Bonne journée.~

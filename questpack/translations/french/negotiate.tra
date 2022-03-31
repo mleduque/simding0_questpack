@@ -1,0 +1,29 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Compte tenu de la nature des objets magiques que j'ai ramenés, il sera difficile de les répartir de manière parfaitement égale, mais je m'efforcerai de le faire - attendez un instant - il n'est plus là ! Vous m'avez volé ! C'était tout à fait injustifié.~
+@1    = ~Étant donné la nature des objets magiques que j'ai ramenés, il sera difficile de les répartir de manière parfaitement égale, mais je vous permettrai de choisir des objets représentant environ un quart de la valeur totale. Il y a un certain nombre de parchemins magiques disponibles, et deux autres objets d'une puissance significative. Le parchemin d'Arrêt du temps vaut beaucoup plus qu'une quatrième part, je dois donc me le réserver.~
+@2    = ~Le sceptre que j'ai récupéré a le pouvoir de lancer un puissant enchantement protecteur, bien que je m'attende à ce que seuls les mages et les clercs puissent apprendre à l'utiliser efficacement. L'enchantement va, je crois, dévier les sorts jetés contre l'utilisateur. Il fonctionne de la même manière que la plupart des baguettes, et j'estime qu'il est suffisamment puissante pour fonctionner peut-être une douzaine de fois avant de devoir être rechargé.~
+@3    = ~Ce casque est en fait constitué d'os... plutôt macabre. Mais efficace, néanmoins : il est imprégné de magie capable d'éteindre la vie des ennemis les plus faibles. Personnellement, j'espère que vous le choisirez, car je n'en ai pas l'utilité - ni d'ailleurs le désir d'être vu avec lui. Il n'est pas vraiment esthétique.~
+@4    = ~Alors, j'ai fait la plupart des recherches et des expérimentations derrière cette tentative, et je mérite donc la plus grande partie des récompenses matérielles. Mais je n'oublie pas le rôle que vous avez joué pour me sauver de l'emprisonnement, ou pour récupérer mon livre de rituels, et je vous laisse donc le premier choix.~
+@5    = ~Mon choix s'est porté sur le Sceptre d'Absorption et le parchemin de Flétrissement Abominable.~
+@6    = ~Je choisis le parchemin de Cri de la Banshee et le Crâne de mort.~
+@7    = ~Donnez-moi les parchemins de Simulacre et de Nuage incendiaire.~
+@8    = ~Je n'ai pas besoin de parchemins de sorts. Je prendrai le sceptre d'absorption et le Crâne de mort.~
+@9    = ~Donnez-moi les parchemins de Flétrissement abominable et de Nuage incendiaire.~
+@10   = ~Cri de la Banshee et Simulacre me paraissent bien.~
+@11   = ~Hmmm... peut-être que ma part du trophée est un peu petite. Une part d'un quart ? Cela me semble plutôt dérisoire.~
+@12   = ~Voilà, alors, votre récompense pour m'avoir aidé.~
+@13   = ~Néanmoins, si vous insistez tant, je suppose que je pourrais augmenter un peu plus votre récompense, bien que je me réserve le droit de prendre la majorité pour moi.~
+@14   = ~Vous pouvez choisir jusqu'à un tiers du prix total. Mais cela doit suffire, car je ne donnerai pas plus.~
+@15   = ~Je prendrai Nuage Incendiaire, Simulacre et le Sceptre d'Absorption.~
+@16   = ~Donnez-moi les parchemins de Flétrissement abominable et de Cri de la Banshee, ainsi que le Crâne de mort.~
+@17   = ~Je choisis le parchemin d'Arrêt du temps.~
+@18   = ~Ma part sera le Sceptre d'absorption, le Crâne de mort et le parchemin du Nuage incendiaire.~
+@19   = ~Je pense que je vais prendre Simulacre, Flétrissement abominable et Nuage incendiaire.~
+@20   = ~J'en veux encore un peu plus. Divisons le butin en deux.~
+@21   = ~Je pense que je mérite tout. Remettez-le moi ou je serai obligé de vous le prendre.~
+@22   = ~Très bien. Alors, qu'est-ce que vous proposez, déjà ?~
+@23   = ~Je mérite le tout ! Donnez-moi ça !~
+@24   = ~Une proposition de Mage.
+
+J'ai aidé Vithal à récupérer les objets qu'il cherchait. Mais je lui ai volé une partie du butin avant qu'il ne puisse le partager et il n'a pas bien réagi. Au final, j'ai eu ce que je méritais.~

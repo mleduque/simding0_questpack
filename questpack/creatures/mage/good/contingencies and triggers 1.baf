@@ -1,0 +1,207 @@
+/* Levels available:
+
+16 - Spell Trigger (three spells up to level 6)
+14 - Spell Sequencer (three spells up to level 4)
+7 - Minor Sequencer (two spells up to level 2)
+
+12 - Contingency (one spell up to level 6)
+18 - Chain Contingency (one spell up to level 8)
+
+
+Additionally, some mages will automatically be granted long-lasting spells, representing their walking about with them on.
+These are:
+- Stoneskin (available at level 7)
+- Melf's Minute Meteors (available at level 5)
+- Protection From Normal Missiles (level 5)
+- Ghost Armour (level 5)
+- Shield (level 1)
+- Protection From Magic Energy (level 12)
+
+Finally, some mages will be accompanied by an Invisible Stalker. */
+
+Minor Sequencer values:
+1 - WIZARD_MIRROR_IMAGE
+2 - WIZARD_SHIELD
+3 - WIZARD_BLUR
+4 - WIZARD_INVISIBILITY
+5 - WIZARD_MAGIC_MISSILE
+6 - WIZARD_HORROR
+7 - WIZARD_MELF_ACID_ARROW
+8 - Dumb mage didn't have one
+
+Sequencer values:
+1 - mirror image, blur
+2 - minor spell deflection, stoneskin
+3 - improved invisibility, stoneskin
+4 - fireshield red, fireshield blue
+5 - stoneskin, mirror image
+6 - confusion, horror
+7 - fireball, lightning bolt
+8 - flame arrow, hold person
+9 - Dumb mage didn't have one
+
+Trigger values:
+1 - breach, lower resistance, secret word
+2 - spell deflection, stoneskin, improved invisibility
+3 - stoneskin, mislead, spell immunity: divination
+4 - conjure earth elemental, conjure fire elemental, conjure air elemental
+5 - protection from normal weapons, globe of invulnerability, mirror image
+6 - spell immunity: abjuration, spell shield, minor spell turning
+7 - shadow door, spell immunity: divination, protection from magical weapons
+8 - sunfire, fireshield: red, conjure fire elemental
+9 - death spell, disintegrate, flesh to stone
+10 - improved haste, mislead, invisible stalker
+11 - power word silence, chain lightning, chaos
+12 - cloudkill, death fog, stinking cloud
+13 - magic missile, lightning bolt, flame arrow
+14 - Dumb mage didn't have one
+
+Contingency values:
+1 - see enemy: stoneskin
+2 - see enemy: mislead
+3 - see enemy: protection from magical weapons
+4 - see enemy: spell deflection
+5 - 50% HP: stoneskin
+6 - 50% HP: mislead
+7 - 75% HP: shadow door
+8 - 25% HP: mirror image
+9 - Dumb mage didn't have one
+
+Chain Contingency values:
+1 - see enemy: simulacrum, mislead, spell immunity: divination
+2 - 50% HP: simulacrum, improved mantle, spell turning
+3 - 50% HP: protection from the elements, protection from magic energy, stoneskin
+4 - when hit: mislead, stoneskin, spell turning
+5 - see enemy: mirror image, globe of invulnerability, protection from magical weapons
+6 - see enemy: protection from evil, summon fiend, improved invisibility
+7 - 25% HP: mirror image, improved invisibility, spell immunity: divination
+8 - when hit: spell turning, spell immunity: abjuration, spell shield
+9 - Dumb mage didn't have one
+
+IF
+	LevelGT(Myself,6)
+	Global("MinorSeq","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MinorSeq","LOCALS",1)
+	RESPONSE #100
+		SetGlobal("MinorSeq","LOCALS",2)
+	RESPONSE #150
+		SetGlobal("MinorSeq","LOCALS",3)
+	RESPONSE #100
+		SetGlobal("MinorSeq","LOCALS",4)
+	RESPONSE #150
+		SetGlobal("MinorSeq","LOCALS",5)
+	RESPONSE #150
+		SetGlobal("MinorSeq","LOCALS",6)
+	RESPONSE #150
+		SetGlobal("MinorSeq","LOCALS",7)
+	RESPONSE #100
+		SetGlobal("MinorSeq","LOCALS",8)
+END
+
+IF
+	LevelGT(Myself,13)
+	Global("SpellSeq","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpellSeq","LOCALS",1)
+	RESPONSE #110
+		SetGlobal("SpellSeq","LOCALS",2)
+	RESPONSE #125
+		SetGlobal("SpellSeq","LOCALS",3)
+	RESPONSE #150
+		SetGlobal("SpellSeq","LOCALS",4)
+	RESPONSE #175
+		SetGlobal("SpellSeq","LOCALS",5)
+	RESPONSE #200
+		SetGlobal("SpellSeq","LOCALS",6)
+	RESPONSE #250
+		SetGlobal("SpellSeq","LOCALS",7)
+	RESPONSE #275
+		SetGlobal("SpellSeq","LOCALS",8)
+	RESPONSE #250
+		SetGlobal("SpellSeq","LOCALS",9)
+END
+
+IF
+	LevelGT(Myself,15)
+	Global("SpellTrig","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpellTrig","LOCALS",1)
+	RESPONSE #110
+		SetGlobal("SpellTrig","LOCALS",2)
+	RESPONSE #125
+		SetGlobal("SpellTrig","LOCALS",3)
+	RESPONSE #150
+		SetGlobal("SpellTrig","LOCALS",4)
+	RESPONSE #175
+		SetGlobal("SpellTrig","LOCALS",5)
+	RESPONSE #200
+		SetGlobal("SpellTrig","LOCALS",6)
+	RESPONSE #250
+		SetGlobal("SpellTrig","LOCALS",7)
+	RESPONSE #275
+		SetGlobal("SpellTrig","LOCALS",8)
+	RESPONSE #300
+		SetGlobal("SpellTrig","LOCALS",9)
+	RESPONSE #350
+		SetGlobal("SpellTrig","LOCALS",10)
+	RESPONSE #400
+		SetGlobal("SpellTrig","LOCALS",11)
+	RESPONSE #450
+		SetGlobal("SpellTrig","LOCALS",12)
+	RESPONSE #500
+		SetGlobal("SpellTrig","LOCALS",13)
+	RESPONSE #500
+		SetGlobal("SpellTrig","LOCALS",14)
+END
+
+IF
+	LevelGT(Myself,11)
+	Global("Conting","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Conting","LOCALS",1)
+	RESPONSE #110
+		SetGlobal("Conting","LOCALS",2)
+	RESPONSE #125
+		SetGlobal("Conting","LOCALS",3)
+	RESPONSE #150
+		SetGlobal("Conting","LOCALS",4)
+	RESPONSE #175
+		SetGlobal("Conting","LOCALS",5)
+	RESPONSE #200
+		SetGlobal("Conting","LOCALS",6)
+	RESPONSE #250
+		SetGlobal("Conting","LOCALS",7)
+	RESPONSE #275
+		SetGlobal("Conting","LOCALS",8)
+	RESPONSE #250
+		SetGlobal("Conting","LOCALS",9)
+END
+
+IF
+	LevelGT(Myself,17)
+	Global("ChainConting","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ChainConting","LOCALS",1)
+	RESPONSE #110
+		SetGlobal("ChainConting","LOCALS",2)
+	RESPONSE #125
+		SetGlobal("ChainConting","LOCALS",3)
+	RESPONSE #150
+		SetGlobal("ChainConting","LOCALS",4)
+	RESPONSE #175
+		SetGlobal("ChainConting","LOCALS",5)
+	RESPONSE #200
+		SetGlobal("ChainConting","LOCALS",6)
+	RESPONSE #250
+		SetGlobal("ChainConting","LOCALS",7)
+	RESPONSE #275
+		SetGlobal("ChainConting","LOCALS",8)
+	RESPONSE #250
+		SetGlobal("ChainConting","LOCALS",9)
+END

@@ -1,0 +1,91 @@
+IF
+  OR(2)
+    Global("D0Poor","GLOBAL",11)
+    Global("D0Poor","GLOBAL",13)
+  GlobalTimerExpired("D0KillGirl","GLOBAL")
+  CombatCounter(0)
+  !InMyArea("d0thug")
+THEN
+  RESPONSE #100
+    SetGlobal("D0Poor","GLOBAL",14)
+    CreateCreatureObjectOffScreen("d0thug",Player1,0,0,0)
+    ActionOverride("d0thug",StartDialogNoSet(Player1))
+END
+
+IF
+  OR(2)
+    Global("D0Lender","GLOBAL",4)
+    GlobalTimerExpired("D0BeatTimer","GLOBAL")
+  OR(2)
+    Global("D0Lender","GLOBAL",2)
+    Global("D0Lender","GLOBAL",4)
+  Global("D0Attack","GLOBAL",0)
+  OR(8)
+    AreaCheckObject("AR0020",Player1)
+    AreaCheckObject("AR0300",Player1)
+    AreaCheckObject("AR0400",Player1)
+    AreaCheckObject("AR0500",Player1)
+    AreaCheckObject("AR0700",Player1)
+    AreaCheckObject("AR0800",Player1)
+    AreaCheckObject("AR0900",Player1)
+    AreaCheckObject("AR1000",Player1)
+  TimeOfDay(NIGHT)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Attack","GLOBAL",1)
+    CreateCreatureObjectOffScreen("d0debt1",Player1,0,0,0)
+    CreateCreatureObject("d0debt2","d0debt",0,0,0)
+    CreateCreatureObject("d0debt2","d0debt",0,0,0)
+    CreateCreatureObject("d0debt2","d0debt",0,0,0)
+    CreateCreatureObject("d0debt3","d0debt",0,0,0)
+    Continue()
+END
+
+IF
+  OR(2)
+    Global("D0Lender","GLOBAL",4)
+    GlobalTimerExpired("D0BeatTimer","GLOBAL")
+  OR(2)
+    Global("D0Lender","GLOBAL",2)
+    Global("D0Lender","GLOBAL",4)
+  Global("D0Attack","GLOBAL",0)
+  OR(8)
+    AreaCheckObject("AR0020",Player1)
+    AreaCheckObject("AR0300",Player1)
+    AreaCheckObject("AR0400",Player1)
+    AreaCheckObject("AR0500",Player1)
+    AreaCheckObject("AR0700",Player1)
+    AreaCheckObject("AR0800",Player1)
+    AreaCheckObject("AR0900",Player1)
+    AreaCheckObject("AR1000",Player1)
+  TimeOfDay(NIGHT)
+  RandomNum(2,2)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Attack","GLOBAL",1)
+    CreateCreatureObjectOffScreen("d0debt1",Player1,0,0,0)
+    CreateCreatureObject("d0debt3","d0debt",0,0,0)
+    CreateCreatureObject("d0debt3","d0debt",0,0,0)
+    CreateCreatureObject("d0debt3","d0debt",0,0,0)
+    Continue()
+END
+
+IF
+  Global("D0Poor","GLOBAL",4)
+  GlobalTimerExpired("D0PoorAttack","GLOBAL")
+  OR(7)
+    AreaCheckObject("AR0020",Player1)
+    AreaCheckObject("AR0300",Player1)
+    AreaCheckObject("AR0500",Player1)
+    AreaCheckObject("AR0700",Player1)
+    AreaCheckObject("AR0800",Player1)
+    AreaCheckObject("AR0900",Player1)
+    AreaCheckObject("AR1000",Player1)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Poor","GLOBAL",5)
+    CreateCreatureObjectOffScreen("D0Boy",Player1,0,0,0)
+    ActionOverride("D0Boy",StartDialogNoSet(Player1))
+END

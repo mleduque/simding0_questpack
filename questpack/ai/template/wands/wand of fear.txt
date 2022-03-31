@@ -1,0 +1,186 @@
+IF
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    HasItem("WAND02",Myself) // Wand of Fear
+    See(NearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    See(SecondNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    See(ThirdNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    See(FourthNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    See(FifthNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    See(SixthNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    See(NearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    See(SecondNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    See(ThirdNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    See(FourthNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    See(FifthNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    See(SixthNearestEnemyOf(Myself))
+    OR(11)
+        CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+        CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+        !CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+        Kit(LastSeenBy(Myself),CAVALIER)
+        HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+        HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+        HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+        StateCheck(LastSeenBy(Myself),2148802605)
+        CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+	See(NearestEnemyOf(Myself))
+    False()
+THEN
+    RESPONSE #100
+END
+
+IF
+	!GlobalTimerNotExpired("CAST","LOCALS")
+    HasItem("WAND02",Myself) // Wand of Fear
+    CheckStatGT(LastSeenBy(Myself),2,SAVEVSSPELL)
+    !StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    !CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE4)
+    !CheckStat(LastSeenBy(Myself),3,SCRIPTINGSTATE4)
+    CheckStat(LastSeenBy(Myself),0,WIZARD_RESIST_FEAR)
+    !Kit(LastSeenBy(Myself),CAVALIER)
+    !HasItemEquiped("CLCK30",LastSeenBy(Myself)) // Cloak of Bravery
+    !HasItemEquiped("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    !HasItemEquiped("SW1H32",LastSeenBy(Myself)) // Dragonslayer
+    !StateCheck(LastSeenBy(Myself),2148802605)
+    !CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("CAST","LOCALS",6)
+        DisplayStringHead(Myself,31971) // uses a wand
+        DisplayStringHead(Myself,6659) // Wand of Fear
+        UseItem("WAND02",LastSeenBy(Myself)) // Wand of Fear
+END

@@ -1,0 +1,55 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Sanik è ancora vivo. Il tuo tentativo di omicidio non ha avuto successo.~
+@1    = ~L'omicidio è fallito, Galvena. L'unica cosa che abbiamo imparato da questa faccenda e che tu sei più debole di quanto tutti quanti pensino.~
+@2    = ~Cosa diavolo succede? Chi sei tu, <MANWOMAN>? Dove sono le mie inutili guardie?~
+@3    = ~Sanik pretende il pagamento, e io... non ho abbastanza denaro. Quindi, ehm, mi chiedevo se tu ne avessi da prestare per la causa?~
+@4    = ~Sanik se ne è andato senza dirmi come entrare!~
+@5    = ~Come puoi vedere, non è sicuro qui. Tuttavia, per quanto la nostra fuga sia urgente, ci sono... complicazioni.~
+@6    = ~L'assassino che hai visto è stato inviato da lady Galvena, la proprietaria della Casa delle Feste.~
+@7    = ~Forse possiamo aiutarci l'uno con l'altro. Cerca un'entrata per il manicomio e, se mi aiuterai, ci penserò io.~
+@8    = ~Molto bene. Di cosa hai bisogno?~
+@9    = ~Temo di nulla. Sono troppo di fretta.~
+@10   = ~Forse possiamo aiutarci l'uno con l'altro. Questa  città mi è molto familiare e sarei molto disponibile ad aiutarti, se tu fossi disposto a restituire il favore.~
+@11   = ~Ho bisogno di entrare nel manicomio. Hai qualche idea di come potrei farlo?~
+@12   = ~La mia nuova moglie, Claire, era una volta "proprietà" della titolare della Casa delle Feste, Galvena. Tuttavia, anche sapendo della nostra intenzione di sposarci, non era disposta a liberarla dai suo servizio.~
+@13   = ~Sembrerebbe che abbia intuito i nostri piani per fuggire dall'isola. Credo che Claire sia ora trattenuta contro la sua volontà da qualche parte nella Casa delle Feste.~
+@14   = ~Vorrei chiederti di salvare Claire dalle grinfie di quella sgualdrina di Galvena. Dopodiché, ti aiuterò come meglio posso.~
+@15   = ~Bene. Lo farò, ma sarà meglio che il tuo piano sia buono.~
+@16   = ~Ed infine devo dirti addio. È giunto il momento che me ne vada.~
+@17   = ~Forse sei fortunato. Potrei conoscere un modo per entrare, ma prima devi essere disposto a farmi un favore.~
+@18   = ~Grazie. Incontriamoci qui quando avrai trovato Claire.~
+@19   = ~Per favore, fai prima che puoi! Salva la mia Claire e ti dirò ciò che desideri sapere.~
+@20   = ~<CHARNAME>! Hai la mia eterna gratitudine per aver salvato Claire. Lasceremo quest'isola al più presto e vivremo felici insieme, grazie a te.~
+@21   = ~Ma innanzitutto, naturalmente, io devo tener fede al nostro patto. Il mio capitano, Golin, dovrebbe avere alcune informazioni che ti possono essere utili.~
+@22   = ~Molto bene. Spero di essere stato in grado di ripagare, almeno in parte, il mio debito con te, <CHARNAME>. Addio.~
+@23   = ~Sanik mi dice che volete entrare nel manicomio. Conosco abbastanza bene quella prigione magica e, forse, ti posso aiutare.~
+@24   = ~Non so come possa essere utilizzato quello che so. Tuttavia, se cerchi di entrare, dovresti sapere che solo due tipi di persone possono farlo: gli Stregoni Incappucciati e i maghi devianti.~
+@25   = ~Allora va bene. Anche se ancora non capisco perché tu voglia entrare sai ho sentito delle urla più strazianti del solito provenire da lì dentro.~
+@26   = ~In ogni caso, ti porgo tutti i miei ringraziamenti per il tuo aiuto e ti auguro ogni bene. Sanik, Claire, sarebbe il momento giusto per partire.~
+@27   = ~Oh! Ecco che arriva <PRO_HESHE>!~
+@28   = ~Per le mammelle di Umberlee! Chi crede di essere Galvena? Un tentativo di omicidio alla Scimmia Becera! Quell'arrogante sgualdrina!~
+@29   = ~Questo è affar mio. Chi era l'assassino, e che cosa è questo coinvolgimento con Galvena?~
+@30   = ~Ho bisogno di informazioni che solo lui avrebbe potuto fornirmi. Dimmi quello che sai! ~
+@31   = ~Ho bisogno di informazioni che solo lui mi può fornire. Dimmi quello che sai!~
+@32   = ~Conosco la storia. Avete qualche idea di dove Galvena potrebbe tenere Claire? ~
+@33   = ~Tanto è evidente. Che problema ha con Sanik?~
+@34   = ~Tu sembri conoscere qualcosa della difficile situazione di Sanik. Forse mi puoi aiutare.~
+@35   = ~Sono venuto a liberarla, che ti piaccia o no. Niente di personale.~
+@36   = ~Sì, mi ha mandato Sanik. Ora tu dovresti andare da lui alla taverna.~
+@37   = ~Devo essere breve. Sanik fu attaccato da un assassino inviato da Galvena, poco prima di dirmi come sarei potuto entrare nel manicomio. Dopo l'attacco, se ne è andato prima di potermi aiutare.~
+@38   = ~Galvena meritava di morire sotto tutti i punti di vista. Sei libero di andare, ma mi chiedevo se prima tu non potessi dirmi come entrare nel manicomio.~
+@39   = ~Oh, grazie! Che gli dèi siano benedetti! Sanik non si è fatto male! Andrò a lui ora.~
+@40   = ~Ho paura di non sapere nulla di queste cose. Ti auguro buona fortuna per la tua ricerca, ma ora devo trovare Sanik. Addio!~
+@41   = ~Entrare nel Manicomio.
+
+Ho incontrato Sanik alla Scimmia Becera e sono stato testimone di un tentativo di omicidio nei suoi confronti. Ad ogni modo, anche se è scampato all'aggressione, se ne è andato prima di rivelarmi il modo di entrare nel manicomio.~
+@42   = ~Entrare nel Manicomio.
+
+Ho incontrato Sanik alla Scimmia Becera e sono stato testimone di un tentativo di omicidio nei suoi confronti. Mi ha promesso che mi aiuterà ad entrare nel manicomio in cambio della liberazione della moglie Claire, che si trova tra le grinfie della direttrice della locale Casa delle Feste, Lady Galvena.~
+@43   = ~Entrare nel Manicomio.
+
+L'oste della Scimmia Becera mi ha raccontato che l'assassino che ha attentato alla vita di Sanik aveva come mandante lady Galvena, la direttrice della locale Casa delle Feste, una donna di potere ed in vista a Brynnlaw~
+@44 = ~Lieto Fine per Sanik e Claire.
+
+Sanik e Claire erano felici e sollevati per essersi finalmente riuniti e hanno deciso di lasciare rapidamente l'isola. Posso solo sperare di imitarli in tempi brevi.~

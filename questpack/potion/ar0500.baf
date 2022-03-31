@@ -1,0 +1,22 @@
+IF
+  Global("D0SpawnPotion2","GLOBAL",0)
+  Global("Reveal0500","AR0500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SpawnPotion2","GLOBAL",1)
+    CreateCreature("d0qpmom",[827.3717],6)
+    CreateCreature("d0qpjan",[865.3684],5)
+    Continue()
+END
+
+IF
+  Global("D0SpawnPotion2","GLOBAL",1)
+  Global("PotionJob","GLOBAL",5)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SpawnPotion2","GLOBAL",2)
+//    CreateCreature("D0QPPOT2",[586.3809],8)
+    ActionOverride("D0QPPOTN",MoveToPoint([711.3720]))
+END
+
+

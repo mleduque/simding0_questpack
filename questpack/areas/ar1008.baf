@@ -1,0 +1,53 @@
+IF
+  !Global("D0Defences","AR1008",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Defences","AR1008",1)
+    ActionOverride("Trigger Point 1",ReallyForceSpell(Player1,WIZARD_DISPEL_MAGIC))
+END
+
+// Scrap all the stuff below about firing off traps--it feels cheesy to me. If I ran the Twisted Rune HQ, I would not
+// have everything blow up the moment anyone arrived because I'd probably want to check if they were my friends or
+// not first. On the other hand, I *would* have Dispel Magic cast on everyone who entered, so this is what happens.
+
+/* IF
+!Global("Defences","AR1008",1)
+Difficulty(EASIEST)
+THEN
+  RESPONSE #100
+    SetGlobal("Defences","AR1008",1)
+    ActionOverride("Trigger Point 1",ForceSpellPoint([454.735],WIZARD_NPC_SYMBOL_STUN))
+    ActionOverride("Trigger Point 1",ForceSpellPoint([507.810],WIZARD_NPC_SYMBOL_FEAR))
+    DisplayStringHead(Player1,14381) // Trap Sprung
+    ActionOverride("Trigger Point 1",ForceSpell(Player1,WIZARD_SKULL_TRAP))
+END
+
+IF
+  !Global("Defences","AR1008",1)
+  DifficultyGT(EASIEST)
+  DifficultyLT(HARDEST)
+THEN
+  RESPONSE #100
+    SetGlobal("Defences","AR1008",1)
+    ActionOverride("Trigger Point 1",ForceSpellPoint([454.735],WIZARD_NPC_SYMBOL_STUN))
+    ActionOverride("Trigger Point 1",ForceSpellPoint([507.810],WIZARD_NPC_SYMBOL_FEAR))
+    DisplayStringHead(Player1,14381) // Trap Sprung
+    ActionOverride("Trigger Point 1",ForceSpell(Player1,WIZARD_SKULL_TRAP))
+    ActionOverride("Trigger Point 1",ForceSpellPoint([586.693],WIZARD_SKULL_TRAP))
+    ActionOverride("Trigger Point 1",ForceSpellPoint([629.728],WIZARD_SKULL_TRAP))
+END
+
+IF
+  !Global("Defences","AR1008",1)
+  Difficulty(HARDEST)
+THEN
+  RESPONSE #100
+    SetGlobal("Defences","AR1008",1)
+    ActionOverride("Trigger Point 1",ForceSpellPoint([454.735],WIZARD_NPC_SYMBOL_STUN))
+    ActionOverride("Trigger Point 1",ForceSpellPoint([507.810],WIZARD_NPC_SYMBOL_FEAR))
+    ActionOverride("Trigger Point 1",ForceSpellPoint([428.791],WIZARD_SKULL_TRAP))
+    ActionOverride("Trigger Point 1",ForceSpellPoint([586.693],WIZARD_SKULL_TRAP))
+    DisplayStringHead(Player1,14381) // Trap Sprung
+    ActionOverride("Trigger Point 1",ForceSpell(Player1,WIZARD_SKULL_TRAP))
+    ActionOverride("Trigger Point 1",ReallyForceSpell(Player1,WIZARD_DELAYED_BLAST_FIREBALL))
+END */

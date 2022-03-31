@@ -1,0 +1,742 @@
+IF
+  Global("D0Buff","LOCALS",0)
+  Difficulty(HARD)
+  !Name("amtgen01",Myself)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Buff","LOCALS",1)
+    ApplySpellRES("d0oasma1",Myself)
+    Continue()
+END
+
+IF
+  Global("D0Buff","LOCALS",0)
+  Difficulty(HARD)
+  Name("amtgen01",Myself)
+  !LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Buff","LOCALS",1)
+    ApplySpellRES("d0oasma1",Myself)
+    Continue()
+END
+
+IF
+  Global("D0Buff","LOCALS",0)
+  Difficulty(HARD)
+  Name("amtgen01",Myself)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Buff","LOCALS",1)
+    ApplySpellRES("d0oasma2",Myself)
+    Continue()
+END
+
+IF
+  Global("D0Buff","LOCALS",0)
+  Difficulty(HARDEST)
+  !LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Buff","LOCALS",1)
+    ApplySpellRES("d0oasma1",Myself)
+    Continue()
+END
+
+IF
+  Global("D0Buff","LOCALS",0)
+  Difficulty(HARDEST)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Buff","LOCALS",1)
+    ApplySpellRES("d0oasma2",Myself)
+    Continue()
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    Shout(125)
+END
+
+IF
+  BreakingPoint()
+  !Name("amtgen01",Myself)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,49766) // I can't take this
+    Shout(124)
+  RESPONSE #100
+    DisplayStringHead(Myself,49767) // No more
+    Shout(124)
+  RESPONSE #100
+    DisplayStringHead(Myself,49768) // Mercy!
+    Shout(124)
+END
+
+IF
+  BreakingPoint()
+  Name("amtgen01",Myself)
+THEN
+  RESPONSE #100
+    Shout(124)
+  RESPONSE #100
+    Shout(124)
+  RESPONSE #100
+    Shout(124)
+END
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Shout(125)
+    Enemy()
+END
+
+IF
+  HitBy([GOODCUTOFF],CRUSHING)
+THEN
+  RESPONSE #100
+    Shout(125)
+    Continue()
+END
+
+IF
+  See([GOODCUTOFF])
+  Allegiance(Myself,ENEMY)
+  Global("ShoutedAlert","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ShoutedAlert","LOCALS",1)
+    Shout(125)
+    Continue()
+END
+
+IF
+  Heard([EVILCUTOFF],125)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  See([EVILCUTOFF])
+  InMyGroup(LastSeenBy(Myself))
+  HPPercentLT(Myself,25)
+  HPGT(Myself,1)
+  !Range(LastSeenBy(Myself),8)
+  !GlobalTimerNotExpired("Whined","LOCALS")
+  !Name("amtgen01",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Whined","LOCALS",6)
+    DisplayStringHead(Myself,46151) // help!
+    Shout(124)
+  RESPONSE #100
+    SetGlobalTimer("Whined","LOCALS",6)
+    DisplayStringHead(Myself,49763) // I require assistance
+    Shout(124)
+  RESPONSE #100
+    SetGlobalTimer("Whined","LOCALS",6)
+    DisplayStringHead(Myself,49764) // Defend me!
+    Shout(124)
+  RESPONSE #100
+    SetGlobalTimer("Whined","LOCALS",6)
+    DisplayStringHead(Myself,49765) // Slay my attacker!
+    Shout(124)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  See([EVILCUTOFF])
+  InMyGroup(LastSeenBy(Myself))
+  HPPercentLT(Myself,25)
+  HPGT(Myself,1)
+  !Range(LastSeenBy(Myself),8)
+  !GlobalTimerNotExpired("Whined","LOCALS")
+  Name("amtgen01",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Whined","LOCALS",6)
+    DisplayStringHead(Myself,49764) // Defend me!
+    Shout(124)
+  RESPONSE #100
+    SetGlobalTimer("Whined","LOCALS",6)
+    DisplayStringHead(Myself,49765) // Slay my attacker!
+    Shout(124)
+END
+
+IF
+  HPPercentLT(Myself,50)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN55",Myself) // Potion of Superior Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN55",Myself) // Potion of Superior Healing
+END
+
+IF
+  HPPercentLT(Myself,50)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN52",Myself) // Potion of Extra Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN52",Myself) // Potion of Extra Healing
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    Range(NearestMyGroupOfType,20)
+    See(NearestMyGroupOfType([0.0.0.CLERIC_ALL]))
+  HPPercentLT(Myself,35)
+  !GlobalTimerNotExpired("CalledForHealing","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CalledForHealing","LOCALS",6)
+    DisplayStringHead(Myself,72808) // I need healing!
+    Shout(123)
+    Continue()
+END
+
+IF
+  Heard(NearestMyGroupOfType,123)
+  !StateCheck(LastHeardBy(Myself),STATE_REALLY_DEAD)
+  HPPercentGT(Myself,75)
+  See(LastHeardBy(Myself))
+  Range(LastHeardBy(Myself),10)
+  !Range(NearestMyGroupOfType([0.0.0.CLERIC_ALL]),20)
+  !NumItemsGT("POTN55",LastHeardBy(Myself),0) // Potion of Superior Healing
+  NumItemsGT("POTN55",Myself,1) // Potion of Superior Healing
+  !GlobalTimerNotExpired("GaveAwayPotion","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GaveAwayPotion","LOCALS",12)
+    DisplayStringHead(Myself,72809) // Here! Catch!
+    GiveItem("POTN55",LastHeardBy(Myself)) // Potion of Superior Healing
+    SmallWait(2)
+    ActionOverride(LastHeardBy(Myself),DisplayStringHead(Myself,73896)) // Got it!
+    Continue()
+END
+
+IF
+  HitBy([ANYONE],CRUSHING)
+  Global("GiantStrengthPotion","LOCALS",0)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN05",Myself) // Potion of Fire Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("GiantStrengthPotion","LOCALS",1)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN05",Myself) // Potion of Fire Giant Strength
+END
+
+IF
+  HPPercentLT(Myself,60)
+  Global("InvulnerabilityPotion","LOCALS",0)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN11",Myself) // Potion of Invulnerability
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("InvulnerabilityPotion","LOCALS",1)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("POTN11",Myself) // Potion of Invulnerability
+END
+
+IF
+  OR(2)
+    GlobalGT("TethyrBattleStart","GLOBAL",1)
+    !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Name("amtgen01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  DifficultyGT(EASY)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,WARRIOR_GREATER_WHIRLWIND)
+END
+
+IF
+  Name("amtgen01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  OR(2)
+    DifficultyLT(NORMAL)
+    !LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,WARRIOR_WHIRLWIND)
+END
+
+IF
+  Name("amtgen01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",1)
+  DifficultyGT(EASY)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",2)
+    ForceSpell(Myself,WARRIOR_SMITE)
+END
+
+IF
+  Name("amtgen01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",1)
+  OR(2)
+    DifficultyLT(NORMAL)
+    !LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",2)
+    ForceSpell(Myself,WARRIOR_CRITICAL_STRIKE)
+END
+
+IF
+  Name("amtcap01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  RandomNum(3,1)
+  DifficultyGT(EASIEST)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,WARRIOR_WHIRLWIND)
+END
+
+IF
+  Name("amtcap01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  RandomNum(3,2)
+  DifficultyGT(EASIEST)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,WARRIOR_CRITICAL_STRIKE)
+END
+
+IF
+  Name("amtcap01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  RandomNum(3,3)
+  DifficultyGT(EASIEST)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,WARRIOR_DEATHBLOW)
+END
+
+IF
+  Name("amtarc01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  DifficultyGT(NORMAL)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,ARCHER_CALL_SHOT)
+END
+
+IF
+  Name("amtarc01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  OR(2)
+    Difficulty(EASY)
+    Difficulty(NORMAL)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,ARCHER_CALL_SHOT)
+  RESPONSE #50
+    SetGlobal("D0HLA","LOCALS",1)
+END
+
+IF
+  Name("amtarc01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  Difficulty(EASIEST)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #50
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,ARCHER_CALL_SHOT)
+  RESPONSE #100
+    SetGlobal("D0HLA","LOCALS",1)
+END
+
+IF
+  Name("amtpik01",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  DifficultyGT(EASIEST)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpell(Myself,WARRIOR_HARDINESS)
+END
+
+IF
+  Name("d0shield",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  OR(2)
+    Global("D0HLA","LOCALS",0)
+    !GlobalTimerNotExpired("D0OasisHarmony","GLOBAL")
+  OR(2)
+    Global("Harmony","MYAREA",0)
+    !GlobalTimerNotExpired("D0OasisHarmony","GLOBAL")
+  OR(2)
+    Global("Harmony","MYAREA",0)
+    DifficultyGT(EASIEST)
+  GlobalLT("Harmony","MYAREA",2)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobalTimer("D0OasisHarmony","GLOBAL",60)
+    IncrementGlobal("Harmony","MYAREA",1)
+    ForceSpell(Myself,CLERIC_DEFENSIVE_HARMONY)
+END
+
+IF
+  Name("d0shield",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("D0HLA","LOCALS",0)
+  DifficultyGT(EASIEST)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",1)
+    ForceSpellRES("d0oassp5",Myself)
+END
+
+IF
+  Name("d0shield",Myself)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  OR(2)
+    Global("D0HLA","LOCALS",1)
+    Difficulty(EASIEST)
+  GlobalLT("D0HLA","LOCALS",2)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",6)
+    SetGlobal("D0HLA","LOCALS",2)
+    ForceSpellRES("d0bastio",Myself)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  NumCreatureGT([GOODCUTOFF],1)
+  See(SecondNearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  NumCreatureGT([GOODCUTOFF],2)
+  See(ThirdNearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  NumCreatureGT([GOODCUTOFF],3)
+  See(FourthNearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  NumCreatureGT([GOODCUTOFF],4)
+  See(FifthNearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  NumCreatureGT([GOODCUTOFF],5)
+  See(SixthNearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(3)
+    See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+    See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+    See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(3)
+    See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+    See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+    See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+    See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+    See(SecondNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+    See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Heard(NearestMyGroupOfType(Myself),124)
+  !StateCheck(LastHeardBy(Myself),STATE_REALLY_DEAD)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_INVISIBLE)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_CHARMED)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_HELPLESS)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_SLEEPING)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_STUNNED)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_CONFUSED)
+  See(LastAttackerOf(LastHeardBy(Myself)))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Heard(NearestMyGroupOfType,124)
+  See(LastHeardBy(Myself))
+  !See(LastAttackerOf(LastHeardBy(Myself)))
+  !StateCheck(LastHeardBy(Myself),STATE_REALLY_DEAD)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_INVISIBLE)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_CHARMED)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_HELPLESS)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_SLEEPING)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_STUNNED)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_CONFUSED)
+  !HPPercentLT(Myself,50)
+  !Range(NearestEnemyOf(Myself),5)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+  See(LastAttackerOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Range(NearestEnemyOf(Myself),4)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Heard([EVILCUTOFF],124)
+  InMyGroup(LastHeardBy(Myself))
+  !StateCheck(LastHeardBy(Myself),STATE_REALLY_DEAD)
+  LevelGT(LastHeardBy(Myself),10)
+  !HPPercentLT(Myself,40)
+  OR(2)
+    !Range(NearestEnemyOf(Myself),5)
+    Range([EVILCUTOFF],8)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_INVISIBLE)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_CHARMED)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_HELPLESS)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_SLEEPING)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_STUNNED)
+  !StateCheck(LastAttackerOf(LastHeardBy(Myself)),STATE_CONFUSED)
+  See(LastAttackerOf(LastHeardBy(Myself)))
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,73271) // Aye!
+    Continue()
+END
+
+IF
+  !Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+  See([GOODCUTOFF])
+THEN
+  RESPONSE #100
+    MoveToObject([GOODCUTOFF])
+END
+
+IF
+  OR(2)
+    !Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+    !See([GOODCUTOFF])
+  Range(Player1,40)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+END
+
+IF
+  OR(2)
+    !Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+    !See([GOODCUTOFF])
+  !Range(Player1,40)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Range(LastSeenBy(Myself),3)
+  !GlobalTimerNotExpired("d0cast","LOCALS")
+  !GlobalTimerNotExpired("d0bash","LOCALS")
+  Name("d0shield",Myself)
+  GlobalLT("d0bash","LOCALS",3)
+  LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("d0cast","LOCALS",6)
+    SetGlobalTimer("d0bash","LOCALS",60)
+    IncrementGlobal("d0bash","LOCALS",1)
+    FaceObject(LastSeenBy(Myself))
+    ReallyForceSpellRES("d0bash",LastSeenBy(Myself))
+END
+
+IF
+  Range(LastSeenBy(Myself),3)
+  !GlobalTimerNotExpired("d0cast","LOCALS")
+  !GlobalTimerNotExpired("d0bash","MYAREA")
+  Name("d0shield",Myself)
+  GlobalLT("d0bash","LOCALS",3)
+  !LevelGT(Player1,20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("d0cast","LOCALS",6)
+    SetGlobalTimer("d0bash","MYAREA",45)
+    IncrementGlobal("d0bash","LOCALS",1)
+    FaceObject(LastSeenBy(Myself))
+    ReallyForceSpellRES("d0bash",LastSeenBy(Myself))
+END
+
+IF
+  HPPercentLT(Myself,20)
+  OR(2)
+    HasItem("POTN55",Myself) // Potion of Superior Healing
+    Range(NearestMyGroupOfType,25)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    RunAwayFrom(NearestEnemyOf(Myself),45)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !DifficultyGT(EASIEST)
+  !Name("amtgen01",Myself)
+  HPPercentLT(Myself,20)
+  !HasItem("POTN55",Myself) // Potion of Superior Healing
+  !Range(NearestMyGroupOfType,15)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,49767) // No more
+    EscapeArea()
+END
+
+IF
+  !HPPercentLT(Myself,20)
+  !Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(LastSeenBy(Myself),45)
+END
+
+IF
+  !HPPercentLT(Myself,20)
+  Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),45)
+END

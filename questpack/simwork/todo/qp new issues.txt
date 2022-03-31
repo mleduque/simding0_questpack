@@ -1,0 +1,88 @@
+- New mindflayer psionics are bugged, I recommend against installing them.
+
+
+
+Project Image and Simulacrum scripts set to, uh, cast on enemies?
+
+
+AI targetting too random, doesn't go for nearest enough, gets stuck in doors. Trolls shouldn't have such good prioritization. etc.
+
+
+
+
+
+
+
+
+Much like saving the cat in Brynlaw, I would like a chance to save the thief (I forget her name, it's been a while) on the docks when you are doing the final Shadow Thieves quests to get to Spellhold.
+
+Basically she warns you to be on guard, then you watch someone teleport in (note you should have had run ins with vampires either though the random night encounters or Nalia's keep at this point) and stand there like chumps.
+
+That has always bothered me.
+
+
+
+
+
+
+
+I finally convinced Jadarath to go see his family in the Bridge District. However, I went off and did other quests for some time (a couple of days, I think) before going to the Bridge District to check in. While the ensuing dialogue and actions went fine, there were two Jadaraths present. I encouraged him to go after his family, but the other copy remained. If spoken to, he only says "I'm waiting for them." and never does anything else.
+
+
+
+Meronia gave me the bird (I promised to betray Xzar) and I gave it to Xzar telling him it's an assasin.
+Jaheira turns hostile and attacks us.
+
+
+Moiya, a poor woman living in the slums of Athkatla, borrows some money from a person of unknown connections and capabilities, and is worried because she cannot meet the terms of her bargain.  She approaches a party of adventurers, hoping they might intercede on her behalf.  All well and good, and certainly a reasonable outline for the plot of a minor quest to be added to BG2.  But let's take a look at the specifics.
+The amount she has borrowed is 5000 gold pieces.  In Athkatla, 5000 gold is enough to: buy around 700 battle axes. Is Moiya planning to equip an army?  Enough for a party of 6 to spend 500 nights in the noble accomodations of an inn.  Has she decided that her family deserves to sample the high life for a year or so?  Enough to buy a powerful magic item.  Is she really the leader of a band of adventurers about to undertake a major quest, and a little short on cash?  In other words, she has managed to borrow what likely represents several year's worth of her income.  And she must pay it all back - in 6 days.  Not only must she repay what she has borrowed, but the money-lender has demanded a fee of 1250 gold pieces.  An interest rate of 25% per 6 days, or 125% per month, or an annual percentage rate of 1500%!  Celile makes the Mafia look like kindly-hearted and gullable bankers!  Unless Moiya was planning to buy a huge shipment of black lotus, and sell it all in 6 days, none of this makes any sense.
+---
+A husband who spends 5000gp on magical components, makes the mistake of getting caught by the Cowls, who take him and the components ("Hey, this is--uh--evidence, yeah, evidence, we have to confiscate it. Regulations."), leaving his wife with the 6250gp debt, is all quite believable, given Cowled behavior and Celile's interest rates. It would be a trifling matter to tweak Moiya's dialogue to something more like this; all you need to alter is that it was her husband that incurred the debt, not her. She doesn't even need to mention the components; someone whose spouse has just been kidnapped is hardly likely to notice (or care about) the theft of a box of dragon guano.
+---
+The interest is also way to high, but this can be amended by extending the timespan. If she borrowed the money a year or two ago, 25% would be a lot more reasonable (though still steep).
+---
+The only trouble with the "wife of a powerful mage" is that I'd imagine her to be reasonably wealthy, too, as one would imagine that her husband made a tidy sum selling magical items.
+
+
+
+when- after telling aran about Mae'Vars betrayal, I'm supposed to kill him and enter
+his guildhouse, some "Arkanis Gath" just appears out of thin air and kills off my party
+one hit each. I've tried about everything I could think of but there is no way to kill this
+guy before he slaughters the whole party. any ideas?
+
+
+
+
+So, I loaded a savefile before Chapter 4, and got the quest.
+I met Carrack(armed) in the Bridge District and killed those 3 thieves. 
+On entering the house. Carrack said nothing, so I initiated dialogue.
+What he says is "Die, Scum" only.
+This is very seriously bug, at least for my thief character. After giving Renal letter about Mae'Var's treachery no matter what I say, if I accept task to kill him or not, Renal and CO. turn hostile, good old Arkhanis Gath Zoom in and... well, you can imagine what happens next. If I kill Mae'Var before bringing
+letter to Renal he is most dissatisfied but at least doesn't kill me. I didn't try to double cross Renal or 
+Edwin, I was going through the quest  in a classical way. Now, I'm not sure is this caused by the additional Shadow Thieves content or Beyond the Law mod that I also have installed. But if I have to 
+guess I think it is former beacuse neither Kova or Kiyone are not in my party and haven't been previosly. 
+In short, instead Mae'Var and his fellows going hostile it happens with Renal to my horror. 
+Please, any help would be welcome with this nasty thing. 
+
+
+When going back to the slums to find Moiya to discover what terrible thing has happened, the party was confronted by Gorf the Squisher.  He said something to Mazzy about Halflings not knowing how to hit, Mazzy asked if he was talking to her, Gorf said something like "I show you", and proceeded to attack a bystander - at which point the whole dialog began over again.  I let it run a couple times, and it seems it was prepared to repeat indefinately.  I tried breaking the loop by having Mazzy talk to Gorf, but that just began the loop again. 
+
+
+I am, however, quite disappointed in Tanova. Instead of casting spells, she used one instance of Vampire Fear (which didn't appear to do anything), and then attacked physically.
+
+
+http://www.sorcerers.net/cgi-bin/ultimatebb.cgi?/topic/10/5641.html 
+
+
+Party is under the patronage of the Order of the Most Radient Heart.  We're supposed to be going to the Umar Hills to save the Knights.  As soon as we step outside the OTMRH door, I see messages flashing in the text box about the Knights being attacked by the ogres, ettin, etc. 
+Party goes immediately to the Sir Alymar speech which is supposed to take place in the Umar Hills after normal travelling - but I think I'm stil lin the Temple District. 
+
+
+
+Another little problem regarding the Risa-quest: After offering the child to Lehtinan and the interference of paladin Kamir two journal entries called "Locate a caretaker for the orphan, Risa" appeared in the "Done Quests"-section of the journal, namely the regular one from the unmodded game ("I managed to bring together two people who I met in ... raise the girl and they left together.") and the modified Quest Pack-version ("While attempting to indulge in a little slave trading, I inadvertently ... presumably Risa will be happy."). 
+
+
+http://forums.pocketplane.net/index.php/topic,21600.new/boardseen.html#new 
+
+
+    Exactly how long is Meronia supposed to take to appear after the bandits attack my PC and Jaheira?  I waited two weeks gametime, but nothing happened.  I clua consoled Meronia (Jameroni, I think), and she and Jaheira had the chat, and Jaheira left my party, but Jaheira would not disappear from the area (getting stuck a few paces from the PC).  I waited endlessly for Jaheira to return, but no go.  I uninstalled Questpack, reloaded a save from before the bandits attack, and this time Meronia appeared, and events progressed.  After fighting Galvarey, I reinstalled Questpack.  Now, strange things occured.  Reviane (I believe this is the first group of Harpers, who should appear) never appeared, but Dermin did!  Again, after Dermin;s second visit, Jaheira left the party, but again got stuck in the area!  Elminster appeared with the letter, but he would not leave the area either, after giving me the note.  What is going on?  But when I went to the Harper hold, Jaheira was there and the romance progressed correctly - this is as far as I have got in the game.  Not sure if this will have further complications, but it is sure weird

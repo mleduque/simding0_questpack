@@ -1,0 +1,14 @@
+IF
+G("j#im5hobleave",1)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+IF
+!Allegiance(Myself,ENEMY)
+G("j#im5hobhostile",1)
+THEN
+	RESPONSE #100
+		Enemy()
+END

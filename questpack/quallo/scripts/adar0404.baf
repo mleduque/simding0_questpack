@@ -1,0 +1,32 @@
+
+// Spawn hobgoblin friend
+IF
+G("J#im5spawnfriend",1)
+THEN
+RESPONSE #100
+	CreateCreature("J#im5hob",[1234.1317],0) // talking hob
+	CreateCreature("J#im5hb2",[1234.1317],0) // hob who stands around
+	CreateCreature("J#im5hb2",[1234.1317],0)
+	CreateCreature("J#im5hb2",[1234.1317],0)
+	SG("J#im5spawnfriend",2)
+END
+
+// Spawn kobold friend
+IF
+G("J#im5spawnfriend",3)
+THEN
+RESPONSE #100
+	CreateCreature("J#im5kob",[1782.2532],10) //
+	SG("J#im5spawnfriend",4)
+END
+
+// Spawn slave-woman friend
+IF
+G("J#im5spawnfriend",5)
+THEN
+RESPONSE #100
+	CreateCreature("J#im5wom",[981.430],0) // Slave woman
+	CreateCreature("J#im5wog",[981.430],2) // Slave woman guard
+	CreateCreature("J#im5wog",[981.430],8) // Slave woman guard
+	SG("J#im5spawnfriend",6)
+END

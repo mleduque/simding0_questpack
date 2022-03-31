@@ -1,0 +1,47 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Travellers, adventurers, mercenaries—whatever you be—stop a moment, for I would have a word with you.~
+@1    = ~You look out of breath. What have you been doing?~
+@2    = ~Who are you?~
+@3    = ~Why me? Find somebody else to talk to.~
+@4    = ~I have not the time for questions. I will pitch my offer, and you must take it or leave it.~
+@5    = ~Even as we speak, my father lies on his deathbed. One of the cowls is able to cure him, but only for a price that I can scarcely afford.~
+@6    = ~I have but one item which might raise such a sum quickly. Please, look, and see if it interests you.~
+@7    = ~I regret your decision, truly. But now, I must fly. Farewell!~
+@8    = ~A wise decision. You have my gratitude. But now, I must fly. Farewell!~
+@9    = ~Transcendent misdoing compels vexatious travel. You play a dangerous game, prime.~ [d0nosnd]
+@10   = ~What in the—~
+@11   = ~You taint my blade with your touch, filthy mortal. I sense you are not the thief, so I shall spare your life this day, but you will return what is mine.~
+@12   = ~You must mean the sword Wilbur gave me. I'm afraid I no longer have it.~
+@13   = ~This strange red scimitar? Certainly, here you go.~
+@14   = ~I have absolutely no idea what you mean. What blade?~
+@15   = ~Hold, demon. At the very least, tell me of what has transpired here before you cut me down.~
+@16   = ~Begone from this plane. Your kind are not welcome here.~
+@17   = ~You also play a dangerous game, appearing so openly. You are no match for the authorities here.~
+@18   = ~I'd rather not hand anything over to you.~
+@19   = ~Die, fiend!~
+@20   = ~You speak the truth. Pfah! You will fetch it this instant. No. NO. I will fetch it. You will pay for the inconvenience.~
+@21   = ~Stealing from a Demon
+
+It turned out a sword I bought from a man named Wilbur was stolen—somehow—from a Marilith. By the time she reached me, however, I no longer had the weapon, leaving her most displeased.~
+@22   = ~You lie. Pfah! You will hand it over this instant. No. NO. I will take it. You will pay for the insult.~
+@23   = ~Stealing from a Demon
+
+It turned out a sword I bought from a man named Wilbur was stolen—somehow—from a Marilith. I wasn't prepared to give up such a weapon without a fight, though.~
+@24   = ~I will enjoy tearing you apart, prime.~
+@25   = ~Wise, prime. Your life is spared, and I depart to seek bloody vengeance.~
+@26   = ~Stealing from a Demon
+
+It turned out a sword I bought from a man named Wilbur was stolen—somehow—from a Marilith. I returned the weapon to her, but she was most displeased.~
+@27   = ~Foolish, prime. I will enjoy tearing you apart.~
+@28   = ~Yes. Beg, as is your place, and perhaps in return I will feed you a morsel. Or perhaps not, for my patience grows thin. Hand over the weapon at once.~
+@29   = ~I have absolutely no idea what you mean. What weapon?~
+@30   = ~Maybe so, yet here I stand. Do not delay, for my patience grows thin. Hand over the weapon at once.~
+@31   = ~Yes. Beg, as is your place, and perhaps in return I will feed you a morsel. Or perhaps not. I ask once more, and you are lucky to have lived this long.~
+@32   = ~If you're after the sword Wilbur gave me then I'm afraid I no longer have it.~
+@33   = ~You want this strange red scimitar? Certainly, here you go.~
+@34   = ~Do not test my patience, fool. The blood-crimson blade. Hand it over, now.~
+@35   = ~Ah, the sword Wilbur gave me. I'm afraid I no longer have it.~
+@36   = ~As if I would wish to return to this foul place. But my word? I will give no such thing. Hope and pray, knight, for that is all you can do.~
+@37   = ~Hold, demon. Before you depart, I would have your word that you will not return to the prime.~
+@38   = ~You imbecile! What in the Hells possessed you to lure a Marilith into the centre of Athkatla?! Bah! For your own sake you had best not cause any future *disturbances*. The consequences of this one remain to be seen. Good day.~

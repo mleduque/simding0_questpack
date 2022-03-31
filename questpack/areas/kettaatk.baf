@@ -1,0 +1,93 @@
+IF
+  Entered([ANYONE])
+  Global("HeartOfFury","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("d0wizcon",[989.790],13)
+    CreateCreature("d0batho",[644.842],13)
+    CreateCreature("stalke",[644.842],13)
+    CreateCreature("d0batho",[1074.549],13)
+    CreateCreature("stalke",[1074.549],13)
+    CreateCreature("d0wizcon",[750.752],13)
+    CreateCreature("stalke",[750.752],13)
+    CreateCreature("d0wizcon",[834.701],13)
+    CreateCreature("stalke",[834.701],13)
+    CreateCreature("d0wizcon",[964.604],13)
+    CreateCreature("stalke",[964.604],13)
+    CreateCreature("d0wizcon",[1040.556],13)
+    CreateCreature("stalke",[1040.556],13)
+    SetGlobal("TalkedToHlsion","GLOBAL",4)
+END
+
+IF
+  Entered([ANYONE])
+  Difficulty(HARDEST)
+THEN
+  RESPONSE #100
+    CreateCreature("d0wizcon",[989.790],13)
+    CreateCreature("d0batho",[644.842],13)
+    CreateCreature("d0batho",[1074.549],13)
+    CreateCreature("d0wizcon",[750.752],13)
+    CreateCreature("stalke",[834.701],13)
+    CreateCreature("stalke",[964.604],13)
+    CreateCreature("d0wizcon",[1040.556],13)
+    SetGlobal("TalkedToHlsion","GLOBAL",4)
+END
+
+IF
+  Entered([ANYONE])
+  Difficulty(HARD)
+THEN
+  RESPONSE #100
+    CreateCreature("d0batho",[989.790],13)
+    CreateCreature("d0batho",[644.842],13)
+    CreateCreature("d0batho",[1074.549],13)
+    CreateCreature("stalke",[750.752],13)
+    CreateCreature("d0wizcon",[834.701],13)
+    CreateCreature("d0wizcon",[964.604],13)
+    CreateCreature("stalke",[1040.556],13)
+    SetGlobal("TalkedToHlsion","GLOBAL",4)
+END
+
+IF
+  Entered([ANYONE])
+  Difficulty(NORMAL)
+THEN
+  RESPONSE #100
+    CreateCreature("d0wizcon",[989.790],13)
+    CreateCreature("d0batho",[644.842],13)
+    CreateCreature("d0batho",[1074.549],13)
+    CreateCreature("stalke",[750.752],13)
+    CreateCreature("stalke",[834.701],13)
+    CreateCreature("stalke",[964.604],13)
+    CreateCreature("stalke",[1040.556],13)
+    SetGlobal("TalkedToHlsion","GLOBAL",4)
+END
+
+IF
+  Entered([ANYONE])
+  Difficulty(EASY)
+THEN
+  RESPONSE #100
+    CreateCreature("d0wizcon",[989.790],13)
+    CreateCreature("stalke",[834.701],13)
+    CreateCreature("d0batho",[644.842],13)
+    CreateCreature("d0batho",[1074.549],13)
+    CreateCreature("stalke",[834.701],13)
+    CreateCreature("stalke",[964.604],13)
+    SetGlobal("TalkedToHlsion","GLOBAL",4)
+END
+
+IF
+  Entered([ANYONE])
+  Difficulty(EASIEST)
+THEN
+  RESPONSE #100
+    CreateCreature("d0batho",[644.842],13)
+    CreateCreature("d0batho",[1074.549],13)
+    CreateCreature("stalke",[750.752],13)
+    CreateCreature("stalke",[834.701],13)
+    CreateCreature("stalke",[964.604],13)
+    CreateCreature("stalke",[1040.556],13)
+    SetGlobal("TalkedToHlsion","GLOBAL",4)
+END

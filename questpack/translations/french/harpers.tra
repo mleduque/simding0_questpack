@@ -1,0 +1,195 @@
+// -*- coding: cp1252 -*-
+
+@0  = ~Je ne participerai certainement pas au massacre de Ménestrels, <CHARNAME>. Ton chemin s'est écarté du mien, et je ne resterai pas inactive.~
+@1  = ~<CHARNAME>, nous ne devrions pas perdre de temps pour apporter la lame de la maison de Prebek à Bernard. J'espère que telle est toujours ton intention ?~
+@2  = ~Il semble donc que tu n'aies pas l'intention d'accéder à mes demandes. Je t'ai mal jugé, <CHARNAME>, si tu veux faire évoluer une arme conçue pour tuer des Ménestrels - conçue pour me tuer. Je me serais attendu à mieux ! Nous nous reverrons peut-être, car cette lame ne peut pas demeurer incontrôlée.~
+@3  = ~Il semble donc que tu n'aies pas l'intention d'accéder à mes demandes. Je t'ai mal jugé, <CHARNAME>, si tu veux faire évoluer une arme conçue pour tuer des Ménestrels - conçue pour me tuer. Je vais prendre la lame moi même, et faire ce qui doit être fait. Nous ne nous reverrons plus.~
+@4  = ~<CHARNAME>, cette arme de la maison de Prebek... c'est une arme maléfique, et beaucoup de Ménestrels sont tombés par cette lame.~
+@5  = ~<CHARNAME>, cette arme de la maison de Prebek... c'est une arme maléfique, et beaucoup de Ménestrels sont tombés par cette lame.~
+@6  = ~<CHARNAME>, passe-moi cette arme. Celle de la maison de Prebek.~
+@7  = ~C'est ce que je soupçonnais. Je reconnais cette lame... c'est une arme du mal, et beaucoup de Ménestrels y sont succombé.~
+@8  = ~<CHARNAME>, cette arme de chez Prebek... quelque chose me met mal à l'aise. Laissez-moi l'examiner.~
+@9  = ~Je ne sais pas comment elle est arrivée en possession de Prebek, mais je ne peux pas permettre qu'elle continue à voyager sans contrôle, même entre tes mains.~
+@10  = ~Elle doit être détruite. Je demande que nous la remettions aux Ménestrels dès que possible afin qu'ils puissent prendre les mesures nécessaires.~
+@11  = ~Très bien. À qui suggères-tu de la remettre ?~
+@12  = ~Attendez, pourquoi devrait-elle être détruite juste parce qu'elle tue des Ménestrels ? Cela ne sert-il pas simplement à "équilibrer" la propre influence des Ménestrels ?~
+@13  = ~Comme si j'allais abandonner une arme aussi utile juste comme ça ! Je garde le cimeterre, que cela te plaise ou non.~
+@14  = ~Bernard de la Couronne de cuivre devrait pouvoir contacter quelqu'un capable de s'occuper de la question. J'ai confiance en ses capacités, et on peut lui faire confiance.~
+@15  = ~Alors je t'ai mal jugé, <CHARNAME>, si tu veux  faire évoluer une arme conçue pour tuer des Ménestrels - conçue pour me tuer. J'aurais attendu mieux de ta part ! Nous pourrions nous rencontrer à nouveau, car cette lame ne peut pas demeurer incontrôlée.~
+@16  = ~Les Ménestrels *sont* la force d'équilibrage, <CHARNAME>. Cette arme ne prétend pas à la neutralité, elle est malfaisante dans son essence.~
+@17  = ~Vraiment ? Pourquoi une chose qui tient la neutralité en échec est-elle automatiquement mauvaise ? Comment dire que ça ne vient pas de l'autre bout de l'éventail ?~
+@18  = ~Comme si j'allais renoncer à une arme aussi utile juste comme ça, de toutes façons ! Je garde le cimeterre, que ça te plaise ou non.~
+@19  = ~Si c'est comme ça que tu penses, <CHARNAME>, alors il n'y a aucun espoir pour toi. J'ai expliqué ce qui doit être fait. Je te suggère de m'aider.~
+@20  = ~<CHARNAME>, j'aurais préféré qu'on n'en arrive pas là. Je t'offre une autre occasion de livrer Shazzellim afin qu'il soit détruit.~
+@21  = ~Mon opinion reste inchangée. Je ne me séparerai pas d'une arme aussi précieuse.~
+@22  = ~Je suis désolé Jaheira. Tiens, prends la lame, avec mes excuses.~~Je suis désolée Jaheira. Tiens, prends la lame, avec mes excuses.~
+@23  = ~Prends la lame damnée si elle est si importante pour toi. Je ne savais pas que tu ferais un tel tapage !~
+@24  = ~Mange de l'acier, pétasse !~
+@25  = ~Alors je ne peux pas rester inactive - nous devons te la prendre. Si je dois m'opposer à toi, qu'il en soit ainsi !~
+@26  = ~Merci, <CHARNAME>. J'apprécie tes excuses, et je t'offre un paiement équitable pour l'arme. Nous nous reverrons peut-être, le moment venu.~
+@27  = ~Je te remercie, <CHARNAME>, bien que je sois déçu de te voir si peu sensible à mes souhaits. Je t'offre un paiement équitable pour l'arme. Nous nous reverrons peut-être, le moment venu.~
+@28  = ~Gorion aurait honte, <CHARNAME>. Si je dois m'opposer à toi, qu'il en soit ainsi !~
+@29  = ~J'ai quelque chose pour toi, Bernard. Une arme qui mérite une certaine considération.~
+@30  = ~Que veux-tu dire, Jaheira ? Une arme ? Passe-la moi.~
+@31  = ~Tiens.~
+@32  = ~Te la transmettre ? Je ne m'en sépare pas.~
+@33  = ~Maintenant, est-ce que je peux faire autre chose pour vous ?~
+@34  = ~Oh, oh, qu'avons-nous là ? Où avez-vous trouvé ça ?~
+@35  = ~C'était ici même, à Athkatla. Je ne sais pas comment c'est arrivé là.~
+@36  = ~Sa présence ici ne peut être un bon signe. Nous devons faire attention.~
+@37  = ~Alors, je garderai un œil sur toute activité qui pourrait menacer les Ménestrels.~
+@38  = ~Ce serait une bonne chose.~
+@39  = ~Je vais m'occuper de cette arme. Il ne fait aucun doute que Cromwell pourra s'en occuper, mais peut-être que certains des Ménestrels seraient intéressés à l'examiner d'abord.~
+@40  = ~Et je suppose que le paiement est garanti pour vos amis en échange de l'objet. Très bien.~
+@41  = ~Et je suppose que le paiement est garanti pour ton ami en échange de l'objet. Très bien.~~Et je suppose que le paiement est garanti pour ton amie en échange de l'objet. Très bien.~
+@42  = ~Merci, Bernard. Et toi, <CHARNAME>.~
+@43  = ~Un mage nommé Xzar m'a demandé d'entrer dans l'enceinte et de récupérer son compagnon.~
+@44  = ~Je suis <CHARNAME>. Un mage nommé Xzar m'a demandé d'entrer dans l'enceinte et de récupérer son compagnon.~
+@45  = ~Bien, donc ce n'était pas vrai. Un mage nommé Xzar m'a demandé d'entrer dans l'enceinte et de récupérer son compagnon.~
+@46  = ~Un mage nommé Xzar me l'a dit. Il voulait entrer dans l'enceinte et récupérer son compagnon.~
+@47  = ~Hein ? Qu'est-ce que cela a à voir avec nous ? Sommes-nous censés le savoir ?~
+@48  = ~J'aurais pensé que vous, les Ménestrels, sauriez ce qui se passe dans votre propre enceinte.~
+@49  = ~Ne jouez pas à l'idiot avec moi, Ménestrel. Vous savez exactement de quoi je parle.~
+@50  = ~J'ai juste pensé que vous en aviez peut-être entendu parler.~
+@51  = ~Peut-être. Mais si ce n'est pas le cas, je me doutais que vous aimeriez le savoir.~
+@52  = ~Ah. Alors vous collaborez avec lui ? Eh bien, peut-être pouvons-nous trouver un arrangement ?~
+@53  = ~Qu'avez-vous en tête ?~
+@54  = ~Vous me laissez entrer, ou votre sang tachera le sol ?~
+@55  = ~Je ne suis pas intéressé par un quelconque arrangement avec vous. Où est Montaron ?~
+@56  = ~Chut ! Baissez le ton ! Révéler notre existence pourrait nous mettre en danger plus que vous ne le pensez ! Alors... le mage vous a révélé notre secret ? Eh bien, peut-être pouvons-nous trouver un arrangement ?~
+@57  = ~Vous me laissez entrer, ou tout le monde apprendra votre secret ?~
+@58  = ~Dans ce cas, vous avez mal pensé. Je suis désolé, mon seigneur, mais bien que vous nous ayez rendu Renfeld, nous ne savons pas grand-chose de vos intentions, et nos préoccupations ne sont pas les vôtres.~~Dans ce cas, vous avez mal pensé. Je suis désolé, madame, mais bien que vous nous ayez rendu Renfeld, nous ne savons pas grand-chose de vos intentions, et nos préoccupations ne sont pas les vôtres.~
+@59  = ~Les Ménestrels ne souhaitent donc pas coopérer ?~
+@60  = ~Bien. Je vais y aller, alors.~
+@61  = ~Vous nous avez fait une faveur, mais cela ne signifie pas que je peux vous laisser entrer. Écoutez... si vous faites un petit boulot pour nous, je vous laisserai jeter un coup d’œil. Marché conclu ?~
+@62  = ~Patience ! Vous nous avez fait une faveur, mais cela ne signifie pas que je peux vous laisser entrer. Écoutez... si vous faites un petit boulot pour nous, je vous laisserai jeter un coup d’œil. Marché conclu ?~
+@63  = ~Il n'y a qu'une seule façon de le trouver. Vous nous avez fait une faveur, mais cela ne signifie pas que je peux vous laisser entrer. Écoutez... si vous faites un petit boulot pour nous, je vous laisserai jeter un coup d’œil. Marché conclu ?~
+@64  = ~Je suis à la recherche d'un voleur capturé, Montaron.~
+@65  = ~Vous feriez mieux de me donner Montaron, ou vous mourrez tous, tout de suite.~
+@66  = ~Je... ah. Je vois. Vous devriez parler avec Meronia, elle pourra probablement vous aider. J'ai d'autres choses à faire. Avez-vous besoin d'autre chose ?~
+@67  = ~Vous comptez donc recourir à la violence ? Je crains que ce ne soit pas une voie judicieuse. Néanmoins, nous ne sommes pas sans défense~
+@68  = ~Hum, rien à voir avec moi. Parlez à Berinvar ou Meronia... ils pourront peut-être vous aider.~
+@69  = ~Pourriez-vous me faire visiter l'enceinte ?~
+@70  = ~Très bien alors. Je vais y aller.~
+@71  = ~Je, hum, cela n'a pas vraiment de rapport avec moi. Vous devriez plutôt menacer Berinvar ou Meronia si vous y tenez.~
+@72  = ~J'ai été envoyé ici par un mage pour récupérer son compagnon capturé.~
+@73  = ~Je peux peut-être vous aider à agir contre Xzar, si vous le souhaitez.~
+@74  = ~Vous m'avez piégé ! L'oiseau n'était pas Montaron, mais un assassin !~
+@75  = ~Je ne sais pas de quoi vous parlez. Vous avez été autorisé à entrer dans l'enceinte, mais je vous demande de ne pas vous mêler de nos affaires.~
+@76  = ~Et si je vous disais que le mage s'appelle Xzar et qu'il m'envoie chercher Montaron ? Cette information pourrait peut-être vous être utile ?~
+@77  = ~Alors, est-ce que je pourrais vous poser d'autres questions ?~
+@78  = ~Écoutez, donnez-moi Montaron maintenant, ou il y aura des problèmes !~
+@79  = ~Très bien, désolé d'être curieux.~~Très bien, désolé d'être curieuse.~
+@80  = ~Ah, euh... je vois. C'est étrange de votre part de révéler votre allégeance actuelle. Je vous remercie pour l'information. Nous allons y réfléchir et agir en conséquence.~
+@81  = ~Attendez. Je peux vous aider si vous souhaitez agir contre lui.~
+@82  = ~Quand vous voulez.~
+@83  = ~Sachez que les Ménestrels sont reconnaissants que vous n'ayez pas tenté de les tromper.~
+@84  = ~Eh bien, Rylock a manifestement considéré qu'il était sage de vous laisser entrer ; peut-être pouvez-vous nous aider.~
+@85  = ~Je vous demande de nous aider à traduire en justice le mage Xzar. Il nous a causé de nombreux problèmes, et jusqu'à présent, nous n'avons pas trouvé de moyen approprié pour le maîtriser.~
+@86  = ~Je ne jouerai pas l'assassin pour vous !~
+@87  = ~Alors dites-moi, qu'avez vous en tête ?~
+@88  = ~Ça ne m'intéresse pas. Au revoir.~
+@89  = ~En effet. Je peux vous aider pour quelque chose ?~
+@90  = ~Peut-être pas après tout. Merci quand même.~
+@91  = ~Vous pensez nous intimider ? Alors vous ne nous trouverez pas sans défense. Je vous suggère de porter vos menaces et accusations ailleurs.~
+@92  = ~Je... vous suggère de ne pas perdre votre temps à chercher l'intrus. Il n'est peut-être pas sous la forme dont vous vous souvenez.~
+@93  = ~Il n'y a donc pas grand-chose de plus à discuter. Je vous suggère de ne pas perdre votre temps à chercher le voleur, car vous ne mettez en danger que vous-même.~
+@94  = ~L'une de nos assassins se fera passer pour le voleur et frappera au moment opportun. Vous devez l'apporter au magicien.~
+@95  = ~Apporter ? On dirais que vous me parlez d'un paquet.~
+@96  = ~Vous n'êtes pas loin de la vérité. Amenez cet oiseau au magicien et dites-lui que c'est son ami... il trouvera ça crédible.~
+@97  = ~C'est une honte. Mais vous pourriez retrouver votre voleur... J'espère qu'il a appris la sanction de l'ingérence. Vous le trouverez dans la volière à l'étage.~
+@98  = ~C'est dangereux de s'y aventurer sans une identification correcte. Cette amulette devrait suffire.~
+@99  = ~Ça semble trop facile. A quel jeu jouez-vous ?~
+@100 = ~Je vous remercie. Je vais vous débarrasser de Montaron.~
+@101 = ~La volière ? Qu'est-ce qu'il fait là ?~
+@102 = ~Il était temps aussi. Les gens sont tellement maladroits ici.~
+@103 = ~Il n'y a pas de jeu. Le voleur est à vous, à prendre et à traiter comme bon vous semble. Allez-y maintenant, et trouvez-le.~
+@104 = ~Alors allez-y maintenant, et trouvez-le.~
+@105 = ~Vous verrez quand vous le trouverez. Allez-y maintenant.~
+@106 = ~Vous avez été piégé, mais c'était une nécessité. Le nécromancien était gênant, et nous n'avons pas vu de moyen plus facile de le faire disparaître. Votre aide, même involontaire, est appréciée.~
+@107 = ~Vous avez donc décidé de ne pas nous aider, et maintenant vous avez recours à la violence ? Qu'il en soit ainsi. Nous ne sommes pas sans défense.~
+@108 = ~Ah, oui. Ces Ménestrels... eh bien, que leur voulez-vous ?~
+@109 = ~Je n'ai pas découvert ce qui est arrivé à Montaron, mais les Ménestrels m'ont demandé de vous apporter un assassin sous la forme d'un oiseau. Je l'ai ici.~
+@110 = ~Comme je l'ai dit, je vous demanderais d'effectuer un service pour moi, si vous en êtes vaguement capables.~
+@111 = ~Alors les Ménestrels pensent qu'ils peuvent m'assassiner, hein ? Ils prennent Monty, ils assassinent mes deux apprentis, et maintenant ils osent essayer ça ?~
+@112 = ~Eh bien, mettons un terme à leur projet absurde, et rendons-leur la pareille !~
+@113 = ~Et l'assassin est révélé !~
+@114 = ~Hah ! Cela leur apprendra très certainement ! Mais il reste à trouver le vrai Monty.~
+@115 = ~Retournez au quartier général des Ménestrels, et trouvez-le... faites un travail correct cette fois.~
+@116 = ~Vous avez dit que vous saviez quelque chose sur Irenicus. Dites-le-moi !~
+@117 = ~Bien, bien. Je vais y aller.~
+@118 = ~Je préfère une approche un peu moins subtile.~
+@119 = ~Je ne veux plus participer à vos manigances. Trouvez Montaron vous-même.~
+@120 = ~J'ai accepté de vous le dire après que vous m'ayez amené Monty. Alors, allez-y !~
+@121 = ~La façon dont vous gérez ça ne me concerne pas. En vérité, ça pourrait s'avérer très amusant d'assister au carnage d'une bataille au milieu des Ménestrels. Faites ce que vous voulez.~
+@122 = ~Vous avez fait tout ce chemin, ne continuerez-vous pas à aider une cause aussi noble ? Qu'il en soit ainsi. Revenez quand vous aurez reconsidéré la question.~
+@123 = ~Ah, de retour ? Allez-vous m'épargner la peine d'attendre que quelqu'un de moins inepte m'aide ?~
+@124 = ~Je suis prêt à faire ce travail.~~Je suis prête à faire ce travail.~
+@125 = ~Alors arrêtez de perdre du temps. Le pauvre Monty souffre là-dedans !~
+@126 = ~De nouveau de retour ? Avez-vous réussi votre mission, ou avez-vous l'intention de me faire perdre plus de temps ?~
+@127 = ~Les Ménestrels n'ont pas coopéré, alors j'ai dû tous les tuer.~
+@128 = ~Montaron est mort. J'ai trouvé son corps.~
+@129 = ~Je n'ai pas encore appris où se trouve Montaron.~
+@130 = ~Mais qu'en est-il de Monty ? Est-il en sécurité ?~
+@131 = ~Je n'ai pas encore appris où il se trouve.~
+@132 = ~Alors arrêtez de perdre du temps. Il souffre là-dedans !~
+@133 = ~Il est... mort ? Monty ? Ces maudits Ménestrels doivent payer pour ça !~
+@134 = ~Ils sont déjà morts, vous n'avez pas à vous inquiéter.~
+@135 = ~Alors, massacrons-les ensemble !~
+@136 = ~C'est votre problème, pas le mien. Nos relations sont terminées.~
+@137 = ~J'ai trouvé Montaron comme vous le demandiez. Maintenant, dites-moi ce que vous savez sur Irénicus.~
+@138 = ~Je vous le dirai une fois que nous aurons fait payer les Ménestrels ! Ils ne s'en tireront pas comme ça !~
+@139 = ~Hmm, j'aurais pu m'attendre à ce que vous adoptiez une approche aussi directe. Eh bien, au moins cela a été divertissant.~
+@140 = ~Je suppose que je vais prendre congé maintenant. Oh, et...euh, donnez-moi le corps. Je dois le ramener au labo. Pauvre, pauvre Monty !~
+@141 = ~Oui, cela pourrait s'avérer agréable. Allez-y, alors, et nous commencerons la bataille. Oh, et...euh, donnez-moi le corps. Je dois le ramener au labo après.~
+@142 = ~Bah. Je ne vais pas défier les Ménestrels tout seul. Peut-être une autre fois, quand mes expériences seront terminées. Oh, et...euh, donnez-moi le corps. Je dois le ramener au labo pour l'instant. Pauvre, pauvre Monty.~
+@143 = ~Eh bien, c'était intéressant. Mais au moins, les Ménestrels ont payé pour ce qu'ils ont fait.~
+@144 = ~Je suppose que je vais prendre congé maintenant et retourner à mon travail. Pauvre, pauvre Monty !~
+@145 = ~Découvrir ce qui est arrivé à Montaron.
+
+La ruse des Ménestrels a été à la hauteur de leur réputation. Je les ai aidés à faire croire à Xzar que l'oiseau que je lui ai apporté était Montaron, alors qu'en réalité c'était un assassin Ménestrel. Le passé de Zhentarim de Xzar en a fait une cible, et j'ai été mené tout du long, une duperie. Je ne sais pas ce qu'il est advenu de Montaron, bien qu'il semble probable que le malfaisant voleur soit mort.~
+@146 = ~Je n'ai rien contre vous. Cet imbécile a péri, comme il se doit.~
+@147 = ~Maintenant que nous avons terminé, quel était son crime ? Quel est le motif de ce meurtre ?~
+@148 = ~Et vais-je recevoir un paiement pour ma participation dans cette affaire ?~
+@149 = ~Les Ménestrels sont vraiment rusés. Vous semblez être des personnes avec qui il serait intéressant de s'associer.~
+@150 = ~Maintenant que nous avons terminé, peut-être pourriez-vous répondre à quelques questions pour moi.~
+@151 = ~Ne l'avez-vous pas trouvé étrange ? Il espionnait les Ménestrels, un acte intolérable, auquel vous avez eu raison de coopérer avec nous pour y mettre fin.~
+@152 = ~Mesurez bien vos paroles, car vous êtes aussi coupable que nous. N'a-t-il pas semblé suspect ? Ne saviez-vous pas ce qu'il était ?~
+@153 = ~Mesurez bien vos paroles, car si vous avez bien servi, nous ne devons rien. Nous savions que vous aviez consenti à l'aider. N'a-t-il pas semblé suspect ? Ne saviez-vous pas ce qu'il était ?~
+@154 = ~Ne croyez pas que nous ayons l'intention de vous révéler quoi que ce soit. Vous connaissez peut-être le crime du fou, mais nous ne devons rien de plus.~
+@155 = ~Bien que vous ayez bien servi, ne nous considérez pas comme des alliés, car nous ne devons rien. Nous savions que vous aviez consenti à l'aider. N'a-t-il pas semblé suspect ? Ne saviez-vous pas ce qu'il était ?~
+@156 = ~Il ne pouvait pas faire profil bas avec une attitude aussi flamboyante, et nous l'avons rapidement repéré. Vous n'avez fait qu'aider à l'inévitable.~
+@157 = ~Vous avez bien servi, et votre accord initial pour l'aider est oublié dans la foulée de votre assistance. Partez, et nous espérons que vos prochaines transactions avec les Ménestrels seront plus agréables.~
+@158 = ~Découvrir ce qui est arrivé à Montaron.
+
+La ruse des Ménestrels a été à la hauteur de leur réputation. Je les ai aidés à faire croire à Xzar que l'oiseau que je lui ai apporté était Montaron, alors qu'en réalité c'était un assassin Ménestrel. Je ne sais pas ce qu'il est advenu de Montaron, bien qu'il semble probable que le malfaisant voleur soit mort.~
+@159 = ~Faites vite. Nos portes ne restent pas ouvertes longtemps.~
+@160 = ~Les Ménestrels sont impitoyables dans leur justice, <CHARNAME>, mais si Xzar faisait ce qu'elle disait, il méritait son sort.~
+@161 = ~Ah, le vieux truc de l'oiseau qui est en réalité l'assassin n'échoue jamais. Cousin Belar a joué ce tour à mon grand oncle Tookar, même si, pour être exact, il n'avait pas l'intention de tuer quelqu'un. Il s'est transformé d'un colibri en sa forme originale, comme une blague le jour de l'anniversaire de mon oncle... et a tellement fait sursauter le vieux gnome qu'il a fait une crise cardiaque sur le coup. Les anciens étaient tellement bouleversés qu'ils ont transformé Belar en colibri pour de bon. Mais il a aimé ça et s'est envolé (cette branche de la famille était toujours un peu bizarre dans la tête, si vous voyez ce que je veux dire)... pour se faire manger par un griffon une semaine plus tard, paraît-il. Ça, c'est la justice si jamais il y en a eu une, je suppose.~
+@162 = ~Ah, encore vous. Vous me suivez ? Peu importe, vous pouvez maintenant être témoin du succès de mes expériences !~
+@163 = ~Monty sera de nouveau à moi. Maudits soient les Ménestrels !~
+@164 = ~Vous voyez ? Son corps commence à se réanimer ! Victoire !~
+@165 = ~Jaheira insiste pour que je détruise une arme.
+
+Jaheira a exigé que l'arme que nous avons trouvée chez Prebek soit détruite. Je dois la remettre à Bernard de la Couronne de cuivre, qui s'en occupera.~
+@166 = ~Jaheira insiste pour que je détruise une arme.
+
+Sur l'insistance de Jaheira, j'ai apporté le cimeterre de la maison de Prebek à Bernard, qui l'a pris pour le transmettre à quelqu'un qui pourrait le détruire.~
+@167 = ~Découvrir ce qui est arrivé à Montaron.
+
+J'ai déjoué le plan des Ménestrels d'assassiner Xzar, en l'avertissant du danger et en lui permettant de tuer l'assassin. Trouver Montaron reste cependant un problème et je dois retourner au quartier général des Ménestrels pour le faire.~
+@168 = ~Découvrir ce qui est arrivé à Montaron.
+
+J'ai aidé le mage Xzar à récupérer le corps de son compagnon Montaron au quartier général des Ménestrels, massacrant au passage les Ménestrels. Xzar semblait plus qu'amusé par la tournure des événements.~
+@169 = ~Découvrir ce qui est arrivé à Montaron.
+
+J'ai aidé le mage Xzar à récupérer le corps de son compagnon Montaron au quartier général de Ménestrels. Par contre, j'ai refusé de tuer les Ménestrels, et cela a semblé lui déplaire.~
+@170 = ~Découvrir ce qui est arrivé à Montaron.
+
+J'ai aidé le mage Xzar à récupérer le corps de son compagnon Montaron au quartier général des Ménestrels, puis à abattre les Ménestrels en guise de représailles. Xzar semblait plus qu'amusé par la tournure des événements.~
+@171 = ~La disparition de Xzar.
+
+J'ai rencontré une fois de plus le mage fou Xzar, cette fois-ci chez Prebek. Il cherchait à réanimer le cadavre de Montaron, mais il semble qu'il y ait des raisons pour que de tels pouvoirs ne soient accordés que par les dieux, car sa création insensée l'a attaqué, et il a été consumé par sa propre magie.~
+@172 = ~Uhh...uhhhhh...uuuaaaAARRGHH!~
+@173 = ~Monty ! Monty ! Nooonnn !~
+@174 = ~Je vais encore vous sauver !~

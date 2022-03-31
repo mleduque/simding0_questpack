@@ -1,0 +1,1893 @@
+IF
+  Global("D0Rayic","GLOBAL",2)
+  !AreaCheck("ar5500")
+  !Dead("Rayic")
+  AreaCheck("ar0317")
+  AreaCheckObject("ar0316","Rayic")
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToPoint([400.700])
+END
+
+IF
+  Global("D0Rayic","GLOBAL",2)
+  !AreaCheck("ar5500")
+  !Dead("Rayic")
+  AreaCheck("ar0316")
+  AreaCheckObject("ar0317","Rayic")
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToPoint([350.700])
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,50)
+  HasItem("potn55",Myself) // Potion of Superior Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn55",Myself) // Potion of Superior Healing
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,50)
+  HasItem("potn52",Myself) // Potion of Extra Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn52",Myself) // Potion of Extra Healing
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !StateCheck(Myself,STATE_HASTED)
+  HasItem("potn14",Myself) // Oil of Speed
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn14",Myself) // Oil of Speed
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  HasItem("potn10",Myself) // Potion of Invisibility
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn10",Myself) // Potion of Invisibility
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn03",Myself) // Potion of Hill Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn03",Myself) // Potion of Hill Giant Strength
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn04",Myself) // Potion of Frost Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn04",Myself) // Potion of Frost Giant Strength
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn04",Myself) // Potion of Frost Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn03",Myself) // Potion of Hill Giant Strength
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn12",Myself) // Potion of Stone Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn12",Myself) // Potion of Stone Giant Strength
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See("Rayic")
+  !Dead("Rayic")
+  !StateCheck("Rayic",STATE_PANIC)
+  !HasBounceEffects("Rayic")
+  !LevelGT("Rayic",10)
+  HasItem("wand02",Myself) // Wand of Fear
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand02","Rayic") // Wand of Fear
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See("Rayic")
+  !Dead("Rayic")
+  !HasBounceEffects("Rayic")
+  !StateCheck("Rayic",STATE_STUNNED)
+  HasItem("wand04",Myself) // Wand of Paralyzation
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand04","Rayic") // Wand of Paralyzation
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See("Rayic")
+  !Dead("Rayic")
+  !HasBounceEffects("Rayic")
+  HasItem("wand06",Myself) // Wand of Frost
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand06","Rayic") // Wand of Frost
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See("Rayic")
+  !Dead("Rayic")
+  !StateCheck("Rayic",STATE_SLEEPING)
+  !HasBounceEffects("Rayic")
+  !LevelGT("Rayic",10)
+  HasItem("wand08",Myself) // Wand of Sleep
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand08","Rayic") // Wand of Sleep
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See("Rayic")
+  !Dead("Rayic")
+  !LevelGT("Rayic",10)
+  !HasBounceEffects("Rayic")
+  HasItem("wand09",Myself) // Wand of Polymorphing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand09","Rayic") // Wand of Polymorphing
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See("Rayic")
+  !Dead("Rayic")
+  HasItem("wand10",Myself) // Wand of Monster Summoning
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand10",Myself) // Wand of Monster Summoning
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Class(Myself,CLERIC_ALL)
+  See("Rayic")
+  !Dead("Rayic")
+  OR(2)
+    !CheckStatGT("Rayic",50,RESISTMAGICFIRE)
+    !HasImmunityEffects("Rayic")
+  HasItem("wand11",Myself) // Wand of the Heavens
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand11","Rayic") // Wand of the Heavens
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  HasItem("ring05",Myself) // Ring of Invisibility
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    UseItem("ring05",Myself) // Ring of Invisibility
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  StateCheck(Myself,STATE_SILENCED)
+  HaveSpell(WIZARD_VOCALIZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_MINOR_SPELL_DEFLECTION)
+  See("Rayic")
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_MINOR_SPELL_DEFLECTION)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_MINOR_SPELL_TURNING)
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_MINOR_SPELL_TURNING)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_SPELL_SHIELD)
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPELL_SHIELD)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_SPELL_TURNING)
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_STONE_SKIN)
+  CheckStatLT(Myself,1,STONESKINS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_SPIRIT_ARMOR)
+  CheckStatGT(Myself,1,ARMORCLASS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPIRIT_ARMOR)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_GHOST_ARMOR)
+  CheckStatGT(Myself,2,ARMORCLASS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_GHOST_ARMOR)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  !StateCheck(Myself,STATE_MIRRORIMAGE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_INVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_INVISIBILITY)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_SHIELD)
+  !HasBounceEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHIELD)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_ARMOR)
+  CheckStatGT(Myself,6,ARMORCLASS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_ARMOR)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_SPELL_THRUST)
+  Global("pscript_SpellThrust","LOCALS",0)
+  OR(2)
+    HasBounceEffects("Rayic")
+    HasImmunityEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_SPELL_THRUST)
+    Wait(2)
+    SetGlobal("pscript_SpellThrust","LOCALS",1)
+END
+
+IF
+  !Dead("Rayic")
+  Global("pscript_SpellThrust","LOCALS",1)
+  See("Rayic")
+  OR(2)
+    HasBounceEffects("Rayic")
+    HasImmunityEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_SpellThrust","LOCALS",2)
+END
+
+IF
+  !Dead("Rayic")
+  Global("pscript_SpellThrust","LOCALS",1)
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  !HasImmunityEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_SpellThrust","LOCALS",0)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_WARDING_WHIP)
+  Global("pscript_WHIP","LOCALS",0)
+  OR(2)
+    HasBounceEffects("Rayic")
+    HasImmunityEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_WARDING_WHIP)
+    Wait(2)
+    SetGlobal("pscript_WHIP","LOCALS",1)
+END
+
+IF
+  !Dead("Rayic")
+  Global("pscript_WHIP","LOCALS",1)
+  See("Rayic")
+  OR(2)
+    HasBounceEffects("Rayic")
+    HasImmunityEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_WHIP","LOCALS",2)
+END
+
+IF
+  !Dead("Rayic")
+  Global("pscript_WHIP","LOCALS",1)
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  !HasImmunityEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_WHIP","LOCALS",0)
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HPLT("Rayic",50)
+  HPGT("Rayic",20)
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_FINGER_OF_DEATH)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_SUMMON_NISHRUU)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SUMMON_NISHRUU)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HPGT("Rayic",30)
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_MAZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_MAZE)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_CONE_OF_COLD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_CONE_OF_COLD)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !Range("Rayic",30)
+  HaveSpell(WIZARD_ICE_STORM)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_ICE_STORM)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !Range("Rayic",30)
+  HaveSpell(WIZARD_CLOUDKILL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_CLOUDKILL)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !Range("Rayic",20)
+  HaveSpell(WIZARD_FIREBALL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_FIREBALL)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !Range("Rayic",30)
+  HaveSpell(WIZARD_DEATH_FOG)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_DEATH_FOG)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HPGT("Rayic",30)
+  HaveSpell(WIZARD_PRISMATIC_SPRAY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_PRISMATIC_SPRAY)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  !General("Rayic",HUMANOID)
+  !StateCheck("Rayic",STATE_HELPLESS)
+  HaveSpell(WIZARD_HOLD_MONSTER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_HOLD_MONSTER)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_DEATH_SPELL)
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_DEATH_SPELL)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_EMOTION_HOPELESSNESS)
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_EMOTION_HOPELESSNESS)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HPGT("Rayic",20)
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_DISINTEGRATE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_DISINTEGRATE)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_BURNING_HANDS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_BURNING_HANDS)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_COLOR_SPRAY)
+  LevelLT("Rayic",8)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_COLOR_SPRAY)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_MAGIC_MISSILE)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_SLEEP)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_SLEEP)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_CHROMATIC_ORB)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_CHROMATIC_ORB)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_LARLOCH_MINOR_DRAIN)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_LARLOCH_MINOR_DRAIN)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_BLINDNESS)
+  !StateCheck("Rayic",STATE_BLIND)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_BLINDNESS)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  General("Rayic",HUMANOID)
+  !StateCheck("Rayic",STATE_HELPLESS)
+  HaveSpell(WIZARD_CHARM_PERSON)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_CHARM_PERSON)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_AGANNAZAR_SCORCHER)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_MELF_ACID_ARROW)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_MELF_ACID_ARROW)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_RAY_OF_ENFEEBLEMENT)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_STRENGTH)
+  CheckStatLT(Myself,16,STR)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_STRENGTH)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_FLAME_ARROW)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_FLAME_ARROW)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_LIGHTNING_BOLT)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_POLYMORPH_OTHER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_POLYMORPH_OTHER)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  !HasBounceEffects("Rayic")
+  HaveSpell(WIZARD_FLESH_TO_STONE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell("Rayic",WIZARD_FLESH_TO_STONE)
+    Continue()
+END
+
+IF
+  !Dead("Rayic")
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("Rayic")
+  HaveSpell(WIZARD_IMPROVED_HASTE)
+  !StateCheck(Myself,STATE_HASTED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_IMPROVED_HASTE)
+END
+
+IF
+  !Dead("Rayic")
+  See("Rayic")
+THEN
+  RESPONSE #50
+    RunAwayFrom("Rayic",30)
+    Continue()
+  RESPONSE #50
+    EquipMostDamagingMelee()
+    Attack("Rayic")
+    Continue()
+  RESPONSE #50
+    Continue()
+END
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,50)
+  HasItem("potn55",Myself) // Potion of Superior Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn55",Myself) // Potion of Superior Healing
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,50)
+  HasItem("potn52",Myself) // Potion of Extra Healing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn52",Myself) // Potion of Extra Healing
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_HASTED)
+  HasItem("potn14",Myself) // Oil of Speed
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn14",Myself) // Oil of Speed
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  HasItem("potn10",Myself) // Potion of Invisibility
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn10",Myself) // Potion of Invisibility
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn03",Myself) // Potion of Hill Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn03",Myself) // Potion of Hill Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn04",Myself) // Potion of Frost Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn04",Myself) // Potion of Frost Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn04",Myself) // Potion of Frost Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn03",Myself) // Potion of Hill Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  CheckStatLT(Myself,18,STR)
+  HasItem("potn12",Myself) // Potion of Stone Giant Strength
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn12",Myself) // Potion of Stone Giant Strength
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !StateCheck(LastSeenBy(Myself),STATE_PANIC)
+  !HasBounceEffects(LastSeenBy(Myself))
+  !LevelGT(LastSeenBy(Myself),10)
+  HasItem("wand02",Myself) // Wand of Fear
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand02",NearestEnemyOf(Myself)) // Wand of Fear
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !HasBounceEffects(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HasItem("wand04",Myself) // Wand of Paralyzation
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand04",NearestEnemyOf(Myself)) // Wand of Paralyzation
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !HasBounceEffects(LastSeenBy(Myself))
+  HasItem("wand06",Myself) // Wand of Frost
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand06",NearestEnemyOf(Myself)) // Wand of Frost
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !StateCheck(LastSeenBy(Myself),STATE_SLEEPING)
+  !HasBounceEffects(LastSeenBy(Myself))
+  !LevelGT(LastSeenBy(Myself),10)
+  HasItem("wand08",Myself) // Wand of Sleep
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand08",NearestEnemyOf(Myself)) // Wand of Sleep
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  !LevelGT(LastSeenBy(Myself),10)
+  !HasBounceEffects(LastSeenBy(Myself))
+  HasItem("wand09",Myself) // Wand of Polymorphing
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand09",NearestEnemyOf(Myself)) // Wand of Polymorphing
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(2)
+    Class(Myself,LONG_BOW)
+    Class(Myself,BARD_ALL)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  HasItem("wand10",Myself) // Wand of Monster Summoning
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand10",Myself) // Wand of Monster Summoning
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Class(Myself,CLERIC_ALL)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  OR(2)
+    !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGICFIRE)
+    !HasImmunityEffects(LastSeenBy(Myself))
+  HasItem("wand11",Myself) // Wand of the Heavens
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,31971) // uses a wand
+    UseItem("wand11",NearestEnemyOf(Myself)) // Wand of the Heavens
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  HasItem("ring05",Myself) // Ring of Invisibility
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    UseItem("ring05",Myself) // Ring of Invisibility
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  StateCheck(Myself,STATE_SILENCED)
+  HaveSpell(WIZARD_VOCALIZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_MINOR_SPELL_DEFLECTION)
+  OR(4)
+    See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+    See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+    See(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_MINOR_SPELL_DEFLECTION)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(4)
+    See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+    See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+    See(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+  HaveSpell(WIZARD_MINOR_SPELL_TURNING)
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_MINOR_SPELL_TURNING)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(4)
+    See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+    See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+    See(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+  HaveSpell(WIZARD_SPELL_SHIELD)
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPELL_SHIELD)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  OR(4)
+    See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+    See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+    See(NearestEnemyOfType([0.0.0.BARD_ALL]))
+    See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+  HaveSpell(WIZARD_SPELL_TURNING)
+  !HasBounceEffects(Myself)
+  !HasImmunityEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPELL_TURNING)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_STONE_SKIN)
+  CheckStatLT(Myself,1,STONESKINS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SPIRIT_ARMOR)
+  CheckStatGT(Myself,1,ARMORCLASS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SPIRIT_ARMOR)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_GHOST_ARMOR)
+  CheckStatGT(Myself,2,ARMORCLASS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_GHOST_ARMOR)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  !StateCheck(Myself,STATE_MIRRORIMAGE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_INVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_INVISIBILITY)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SHIELD)
+  !HasBounceEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHIELD)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_ARMOR)
+  CheckStatGT(Myself,6,ARMORCLASS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_ARMOR)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  HaveSpell(WIZARD_SPELL_THRUST)
+  Global("pscript_SpellThrust","LOCALS",0)
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_SPELL_THRUST)
+    Wait(2)
+    SetGlobal("pscript_SpellThrust","LOCALS",1)
+END
+
+IF
+  Global("pscript_SpellThrust","LOCALS",1)
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_SpellThrust","LOCALS",2)
+END
+
+IF
+  Global("pscript_SpellThrust","LOCALS",1)
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  !HasBounceEffects(LastSeenBy(Myself))
+  !HasImmunityEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_SpellThrust","LOCALS",0)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  HaveSpell(WIZARD_WARDING_WHIP)
+  Global("pscript_WHIP","LOCALS",0)
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_WARDING_WHIP)
+    Wait(2)
+    SetGlobal("pscript_WHIP","LOCALS",1)
+END
+
+IF
+  Global("pscript_WHIP","LOCALS",1)
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_WHIP","LOCALS",2)
+END
+
+IF
+  Global("pscript_WHIP","LOCALS",1)
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  !HasBounceEffects(LastSeenBy(Myself))
+  !HasImmunityEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("pscript_WHIP","LOCALS",0)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HPLT(LastSeenBy(Myself),50)
+  HPGT(LastSeenBy(Myself),20)
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+  HaveSpell(WIZARD_SUMMON_NISHRUU)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SUMMON_NISHRUU)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HPGT(LastSeenBy(Myself),30)
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_MAZE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_MAZE)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_CONE_OF_COLD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself),30)
+  HaveSpell(WIZARD_ICE_STORM)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_ICE_STORM)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself),30)
+  HaveSpell(WIZARD_CLOUDKILL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_CLOUDKILL)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself),20)
+  HaveSpell(WIZARD_FIREBALL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FIREBALL)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself),30)
+  HaveSpell(WIZARD_DEATH_FOG)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DEATH_FOG)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HPGT(LastSeenBy(Myself),30)
+  HaveSpell(WIZARD_PRISMATIC_SPRAY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_PRISMATIC_SPRAY)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  !General(LastSeenBy(Myself),HUMANOID)
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  HaveSpell(WIZARD_HOLD_MONSTER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_HOLD_MONSTER)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_DEATH_SPELL)
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HaveSpell(WIZARD_EMOTION_HOPELESSNESS)
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_EMOTION_HOPELESSNESS)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HPGT(LastSeenBy(Myself),20)
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_DISINTEGRATE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DISINTEGRATE)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_BURNING_HANDS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_COLOR_SPRAY)
+  LevelLT(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_COLOR_SPRAY)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_SLEEP)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_SLEEP)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_CHROMATIC_ORB)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_CHROMATIC_ORB)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_LARLOCH_MINOR_DRAIN)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_LARLOCH_MINOR_DRAIN)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_BLINDNESS)
+  !StateCheck(LastSeenBy(Myself),STATE_BLIND)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_BLINDNESS)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  General(LastSeenBy(Myself),HUMANOID)
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  HaveSpell(WIZARD_CHARM_PERSON)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_CHARM_PERSON)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_MELF_ACID_ARROW)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_RAY_OF_ENFEEBLEMENT)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_STRENGTH)
+  CheckStatLT(Myself,16,STR)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_STRENGTH)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_FLAME_ARROW)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_POLYMORPH_OTHER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POLYMORPH_OTHER)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  HaveSpell(WIZARD_FLESH_TO_STONE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FLESH_TO_STONE)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_IMPROVED_HASTE)
+  !StateCheck(Myself,STATE_HASTED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_IMPROVED_HASTE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #50
+    RunAwayFrom(LastSeenBy(Myself),30)
+    Continue()
+  RESPONSE #50
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+    Continue()
+  RESPONSE #50
+    RunAwayFrom(LastSeenBy(Myself),30)
+    Continue()
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  OR(3)
+    !Detect(NearestEnemyOf(Myself))
+    !HaveAnySpells()
+    HPPercentLT(Myself,30)
+  Dead("Rayic")
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  RandomNum(6,2)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  RandomNum(6,3)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  RandomNum(6,4)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  RandomNum(6,5)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  RandomNum(6,6)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END

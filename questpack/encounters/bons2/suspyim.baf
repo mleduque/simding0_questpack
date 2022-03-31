@@ -1,0 +1,10 @@
+IF
+  Range(Player1,12)
+  !Global("SUMISTExist","AR5006",1)
+THEN
+  RESPONSE #100
+    CreateVisualEffect("SPFLESH2",[235.690])
+    Wait(2)
+    SetGlobal("SUMISTExist","AR5006",1)
+    CreateCreature("SUMIST",[235.690],9)
+END

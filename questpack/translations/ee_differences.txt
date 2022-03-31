@@ -1,0 +1,11 @@
+slaver.tra/@57 - Faerûn
+d0quest.tra/@99948 - Thayan
+d0quest.tra/@106
+           /@108
+           /@143
+           /@144
+           /@167
+           /@212
+           /@302
+           /@315
+           /@317 - No item-usability information

@@ -1,0 +1,20 @@
+// The Carrion Crawler Script
+
+// So that Quallo starts the dialogue about finding his friend for him.
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	G("J#im5friendhunt",0)
+THEN
+	RESPONSE #100
+		SG("J#im5friendhunt",1)
+		ActionOverride("quallo",StartDialogueNoSet([ANYONE]))
+END
+
+// So that the crawler doesn't go hostile.
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	GGT("J#im5friendhunt",0)
+THEN
+	RESPONSE #100
+		NoAction()
+END

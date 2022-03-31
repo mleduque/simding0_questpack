@@ -1,0 +1,17 @@
+IF
+  Dead("ppsanik")
+  Global("DeadChat","LOCALS",0)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("DeadChat","LOCALS",1)
+    StartDialogNoSet([PC])
+END
+
+IF
+  See("ppsanik")
+  !Dead("ppsanik")
+THEN
+  RESPONSE #100
+    Attack("ppsanik")
+END

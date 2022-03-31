@@ -1,0 +1,10 @@
+IF
+  !Global("D0SpawnFunDog","AR0300",1)
+  Global("Reveal0300","AR0300",1)
+  Global("CloseDoorsFirstTime","AR0300",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SpawnFunDog","AR0300",1)
+    CreateCreature("d0fundog",[2754.2462],2)
+    Continue()
+END

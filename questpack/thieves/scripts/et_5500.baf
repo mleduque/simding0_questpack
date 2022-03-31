@@ -1,0 +1,10 @@
+IF
+  PartyHasItem("d0qprayi")
+  !Dead("Rayic")
+  GlobalLT("D0Rayic","GLOBAL",9)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Rayic","GLOBAL",9)
+    CreateCreatureObjectDoor("dcowl1",Player1,0,0,0)
+    Continue()
+END

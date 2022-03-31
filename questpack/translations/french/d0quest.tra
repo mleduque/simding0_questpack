@@ -1,0 +1,427 @@
+// -*- coding: cp1252 -*-
+
+
+@101 = ~Lettre falsifiée~
+@102 = ~C'est la lettre que vous a remise Mae'Var pour incriminer Renal Bloodscalp. Elle détaille le meurtre d'un voleur de l'ombre de haut rang par les assassins des Lames de la Nuit.~
+@103 = ~Larell~
+
+@105 = ~Gants d'attaque sournoise~
+@106 = ~Gants d'attaque sournoise
+Ces rares gants enchantés ne sont délivrés qu'aux assassins de haut rang des Lames de la Nuit. On dit que le modèle original était celui d'un assassin maniant la magie à Sembia, et qu'il a depuis été copié par diverses guildes à travers le continent. Quoi qu'il en soit, ces gants signifient que les principaux assassins des lames de la Nuit sont de dangereux ennemis avec lesquels il faut compter.
+
+CARACTÉRISTIQUES :
+
+Capacité d'équipement :
+Augmente de 1 le multiplicateur d'attaque sournoise
+
+Non utilisable par :
+ Guerrier
+ Druide
+ Clerc
+ Mage
+ Barde~
+
+@107 = ~Anneau d'invisibilité d'Aran~
+@108 = ~Anneau d'invisibilité d'Aran
+Cette anneau a été donné par le chef des Voleurs de l'ombre, Aran Linvail. Sa création a été commandée dans le passé par un des principaux voleurs de l'ombre comme moyen d'échapper à des situations embarrassantes ; malheureusement, il n'a pas pu aider son porteur lorsque Linvail a gravi l'échelle politique.
+
+CARACTÉRISTIQUES :
+
+Spécial : lance Invisibilité sur le porteur 3 fois par jour
+
+Non utilisable par :
+ Tueur de magiciens~
+
+@109 = ~Assassin Lame de la Nuit~
+@110 = ~C'est l'oiseau qui vous a été donné par Meronia. C'est un assassin qui doit être livré au mage peu méfiant, Xzar.~
+
+@114 = ~Célile~
+@115 = ~Vite, partons avant que ses compagnons ne se réveillent !~
+@116 = ~Ça vous apprendra à ne pas rembourser vos dettes !~
+@117 = ~Recouvreur de créances~
+@118 = ~Moiya~
+@119 = ~Maman ! Tu es blessé ? !~
+@120 = ~Tuons-la et sortons d'ici !~
+@121 = ~Lorick~
+@122 = ~Sarem~
+@123 = ~Dahlia~
+@124 = ~Bésamen~
+@125 = ~Baïsera~
+@126 = ~Alyce~
+@127 = ~Dagny~
+@128 = ~Sahen~
+@129 = ~Nazariel~
+@130 = ~Arrêtez vous, intrus !~~Arrêtez vous, intruse !~ [d0qpnaz1]
+@131 = ~Phylactère de Nazariel~
+@132 = ~Après avoir suivi le tunnel étroit pendant un certain temps, vous remarquez qu'il commence à se diriger plus profondément sous la surface. Il finit par s'élargir, révélant une lumière devant vous.~
+@133 = ~Indigo~
+@134 = ~Jadarath~
+@135 = ~Phluafae~
+@136 = ~Apprenti Cagoulé~
+@137 = ~C'est le phylactère qui contient l'essence de l'ancien liche Nazariel, dont le dernier vœu était de visiter la surface et d'être libre.~
+@138 = ~Glands de Phluafae~
+@139 = ~Bien qu'ils soient similaires en apparence aux glands de dryade que vous avez donnés à Phluafae, les enveloppes dures de ces graines sont de teinte légèrement plus foncée. Peut-être que cette nuance est une conséquence de leur but malveillant.~
+@140 = ~Gemme en forme de larme~
+@141 = ~Larme de Dryade~
+@142 = ~Une pierre pâle et violette. Elle brille avec une faible lumière intérieure.~
+@143 = ~Acquis à un prix sanglant et impitoyable, peu d'aventuriers auraient les tripes pour porter un tel trophée. Dernière larme d'une dryade, cristallisée par son dernier souffle refroidissant, cette pierre brille d'une lumière surnaturelle. Ceux qui la portent se sentent touchés par son héritage de beauté, mais cette bénédiction a un prix très élevé, car la gemme représente la fragilité de la vie de sa victime, écrasée par une main cruelle. Vous pouvez l'attacher autour de votre cou si vous le souhaitez.
+
+CARACTÉRISTIQUES :
+
+Capacité d'équipement :
+ Immunité contre les charmes
+ Charisme : +1
+ Constitution : -1
+
+Non utilisable par :
+ Tueur de magiciens
+ Personnage d'alignement bon~
+
+@144 = ~Il s'agit de la chevalière portée par Rayic Gethras. Elle porte un enchantement mineur, mais à part cela, elle a une valeur purement sentimentale.
+
+CARACTÉRISTIQUES :
+
+Capacité d'équipement :
+ Jets de sauvegarde : +1
+
+Non utilisable par :
+ Tueur de magiciens~
+@145 = ~Chevalière de Rayic~
+@146 = ~Escorte Cagoulée~
+@147 = ~Soldats, baissez vos armes !~
+@148 = ~Aux armes, soldats ! L'enfant de Bhaal nous a trahis !~
+@149 = ~Liste de Potions de Jadarath ~
+@150 = ~Voici la liste des potions qui vous a été donnée par Jadarath. Il a accepté de payer chaque potion de la liste que vous lui ramenez.
+
+1. Potion d'invisibilité
+2. Huile de rapidité
+3. Potion de résistance au froid
+4. Potion d'explosions
+5. Potion de force morale
+6. Potion d'isolation
+7. Potion de blocage de magie
+8. Potion de rétrovision
+9. Potion de pouvoir
+10. Potion de perspicacité
+11. Potion de liberté
+12. Potion de statue~
+
+@151 = ~Vous avez gagné +2 points de dextérité.~
+@152 = ~Vous avez gagné +30% de résistance aux armes tranchantes.~
+@153 = ~Vous avez gagné +2 points de THAC0.~
+@154 = ~Vous avez gagné +30% de résistance à la magie.~
+@155 = ~Vous avez gagné +2 points d'intelligence.~
+@156 = ~Votre alignement est passé Loyal Bon.~
+@157 = ~Votre alignement est passé Neutre Bon.~
+@158 = ~Votre alignement est passé Chaotique Bon.~
+@159 = ~Votre alignement est passé Loyal Mauvais.~
+@160 = ~Votre alignement est passé Neutre Mauvais.~
+@161 = ~Votre alignement est passé Chaotique Mauvais.~
+@162 = ~Votre alignement est passé Loyal Neutre.~
+@163 = ~Votre alignement est passé Neutre Strict.~
+@164 = ~Votre alignement est passé Chaotique Neutre.~
+@165 = ~Vous avez perdu les capacités spéciales accordées par votre dieu.~
+
+@166 = ~Bénédiction de Jadarath~
+@167 = ~Cette ceinture vous a été donnée par Jadarath, qui est parti depuis pour des royaumes inconnus. Imprégnée d'une petite partie de son étrange magie, elle peut à l'occasion sauver son porteur d'une mort presque certaine. Bien que maître de la magie de singulière façon, Jadarath n'était malheureusement pas un tailleur expérimenté, et la ceinture est peu pratique et inconfortable à porter.
+
+CARACTÉRISTIQUES :
+
+Spécial : lance Guérison sur le porteur une fois par jour
+
+Non utilisable par :
+ Tueur de magiciens~
+
+@175 = ~Garde du corps Pirate ~
+@176 = ~Trédor~
+
+@178 = ~Sidhe~
+@179 = ~Janie~
+@180 = ~Cette potion protégera le buveur de toutes les attaques du regard, y compris celles des basilics, des ombres des roches, des vampires et d'autres créatures. L'effet durera pendant 10 rounds ou jusqu'à ce qu'il soit dissipé.~
+@181 = ~Regard de désespoir~
+@182 = ~Contingence - Invisibilité améliorée~
+@183 = ~Aiiiiee !!!~
+@184 = ~Je vous plante, mes sœurs, dans notre bosquet sacré.~
+@185 = ~Levez-vous et soyez libres !~
+@186 = ~Quoi ?~
+@187 = ~Qu'est-ce qui se passe ?!~
+@188 = ~Cania... ?~
+@189 = ~Elyme... ?~
+@190 = ~Ulene... ?~
+@191 = ~Je suis abandonnée ! Nous sommes toutes abandonnées !~
+
+@192 = ~Ne risque pas ta vie pour quelques documents politiques des Lames de la Nuit. Mae'Var a des droits sur eux. Les Lames sont apparemment ses alliés secrets.~
+@193 = ~Mae'Var courtise les Lames de la Nuit pour affermir sa position et trahir Renal. Un plan très habile, mais j'ai vu clair dans son jeu.~
+@194 = ~Les Lames sont une guilde de brigands, de bandits de grand chemin et de malandrins basés dans le cloaque de Port-Ponant. Ils veulent apparemment s'agrandir.~
+@195 = ~Oui, j'ai les preuves dont vous avez besoin dans ces écrits. Il semble que Mae'Var ait fait des avances aux Lames de la nuit.~
+@196 = ~Vous avez mordu à l'appât, vous êtes tombé dans le piège. Maintenant vous êtes vulnérable, et mes assassins sont en place ! Que les Lames de la nuit vous emportent !~ ~Vous avez mordu à l'appât, vous êtes tombée dans le piège. Maintenant vous êtes vulnérable, et mes assassins sont en place ! Que les Lames de la nuit vous emportent !~
+@197 = ~Heu, bonjour. Je... je t'ai fait suivre et... et je suis navré pour cette histoire avec Ama. Mon informateur m'a dit que ses cohortes portaient l'insigne des Lames de la Nuit.~
+@198 = ~Une lettre de Mae'Var adressée aux assassins des Lames de la Nuit, leur demandant la mort de Renal Bloodscalp. C'est exactement de ce genre de preuves dont Renal a besoin.~
+@199 = ~Porteur de bouclier Téthyrien~
+@200 = ~Bastion~
+@201 = ~Coup de bouclier~
+@202 = ~Alors que vous vous frayez un chemin dans cette section particulière des cavernes lugubres, un faible écho sonore provenant de la paroi rocheuse attire votre attention. Il y a un passage caché quelque part dans l'obscurité.~
+@203 = ~Vous trouvez de nombreuses marques de brûlures sur la roche. Les traces de Kua-Toa sont présentes autour du point où le tunnel s'élargit, mais s'arrêtent brusquement peu après.~
+@204 = ~C'est le corps de Montaron, le compatriote de Xzar le magicien. Il semble que les Ménestrels l'aient caché pour que vous puissiez livrer l'assassin à Xzar à la place.~
+@205 = ~Magicien sanctionné~
+@206 = ~Lémure~
+@207 = ~Cœur de diable~
+@208 = ~Ce cœur de diable est étrangement frais au toucher. Un certain nombre de pointes entourent le noyau charnu de l'organe, et vous devez faire très attention à ne pas faire couler le sang sur leurs pointes acérées comme des rasoirs. Le bruit sourd et rythmique qu'il produit comme s'il continuait de battre est difficile à supporter et, de temps en temps, il fait un mouvement soudain au sein de votre paquetage, comme s'il essayait de s'échapper animé d'une vie propre.~
+@209 = ~A défaut d'une solution plus évidente, vous alimentez avec le cœur du démon l'une des nombreuses bouches qui sont enchâssées dans la chair de la structure, en espérant qu'il se révélera un substitut acceptable au cœur du démon utilisé auparavant. Un instant plus tard, la sphère frissonne et vous pouvez la sentir s'activer.~
+@210 = ~Adrozel~
+@211 = ~Kram~
+@212 = ~Cimeterre +1, Shazzellim
+Ce cimeterre est d'assez mauvaise qualité, mais sous sa surface se cachent une grande puissance et le mal. Créé dans le seul but de tuer des Ménestrels, Shazzellim est plus que capable d'accomplir cette tâche. Sur un coup de la lame, un Ménestrel doit faire un jet de sauvetage contre les sorts ou mourir. Fabriquée par un Sorcier rouge de Thay, l'épée a également la capacité de vocaliser, c'est pourquoi elle a souvent été donnée aux Guerriers-mages au service des Sorciers. Il va sans dire que la possession de cette épée n'est pas très bien vu par les Ménestrels.
+
+CARACTÉRISTIQUES :
+
+Capacité d'équipement :
+ Vocaliser
+
+Capacité de combat :
+ Tout Ménestrel touché doit réussir un jet de sauvegarde contre les sorts à -2 ou mourir
+
+TAC0 : +1
+Dégâts : 1D8 +1
+Type de dégâts : tranchant
+Poids : 3
+Facteur de vitesse : 4
+Type de compétence : Cimeterre/Wakizashi/Ninja-To
+Type : arme à 1 main
+Force Requise : 10
+
+Non utilisable par :
+ Clerc
+ Mage
+ Voleur
+ Maître des bêtes
+ Personnage d'alignement bon~
+@213 = ~Jaheira recule de dégoût devant l'arme. "Cette lame a tué de nombreux Ménestrels, <CHARNAME>. Je ne la manierai pas."~ [GAM_47]
+@214 = ~La Larme de Bhaal ayant été retirée, il n'y a plus rien d'intéressant ici.~
+@215 = ~Nooon ! Pourquoi ça ne marche pas ? !~
+
+@220 = ~Faldorn étant mort, et son lien avec le bosquet ayant été violemment rompu, la terre elle-même semble laisser échapper un faible gémissement. Il semble probable que votre mépris pour les rituels druidiques ait fait des ravages.~
+@221 = ~Alors que votre esprit se bat contre les sinistres magies que Quallo contrôle - ou qui le contrôlent - votre corps se transforme en une hideuse créature de cauchemar. Sans défense, vous frappez vos anciens compagnons, tandis qu'une voix murmure silencieusement dans votre esprit : "Ils t'emmèneraient loin de moi, mon ami. Ils ne sont pas des amis. Ils meurent."
+
+Votre esprit est horrifié lorsque chacun de vos camarades est frappé par ce que vous avez si longtemps combattu pour garder enfoui. L'essence de Bhaal. Quels inestimables pouvoirs la créature qui vous a piégé possède t'elle pour si facilement vous contrôler, ainsi que votre souillure berserk ? Peut-être ne le saurez-vous jamais.
+
+Vous êtes calme, et bien que vous voudriez qu'il en soit autrement, vous ne pouvez que regarder avec un intérêt perplexe alors que la dernière once de vie de vos amis jaillit de leurs corps mutilés. Votre vision s'estompe et vous pouvez distinguer la silhouette floue de Quallo qui se penche sur leurs formes ventrues et commence à se baigner dans leur sang. Une fois de plus, sa voix repoussante et sinistre résonne dans vos pensées : "Amis pour toujours, nous le serons. Et tu es un ami puissant, en fait."
+
+L'éternité attend, mais il n'y aura plus d'exploits légendaires ni de grandes richesses. Pour vous, il n'y a que cet égout humide et ce vieux fou.~~Alors que votre esprit se bat contre les sinistres magies que Quallo contrôle - ou qui le contrôlent - votre corps se transforme en une hideuse créature de cauchemar. Sans défense, vous frappez vos anciens compagnons, tandis qu'une voix murmure silencieusement dans votre esprit : "Ils t'emmèneraient loin de moi, mon amie. Ils ne sont pas des amis. Ils meurent."
+
+Votre esprit est horrifié lorsque chacun de vos camarades est frappé par ce que vous avez si longtemps combattu pour garder enfoui. L'essence de Bhaal. Quels inestimables pouvoirs la créature qui vous a piégé possède t'elle pour si facilement vous contrôler, ainsi que votre souillure berserk ? Peut-être ne le saurez-vous jamais.
+
+Vous êtes calme, et bien que vous voudriez qu'il en soit autrement, vous ne pouvez que regarder avec un intérêt perplexe alors que la dernière once de vie de vos amis jaillit de leurs corps mutilés. Votre vision s'estompe et vous pouvez distinguer la silhouette floue de Quallo qui se penche sur leurs formes ventrues et commence à se baigner dans leur sang. Une fois de plus, sa voix repoussante et sinistre résonne dans vos pensées : "Amis pour toujours, nous le serons. Et tu es une amie puissante, en fait."
+
+L'éternité attend, mais il n'y aura plus d'exploits légendaires ni de grandes richesses. Pour vous, il n'y a que cet égout humide et ce vieux fou.~
+@222 = ~LE PRIX DE L'AMITIÉ~
+@223 = ~Femme esclave~
+@224 = ~Kobold solitaire~
+@225 = ~Hobgobelin~
+@226 = ~Mercenaire Hobgobelin ~
+@227 = ~Bibliothécaire~
+@228 = ~Histoire de Valombre, Vol. 1~
+@229 = ~Histoire de Valombre, Vol. 2~
+@230 = ~Histoire de Valombre, Vol. 3~
+@231 = ~Histoire de Valombre, Vol. 4~
+@232 = ~Histoire de Valombre, Vol. 5~
+@233 = ~Histoire de Valombre, Vol. 6~
+@234 = ~Histoire de Valombre, Vol. 7~
+@235 = ~Histoire de Valombre, Vol. 8~
+@236 = ~Histoire de Valombre, Vol. 9~
+@237 = ~Histoire de Valombre, Vol. 10~
+@238 = ~Histoire de Valombre, Vol. 11~
+@239 = ~Histoire de Valombre, Vol. 12~
+@240 = ~Histoire de Valombre, Vol. 13~
+@241 = ~Histoire du Drow, Vol. 1~
+@242 = ~Histoire du Drow, Vol. 2~
+@243 = ~Histoire du Nord, Vol. 1~
+@244 = ~Histoire du Nord, Vol. 2~
+@245 = ~Histoire du Nord, Vol. 3~
+@246 = ~Histoire du Nord, Vol. 4~
+@247 = ~Histoire du Nord, Vol. 5~
+@248 = ~Histoire du Nord, Vol. 6~
+@249 = ~Histoire du Nord, Vol. 7~
+@250 = ~Histoire du Nord, Vol. 8~
+@251 = ~Histoire du Nord, Vol. 9~
+@252 = ~Histoire du Nord, Vol. 10~
+@253 = ~Histoire d'Eauprofonde, Vol. 1~
+@254 = ~Histoire d'Eauprofonde, Vol. 2~
+@255 = ~Histoire d'Eauprofonde, Vol. 3~
+@256 = ~Histoire d'Eauprofonde, Vol. 4~
+@257 = ~Histoire d'Eauprofonde, Vol. 5~
+@258 = ~Histoire d'Eauprofonde, Vol. 6~
+@259 = ~Mais ce n'est pas ce que je vous ai demandé de faire, n'est-ce pas ? J'avais besoin des preuves avant de pouvoir ordonner la mort de Mae'Var ! Maintenant, il semblera que j'ai fabriqué les preuves après coup !~
+@260 = ~Mais j'ai les preuves de la trahison de Mae'Var juste ici !~
+@261 = ~Carrack~
+@262 = ~Lillian~
+@263 = ~Cora~
+@264 = ~Arris~
+@265 = ~Tortionnaire~
+@266 = ~Carrack n'a manifestement pas été loin dans sa tentative de vengeance. Son corps a été pillé et abandonné, peut-être en guise d'avertissement à d'autres personnes.~
+@267 = ~Œil~
+@268 = ~Abraxxi~
+@269 = ~Arkanis, Kachiko et d'autres, nos meilleurs assassins, se joindront à vous lorsque vous entrerez dans les catacombes de Bodhi. Je veux être sûr que Bodhi ne sera plus jamais dans mes pattes~
+@270 = ~Chaîne de contingence - Protection contre les armes magiques~
+@271 = ~Chaîne de contingence - Renvoi de sorts~
+@272 = ~Chaîne de contingence - Détection faussée~
+@273 = ~Déclencheur de sort - Bouclier de feu~
+@274 = ~Chaîne de contingence - Peau de pierre~
+@275 = ~Spectre~
+@276 = ~Le châtiment des regrets~
+@277 = ~Bête éclipsante~
+@278 = ~Bête éclipsante majeure~
+
+@279 = ~Globe de ténèbres~
+@280 = ~Globe de ténèbres (Sans école/non spécifié)
+Niveau : 1
+Portée : champ de vision
+Durée : 1 round/ deux niveaux du lanceur de sort
+Temps d'incantation : 2
+Zone d’effet : 1 créature
+Jet de sauvegarde : annule
+
+Cette capacité innée des elfes des profondeurs provoque la cécité sur une cible qui dure un round par deux niveaux du lanceur de sort, ou jusqu'à ce qu'elle soit dissipée.~
+
+@281 = ~Globe de ténèbres supérieur~
+@282 = ~Globe de ténèbres supérieur (Sans école/non spécifié)
+Niveau : 1
+Portée : champ de vision
+Durée : 1 round/ deux niveaux du lanceur de sort
+Temps d'incantation : 2
+Zone d’effet : 1 créature
+Jet de sauvegarde : annule
+
+Cette capacité innée des elfes des profondeurs provoque la cécité sur une cible qui dure un round par deux niveaux du lanceur de sort, ou jusqu'à ce qu'elle soit dissipée.~
+
+@283 = ~Lumières dansantes~
+@284 = ~Lumières dansantes (Sans école/non spécifié)
+Niveau : 1
+Portée : champ de vision
+Durée : 3 rounds
+Temps d'incantation : 2
+Zone d’effet : 1 créature
+Jet de sauvegarde : annule
+
+Cette capacité innée des elfes noirs provoque la confusion chez une cible pendant 3 rounds.~
+@285 = ~Affecté par Le Lumières dansantes.~
+@286 = ~Distrait.~
+
+@287 = ~Lueur féerique~
+@288 = ~Lueur féerique (Sans école/non spécifié)
+Niveau : 1
+Sphère: Combat
+Portée : 0
+Durée : 6 rounds
+Temps d'incantation : 1
+Zone d’effet : 1 créature
+Jet de sauvegarde : aucun
+
+Ce sort entoure la cible d'une lueur blanche qui lui donne un malus de -2 à la classe d'armure.~
+@289 = ~Pédoncule oculaire détruit~
+@290 = ~Œil central endommagé~
+@291 = ~Vampire âgé~
+@292 = ~Vampire ancien~
+@293 = ~Au secours !~
+@294 = ~J'ai besoin d'aide !~
+@295 = ~Je ne peux pas accepter ça !~
+@296 = ~Plus jamais !~
+@297 = ~Mage Yuan-Ti~
+@298 = ~Regard de confusion~
+@299 = ~Regard de domination~
+@300 = ~Regard de nausée~
+@301 = ~Cimeterre rouge +3~
+@302 = ~Ce cimeterre, d'un rouge terne, n'est fait d'aucun métal que l'on reconnaisse. Bien qu'il soit légèrement plus grand et plus lourd que ce que l'on pourrait attendre d'une telle arme, cela n'empêche pas son équilibre parfait ; il semble presque conçu pour déclencher une rapide rafale de coups tout en permettant au manieur de garder un contrôle total.
+
+CARACTÉRISTIQUES :
+
+Capacité de combat : Chaque coup réussi donne au porteur un bonus de +1 au TAC0 pour 1 round
+
+TAC0 : +3
+Dégâts : 1D8 +3
+Type de dégât : tranchant
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : cimeterre/Wakizashi/Ninja-To
+Type: à une main
+Force nécessaire : 10
+Non utilisable par :
+ Clerc
+ Mage
+ Voleur~
+@303 = ~Wilbur~
+@304 = ~Soldat Sythillisien~
+@305 = ~Fekir~
+@306 = ~Porte astrale~
+@307 = ~Claire était mariée à Sanik le Marchand. Il allait l'emmener avec lui sur le prochain bateau, mais il ne comptait pas sur la nature de Dame Galvena. Elle a envoyé un assassin à sa poursuite et a enlevé Claire sur les quais où elle l'attendait.~
+@308 = ~Claire attendait à l'extérieur de la maison de guilde avec son petit ami, mais Dame Galvena a envoyé un assassin après lui, et elle a emmené Claire à l'intérieur de la maison de guilde. Elle l'a enfermée à l'intérieur.~
+@309 = ~Capitaine de la garde~
+@310 = ~Ormand~
+@311 = ~Archer elfe~
+@312 = ~Traqueur elfe~
+@313 = ~Prêtre elfe~
+@314 = ~Maître des bêtes elfe~
+@315 = ~Arc long de la cour des elfes +3
+Cet arc en bois d'if est plus une œuvre d'art qu'une arme de guerre ; de fines gravures courent le long de la surface polie du bois, et la corde aux reflets dorée chante quand on bande l'arc. Il a servi d'arc de cérémonie à la cour des elfes pendant mille ans, ce qui n'est pas si long en terme d'existence elfique. Tous les cinquante ans il était remis à quelqu'un qui avait rendu un grand service, celui-ci choisissant la fois suivante à qui il devait être remis. Il y a deux siècles, un humain, Yin Pon, sauva un prince elfe et en récompense fut choisi comme porteur de l'arc, qu'il emporta à la Porte de Baldur, où celui-ci fut perdu.
+Bien que l'artisanat sans faille se prête à la précision, l'arc est un objet précieux et symbolique, et ce n'est qu'avec la bénédiction elfique d'un manieur légitime que la véritable magie de cet arc se révèle.
+
+CARACTÉRISTIQUES :
+
+TAC0 : +4
+Poids : 2
+Facteur de vitesse : 4
+Type de compétence : arc long
+Type : arme à 2 mains
+Force nécessaire : 6
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur
+ Moine
+ Kensaï
+ Cavalier~
+@316 = ~Dard tranquille +2~
+@317 = ~Fléchette +2 : "Dard tranquille"
+Parce qu'elles contiennent une toxine magique capable de rendre une victime inconsciente, les fléchettes de ce type sont très prisées des voleurs et des assassins. Ils attendent dans l'ombre leurs victimes sans méfiance et visent pour une rapide perforation du cou avant de trancher la gorge de la victime, de lui voler ses biens ou de réaliser tout autre objectif.
+
+CARACTÉRISTIQUES :
+
+Spécial : La fléchette revient instantanément dans la main de l'utilisateur après avoir été lancée.
+
+Capacité de combat : La cible doit réussir un jet de sauvegarde contre la mort à -2 ou s'endormir pour un round.
+
+TAC0 : +2
+Dégâts : 1D3 + 2
+Type de dégâts : projectile (perforant)
+Poids : 0
+Facteur de vitesse : 0
+Type de compétence : fléchette
+Type :arme à 1 main
+Non utilisable par :
+ Clerc
+ Kensaï
+ Cavalier~
+@318 = ~Construction de magicien~
+@319 = ~Chaîne de contingence - Peau de pierre~
+@320 = ~Chaîne de contingence - Déviation de sorts~
+@321 = ~Chaîne de contingence - Bouclier de feu rouge~
+@322 = ~Déclencheur de sort - Déclenché~
+@323 = ~Déclencheur de sort - Détection faussée~
+@324 = ~Déclencheur de sort - Protection contre les armes magiques~
+@325 = ~Déclencheur de sort - Globe d'Invulnerabilité~
+@326 = ~Contingence - Peau de pierre~
+@327 = ~Gnoll disco secret découvert !~
+@328 = ~Disco Gnoll aime la musique disco !~
+
+@99948 = ~Trouvez des preuves de la trahison de Mae'Var.
+
+L'assistant de Mae'Var n'est autre que le mage thayien que j'ai rencontré sur la Côte des Épées. Il m'a chargé de tuer un certain Rayic Gethras, un mage cagoulé qui vit dans un immeuble gris de trois étages à l'extrémité ouest du District des Docks. Je saurai que Gethras est chez lui si sa porte est ouverte. Quand Rayic sera mort, j'apporterai à Edwin sa chevalière comme preuve.~
+
+@99906 = ~Les œufs d'Adalon détenus par la Maison Despana ?
+
+D'après une vieille drow dans la taverne, les œufs du dragon argenté sont probablement conservés dans l'enceinte de la Maison Despana, et nulle part ailleurs. Aucun doute que l'accès sera difficile.~
+
+@99902 = ~Entrer dans l'Asile.
+
+J'ai convaincu une des courtisanes de me dire ce qui est arrivé à Claire. Il semble que Dame Galvena n'ait pas été très impressionnée par le fait que Sanik allait partir avec elle, et elle a donc décidé de faire enfermer Claire dans la maison de la guilde et d'envoyer un assassin s'occuper de Sanik.~

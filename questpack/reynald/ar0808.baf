@@ -1,0 +1,15 @@
+IF
+  Global("D0Reynald","GLOBAL",8)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Reynald","GLOBAL",9)
+    CreateCreatureObject("d0kaypal",Player1,0,0,0)
+END
+
+IF
+  GlobalGT("D0Reynald","GLOBAL",9)
+  InMyArea("d0kaypal")
+THEN
+  RESPONSE #100
+    ActionOverride("d0kaypal",DestroySelf())
+END

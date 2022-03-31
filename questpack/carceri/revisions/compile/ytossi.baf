@@ -1,0 +1,231 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		Shout(151)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	OR(3)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+		Allegiance(Myself,EVILBUTBLUE)
+THEN
+	RESPONSE #100
+		Shout(151)
+		Enemy()
+END
+
+IF
+	HitBy([GOODCUTOFF],CRUSHING)
+THEN
+	RESPONSE #100
+		Shout(151)
+		Continue()
+END
+
+IF
+	See([GOODCUTOFF])
+	Allegiance(Myself,ENEMY)
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		Shout(151)
+		Continue()
+END
+
+IF
+	Heard([ANYONE],151)
+	InMyGroup(LastHeardBy(Myself))
+	!Class(Myself,INNOCENT)
+	OR(2)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	Heard([ANYONE],151)
+	InMyGroup(LastHeardBy(Myself))
+	OR(2)
+		Allegiance(Myself,GOODBUTBLUE)
+		Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],151)
+	InMyGroup(LastHeardBy(Myself))
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+
+IF
+	General(Myself,HUMANOID)
+	HPPercentLT(Myself,20)
+	HPGT(Myself,1)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("Whined","LOCALS",0)
+	See(NearestMyGroupOfType)
+	Allegiance(Myself,ENEMY)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,46151) // help!
+		Shout(153)
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,49763) // I require assistance
+		Shout(153)
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,49764) // Defend me!
+		Shout(153)
+	RESPONSE #50
+		SetGlobal("Whined","LOCALS",1)
+		DisplayStringHead(Myself,49765) // Slay my attacker!
+		Shout(153)
+END
+
+IF
+	Heard([ANYONE],153)
+	InMyGroup(LastHeardBy(Myself))
+	!HaveAnySpells()
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),30)
+END
+
+IF
+	General(Myself,HUMANOID)
+	BreakingPoint()
+	Global("Panic","LOCALS",0)
+THEN
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49766) // I can't take this
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49767) // No more
+	RESPONSE #50
+		SetGlobal("Panic","LOCALS",1)
+		DisplayStringHead(Myself,49768) // Mercy!
+END
+
+IF
+	HitBy(Myself,CRUSHING)
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDead(Myself,ILLUSION_DEATH)
+		Wait(1)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("invite","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("invite","LOCALS",1)
+		PlaySound("SNAKE01")
+		DisplayStringHead(Myself,70942) // Hsss!  Your end is nigh, foolish godling!!
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("prep","LOCALS",0)
+	Global("invite","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("prep","LOCALS",1)
+		SetGlobalTimer("resetprep","LOCALS",1000)
+		DisplayString(Myself,2469) // Spell Trigger - Protection from Magical Weapons
+		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+		DisplayString(Myself,40248) // Spell Trigger - True Sight
+		ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+	GlobalTimerExpired("resetprep","LOCALS")
+	Global("prep","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("prep","LOCALS",0)
+		SetGlobal("cloud","LOCALS",0)
+END
+
+IF
+	HPPercentLT(Myself,50)
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("Heal","LOCALS")
+	RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Heal","LOCALS",SIX_MINUTES)
+		ForceSpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	CheckStatLT(Myself,1,STONESKINS)
+	RandomNum(2,1)
+	!GlobalTimerNotExpired("StoneSkin","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("StoneSkin","LOCALS",FOUR_MINUTES)
+		ForceSpell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+	OR(2)
+		See([GOODCUTOFF.0.0.LONG_BOW])
+		See([GOODCUTOFF.0.0.SORCERER])
+	!Range(LastSeenBy(Myself),15)
+	!CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("cloud","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("cloud","LOCALS",1000)
+		SpellNoDec(LastSeenBy(Myself),WIZARD_CLOUDKILL)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!DifficultyLT(NORMAL)
+	!Class(LastSeenBy(Myself),CLERIC_ALL)
+	NumCreatureLT([ENEMY.UNDEAD],4)
+	RandomNum(2,1)
+	!GlobalTimerNotExpired("Undead","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Undead","LOCALS",THREE_MINUTES)
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_ANIMATE_DEAD)
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_ANIMATE_DEAD)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END

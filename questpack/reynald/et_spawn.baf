@@ -1,0 +1,52 @@
+IF
+  FallenPaladin(Player1)
+  Global("D0FallenMsg","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0FallenMsg","GLOBAL",1)
+    SetGlobalTimer("D0FallenMsg2","GLOBAL",TWO_DAYS)
+    Continue()
+  RESPONSE #100
+    SetGlobal("D0FallenMsg","GLOBAL",1)
+    SetGlobalTimer("D0FallenMsg2","GLOBAL",ONE_DAY)
+    Continue()
+  RESPONSE #100
+    SetGlobal("D0FallenMsg","GLOBAL",1)
+    SetGlobalTimer("D0FallenMsg2","GLOBAL",THREE_DAYS)
+    Continue()
+END
+
+IF
+  !FallenPaladin(Player1)
+  Global("D0FallenMsg","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0FallenMsg","GLOBAL",0)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("D0FallenMsg2","GLOBAL")
+  FallenPaladin(Player1)
+  OR(7)
+    AreaCheckObject("AR0020",Player1)
+    AreaCheckObject("AR0300",Player1)
+    AreaCheckObject("AR0400",Player1)
+    AreaCheckObject("AR0700",Player1)
+    AreaCheckObject("AR0800",Player1)
+    AreaCheckObject("AR0900",Player1)
+    AreaCheckObject("AR1000",Player1)
+  !InParty("Keldorn")
+  OR(2)
+    !InParty("Anomen")
+    Alignment("Anomen",CHAOTIC_NEUTRAL)
+  Global("D0FallenMsg","GLOBAL",1)
+  Global("KaylFallenPaladinPlot","GLOBAL",0)
+  GlobalLT("D0FallenMsg","GLOBAL",2)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0FallenMsg","GLOBAL",2)
+    CreateCreatureObjectOffScreen("D0PALMSG",Player1,0,0,0)
+    ActionOverride("D0PALMSG",StartDialogueNoSet(Player1))
+END

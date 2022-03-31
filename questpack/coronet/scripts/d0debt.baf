@@ -1,0 +1,25 @@
+IF
+  Name("d0debt",Myself)
+  NumTimesTalkedTo(0)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("D0Attack","GLOBAL",2)
+  Global("Leave","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Leave","LOCALS",1)
+    EscapeArea()
+END
+
+IF
+  Global("D0Attack","GLOBAL",3)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END

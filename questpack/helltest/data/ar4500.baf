@@ -1,0 +1,12 @@
+IF
+  Global("C7Geas","GLOBAL",3)
+  Global("TalkedToSarevok","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("C7Geas","GLOBAL",4)
+    StartCutSceneMode()
+    CutSceneId(Player1)
+    CreateCreatureDoor("hellgen2",[1980.1520],8)
+    StartDialogueNoSet(Player1)
+    EndCutSceneMode()
+END

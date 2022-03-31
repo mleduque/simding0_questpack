@@ -1,0 +1,159 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~I warned you, dear <PRO_GIRLBOY>. Fool that you are, you have not delivered the acorns to Windspear Hills. They shall be mine!~
+@1    = ~You have made me very cross. I shall crush your eyeballs like little figs!~ [SUDRY01]
+@2    = ~I warned you, dear <PRO_GIRLBOY>. Someone with a clever head on their shoulders would have let me have my way instead of being impertinent. The time has arrived for your comeuppance.~
+@3    = ~Ho, there, mortal! A fair <PRO_GIRLBOY> like you, wandering in the woods... whatever are you about?~ [SUDRY02]
+@4    = ~I'm on an urgent mission! Out of my way!~
+@5    = ~You're the one doing the talking. Is there something you want of me?~
+@6    = ~Uh. Wandering in the woods...? What are you doing on my land?~
+@7    = ~Shh... there may be trolls about.~
+@8    = ~Dearest <PRO_GIRLBOY>! I welcome your return!~
+@9    = ~Except... I can feel my sister, Vaelasa, on the wind, still as lively and perfect as ever!~
+@10   = ~Begone, you tease! Begone until you do what you have promised me!~
+@11   = ~Goody! I can feel my sister Vaelasa's dying tears have watered the earth! Oh, how you please me, you scrumptious villain!~
+@12   = ~Here is your gold, my vicious sweetling, well deserved! Fare thee well. May we meet once more to celebrate our victories. True power will be yours one day, wicked one, I can tell.~
+@13   = ~Until then, ta-ta!~
+@14   = ~Oh, why rush off, dear, when we could have a splendid interlude of company? Just gobbles of fun.~
+@15   = ~Uhh... meaning?~
+@16   = ~Company, eh? I like the sound of that.~
+@17   = ~You do not have anything... untoward in mind, do you?~
+@18   = ~I do not desire more company. Out of my way, or else!~
+@19   = ~Oh, you are the clever one, leaping straight to the inevitable summit of consequence of words and more words.~
+@20   = ~The point. Could you please get to the point?~
+@21   = ~Yes, I am the smarty-party, so get to the point, and do not think you can pull one over on me.~
+@22   = ~Babble, babble, babble. Bored now.~
+@23   = ~Wow. You smell nice.~
+@24   = ~Oooh! Really? Lucky me, a noble hero such as yourself skipped by! Yes, indeed.~
+@25   = ~Yes, 'tis truly fortunate for you.~
+@26   = ~What makes you think I am a noble hero, rather than a dangerous madman?~
+@27   = ~I have the feeling that you did not start this conversation to discuss my title. Do you require something of me? If so, please state your business.~
+@28   = ~Oooh! Really? That's so scary! Lucky me, a fine hero such as yourself skipped by! Yes, indeed.~ [SUDRY04]
+@29   = ~You think trolls are scary? Amateur.~
+@30   = ~What makes you think I am less dangerous than the trolls?~
+@31   = ~I have the feeling that you did not start this conversation because of any worry over trolls. Do you require something of me? If so, please state your business.~
+@32   = ~Meaning, I can sense you have some bits on your person that would service me well.~
+@33   = ~On my... person? You do not have anything... untoward in mind, do you?~
+@34   = ~Look, what is on my person, stays on my person. Understand?~
+@35   = ~On my person? Rrrrroowrr.~
+@36   = ~From the steamy pools of your gaze, I can tell you mistake my intentions.~
+@37   = ~Good. I am not interested in anything untoward. Honest.~
+@38   = ~Well, that's no fun!~
+@39   = ~So what ARE your intentions?~
+@40   = ~You mistake MY intentions. My eyes were simply glazed over with boredom while waiting for you to explain your purpose with me.~
+@41   = ~From the panicked terror of your gaze, I can tell you mistake my intentions.~
+@42   = ~Darn! Actually. I was secretly hoping for something untoward.~
+@43   = ~You mistake MY intentions. My gaze was filled with confusion, if anything, while waiting for you to explain your purpose with me.~
+@44   = ~What a stubborn <PRO_GIRLBOY>! Please, dear. Shush! Hear me out:~ [SUDRY05]
+@45   = ~I hope my offer will please and interest you. My business is perfectly simple, and an opportunity for you to be ever-so helpful.~ [SUDRY12]
+@46   = ~You are carrying a bundle of acorns native to the Windspear Hills. They belong to my sisters, and as such, they are very dear to me.~ [SUDRY11]
+@47   = ~Would you, could you, part with them? Returning them to me? I will give them the precious care they deserve!~ [SUDRY06]
+@48   = ~These acorns? I don't know. I promised the dryads I would return them to the Windspear Hills proper.~
+@49   = ~I'm supposed to return them to the Windspear Hills, not hand them to anyone that asks.~
+@50   = ~Certainly. Here you go.~
+@51   = ~Of course you would, but mightn't there be some reward for my helpfulness?~
+@52   = ~Acorns? I had forgotten I had them. It seems strange that you should appear out of the blue wanting them, even if you are a dryad. Your brethren back in the dungeon gave me strict instructions, you know.~
+@53   = ~These acorns? Hey, suddenly I feel a bit peckish. (munch)~
+@54   = ~No, a promise is a promise. I swore I would deliver these acorns safely to Windspear Hills, and that is what I shall do. No exceptions.~
+@55   = ~Whatever you say, dearest <PRO_GIRLBOY>.~
+@56   = ~Or perhaps I spoke too soon. Please, dearest <PRO_GIRLBOY>. Show an itty-bit of patience and hear my words:~
+@57   = ~Dryads smell of flowers and mist and the promise of delight. Intoxicating, isn't it? I have a proposition to share with you, my dearest <PRO_GIRLBOY>...~
+@58   = ~In more ways than one, you shall hear...~
+@59   = ~My, my! Aren't you tough and mighty! Pause your preening for a moment, dearest <PRO_GIRLBOY>, and hear me out:~ [SUDRY07]
+@60   = ~Danger is inconsequential to our issue. I have a proposition for you. Quite harmless, as you shall hear...~
+@61   = ~Why, yes! How swift of you to see it!~
+@62   = ~Oh, precious <PRO_GIRLBOY>, you misunderstand my intentions!~
+@63   = ~Meaning, I have an itsy-bitsy request for you:~
+@64   = ~But I am a dryad! Surely you can entrust my sisters' acorns to me!?~
+@65   = ~Oh, very well. The Windspear Hills are a long way away. Here.~
+@66   = ~I suppose I could... if there's a reward for my helpfulness.~
+@67   = ~I don't know. Something seems a little off about this.~
+@68   = ~A-ha! My simpering sisters are at my mercy once more! It is a good thing you are not so steadfast in the letter of your word, else I would not profit from your gullibility. Plus, I might have become very cross, indeed.~
+@69   = ~Now, to find another customer desperate for a dryad harem. I think I shall try Calimshan.~
+@70   = ~Of course. I am not an unreasonable entity. Would a shower of gold pieces soothe you?~ [SUDRY10]
+@71   = ~Let the soothing begin.~
+@72   = ~No, something seems a little off about this. You want this too badly, nymph.~
+@73   = ~A promise is a promise. I swore I would deliver these acorns safely to Windspear Hills, and that is what I shall do. No exceptions.~
+@74   = ~You... ATE... THEM?!?!?~
+@75   = ~What a precious, precious dumpling you are! True, it would have been delightful to trade my simpering sisters as concubines once more, but at least with you destroying their acorns, no-one will ever know I was to blame for the first go 'round. You just go right on chewing, splendid <PRO_GIRLBOY>. Ta!~
+@76   = ~Ahh, you have your gold, and I have the acorns. Is not fair trade WONDERFUL?~ [SUDRY08]
+@77   = ~For my part, my simpering sisters are at my mercy once more. It is a good thing you are not so steadfast in the letter of your word, else you would not profit in your gold, and I would not profit from your greed. Plus, I might have become very cross, indeed.~
+@78   = ~Now, to find another customer desperate for a dryad harem. I think I'll try Calimshan.~
+@79   = ~You are perceptive. I did not wish to speak ill, but you need the warning.~
+@80   = ~My sisters in the Hills are not as wise as they could be. Vaelasa was foolish enough to lose the three little ones to begin with to the harem of that mad Irenicus. What makes you think she would protect them any better a second time? Please, give the acorns to my care. I shall see that my sisters get what they deserve.~
+@81   = ~When you put it that way, it seems the right thing to do.~
+@82   = ~You make a persuasive argument, and I concur, but mightn't there be some reward for my helpfulness?~
+@83   = ~Wait a second. How do you know of Irenicus? I see the truth now! You were involved in your sisters' enslavement, weren't you?~
+@84   = ~Hmm. Little sneaks past those eagle eyes of yours, sweet <PRO_RACE>. Perhaps I did forsake my sisters to Irenicus for a small price of power at my command, but the simpering fools deserved it. What does their fate matter, really? We don't need to dredge up my naughtiness, do we? Why don't you just hand over the acorns, and I shall give you a nice sum of money, hmm? Everyone is satisfied!~
+@85   = ~No! Wicked betrayer of your own brethren! I will see you punished!~
+@86   = ~Money is all well and amusing, but what about mischief? Boiling betrayal down to commerce seems so mundane.~
+@87   = ~Sounds fair enough to me.~
+@88   = ~Oh dear, that did not go at all as I planned. Eeek!~ [SUDRY09]
+@89   = ~I appreciate that you were so reasonable in this matter. For a second there, I thought you might go on a righteous rampage. That would have been very disappointing.~
+@90   = ~Mischief? Against my sisters? What delightful words you speak, dear <PRO_GIRLBOY>!~
+@91   = ~Vaelasa's optimism and kindly sentiment truly deserves to be bashed with a boulder of reality. It is about time my other sisters and she learn that the true beauty of the multiverse comes from power!~
+@92   = ~If you are interested in aiding me in a trick, we shall lure my sisters into great suffering.~
+@93   = ~Yes, if there is deception involved, I would relish in the opportunity.~
+@94   = ~On second thoughts, I cannot be bothered with your petty rivalries. Give me gold for the acorns, and let us be done with it.~
+@95   = ~Actually, let me cut to the chase. I can make you suffer, take your gold, then move along to your brethren! Muaha!~
+@96   = ~Now that I think of it, why should I help you? I shall drop these acorns off in Windspear Hills as per the original plan.~
+@97   = ~Oh, will you now? I would have rewarded you for your assistance had you been willing, but no, you have to keep your word. Spoilsport!~
+@98   = ~Oh, well. Too bad for you. You shall suffer for your mistake sooner or later.~
+@99   = ~Hopefully sooner.~
+@100  = ~Ahh, you have your gold, and I have the acorns. 'Tis unfortunate you shy away from greater intrigue, but I will be satisfied with a wonderful, fair trade.~
+@101  = ~For my part, my simpering sisters are at my mercy once more. It is a good thing you are not so steadfast in the letter of your word, else you would not profit in your gold, and I would not profit from your greed.~
+@102  = ~I will trade you my sister's acorns for these replicas. You must take them to Vaelasa in the Windspear Hills and use every measure of your guile to convince her to accept them as true.~
+@103  = ~They are trapped, you see. When planted in the grove of my sisters, they will germinate a nasty and fatal surprise!~
+@104  = ~When she is dead, you will want to loot Vaelasa's corpse as added payment, then return to me here. I shall shower you in gold when I can be comforted with the thought of my brethren decaying into dust.~
+@105  = ~This plan appeals to me. You have a deal.~
+@106  = ~I like the sound of your plan, but there is some danger involved. I demand money up front for my trouble.~
+@107  = ~On second thoughts, I cannot be bothered with your petty rivalries. Just give me gold for the acorns, and let us be done with it.~
+@108  = ~Now that I think about it, why should I help you? I shall drop these acorns off in Windspear Hills as per the original plan. First come, first served.~
+@109  = ~How you please me, lovely <PRO_GIRLBOY>! Here are the false seeds. Good luck, my delicious deceivers!~
+@110  = ~I am not an unreasonable entity. A token sum is a fair trade to seal the pact between us. Three hundred gold, perhaps?~
+@111  = ~There. You are richer for your trouble. Now go, and do your mischief, dearest <PRO_GIRLBOY>!~
+@112  = ~Outsiders? You are not one of my pretties! Why are you here?~
+@113  = ~I'm sorry to bother you. I will be leaving shortly.~
+@114  = ~I apologize for intruding in your beautiful sanctuary, but I have brought some acorns from your dryad sisters. They have been trapped by an evil mage for many years. Fortunately I was able to provide my small services and come to their aid.~
+@115  = ~I apologize for bothering you. I have brought some acorns from your dryad sisters. They have been trapped by an evil mage for many years, but fortunately I was able to come to their aid.~
+@116  = ~Sorry, sorry. Err... I hate to bug you, but I have some acorns I got from some dryads I met in a dungeon. They have been trapped by an evil mage for many years. Pretty crummy, eh? Boy, aren't you lucky I helped!~
+@117  = ~Go then and leave the circle. This place is not meant for idle traffic. You should never have come here without an invitation. Away with you, mortal!~
+@118  = ~You are gallant and kind to come to my sisters' aid. Ulene, Cania and Elyme must have their trees replanted so that they might be free. Give the acorns to me, <BROTHERSISTER>.~
+@119  = ~Your words are troubling to my heart, yet they vibrate with the logic of truth. My poor, poor sprites, to have withered so.~
+@120  = ~I thank you, kind stranger, for your noble deed!~
+@121  = ~Wait. How odd.~
+@122  = ~These acorns do not sing with the pure sweetness of my sisters. A... a foul taint emanates from them. Something dark and cruel.~
+@123  = ~What is this? Can these possibly be the seeds of Cania, Elyme and Ulene?~
+@124  = ~Of course they are. I would not lie to you.~
+@125  = ~I assure you, they are. Surely you understand how your sisters must have suffered at the hands of their vile captor? Such an experience would darken the brightest spirit.~
+@126  = ~Blast! I cannot keep up this air of kindness any longer! Your sister, Phluafae, has your sisters' acorns. It was she who sold them as concubines in the first place, and now she wants your head. Hold still while I cleave it, eh?~
+@127  = ~Clumsy deceiver! 'Twere it not enough that my sister dryads should suffer at the hands of the wizard who cages them... but you would attempt to trick me with these feeble lies?!~
+@128  = ~I know not what has happened to my sisters, but these... these are not their acorns. Whatever your cruel intent, mortal, you have failed miserably.~
+@129  = ~My sisters, I shall avenge their loss with your defeat! For Cania, Elyme and Ulene you shall perish, <RACE>!~
+@130  = ~Fiend! You nearly had me deceived!~
+@131  = ~And to think our own sister could be so corrupt as to betray us so cruelly! It is too horrible a burden to bear, but Phluafae's reckoning will be soon and severe, I swear it.~
+@132  = ~But first, YOU must be punished! For Cania, Elyme and Ulene you shall perish, <RACE>!~
+@133  = ~You've seen to it that both the dryads and their forest are going to suffer, <CHARNAME>. Next time, think things through a little more carefully.~
+@134  = ~What?!? You just gave away a perfectly good dryad harem? Gah! (Will somebody PLEASE start deferring the truly important decisions to me?)~
+@135  = ~You've seen to it that both the dryads and their forest are going to suffer, <CHARNAME>. Who knows what eating the acorns may do to them. Next time, think things through a little more carefully.~
+@136  = ~What?!? You just ATE a perfectly good dryad harem? Gah! (Will somebody PLEASE start deferring the truly important decisions to me?)~
+@137  = ~Helping Irenicus' captive dryads.
+
+After speaking with a dryad near the De'Arnise keep, I have agreed to betray the dryads held captive by Irenicus by handing over false acorns to their sister Vaelasa in the Windspear Hills.~
+@138  = ~Helping Irenicus' captive dryads.
+
+Vaelasa was taken in by the false acorns I gave her, and perished as a result. Phluafae should be satisfied at this outcome.~
+@139  = ~Helping Irenicus' captive dryads.
+
+Vaelasa did not believe that the false acorns were those of her sisters, and attacked me. Phluafae is unlikely to be best pleased at the turn of events.~
+@140  = ~Helping Irenicus' captive dryads.
+
+I broke my agreement with the dryads held captive by Irenicus, instead handing some false acorns provided by one of their sisters to Vaelasa in the Windspear Hills. She perished as a result, and I was well rewarded for my effort.~
+@141  = ~Helping Irenicus' captive dryads.
+
+I broke my agreement with the dryads held captive by Irenicus, instead handing their acorns to another dryad who approached me near the De'Arnise keep. She spoke of a dryad harem, so it seems I have not done them any favours.~
+@142  = ~Helping Irenicus' captive dryads.
+
+I broke my agreement with the dryads held captive by Irenicus, instead choosing to, uh, eat the acorns. The dryad who approached me regarding them near the De'Arnise keep seemed most surprised.~
+
+@999 = ~If the dryads asked you to take them to Windspear, then that is where they belong, <CHARNAME>. It's a basic rule of transportation—never let anything get in the way between Point A and Point B.~

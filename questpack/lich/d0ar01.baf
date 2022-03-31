@@ -1,0 +1,16 @@
+IF
+  Global("D0AR01Intro","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0AR01Intro","GLOBAL",1)
+    DisplayStringHead(Player1,@132)
+END
+
+IF
+  Dead("d0lich01")
+  InMyArea("d0lich01")
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("SPFIREPI","d0lich01")
+    ActionOverride("d0lich01",DestroySelf())
+END

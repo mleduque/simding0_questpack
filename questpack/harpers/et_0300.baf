@@ -1,0 +1,9 @@
+IF
+  Global("D0RylockAngry","AR0300",1)
+  !Global("D0RylockAngry2","AR0300",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0RylockAngry2","AR0300",1)
+    CloseDoor("DOOR0308")
+    Lock("DOOR0308")
+END

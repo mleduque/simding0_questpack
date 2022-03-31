@@ -1,0 +1,76 @@
+// -*- coding: cp1252 -*-
+
+// Soberbia Dragón Plateado
+
+@1 = ~El hijo del Dios Muerto ha venido, ya veo, no dudo que será capaz de aniquilar a la espantosa bestia que guarda la lágrima del padre.  Muy bien, déjanos ver qué puedes hacer.~
+@2 = ~¡Prepárate a saborear mi acero, lagarto!~
+@3 = ~¡Espera! ¿No podemos hablar sobre esto?~
+@4 = ~¿Hablar? No hubiera esperado tales titubeos de tí.  ¿De qué quieres hablar?  ¿O simplemente quieres burlarte, o retrasar la inevitable carnicería?~
+@5 = ~Sólo he venido a por la Lágrima de Bhaal, no a combatir.  Seguramente una sabia criatura como tú tampoco deseará enfrascarse en un conflcto sin sentido.~
+@6 = ~Tus palabras tienen mérito.  No hay motivo por el que no pueda darte la lágrima.~
+@7 = ~No pensé que podrías hacer tal proposición.  Aquí está la gema que buscas, entonces.  Para un <RACE> mortal, has probado ser bastante razonable.  Ve en paz.~
+@8 = ~Espera... ¿Qué es esto?~
+@9 = ~Tú has matado a otros de mi raza, ¿no es verdad? El hedor de sus muertes flota en torno a tu equipo.  No creo que tengas intención de dejarme con vida, mortal.  ¿Tal vez esperas distraerme con tus bonitas palabras, tus mentiras, esperando pillarme desprevenido?~
+@10 = ~Es mi destino enfrentarme a tí en combate.  Veamos quien se alza con la victoria.~
+
+// Miedo Demonio
+
+@11 = ~...como esta capa, por ejemplo.  Hecha con las pieles desolladas de encantadoras ninfas.  Póntela y serás resguardado por su poderosa magia... tu corazón jamás volverá a conocer el pánico.~ [HELFEA13]
+@12 = ~Dime, demonio, ¿Las ninfas de cuya piel dices que está hecha la capa, están ya muertas?  ¿O sólo morirán si estoy de acuerdo en llevar la capa?~
+@13 = ~Es una pregunta extraña.  ¿Por qué lo preguntas?~
+@14 = ~No importa.  No quiero un objeto de tan evidente naturaleza maligna.  Mi propio coraje será suficiente.~
+@15 = ~Simplemente tenía curiosidad.  Dámela.~
+@16 = ~Si las ninfas deben morir por mi causa, no deseo la capa.  Pero si de todas formas ya están muertas, podría usarla.  No cambiaría nada.~
+@17 = ~Ya veo.  Un interesante punto de vista.  Como respuesta a tu pregunta, sí, ellas murieron hace mucho.  Te daré la capa.~
+
+// Codicia Genio
+
+@18 = ~¡Pero necesitaré la espada cuando vuelva a encontrarme con Irenicus! Y tampoco deseo matarte por la Lágrima.  ¿Estás seguro de que no hay otro camino?~
+@19 = ~He estado pensado sobre tu oferta, y estoy preparado para el geas.~
+@20 = ~No puedo decirte eso, mi <PRO_LADYLORD>.~
+@21 = ~Parece que tendré que hacerlo sin la espada.  Tómala.~
+@22 = ~Pero, ¿no podria guardar la espada durante un tiempo, y regresar algo mas tarde para dártela?~
+@23 = ~No os ofendais, mi <PRO_LADYLORD>, pero no sé si vuestras intenciones son auténticas.  Demasiado depende de esto para mí.  No me arriesgaré a dejar irse la única oportunidad que tengo de terminar mi tormento.~ 
+@24 = ~¿Y qué tal si te juro devolvértela?  ¡Incluso estoy dispuesto a dejarte hechizarme con un geas!~
+@25 = ~Sí, ésa podría ser la solución.  Puedo lanzar un conjuro geas para ligaros a vuestra promesa.  Si la rompeis, entonces morireis.  ¿Estáis completamente seguro de que deseais esto, mi <PRO_LADYLORD>?~
+@26 = ~Pensándolo mejor, no me gustaría comprometerme de esa forma.  Déjame pensarlo un poco mas.~
+@27 = ~Estoy preparado.  Comienza tu hechizo.~
+@28 = ~Como desees, mi <PRO_LADYLORD>.~
+@29 = ~Está hecho, mi <PRO_LADYLORD>.  Espero que tengais suerte, esperaré vuestro retorno con ansiedad.  Nos encontraremos de nuevo.~
+@30 = ~Buscando a Irenicus en el Infierno
+
+La espada del Demonio, 'Blackrazor', era obviamente la llave que me permitiría liberar al genio de su esclavitud aquí en el Infierno.  Él me ha permitido conservar la espada el tiempo que necesite para destruir a Irenicus, y me ha hechizado con un conjuro geas para asegurarse que devuelvo la espada una vez lo consiga.  Espero que logre encontrar una forma de volver a este lugar.~
+@31 = ~Por favor, mi <PRO_LADYLORD>, daos prisa con vuestra tarea.  No deseo permanecer en este lugar mas tiempo del necesario.~
+@32 = ~Habéis regresado, mi <PRO_LADYLORD>, ¡y el mago está muerto!  ¿Puedo esperar que hagais honor a nuestro trato y me deis la espada Blackrazor?  Estoy impaciente de dejar este plano infernal.~
+@33 = ~Claro.  Cógela.~
+@34 = ~Olvídalo.  La espada es mía, no me importa lo que te prometiera antes.~
+@35 = ~No puedo.  Parece que la he perdido en algún lado.~
+@36 = ~¡No podeis hablar en serio, mi <PRO_LADYLORD>!  ¡Incluso si no os preocupa mi tormento, el romper vuestra promesa significaría vuestra muerte!~
+@37 = ~Claro, olvida lo que dije.  Ten la espada.~
+@38 = ~Ya me oiste la primera vez.  Toma tus amenazas y lárgate, antes de que decida probar la espada contigo.~
+@39 = ~Sentí que no podría confiar en vos.  Ahora daría la bienvenida a la muerte, pero es demasiado tarde.  Al menos el recuerdo de vuestra muerte será un pequeño alivio durante la eternidad de tormento que me espera.  Sabed que maldeciré vuestro nombre durante todo ese tiempo.~
+@40 = ~¿La... la perdisteis?  Pero... ¿Sabéis lo que eso significa?  ¿Cómo podéis ser tan irresponsable?~
+
+// Ira Sarevok
+
+@41 = ~¿De verdad me crees tan tonto como para aceptar tu oferta?  No confío en lo que puedas darme, Sarevok, y no lo necesito.~
+@42 = ~Quizás sea el destino que me espera, tener el poder o tener la pobreza, peor lo único de lo que estoy seguro es que no aceptaría nada de lo que pudieras ofrecerme.~
+
+// Egoismo Demonio
+
+@43 = ~Entonces supongo que deberé sacrificarme.  No me gustaría que nadie sufriera por mi causa.~
+@44 = ~Haz lo que debas.  Mátala.  No me podría importar menos.~
+@45 = ~Estoy indeciso acerca de lo que debo hacer.~
+@46 = ~¡No!  ¡No sacrificaré nada, pero tampoco te permitiré que dañes a nadie más!  ¡Prepárate a morir, demonio!~
+@47 = ~Haz lo que debas.  Mátale.  No me podría importar menos.~
+@48 = ~Es tu decisión, Hijo de Bhaal.  Piénsalo con cuidado, y atraviesa la puerta de tu decisión.~
+@49 = ~No seas necio, Hijo de Bhaal.  No puedes esperar en serio prevalecer contra mí. Después de todo, aún eres un mortal, y no puedes destruirme a mí, una creación de tu propia concencia.  Existiré mientras tú existas.  Combatir conmigo es un esfuerzo vano, pues finalmente perecerías, y de igual modo aquel al que deseas proteger.~
+@50 = ~Tus palabras tienen sentido, supongo.  Por tanto, tomaré la carga sobre mis hombros.~
+@51 = ~Bueno... ahora que lo pienso, tienes mucha razón.  Mata al rehén entonces, y olvida lo dije.~
+@52 = ~He matado a criaturas mucho mas poderosas que tú.  Habla todo lo que quieras, no podrás rehuir esta lucha.~
+@53 = ~Muy bien, y ése es tu deseo, no tengo nada mas que objetar.  Seguramente esto sea entretenido.~
+@54 = ~Es suficiente. Has probado tu buena voluntad al enfrentarte incluso a una lucha sin la mas mínima esperanza de victoria para detener a los que podrían actuar e influir sobre el destino de otros.  El inocente será devuelto al lugar de donde vino.~
+@55 = ~Buscando a Irenicus en el Infierno
+
+Rechacé atravesar ninguna de las puertas y luché con el demonio. Aunque la batalla fué larga y no pude matar a la bestia, me entregó la Lágrima de Bhaal de todas maneras.  Este hecho parece tener algun significado para el demonio, auqnue no sé cual.~
+@56 = ~Es suficiente. Has probado tu buena voluntad al enfrentarte incluso a una lucha sin la mas mínima esperanza de victoria para detener a los que podrían actuar e influir sobre el destino de otros.  El inocente te será devuelto.~

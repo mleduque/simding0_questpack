@@ -1,0 +1,40 @@
+IF
+  AreaCheck("ar0500")
+  Global("A#IM5Kram2Spawn","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("Friends","LOCALS",0)
+  !StateCheck(Myself,STATE_SILENCED)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("Friends","LOCALS",1)
+    ForceSpell(Myself,WIZARD_FRIENDS)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("Friends","LOCALS",1)
+  OR(2)
+    HitBy([ANYONE],CRUSHING)
+    AttackedBy([ANYONE],DEFAULT)
+  !StateCheck(Myself,STATE_SILENCED)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("Friends","LOCALS",2)
+    DisplayStringHead(Myself,@215)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  See(LastTalkedToBy(Myself))
+THEN
+  RESPONSE #100
+    Attack(LastTalkedToBy(Myself))
+END

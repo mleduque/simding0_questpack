@@ -1,0 +1,11 @@
+IF
+  Range([PC],5)
+  !Global("D0Attention","AR2402",1)
+  Global("D0AR01Intro","GLOBAL",0)
+  AreaCheckObject("ar2402",[PC])
+THEN
+  RESPONSE #100
+    SetGlobal("D0Attention","AR2402",1)
+    DisplayStringHead([PC],@202)
+END
+

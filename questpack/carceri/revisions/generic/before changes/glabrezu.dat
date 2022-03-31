@@ -1,0 +1,30 @@
+currently strong nabassu stats
+
+ANIM							4352
+ALIGN							33
+RACE							121
+CLASS							160
+RESIST_FIRE						0
+RESIST_COLD						0
+RESIST_ELECTRICAL				0
+RESIST_ACID						0
+RESIST_MAGIC					50
+NONE
+RESIST_SLASHING					0
+RESIST_PIERCING					0
+RESIST_CRUSHING					0
+RESIST_MISSILE					0
+HP								65
+AC								-5
+THAC0							11
+ATTACKS							3
+STR								19
+DEX								17
+CON								15
+INT								12
+WIS								16
+CHR								25
+WEAPON
+GENERIC_SCRIPT					d0demgla
+LEVEL							10
+XP_VALUE						16000

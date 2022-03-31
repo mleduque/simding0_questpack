@@ -1,0 +1,53 @@
+IF
+  Global("D0Poor","GLOBAL",12)
+  AreaCheck("ar0812")
+THEN
+  RESPONSE #100
+    SetGlobal("SPRITE_IS_DEADd0thug2","GLOBAL",1)
+    DestroySelf()
+END
+
+IF
+  GlobalTimerExpired("D0KillGirl","GLOBAL")
+  AreaCheck("ar0812")
+  Global("D0AttackGirlYeh","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0AttackGirlYeh","LOCALS",1)
+    DisplayStringHead(Myself,@120)
+    EquipMostDamagingMelee()
+    Enemy()
+    AttackOneRound("d0girl")
+END
+
+IF
+  GlobalTimerExpired("D0KillGirl","GLOBAL")
+  AreaCheck("ar0812")
+  Global("D0AttackGirlYeh","LOCALS",1)
+  !Dead("d0girl")
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack("d0girl")
+END
+
+IF
+  GlobalTimerExpired("D0KillGirl","GLOBAL")
+  AreaCheck("ar0812")
+  Global("D0AttackGirlYeh","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END
+
+IF
+  !GlobalTimerExpired("D0KillGirl","GLOBAL")
+  NumTimesTalkedTo(0)
+  Detect([PC])
+  AreaCheck("ar0812")
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+

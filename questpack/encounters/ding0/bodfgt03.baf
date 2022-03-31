@@ -1,0 +1,38 @@
+IF
+  NumTimesTalkedTo(0)
+  Detect([PC])
+  !AreaCheck("ar0801")
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([595.758])
+    StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+  NumTimesTalkedTo(0)
+  Detect([PC])
+  AreaCheck("ar0801")
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  !Dead("Jaylos")
+  Range("Jaylos",10)
+  !Range(NearestEnemyOf(Myself),5)
+THEN
+  RESPONSE #100
+    AttackReevaluate("Jaylos",30)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  !Dead("Caehan")
+  Range("Caehan",10)
+  !Range(NearestEnemyOf(Myself),5)
+THEN
+  RESPONSE #100
+    AttackReevaluate("Caehan",30)
+END

@@ -1,0 +1,195 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Non sarò sicuramente partecipe alla carneficina degli Arpisti, <CHARNAME>. Il tuo cammino si è allontanato dal mio mio e non starò più con le mani in mano.~
+@1    = ~<CHARNAME>, non dovremmo perdere tempo a portare a Bernard la lama recuperata da casa di Prebek. Confido che questo sia ancora il tuo intento, vero?~
+@2    = ~Dunque sembra che tu non intenda soddisfare le mie richieste. Ti ho giudicato male, <CHARNAME>, tenuto conto che rechi con te un'arma destinata ad uccidere gli Arpisti... progettata per uccidere me. Mi sarei aspettata di meglio! Ci rivedremo, perché a quest'arma non può essere permesso di sopravvivere.~
+@3    = ~Dunque sembra che tu non intenda soddisfare le mie richieste. Ti ho giudicato male, <CHARNAME>, tenuto conto che rechi con te un'arma destinata ad uccidere gli Arpisti... progettata per uccidere me. Mi sarei aspettata di meglio! Io devo prendere la lama e fare da sola quello che deve essere fatto. Non ci incontreremo nuovamente.~
+@4    = ~<CHARNAME>, quest'arma custodita a casa di Prebek... è...  malvagia! Molti Arpisti sono caduti a causa della sua lama.~
+@5    = ~<CHARNAME>, quest'arma custodita a casa di Prebek... è...  malvagia! Molti Arpisti sono caduti a causa della sua lama.~
+@6    = ~<CHARNAME>, consegnami l'arma. Quella che era custodita a casa di Prebek.~
+@7    = ~Proprio come sospettavo. Riconosco questa lama... è un'arma malvagia e molti Arpisti sono caduti per causa sua.~
+@8    = ~<CHARNAME>, quest'arma custodita a casa di Prebek...  ho un pessimo presentimento. Permettimi di esaminarla.~
+@9    = ~Non so proprio come sia capitata nelle mani di Prebek, ma non posso permettere che continui a esistere indisturbata, anche se ora è nelle tue mani.~
+@10   = ~Deve essere distrutta. Ti chiedo di consegnarla agli Arpisti al più presto possibile affinché possano adottare i provvedimenti necessari.~
+@11   = ~Molto bene. A chi mi consigli di consegnarla?~
+@12   = ~Aspetta, ma perché dovrebbe essere distrutta? Solo perché è forgiata per uccidere gli Arpisti? Non serve semplicemente a "bilanciare" il potere degli Arpisti?~
+@13   = ~Io non ho intenzione di rinunciare ad una tale arma, utile a ben altro oltre che a quello! Terrò la scimitarra, che ti piaccia o no.~
+@14   = ~Bernard al Diadema di Rame può contattare qualcuno in grado di risolvere la questione. Ho fiducia nelle sue capacità e dovrebbe essere affidabile.~
+@15   = ~Ti ho giudicato male, <CHARNAME>, tenuto conto che rechi con te un'arma destinata a uccidere gli Arpisti... progettata per uccidere me. Mi sarei aspettata di meglio da te! Ci rivedremo, perché a quest'arma non deve essere permesso di sopravvivere.~
+@16   = ~Gli Arpisti SONO il bilanciamento della forza, <CHARNAME>. Quest'arma non ha nessuna pretesa di neutralità: è il male incarnato.~
+@17   = ~Davvero? Perché qualcosa che mantiene sotto controllo la neutralità deve essere automaticamente etichettata come malvagia? Allora non si dovrebbe dire la stessa cosa per un oggetto realizzato per "controllare" il male?~
+@18   = ~Io non ho intenzione di rinunciare ad una tale arma. Una lama di sicura utilità! Terrò la scimitarra, che ti piaccia o no.~
+@19   = ~Se questo è quello che pensi, <CHARNAME>, allora non c'è più speranza per te. Ti ho spiegato che cosa deve essere fatto. Ti suggerisco di ottemperare.~
+@20   = ~<CHARNAME>, vorrei non essere stata costretta a fare questo. Ti offro un'ultima occasione di consegnare Shazzellim per poterla definitivamente distruggere.~
+@21   = ~La mia opinione non è cambiata. Non mi separerò da un'arma così preziosa.~
+@22   = ~Mi dispiace Jaheira. Tieni, prendi la lama, assieme alle mie scuse più sentite.~
+@23   = ~Prendi questa dannata lama, se è così importante per te. Non pensavo ne sarebbe scaturito un simile parapiglia!~
+@24   = ~Assaggia l'acciaio, puttana!~
+@25   = ~Non posso più attendere, dobbiamo prendertela. Se devo mettermi contro di te, allora così sia!~
+@26   = ~Grazie, <CHARNAME>. Le scuse sono accettate e ti offro un equo compenso per l'arma. Forse ci incontreremo di nuovo, prima o poi.~
+@27   = ~Grazie, <CHARNAME>, anche se mi delude vederti così sprezzante alle mie richieste. Ti offro un equo compenso per l'arma. Forse ci incontreremo ancora una volta, prima o poi.~
+@28   = ~Gorion si vergognerebbe, <CHARNAME>. Se devo mettermi contro di te, allora così sia!~
+@29   = ~Ho qualcosa per te, Bernard. Un'arma che si merita una certa attenzione.~
+@30   = ~Cosa intendi, Jaheira? Un'arma? Fammela vedere.~
+@31   = ~Ecco.~
+@32   = ~Consegnartela? Non me ne separerò.~
+@33   = ~Ora, posso fare qualcos'altro per te?~
+@34   = ~Mio, mio... ma cosa abbiamo qui? Dove l'hai trovata?~
+@35   = ~Era proprio qui, in Athkatla. Come sia giunta fino alla città, proprio non lo so.~
+@36   = ~La sua presenza qui non può essere di buon auspicio. Dobbiamo occuparcene al più presto.~
+@37   = ~E io devo vigilare su ulteriori attività che potrebbero minacciare gli Arpisti.~
+@38   = ~Sì, è sicuramente la cosa più saggia da fare.~
+@39   = ~Penserò io a quest'arma. Senza dubbio Cromwell sarà in grado di occuparsene, ma forse alcuni Arpisti potrebbero essere interessati ad esaminarla prima.~
+@40   = ~E suppongo che il pagamento sia garantito per i tuoi amici in cambio di quest'oggetto. Molto bene.~
+@41   = ~E suppongo che il pagamento sia garantito per il tuo amico in cambio di quest'oggetto. Molto bene.~
+@42   = ~Grazie, Bernard. E grazie a te, <CHARNAME>.~
+@43   = ~Un mago di nome Xzar mi ha chiesto di entrare nella rocca per ritrovare il suo compagno.~
+@44   = ~Io sono <CHARNAME>. Un mago di nome Xzar mi ha chiesto di entrare nella rocca per ritrovare il suo compagno.~
+@45   = ~D'accordo, questo non era vero. Un mago di nome Xzar mi ha chiesto di entrare nella rocca per ritrovare il suo compagno.~
+@46   = ~Me lo ha detto un mago di nome Xzar. Voleva entrare nella rocca e ritrovare il suo compagno.~
+@47   = ~Eh? E cosa ha a che fare questo con noi? Dovremmo avere qualche notizia in merito?~
+@48   = ~Mi sarei aspettato che gli Arpisti conoscessero tutto quello che succede all'interno della loro rocca.~
+@49   = ~Non fare il finto tonto con me, Arpista. Sai esattamente di cosa sto parlando.~
+@50   = ~Pensavo solo che potreste aver sentito qualcosa su questo.~
+@51   = ~Forse. Ma se non fosse così, ho il sospetto che qualcosa non quadri.~
+@52   = ~Ah. Così lavori con lui? Beh, forse potremmo giungere ad una specie di accordo?~
+@53   = ~A cosa stai pensando?~
+@54   = ~Cosa dici di lasciarmi entrare o il tuo sangue macchierà il pavimento?~
+@55   = ~Non mi interessa fare accordi con voi. Dove si trova Montaron?~
+@56   = ~Shhh! Abbassa la voce! Rivelare la nostra presenza potrebbe metterci in pericolo più di quanto già non siamo! Allora... il mago ti ha raccontato il nostro segreto? Beh, forse possiamo giungere ad una specie di accordo?~
+@57   = ~Che ne dici di lasciami entrare, o chiunque conoscerà il vostro segreto?~
+@58   = ~Allora hai pensato male. Mi dispiace, ma anche se ci hai riportato Renfeld, noi sappiamo poco dei tuoi intenti e le nostre preoccupazioni non ti devono interessare.~
+@59   = ~Dunque gli Arpisti non desiderano collaborare?~
+@60   = ~Bene. Tornerò sui miei passi.~
+@61   = ~Tu ci hai fatto un favore, ma questo non significa che posso farti entrare. Ascolta... se porti a termine un piccolo incarico per noi, ti farò dare un'occhiata. Affare fatto?~
+@62   = ~Pazienta! Ci hai fatto un favore, ma questo non significa che posso farti entrare. Ascolta... se porti a termine un piccolo incarico per noi, ti farò dare un'occhiata. Affare fatto?~
+@63   = ~C'è un solo modo con cui puoi trovarlo. Ci hai fatto un favore, ma questo non significa che posso farti entrare. Ascolta... se esegui un piccolo incarico per noi, ti farò dare un'occhiata. Affare fatto?~
+@64   = ~Sto cercando un ladro che avete catturato, Montaron.~
+@65   = ~Faresti meglio a consegnarmi Montaron, o morirete tutti... subito!~
+@66   = ~Io... ah. Capisco. Dovresti parlare con Meronia, lei sarà probabilmente in grado di aiutarti. Io ho altre cose di cui occuparmi. C'è qualcos'altro di cui avete bisogno?~
+@67   = ~Così prevedi di ricorrere alla violenza? Non un proposito saggio, temo. Tuttavia, non siamo impreparati.~
+@68   = ~Um, niente a che fare con me. Rivolgiti a Berinvar o a Meronia... potrebbero essere in grado di aiutarti.~
+@69   = ~C'è la possibilità di fare un giro della rocca?~
+@70   = ~Va bene. Vado.~
+@71   = ~Io, ehm, questo davvero non ha niente a che fare con me. Probabilmente dovresti minacciare Berinvar o Meronia piuttosto che altri.~
+@72   = ~Mi ha mandato qui un mago per recuperare il suo compagno che è tenuto prigioniero.~
+@73   = ~Forse posso aiutarti contro Xzar, se lo desideri.~
+@74   = ~Mi hai imbrogliato! L'uccello non era Montaron, ma un assassino!~
+@75   = ~Non so di cosa parli. Ti è stato consentito l'ingresso all'interno della rocca, ma ti chiedo che non ficcare il naso nei nostri affari.~
+@76   = ~Cosa succede se ti dico che il nome del mago era Xzar e che mi ha mandato a recuperare Montaron? Forse le informazioni potrebbero esservi utili?~
+@77   = ~Allora potrei farti altre domande?~
+@78   = ~Senti, consegnami Montaron subito, o ci saranno guai!~
+@79   = ~Molto bene, mi dispiace di avere curiosato.~
+@80   = ~Ah, uh... Capisco. Strano per te rivelare il tuo accordo precedente. Comunque ti ringrazio per le informazioni. Dovremo rifletterci su e agire di conseguenza.~
+@81   = ~Aspetta. Posso aiutarvi se avete intenzione di muovervi contro di lui.~
+@82   = ~Di nulla.~
+@83   = ~Sappi che gli Arpisti ti sono grati per non aver provato ad ingannarli.~
+@84   = ~Beh, Rylock evidentemente ha ritenuto saggio permetterti di entrare. Forse potresti aiutarci.~
+@85   = ~Vorrei chiederti di aiutarci ad assicurare alla giustizia il mago, Xzar. Ci ha causato molti problemi, e fino ad oggi non abbiamo avuto l'occasione appropriata per sistemare la questione.~
+@86   = ~Non commetterò un omicidio per voi!~
+@87   = ~Allora dimmi, cosa intendi?~
+@88   = ~Questo non mi interessa. Addio.~
+@89   = ~Certo. C'è qualcosa che posso fare per aiutare?~
+@90   = ~Forse no, dopo tutto. Ti ringrazio comunque.~
+@91   = ~Pensi veramente di intimidirci? Non credere di trovarci impreparati. Ti suggerisco di fare altrove le tue futili minacce e le tue vuote accuse.~
+@92   = ~Io... ti consiglio di non sprecare il tuo tempo a cercare l'intruso. Egli potrebbe non essere più nella... forma che ti ricordi.~
+@93   = ~Quindi c'è poco altro su cui discutere. Ti suggerisco di non sprecare il tuo tempo a cercare il ladro, poiché sei in pericolo tu stesso.~
+@94   = ~Uno dei nostri assassini si travestirà come il ladro per colpire al momento giusto. Tu devi consegnarlo al mago.~
+@95   = ~Consegnarlo? Lo fa sembrare un pacchetto.~
+@96   = ~Non sei lontano dalla verità. Prendi questo uccello, portalo dal mago e digli che questo è il suo amico... lui lo troverà credibile.~
+@97   = ~Questo è un peccato. Ma puoi portare via il tuo ladro... Spero che abbia imparato qual'è la pena da scontare per la sua condotta. Lo troverai nella voliera al piano superiore.~
+@98   = ~Non è sicuro avventurarsi là senza la corretta identificazione. Questo amuleto dovrebbe essere sufficiente.~
+@99   = ~Questo sembra troppo facile. A che gioco stai giocando?~
+@100  = ~I miei ringraziamenti. Porterò via Montaron.~
+@101  = ~La voliera? Cosa ci sta facendo lì?~
+@102  = ~Questo è troppo. La gente è così strana qui intorno.~
+@103  = ~A nessun gioco. Il ladro è tuo, vallo a prendere e portalo via così come lo trovi. Vai ora.~
+@104  = ~Ora vai, trovalo e portalo via.~
+@105  = ~Vedrai quando lo trovi. Vai ora.~
+@106  = ~Sei stato ingannato, ma era necessario. Il mago era un problema, e abbiamo pensato al modo più semplice per occuparci di lui. Il tuo aiuto, per quanto inconsapevole, è comunque molto apprezzato.~
+@107  = ~Così hai deciso di non aiutarci, dopo tutto, e vorresti anche ricorrere alla violenza? Così sia. Non siamo impreparati.~
+@108  = ~Ah, sì. Quegli Arpisti... Beh, cosa vuoi da loro?~
+@109  = ~Non ho scoperto cosa è successo a Montaron, ma gli Arpisti mi hanno chiesto di portarti un assassino camuffato da uccello. Ce l'ho qui.~
+@110  = ~Come ho detto, vorrei che tu mi facessi un servizio, se ne fossi minimamente in grado.~
+@111  = ~Così gli Arpisti pensano di potermi uccidere, eh? Essi catturano Monty, uccidono entrambi i miei apprendisti e ora hanno il coraggio di provare questo?~
+@112  = ~Bene, cerchiamo di porre fine al loro piano assurdo e ripagarli con la loro stessa moneta!~
+@113  = ~E l'assassino viene rivelato!~
+@114  = ~Hah! Certamente questo gli insegnerà qualcosa! Ma c'è ancora la questione di trovare il vero Monty.~
+@115  = ~Torna nel quartier generale dei Arpisti e trovarlo... fa un un lavoro pulito e preciso questa volta.~
+@116  = ~Hai detto che sapevi qualcosa su Irenicus. Dimmi!~
+@117  = ~Va bene, va bene. Ci andrò.~
+@118  = ~Io preferirei un approccio un po' meno sottile.~
+@119  = ~Non voglio più essere parte dei tuoi intrighi. Trova Montaron da solo.~
+@120  = ~Ho deciso di dirtelo dopo che mi avrai portato Monty. Dunque torna con lui!~
+@121  = ~Come lo farai non mi riguarda. Anche se, in verità, potrebbe rivelarsi piuttosto divertente vedere la carneficina della battaglia in mezzo agli Arpisti. Comunque, fai quello che vuoi.~
+@122  = ~Sei già arrivato così avanti, non vorresti continuare ad aiutare una causa di così nobili intenti? Così sia. Torna quando ci avrai ripensato.~
+@123  = ~Ah, sei tornato? Mi farai risparmiare la fatica di trovare qualcuno meno inetto di te per aiutarmi?~
+@124  = ~Io sono disposto a portare a termine il lavoro.~
+@125  = ~Dunque smetti di sprecare tempo. Il povero Monty sta soffrendo in quel posto!~
+@126  = ~Già di ritorno? Hai avuto successo nella tua missione, o hai intenzione di farmi perdere altro tempo?~
+@127  = ~Gli Arpisti non hanno voluto cooperare, così ho dovuto ucciderli tutti.~
+@128  = ~Montaron è morto. Ho trovato il suo corpo.~
+@129  = ~Non ho ancora scoperto che fine ha fatto Montaron.~
+@130  = ~Ma per quanto riguarda Monty? Egli è al sicuro?~
+@131  = ~Non ho ancora scoperto che fine ha fatto.~
+@132  = ~Dunque finiscila di sprecare tempo. Lui sta soffrendo in quel posto!~
+@133  = ~Lui... è.. morto? Monty? Quei bastardi Arpisti devono pagare per questo!~
+@134  = ~Sono già tutti morti, non è necessario preoccuparsene ancora.~
+@135  = ~Quindi andiamo a massacrarli insieme!~
+@136  = ~Il problema è tuo, non mio. I nostri rapporti ora sono finiti.~
+@137  = ~Ho trovato il tuo Montaron. Ora dimmi cosa sai su Irenicus.~
+@138  = ~Te lo dirò una volta che l'avremo fatta pagare agli Arpisti! Essi non possono farla franca!~
+@139  = ~Humm, mi sarei dovuto aspettare che avresti preso un approccio così diretto. Beh, è stato divertente almeno.~
+@140  = ~Beh, suppongo che me ne andrò ora. Oh, e... ehm,  dammi il corpo. Lo devo riportare al laboratorio. Povero, povero Monty!~
+@141  = ~Sì, questo potrebbe rivelarsi piacevole. Andiamo, dunque, e che la battaglia abbia inizio. Oh, e... ehm, dammi il corpo. Dopo devo riportarlo al laboratorio.~
+@142  = ~Bah. Da parte mia non ho intenzione di mettermi contro gli Arpisti da solo. Forse un'altra volta, quando i miei esperimenti saranno terminati. Oh, e... ehm, dammi il corpo. Devo riportarlo al laboratorio per il momento. Povero, povero Monty.~
+@143  = ~Bene, è stato interessante. Almeno gli Arpisti hanno pagato per quello che hanno fatto.~
+@144  = ~Suppongo che me ne andrò ora e tornerò al mio lavoro. Povero, povero Monty!~
+@145  = ~Far luce sul fato di Montaron.
+
+L'astuzia degli Arpisti sopravviverà alla loro reputazione. Li ho aiutati ingannando Xzar e facendogli credere che l'uccello che gli ho consegnato fosse Montaron, mentre, in realtà, era un assassino degli Arpisti camuffato. Il carattere ed il modo di fare di Xzar Zhentarim lo hanno reso un perfetto bersaglio, e io ho spianato la strada: un vero credulone. Non so che cosa sia realmente accaduto a Montaron, ma sembra probabile che il ladro malvagio sia morto.~
+@146  = ~Non ho nulla contro di te. Questo folle perirà, come dovrebbe essere.~
+@147  = ~Così, ora che abbiamo finito, quale era il suo crimine? Quale è il ragione che ci ha spinto a commettere questo omicidio?~
+@148  = ~Mi spetta qualche pagamento per il mio ruolo in tutto questo?~
+@149  = ~Gli Arpisti sono davvero scaltri. Sembrate gente con cui varrebbe la pena associarsi.~
+@150  = ~Ora che abbiamo finito, forse potresti rispondere ad alcune domande.~
+@151  = ~Non pensi che fosse molto strano? Egli stava spiando gli Arpisti, un atto intollerabile. Tu hai fatto bene ad aiutarci a porre fine a tutto questo.~
+@152  = ~Misura le sue parole con attenzione, tu sei colpevole quanto noi. Non sembrava sospetto? Non sai chi fosse realmente?~
+@153  = ~Misura le sue parole con attenzione, per quanto tu ci abbia servito bene, noi non ti dobbiamo nulla. Sapevamo del vostro accordo iniziale. Non ti sembrava alquanto sospetto? Non sapevi chi fosse in realtà?~
+@154  = ~Non credo che abbiamo intenzione di rivelarti nulla. Puoi sapere del crimine di quel folle, ma non dobbiamo dirti altro.~
+@155  = ~Anche se ci hai servito bene, non ci consideriamo alleati, noi non ti dobbiamo nulla. Sapevamo del vostro accordo iniziale. Non ti sembrava sospetto? Non sapevi chi fosse in realtà?~
+@156  = ~Egli non poteva sparire in una maniera così evidente senza che lo sapessimo immediatamente. Hai solo aiutato a compiere l'inevitabile.~
+@157  = ~Ci servito bene, e il vostro accordo originale si può considerare dimenticato, considerando la tua collaborazione. Ora vattene, e spero che, in futuro, i tuoi rapporti con gli Arpisti saranno più... rilassati.~
+@158  = ~Far luce sul fato di Montaron.
+
+L'astuzia degli Arpisti sopravviverà alla loro reputazione. Li ho aiutati ingannando Xzar e facendogli credere che l'uccello che gli ho consegnato fosse Montaron, mentre, in realtà, era un assassino degli Arpisti camuffato. Non so che cosa sia realmente accaduto a Montaron, ma sembra probabile che il ladro malvagio sia morto.~
+@159  = ~Fai alla svelta. Le nostre porte non rimangono aperte a chiunque per lungo tempo.~
+@160  = ~Gli Arpisti sono spietati nel loro giustizia, <CHARNAME>, ma se Xzar faceva veramente quello che diceva, ha meritato il suo destino.~
+@161  = ~Ah, il vecchio trucco "l'uccello è veramente l'assassino" non fallisce mai. Mio Cugino Belar una volta lo ha provato pure con il mio prozio Tookar, anche se, per essere onesti, non intendeva uccidere nessuno. Si è trasformato da un colibrì nella sua forma originale, solo per scherzo, il giorno del compleanno di mio zio... e lo ha spaventato a tal punto che il vecchio ha avuto un infarto fulminante. Gli anziani sono stati così sconvolti che hanno trasformato Belar in un colibrì definitivamente. A lui però piaceva e se ne volò via (quel ramo della famiglia è sempre stato un po' strano, se capisci cosa intendo)... solo per essere mangiato da un Grifone una settimana più tardi, almeno così ho sentito. Beh, alla fine si tratta di giustizia, suppongo.~
+@162  = ~Ah, ancora tu. Mi stai seguendo? Non importa, ora puoi testimoniare il successo dei miei esperimenti!~
+@163  = ~Monty sarà il mio compagno ancora una volta. Maledetti siano quegli Arpisti!~
+@164  = ~Vedi? Il suo corpo comincia a rianimarsi! Che successo!~
+@165  = ~Jaheira insiste che io distrugga l'arma.
+
+Jaheira ha chiesto che l'arma trovata nella casa di Prebek venga distrutta. La darò a Bernard del Diadema di Rame, che penserà a risolvere il problema.~
+
+@166  = ~Jaheira insiste che io distrugga l'arma.
+Dopo le numerose insistenze di Jahiera, ho portato la scimitarra trovata nella casa di Prebek a Bernard che a sua volta la ha consegnata a qualcuno in grado di distruggerla.~
+
+@167  = ~Scoprire cosa è successo a Montaron.
+Ho sventato il piano degli Arpisti per assassinare Xzar, avvertendolo del pericolo e permettendogli di uccidere l'assassino. Trovare Montaron rimane un problema, comunque, e devo tornare alla Rocca degli Arpisti per farlo.~
+
+@168  = ~Scoprire cosa è successo a Montaron.
+Ho aiutato il mago Xzar a recuperare il corpo del suo compagno Montaron dalla Rocca degli Arpisti, uccidendo gli Arpisti durante la missione. Xzar sembrava molto divertito dalla piega presa dagli eventi.~
+
+@169  = ~Scoprire cosa è successo a Montaron.
+Ho aiutato il mago Xzar a recuperare il corpo del suo compagno Montaron dalla Rocca degli Arpisti. Comunque ho posto il veto sull'uccisione degli Arpisti ed è sembrato dispiaciuto per questo.~
+
+@170  = ~Scoprire cosa è successo a Montaron.
+Ho aiutato il mago Xzar a recuperare il corpo del suo compagno Montaron dalla Rocca degli Arpisti e, in cambio, ucciso gli Arpisti. Xzar sembrava molto divertito dalla piega presa dagli eventi.~
+
+@171  = ~La Fine di Xzar.
+Ho incontrato nuovamente Xzar, il mago pazzo, ma questa volta a casa di Prebek. A prima vista stava cercando di rianimare il corpo di Montaron, ma questi trucchi sono riservati ai soli dèi e la sua creatura senza anima gli si è rivoltata contro. Alla fine il mago è stato distrutto dalla sua stessa magia.~
+@172  = ~Uhh...uhhhhh...uuuaaaAARRGHH!~
+@173  = ~Monty! Monty! Noooooo!~
+@174  = ~Ti salverò subito!~

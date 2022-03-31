@@ -1,0 +1,66 @@
+IF
+	OR(2)
+		!GlobalTimerNotExpired("Cast","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	HaveSpell(WIZARD_SHADOW_DOOR)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_SHADOW_DOOR)
+END
+
+IF
+	OR(2)
+		!GlobalTimerNotExpired("Cast","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	HaveSpell(WIZARD_MIRROR_IMAGE)
+	!StateCheck(Myself,STATE_MIRRORIMAGE)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_MIRROR_IMAGE)
+END
+
+IF
+	OR(2)
+		!GlobalTimerNotExpired("Cast","LOCALS")
+		CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	HaveSpell(WIZARD_ARMOR)
+	CheckStatGT(Myself,6,ARMORCLASS)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_ARMOR)
+END
+
+
+
+// Dispel Magic
+
+IF
+	!GlobalTimerExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_DISPEL_MAGIC)
+	OR(2)
+		HasBounceEffects(LastSeenBy(Myself))
+		HasImmunityEffects(LastSeenBy(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(LastSeenBy(Myself),0,SANCTUARY)
+	!Range(LastSeenBy(Myself),0)
+	!InMyGroup(LastSeenBy(Myself))
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+END

@@ -1,0 +1,7 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CreateCreatureObjectDoor("d0qpwic1",Myself,0,0,0)
+    DestroySelf()
+END

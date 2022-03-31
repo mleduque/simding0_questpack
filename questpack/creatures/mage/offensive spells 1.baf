@@ -1,0 +1,293 @@
+IF
+	!GlobalTimerExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_FIREBALL)
+	CheckStatLT(LastSeenBy(Myself),75,RESISTFIRE)
+	!Range(LastSeenBy(Myself),15)
+	OR(2)
+		!Detect(NearestMyGroupOfType)
+		Range(TenthNearestMyGroupOfType,10)
+	!HasItemEquiped("CLCK26",LastSeenBy(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(LastSeenBy(Myself),0,SANCTUARY)
+	!Range(LastSeenBy(Myself),0)
+	!InMyGroup(LastSeenBy(Myself))
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_FIREBALL)
+END
+
+IF
+	!GlobalTimerExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_LIGHTNING_BOLT)
+	CheckStatLT(LastSeenBy(Myself),75,RESISTELECTRICITY)
+	!HasItemEquiped("CLCK24",LastSeenBy(Myself))
+	!HasItemEquiped("CLCK26",LastSeenBy(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(LastSeenBy(Myself),0,SANCTUARY)
+	!Range(LastSeenBy(Myself),0)
+	!InMyGroup(LastSeenBy(Myself))
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+	!GlobalTimerExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_STINKING_CLOUD)
+	!HasItemEquiped("CLCK26",LastSeenBy(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(LastSeenBy(Myself),0,SANCTUARY)
+	!Range(LastSeenBy(Myself),0)
+	!InMyGroup(LastSeenBy(Myself))
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_STINKING_CLOUD)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+	CheckStatLT(LastSeenBy(Myself),75,RESISTFIRE)
+    !HasItemEquiped("CLCK26",LastSeenBy(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(LastSeenBy(Myself),0,SANCTUARY)
+	!Range(LastSeenBy(Myself),0)
+	!InMyGroup(LastSeenBy(Myself))
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_MAGIC_MISSILE)
+    !HasItemEquiped("CLCK26",LastSeenBy(Myself))
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(LastSeenBy(Myself),0,SANCTUARY)
+	!Range(LastSeenBy(Myself),0)
+	!InMyGroup(LastSeenBy(Myself))
+	See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_CONE_OF_COLD)
+	CheckStatLT(NearestEnemyOf(Myself),75,RESISTCOLD)
+    !HasItemEquiped("CLCK26",NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_CONE_OF_COLD)
+	CheckStatLT(SecondNearestEnemyOf(Myself),75,RESISTCOLD)
+    !HasItemEquiped("CLCK26",SecondNearestEnemyOf(Myself))
+	Range(SecondNearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_CONE_OF_COLD)
+	CheckStatLT(ThirdNearestEnemyOf(Myself),75,RESISTCOLD)
+    !HasItemEquiped("CLCK26",ThirdNearestEnemyOf(Myself))
+	Range(ThirdNearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_BURNING_HANDS)
+	CheckStatLT(NearestEnemyOf(Myself),75,RESISTFIRE)
+    !HasItemEquiped("CLCK26",NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_BURNING_HANDS)
+	CheckStatLT(SecondNearestEnemyOf(Myself),75,RESISTFIRE)
+    !HasItemEquiped("CLCK26",SecondNearestEnemyOf(Myself))
+	Range(SecondNearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_BURNING_HANDS)
+	CheckStatLT(ThirdNearestEnemyOf(Myself),75,RESISTFIRE)
+    !HasItemEquiped("CLCK26",ThirdNearestEnemyOf(Myself))
+	Range(ThirdNearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_SHOCKING_GRASP)
+	CheckStatLT(NearestEnemyOf(Myself),75,RESISTELECTRICITY)
+    !HasItemEquiped("CLCK26",NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_SHOCKING_GRASP)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_SHOCKING_GRASP)
+	CheckStatLT(SecondNearestEnemyOf(Myself),75,RESISTELECTRICITY)
+    !HasItemEquiped("CLCK26",SecondNearestEnemyOf(Myself))
+	Range(SecondNearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_SHOCKING_GRASP)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_SHOCKING_GRASP)
+	CheckStatLT(ThirdNearestEnemyOf(Myself),75,RESISTELECTRICITY)
+    !HasItemEquiped("CLCK26",ThirdNearestEnemyOf(Myself))
+	Range(ThirdNearestEnemyOf(Myself),8)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_SHOCKING_GRASP)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_COLOR_SPRAY)
+    !HasItemEquiped("CLCK26",NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_COLOR_SPRAY)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_COLOR_SPRAY)
+    !HasItemEquiped("CLCK26",SecondNearestEnemyOf(Myself))
+	Range(SecondNearestEnemyOf(Myself),5)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_COLOR_SPRAY)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(WIZARD_COLOR_SPRAY)
+    !HasItemEquiped("CLCK26",ThirdNearestEnemyOf(Myself))
+	Range(ThirdNearestEnemyOf(Myself),5)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_REALLY_DEAD)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	CheckStat(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_COLOR_SPRAY)
+END

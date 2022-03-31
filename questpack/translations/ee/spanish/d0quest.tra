@@ -1,0 +1,51 @@
+// -*- coding: utf-8 -*-
+
+@106 = ~Guantes para apuñalar por la espalda
+Estos raros guantes encantados solo son creados por los asesinos de mas alto rango de Máscaras Nocturnas.  Se rumorea que sus creadores originales fueron los asesinos portadores de magia de Sembia, y desde entonces fueron copiados por todos los gremios del continente.  A pesar de todo, estos guantes tienen la intención de convertir a los asesinos de Máscaras Nocturnas en peligrosos adversarios.
+
+ESTADISTICAS:
+
+Incrementa el modificador de apuñalamiento por la espalda en 1 mientras esté equipado~
+
+@108 = ~Anillo de Aran de Invisibilidad
+Este anillo te fué entregado como recompensa por el lider de los Ladrones de las Sombras, Aran Linvail. Su creación fué encargada por un lider Ladron de las Sombras que buscaba escapar de las situaciones delicadas; trágicamente no fué capaz de ayudar a su portador cuando Linvail ascendió al liderazgo político.
+
+ESTADISTICAS:
+
+Especial:  El portador puede lanzar Invisibilad 3 veces al día~
+@143 = ~Adquirida con un precio sanguinario y despiadado, pocos aventureros tienen el estómago suficiente para llevar este objeto. La última lágrima de una dryada, cristalizada con su último frío aliento, esta piedra brilla con una aterradora luz. El que la lleve se sentirá tocado con su prolongado legado de belleza, pero esta bendición trae un alto precio, la gema representa la debilidad de la vida de su víctima, aplastada por una mano cruel.
+
+ESTADISTICAS:
+  Inmunidad a Encantamiento mientras esté equipado
+  +1 bonificación al Carisma
+  -1 penalización a Constitución~
+
+@144 = ~Este es el anillo grabado que llevaba Rayic Gethras. Trae un encantamiento menor, pero aparte de eso es un objeto con un significado puramente sentimental.
+
+ESTADISTICAS:
+
++1 bonificación a todas las tiradas de salvación~
+@167 = ~Este cinturón te fué entregado por Jadarath, quien a partido hacia reinos desconocidos. Imbuído con una pequeña porción de su extraña magia, puede en ocaciones salvar al portador de ciertos tipos de muerte. A pesar de ser un maestro de la magia, Jadarath era desafortunadamente un pésimo sastre, por lo que este cinturón es desproporcionado e incómodo de llevar.
+
+ESTADISTICAS:
+
+Especial: El portador puede lanzar Sanar una ves al día~
+@212 = ~Cimitarra +1, Shazzellim
+Esta cimitarra es de la peor calidad, pero en su interior reside gran poder y maldad.  Creada con el solo propósito de cazar Arpistas, Shazzellim es mas que capaz de llevar a cabo esa tarea.  Con un golpe de esta espada el Arpista debe superar una tirada de salvación contra hechizos o morirá.  Con la pericia de los Magos Rojos de Thay, esta espada también tiene el poder de Vocalizar, por lo cual son con frecuencia entregadas a los Luchador-Magos en su cargo de Magos.  De mas está decir que el poseedor de esta espada no será bien visto por Arpistas.
+
+ESTADISTICAS
+
+Habilidades poseídas:
+ Vocalizar
+
+Habilidades de combate:
+ Cualquier Arpista que sea golpeado debe hacer una tirada de salvación contra hechizos con un penalizador de -2 o morirá
+
+Daño:  1D8 +1
+THAC0: +1
+Tipo de daño:  Cortante
+Peso:  3
+Factor de velocidad: 4
+Talento marcial: Cimitarra/Wakizashi/Ninja-To
+Tipo:  1 mano
+Requisitos: Fuerza 10~

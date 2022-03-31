@@ -1,0 +1,29 @@
+IF
+  Global("D0Poor","GLOBAL",12)
+  AreaCheck("ar0812")
+THEN
+  RESPONSE #100
+    SetGlobal("SPRITE_IS_DEADd0thug3","GLOBAL",1)
+    DestroySelf()
+END
+
+IF
+  GlobalTimerExpired("D0KillGirl","GLOBAL")
+  AreaCheck("ar0812")
+  Global("D0AttackGirlYeh","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0AttackGirlYeh","LOCALS",1)
+    Enemy()
+    Attack("d0girl")
+END
+
+IF
+  GlobalTimerExpired("D0KillGirl","GLOBAL")
+  AreaCheck("ar0812")
+  Global("D0AttackGirlYeh","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END

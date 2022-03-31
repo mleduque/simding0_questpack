@@ -1,0 +1,33 @@
+IF
+  Name("d0qpcow3",Myself)
+  Global("D0QPSpawnCowled","AR0500",1)
+  Range([PC],25)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPSpawnCowled","AR0500",2)
+    ClearAllActions()
+    SetCutSceneLite(TRUE)
+    MoveViewObject(Myself,FAST)
+    Wait(1)
+    ForceSpell(Myself,WIZARD_DISPEL_MAGIC)
+    Wait(2)
+    CreateCreatureObjectDoor("d0qpcow1",Myself,0,0,0)
+    CreateCreatureObjectDoor("d0qpcow2",Myself,0,0,0)
+    SetGlobal("D0QSpawnCowled","AR0500",3)
+END
+
+IF
+  Name("d0qpcow1",Myself)
+  Global("D0QSpawnCowled","AR0500",3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("D0QSpawnCowled","AR0500",4)
+    Wait(1)
+    FaceObject("d0qpcow3")
+    ActionOverride("d0qpcow3",FaceObject("d0qpcow1"))
+    ActionOverride("d0qpcow2",FaceObject("d0qpcow3"))
+    Wait(1)
+    SetInterrupt(TRUE)
+    StartDialogNoSet("d0qpcow3")
+END

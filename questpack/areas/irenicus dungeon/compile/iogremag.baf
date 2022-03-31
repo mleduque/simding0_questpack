@@ -1,0 +1,125 @@
+IF
+    Detect(Myself)
+    False()
+THEN
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    !GlobalTimerNotExpired("Cast","LOCALS")
+    See(NearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(EASIEST)
+    OR(2)
+        StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(10,5)
+    See(SecondNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(EASY)
+    OR(2)
+        StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(8,3)
+    See(ThirdNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(NORMAL)
+    OR(2)
+        StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(6,2)
+    See(FourthNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        DifficultyGT(HARD)
+    OR(2)
+        StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(4,1)
+    See(FifthNearestEnemyOf(Myself))
+    OR(2)
+        StateCheck(FifthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+        RandomNumGT(2,1)
+    See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+    See(TenthNearestEnemyOf(Myself))
+    False()
+THEN
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    !GlobalTimerNotExpired("Cast","LOCALS")
+	Global("HeartOfFury","GLOBAL",1)
+    GlobalLT("SkullTrap","LOCALS",1)
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	RandomNum(3,1)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("Cast","LOCALS",6)
+		IncrementGlobal("SkullTrap","LOCALS",1)
+        ForceSpell(LastSeenBy(Myself),WIZARD_SKULL_TRAP)
+END
+
+IF
+    !GlobalTimerNotExpired("Cast","LOCALS")
+	Global("HeartOfFury","GLOBAL",1)
+    GlobalLT("AcidArrow","LOCALS",1)
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	RandomNum(2,1)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("Cast","LOCALS",6)
+		IncrementGlobal("AcidArrow","LOCALS",1)
+        ForceSpell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+    !GlobalTimerNotExpired("Cast","LOCALS")
+	Global("HeartOfFury","GLOBAL",1)
+    GlobalLT("MagicMissle","LOCALS",2)
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("Cast","LOCALS",6)
+		IncrementGlobal("MagicMissle","LOCALS",1)
+        ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+    !GlobalTimerNotExpired("Cast","LOCALS")
+    DifficultyGT(NORMAL)
+    HaveSpell(WIZARD_MELF_ACID_ARROW)
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("Cast","LOCALS",6)
+        Spell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+    !GlobalTimerNotExpired("Cast","LOCALS")
+    HaveSpell(WIZARD_MAGIC_MISSILE)
+    See(LastSeenBy(Myself))
+    !Range(LastSeenBy(Myself),0)
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("Cast","LOCALS",6)
+        Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END

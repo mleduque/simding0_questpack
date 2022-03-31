@@ -1,0 +1,435 @@
+<!doctype html>
+
+<head>
+  <title>Quest Pack</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body {font-family: verdana; font-size: 12px}
+    h4 {text-decoration: underline;}
+    h5 {font-size: 12px; font-weight: normal; text-decoration: underline;}
+  </style>
+</head>
+
+<body>
+
+  <a href="readme.html">Return to the Quest Pack documentation.</a>
+
+  <h4><a name="Section7">Version History</a></h4>
+
+  <h5>Version 3.5</h5>
+  <ul>
+    <li>Update French translation. Thanks, Deratiseur!</li>
+  </ul>
+
+  <h5>Version 3.4</h5>
+  <ul>
+    <li>Update Russian translation, with thanks to Pilferer, kaiken &
+      Arcanecoast.ru</li>
+    <li>Tweak to random vampire encounter from Additional Random
+      Encounters. Vampires are not encountered unless you have sided
+      against Bodhi.</li>
+  </ul>
+
+  <h5>Version 3.3</h5>
+  <ul>
+    <li>Do not overwrite RODS03.ITM and base new spells on existing
+      ones.</li>
+    <li>Add compatibility with EET.</li>
+    <li>Coronet: Lorick does not fail to spawn in the event you enter
+      the Asylum with Desharik's assistance.</li>
+    <li>Update Detectable Spells.</li>
+    <li>Patch KIT.IDS in a better way.</li>
+  </ul>
+
+  <h5>Version 3.2</h5>
+  <ul>
+    <li>Update Italian translation. Thanks, Improbabile!</li>
+    <li>Use HANDLE_CHARSETS and other small changes to the TRA
+      files.</li>
+    <li>Fix hardcoded protagonist gender in "Intrigue in the Copper
+      Coronet".</li>
+    <li>Moiya cannot be killed during a cutscene she is supposed to
+      survive.</li>
+    <li>Accommodate fragile code in ToBEx when dispelling illusions on
+      the paladins in Windspear hills.</li>
+    <li>Fix loose scripting on Ithafeer that could result in
+      nonsensical exclamations about being attacked.</li>
+    <li>tisunpack for OS X is statically linked.</li>
+  </ul>
+
+  <h5>Version 3.1</h5>
+  <ul>
+    <li>Remove the 'Translucent' display flag from salamander auras.</li>
+  </ul>
+
+  <h5>Version 3</h5>
+  <p>By SimDing0&trade;:</p>
+  <ul>
+    <li>AI: Undead will no longer attempt to use potions.</li>
+    <li>Area: Removed duplicate Elder Orb which would appear in the
+    Beholder lair.</li>
+    <li>Area: Resolved issue which would cause Revan to just stand
+    there instead of attacking.</li>
+    <li>Area: Added a new enemy to help out Invisible Stalkers in the
+    guarded compound.</li>
+    <li>Besamen: Fixed typo which appeared in one of my
+    screenshots. Oh dear.</li>
+    <li>Besamen: Added minor dialogue to Enge. (Thank you, Cam, for
+    forcing me to write a serious situation for a comedy
+    character.)</li>
+    <li>Besamen: No longer possible to ask Mira about Baisera after
+    quest resolution.</li>
+    <li>Boss: Chapter 3 Bodhi will attempt to avoid killing the
+    Bhaalspawn until the last moment.</li>
+    <li>Creature: Reduced XP value of Sendai's Derro horde.</li>
+    <li>Creature: Assigned missing bow to slavers.</li>
+    <li>Creature: No longer break Djinni and Efreeti. Sigh.</li>
+    <li>Creature: Fixed mage scripting on Tanova.</li>
+    <li>Coronet: Resolved journal entry typos.</li>
+    <li>Coronet: Minor adjustments to Moiya story for
+    plausibility.</li>
+    <li>Hell: We no longer overwrite hdragsil.cre.</li>
+    <li>Hell: Various changes to streamline the Selfish test. This
+    should hopefully solve various rare issues.</li>
+    <li>Hell: Standardised disabling of area transitions during
+    tests.</li>
+    <li>Infernal: Increased Cowled spawn timer to 7 rounds.</li>
+    <li>Infernal: Resolved minor typos.</li>
+    <li>Infernal: Wilbur now carries the sword if you don't buy it
+    from him.</li>
+    <li>Infernal: The Cowled Wizards now verbally condemn you for the
+    events.</li>
+    <li>Infernal: Dropped reputation penalty to 1.</li>
+    <li>Miscellaneous: Ribald now wears the Archmagi Robe instead of
+    sitting on it.</li>
+    <li>Miscellaneous: Reinstated Bons' spectre encounter.</li>
+    <li>Miscellaneous: Random encounter ogre mages no longer drop an
+    obscene amount of random treasure.</li>
+    <li>Miscellaneous: Vampiric Sime works again.</li>
+    <li>Miscellaneous: Reinstated placement of Potion Cases and Ammo
+    Belts in SoA.</li>
+    <li>Miscellaneous: Rakshasa comments on Flail of Ages should no
+    longer loop.</li>
+    <li>Miscellaneous: Shadows no longer chunk.</li>
+    <li>Miscellaneous: Disabled Bridge District abduction sequence. I
+    think we all know this blew.</li>
+    <li>Miscellaneous: Limited spawning of Rune Assassins in random
+    encounter.</li>
+    <li>Negotiation: Turning Vithal hostile should now work
+    correctly.</li>
+    <li>Phluafae: Dryad's Tear is now equippable as a necklace.</li>
+    <li>Potion: Added additional Potions of Magic Blocking and
+    Mirrored Eyes.</li>
+    <li>Potion: Potions of Magic Blocking now protect against levels
+    1-5 instead of all as per description.</li>
+    <li>Potion: Potions of Mirrored Eyes should now protect against
+    Basilisk gaze attacks.</li>
+    <li>Thieves: Added extra motivation to assist Mae'Var.</li>
+    <li>Thieves: Added a variable to prevent Arkanis Gath from
+    spawning if necessary.</li>
+    <li>Thieves: Booter-on-the-rack is no longer
+    Booter-on-the-floor.</li>
+    <li>Updated for compatibility with the BG2 Fixpack.</li>
+    <li>Resolved some issues with script assignment and scripting
+    errors.</li>
+    <li>Resolved issue which would cause installed components to be
+    incorrectly recorded.</li>
+  </ul>
+  <p>By Wisp:</p>
+  <ul>
+    <li>Modernise the code</li>
+    <li>Compatibility with BGII: EE, GNU/Linux and OS X</li>
+    <li>Traify all components</li>
+    <li>Add partial Russian translation by translators unknown</li>
+    <li>Update Spanish translation (still partial)</li>
+    <li>Update French translation (still partial)</li>
+    <li>Update German translation (still partial)</li>
+    <li>Update Italian translation (still partial)</li>
+    <li>Update Detectable Spells</li>
+    <li>Inhibit some MODDER warnings</li>
+    <li>Fix null arguments in jatermin.baf</li>
+    <li>Fix evaluation error in tactical_creature.tph</li>
+    <li>Fix the missing creature d0batho in Area Improvements</li>
+    <li>Do not overwrite
+      <ul>
+        <li>ar1800.bcs</li>
+        <li>dcowl1.cre</li>
+        <li>maevar.cre</li>
+        <li>mvguard1.cre</li>
+        <li>mvpries.cre</li>
+        <li>aran.cre</li>
+        <li>aran02.cre</li>
+        <li>arnfgt03.cre</li>
+        <li>arnfgt04.cre</li>
+      </ul>
+    </li>
+    <li>Replace "VAMPIR01".CRE with VAMPIF01.CRE and VAMPIM01.CRE</li>
+    <li>Fix broken AreaChecks in d0jahrev.baf</li>
+    <li>Replace many instances of ApplySpell() with ReallyForceSpell()</li>
+    <li>Fix broken Allegiance() checks in "Improved Oasis"</li>
+    <li>Fix broken !Dead() checks</li>
+    <li>Fix broken OR() triggers</li>
+    <li>Fix broken Player2 reference</li>
+    <li>Fix spelling error in "Copper Coronet"</li>
+    <li>Fix invalid resref in d0qpflay.spl</li>
+    <li>Mirror BG2 Fixpack's changes to the Hell Selfishness test</li>
+    <li>Fix game-breaking bug in Selfishness test's selfish path</li>
+    <li>Fix bug whereby Selfishness demon could deliver the wrong dialogue at the end of the selfish path</li>
+    <li>Fix bug that prevented Chaotic characters who did bad things during the Hell trials from turning evil</li>
+    <li>Fix invalid "FWKeto" script name</li>
+    <li>Change awkward dialogue transition in "Reward Negotiation"</li>
+    <li>Fix script name errors in "Vampiric Sime" of "Miscellaneous Enhancements"</li>
+    <li>Replace "CHUNKS" scripting in "New Fate For The Dryads' Acorns"</li>
+    <li>Fix invalid resref "d0umbhul"</li>
+    <li>Fix incorrect script name for "Fun Dog"</li>
+    <li>Fix annoying and/or bad strrefs in d0qppot[12].spl and jy_0[123]db.itm</li>
+    <li>Remove missing resrefs in jy_00db.cre, jy_00db1.cre and sudryad.cre</li>
+    <li>Break Celile's knee. His days of running are over</li>
+    <li>Fix several instances of GivePartyGold() being used by creatures who possess no gold</li>
+    <li>Remove some uses of FillSlot() (because buggy) in "Additional Shadow Thieves Content"</li>
+    <li>Fix some awkward scripting in "Intrigue in the Copper Coronet"</li>
+    <li>Fix an incorrect reference to the Night Knives in "Additional Shadow Thieves Content"</li>
+    <li>Fix oversight where Edwin could fail to understand Mae'Var was dead, rendering him unrecruitable</li>
+    <li>Remove the option of telling Surly to leave the Copper Coronet, because his presence is required for the Mazzy–Gorf fight</li>
+    <li>Change scripting in "Infernal Thievery" to hopefully be a bit more robust</li>
+    <li>Fix potion-drinking cutscene in "Potion Quest" so party AI does not try to kill Jadarath</li>
+    <li>Dispelling illusions on the Windspear ogres also affects their names</li>
+    <li>Fix bug that prevented some Imoen-related interjections in Aran's dialogue from being functional</li>
+    <li>Fix various issues concerning the lost girl in the Docks district</li>
+    <li>Fix missing immunities on Dryad's Tear necklace</li>
+    <li>Fix the exchange between Xzar and Lucette in "Alternative Harper/Xzar Plot"</li>
+    <li>Creature Improvements removes the shields from the archer orcs in Firkraag's dungeon</li>
+    <li>Fix chapter 6 allies so they do not leave if attacked while dominated by vampires</li>
+    <li>Mae'Var's bow is no longer marked as stolen</li>
+    <li>Fix oversight in "Saving Sanik in Brynnlaw" that could break the quest</li>
+    <li>Fix bug that had Lehtinan acting as if he had bought Risa, even though Kamir had scared Tredor off</li>
+    <li>Fix NO VALID REPLIES OR LINKS when non-evil PCs sell Risa</li>
+    <li>Fix redundant journal entry when Kamir saves Risa from slaving PCs</li>
+    <li>Fix DS's CDDETECT.SPL to not be sourced from an item</li>
+    <li>Change "Miscellaneous Enhancements" to allow the option of not installing the additional random encounters</li>
+    <li>After being reunited with Sanik, Claire will not initiate conversation until the player is sufficiently close.</li>
+    <li>Make appropriate changes to the text installed on BGII: EE. Differences from the regular text are documented in translations/ee_differences.txt.</li>
+  </ul>
+
+  <h5>Version 2.3</h5>
+  <ul>
+    <li>AI: Improvements to illusionary clone behaviour.</li>
+    <li>Besamen: No longer possible to tell Baisera she has her job
+    back if you skip talking to Mira.</li>
+    <li>Besamen: Mira will mention Baisera after the quest
+    resolution.</li>
+    <li>Boss: Updated Detectable Spells. A lot.</li>
+    <li>Boss: Resolved an incompatibility between Bodhi's new AI and
+    Unfinished Business.</li>
+    <li>Coronet: Resolved the "no valid replies" issue with the debt
+    collectors.</li>
+    <li>Coronet: Moiya shouldn't suffer morale failure for real
+    now.</li>
+    <li>Coronet: Surly will now make a return if you evict him.</li>
+    <li>Coronet: Lorick is no longer so eager to maze the party for no
+    reason.</li>
+    <li>Galoomp: Galoomp will now introduce himself on your first
+    meeting.</li>
+    <li>Harpers: Meronia spawn timer reduced to 8 hours.</li>
+    <li>Hell: Removed leftover stat gain upon defeating Wraith
+    Sarevok.</li>
+    <li>Miscellaneous: Implemented a minor expansion to the lich in
+    the Crooked Crane.</li>
+    <li>Miscellaneous: Mummies no longer go wrong when spells are cast
+    on them. Oops.</li>
+    <li>Miscellaneous: Resurrecting Mummies should no longer interfere
+    with Korgan's quest.</li>
+    <li>Miscellaneous: Halved XP rewards for mummy resurrection.</li>
+    <li>Miscellaneous: Tazok now appears as a half-ogre.</li>
+    <li>Miscellaneous: Added Jaysyn's Displacer Beasts from
+    D0Tweak.</li>
+    <li>Miscellaneous: Ribald now wears a Robe of the Neutral
+    Archmagi.</li>
+    <li>Miscellaneous: Fixed a potential dialogue loop with Vampiric
+    Sime.</li>
+    <li>Miscellaneous: Fixed a typo that could cause an error message
+    at installation.</li>
+    <li>Miscellaneous: Added new random encounters.</li>
+    <li>Miscellaneous: Now possible to give gold to the woman whose
+    lost child you recover.</li>
+    <li>Nazariel: New area no longer allows flirting.</li>
+    <li>Negotiation: Vithal's teleport spell prevents him being
+    killed. Consider it the effect of him phasing away.</li>
+    <li>Oasis: Corrected facing directions for a number of Oasis
+    troops.</li>
+    <li>Potion: Blindness now protects from gaze attacks.</li>
+    <li>Potion: Mummies grouped together shouldn't bombard you with
+    gaze attacks quite so much.</li>
+    <li>Potion: Added missing protections to the Potion of Mirrored
+    Eyes.</li>
+    <li>Potion: Gaze attacks use more appropriate projectiles.</li>
+    <li>Potion: No longer possible to invite Jadarath to visit his
+    family when he has already done so.</li>
+    <li>Potion: Resolved issue which would cause Jadarath to forget
+    which potions you'd given him.</li>
+    <li>Potion: Various minor typos resolved.</li>
+    <li>Potion: Shifted arbitrary changes to Mummies into the Creature
+    Improvements section.</li>
+    <li>Sanik: People in Brynnlaw now correctly acknowledge if Sanik
+    is still alive.</li>
+    <li>Thieves: Journal entry on killing Aran no longer erroneously
+    suggests the player is working for Bodhi.</li>
+    <li>Thieves: Description for Aran's Ring no longer assumes he gave
+    it to you.</li>
+    <li>Thieves: Orcs and Shadows in Aran's lair are now replaced with
+    more appropriate enemies.</li>
+    <li>Thieves: Freeing the prisoners no longer requires Aran to be
+    dead.</li>
+    <li>Thieves: Gaelan will now turn hostile when you attack
+    Aran.</li>
+    <li>Thieves: The vastly over-complicated handling of Rayic
+    regaining his ring is now replaced with something that should
+    always work.</li>
+    <li>Thieves: If you helped him, Rayic will give you slightly
+    longer to leave the room.</li>
+    <li>Thieves: We standardise Booter as a gnome, rather than
+    gnome/dwarf hybrid.</li>
+    <li>Thieves: The Shadow Thief Prison Key can still be obtained if
+    you completed the Carrack quest.</li>
+    <li>Thieves: No longer possible to acquire a duplicate Ring of
+    Lock Picks.</li>
+    <li>Fixed a number of harmless installation errors that could crop
+    up under some circumstances.</li>
+    <li>Added Infernal Thievery component.</li>
+    <li>Further NPC interjections added throughout.</li>
+    <li>Boss Improvements expanded into Creature/Area
+    Improvements.</li>
+    <li>AI Improvements updated to include optional Expanded
+    Vocabulary.</li>
+    <li>Removed horrible profanity from the readme.</li>
+  </ul>
+
+  <h5>Version 2.21</h5>
+  <ul>
+    <li>Boss: Should really fix all install issues now. Thanks,
+    the_bigg.</li>
+    <li>Galoomp: Worked around a minor Keto bug which was preventing
+    Kram from spawning correctly in some circumstances.</li>
+  </ul>
+
+  <h5>Version 2.2</h5>
+  <ul>
+    <li>Boss: Should now install over Item Upgrade. I suggest everyone
+    bugs Weimer to fix the corrupt item it ships with. :)</li>
+    <li>Coronet: Should now install over Keto. APPEND_EARLY is
+    god.</li>
+    <li>Harpers: Fixed an incorrect dialogue link that would prevent
+    Meronia from giving you the bird at all.</li>
+    <li>Harpers: Xzar's colours are now adjusted to match BG1.</li>
+    <li>Oasis: Changed an awkward repetition of "divine".</li>
+    <li>Thieves: Removed infinite XP exploit with Brega.</li>
+    <li>Thieves: Fixed a case in which the player constantly had lines
+    including "however" available to say to Rayic. This looked
+    silly.</li>
+    <li>Fixed some omissions from the credits.</li>
+  </ul>
+
+  <h5>Version 2.1</h5>
+  <ul>
+    <li>AI: Paladins should now attempt to turn undead when
+    appropriate.</li>
+    <li>AI: Added improved illusionary images from D0Tweak.</li>
+    <li>Coronet: Implemented a timer to limit the rate at which money
+    can be borrowed.</li>
+    <li>Coronet: Celile will now explain why the Shadow Thieves
+    haven't dealt with him if you ask.</li>
+    <li>Dryads: Fixed issue with Firkraag's lair being unavailable
+    under some circumstances.</li>
+    <li>Galoomp: Kram will now actually take the ring when he says he
+    is.</li>
+    <li>Galoomp: Resolved a minor response typo.</li>
+    <li>Harpers: Checks on Jaheira's romance now function
+    correctly.</li>
+    <li>Harpers: Player must now propose betraying Xzar, rather than
+    Harpers suggesting it.</li>
+    <li>Oasis: Tethyrian archers now carry a limited number of Arrows
+    +3.</li>
+    <li>Potion: Jadarath will no longer erroneously refer to your dead
+    companions.</li>
+    <li>Potion: The response regarding the Sea Troll will now always
+    show correctly.</li>
+    <li>Potion: Now possible to question Sidhe about Jadarath after
+    giving her money.</li>
+    <li>Potion: Resolved issue which would cause Jadarath not to
+    return to the sewers when he claimed to be.</li>
+    <li>Potion: Expanded dialogue with Umar Hills innkeep to include
+    hint at Sidhe's current whereabouts.</li>
+    <li>Miscellaneous: Battle Horrors are now restored.</li>
+    <li>Miscellaneous: Implemented fate for Sime.</li>
+    <li>Miscellaneous: Fixed a minor bug in Madulf's scripting.</li>
+    <li>Sanik: Minor typo resolved.</li>
+    <li>Thieves: Arkanis Gath no longer appears when you side with
+    Bodhi.</li>
+    <li>Thieves: You may now tell Rayic that Edwin is already
+    dead.</li>
+    <li>Thieves: Fixed a Rayic/Edwin journal entry that would remain
+    for the entire game.</li>
+    <li>Updated readme with more detailed descriptions of how to
+    experience new content.</li>
+    <li>Updated Italian translation.</li>
+    <li>Significantly adjusted a large number of XP rewards for better
+    balancing. IO2 negotiation is the only one to have gone up-- let
+    me know what you think.</li>
+    <li>Added Reward Negotiation and Boss Improvements
+    components. Talk to me about Boss Improvements difficulty!</li>
+    <li>Added a number of new NPC interjections, particularly for
+    Kelsey and Keto.</li>
+    <li>All components should now successfully install on SoA-only
+    games.</li>
+  </ul>
+
+  <h5>Version 2</h5>
+  <ul>
+    <li>Coronet: Girl should speak correctly if you paid the
+    ransom.</li>
+    <li>Coronet: No more Virtue loss for killing Celile in
+    Brynnlaw.</li>
+    <li>Coronet: Moiya should not suffer morale failure any more.</li>
+    <li>Coronet: Money repayment timer should be totally accurate
+    now.</li>
+    <li>Coronet: Player assault scene works better now.</li>
+    <li>Coronet: Minor Tactics conflict resolved.</li>
+    <li>Coronet: Resolved issue with Moiya failing to spawn after boy
+    approaches player.</li>
+    <li>Coronet: If Celile flees before you pay him back, you will
+    still be confronted and asked for payment.</li>
+    <li>Coronet: Reduced maximum amount available to borrow.</li>
+    <li>Coronet: Now possible to remove Surly from the Coronet after
+    Hendak takes over.</li>
+    <li>Coronet: Celile comes with backup in Brynnlaw.</li>
+    <li>Harpers: Consistent XP rewards upon completion.</li>
+    <li>Harpers: Assassin no longer mentions the amulet if you agree
+    to help them.</li>
+    <li>Harpers: NPC interjections at the end make sense.</li>
+    <li>Harpers: I'm positive the Jaheira romance should always work
+    now. Meronia should spawn two days after the assassination or
+    bandit encounter, as appropriate.</li>
+    <li>Harpers: No longer possible to obtain two assassins.</li>
+    <li>Paladins: Path to keep Reynald alive is now more obvious.</li>
+    <li>Thieves: Now possible to complete Mae'Var's tasks without
+    killing Rayic. Thanks, SixOfSpades!</li>
+    <li>Thieves: The player can now both gain the Short Sword of
+    Backstabbing and accept the Thieves' Guild stronghold.</li>
+    <li>Countless other minor alterations and bugfixes. Seriously, so
+    many I lost track. Let's just say "all known bugs fixed".</li>
+    <li>Recoded the entire Shadow Thieves component because it was
+    such rubbish. I offer personal apologies to anyone who endured the
+    original, and personal insults to anyone who didn't. :)</li>
+    <li>Miscellaneous Enhancements (previously "Miscellaneous
+    Encounters") significantly expanded and split into separate
+    components.</li>
+    <li>Added General AI Improvements, Potion Quest, Revised Hell
+    Trials, Improved Oasis and many more components.</li>
+  </ul>
+
+  <h5>Version 1</h5>
+  <ul>
+    <li>Initial release. Rubbish.</li>
+  </ul>
+
+</body>

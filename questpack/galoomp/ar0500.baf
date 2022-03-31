@@ -1,0 +1,11 @@
+IF
+  Global("A#IM5Quest","GLOBAL",2)
+  Global("A#IM5KramSpawn","GLOBAL",0)
+  Global("A#IM5Kram2Spawn","GLOBAL",0)
+//  Global("Reveal0500","AR0500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A#IM5KramSpawn","GLOBAL",1)
+    CreateCreature("A#KRAM",[4036.168],0)
+    Continue()
+END

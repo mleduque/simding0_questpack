@@ -1,0 +1,20 @@
+IF
+	Dead("d0qpore0")
+	Global("MoonBladeFight","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MoonBladeFight","GLOBAL",1)
+		StartCutSceneMode()
+		StartCutScene("Cut56a")
+END
+
+IF
+	!Dead("d0qpore0")
+	Global("MoonBladeFight","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MoonBladeFight","GLOBAL",1)
+		ActionOverride("sumoon",SetName(@310))
+		StartCutSceneMode()
+		StartCutScene("Cut56a")
+END

@@ -1,0 +1,10 @@
+IF
+	!Dead("Madam")
+	Global("D0Succubus","GLOBAL",0)
+	GlobalGT("PowerObsidianSphere","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D0Succubus","GLOBAL",1)
+		CreateCreature("d0sucvic",[2374.2428],0)
+		Continue()
+END

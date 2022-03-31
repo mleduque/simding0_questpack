@@ -1,0 +1,27 @@
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  !GlobalTimerNotExpired("Web","LOCALS")
+  Race(Myself,SPIDER)
+  RandomNum(3,1)
+  Range(NearestEnemyOf(Myself),4)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobalTimer("Web","LOCALS",12)
+    ReallyForceSpellRES("d0spiweb",LastSeenBy(Myself))
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  !GlobalTimerNotExpired("Web","LOCALS")
+  Race(Myself,SPIDER)
+  RandomNum(3,2)
+  Range(SecondNearestEnemyOf(Myself),4)
+  See(SecondNearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobalTimer("Web","LOCALS",12)
+    ReallyForceSpellRES("d0spiweb",LastSeenBy(Myself))
+END

@@ -1,0 +1,33 @@
+IF
+  GlobalGT("D0Poor","GLOBAL",10)
+  !Global("D0Poor","GLOBAL",12)
+  Global("D0Spawn0812","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn0812","GLOBAL",1)
+    CreateCreature("d0girl",[316.337],13)
+    CreateCreature("d0thug2",[484.361],13)
+    CreateCreature("d0thug3",[365.433],13)
+    ActionOverride("d0thug2",FaceObject("d0girl"))
+    ActionOverride("d0thug3",FaceObject("d0girl"))
+    ActionOverride("d0girl",FaceObject("d0thug2"))
+END
+
+IF
+  Global("D0Poor","GLOBAL",12)
+  Global("D0Spawn0812","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn0812","GLOBAL",1)
+    CreateCreature("d0girl",[316.337],13)
+END
+
+IF
+  Dead("d0girl")
+  GlobalLT("D0Poor","GLOBAL",16)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Poor","GLOBAL",16)
+    AddJournalEntry(@443,QUEST)
+END
+

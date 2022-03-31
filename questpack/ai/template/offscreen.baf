@@ -1,0 +1,165 @@
+IF
+	Global("Seen","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF])
+	OR(2)
+		!StateCheck(Myself,STATE_SILENCED)
+		RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobal("Seen","LOCALS",1)
+		SetGlobalTimer("Shout","LOCALS",6)
+		Shout(254)
+		Continue()
+END
+
+IF
+	Global("Seen","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF])
+	StateCheck(Myself,STATE_SILENCED)
+	!RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobal("Seen","LOCALS",1)
+		SetGlobalTimer("Shout","LOCALS",6)
+		Continue()
+END
+
+IF
+	GlobalTimerExpired("Shout","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF])
+	OR(2)
+		!StateCheck(Myself,STATE_SILENCED)
+		RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Shout","LOCALS",6)
+		SetGlobal("Seen","LOCALS",1)
+		Shout(254)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Shout","LOCALS")
+	Allegiance(Myself,ENEMY)
+	!See([GOODCUTOFF])
+	!See(NearestEnemyOf(Myself))
+	Heard([ENEMY],254)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Shout","LOCALS",6)
+		Shout(254)
+		MoveToObjectFollow(LastHeardBy(Myself))
+END
+
+IF
+	TookDamage()
+	!See(NearestEnemyOf(Myself))
+	!Detect(LastHitter(Myself))
+	OR(2)
+		!StateCheck(Myself,STATE_BLIND)
+		RandomNum(3,1)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastHitter(Myself),GOODCUTOFF)
+THEN
+	RESPONSE #100
+		MoveToObject(LastHitter(Myself))
+END
+
+IF
+	TookDamage()
+	!See(NearestEnemyOf(Myself))
+	!Detect(LastHitter(Myself))
+	StateCheck(Myself,STATE_BLIND)
+	!RandomNum(3,1)
+	Allegiance(Myself,ENEMY)
+	Allegiance(LastHitter(Myself),GOODCUTOFF)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck([GOODCUTOFF],STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject([GOODCUTOFF])
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player1,STATE_INVISIBLE)
+	RandomNum(6,1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player2,STATE_INVISIBLE)
+	RandomNum(6,2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player3,STATE_INVISIBLE)
+	RandomNum(6,3)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player4,STATE_INVISIBLE)
+	RandomNum(6,4)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player5,STATE_INVISIBLE)
+	RandomNum(6,5)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	Global("Seen","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player6,STATE_INVISIBLE)
+	RandomNum(6,6)
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END

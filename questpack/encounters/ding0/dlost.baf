@@ -1,0 +1,17 @@
+IF
+  Global("D0DocksOrphan","AR0300",4)
+  !InMyArea("dftown2")
+  Detect([PC])
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
+  Global("D0DocksOrphan","AR0300",4)
+  !InMyArea("dftown2")
+  !Detect([PC])
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

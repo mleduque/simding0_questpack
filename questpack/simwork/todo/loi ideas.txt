@@ -1,0 +1,46 @@
+Consequences!
+De'Arnise Hold: If you didn't defeat Torgal, a larger number of Trolls, Yuan-ti and Goblinoids inhabit the keep, but they're not quite so co-operative anymore! The Yuan-ti alliance of Trolls (still loyal to the Stronger) & their Umberhulk pets, and Yuan-ti (who's mistress, Yxunonmei, has betrayed him/her) & their Goblinoid slaves is at an end. The two factions will now attack each other on sight. All but one of the guards in the palacade are dead (the exception being the guy who appears in the stronghold quest), meaning you don't get any re-inforcements when you open the drawbridge. Oh, and Glacias will now wield the reconstructed Flail of Ages, and wear some item which makes him Charm-proof .
+Druid Grove: If you didn't defeat Faldorn, the place is under attack by the Sythillisians, which is basically just an excuse for adding more enemies in the place . Plus Faldorn has strengthed her link to the grove, meaning she's tougher in the dual. Oh, and stopping the Sythillisian attack could also be added as an extra, post-Underdark Druid stronghold quest.
+Trademeet: If you didn't defeat Faldorn, most of the citizens have been forced to flee, and packs of wild animals roam the town. Cernd could remain (if you haven't already recruited him into the party), to inform the player of where the attacks came from. Once Faldorn has been defeated, the citizens will return. Not sure what to do about the djinnis yet - should they stay and say they weren't attacked because they charmed any animals which approached?
+Umar Hills: If you didn't defeat the shade lord, all the surviving citizens of Imnesvale (plus the Sythillisian deserters) have run away, and all that's left in the village are shades, shadows and shadow wolves. The people of Imnesvale only return once the shade lord has been defeated. Valygar, if you didn't kill him or invite him into the party, is still in his cabin, but badly wounded.
+Windspear Hills: If you didn't defeat Firkraag, Garren and his family have all been imprisoned, and the dragon has gathered a considerably larger number of recruits into his army, including a sizeable number of Cult of the Dragon members.
+
+
+http://forums.gibberlings3.net/index.php?showtopic=4859
+
+
+Retrieve the Deed to the Windspear Hills
+This is already present in vanilla SoA, but only if you chose to do so at the end of your first meeting. I'll be adding the "You made an interesting comment. Garren still has the deed to this land. Do you need it?" option to the second meeting dialogue, so it doesn't become permanently inaccessible.
+
+
+"First, dealing with the slavers/smugglers is going to become part of the critical path, as Saemon's crew refuse to sail while slavers prowl the waves. Unless you offer Saemon lots of extra money to sail regardless of this threat (which will have certain repurcussions of its own), you'll have to do the various related quests."
+
+
+
+I was thinking you should really be able to report some of the shady dealings you see going on to the authorities, though more often than not you'll be told "we already know about that, the matter is in hand", "we need more evidence", "there's nothing we can do about it", etc. Some possibilities:
+Chief Inspector Brega:
+- guard in the Gate District who's bribed by Bandon (the black locus dealer)
+- guard in the Slums District who's bribed by a slaver
+- guards in the Docks District barracks who are on the take
+- the "entertainment" available in the Copper Coronet (i.e. drugs, prostitutes and gladiatorial battles)
+- Slaver Stockade
+- Guarded Compound
+- Officer Dirth's involvement in the slave trade
+- Fallen Paladins' activities
+- Bridge District kidnappers
+- Turmish thugs in the Five Flagons
+Corneil (the Cowled Wizard)
+- the Planar Sphere
+- Mekrath
+- Edwin
+- Xzar
+Magistrate Bylanna:
+- the Hidden / Illithid in the sewers
+- Unseeing Eye Cult
+- the Roenalls' seizure of the De'Arnise lands
+- the Harpers
+
+
+
+Lehtinan could kick off the slavers easily enough. The PC kills Hendak for him and Lehtinan rewards the PC and asks another favor: use the sewer entrance to pick up a new batch of slaves from the slavers in the ship. Arriving at the slavers' hold, the PC finds that they aren't going to deliver anything until Lehtinan pays what he already owes. Moreover, since the PC has identified him/herself as coming from Lehtinan, Capt. Haegan will expect the PC to settle the debt personally and at once; Capt. Haegan won't take no for an answer. Hell, he probably wouldn't even take 'yes' for an answer but he would try to capture the party and sell them into slavery and credit the sale price to Lehtinan's debt. The fights & looting then procede as at present.
+Lehtinan will have known all this; that's why he set the PC up on this errand. Thus, he won't be delighted to see the PC again after all the residents of the slavers' stockade have been slaughtered. Indeed, he'll try to order the party out of the Copper Coronet. The PC can call that bluff and become (temporarily) Lehtinan's partner or he/she can leave. Either way, the PC will meet with the Slave Lords later and be given the opportunity to "apologize" for the ill-conceived massacre of Capt. Haergan et. al., by killing Lehtinan the Deadbeat and running the Copper Coronet for the Slave Lords. The PC will then discover that the Copper Coronet is an active retail outlet for slaves & will have the usual sorts of miniquests as per any other stronghold. And, no, I'm not forgetting that the "major domo" of the joint (Bernard) is an anti-slaving Harper.

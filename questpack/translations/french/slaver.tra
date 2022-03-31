@@ -1,0 +1,72 @@
+// -*- coding: cp1252 -*-
+
+@0  = ~Qu'est-ce qui se passe ici ? Que faites-vous avec cet homme ?~
+@1  = ~Monstre ! Libérez ce pauvre esclave immédiatement !~
+@2  = ~Désolé. Je me pousse.~~Désolée. Je me pousse.~
+@3  = ~Ce sont pas vos affaires, comme j'l'ai dit. Vous f'riez mieux d'vous en aller maint'nant, ou vous le regretterez.~
+@4  = ~C'est horrible ! Je vais le signaler aux autorités compétentes. Vous soudoyez peut-être les gardes, mais je doute que le conseil ferme les yeux sur cette affaire.~
+@5  = ~Très bien. Désolé pour le dérangement.~~Très bien. Désolée pour le dérangement.~
+@6  = ~Peut-être pourrions-nous parvenir à un accord pour libérer cet homme ?~
+@7  = ~Je pourrais m'en aller. Pour un certain prix.~
+@8  = ~Vous f'riez mieux d'vous en aller maint'nant, ou vous le regretterez.~
+@9  = ~Je crains que non. Si vous ne libérez pas cet homme, je vous y forcerai.~
+@10  = ~C'est vot' dernière chance. Fourrez pas vot' nez là où vous devriez pas.~
+@11  = ~Vous n'avez pas de chance. Si vous ne libérez pas cet homme, je vous forcerai à le faire.~
+@12  = ~Vous n'oseriez-pas ? On dirait qu'on va devoir se battre. Préparez-vous !~
+@13  = ~Vous n'oseriez-pas ? On ne peut pas laisser faire ça. On dirait qu'on va devoir se battre. Préparez-vous !~
+@14  = ~Ouais. Pousse toi.~
+@15  = ~Ça a rien à voir avec toi. On fait pas d'affaires avec les étrangers, alors va t'faire voir.~
+@16  = ~Tu penses qu'on va payer ?! Dégage, étranger !~~Tu penses qu'on va payer ?! Dégage, étrangère !~
+@17  = ~Alors j'ai bien peur de devoir vous arrêter tout de suite.~
+@18  = ~Dans ce cas, je vais le signaler aux autorités compétentes. Vous soudoyez peut-être les gardes, mais je doute que le conseil ferme les yeux sur ce point.~
+@19  = ~Attendez ! Qu'est-ce que c'est ? Que ce qui est arrivé à ce pauvre homme ?~
+@20  = ~Vous ne pouvez pas faire ça ! Laissez cet homme partir immédiatement !~
+@21  = ~D'accord. Je ne cherche pas les ennuis.~
+@22  = ~Je n'ai pas de temps pour les badinages inutiles. Laissez-moi tranquille.~
+@23  = ~Bien. Maintenant, dégage de mon chemin !~
+@24  = ~Je suppose que vous ne seriez pas intéressé par, euh, la prise en charge d'une jeune orpheline sans-abri ?~
+@25  = ~(Hurmm). Je... j'écoute. Dites-m'en plus sur cette enfant très malheureuse.~
+@26  = ~Dans le cimetière de la ville, il y a une jeune fille sous la protection d'un prêtre de Lathandre. Peut-être, par un quelconque arrangement, pourrait-elle être confiée à vos soins.~
+@27  = ~Peut-être n'êtes-vous pas la meilleure personne après tout. Je ne suis pas sûr d'aimer votre ton.~
+@28  = ~En fait, peu importe. C'était juste une question hypothétique.~
+@29  = ~Ah, je vois. (hurrm) Oui, je serais heureux d'offrir un abri à une telle fille. Peut-être qu'un de mes... associés devrait rendre visite à ce prêtre au cimetière ?~
+@30  = ~Très bien. Je vais essayer de persuader le prêtre qu'il est digne de s'occuper de la fille.~
+@31  = ~Excellent. Je vais prendre les dispositions nécessaires...~
+@32  = ~(Hurmm). C'est excellent de faire des affaires avec vous. Je crois que vous trouverez ce paiement plus que généreux pour la fille.~
+@33  = ~Elle fera une excellente femme de ménage, et qui sait, peut-être que Madame Nin lui trouvera une utilité à sa majorité. Encore une fois, je vous remercie.~
+@34  = ~Si vous souhaitez en savoir plus, n'hésitez pas à le demander.~
+@35  = ~Peut-être apprécieriez-vous également certains de nos... divertissements supplémentaires ? (hurrrmm...hurrm)~
+@36  = ~(Hurrm). Décevant de voir les affaires filer. Je regrette de ne pouvoir vous offrir aucun paiement sans la fille. (Hurrrrm) Dommage qu'un paladin ait choisi d'intervenir.~
+@37  = ~Ah, <CHARNAME>. C'est Lehtinan qui m'envoie. Ne tardons pas... montrez moi le chemin vers le prêtre et l'orphelin.~
+@38  = ~Salutations, bon prêtre. Je suis Trédor : marin marchand à la retraite, et père de deux enfants. <CHARNAME> m'a informé que la petite Risa ici présente avait besoin d'un foyer attentionné.~
+@39  = ~Alors je me proposerais volontiers, si cela pouvait rendre Risa heureuse.~
+@40  = ~Bah ! Notre plan tombe à l'eau ! Gardez la fille !~
+@41  = ~Merci, gentil prêtre. Mon seul espoir est que je puisse être un aussi bon gardien de Risa que vous.~
+@42  = ~Je visiterai le temple de Lathandre dans quelques jours, pour vous faire savoir que tout va bien. Viens, Risa.~
+@43  = ~D'a-d'accord... Je viens.~
+@44  = ~... (sniff!)~
+@45  = ~Vous êtes un chevalier ? Votre armure est rudement brillante.~
+@46  = ~Peut-être Lathandre nous sourit-il aujourd'hui. Oui, Risa a vraiment besoin d'un protecteur attitré.~
+@47  = ~Oui, oui. Peut-être êtes-vous vraiment un choix approprié. Je ne souhaite pas prendre une décision qui nuirait à la pauvre Risa, mais je me fie au jugement de <CHARNAME> dans cette affaire. Il semble que vous ayez bon cœur.~
+@48  = ~Alors prenez Risa. J'espère que vous serez en mesure de lui apporter les soins et la joie de vivre qu'elle mérite.~
+@49  = ~Peut-être êtes-vous le bon choix, alors. Je ne voudrais pas prendre une décision qui blesserait la pauvre Risa, mais il semble que vous ayez bon cœur.~
+@50  = ~Vous avez toute ma gratitude pour cela, tout comme vous, <CHARNAME>. Va, Risa, et profite de ton nouveau foyer~
+@51  = ~Attendez ! Je reconnais cet homme, bien que je ne sache pas d'où il vient. Il a une aura de suspicion à son égard, et je crois que ses intentions ne sont peut-être pas ce qu'elles semblent être !~
+@52  = ~Comme je le soupçonnais ! Il est mal intentionné, et a probablement trompé son complice ! Ne permet pas encore à cette fille de se séparer de toi, bon prêtre.~
+@53  = ~Comme je le soupçonnais ! Il est mal intentionné, tout comme son complice ! Ne permet pas encore à cette fille de se séparer de toi, bon prêtre.~
+@54  = ~Je suis fatigué du mal qui assombrit même cette terre consacrée. J'ai vu cet homme s'approcher, et j'ai senti quelque chose de sournois chez lui. Et donc, j'ai observé de loin.~
+@55  = ~Il y a eu des événements étranges similaires dans la ville récemment. Il semble... il semble que même nos enfants ne soient pas à l'abri du monde criminel.~
+@56  = ~Viens... Je vais te montrer l'église. Merci, clerc... et vous, monseigneur... vous avez eu de la chance en ce jour. Priez pour que nos chemins ne se croisent plus.~~Viens... Je vais te montrer l'église. Merci, clerc... et vous, ma dame... vous avez eu de la chance en ce jour. Priez pour que nos chemins ne se croisent plus.~
+@57  = ~Je suis très heureux de cette merveilleuse tournure des événements. Que Lathandre vous pardonne, monseigneur, car quelque chose de bon est sorti de vos actions. Parfois... parfois Féerûne peut être un endroit bienveillant...~~Je suis très heureux de cette merveilleuse tournure des événements. Que Lathandre vous pardonne, madame, car quelque chose de bon est sorti de vos actions. Parfois... parfois Féerûne peut être un endroit bienveillant...~
+@58  = ~Enquêter sur les activités dans les salles de la Couronne de cuivre.
+
+Lehtinan m'a demandé d'effectuer une autre tâche : je dois naviguer dans les égouts sous la Couronne de cuivre et recevoir une livraison d'esclaves de l'enceinte à l'autre bout. On peut accéder aux égouts par une entrée secrète dans les salles du fond.~
+@59  = ~Vendre Risa à Lehtinan.
+
+Lehtinan a exprimé son intérêt pour l'achat de l'orpheline Risa dans le cadre de ses activités de traite des esclaves. Il a envoyé un contact au cimetière pour rencontrer Risa et son tuteur actuel.~
+@60  = ~Vendre Risa à Lehtinan.
+
+J'ai réussi à tromper le prêtre de Lathandre qui s'occupe de l'orpheline Risa pour qu'il la remette à l'un des contacts esclavagistes de Lehtinan. Il est probable que Lehtinan pourra l'utiliser à bon escient dans la Couronne de cuivre.~
+@61  = ~Trouvez un gardien pour l'orphelin, Risa.
+
+En tentant de me livrer à un petit commerce d'esclaves, j'ai réussi par inadvertance à réunir deux personnes que j'ai rencontrées dans le District du cimetière... un paladin nommé Kamir dont le fils est mort, et une petite fille nommée Risa dont les parents sont décédés. Le paladin a accepté d'élever la petite fille et ils sont partis ensemble. Lehtinan sera surement mécontent que son agent n'ait pas pu se procurer la fille, mais probablement que Risa sera heureuse.~

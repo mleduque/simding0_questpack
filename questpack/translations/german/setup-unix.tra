@@ -1,0 +1,43 @@
+// -*- coding: utf-8 -*-
+
+// Translators, please note well: please translate component names only of the components you plan to translate fully.
+// Untranslated components should retain their english titles to distinguish them from those which have been translated.
+// Components without TRAs should not be translated as their text is subject to change. Check "Fully TRAified components.txt".
+@1 = ~Zusätzlicher Inhalt bei den Schattendieben~
+@2 = ~Alternative Harfner/Xzar-Handlung~
+@3 = ~Verlängerte Reynald-Handlung~
+@4 = ~Intrige in der Kupferkrone~
+@5 = ~Flucht aus Brynnlaw~
+@6 = ~Verschiedene Verbesserungen~
+@8 = ~Rahul Kanakias Trank-Quest~
+@9 = ~Ausgedehnte Druide-Festung~
+@10 = ~Überarbeitet Höllenprüfung~
+@11 = ~Dialog- & Kampf-Verbesserung~
+@12 = ~nur Dialog-Verbesserung~
+@13 = ~Verbesserte Oase II~
+@14 = ~Generelle KI-Verbesserungen~
+@15 = ~Verbessertes Ratsgebäude~
+@16 = ~Blutkrieg in Carceri~
+@17 = ~Sanik in Brynnlaw retten~
+@18 = ~Einbruch beim Buchhändler~
+@19 = ~Neues Schicksal für die Eicheln der Dryaden~
+@20 = ~Die Tragödie des Besamen~
+@21 = ~Weitere Sklaverei-Verwicklungen~
+@22 = ~Solamnischen Ritter nach Hause schicken~
+@23 = ~Nazariel, der Leichnam~
+@24 = ~Quallos Freundschaft~
+@25 = ~Wort und Weisheit~
+@26 = ~Abkürzung im Unterreich~
+@27 = ~nur KI-Verbesserungen~
+@28 = ~KI-Verbesserungen & Sprachschatz-Erweiterung~
+
+@30 = ~Höllicher Diebstahl~
+@31 = ~Elfenhof~
+@32 = ~nur Endgegner-Verbesserungen~
+@33 = ~Verhandlung über Belohnungen~
+@34 = ~Kreatur- & Orts-Verbesserungen~
+@35 = ~Alle Kreatur-Verbesserungen~
+@36 = ~Alle Kreatur- & Orts-Verbesserungen~
+
+@99 = ~BP erkannt, KI-Verbesserungen werden übersprungen.~
+@100 = ~ToB-spezifische Komponenten werden übersprungen.~

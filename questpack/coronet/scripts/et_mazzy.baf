@@ -1,0 +1,60 @@
+IF
+  GlobalGT("GorfBystander","GLOBAL",2)
+  AreaCheck("ar0406")
+  Global("GorfMazzyTalk1","GLOBAL",1)
+  Global("D0MazzySurly","LOCALS",0)
+  OR(2)
+    !Dead("hendak")
+    !Dead("lehtinan")
+  !See("gorf")
+  !Dead("gorf")
+  OR(2)
+    Dead("surly")
+    GlobalGT("D0Surly","GLOBAL",8)
+  InParty(Myself)
+  Detect([PC])
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+  GlobalGT("GorfBystander","GLOBAL",2)
+  AreaCheck("ar0406")
+  Global("GorfMazzyTalk1","GLOBAL",1)
+  GlobalGT("HendakReleased","AR0406",2)
+  See("hendak")
+  !Dead("hendak")
+  !See("gorf")
+  !Dead("gorf")
+  OR(2)
+    Dead("surly")
+    GlobalGT("D0Surly","GLOBAL",8)
+  InParty(Myself)
+  Detect([PC])
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+  GlobalGT("GorfBystander","GLOBAL",2)
+  AreaCheck("ar0406")
+  Global("GorfMazzyTalk1","GLOBAL",1)
+  !GlobalGT("HendakReleased","AR0406",2)
+  See("lehtinan")
+  !Dead("lehtinan")
+  !See("gorf")
+  !Dead("gorf")
+  OR(2)
+    Dead("surly")
+    GlobalGT("D0Surly","GLOBAL",8)
+  InParty(Myself)
+  Detect([PC])
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(LastSeenBy(Myself))
+END

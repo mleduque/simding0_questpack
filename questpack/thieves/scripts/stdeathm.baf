@@ -1,0 +1,15 @@
+IF
+  OR(2)
+    AttackedBy([ANYONE],DEFAULT)
+    HitBy([ANYONE],CRUSHING)
+THEN
+  RESPONSE #100
+    RunAwayFrom(LastSeenBy(Myself),5)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END

@@ -1,0 +1,59 @@
+IF
+  AreaCheck("ar0800")
+  GlobalGT("D0Reynald","GLOBAL",8)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  AreaCheck("ar0808")
+  GlobalGT("D0Reynald","GLOBAL",9)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  NumTimesTalkedTo(0)
+  !Global("D0Reynald","GLOBAL",2)
+  GlobalLT("D0Reynald","GLOBAL",7)
+THEN
+  RESPONSE #100
+    Dialog([PC])
+END
+
+IF
+  CombatCounter(0)
+  Global("D0Reynald","GLOBAL",7)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  Dead("c6bodhi")
+  CombatCounter(0)
+  AreaCheck("ar0803")
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  See([ENEMY])
+THEN
+  RESPONSE #100
+    AttackReevaluate([ENEMY],15)
+END
+
+IF
+  GlobalGT("D0Reynald","GLOBAL",7)
+  OR(3)
+    AreaCheck("ar0800")
+    AreaCheck("ar0808")
+    AreaCheck("ar0809")
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player1)
+END

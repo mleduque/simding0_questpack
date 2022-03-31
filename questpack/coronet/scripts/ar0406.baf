@@ -1,0 +1,23 @@
+IF
+  Global("D0Spawn","AR0406",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn","AR0406",1)
+    CreateCreature("D0Lender",[1336.1934],14)
+    CreateCreature("D0Boy",[1350.1960],6)
+    ActionOverride("D0Lender",FaceObject("D0Boy"))
+    ActionOverride("D0Boy",FaceObject("D0Lender"))
+    CreateCreature("D0Drunk",[449.1510],8)
+    ActionOverride("D0Drunk",FaceObject("Salvanas"))
+    Continue()
+END
+
+IF
+  GlobalGT("D0Poor","GLOBAL",9)
+  Global("D0Spawn","AR0406",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn","AR0406",2)
+    ActionOverride("D0Lender",DestroySelf())
+    Continue()
+END

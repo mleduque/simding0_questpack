@@ -1,0 +1,223 @@
+IF
+	Global("GrovePoisoned","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("didOnce","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("didOnce","LOCALS",1)
+		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+		ReallyForceSpell(Myself,CLERIC_RESIST_COLD)
+		ReallyForceSpell(Myself,CLERIC_PROTECTION_FROM_LIGHTNING)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	Global("IronSkin","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		SetGlobal("IronSkin","LOCALS",1)
+		ForceSpell(Myself,CLERIC_IRONSKIN)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),4)
+	HPPercentLT(Myself,25)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		SpellNoDec(Myself,CLERIC_HEAL)
+END
+
+IF
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(SecondNearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(ThirdNearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(FourthNearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(FifthNearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(SixthNearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(TenthNearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	RandomNum(3,2)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_CREEPING_DOOM)
+END
+
+IF
+	RandomNum(7,1)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+END
+
+IF
+	RandomNum(7,2)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(SecondNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+END
+
+IF
+	RandomNum(7,3)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(ThirdNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+END
+
+IF
+	RandomNum(7,4)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(FourthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+END
+
+IF
+	RandomNum(7,5)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(FifthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+END              
+
+IF
+	RandomNum(7,6)
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(SixthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See(TenthNearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",5)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END

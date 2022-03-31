@@ -1,0 +1,510 @@
+// The Unseeing Eye is unaffected by blindness.
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Global("Seen","LOCALS",1)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("Seen","LOCALS",1)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    ReallyForceSpell(Myself,WIZARD_IMPROVED_MANTLE)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
+    ReallyForceSpell(Myself,SPELL_DEFLECTION_NO_VISUAL)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_POWER_WORD_KILL)
+  HPLT(LastSeenBy(Myself),60)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(SecondNearestEnemyOf(Myself))
+  HaveSpell(WIZARD_POWER_WORD_KILL)
+  HPLT(LastSeenBy(Myself),60)
+  RandomNum(6,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(ThirdNearestEnemyOf(Myself))
+  HaveSpell(WIZARD_POWER_WORD_KILL)
+  HPLT(LastSeenBy(Myself),60)
+  RandomNum(6,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(FourthNearestEnemyOf(Myself))
+  HaveSpell(WIZARD_POWER_WORD_KILL)
+  HPLT(LastSeenBy(Myself),60)
+  RandomNum(6,4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(FifthNearestEnemyOf(Myself))
+  HaveSpell(WIZARD_POWER_WORD_KILL)
+  HPLT(LastSeenBy(Myself),60)
+  RandomNum(6,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(SixthNearestEnemyOf(Myself))
+  HaveSpell(WIZARD_POWER_WORD_KILL)
+  HPLT(LastSeenBy(Myself),60)
+  RandomNum(6,6)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(SecondNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  RandomNum(6,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(ThirdNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  RandomNum(6,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(FourthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  RandomNum(6,4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(FifthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  RandomNum(6,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(SixthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  HaveSpell(WIZARD_POWER_WORD_STUN)
+  RandomNum(6,6)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  Detect(Myself)
+  See(Myself)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  OR(3)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(4,1)
+  OR(3)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(5,2)
+  OR(3)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(6,3)
+  OR(3)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(7,4)
+  OR(3)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(8,5)
+  OR(3)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(9,6)
+  OR(3)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(10,7)
+  OR(3)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(11,8)
+  OR(3)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(12,9)
+  OR(3)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(13,11)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(LastSeenBy(Myself))
+  OR(2)
+    Gender(LastSeenBy(Myself),SUMMONED)
+    LevelLT(LastSeenBy(Myself),9)
+  !Range(LastSeenBy(Myself),0)
+  HaveSpell(WIZARD_DEATH_SPELL)
+  RandomNumGT(8,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    SpellNoDec(LastSeenBy(Myself),BEHOLDER_MAGIC_MISSILE)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    SpellNoDec(LastSeenBy(Myself),WIZARD_HORROR)
+  RESPONSE #250
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    SpellNoDec(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+  RESPONSE #300
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    SpellNoDec(LastSeenBy(Myself),WIZARD_FIREBALL)
+  RESPONSE #250
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    SpellNoDec(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    SpellNoDec(LastSeenBy(Myself),WIZARD_PRISMATIC_SPRAY)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    FaceObject(LastSeenBy(Myself))
+    SpellNoDec(LastSeenBy(Myself),WIZARD_CHAIN_LIGHTNING)
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player1)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player1,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player1,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player2)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player2,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player2,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    MoveToObject(Player2)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player3)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player3,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player3,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    MoveToObject(Player3)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player4)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player4,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player4,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    MoveToObject(Player4)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player5)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player5,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player5,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    MoveToObject(Player5)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !Detect(Player6)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    CheckStat(Player6,0,SANCTUARY)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player6,STATE_INVISIBLE)
+  OR(2)
+    CheckStat(Myself,1,SEEINVISIBLE)
+    !StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  HPPercentGT(Myself,50)
+THEN
+  RESPONSE #100
+    MoveToObject(Player6)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  !HPPercentGT(Myself,50)
+  !Range(NearestMyGroupOfType([0.0.BEHOLDER]),5)
+  InMyArea(NearestMyGroupOfType([0.0.BEHOLDER]))
+THEN
+  RESPONSE #100
+    Shout(254) // Need a safe shout number, or an alternative to using shouts
+    MoveToObject(NearestMyGroupOfType([0.0.BEHOLDER]))
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  OR(2)
+    !CheckStat(Myself,1,SEEINVISIBLE)
+    !Detect(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_CHARMED)
+  Global("Seen","LOCALS",1)
+  !HPPercentGT(Myself,50)
+  OR(2)
+    Range(NearestMyGroupOfType([0.0.BEHOLDER]),5)
+    !InMyArea(NearestMyGroupOfType([0.0.BEHOLDER]))
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+  RESPONSE #100
+    Face(-1)
+END
+
+IF
+  OR(5)
+    !See(LastSeenBy(Myself))
+    !GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+    StateCheck(Myself,STATE_CHARMED)
+    !Allegiance(Myself,ENEMY)
+    Allegiance(LastSeenBy(Myself),ENEMY)
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(NearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SecondNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,4)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(ThirdNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,5)
+  See(FourthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FourthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(FifthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(FifthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(SixthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(SixthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  See(TenthNearestEnemyOf(Myself))
+  OR(2)
+    StateCheck(TenthNearestEnemyOf(Myself),D0_STATE_DISABLED)
+    RandomNumGT(10,3)
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+  !See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !StateCheck(Myself,STATE_CHARMED)
+  Allegiance(Myself,ENEMY)
+  !Allegiance(LastSeenBy(Myself),ENEMY)
+  OR(2)
+    See(LastSeenBy(Myself))
+    CheckStat(Myself,1,SEEINVISIBLE)
+  OR(2)
+    CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+    CheckStat(Myself,1,SEEINVISIBLE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0_ATTACK","LOCALS",6)
+    AttackOneRound(LastSeenBy(Myself))
+END

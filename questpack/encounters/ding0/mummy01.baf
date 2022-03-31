@@ -1,0 +1,167 @@
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  RandomNum(2,1)
+  Name("Mummy01",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    ChangeAnimation("mumfig01") // Female Commoner
+    AddexperienceParty(1500)
+END
+
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  Name("Mummy01",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    ChangeAnimation("d0mumfig") // Male Commoner
+    AddexperienceParty(1500)
+END
+
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  RandomNum(2,1)
+  Name("Mummy",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    IncrementGlobal("SPRITE_IS_DEADMummy","GLOBAL",1)
+    ChangeAnimation("mumfig01") // Female Commoner
+    AddexperienceParty(1500)
+END
+
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  Name("Mummy",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    IncrementGlobal("SPRITE_IS_DEADMummy","GLOBAL",1)
+    ChangeAnimation("d0mumfig") // Male Commoner
+    AddexperienceParty(1500)
+END
+
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  RandomNum(2,1)
+  Name("MUMGRE01",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    ChangeAnimation("mumfig01") // Female Commoner
+    AddexperienceParty(4000)
+END
+
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  Name("MUMGRE01",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    ChangeAnimation("d0mumfig") // Male Commoner
+    AddexperienceParty(4000)
+END
+
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  RandomNum(2,1)
+  !Name("MUMGRE01",Myself)
+  !Name("Mummy",Myself)
+  !Name("Mummy01",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    ChangeAnimation("mumfig01") // Female Commoner
+END
+
+IF
+//  OR(5)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RESURRECTION)
+//    SpellCastOnMe([GOODCUTOFF],CLERIC_RAISE_DEAD)
+//    SpellCastOnMe([GOODCUTOFF],1999)
+//    SpellCastOnMe([GOODCUTOFF],1729)
+  Global("D0QPRes","LOCALS",1)
+//  SpellCastOnMeRES("SPJA01",[GOODCUTOFF])
+//  SpellCastOnMeRES("SPWISH10",[GOODCUTOFF])
+//  SpellCastOnMeRES("BHAAL4A",[GOODCUTOFF])
+//  SpellCastOnMeRES("D0PR712",[GOODCUTOFF])
+  !Name("MUMGRE01",Myself)
+  !Name("Mummy",Myself)
+  !Name("Mummy01",Myself)
+  !Global("D0QPRes2","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0QPRes2","LOCALS",1)
+    ChangeAnimation("d0mumfig") // Male Commoner
+END

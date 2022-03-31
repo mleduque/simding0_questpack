@@ -1,0 +1,10 @@
+IF
+  Global("D0SlaveGirl","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0SlaveGirl","GLOBAL",2)
+    ActionOverride("kamir",EscapeArea())
+    CreateCreatureObject("d0qpslav",Player1,0,0,0)
+    ActionOverride("d0qpslav",StartDialogNoSet(Player1))
+    Continue()
+END

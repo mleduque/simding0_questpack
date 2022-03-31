@@ -1,0 +1,270 @@
+// -*- coding: cp1252 -*-
+
+@101 = ~Carta falsificada~
+@102 = ~Esta es la carta que te entregó Mae'Var para incriminar a Renal Cabellorrojo. Esta detalla el asesinato de algunos Ladrones de las Sombras de alto rango, llevado a cabo por los asesinos Máscaras Nocturnas.~
+@103 = ~Larell~
+
+@105 = ~Guantes para apuñalar por la espalda~
+@106 = ~Guantes para apuñalar por la espalda
+Estos raros guantes encantados solo son creados por los asesinos de mas alto rango de Máscaras Nocturnas.  Se rumorea que sus creadores originales fueron los asesinos portadores de magia de Sembia, y desde entonces fueron copiados por todos los gremios del continente.  A pesar de todo, estos guantes tienen la intención de convertir a los asesinos de Máscaras Nocturnas en peligrosos adversarios.
+
+ESTADISTICAS:
+
+Incrementa el modificador de apuñalamiento por la espalda en 1 mientras esté equipado
+
+No utilizable por:
+ Luchador
+ Druida
+ Clérigo
+ Mago
+ Bardo~
+
+@107 = ~Anillo de Aran de Invisibilidad~
+@108 = ~Anillo de Aran de Invisibilidad
+Este anillo te fué entregado como recompensa por el lider de los Ladrones de las Sombras, Aran Linvail. Su creación fué encargada por un lider Ladron de las Sombras que buscaba escapar de las situaciones delicadas; trágicamente no fué capaz de ayudar a su portador cuando Linvail ascendió al liderazgo político.
+
+ESTADISTICAS:
+
+Especial:  El portador puede lanzar Invisibilad 3 veces al día
+
+No utilizable por:
+ Asesino de magos~
+
+@109 = ~Asesinos de Máscaras Nocturnas~
+@110 = ~Este es el ave que te entregó Meronia. Es un asesino destinado a entregarse al ingenuo Mago, Xzar.~
+
+@114 = ~Celile~
+@115 = ~¡Rápido, debemos hacerlo antes de que sus compañeros despierten!~
+@116 = ~¡Esto te enseñará a pagar tus deudas!~
+@117 = ~Recaudador de Deudas~
+@118 = ~Moiya~
+@119 = ~¡Mamita! ¡¿Estás herida?!~
+@120 = ~¡Permíteme matarla y salir de aquí!~
+@121 = ~Lorick~
+@122 = ~Sarem~
+@123 = ~Dahlia~
+@124 = ~Besamen~
+@125 = ~Baisera~
+@126 = ~Alyce~
+@127 = ~Dagny~
+@128 = ~Sahen~
+@129 = ~Nazariel~
+@130 = ~¡Alto, intrusos!~ [d0qpnaz1]
+@131 = ~Amuleto de Nazariel~
+@132 = ~Habiendo seguido un estrecho tunel por algún tiempo, adviertes que comienza a dirigirse profundamente por debajo del suelo. Eventualmente comienza a ensancharse, revelando una luz mas adelante.~
+@133 = ~Indigo~
+@134 = ~Jadarath~
+@135 = ~Phluafae~
+@136 = ~Aprendiz encapuchado~
+@137 = ~Este amuleto contiene la escencia del antiguo lich Nazariel, cuyo deseo final fué salir a la superficie y ser libre.~
+@138 = ~Bellotas de Phluafae~
+@139 = ~Siendo similares en apariencia a las bellotas de las dryadas que le diste a Phluafae, la dura cubierta de estas semillas albergan un matiz ligeramente oscuro. Quizas esa aura es producto de algun propósito maligno.~
+@140 = ~Gema con forma de lágrima~
+@141 = ~Lágrima de dryada~
+@142 = ~Una pálida piedra púrpura. Brilla con una opaca luz interior.~
+@143 = ~Adquirida con un precio sanguinario y despiadado, pocos aventureros tienen el estómago suficiente para llevar este objeto. La última lágrima de una dryada, cristalizada con su último frío aliento, esta piedra brilla con una aterradora luz. El que la lleve se sentirá tocado con su prolongado legado de belleza, pero esta bendición trae un alto precio, la gema representa la debilidad de la vida de su víctima, aplastada por una mano cruel.
+
+ESTADISTICAS:
+  Inmunidad a Encantamiento mientras esté equipado
+  +1 bonificación al Carisma
+  -1 penalización a Constitución
+
+No utilizable por:
+ Personajes con alineamiendo Bueno
+ Asesino de magos~
+
+@144 = ~Este es el anillo grabado que llevaba Rayic Gethras. Trae un encantamiento menor, pero aparte de eso es un objeto con un significado puramente sentimental.
+
+ESTADISTICAS:
+
++1 bonificación a todas las tiradas de salvación
+
+No utilizable por:
+ Asesino de magos~
+@145 = ~Anillo grabado de Rayic~
+@146 = ~Escolta Encapuchado~
+@147 = ~¡Dejad las armas!~
+@148 = ~¡A las armas!  ¡El Hijo de Bhaal nos ha engañado!~ ~¡A las armas!  ¡La Hija de Bhaal nos ha engañado!~
+@149 = ~Lista de Pociones de Jadarath~
+@150 = ~Esta es la lista de pociones que te entregó Jadarath. Él acordó un sueldo por cada poción de su lista que sea llevada.
+
+1. Poción de Invisibilidad
+2. Aceite de Velocidad
+3. Poción de Resistencia al Frío
+4. Poción de Exploción
+5. Poción de Fortaleza
+6. Poción de Aislamiento
+7. Poción de Bloqueo Mágico
+8. Poción de Ojos Espejados
+9. Poción de Poder
+10. Poción de Perspicacia
+11. Poción de Libertad
+12. Poción de Forma de Piedra~
+
+@151 = ~Has sido agraciado con un +2 a tu destreza.~
+@152 = ~Has sido agraciado con +30% de resistencia a las armas cortantes.~
+@153 = ~Has sido agraciado con +2 a tu THAC0.~
+@154 = ~Has sido agraciado con +30% de resistencia al daño mágico.~
+@155 = ~Has sido agraciado con +2 a tu Inteligencia.~
+@156 = ~Tu alineamiento ha cambiado a Legal Bueno.~
+@157 = ~Tu alineamiento ha cambiado a Neutral Bueno.~
+@158 = ~Tu alineamiento ha cambiado a Caótico Bueno.~
+@159 = ~Tu alineamiento ha cambiado a Legal Malvado.~
+@160 = ~Tu alineamiento ha cambiado a Neutral Malvado.~
+@161 = ~Tu alineamiento ha cambiado a Caótico Malvado.~
+@162 = ~Tu alineamiento ha cambiado a Legal Neutral.~
+@163 = ~Tu alineamiento ha cambiado a Neutral Auténtico.~
+@164 = ~Tu alineamiento ha cambiado a Caótico Neutral.~
+@165 = ~Has perdido las habilidades especiales conferidas por tu deidad.~
+
+@166 = ~Bendición de Jadarath~
+@167 = ~Este cinturón te fué entregado por Jadarath, quien a partido hacia reinos desconocidos. Imbuído con una pequeña porción de su extraña magia, puede en ocaciones salvar al portador de ciertos tipos de muerte. A pesar de ser un maestro de la magia, Jadarath era desafortunadamente un pésimo sastre, por lo que este cinturón es desproporcionado e incómodo de llevar.
+
+ESTADISTICAS:
+
+Especial: El portador puede lanzar Sanar una ves al día
+
+No utilizable por:
+ Asesino de magos~
+
+@168 = ~Cuando el aire fresco de la superficie tocó el amuleto de Nazarial, este se desintegra, liberando por fin al antiguo lich.~
+
+
+@175 = ~Guardaespaldas Pirata~
+@176 = ~Tredor~
+
+@178 = ~Sidhe~
+@179 = ~Janie~
+@180 = ~Esta poción protegerá a quien la beba de los ataques de miradas, incluyendo los de los basiliscos, momias, moles sombrías, y otras criaturas.  El efecto durará 10 turnos o hasta que se dispele.~
+@181 = ~Mirada de Desesperación~
+@182 = ~Contingencia - Invisibilidad Mejorada~
+@183 = ~¡¡¡Aiiiiee!!!~
+@184 = ~Os planto, hermanas, en nuestra arboleda sagrada.~
+@185 = ~¡Levantaos y sed libres!~
+@186 = ~¿Qué?~
+@187 = ~¡¿Qué pasa?!~
+@188 = ~¿Cania...?~
+@189 = ~¿Elyme...?~
+@190 = ~¿Ulene...?~
+@191 = ~¡Estoy abandonada! ¡Todas estamos abandonadas!~
+
+@192 = ~No entregues tu vida por esos documentos políticos menores de Máscaras Nocturnas.  Mae'Var está acreditado a ellos; las Máscaras son aparentemente sus sigilosos aliados.~
+@193 = ~Mae'Var ha estado negociando con las Máscaras Nocturnas con la intención de reforzar su posición y traicionar a Renal.  Genialmente planeado, pero lo he descubierto.~
+@194 = ~Las Máscaras son un gremio despiadado de salteadores de caminos, bandidos y bandoleros ubicados en el centro de corrupción de Puerta Oeste.  Obviamente desean expandirse.~
+@195 = ~Si, tengo las evidencias que necesitas en estas escrituras.  Parece que Mae'Var ha estado negociando con las Máscaras Nocturnas.~
+@196 = ~Has caído en la trampa, picaste el anzuelo. Ahora eres vulnerable, ¡y mis asesinos estan en su lugar! ¡Entrégate a las Máscaras Nocturnas!~
+@197 = ~Er, hola. Yo... te he estado siguiendo... y estoy excesivamente apenado acerca del lío con esa Ama. Mi informante me dijo que su banda lleva la insignia de las Máscaras Nocturnas.~
+@198 = ~Una carta de Mae'Var a los asesinos de las Máscaras Nocturnas solicitando la muerte de Renal Cabellorrojo. Este es justo el tipo de prueba que Renal necesita.~
+@199 = ~Portador del Escudo de Tethyr~
+@200 = ~Bastión~
+@201 = ~Shieldbash~
+@202 = ~Mientras buscas un camino en esta sección de las sombrías cavernas, un débil eco proveniente de un muro capta tu atención. Es un pasaje oculto en alguna parte en la oscuridad.~
+@203 = ~Encuentras varias marcas chamuscadas en la roca. Las huellas de los Kua-Toa están presentes alrededor del punto en el cual el tunel se ensancha, pero se detienen abruptamente poco después.~
+@204 = ~Este es el cuerpo de Montaron, el compañero del mago Xzar. Al parecer si los Arpistas lo escondieran podrían hacerte enviarle el asesino a Xzar.~
+@205 = ~Mago castigado~
+@206 = ~Lemure~
+@207 = ~Corazón de demonio~
+@208 = ~El corazón del demonio es extrañamente escalofriante al tacto. Un gran número de púas encierran el carnoso centro del órgano, y debes tener un gran cuidado de evitar el flujo de sangre que sale de sus afiladas extremidades. El golpeteo rítmico como un continuo azote es dificil de soportar, y por momentos hace un súbito movimiento dentro de tu mochila, como si intentara escapar por voluntad propia.~
+@209 = ~A falta de una solución mas obvia, alimentas con el corazón del demonio a una de las muchas bocas incrustadas en la estructura de carne, esperando que pueda darte un aceptable sustituto del corazón de demonio que usaste previamente. Un momento despues la esfera tiembla y puedes sentir que comienza a llenarse de energía.~
+@210 = ~Adrozel~
+@211 = ~Kram~
+@212 = ~Cimitarra +1, Shazzellim
+Esta cimitarra es de la peor calidad, pero en su interior reside gran poder y maldad.  Creada con el solo propósito de cazar Arpistas, Shazzellim es mas que capaz de llevar a cabo esa tarea.  Con un golpe de esta espada el Arpista debe superar una tirada de salvación contra hechizos o morirá.  Con la pericia de los Magos Rojos de Thay, esta espada también tiene el poder de Vocalizar, por lo cual son con frecuencia entregadas a los Luchador-Magos en su cargo de Magos.  De mas está decir que el poseedor de esta espada no será bien visto por Arpistas.
+
+ESTADISTICAS
+
+Habilidades poseídas:
+ Vocalizar
+
+Habilidades de combate:
+ Cualquier Arpista que sea golpeado debe hacer una tirada de salvación contra hechizos con un penalizador de -2 o morirá
+
+Daño:  1D8 +1
+THAC0: +1
+Tipo de daño:  Cortante
+Peso:  3
+Factor de velocidad: 4
+Talento marcial: Cimitarra/Wakizashi/Ninja-To
+Tipo:  1 mano
+Requisitos: Fuerza 10
+No utilizable por:
+ Clérigo
+ Mago
+ Ladrón
+ Señor de las Bestias
+ Personajes de alineamiento bueno~
+@213 = ~Jaheira se echa para atras con disgusto ante el arma. "Esta hoja ha acabado con muchos Arpistas, <CHARNAME>. No la esgrimiré."~ [GAM_47]
+@214 = ~Con la Lágrima de Bhaal retirada, no hay nada mas interesante aquí.~
+@215 = ~¡Noooo! ¡¿Por qué no está funcionando?!~
+
+@220 = ~Con Faldorn muerta, y su vínculo con la arboleda violentamente dañado, la tierra misma parece dejar de lamentarse. Parece que tu negligencia con los rituales druídicos ha tomado su derecho.~
+@221 = ~Mientras tu mente pelea contra la magia siniestra que Quallo controla o lo contola a él, tu cuerpo es transformado en una horrible criatura de pesadilla.  Como pedido, atacas a tus compañeros, como la voz te susurra silenciosamente a traves de tu mente, "Ellos quieren alejarte de mí, amigo.  Ellos no son amigos.  Deben morir."
+
+Tu mente se tambalea con horror al ver que cada uno de tus camaradas a caído contra eso que tanto has enfrentado para mantener enterrado.  La escencia de Bhaal.  Que inapreciable poder contiene la criatura que te poseyó, ¿así de facil puede controlarte a tí y a tu corrupta alma?  Quizas nunca se sabrá.
+
+Estás tranquilo, y como no podría ser de otra manera, solo puedes ver con un absorto interes como la sangre que le queda a tus amigos fluye de sus magullados cadáveres.  Tu visión se nubla, y te deshaces del siniestro perfil de Quallo como si se encorvara sobre sus postradas figuras, y comienza a cubrir su derramada sangre.  Denuevo su repulsiva y siniestra voz hace eco en tu mente, "Amigos por siempre, seremos.  Y tu eres un poderoso amigo, verdaderamente."
+
+La eternidad aguarda, pero no habrá hazañas legendarias o vastas riquezas.  Por tí, solo está esta desagradable ruptura, y este viejo loco.~
+@222 = ~EL PRECIO DE LA AMISTAD~
+@223 = ~Mujer esclava~
+@224 = ~Kobold solitario~
+@225 = ~Hobgoblin~
+@226 = ~Mercenarios Hobgoblin~
+@227 = ~Bibliotecario~
+@228 = ~Historial del Valle de las Sombras, Vol. 1~
+@229 = ~Historial del Valle de las Sombras, Vol. 2~
+@230 = ~Historial del Valle de las Sombras, Vol. 3~
+@231 = ~Historial del Valle de las Sombras, Vol. 4~
+@232 = ~Historial del Valle de las Sombras, Vol. 5~
+@233 = ~Historial del Valle de las Sombras, Vol. 6~
+@234 = ~Historial del Valle de las Sombras, Vol. 7~
+@235 = ~Historial del Valle de las Sombras, Vol. 8~
+@236 = ~Historial del Valle de las Sombras, Vol. 9~
+@237 = ~Historial del Valle de las Sombras, Vol. 10~
+@238 = ~Historial del Valle de las Sombras, Vol. 11~
+@239 = ~Historial del Valle de las Sombras, Vol. 12~
+@240 = ~Historial del Valle de las Sombras, Vol. 13~
+@241 = ~Historia del Drow, Vol. 1~
+@242 = ~Historia del Drow, Vol. 2~
+@243 = ~Historia del Norte, Vol. 1~
+@244 = ~Historia del Norte, Vol. 2~
+@245 = ~Historia del Norte, Vol. 3~
+@246 = ~Historia del Norte, Vol. 4~
+@247 = ~Historia del Norte, Vol. 5~
+@248 = ~Historia del Norte, Vol. 6~
+@249 = ~Historia del Norte, Vol. 7~
+@250 = ~Historia del Norte, Vol. 8~
+@251 = ~Historia del Norte, Vol. 9~
+@252 = ~Historia del Norte, Vol. 10~
+@253 = ~Historia de Aguas Profundas, Vol. 1~
+@254 = ~Historia de Aguas Profundas, Vol. 2~
+@255 = ~Historia de Aguas Profundas, Vol. 3~
+@256 = ~Historia de Aguas Profundas, Vol. 4~
+@257 = ~Historia de Aguas Profundas, Vol. 5~
+@258 = ~Historia de Aguas Profundas, Vol. 6~
+@259 = ~¿Pero eso no es lo que te pedí que hicieras, o sí?  ¡Necesitaba evidencias antes de ordenar la muerte de Mae'Var!  ¡¡Ahora hay que ver como puedo crear las evidencia despues de esto!!~
+@260 = ~¡Pero tengo evidencia de que la traición de Mae'Var todavía continua!~
+@261 = ~Carrack~
+@262 = ~Lillian~
+@263 = ~Cora~
+@264 = ~Arris~
+@265 = ~Torturador~
+@266 = ~Evidentemente Carrack no lo hizo mejor en su intento de venganza. Su cuerpo ha sido saqueado y avandonado, posiblemente como advertencia a otros.~
+@267 = ~Eye~
+@268 = ~Abraxxi~
+@269 = ~Dispondré de Arkanis, Kachiko y otros, nuestros mejores asesinos, se uniran a tí cuando entres en las catacumbas de Bodhi.  Me aseguraré de que Bodhi deje de fastidiarme para siempre.~
+@270 = ~Contingencia en cadena - Protección contra armas mágicas~
+@271 = ~Contingencia en cadena - Spell Turning~
+@272 = ~Contingencia en cadena - Mislead~
+@273 = ~Disparador de conjuros - Escudo igneo~
+@274 = ~Contingencia en cadena - Piel de piedra~
+
+
+
+@99948 = ~Encontrar pruebas de la traición de Mae'Var.
+
+El asistente de Mae'Var ha resultado ser el mago thayino que me encontré en la Costa de la Espada. Me ha encomendado matar a Rayic Gethras, un Mago Encapuchado que vive en un edificio gris de tres plantas hacia el oeste del Distrito Portuario. Sabré que está en casa si tiene la puerta abierta. Cuando Rayic esté muerto debo traerle su sello a Edwin como prueba.~
+
+@99906 = ~¿La Casa Despana tiene los huevos de Adalon?
+
+Según un drow anciano de la taberna, es probable que los huevos del dragón argénteo estén en algún lugar del recinto de la Casa Despana. Sin duda conseguir entrar será muy complicado.~

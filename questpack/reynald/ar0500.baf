@@ -1,0 +1,11 @@
+IF
+  Dead("kaypala")
+  !Dead("kaypall")
+  CombatCounter(0)
+  Global("D0Reynald","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Reynald","GLOBAL",1)
+    CreateCreatureObjectOffScreen("d0kaypal",Player1,0,0,0)
+    ActionOverride("d0kaypal",StartDialogNoSet(Player1))
+END

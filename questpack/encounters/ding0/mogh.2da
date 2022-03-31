@@ -1,0 +1,41 @@
+Mogh/half orc
+***
+						SOUND
+ATTACK          		nosound nosound nosound
+ATTACK          		2 0 0
+AWAKE           		***
+AWAKE           		0
+CAST            		***
+CAST            		0
+CONJURE         		***
+CONJURE         		0
+DAMAGE          		hogre08
+DAMAGE          		0
+DIE             		hogre09
+DIE             		0
+HEAD_TURN       		***
+HEAD_TURN       		0
+READY           		***
+READY           		0
+SHOOT           		***
+SHOOT           		0
+TWITCH          		***
+TWITCH          		0
+WALK            		***
+WALK            		0
+ATTACK_SLASH    		***
+ATTACK_SLASH    		0
+ATTACK_BACKSLASH		***
+ATTACK_BACKSLASH		0
+ATTACK_JAB      		***
+ATTACK_JAB      		0
+EMERGE          		***
+EMERGE          		0
+HIDE            		***
+HIDE            		0
+SLEEP          			***
+SLEEP          			0
+Battle_Cry			hogre03 nosound
+Battle_Cry			0 0
+Selection                       hogre03
+Selection                       0

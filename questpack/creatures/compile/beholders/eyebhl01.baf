@@ -1,0 +1,218 @@
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  Detect(Myself)
+  See(Myself)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  OR(3)
+    !See(NearestEnemyOf(Myself))
+    StateCheck(NearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(4,1)
+  OR(3)
+    !See(SecondNearestEnemyOf(Myself))
+    StateCheck(SecondNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(5,2)
+  OR(3)
+    !See(ThirdNearestEnemyOf(Myself))
+    StateCheck(ThirdNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(6,3)
+  OR(3)
+    !See(FourthNearestEnemyOf(Myself))
+    StateCheck(FourthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(7,4)
+  OR(3)
+    !See(FifthNearestEnemyOf(Myself))
+    StateCheck(FifthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(8,5)
+  OR(3)
+    !See(SixthNearestEnemyOf(Myself))
+    StateCheck(SixthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(9,6)
+  OR(3)
+    !See(SeventhNearestEnemyOf(Myself))
+    StateCheck(SeventhNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(10,7)
+  OR(3)
+    !See(EighthNearestEnemyOf(Myself))
+    StateCheck(EighthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(11,8)
+  OR(3)
+    !See(NinthNearestEnemyOf(Myself))
+    StateCheck(NinthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(12,9)
+  OR(3)
+    !See(TenthNearestEnemyOf(Myself))
+    StateCheck(TenthNearestEnemyOf(Myself),0x00000029)
+    RandomNumGT(13,11)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNumGT(7,3)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNumGT(4,2)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DOMINATION)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DOMINATION)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNum(2,1)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FEAR)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FEAR)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  RandomNumGT(3,1)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DISINTEGRATE)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DISINTEGRATE)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FLESH_TO_STONE)
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FLESH_TO_STONE)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DEATH_RAY)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DEATH_RAY)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_SLOW)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_SLOW)
+END
+
+IF
+  //  !GlobalTimerNotExpired("Ray","LOCALS")
+  See(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),0)
+  See(LastSeenBy(Myself))
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",3)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
+  RESPONSE #100
+    //      SetGlobalTimer("Ray","LOCALS",4)
+    FaceObject(LastSeenBy(Myself))
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
+END

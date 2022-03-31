@@ -1,0 +1,7 @@
+IF
+  See("d0kaypal")
+  Global("TalkReynald","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet("d0kaypal")
+END

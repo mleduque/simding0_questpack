@@ -1,0 +1,85 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("vaelasa")  //
+    MoveToPoint([3950.3115])
+    Face(2)
+    Wait(4)
+    DisplayStringHead("vaelasa", @184)
+    Wait(2)
+    DisplayStringHead("vaelasa", @185)
+    Wait(3)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)  //
+    CreateVisualEffect("SPWOOD",[3865.3162])
+    Wait(2)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("vaelasa")  //
+    PlaySound("CRE_P01")
+    CreateVisualEffect("SPFIREPI",[3865.3162])
+    Wait(1)
+    DisplayStringHead("vaelasa", @186)
+    Wait(2)
+    ScreenShake([3865.3162],4)
+    Wait(2)
+    PlaySound("CRE_P01")
+    CreateVisualEffect("SPFIREPI",[3865.3162])
+    Wait(2)
+    DisplayStringHead("vaelasa", @187)
+    Wait(2)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)  //
+    PlaySound("CRE_P01")
+    CreateVisualEffect("SPFIREPI",[3865.3162])
+    SmallWait(1)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("vaelasa")
+    ScreenShake([3865.3162],4)
+    DisplayStringHead("vaelasa", @188)
+    Wait(1)
+    ScreenShake([3865.3162],4)
+    Wait(2)
+    DisplayStringHead("vaelasa", @189)
+    Wait(1)
+    ScreenShake([3865.3162],4)
+    Wait(2)
+    DisplayStringHead("vaelasa", @190)
+    Wait(3)
+    ScreenShake([3865.3162],8)
+    Wait(2)
+    PlaySound("CRE_P01")
+    CreateVisualEffect("SPFIREPI",[3865.3162])
+    Wait(2)
+    CreateVisualEffect("SPFIREPI",[3865.3162])
+//    ApplyDamagePercent("vaesala",50,COLD)
+    PlaySound("CRE_P01")
+    CreateCreature("sumound",[3865.3162],11)  // ~Uh-oh!~
+    Wait(3)
+    SetGlobal("SummonDryads","AR1200",5)
+    DisplayStringHead("vaelasa", @191)
+    Wait(2)
+//    ForceSpell(Myself,DO_NOTHING)
+//    EndCutSceneMode()
+    StartCutScene("sufakeb")
+END

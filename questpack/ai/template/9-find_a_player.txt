@@ -1,0 +1,119 @@
+IF
+	!See(Player6)
+	InParty(Player6)
+	InMyArea(Player6)
+	!StateCheck(Player6,STATE_DEAD)
+	!StateCheck(Player6,STATE_ACID_DEATH)
+	!StateCheck(Player6,STATE_FLAME_DEATH)
+	!StateCheck(Player6,STATE_EXPLODING_DEATH)
+	!StateCheck(Player6,STATE_STONE_DEATH)
+	!StateCheck(Player6,STATE_FROZEN_DEATH)
+	!StateCheck(Player6,STATE_CHARMED)
+	!StateCheck(Player6,STATE_INVISIBLE)
+	!StateCheck(Player6,STATE_IMPROVED_INVISIBILITY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player6,WIZARD_DIMENSION_DOOR)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!See(Player5)
+	InParty(Player5)
+	InMyArea(Player5)
+	!StateCheck(Player5,STATE_DEAD)
+	!StateCheck(Player5,STATE_ACID_DEATH)
+	!StateCheck(Player5,STATE_FLAME_DEATH)
+	!StateCheck(Player5,STATE_EXPLODING_DEATH)
+	!StateCheck(Player5,STATE_STONE_DEATH)
+	!StateCheck(Player5,STATE_FROZEN_DEATH)
+	!StateCheck(Player5,STATE_CHARMED)
+	!StateCheck(Player5,STATE_INVISIBLE)
+	!StateCheck(Player5,STATE_IMPROVED_INVISIBILITY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player5,WIZARD_DIMENSION_DOOR)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!See(Player4)
+	InParty(Player4)
+	InMyArea(Player4)
+	!StateCheck(Player4,STATE_DEAD)
+	!StateCheck(Player4,STATE_ACID_DEATH)
+	!StateCheck(Player4,STATE_FLAME_DEATH)
+	!StateCheck(Player4,STATE_EXPLODING_DEATH)
+	!StateCheck(Player4,STATE_STONE_DEATH)
+	!StateCheck(Player4,STATE_FROZEN_DEATH)
+	!StateCheck(Player4,STATE_CHARMED)
+	!StateCheck(Player4,STATE_INVISIBLE)
+	!StateCheck(Player4,STATE_IMPROVED_INVISIBILITY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player4,WIZARD_DIMENSION_DOOR)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!See(Player3)
+	InParty(Player3)
+	InMyArea(Player3)
+	!StateCheck(Player3,STATE_DEAD)
+	!StateCheck(Player3,STATE_ACID_DEATH)
+	!StateCheck(Player3,STATE_FLAME_DEATH)
+	!StateCheck(Player3,STATE_EXPLODING_DEATH)
+	!StateCheck(Player3,STATE_STONE_DEATH)
+	!StateCheck(Player3,STATE_FROZEN_DEATH)
+	!StateCheck(Player3,STATE_CHARMED)
+	!StateCheck(Player3,STATE_INVISIBLE)
+	!StateCheck(Player3,STATE_IMPROVED_INVISIBILITY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player3,WIZARD_DIMENSION_DOOR)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!See(Player2)
+	InParty(Player2)
+	InMyArea(Player2)
+	!StateCheck(Player2,STATE_DEAD)
+	!StateCheck(Player2,STATE_ACID_DEATH)
+	!StateCheck(Player2,STATE_FLAME_DEATH)
+	!StateCheck(Player2,STATE_EXPLODING_DEATH)
+	!StateCheck(Player2,STATE_STONE_DEATH)
+	!StateCheck(Player2,STATE_FROZEN_DEATH)
+	!StateCheck(Player2,STATE_CHARMED)
+	!StateCheck(Player2,STATE_INVISIBLE)
+	!StateCheck(Player2,STATE_IMPROVED_INVISIBILITY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player2,WIZARD_DIMENSION_DOOR)
+	RESPONSE #20
+		Continue()
+END
+
+IF
+	!See(Player1)
+	InParty(Player1)
+	InMyArea(Player1)
+	!StateCheck(Player1,STATE_DEAD)
+	!StateCheck(Player1,STATE_ACID_DEATH)
+	!StateCheck(Player1,STATE_FLAME_DEATH)
+	!StateCheck(Player1,STATE_EXPLODING_DEATH)
+	!StateCheck(Player1,STATE_STONE_DEATH)
+	!StateCheck(Player1,STATE_FROZEN_DEATH)
+	!StateCheck(Player1,STATE_CHARMED)
+	!StateCheck(Player1,STATE_INVISIBLE)
+	!StateCheck(Player1,STATE_IMPROVED_INVISIBILITY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player1,WIZARD_DIMENSION_DOOR)
+	RESPONSE #20
+		Continue()
+END

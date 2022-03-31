@@ -1,0 +1,108 @@
+IF
+  !GlobalTimerNotExpired("Gaze","LOCALS")
+  GlobalLT("D0Gaze","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+  RandomNum(6,1)
+  !GlobalTimerNotExpired("D0GazeThisArea","MYAREA")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",6)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",12)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+END
+
+IF
+  !GlobalTimerNotExpired("Gaze","LOCALS")
+  GlobalLT("D0Gaze","LOCALS",2)
+  See(SecondNearestEnemyOf(Myself))
+  RandomNum(6,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",6)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",12)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+END
+
+IF
+  !GlobalTimerNotExpired("Gaze","LOCALS")
+  GlobalLT("D0Gaze","LOCALS",2)
+  See(ThirdNearestEnemyOf(Myself))
+  RandomNum(6,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",6)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",12)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+END
+
+IF
+  !GlobalTimerNotExpired("Gaze","LOCALS")
+  GlobalLT("D0Gaze","LOCALS",2)
+  See(FourthNearestEnemyOf(Myself))
+  RandomNum(6,4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",6)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",12)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+END
+
+IF
+  !GlobalTimerNotExpired("Gaze","LOCALS")
+  GlobalLT("D0Gaze","LOCALS",2)
+  See(FifthNearestEnemyOf(Myself))
+  RandomNum(6,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",6)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",12)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+END
+
+IF
+  !GlobalTimerNotExpired("Gaze","LOCALS")
+  GlobalLT("D0Gaze","LOCALS",2)
+  See(SixthNearestEnemyOf(Myself))
+  RandomNum(6,6)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",6)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+  RESPONSE #100
+    SetGlobalTimer("D0GazeThisArea","MYAREA",12)
+    IncrementGlobal("D0Gaze","LOCALS",1)
+    SetGlobalTimer("Gaze","LOCALS",18)
+    ReallyForceSpellRES("d0qpmgaz",LastSeenBy(Myself))
+END

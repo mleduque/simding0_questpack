@@ -1,0 +1,57 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("sumound")
+    Wait(1)
+    SwingOnce()
+    Wait(1)
+    SwingOnce()
+
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("vaelasa")
+    Wait(2)
+    DisplayStringHead("vaelasa",@183)
+    Wait(3)
+
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("sumound")
+    Wait(1)
+    SwingOnce()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("vaelasa")
+    SetGlobal("SUVaelasaWormFood", "GLOBAL", 1)
+    Wait(1)
+    DropInventory()
+    Wait(8)
+    CreateVisualEffectObject("bloodl","vaelasa")
+    ReallyForceSpellRES("fl#qpchk","vaelasa")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("sumound")
+    Wait(1)
+    PlaySound("CRE_P01")
+    CreateVisualEffectObject("SPWOOD","sumound")
+    Wait(4)
+    DestroySelf()
+    EndCutSceneMode()
+END

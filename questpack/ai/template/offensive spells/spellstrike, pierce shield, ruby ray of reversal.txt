@@ -1,0 +1,258 @@
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",TenthNearestEnemyOf(Myself)) // Cloak of Mirroring
+	OR(6)
+		CheckStatGT(TenthNearestEnemyOf(Myself),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(TenthNearestEnemyOf(Myself),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(TenthNearestEnemyOf(Myself),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(TenthNearestEnemyOf(Myself),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(TenthNearestEnemyOf(Myself),0,WIZARD_SPELL_IMMUNITY)
+		CheckStatGT(TenthNearestEnemyOf(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	See(TenthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",SixthNearestEnemyOf(Myself)) // Cloak of Mirroring
+	OR(6)
+		CheckStatGT(SixthNearestEnemyOf(Myself),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(SixthNearestEnemyOf(Myself),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(SixthNearestEnemyOf(Myself),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(SixthNearestEnemyOf(Myself),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(SixthNearestEnemyOf(Myself),0,WIZARD_SPELL_IMMUNITY)
+		CheckStatGT(SixthNearestEnemyOf(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",FifthNearestEnemyOf(Myself)) // Cloak of Mirroring
+	OR(6)
+		CheckStatGT(FifthNearestEnemyOf(Myself),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(FifthNearestEnemyOf(Myself),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(FifthNearestEnemyOf(Myself),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(FifthNearestEnemyOf(Myself),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(FifthNearestEnemyOf(Myself),0,WIZARD_SPELL_IMMUNITY)
+		CheckStatGT(FifthNearestEnemyOf(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",FourthNearestEnemyOf(Myself)) // Cloak of Mirroring
+	OR(6)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,WIZARD_SPELL_IMMUNITY)
+		CheckStatGT(FourthNearestEnemyOf(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",ThirdNearestEnemyOf(Myself)) // Cloak of Mirroring
+	OR(6)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,WIZARD_SPELL_IMMUNITY)
+		CheckStatGT(ThirdNearestEnemyOf(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",SecondNearestEnemyOf(Myself)) // Cloak of Mirroring
+	OR(6)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,WIZARD_SPELL_IMMUNITY)
+		CheckStatGT(SecondNearestEnemyOf(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	See(TenthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",NearestEnemyOf(Myself)) // Cloak of Mirroring
+	OR(6)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_SPELL_IMMUNITY)
+		CheckStatGT(NearestEnemyOf(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",SecondNearestEnemyOfType([0.0.0.MAGE_ALL])) // Cloak of Mirroring
+	OR(5)
+		CheckStatGT(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_IMMUNITY)
+	See(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	OR(3)
+		HaveSpell(WIZARD_SPELL_STRIKE)
+		HaveSpell(WIZARD_PIERCE_SHIELD)
+		HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    !HasItemEquiped("CLCK26",NearestEnemyOfType([0.0.0.MAGE_ALL])) // Cloak of Mirroring
+	OR(5)
+		CheckStatGT(NearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_DEFLECTION)
+		CheckStatGT(NearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_TURNING)
+		CheckStatGT(NearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_TRAP)
+		CheckStatGT(NearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_SHIELD)
+		CheckStatGT(NearestEnemyOfType([0.0.0.MAGE_ALL]),0,WIZARD_SPELL_IMMUNITY)
+	See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(LastSeenBy(Myself))
+	OR(5)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_DEFLECTION,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_TURNING,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_TRAP,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_SHIELD,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_IMMUNITY,0)
+	HaveSpell(WIZARD_SPELL_STRIKE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_SPELL_STRIKE)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(LastSeenBy(Myself))
+	OR(5)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_DEFLECTION,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_TURNING,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_TRAP,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_SHIELD,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_IMMUNITY,0)
+	HaveSpell(WIZARD_PIERCE_SHIELD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_PIERCE_SHIELD)
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+	See(LastSeenBy(Myself))
+	OR(5)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_DEFLECTION,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_TURNING,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_TRAP,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_SHIELD,0)
+		CheckStatGT(LastSeenBy(Myself),WIZARD_SPELL_IMMUNITY,0)
+	HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+END

@@ -1,0 +1,61 @@
+Sahuagin
+--------
+Okay, so to clarify: I should be seeking permission from Weimer to use these Sahuagin, since they incorporate some of his changes from Tactics?
+
+Zip file attached. Open the text files in Notepad,
+or some other program that uses the same width for every
+character and lets the lines be hundreds of characters
+long, or the columns will get screwy. Now that I take a
+closer look at the Sahuagins' stats, I can see that I
+actually did NOT assign kits based on stats, as I
+thought I had done; heck, one of the Berserkers only has
+12 CON. So some tinkering can be done there....I
+wouldn't object to randomizing their stats (although
+that does sort of defeat the purpose of rolling good 
+stats for them), or tweaking their stats or kits to
+match each other, or only giving the kits to the
+Royal/Baronial Guards, or even just saying "heck with
+it" and leaving them as they are.
+
+     Notes: Their CRE files are fine, but I haven't done
+thing one with their scripting. For example, each
+Sahuagin carries the designated amount of healing
+potions, but I've never told them to drink them. And
+even though I've removed all of Weimer's Oracle scrolls,
+sometimes some of them will still cast it--although that
+might just be the Fighter/Mages. And I've had second
+thoughts about the rank & file Sahuagin being able to
+cast Water Jet and Boiling Rain Storm: Those damn
+overpowered Bolts are more Stunning capability than
+anyone needs, and giving those abilities to the
+Anguillians instead would make them more special. Also,
+I haven't yet tested to see if it's possible to
+duplicate the Impaler by killing the Prince and then
+killing the King before speaking to him (though nobody
+would willingly do that).
+
+                                             Nick
+
+
+
+
+I made all Sahuagin be a level appropriate to their rank (no more Level 2 King Ixilthetocal, he's now Level 20) and randomized their stats: For all Sahuagin inside the Underwater City, I took their experience level, multiplied by 5, rolled that many sets of stats, and gave them the best one. I then applied modifiers of +3 to STR (+4 for royalty), -1 to CON, +3 to INT (capped at 18), -1 to WIS, and +6 to CHA (capped at 18). The EXP earned for killing each creature is 0.5% of that creature's own EXP. Sahuagin do not gain weapon proficiencies as rapidly as land-based humanoids: Due to the majority of their time being spent in the open sea, their use of their hands is reduced. To illustrate this, Sahuagin only have roughly 2/3rds the proficiency points that a Half-Elf of their class and level would have. THAC0 and Saving Throws are identical with those of a Half-Elf of that class and level. Hitpoints are rolled on Normal difficulty; All pureclassed Warriors of Royal Guard and up use 1D12 hitdice, while Chieftain and down use 1D10. Those of class Cleric, Cleric/Mage or Fighter/Mage have the same hp of a Half-Elf of their class and levels. The original Sahuagin had an average base AC of 5, that of Chain Mail. To me, it seems to make more sense to give Sahuagin skin the same AC as Hide armor: 6. From this base, the Kensai and Wizards are assumed to be naked, Archers wear Studded Leather, Barons wear Plate, royalty gets Full Plate, and everyone else wears Splint. These are only indications of relative AC, no Sahuagin actually wears armor. (A shark wearing Full Plate is a shark that can't get his ass off the ocean floor.) The lowest-ranking "Sahuagin" and "Rebels" in the City were originally Level 8; I bumped them up a level simply to discourage relying on Death Spell.
+
+Their equipment is more realistic, too. In my most recent trip through the City (siding with the Prince, but for some reason his guards were Hostile to us and we had to kill them), we gathered up:
+28 Spears+1, 30 Spears+2, 4 Spears+3, and the Impaler+4,
+15 Light Crossbows+1, 7 Light Crossbows+2, 3 Light Crossbows of Speed,
+17 Heavy Crossbows+1, 14 Heavy Crossbows+2, 2 Heavy Crossbows of Accuracy,
+2 Cloaks of Protection+1 (all noble Sahuagin wear one), and a pair of Bracers of Archery (off Captain Alyittyl).
+Healing Potions are alotted with respect to each creature's EXP:
+15000-13500 = Extra Healing x5 (135 hp)
+13499-10800 = Extra Healing x4 (108 hp)
+10799-8100 = Extra Healing x3 (81 hp)
+8999-5400 = Extra Healing x2 (54 hp)
+5399-4500 = Healing x5 (45 hp)
+4499-3600 = Healing x4 (36 hp)
+3599-2700 = Healing x3 (27 hp)
+2699-1800 = Healing x2 (18 hp)
+1799-900 = Healing x1 (9 hp)
+899-0 = none (0 hp)
+
+Sahuagin outside the Underwater City are weaker in comparison: They are 4 levels lower than their urban counterparts, their number of stat rolls is only 3x their level instead of 5x, and their equipment (except Healing Potions) is downgraded. But they aren't pushovers: The Sahuagin Prince in the Ust Natha Tavern will hand Korgan his ass on a platter every time.

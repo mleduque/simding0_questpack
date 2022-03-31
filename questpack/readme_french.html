@@ -1,0 +1,1251 @@
+<!doctype html>
+
+<head>
+  <title>Quest Pack</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body {font-family: verdana; font-size: 12px}
+    h1 {text-align: center; text-decoration: underline;}
+    h3 {text-align: center;}
+    h4 {text-decoration: underline;}
+    h5 {font-size: 12px; font-weight: normal; text-decoration: underline;}
+    span.break {display: block;}
+    span.center {text-align: center;}
+    ol.roman {list-style-type: upper-roman;}
+    table#credits td {padding-bottom: 1em;}
+    // table#hell_alignment td {border: 1px solid grey;}
+  </style>
+</head>
+
+<body>
+  <h1>Quest Pack</h1>
+  <h3><a href="http://www.pocketplane.net/quest/">Site Web</a></h3>
+  <span class="center break">Version 3.5</span>
+  <span class="center break"><a href="version%20history.html">
+  (Historiques des version (en anglais))</a></span>
+
+  <hr />
+
+  <ul>
+    <li>De nombreuses nouvelles aventures passionnantes !</li>
+    <li>Ajoute de nouvelles dimensions aux quêtes populaires existantes !</li>
+    <li>Des opportunités qui auraient dû être dans le jeu dès le début !</li>
+    <li>Des dizaines de milliers de mots de dialogue, à grand renfort
+	de voix !</li>
+    <li>Les parcours spécifiques aux statuts et aux classes permettent
+	une grande diversité de roleplay !</li>
+    <li>Des adversaires uniques et dangereux avec une IA redoutable !</li>
+    <li>S'intègre parfaitement au monde existant !</li>
+    <li>Trahison et intrigue !</li>
+  </ul>
+
+  <p>Bienvenue dans le Quest Pack.</p>
+
+  <hr />
+
+  <h4>Contenu</h4>
+  <ol class="roman">
+    <li><a href="#Section1">Introduction</a></li>
+    <li><a href="#Section2">Composants</a></li>
+    <li><a href="#Section3">Installation</a></li>
+    <li><a href="#Section4">Compatibilité</a></li>
+    <li><a href="#Section5">FAQs</a></li>
+    <li><a href="#Section6">Remerciements</a></li>
+  </ol>
+
+  <hr />
+
+  <h4><a id="Section1">Introduction</a></h4>
+  <p>
+    Le Quest Pack contient un certain nombre d'éléments destinés
+	à ajouter d'autres aventures au jeu Baldur's Gate II : Shadows
+	Of Amn et à son extension Throne Of Bhaal. Bien que l'expansion
+	soit requise par certains composants, elle n'est pas nécessaire.
+	Les composants spécifiques à ToB seront automatiquement sautés si
+	ToB n'est pas détecté. Certains composants peuvent étendre des
+	quêtes existantes, tandis que d'autres peuvent être complètement
+	nouveaux. Tous sont indépendants, leur installation est facultative
+	et ils ne dépendent pas l'un de l'autre techniquement ou en termes
+	d'histoire. Le Quest Pack utilise <a href="http://www.weidu.org/">
+	WeiDU</a> pour faciliter (dé)installation et compatibilité.
+  </p>
+  <p>
+    En agrandissant Baldur's Gate II pour rendre le jeu plus satisfaisant
+	, le Quest Pack cherche à se fondre harmonieusement dans le contenu
+	du jeu original. Lorsque les joueurs affirment que les mods ne
+	peuvent jamais égaler la qualité d'un jeu professionnel, je considère
+	que c'est un défi, et je ne peux qu'espérer que j'ai réussi. Le Quest
+	Pack contient des dizaines de bavardages par les PNJ Bioware et ceux
+	des mod ; il interagie aussi avec une variété d'autres mods,
+	incluant : <a href="http://www.pocketplane.net/kelsey">Kelsey</a>,
+	<a href="http://www.pocketplane.net/keto">Keto</a> et
+	<a href="http://www.pocketplane.net/virtue">Virtue</a> ; ces trois
+	éléments viendront enrichir l'expérience de BG2 et du Quest Pack.
+  </p>
+  <p>
+    Le pack Quest ne doit pas perturber l'équilibre du jeu. Ce n'est un
+	secret pour personne que, dans le passé, de nombreux mods de quête
+	ont fait l'objet de plaintes concernant des objets surpuissants,
+	des récompenses d'XP excessives, etc. Cela ne devrait pas être le
+	cas ici, et si vous rencontrez des problèmes d'équilibre, n'hésitez
+	pas à les signaler sur le forum.
+  </p>
+  <p>
+    De nombreux combats du Quest pack répondent au curseur de
+	difficulté. Si vous en trouvez un trop difficile, essayez de
+	réduire le réglage. Il ne devrait pas y avoir de combats extrêmes de
+	type Tactique dans le mod, mais il cherche à être stimulant lorsque
+	cela est approprié.
+  </p>
+  <p>
+    Avez-vous des idées sur le mod ? Rendez-vous sur le site
+    <a href="http://forums.pocketplane.net/index.php?board=21.0">forum</a>.
+    La publication par les invités est activée pour les timides.
+    Sinon, envoyez-moi un courriel à
+    <a href="mailto:SimDing0@hotmail.com">SimDing0@hotmail.com</a>.
+  </p>
+  <p>
+    (Des captures d'écran sont disponibles
+    <a href="http://forums.pocketplane.net/index.php?topic=20393.0">ici</a>.)
+  </p>
+
+  <hr />
+
+  <h4><a id="Section2">Composants</a></h4>
+  <h5>Améliorations générales de l'IA et extension des exclamations</h5>
+  <p>
+    Ce composant est divisé en deux options : Améliorations de l'IA et
+	élargissement du vocabulaire, et Améliorations de l'IA uniquement.
+	Les modifications de l'IA sont examinées ci-dessous. Si vous
+	choisissez l'installation de la première option, les créatures
+	afficheront également une plus grande diversité de commentaires
+	au-dessus de leurs têtes pendant les combats, en fonction de leur
+	race, de leur classe et de leur personnalité, plutôt que tous les
+	humanoïdes répétant inlassablement "Je ne peux pas supporter ça !"
+  </p>
+  <p>
+    Une fois ce composant installé, les créatures se comporteront de
+	façon marginale et plus intelligente tout au long du jeu. Ne vous
+	attendez pas à une augmentation drastique de la difficulté, mais
+	attendez-vous, par exemple, à ce que les créatures ne restent plus
+	debout sans attaquer entre deux potions à boire. Ce n'est pas un
+	mod de combat plus difficile, mais plutôt un correctif pour la
+	mauvaise intelligence dont j'ai été témoin en jouant au jeu. Son
+	installation devrait améliorer l'expérience globale du Quest Pack,
+	et même celle du jeu dans son ensemble.
+  </p>
+  <p>
+    Si ce composant est installé vous aurez :
+  </p>
+  <ul>
+    <li>Des attaques moins prévisibles.</li>
+    <li>Une utilisation plus intelligente des objets tels que les
+	potions et les baguettes.</li>
+    <li>Des druides lançant des sorts intelligemment.</li>
+    <li>Des paladins lançant des sorts intelligemment.</li>
+    <li>L'utilisation aléatoire de certaines capacités des monstres,
+	comme l'emprisonnement des demi-liches.</li>
+    <li>Un nouveau comportement des images illusoires (Simulacre,
+	Image projetée, Détection faussée).</li>
+  </ul>
+  <p>
+    Vous n'obtiendrez cependant aucune modification des capacités des
+	créatures. Les statistiques, les objets, les capacités, etc. restent
+	inchangés. Vous bénéficierez également d'une IA légale -- les
+	scripts ne permettent pas aux créatures de "tricher".
+  </p>
+  <p>
+    Notez que les Demi-liches peuvent devenir sensiblement plus
+	puissantes avec ce composant, car il devient plus difficile de les
+	"gruger". (J'insiste une fois de plus sur le fait qu'elles ne gagnent
+	pas de nouvelles capacités, si ce n'est la correction d'un bogue du
+	déclencheur de sort de la Demi-liche de le la Tour de Garde, qui
+	auparavant ne faisait rien d'autre qu'afficher du texte en raison
+	d'une erreur de codage). Consultez la section FAQ si vous les trouvez
+	vraiment pénibles à supporter avec la nouvelle IA.
+  </p>
+
+  <h5>Améliorations des créatures et des zones</h5>
+  <p>
+    Ce composant est divisé en trois parties : Améliorations de toutes
+	les créatures et de toutes les zones, Améliorations de toutes les
+	créatures et Améliorations du boss seulement. Tous cherchent à
+	améliorer l'atmosphère dans BG2 -- que ce soit en améliorant
+	l'environnement, les capacités ou l’intelligence de ennemis.
+	La première option installera des améliorations générales sur les
+	créatures et les boss, et effectueras diverses modifications sur
+	les zones dans lesquels vous rencontrerez ces créatures.
+	La deuxième option installera des améliorations générales sur les
+	créatures et les boss, mais ne changera pas les zones. La
+	dernière option installera uniquement les changements sur les boss.
+  </p>
+
+  <p>
+    Les changements sur les zone sont les suivants :
+  </p>
+  <ul>
+    <li>Le repaire des spectateurs dans l'Ombreterre répond à la
+	difficulté, avec pour conséquence des changements dans le placement
+	des spectateurs et l'ajout de créatures.</li>
+    <li>Le mic-mac d'invocations arbitraires à l'étage inférieur de la
+	Cour Gardée est remplacé par une rencontre plus appropriée.</li>
+    <li>L'antre de la Rune tordue est mieux protégé, et ses gardiens
+	se comportent de manière plus sensée.</li>
+    <li>Une série d'embuscades peut maintenant avoir lieu dans la forêt
+	du Nord.</li>
+  </ul>
+
+  <p>
+    Les changements généraux sur les créatures sont les suivants :
+  </p>
+  <ul>
+    <li>Les Drows acquièrent maintenant des capacités innées : Lueur
+	féerique, Globe de ténèbres, Lumières dansantes. (Créé par Kensai Ryu ;
+	ce composant apparaît également dans D0Tweak).</li>
+    <li>Les capacités des vampires sont standardisées, de sorte qu'ils
+	utiliseront tous la domination et la peur à un degré adapté à leur
+	expérience. Leur intelligence est également largement remaniée, ce
+	qui leur permet de s'adapter aux immunités. De plus, les vampires
+	transformés en chauve-souris accordent désormais 75 % de leur valeur
+	d'XP.</li>
+    <li>Les Flagelleurs mentaux acquièrent un plus grand répertoire de
+	capacités psioniques, et les utiliseront de manière moins prévisible.
+	Ils peuvent également essayer de s'échapper d'une bataille s'ils
+	sont blessés (inspiré par Smarter Mind Flayers de Blucher), et
+	peuvent même revenir vous combattre plus tard. Les Alhoons gagnent
+	également un petit nombre de sorts de mage appropriés.</li>
+    <li>Les capacités de tous les types de spectateurs sont ajustées :
+	ils les utilisent désormais de manière moins prévisible. De plus,
+	il est possible de désactiver les spectateurs en détruisant leurs
+	yeux si vous faites suffisamment de dégâts. Enfin, tous les types
+	de spectateurs sont codés par des couleurs appropriées. (Les
+	changements de couleur ont été inspirés par les SmarterBeholders
+	de Xyx, qui sont, en fait, beaucoup plus intelligentes que celles
+	du Quest Pack, mais pas pour les cœurs fragiles).</li>
+    <li>Les Ombres des roches utilisent leur regard de manière moins
+	prévisible, et une distinction est faite entre les capacités des
+	Ombres des roches normaux et celles des anciennes.</li>
+    <li>Les momies obtiennent un "regard de désespoir", selon les règles
+	PnP. Il provoque un effet "Désespoir" qui étourdit toutes les
+	créatures dans la zone d'effet pendant 3 rounds, sauf si elles
+	réussissent un jet de sauvegarde contre les sorts.</li>
+    <li>Les salamandres retrouvent leur aura d'IWD ; celles-ci agissent
+	de la même manière que des boucliers de feu correspondant au type
+	de la Salamandre.</li>
+    <li>Les Géants du feu d'élite acquièrent la capacité de Berserk,
+	selon leur classe assignée.</li>
+    <li>Les attaques du regard sur une cible unique utilisent désormais
+	un projectile de regard standard et peuvent être identifiées par
+	leur nom.</li>
+    <li>Dans la rencontre aléatoire avec les esclavagistes et les orogs,
+	les premiers ont maintenant de quoi lancer leurs flèches +1.</li>
+    <li>La valeur d'XP de la horde de Derros de Sendai est réduite à
+	quelque chose de plus censé. (À l'origine, les esclaves avaient une
+	valeur d'xp excessive de 12000 XP chacun).</li>
+    <li>Les ombres s'évanouissent quand on les tue.</li>
+  </ul>
+
+  <p>
+    Les changements sur les boss visent à rendre Irenicus et Bodhi plus
+	crédibles. Toutes leurs incarnations sont concernées. Alors que
+	ces modifications concernent principalement l'IA, de nouvelles
+	capacités sont également accordées. Bodhi peut maintenant dominer de
+	la même manière que les autres vampires, et elle acquiert également
+	la capacité de contrôler les morts-vivants. Irenicus dans
+	Suldanessellar dispose désormais d'un plus grand répertoire de
+	sorts de bas niveau, et gagne la capacité de crée une porte
+	dimensionnelle vers vous si vous fuyez le combat. En outre, sur la
+	difficulté "règle de base", Irenicus à l'arbre de vie gagne une
+	utilisation de Enchaînement, et sur la difficulté "très difficile",
+	il en gagne deux et Irenicus à l'asile de Spellhold en gagne une.
+  </p>
+
+  <p>
+    Ce composant installera automatiquement "Sorts détectables".
+  </p>
+
+  <h5>Améliorations diverses</h5>
+  <p>
+    Ce composant n'ajoute pas une seule nouvelle quête en soi, mais
+	introduit plutôt un assortiment de nouvelles rencontres et
+	améliorations mineures à divers endroits du jeu, pour pimenter
+	l'atmosphère.
+  </p>
+  <p>
+    Certaines de ces rencontres sont reconnaissables comme venant du
+	concours Iron Modder ; cependant, toutes ont été corrigées et
+	améliorées d'une manière ou d'une autre Ce composant peut être
+	installé en toute sécurité par dessus des mods d'Iron Modder,
+	mais pas l'inverse.
+  </p>
+  <p>
+    La liste complète des changements installés par ce composant est
+	la suivante :
+  </p>
+  <ul>
+    <li>Une nouvelle rencontre intervient maintenant dans le cimetière,
+	au chapitre 6. (Bons IM.)</li>
+    <li>Il y a une nouvelle rencontre sinistre avec un spectre dans la
+	prison de Saradush. (Bons IM.)</li>
+    <li>Vous pouvez rencontrer un nouveau personnage à l'auberge des
+	collines d'Umar pour entendre une histoire sinistre une fois que
+	vous aurez quitté l'Ombreterre. (Blue IM.)</li>
+    <li>Madulf aidera à protéger Imnesvale pendant la quête de la
+	forteresse du paladin qui s'y déroule.</li>
+    <li>La fille perdue dans le District des Docks peut maintenant être
+	réunie avec sa mère.</li>
+    <li>De nouvelles possibilités sont introduites pour s'occuper des
+	enfants orphelins à Saradush.</li>
+    <li>Sime a maintenant un destin propre, en permettant de clore des
+	affaires là où il n'y en avait pas à l'origine. (Auparavant, elle
+	allait chercher de l'aide et n'était plus jamais mentionnée).</li>
+    <li>OPTIONNEL : De nouvelles rencontres aléatoires sont introduites,
+	tant en ville que dans la nature. (Cela fonctionnera en parallèle
+	avec le composant similaire du mod Tactics).</li>
+    <li>Il y a maintenant une suite mineure à la découverte de la liche
+	dans la taverne du Crâne tordu.</li>
+    <li>Dans les collines de Lancevent, l'illusion masuant les chevaliers
+	peut être dissipée.</li>
+    <li>Les Rakshasas de Francmarché répondent désormais au Fléau de
+	l’Éternité.</li>
+    <li>Les Momies qui ressuscitent fonctionnent plus fréquemment et
+	offrent un dialogue plus diversifié.</li>
+    <li>Un chien se liera d'amitié avec vous temporairement sur
+	les Docks.</li>
+    <li>L'infâme Prophète du Malheur de BG1 fait une réapparition.
+	Soyez prêts.</li>
+    <li>Des bêtes éclipsantes peuvent maintenant être rencontrées dans
+	l'ombreterre. (Créé par Jaysyn.)</li>
+    <li>Un nombre limité de Flèches de détonation sont disponibles
+	dans SoA.</li>
+    <li>Ribald porte désormais une Robe de l'Archimage Neutre.</li>
+    <li>Des boîtes à potions et des ceintures de munitions sont
+	disponibles dans SoA.</li>
+  </ul>
+
+  <h5>Contenu additionnel concernant les Voleurs de l'Ombre</h5>
+  <p>
+    Ce composant approfondit les quêtes existantes qui se concentrent
+	sur les Voleurs de l'ombre.
+    Il peut être divisé en plusieurs sections :
+  </p>
+  <ul>
+    <li>Le joueur peut désormais se ranger du côté de Mae'Var au lieu
+	de Renal lorsqu'il est affecté à l'infiltration de sa guilde.
+	Dans le véritable esprit des voleurs, ce composant permet au joueur
+	de doubler ses alliés à chaque fois, mais pas sans conséquences.
+	Pour s'engager dans cette voie, le joueur doit prendre l'initiative
+	et informer Mae'Var de la mission de Renal après avoir gagné sa
+	confiance.</li>
+    <li>Il y a maintenant une mission pour éliminer Aran Linvail et sa
+	guilde au nom de Brega pendant le chapitre 6. Le joueur devra se
+	frayer un chemin à travers la tanière des Voleur de l'Ombre aux
+	côtés des gardes de la ville. Ce composant commencera automatiquement
+	au chapitre 6 pour tout joueur qui n'a pas la forteresse des voleurs
+	et qui n'a pas pris le parti de Mae'Var, en supposant qu'Aran soit
+	encore en vie ; un messager devrait demander votre attention.</li>
+    <li>Il est maintenant possible d'accomplir les quêtes d'Edwin sans
+	tuer Rayic Gethras : vous pouvez au contraire faire croire à Edwin
+	que Rayic est mort. De nouvelles possibilités de dialogue devraient
+	apparaître en parlant à Rayic.</li>
+    <li>Une quête est introduite autour du tortionnaire, Booter. (Ghrey IM.) Si on lui parle à plusieurs reprises, il divulgue des informations sur ses victimes, et un joueur rusé peut être capable d'utiliser certains de ces détails.</li>
+  </ul>
+  <p>
+    Pour jouer avec ce composant, une nouvelle partie doit être lancée,
+	ou <b> au moins</b> une sauvegarde avant d'entrer dans le hall de
+	guilde des Voleurs de l'Ombre doit être utilisée.
+  </p>
+
+  <h5>Intrigue alternative Ménestrels/Xzar</h5>
+  <p>
+    Ce composant élargit les complots de Ménestrels de deux manières
+	significatives :
+  </p>
+  <ul>
+    <li>De nouvelles solutions sont apportées à l'intrigue impliquant
+	Xzar et les Ménestrels. Le joueur peut avertir les Ménestrels des
+	intentions de Xzar, ce qui élimine la nécessité de faire quelque
+	chose de mal à Jaheira pour commencer sa romance. D'autre part,
+	le joueur n'est pas tenu à sa parole d'aider les Ménestrels, et un
+	joueur malfaisant peut les doubler s'il le souhaite. Pour profiter
+	des avantages de ce composant, il suffit de commencer la quête de
+	Xzar comme d'habitude. De nouvelles options de dialogue devraient
+	apparaître en parlant avec les Ménestrels dans leur quartier général.</li>
+    <li>Jaheira va maintenant répondre à Shazzellim de manière
+	appropriée. Il y a une brève quête connexe qu'elle devrait lancer
+	automatiquement si vous gardez le cimeterre en votre possession.</li>
+  </ul>
+  <p>
+    (Notez que ce composant ajoutera également un délai de huit heures
+	avant l'apparition de Meronia après la mort de Xzar. Si vous êtes
+	habitué à ce qu'elle apparaisse instantanément, alors il n'y a pas
+	lieu de s'inquiéter).
+  </p>
+
+  <h5>Extension de la rencontre avec Reynald</h5>
+  <p>
+    Reynald de Chatillon est indéniablement un personnage intrigant.
+	Malheureusement, il disparaît trop vite dans le jeu original.
+	Ce composant ajoute du contenu supplémentaire après la fin de la
+	séquence originale, en développant ses antécédents, ses croyances
+	et ses buts dans la vie.
+  </p>
+  <p>
+    Le nouveau contenu de Reynald peut être utilisé même s'il est
+	installé après la fin de la quête. Il suffit de se rendre dans le
+	District du Pont pour le déclencher. Sinon, jouez la quête
+	normalement ; de nouvelles options de dialogue apparaîtront bientôt.
+  </p>
+
+  <h5>Intrigue dans la Couronne de Cuivre</h5>
+  <p>
+    Ce composant apporte diverses améliorations à la Couronne de cuivre :
+  </p>
+  <ul>
+    <li>Le joueur peut désormais emprunter de l'argent à un prêteur.
+	Des indices autour du lieu devraient vous aider à le localiser.
+	Bien entendu, si le joueur peut essayer d'éviter de rembourser ses
+	dettes, cela n'est pas sans conséquences. Et ne vous attendez pas à
+	ce qu'il vous fournisse une solution facile pour vous rendre à
+	Spellhold rapidement.</li>
+    <li>Il y a une nouvelle quête concernant un remboursement de dettes
+	dans les bas quartiers. Pour commencer cette quête, rendez-vous au
+	centre du district, où une femme nommée Moiya devrait vous parler.</li>
+<!--
+    <li>Après avoir adapté la gestion de la Couronne, il est maintenant possible soit de faire sortir Surly des locaux, soit de l'extorquer, en prenant une partie des bénéfices de son entreprise. Parlez-lui après avoir tué Lehtinan. Si vous retirez Surly de la Couronne, il tentera de s'installer ailleurs.</li>
+-->
+  </ul>
+
+  <h5>Quête de la potion de Rahul Kanakia</h5>
+  <p>
+    Créée à l'origine par Rahul Kanakia, cette pépite peu connue fait
+	une réapparition dans le Quest Pack. Édité par Ding0 et Compton,
+	la Quête de la potion raconte l'histoire d'un homme déchiré entre
+	son travail et sa famille, et des conséquences très réelles de la
+	soif de pouvoir.
+  </p>
+  <p>
+    Cette quête commence au sud-ouest des égouts sous le District du
+	Temple.
+  </p>
+
+  <h5>Épreuves des enfers révisées</h5>
+  <p>
+    Auteur original, écriture : Adahn
+  </p>
+  <p>
+    Initialement prévu comme une petite contribution à un projet plus
+	important qui ne sera jamais achevé, ce mod traite des cinq tests
+	qui se produisent dans les Abysses (ou la Géhenne, en fonction de
+	ce que vous demandez) au cours du chapitre 7. Du point de vue du
+	roleplay, cette étape finale de la partie a semblé quelque peu
+	insatisfaisante, surtout pour les personnages neutres. Et le fait
+	qu'un protagoniste neutre devait passer les cinq tests de la "bonne"
+	manière afin de rester neutre n'apparaît pas non plus très logique.
+	Par conséquent, ce mod tente de résoudre ces problèmes en modifiant
+	les éléments suivants :
+  </p>
+  <ul>
+    <li>Pour chacun des tests, il y a maintenant une voie "neutre" à
+	suivre, ce qui entraîne également une récompense différente. Parfois,
+	la voie neutre est plus proche de la voie maléfique originale,
+	parfois de la bonne, et parfois elle est complètement différente de
+	l'une ou l'autre.</li>
+    <li>Après le dernier test, l'alignement du protagoniste est jugé, ce
+	qui peut entraîner un ajustement positif ou négatif. Il est cependant
+	généralement plus facile de tomber dans le mal que de devenir bon.</li>
+    <li>Les conditions de perte de classe par un paladin ou un rôdeur ont
+	été légèrement affinées, ce qui entraîne une plus grande tolérance
+	des actes neutres et malfaisants pour le rôdeur. En outre, les clercs
+	spécialisés perdront désormais leur spécialisation s'ils s'écartent
+	de l'alignement dicté par leurs dieux respectifs.</li>
+  </ul>
+
+  <h5>Amélioration de l'Oasis II</h5>
+  <p>
+    Il a toujours semblé que l'oasis de ToB était une zone très limitée,
+	conçue uniquement pour le combat. Le dialogue de Jamis Tombelthen
+	était insultant par sa petite taille, et il n'y avait qu'une seule
+	issue possible : le combat. Ce composant élargit le dialogue de
+	Jamis Tombelthen dans la zone de l'Oasis, pour permettre
+	potentiellement une solution pacifique plutôt qu'un conflit
+	inévitable.
+  </p>
+  <p>
+    Et, bien sûr, il ne faut pas oublier l'aspect "amélioration du
+	combat" de l'OA2.  C'est entièrement optionnel ; vous pouvez
+	installer l'amélioration du dialogue avec ou sans l'amélioration
+	du combat. S'il est installé, le combat répondra largement aux
+	paramètres de difficulté, à la taille du groupe et au niveau du
+	groupe.
+  </p>
+
+  <h5>Sauvetage de Sanik a Brynnlaw</h5>
+  <p>
+    Ce composant ajoute une courte opportunité pendant laquelle Sanik
+	peut être sauvé de son sort prématuré des mains de l'assassin de
+	Galvena à Bynnlaw. Veillez toutefois à agir rapidement, car
+	l'assassin aura tôt fait de pénétrer sa maigre défense et frapper
+	juste.
+  </p>
+
+  <h5>Chapardage chez le comptable</h5>
+  <p>
+    L'un des personnages les plus aimés (ou détestés) de tout Amn,
+	Galoomp, se sent plutôt déprimé ces derniers temps. La raison ?
+	Quelqu'un a volé des parchemins dans son magasin ! Résolvez le
+	mystère pour découvrir une histoire de tristesse et de rejet dans
+	ce volet créé à l'origine par Andyr.
+  </p>
+
+  <h5>Nouveau destin pour les glands des Dryades</h5>
+  <p>
+    Toutes les dryades sont-elles les belles et innocentes créatures
+	qu'elles semblent être ? Créé à l'origine par Bons, ce composant
+	ajoute une touche intrigante à la quête pour rendre les glands des
+	dryades d'Irenicus aux collines de Lancevent. Les joueurs maléfiques
+	pourront se réjouir des nouvelles possibilités offertes ici,
+	notamment d'un délicieux repas gastronomique. La quête commence par
+	une nouvelle rencontre qui aura lieu au sud de la forteresse
+	De'Arnise, si vous n'avez pas encore rendu les glands.
+  </p>
+
+  <h5>La tragédie de Bésamen</h5>
+  <p>
+    Créé à l'origine par Icelus, ce composant ajoute une nouvelle
+	rencontre dans le cimetière, dans la tombe dans laquelle on peut
+	trouver le Bâton de soins. Un homme troublé, coincé quelque part
+	entre la vie et la mort, cherche à s'unir à nouveau à son véritable
+	amour. Allez-vous les réunir ou les envoyer tous les deux pourrir
+	dans leur tombe ?
+  </p>
+
+  <h5>Implication des esclavagistes plus poussée</h5>
+  <p>
+   Ce composant offre des options supplémentaires pour traiter avec les
+   esclavagistes dans la ville :
+  </p>
+  <ul>
+    <li>Il est maintenant possible de vendre l'orpheline du District du
+	Cimetière à Lehtinan. Si vous savez qu'il est esclavagiste, vous
+	pourrez lui faire une offre une fois que vous aurez rencontré Risa.</li>
+    <li>Vous pouvez tenter de faire chanter les esclavagistes, en
+	menaçant d'avertir les gardes s'ils ne payent pas ; le succès n'est
+	pas garanti. De nouvelles possibilités de dialogue devraient
+	apparaître lors de la rencontre avec les esclavagistes et les gardes
+	corrompus la nuit dans les bas quartiers.</li>
+  </ul>
+
+  <h5>Renvoi des Chevaliers Solamniques chez eux</h5>
+  <p>
+    Une option qui manquait cruellement dans le jeu original était que
+	les personnages non mages puissent renvoyer les Chevaliers
+	Solamniques de la Sphère Planaire dans leur monde d'origine.
+	Désormais, tout personnage peut le faire exactement de la même
+	manière qu'auparavant. De nouveaux indices ont été ajoutés pour
+	expliquer l'absence d'implication des Mages Cagoulés.
+  </p>
+
+  <h5>Nazariel la liche</h5>
+  <p>
+    Avec ce composant, une nouvelle zone est ajoutée à l'Ombreterre.
+	Loin sous la terre se trouve une ancienne liche, qui aspire à
+	atteindre la surface et la "liberté". Attendez-vous à une bataille
+	unique et difficile avec une histoire intrigante. La nouvelle zone
+	se trouve dans les grottes de Kua-Toa, à l'ouest de la zone
+	principale de l'Ombreterre ; elle est quelque peu cachée, mais il
+	peut y avoir des indices (plutôt évidents) quant à sa localisation.
+  </p>
+
+  <h5>Négociation des récompenses</h5>
+  <p>
+    Ce composant est conçu pour fournir des moyens alternatifs et non
+	violents d'obtenir des récompenses satisfaisantes dans diverses
+	situations tout au long du jeu. Actuellement, un seul changement
+	est effectué :
+  </p>
+  <ul>
+    <li>Le joueur pourra sélectionner spécifiquement les objets qui
+	constituent sa part du butin lors de la répartition du butin de
+	Vithal tiré des portails éléméntaires de l'Ombreterre.
+	(Écrit par SixOfSpades).</li>
+  </ul>
+
+  <h5>Voler l'infernal</h5>
+  <p>
+    Avec ce composant installé, une nouvelle rencontre conçue par
+	SixOfSpades aura lieu dans le District du pont quelques jours après
+	la résolution des meurtres de Skinner. Un homme vous approchera
+	avec une offre inhabituelle, et le point culminant aura lieu peu
+	après dans la partie sud du district.
+  </p>
+
+<!--
+  <h5>Importance de l'arc de la Cour des Elfes</h5>
+  <p>
+    Les changements apportés par ce composant sont répartis sur
+	l'ensemble du jeu ; le plus notable est l'introduction d'une
+	nouvelle zone de rencontre mineure dans la nature. La séquence des
+	événements dans le nouveau scénario peut être résumée comme suit :
+    </p>
+  <ul>
+    <li>Les elfes peuvent maintenant essayer de vous réclamer l'arc
+	de la Cour des Elfes. Il a été perdue depuis trop longtemps.</li>
+    <li>Si vous leur permettez de le prendre, vous pourrez le récupérer
+	après avoir sauvé Suldanessellar s'ils vous en jugent digne.</li>
+    <li>Il peut maintenant être amélioré par Cespenar, ce qui le rend
+	utile dans Throne of Bhaal.</li>
+  </ul>
+-->
+
+  <hr />
+
+  <h4><a id="Section3">Installation</a></h4>
+  <p>
+    BGII, avec ou sans ToB, est obligatoire.
+	Le <a href ="http://gibberlings3.net/bg2fixpack/">BG2 Fixpack</a>
+	est fortement recommandé. Si vous avez d'autres mods installés,
+	veuillez consulter les notes de compatibilité ci-dessous avant
+	l'installation.
+  </p>
+  <p>
+    <span class="break">Décompressez les fichiers du Quest Pack dans
+	votre répertoire principal de BGII. C'est normalement :
+	</span> C:\Program Files\Black Isle\BGII - SoA\
+  </p>
+  <p>
+    Exécutez (cliquez sur) "Setup-D0QuestPack.exe".
+  </p>
+  <p>
+    (Si "Setup-D0Quest.exe" est présent -- notez le subtil
+    différence avec le nom de fichier ci-dessus -- ne l’exécutez <b>pas</b>.
+	Ce nom est utilisé par les premières versions obsolètes du Quest Pack).
+  </p>
+  <p>
+    Sélectionnez votre langue. Les langues actuellement disponibles sont :
+  </p>
+  <ul>
+    <li>Anglais</li>
+    <li>Français</li>
+    <li>Allemand</li>
+    <li>Espagnol</li>
+    <li>Polonais</li>
+    <li>Italien</li>
+    <li>Russe</li>
+  </ul>
+
+  <p>
+    Veuillez noter, cependant, que tous les composants ne sont pas
+	disponibles dans toutes les langues. Si le nom d'un composant
+	n'apparaît pas dans votre langue, c'est qu'il n'a pas encore été
+	traduit.
+  </p>
+  <p>
+    Ensuite, choisissez les composants que vous souhaitez installer.
+	Ils sont tous facultatifs. Vous pouvez toujours les désinstaller,
+	en totalité ou en partie, par la suite en ré-exécutant
+	"Setup-D0QuestPack.exe".
+  </p>
+  <p>
+    <b>Il est fortement recommandé de lancer une nouvelle partie après
+	l'installation du Quest Pack. Cela peut ne pas être nécessaire pour
+	tous les composants, mais cela réduira la possibilité que des
+	problèmes apparaissent.</b>
+  </p>
+
+  <hr />
+
+  <h4><a id="Section4">Compatibilité</a></h4>
+  <ul>
+    <li>Le Quest Pack devrait fonctionner correctement avec la plupart
+	des autres mods WeiDU (y compris tous ceux créés par l'équipe de
+	Pocket Plane). Si des problèmes de compatibilité avec d'autres mods
+	WeiDU surviennent, veuillez m'en informer.</li>
+    <li>Le Quest Pack a été testé et sa compatibilité avec Big Picture
+	et ses associés a été confirmée. L'IA du Quest Pack et les créatures
+	améliorées peuvent être installées en toute sécurité aux côtés de
+	celle de BP. En cas de chevauchement, les modifications de BP auront
+	la priorité.</li>
+    <li>Le Quest Pack devrait fonctionner correctement avec des Sword
+	Coast Stratagems. Installez SCS après le Quest Pack, et l'IA du SCS
+	aura la priorité.</li>
+    <li>Les mods Iron Modder inclus dans ce pack doivent être installés
+	avant le Quest Pack (qui remplace les originaux), ou idéalement
+	pas du tout. Tous les mods Iron Modder inclus dans le Quest Pack
+	seront automatiquement supprimés lorsqu'ils seront installés en
+	tant que composant du Quest Pack.</li>
+    <li>Les versions du Quest Pack de Amélioration de l'Oasis II, de la
+	Quête de la potion et des Épreuves des enfers révisées doivent être
+	installées en faveur des versions autonomes. Si l'un ou l'autre des
+	originaux est installé, il doit être retiré avant l'installation du
+	Quest Pack.</li>
+    <li>Le Quest Pack doit être installé APRÈS Kelsey et/ou Keto pour
+	permettre à leurs bavardages de fonctionner correctement.</li>
+    <li>Le Quest Pack doit être installé APRÈS le NPC Flirt Packs pour
+	empêcher l'activation des flirts dans la nouvelle zone de
+	l'Ombreterre.</li>
+    <li>Le Quest Pack doit être installé APRÈS Unfinished Business.</li>
+  </ul>
+
+  <hr />
+
+  <h4><a id="Section5">Section V - FAQs</a></h4>
+  <p>
+    Aka GROS SPOILERS.
+  </p>
+  <p>
+    <span class="break"><b>Q :</b> Je croyais que c'était un pack de
+	quêtes. Qu'est-ce que c'est que ces absurdités d'IA et
+	d'amélioration des créatures ?</span>
+    <b>R :</b> Si le but premier du Quest Pack est d'introduire de
+	nouvelles aventures dans le jeu, je pense aussi qu'il est essentiel
+	de présenter les ennemis de manière convaincante pour maintenir
+	l'intégrité du jeu. Il est difficile de raconter une histoire
+	convaincante dans un environnement où l'intelligence des ennemis
+	est constamment gênante. C'est pourquoi j'ai fait quelques efforts
+	symboliques pour couvrir l'ensemble du jeu avec le type
+	d'intelligence artificielle que l'on trouve dans le contenu du
+	Quest Pack, dans l'espoir que cela renforce l'histoire et procure
+	un plaisir supplémentaire aux joueurs.
+  </p>
+  <p>
+    Les dragons illustrent parfaitement ce principe : grâce aux
+	connaissances en matière de métagaming, nous sommes parfaitement
+	conscients qu'ils sont une sorte de plaisanterie dans le BG2 de
+	base, et qu'en tant que tels, il y a peu de motivation à utiliser
+	le composant de négociation des récompenses avec eux. Cependant, si
+	les dragons deviennent des ennemis crédibles, il est plus logique
+	qu'un joueur choisisse la voie diplomatique.
+  </p>
+  <p>
+    Il convient également de noter que contrairement à de nombreux
+	autres mods, " Amélioré " dans le contexte du Quest Pack ne
+	signifie pas exclusivement "Plus puissant". Alors que de nombreux
+	ennemis deviendront plus difficiles (et répondront au curseur de
+	difficulté), le but premier des améliorations est de les rendre plus
+	crédibles et plus amusants -- par exemple, les Spectateurs peuvent
+	maintenant perdre leurs yeux pendant le combat, ce qui n'est
+	clairement pas un changement destiné uniquement à augmenter la
+	difficulté.
+  </p>
+  <p>
+    Pour un ensemble plus complet d'améliorations de l'IA, vous pourriez
+	envisager d'essayer <a href="http://www.gibberlings3.net/scs/">Sword
+	Coast Stratagems</a>.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Où peut-on trouver le prêteur
+	d’argent ?</span>
+    <b>R :</b> Dans la Couronne de cuivre, près de la porte. Il s'appelle
+	Célile, et vous devriez le voir parler à un garçon quand vous entrez
+	pour la première fois. Il ne vous parlera pas à moins que vous ne
+	soyez très persuasif. Voyez si quelqu'un d'autre sait quelque chose
+	sur lui.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Je n'arrive pas à me ranger du côté
+	de Mae'Var ! Il m'attaque directement... qu'est-ce que ça veut dire ?</span>
+    <b>R :</b> Vous ne pouvez pas le rejoindre tout de suite ; une fois
+	que vous avez terminé les quêtes d'Edwin et gagné sa confiance,
+	alors essayez de lui dire ce que vous faites là.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> J'ai un problème avec Arkanis Gath.
+	Puis-je l'empêcher d’apparaître d'une manière ou d'une autre ?</span>
+    <b>R :</b> Si, pour quelque raison que ce soit, vous devez empêcher
+	Arkanis Gath de se manifester, faites apparaître la console et entrez :
+    <span class="break"><i>SetGlobal("D0DisableArkanis","GLOBAL",1)</i></span>
+    Sachez cependant que si vous désactivez Arkanis, il peut être
+	possible de casser le jeu en tuant des personnages essentiels
+	à l'intrigue.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Où a été emmenée la fille de Moiya ?</span>
+    <b>R :</b> Dans une des tombes du cimetière. Essayez de parler au
+	fossoyeur et voyez ce que vous pouvez tirer de lui.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Xzar peut-il se joindre à mon groupe
+	si je le sauve ?</span>
+    <b>R :</b> Non. Et en prévision de la prochaine question, je ne vais
+	pas non plus développer un NPC Xzar à l'avenir. (TDD fournit un NPC
+	Xzar "silencieux", pour ceux qui sont déterminés à en acquérir un).
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Où peut-on trouver la famille de
+	Jadarath ?</span>
+    <b>R :</b> Dans le sud-ouest du District du Pont. Essayez de parler
+	avec Sidhe et de retourner voir Jadarath, mais assurez-vous de le
+	faire avant de lui apporter la potion finale.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Comment fonctionnent exactement les
+	Épreuves des enfers révisées ?</span>
+    <b>R :</b> Les tests neutres sont les suivants :
+  </p>
+  <p>
+    <span class="break">COLÈRE (Sarevok):</span>
+
+    Ce n'est qu'un changement mineur. Il fonctionne presque exactement
+	comme la bonne voie, mais au lieu de refuser la souillure parce
+	qu'elle est mauvaise, vous pouvez le faire par méfiance envers
+	Sarevok ou parce que vous acceptez votre destin, quelle qu'en soit
+	la forme.  Récompense : +2 en intelligence
+  </p>
+
+  <p>
+    <span class="break">CUPIDITÉ (Rasoirnoir):</span>
+
+    En suivant le bon chemin d'abord, vous pouvez dire au génie que vous
+	ne voulez pas le tuer, mais que vous ne pouvez tout simplement pas
+	lui donner l'épée non plus. Il vous laissera l'épée aussi longtemps
+	que vous aurez besoin pour battre Irenicus et vous donnera la larme,
+	mais il placera un sort de quête sur vous pour assurer le retour de
+	la lame. Plus tard, lors de la section ToB, il réapparaîtra,
+	demandant l'épée. Refuser de lui donner entraîne simplement votre
+	mort. Récompense : +2 au TAC0
+  </p>
+
+  <p>
+    <span class="break">EGOISME (Sacrifice):</span>
+
+    Maintenant, au lieu de simplement disparaître, le démon vous donne
+	la possibilité de dire ce que vous avez l'intention de faire.
+	Exprimer la volonté de sacrifier ou de tuer l'otage, tout en étant
+	incertain n'a pas d'effet réel, le test se poursuivra comme toujours.
+	Une quatrième option consiste à menacer le démon, ce qui entraîne
+	un combat. Il ne peut pas être tué, mais après un certain temps,
+	il concède la larme. Récompense : +30% de résistance aux dégâts
+	tranchants
+  </p>
+
+  <p>
+    <span class="break">PEUR (Cape de Nymphe):</span>
+
+    Il est maintenant possible de demander au démon si les nymphes sont
+	déjà mortes ou si elles ont encore à être tuées (le dialogue
+	original a été légèrement modifié pour rendre cela au moins un peu
+	logique). Il révélera qu'elles sont déjà mortes, et vous pourrez
+	accepter le manteau, puisque le refuser ne changera rien.
+	Récompense : dextérité +2
+  </p>
+
+  <p>
+    <span class="break">ORGUEIL (Dragon):</span>
+
+    Lorsque vous parlez avec le démon, vous devez suivre la voie du mal
+	(en disant que vous tuerez la créature si elle mérite la mort). Le
+	dragon (qui est maintenant un dragon d'argent à tout égard) initiera
+	le dialogue, et vous pouvez simplement l'empêcher d'attaquer. Par
+	ailleurs, la possession de l'armure de chair humaine ou du sang de
+	dragon d'argent l'amènera à refuser une solution pacifique.
+	Récompense : +30% de résistance aux dégâts magiques.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Comment l'alignement est-il évalué
+	dans les Épreuves des enfers révisées ?</span>
+    <b>R :</b> Votre alignement ne passe plus à neutre mauvais après un
+	seul acte malfaisant. À la place, il sera déterminé après le dernier
+	test, et peut être ajusté en bien, neutre ou mal, correspondant au
+	tableau ci-dessous (avec m étant mal, n étant neutre et b étant bien).
+	À chaque test bon, un compteur (commençant à 3, 4 ou 5, selon votre
+	alignement) est augmenté de un, à chaque test mauvais, il est diminué
+	de ce montant.
+  </p>
+  <p>
+    A gauche de ce tableau figurent les choix effectués dans les tests
+	(bon/neutre/mauvais). À droite, le nouvel alignement par rapport à
+	l'original (bon/neutre/mauvais dans cet ordre).
+  </p>
+
+  <table id="hell_alignment">
+    <caption><i>Table d'alignement des Épreuves des enfers.</i></caption>
+    <tr><td>mmmmm</td><td>&nbsp;</td><td>&nbsp;</td><td>m</td><td>m</td><td>m</td></tr>
+    <tr><td>mmmmn</td><td>&nbsp;</td><td>&nbsp;</td><td>m</td><td>m</td><td>m</td></tr>
+    <tr><td>mmmnn</td><td>mmmmb</td><td>&nbsp;</td><td>m</td><td>m</td><td>m</td></tr>
+    <tr><td>mmnnn</td><td>mmmnb</td><td>&nbsp;</td><td>n</td><td>m</td><td>m</td></tr>
+    <tr><td>mnnnn</td><td>mmnnb</td><td>mmmbb</td><td>n</td><td>n</td><td>m</td></tr>
+    <tr><td>nnnnn</td><td>mmnbb</td><td>mnnnb</td><td>n</td><td>n</td><td>n</td></tr>
+    <tr><td>nnnnb</td><td>mnnbb</td><td>mmbbb</td><td>n</td><td>n</td><td>n</td></tr>
+    <tr><td>nnnbb</td><td>mnbbb</td><td>&nbsp;</td><td>n</td><td>n</td><td>n</td></tr>
+    <tr><td>nnbbb</td><td>mbbbb</td><td>&nbsp;</td><td>b</td><td>n</td><td>n</td></tr>
+    <tr><td>nbbbb</td><td>&nbsp;</td><td>&nbsp;</td><td>b</td><td>b</td><td>n</td></tr>
+    <tr><td>bbbbb</td><td>&nbsp;</td><td>&nbsp;</td><td>b</td><td>b</td><td>b</td></tr>
+  </table>
+
+  <p>
+    Évidemment, il est généralement plus facile de devenir mauvais que
+	bon, et la chance pour un personnage mauvais de "s'élever" est plus
+	faible que pour un personnage bon.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Ma classe a changé dans les Épreuves
+	des enfers révisées. Comment cela se fait-il ?</span>
+    <b>R :</b> En fonction des choix que vous faites, certaines classes
+	peuvent encourir des pénalités avec le mod installé. Les paladins
+	perdront leur statut après un seul acte malveillant ou après deux
+	actes neutres. Les rôdeurs perdront leur statut après trois actes
+	neutres ou un acte maléfique et un acte neutre. Les prêtres
+	spécialisés de Lathandre, Heaum et Talos perdront leur spécialisation
+	s'ils provoquent un changement d'alignement dans l'un ou l'autre
+	sens. Naturellement, cela entraîne également la perte de tous les
+	pouvoirs spéciaux, tels que la capacité "Don de Lathandre". Ils ne
+	perdront pas tous les sort normaux de prêtre, par contre.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Qu'est-ce que vous fumez ? Ces
+	Demi-liches sont bien trop fortes maintenant !</span>
+    <b>R :</b> Si vous trouvez que le ciblage aléatoire est trop
+	difficile à gérer, n'ayez crainte ! Ce n'est pas encore le moment
+	de jeter le pack Quest. Si vous réglez le curseur de difficulté sur
+	Facile, ils ne cibleront que l'ennemi le plus proche. (Soit dit en
+	passant, l'IA augmente à partir de là, de sorte que les Demi-liches
+	deviennent plus intelligents à chaque cran du curseur).
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> J'ai dissipé l'illusion sur les
+	chevaliers des collines de Lancevent, mais ils m'attaquent toujours.
+	Comment cela se fait-il ?</span>
+    <b>R :</b> Bien que vous puissiez voir qu'ils sont des chevaliers,
+	ils pensent toujours que vous êtes d'horribles monstres.
+	Ils n'étaient pas prêts à entendre raison au début, et ils ne le
+	sont pas non plus maintenant.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Mais qu'est-ce que c'est que ces
+	absurdités que cette petite fille débite ?</span>
+    <b>R :</b> Les remarques cryptiques sont un clin d'œil à
+	Icewind Dale. Espérons que c'est au moins un peu effrayant.
+  </p>
+
+  <p>
+    <span class="break"><b>Q :</b> Salut ! J'ai installé un tas de mods,
+	dont le vôtre, et il se passe quelque chose de louche qui n'est pas
+	mentionné dans votre readme. Dois-je visiter un forum de jeu et
+	vous en rendre responsable ?</span>
+    <b>R :</b> Ce n'est vraisemblablement pas de mon fait. Ça vaut la
+	peine de vérifier avec moi, au cas où il s'agirait d'un bug ou d'une
+	omission, mais mes readmes sont généralement assez complets. Je suis
+	idéologiquement opposé à ce que les mods apportent des modifications
+	non documentées ou "secrètes" au jeu.
+  </p>
+
+  <p>
+    <b>Q :</b> Je trouve que ton écriture est nulle et je te déteste.<br>
+    <b>R :</b> Ce n'est pas une question. Cependant, si vous avez des
+	commentaires concernant le contenu du mod, n'hésitez pas à me
+	contacter. Je préfère de loin qu'on me dise que vous n'avez pas
+	aimé quelque chose plutôt que de perdre en silence tout un tas de
+	(potentiels) joueurs.
+  </p>
+
+  <hr />
+
+  <h4><a id="Section6">Remerciements</a></h4>
+  <p>
+    Un grand merci à tous ceux qui ont participé et contribué à la
+	réalisation de ce mod. S'il y a des omissions dans cette liste,
+	veuillez m'en informer.
+  </p>
+
+  <table id="credits">
+    <caption><i>Les remerciements du Quest Pack.</i></caption>
+    <tr>
+      <td><b><a href="mailto:SimDing0@hotmail.com">SimDing0</a></b></td>
+      <td><b>
+          <span class="break">Principal écrivain/Créateur</span>
+          <span class="break">Codage des quêtes</span>
+      </b></td>
+    </tr>
+
+    <tr>
+      <td>Jason Compton</td>
+      <td>
+        <span class="break">Réécriture de la quête de la potion</span>
+        <span class="break">Écriture des bavardages des NPC</span>
+        <span class="break">Soutien à la conception et à la rédaction
+		des quêtes</span>
+        <span class="break">Voix de Larell</span>
+        <span class="break">Voix de Célile</span>
+        <span class="break">Bêta Test</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Rahul Kanakia</td>
+      <td>Auteur original de la Quête de la potion</td>
+    </tr>
+
+    <tr>
+      <td>Adahn</td>
+      <td>Auteur original des Épreuves des enfers révisées</td>
+    </tr>
+
+    <tr>
+      <td>Bons</td>
+      <td>
+        <span class="break">Auteur original de la rencontre avec Dahlia</span>
+        <span class="break">Auteur original de la rencontre avec Phluafae</span>
+        <span class="break">Auteur original de la rencontre avec le Spectre</span>
+        <span class="break">Voix de Dahlia</span>
+        <span class="break">Voix de Phluafae</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Ghreyfain</td>
+      <td>
+        <span class="break">Auteur original de L’amitié de Quallo</span>
+        <span class="break">Auteur original de la quête de Carrack</span>
+        <span class="break">Bêta Test</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Andyr</td>
+      <td>
+        <span class="break">Auteur original de la quête de Galoomp</span>
+        <span class="break">Garde de la ville d'Athkatlan améliorée</span>
+        <span class="break">Idée de quête</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Icelus</td>
+      <td>
+        <span class="break">Auteur original de la rencontre avec Bésamen</span>
+        <span class="break">Co-Auteur de la rencontre avec le Spectre</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Victoria Joyner (Blue)</td>
+      <td>Auteur original de la rencontre avec Indigo</td>
+    </tr>
+
+    <tr>
+      <td>SixOfSpades</td>
+      <td>
+        <span class="break">Conception de la quête pour sauver
+		Rayic Gethras</span>
+        <span class="break">Conception de la quête Voler l'infernal</span>
+        <span class="break">Conception de l'Importance de l'arc de la Cour des Elfes</span>
+        <span class="break">Conception de l'Amélioration du combat
+		de l'oasis</span>
+        <span class="break">Écrivain de la Négociation de la
+		récompense avec Vithal</span>
+        <span class="break">Bêta Test</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Analía Dobarro (Immortality)</td>
+      <td>Soutien à la conception et à la rédaction des quêtes</td>
+    </tr>
+
+    <tr>
+      <td>CamDawg</td>
+      <td>
+        <span class="break">Soutien à la conception et à la rédaction
+		des quêtes</span>
+        <span class="break">Sorts détectables</span>
+        <span class="break">Soutien au codage</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Kensai Ryu</td>
+      <td>
+        <span class="break">Créateur de la Restauration des capacités
+		innées des Drows</span>
+        <span class="break">Sorts détectables</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Jaysyn</td>
+      <td>Créateur des bêtes éclipsantes</td>
+    </tr>
+
+    <tr>
+      <td>Bohus Blahut
+        <span class="break"><i>(Enregistré à la Radio Gulag Picture)</i></span></td>
+      <td>Voix de Reynald de Chatillon</td>
+    </tr>
+
+    <tr>
+      <td>g'lain</td>
+      <td>Voix de Moiya</td>
+    </tr>
+
+    <tr>
+      <td>OperaDragon</td>
+      <td>Voix de Bésamen</td>
+    </tr>
+
+    <tr>
+      <td>Jill Rossetto (St. Josephine)</td>
+      <td>Vox de Baïsera</td>
+    </tr>
+
+    <tr>
+      <td>Notmrt</td>
+      <td>Voix de Jamis Tombelthen</td>
+    </tr>
+
+    <tr>
+      <td>the_bigg</td>
+      <td>
+        <span class="break">Soutien au codage</span>
+        <span class="break">Sorts détectables</span>
+        <span class="break">WeiDU / "BiggDU"
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="break">Vulgar Zildrath</span>
+        <span class="break">Cirerrek</span>
+        <span class="break">Horred the Plague</span>
+        <span class="break">King Diamond</span>
+      </td>
+      <td>Sorts détectables</td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="break">Idobek</span>
+        <span class="break">Galactygon</span>
+        <span class="break">CBisson</span>
+        <span class="break">Nythrun</span>
+      </td>
+      <td>Soutiens au codage</td>
+    </tr>
+
+    <tr>
+      <td>Jonathan Hiers</td>
+      <td>Retour d'informations intensif sur L'oasis amélioré</td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="break">Kish</span>
+        <span class="break">Hendryk</span>
+        <span class="break">NiGHTMARE</span>
+      </td>
+      <td>
+        <span class="break">Idées de quête</span>
+        <span class="break">Bêta Tests</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="break">Entreri</span>
+        <span class="break">Caedwyr</span>
+        <span class="break">Hlidskialf</span>
+        <span class="break">Grim Squeaker</span>
+        <span class="break">Bookwyrme</span>
+      </td>
+      <td>Idées de quête</td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="break">Qwinn</span>
+        <span class="break">Murdane</span>
+        <span class="break">Sir Billybob</span>
+        <span class="break">Magi</span>
+        <span class="break">StoplightRed</span>
+        <span class="break">Echon</span>
+        <span class="break">Joe</span>
+        <span class="break">Dosh</span>
+      </td>
+      <td>Bêta Tests</td>
+    </tr>
+
+    <tr>
+      <td>Westley Weimer</td>
+      <td>Auteur de WeiDU</td>
+    </tr>
+
+    <tr>
+      <td>Jon Olav Hauglid</td>
+      <td>Auteur de Near Infinity</td>
+    </tr>
+
+    <tr>
+      <td>Avenger</td>
+      <td>
+        <span class="break">Auteur de DLTCEP</span>
+        <span class="break">Sorts détectables</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Per Olofsson</td>
+      <td>Auteur de TISpack</td>
+    </tr>
+    <tr>
+      <td>temujin</td>
+      <td>Rapport de bugs</td>
+    </tr>
+    <tr>
+      <td>hook71</td>
+      <td>Relecture</td>
+    </tr>
+  </table>
+
+  <p>
+    Des remerciements particuliers doivent également être adressés à
+	tous ceux qui ont participé à la traduction des différents
+	composants de ce mod dans d'autres langues :
+  </p>
+  <ul>
+    <li>maus (Allemand - Épreuves des enfers révisées)</li>
+    <li>Caswallon (Allemand - Amélioration de l'Oasis II)</li>
+    <li>Damian Staniszewski (Polonais - Épreuves des enfers révisées)</li>
+    <li>Riojano2002 (Espagnol - Épreuves des enfers révisées)</li>
+    <li>Immortality et Clan DLAN (Espagnol - Amélioration de l'Oasis II)</li>
+	<li>Sasha (Français - Épreuves des enfers révisées)</li>
+    <li>Mathrim Cauthon (Français - Amélioration de l'Oasis II)</li>
+    <li>Deratiseur (Français - le reste du mod)</li>
+    <li>al17, Bossk and
+      Raptor, <a href="http://rtt.altervista.org/">http://rtt.altervista.org/</a>
+      (Italien - Amélioration de l'Oasis II & Épreuves des enfers
+	  révisées)</li>
+     <li>Improbabile (Italien - le reste du mod)</li>
+    <li>Pilferer, kaiken & Arcanecoast.ru (Russe - tout le mod)</li>
+  </ul>
+  <p>
+    En outre, Adahn (Auteur original des Épreuves des enfers révisées
+	) tient à remercier les personnes suivantes :
+  </p>
+  <ul>
+    <li>Gustov Montessi et l'équipe de TeamBG</li>
+    <li>JericoPaladin (père spirituel du concept des épreuves des
+	enfers révisées)</li>
+    <li>Mad Acand (contribution sur les primes de larmes neutres)</li>
+    <li>Barry Coley & ribald (bêta testeurs)</li>
+  </ul>
+
+  <p>
+    Les meilleurs mods IE à ce jour peuvent être trouvés à l'adresse
+	suivante <a href="http://www.pocketplane.net/">Pocket Plane Group</a>
+	et <a href="http://www.gibberlings3.net/">Gibberlings Three</a>.
+	Les deux valent bien une visite.
+  </p>
+
+</body>

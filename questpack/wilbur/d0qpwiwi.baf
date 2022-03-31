@@ -1,0 +1,26 @@
+IF // Redundancy to avoid a potential race condition
+  Global("D0Wilbur","GLOBAL",3)
+  PartyHasItem("d0qpwisw")
+THEN
+  RESPONSE #100
+    SetGlobal("D0Wilbur","GLOBAL",4)
+END
+
+IF
+  OR(3)
+    NumTimesTalkedTo(0)
+    Global("D0Wilbur","GLOBAL",3)
+    Global("D0Wilbur","GLOBAL",4)
+  See([PC])
+  Global("fl#qpWilburTalked","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    EscapeArea()
+END

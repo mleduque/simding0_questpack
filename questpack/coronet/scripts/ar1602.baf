@@ -1,0 +1,12 @@
+IF
+  GlobalGT("D0Poor","GLOBAL",9)
+  Global("D0Spawn","AR1602",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Spawn","AR1602",1)
+    CreateCreature("D0Lender",[490.802],4)
+    CreateCreature("d0thug4",[385.794],4)
+    CreateCreature("d0thug4",[500.819],5)
+    CreateCreature("d0thug4",[400.876],3)
+    CreateCreature("d0thug4",[180.867],10)
+END

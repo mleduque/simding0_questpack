@@ -1,0 +1,31 @@
+<u>Enhanced Council Building</u>
+<br>
+This component's purpose is twofold. Firstly, it expands on the political intrigue in Amnish government: the building is now host to several mini-quests and sources of background information. Secondly, it makes the Council Building more credible when attacked; it makes little sense that the centre of Amnish government falls so easily to parties shortly out of Irenicus' dungeon. Now you can expect a realistic and challenging battle even for high-level parties-- nothing too extreme, however.
+<p>
+<u>Blood War On Carceri</u>
+<br>
+Anybody who either has any knowledge of PnP, or who has played PST, will know that the lower plane visited via the Planar Sphere is distinctly underserved in BG2. Baatezu and Tanar'ri alike join hands against the intruding player? Not so, I say. With this component installed, the player is landed right in the centre of the Blood War to witness a conflict between the Tanar'ri and Baatezu on the plane of Carceri. There are several new quests available in this area.
+<br>
+To facilitate the implementation of the Blood War and improve overall game consistency, a number of changes are implemented throughout the game. (I'm usually wary of introducing widespread unsolicited changes into any component, but I feel it's necessary here to create the atmosphere I'm after. And it fixes up the awful inconsistent mess Bioware left fiends in.) Specifically, these are as follows:
+<li>Most fiends' appearances, abilities, and behaviour now resembles more closely that of their PnP incarnations. New creature animations have been introduced where neccessary.
+<li>Fiends which are canonically rare/powerful are less frequently encountered. These include Balors and Pit Fiends. Coming face to face with one of these is now a more frightening event.
+<li>Tanar'ri and Baatezu will now prioritize fighting one another. Summoning them alongside each other is risky.
+<li>Summoning spells have been adjusted to cater for the changes to creatures. Gate will now open a portal for the duration through which a number of fiends may pass. You may choose whether to attempt to Gate Tanar'ri or Baatezu.
+<li>Demogorgon's ability to charm fiends now extends only to Tanar'ri. You may use Baatezu against him without repercussion.
+<li>Salamanders regain the auras they possessed in IWD. These behave similarly to the Fire Shield spells, and are permanently active.
+<li>Yochlols may now shift shape between their drow and natural forms.
+<br>This component will affect the demons you encounter <i>throughout the game</i>.</b> Game balance should not be upset.
+<p>
+
+
+
+
+
+<p>
+<u>Expanded Druid Stronghold</u>
+<br>
+This component makes some substantial alterations to the druid stronghold. Firstly, Faldorn can now be killed without undertaking the druid duelling ritual-- be warned, however, that this is a dangerous path to take, and she remains a formidable opponent.
+<p>
+<u>Quallo's Friendship</u>
+<br>
+Originally created by Ghreyfain, this component

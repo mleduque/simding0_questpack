@@ -1,0 +1,202 @@
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",0)
+	GlobalLT("LightSix","AR0602",7)
+    Difficulty(EASIEST)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		Wait(8)
+		SetGlobal("LightningTrap","AR0602",1)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",1)
+	GlobalLT("LightSix","AR0602",7)
+    Difficulty(EASIEST)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(8)
+		SetGlobal("LightningTrap","AR0602",0)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	GlobalLT("LightSix","AR0602",7)
+    Difficulty(EASY)
+    RandomNum(3,1)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(8)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",0)
+	GlobalLT("LightSix","AR0602",7)
+    Difficulty(EASY)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		Wait(8)
+		SetGlobal("LightningTrap","AR0602",1)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",1)
+	GlobalLT("LightSix","AR0602",7)
+    Difficulty(EASY)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(8)
+		SetGlobal("LightningTrap","AR0602",0)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	GlobalLT("LightSix","AR0602",9)
+    Difficulty(NORMAL)
+    RandomNum(2,1)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(7)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",0)
+	GlobalLT("LightSix","AR0602",8)
+    Difficulty(NORMAL)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		Wait(7)
+		SetGlobal("LightningTrap","AR0602",1)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",1)
+	GlobalLT("LightSix","AR0602",8)
+    Difficulty(NORMAL)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(7)
+		SetGlobal("LightningTrap","AR0602",0)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	GlobalLT("LightSix","AR0602",10)
+    Difficulty(HARD)
+    !RandomNum(3,1)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(6)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",0)
+	GlobalLT("LightSix","AR0602",8)
+    Difficulty(HARD)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		Wait(6)
+		SetGlobal("LightningTrap","AR0602",1)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("LightningTrap","AR0602",1)
+	GlobalLT("LightSix","AR0602",8)
+    Difficulty(HARD)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(6)
+		SetGlobal("LightningTrap","AR0602",0)
+		IncrementGlobal("LightSix","AR0602",1)
+END
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	GlobalLT("LightSix","AR0602",10)
+    Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([2674.2969],TRAP_MINOR_LIGHTNING_BOLT)
+		ForceSpellPoint([2370.3180],TRAP_MINOR_LIGHTNING_BOLT)
+		SmallWait(7)
+		CreateCreature("MEPLIG01",[2674.2969],0) // Lightning Mephit
+		CreateCreature("MEPLIG01",[2370.3180],12) // Lightning Mephit
+		Wait(6)
+		IncrementGlobal("LightSix","AR0602",1)
+END

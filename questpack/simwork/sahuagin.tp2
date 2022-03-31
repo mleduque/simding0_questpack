@@ -1,0 +1,63 @@
+BEGIN ~Sahuagin (Move to end of file)~
+
+
+
+
+
+// Random HP Rolls
+COPY_EXISTING ~SAHKNG01.CRE~ ~override~
+
+// Basic stat revisions
+WRITE_LONG 0x14 15000 // XP Value
+WRITE_SHORT 0x46 -3 // Natural AC
+WRITE_SHORT 0x48 -3 // Effective AC
+WRITE_BYTE 0x52 1 // THAC0
+WRITE_BYTE 0x53 2 // # Attacks
+WRITE_BYTE 0x54 3 // Save vs Death
+WRITE_BYTE 0x55 5 // Save vs Wands
+WRITE_BYTE 0x56 4 // Save vs Poly
+WRITE_BYTE 0x57 4 // Save vs Breath
+WRITE_BYTE 0x58 6 // Save vs Spell
+WRITE_BYTE 0x234 20 // Level 1
+WRITE_BYTE 0x235 1 // Level 2
+WRITE_BYTE 0x236 1 // Level 3
+WRITE_BYTE 0x238 20 // Strength
+WRITE_BYTE 0x239 0 // Strength Extra
+WRITE_BYTE 0x23a 15 // Intelligence
+WRITE_BYTE 0x23b 12 // Wisdom
+WRITE_BYTE 0x23c 14 // Dexterity
+WRITE_BYTE 0x23d 17 // Constitution
+WRITE_BYTE 0x23e 18 // Charisma
+
+
+// Level 20 warrior (CON bonus of 3)
+// Uses d12 hit dice
+// Warriors receive full hit dice up to level 9, but instead of 9d12, model CON bonus by using 9d9 + 27
+// Receives an additional 33 hit points beyond level 9
+// Total: 9d9 + 60
+
+// Assign the CRE an HP of 1 so there's no doubt over whether this is working
+  WRITE_SHORT 0x24 1
+  WRITE_SHORT 0x26 1
+// Add the effect
+  READ_LONG 0x2c4 "effects_offset"
+  READ_LONG 0x2c8 "#effects"
+  READ_LONG 0x2bc "items_offset"
+  READ_LONG 0x2b8 "slots_offset"
+  INSERT_BYTES "%effects_offset%" 264
+  WRITE_LONG 0x2c8 ("%#effects%" + 1)
+  WRITE_LONG 0x2bc ("%items_offset%" + 264)
+  WRITE_LONG 0x2b8 ("%slots_offset%" + 264)
+  WRITE_LONG ("%effects_offset%" + 8) 146 // Cast Spell
+  WRITE_LONG ("%effects_offset%" + 12) 1 // Target Self - I wonder why this is a LONG?
+  WRITE_LONG ("%effects_offset%" + 24) 1 // Cast instantly
+  WRITE_LONG ("%effects_offset%" + 28) 1 // Permanent until death
+  WRITE_SHORT ("%effects_offset%" + 36) 100 // Probability
+  WRITE_ASCII ("%effects_offset%" + 40) "d09d960" // 9d9+60
+// Create the spell file required
+COPY ~questpack/sahuagin/basehp.spl~ ~override/d09d960.spl~ // 9d9+60
+  WRITE_LONG 0xb6 9 // # dice
+  WRITE_LONG 0xba 9 // # die size
+  WRITE_LONG 0xce 60 // bonus
+
+// Patch in potions based on XP

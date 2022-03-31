@@ -1,0 +1,30 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Considerata la natura magica degli oggetti che ho recuperato, potrebbe essere problematico dividerli equamente, ma cercherò di...... aspetta un momento! Hai rubato! A me! Questa non è affatto una bella cosa.~
+@1    = ~Considerata la natura magica degli oggetti che ho recuperato, potrebbe essere problematico dividerli equamente, ma ti permetterò di scegliere oggetti pari a circa un quarto del valore complessivo. C'è un certo numero di pergamene disponibili e un paio di oggetti di grande potere. La pergamena Fermare il Tempo vale più di un quarto del totale e intenderei tenerla per me.~
+@2    = ~La bacchetta che ho recuperato può lanciare un potente incantesimo protettivo, ma mi aspetto che soltanto i maghi o i chierici siano in grado di comprendere come usarla. Il suo incantesimo, penso, possa deflettere le magie lanciate contro il portatore. Funziona coma la maggior parte della bacchette e penso ci sia l'energia magica sufficiente a lanciare una dozzina di incantesimi, prima di dover essere ricaricata.~
+@3    = ~Questo elmo è effettivamente forgiato utilizzando delle... ossa ed appare piuttosto... macabro. Ma, non di meno è infuso con una potente magia in grado di estinguere la vita di molti nemici. Personalmente, spero che lo scelga tu, io non saprei che farmene, inoltre non mi va di essere visto con addosso un oggetto del genere: è un tormento per gli occhi.~
+@4    = ~Allora. Ho fatto la maggior parte della ricerca e della sperimentazione che sta dietro questa impresa e dunque mi merito la maggior parte delle ricompensa. Ma non dimentico la tua parte nell'avermi salvato dalla reclusione e aver recuperato il mio libro di rituali, così ti permetterò di scegliere per primo.~
+@5    = ~Scelgo la Verga dell'Assorbimento e la pergamena Orripilante Avvizzimento di Abi Dalzim.~
+@6    = ~Scelgo la pergamena Lamento della Banshee e il Teschio della Morte.~
+@7    = ~Dammi le pergamene Simulacro e Nube Incendiaria.~
+@8    = ~Non mi servono delle pergamene. Prenderò la Verga dell'Assorbimento e il Teschio della Morte.~
+@9    = ~Lasciami le pergamene Orripilante Avvizzimento di Abi Dalzim e Nube Incendiaria.~
+@10   = ~Lamento del Banshee e Simulacro andranno bene per me.~
+@11   = ~Hhmm... forse la mia parte è un po' troppo misera. Un quarto del totale? Mi sembra alquanto ridicolo.~
+@12   = ~Ecco, tieni, questa è la tua ricompensa per avermi aiutato.~
+@13   = ~Ancora! Mah.. Se... sei così insistente suppongo di doverti ricompensare in modo più generoso. Penso di poterti lasciar scegliere qualche altro oggetto.~
+@14   = ~Puoi prendere oggetti per un terzo del loro valore totale. Ma questo dovrà bastare, non ne avrai di più.~
+@15   = ~Prenderò Nube Incendiaria, Simulacro e la Verga dell'Assorbimento.~
+@16   = ~Dammi le pergamene di Orripilante Avvizzimento di Abi Dalzim e Lamento del Banshee. Prenderò anche il Teschio della Morte.~
+@17   = ~Scelgo la pergamena Fermare il Tempo.~
+@18   = ~La mia parte sarà la Verga dell'Assorbimento il Teschio della Morte e la pergamena Nube Incendiaria.~
+@19   = ~Penso che prenderò Simulacro, Orripilante Avvizzimento di Abi Dalzim e Nube Incendiaria.~
+@20   = ~Ne vorrei un po' di più. Facciamo a metà.~
+@21   = ~Penso di meritarli tutti. Dammeli o li prenderò dalle tue mani con la forza.~
+@22   = ~Molto bene. Allora che cosa offri?~
+@23   = ~Li merito tutti! Consegnameli subito!~
+@24   = ~La proposta di un mago.
+
+Ho aiutato Vithal a recuperare gli oggetti che cercava. Ne ho rubati alcuni prima che potesse dividerli con me e lui non l'ha presa per nulla bene. Ma, in fondo, ho preso solo ciò che meritavo!~
+

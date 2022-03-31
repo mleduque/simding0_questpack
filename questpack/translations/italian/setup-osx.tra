@@ -1,0 +1,51 @@
+// -*- coding: utf-8 -*-
+
+// Translators, please note well: please translate component names only of the components you plan to translate fully.
+// Untranslated components should retain their english titles to distinguish them from those which have been translated.
+// Components without TRAs should not be translated as their text is subject to change.
+@1  = ~Contenuto Addizionale Ladri Tenebrosi~
+@2  = ~Svolgimento Alternativo Arpisti/Xzar~
+@3  = ~Sequenza Estesa di Reynald~
+@4  = ~Intrigo al Diadema di Rame~
+@5  = ~Fuga da Brynnlaw~
+@6  = ~Miglioramenti Vari~
+
+@8  = ~Missione della Pozione di Rahul Kanakia~
+@9  = ~Espansione della Roccaforte dei Druidi~
+@10 = ~Prove dell'Inferno Riviste~
+@11 = ~IO2 Dialogo & Combattimento Migliorati~
+@12 = ~IO2 Solo Dialogo Migliorato~
+@13 = ~Oasis II Migliorata~
+@14 = ~Miglioramenti di IA Generali~
+@15 = ~Edificio del Consiglio Migliorato~
+@16 = ~Guerra Sanguinosa in Carceri~
+@17 = ~Salvataggio di Sanik a Brynnlaw~
+@18 = ~Furto dal Libraio~
+@19 = ~Nuovo Fato per le Ghiande delle Driadi~
+@20 = ~La Tragedia di Besamen~
+@21 = ~Ulteriore Coinvolgimento con Schiavisti~
+@22 = ~Mandare a Casa i Cavalieri di Solamnia~
+@23 = ~Nazariel il Lich~
+@24 = ~Amicizia con Quallo~
+@25 = ~Spade e Saggezza~
+@26 = ~Scorciatoia dell'Underdark~
+@27 = ~Soltanto miglioramenti IA~
+@28 = ~Soltanto miglioramenti IA & Espansione Grido~
+
+@30 = ~Furto Infernale~
+@31 = ~Corte Elfica~
+@32 = ~Miglioramento Nemici Principali~
+@33 = ~Negoziazione Ricompense~
+@34 = ~Miglioramenti Creature & Aree~
+@35 = ~Miglioramenti a tutte le Creature~
+@36 = ~Miglioramenti a tutte le Creature e Aree~
+@37 = ~Soltanto Contenuto Quest~
+@38 = ~Contenuto Quesy e Revisione Nemici~
+@39 = ~Con Incontri Occasionali Addizionali~
+@40 = ~Senza Incontri Occasionali Addizionali~
+
+@98 = ~Quest Pack è disponibile per BG2 e BGT~
+@99 = ~BP trovato, salto miglioramenti AI.~
+@100 = ~Salto componenti specifici per ToB.~
+
+// d0quest.tra starts at @101

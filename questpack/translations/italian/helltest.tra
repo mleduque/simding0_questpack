@@ -1,0 +1,76 @@
+// -*- coding: cp1252 -*-
+
+// Pride Silver Dragon
+
+@1 = ~The spawn of the dead god has come, no doubt to slay the dreadful beast that keeps the Father's tear.  I wish you luck, proud child.~
+@2 = ~Prepare to taste steel, lizard!~
+@3 = ~Hold!  What manner of beast are you?  Perhaps we can discuss this.~
+@4 = ~I would not have expected such hesitation from you, Bhaalspawn.  What discussion do you seek?  Or do you merely wish to taunt, to delay the inevitable slaughter?~
+@5 = ~I have come only for the Tear of Bhaal, not to fight.  Surely a creature such as yourself has no desire for senseless conflict either.~
+@6 = ~Your words have merit.  There is no reason why I could not give you the tear.~
+@7 = ~I did not think you would take to such an offer, yet it seems you are not ruled by your pride.  Here is the gem you seek.  Go well.~
+@8 = ~Wait... I see through you, deceiver.~
+@9 = ~You have slain others of my kind before.  The stench of their deaths lies heavy on your gear.  Did you hope to distract me with your pretty words, your lies, to catch me unaware?~
+@10 = ~It seems my fate is to be fulfilled, for to battle you is my reason for being.  I shall face your foolish pride.~
+
+// Fear Demon
+
+@11 = ~...such as a cloak, for instance.  Stitched together from the flayed skins of lovely nymphs.  Wear it and be soothed by its powerful magic... panic will never overcome you again.~ [HELFEA13]
+@12 = ~Tell me, demon, are the nymphs of whose skin the cloak is made dead already?  Or would they be killed only when I agree to take it?~
+@13 = ~Why do you ask such a strange question?  It matters not.  You will be free, Child of Bhaal, free of fear.~
+@14 = ~Never mind.  I don't want such an evil item anyway.  My own courage will suffice.~
+@15 = ~It doesn't matter.  I was simply being curious.  Give me the cloak.~
+@16 = ~If the nymphs are to be killed because of me, I would not want the cloak.  But if they are dead already, I might just as well take it.  It would not change anything.~
+@17 = ~An unusual view.  Yes, they were slain long ago, by the wrath of your Father, no less.  The cloak is yours, and nothing is changed.~
+
+// Greed Genie
+
+@18 = ~But I may need such a powerful sword for the battle I am soon to face, yet I am not willing to kill you for the tear.  Are you sure there is no other way?~
+@19 = ~I have given more thought to your offer, and I am ready to take a geas.~
+@20 = ~I cannot tell you that, my <PRO_LADYLORD>.~
+@21 = ~It seems like I will have to do without the sword then.  Take it.~
+@22 = ~But couldn't I keep the sword for a time, and come back later to give it you?~
+@23 = ~I know not the truth of your intent, my <PRO_LADYLORD>.  I would not risk the only chance I have to end this torment slipping away.~
+@24 = ~And what if I took an oath to return it?  I would even be willing to let you place a geas upon me.~
+@25 = ~Then you would be bound, and my freedom would be guaranteed.  Very well.  I shall cast a geas spell to bind you to your promise.  If you break it, you will die.  Are you absolutely sure that this is as you wish, my <PRO_LADYLORD>?~
+@26 = ~On a second thoughts, I think I'd rather not be collared by you.  Just let me think for a while longer.~
+@27 = ~I am ready.  Begin your casting.~
+@28 = ~As you wish, my <PRO_LADYLORD>.~
+@29 = ~It is done, my <PRO_LADYLORD>.  I wish you luck in whatever trials you are to face.  Until we meet again.~ []
+@30 = ~Finding Irenicus in Hell
+
+The sword Blackrazor was obviously the key which allowed me to free the genie from its enslavement in Hell.  He allowed me to keep the weapon for as long as I would need to destroy Irenicus, and cast a geas on me to ensure that I return the blade once it is done.  I only hope I can find a way to return to this place afterwards.~
+@31 = ~Please, my <PRO_LADYLORD>, hurry with your task.  I have no wish to remain in this place longer than necessary.~
+@32 = ~You return, my <PRO_LADYLORD>.  The wizard is fallen, and I see you have warped this place to your will.  I trust you intend to honour our agreement and give the sword Blackrazor to me?  I am eager to leave this hellish prison.~
+@33 = ~Of course.  Take it.~
+@34 = ~Forget it.  The sword is mine, and I don't care what I said earlier.~
+@35 = ~I can't.  It seems I have lost it somehow.~
+@36 = ~Then I mistook your intent, my <PRO_LADYLORD>, as I should have expected.  But you are aware, are you not, that breaking the geas will result in your own death?~
+@37 = ~Of course, forget what I said.  Take the sword.~
+@38 = ~You heard me the first time.  Take your intimidations and begone, before I decide to turn the sword on you.~
+@39 = ~Then at least the thought of your death shall be a small comfort during the eternity of torment that awaits me.  Know that I will curse your name for the remainder of it, deceitful one.~
+@40 = ~You have lost it?  Do you even understand what that means?  How could you be so irresponsible?~
+
+// Wrath Sarevok
+
+@41 = ~Do you really think me so foolish as to agree to your offer?  I wouldn't trust anything you might give, Sarevok, and I don't need it.~
+@42 = ~Whatever it is that fate has in store for me, be it power or be it poverty, the one thing I'm certain of is that I will never accept anything you might offer.~
+
+// Selfishness Demon
+
+@43 = ~Then I suppose I will have to sacrifice myself.  I would not want anyone harmed because of me.~
+@44 = ~Do what you must.  Kill her.  I couldn't care less.~
+@45 = ~I am undecided as to what I should do now.~
+@46 = ~No!  I won't sacrifice anything, but neither will I allow you to bring harm to anyone else!  Prepare to die, fiend!~
+@47 = ~Do what you must.  Kill him.  I couldn't care less.~
+@48 = ~It is your decision, Child of Bhaal.  Consider it carefully, and pass through the door of your choice.~
+@49 = ~Don't be foolish, Child.  You cannot hope to prevail against me.  You cannot destroy ME, a creation of your own conscience.  I exist for as long as you do.  To fight me is to fight in vain, and you would perish along with everyone you seek to protect.~
+@50 = ~Your words have merit, I suppose.  I will take the burden upon myself then.~
+@51 = ~Well... now that I think about it, you're absolutely right.  Kill the hostage then, and forget anything I said.~
+@52 = ~If I created you, then I can destroy you.  Talk all you wish, but you will not escape this fight.~
+@53 = ~Very well, if it is your wish, I will not object.  You are the master here, Child of Bhaal.  Without your co-operation, I cannot force you to make a true sacrifice.  Both you and the other will suffer!~
+@54 = ~Enough.  You have proven your willingness to face even the most hopeless fight in order to preserve the destiny of others.  The innocent shall be returned to whence he came.~
+@55 = ~Finding Irenicus in Hell
+
+I refused to go through either of the doors and fought the Selfish demon.  Even though the fight was long and I could not kill the beast, it has surrendered the Tear of Bhaal to me regardless.  I was unable to prevent the demon from scarring both myself and the hostage during the battle, however.  Perhaps this is a small price to pay compared to greater personal loss or the death of another.~
+@56 = ~Enough.  You have proven your willingness to face even the most hopeless fight in order to preserve the destiny of others.  Your companion shall be returned to you.~

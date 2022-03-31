@@ -1,0 +1,7 @@
+IF
+  See("vaelasa")
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,EVILBUTBLUE)
+    Attack("vaelasa")
+END

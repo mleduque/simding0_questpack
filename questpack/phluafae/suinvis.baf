@@ -1,0 +1,20 @@
+IF
+  Range([PC],15)
+  PartyHasItem("misc4n")
+  Global("SUDRYADExist", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("SUDRYADExist", "GLOBAL", 1)
+    CreateCreatureDoor("SUDRYAD",[3215.3490],3)
+END
+
+IF
+  Range([PC],15)
+  Global("SUAcornPlot", "GLOBAL", 1)
+  Global("D0Visited1200","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Visited1200","GLOBAL",0)
+    CreateCreatureDoor("SUDRYAD",[3215.3490],3)
+END
+

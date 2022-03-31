@@ -1,0 +1,1515 @@
+IF
+  HPLT(Myself,2)
+THEN
+  RESPONSE #100
+    ChangeAnimation("HELLJON2") // Jon Irenicus
+    SetGlobal("DefeatedJon","GLOBAL",1)
+END
+
+IF
+  Global("Behavior","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Behavior","LOCALS",1)
+    SetGlobalTimer("HellSlayerMove","GLOBAL",12)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("HellSlayerMove","GLOBAL")
+  Global("Behavior","LOCALS",1)
+THEN
+  RESPONSE #50
+    SetGlobal("Behavior","LOCALS",2)
+    SetGlobalTimer("HellSlayerMove","GLOBAL",18)
+    CreateVisualEffectObject("SPPOWRRD",Myself)
+    ForceSpellPoint([1433.995],BEHOLDER_BLAST_VISUAL2)
+    JumpToPoint([1433.995])
+    Continue()
+  RESPONSE #50
+    SetGlobal("Behavior","LOCALS",2)
+    SetGlobalTimer("HellSlayerMove","GLOBAL",18)
+    CreateVisualEffectObject("SPPOWRRD",Myself)
+    ForceSpellPoint([2613.943],BEHOLDER_BLAST_VISUAL2)
+    JumpToPoint([2613.943])
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("HellSlayerMove","GLOBAL")
+  Global("Behavior","LOCALS",2)
+THEN
+  RESPONSE #100
+    SetGlobal("Behavior","LOCALS",3)
+    CreateVisualEffectObject("SPPOWRRD",Myself)
+    ForceSpellPoint([1928.1372],BEHOLDER_BLAST_VISUAL2)
+    JumpToPoint([1928.1372])
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("Prep","LOCALS",0)
+  !StateCheck(Myself,STATE_DEAD)
+  !StateCheck(Myself,STATE_ACID_DEATH)
+  !StateCheck(Myself,STATE_FLAME_DEATH)
+  !StateCheck(Myself,STATE_EXPLODING_DEATH)
+  !StateCheck(Myself,STATE_STONE_DEATH)
+  !StateCheck(Myself,STATE_FROZEN_DEATH)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    SetGlobal("Prep","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("SpellTrigger","LOCALS",0)
+  !StateCheck(Myself,STATE_DEAD)
+  !StateCheck(Myself,STATE_ACID_DEATH)
+  !StateCheck(Myself,STATE_FLAME_DEATH)
+  !StateCheck(Myself,STATE_EXPLODING_DEATH)
+  !StateCheck(Myself,STATE_STONE_DEATH)
+  !StateCheck(Myself,STATE_FROZEN_DEATH)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,39968) // Spell Trigger - Fired
+    DisplayString(Myself,43046) // Spell Trigger - Mislead
+    ReallyForceSpell(Myself,WIZARD_MISLEAD)
+    DisplayString(Myself,43047) // Spell Trigger - Fire Shield Red
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    DisplayString(Myself,40245) // Spell Trigger - Globe of Invulnerability
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    SetGlobal("SpellTrigger","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  Allegiance(Myself,ENEMY)
+  Detect([PC])
+  !See(LastSeenBy(Myself))
+  HaveSpell(WIZARD_TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect([PC])
+  !See(LastSeenBy(Myself))
+  !HaveSpell(WIZARD_TRUE_SIGHT)
+  Delay(10)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("Prep","LOCALS",1)
+  !StateCheck(Myself,STATE_DEAD)
+  !StateCheck(Myself,STATE_ACID_DEATH)
+  !StateCheck(Myself,STATE_FLAME_DEATH)
+  !StateCheck(Myself,STATE_EXPLODING_DEATH)
+  !StateCheck(Myself,STATE_STONE_DEATH)
+  !StateCheck(Myself,STATE_FROZEN_DEATH)
+THEN
+  RESPONSE #100
+    Spell(Myself,129)
+    SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  !CheckStatGT(Myself,0,129)
+  !CheckStatGT(Myself,0,164)
+  !CheckStatGT(Myself,0,116)
+  OR(5)
+    Exists(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+    Exists(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+    Exists(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+    Exists(NearestEnemyOfType([0.0.0.SORCERER]))
+    Exists(NearestEnemyOfType([0.0.0.BARD_ALL]))
+  HaveSpell(129)
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(Myself,129)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  TookDamage()
+  Global("Prep2","LOCALS",0)
+  !StateCheck(Myself,STATE_DEAD)
+  !StateCheck(Myself,STATE_ACID_DEATH)
+  !StateCheck(Myself,STATE_FLAME_DEATH)
+  !StateCheck(Myself,STATE_EXPLODING_DEATH)
+  !StateCheck(Myself,STATE_STONE_DEATH)
+  !StateCheck(Myself,STATE_FROZEN_DEATH)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,43050) // Chain Contingency - Improved Mantle
+    ReallyForceSpell(Myself,WIZARD_IMPROVED_MANTLE)
+    DisplayString(Myself,3302) // Chain Contingency - Spell Turning
+    ReallyForceSpell(Myself,WIZARD_SPELL_TURNING)
+    DisplayString(Myself,40240) // Chain Contingency - Mislead
+    ReallyForceSpell(Myself,WIZARD_MISLEAD)
+    SetGlobal("Prep2","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  TookDamage()
+  Global("Prep2","LOCALS",1)
+  !StateCheck(Myself,STATE_DEAD)
+  !StateCheck(Myself,STATE_ACID_DEATH)
+  !StateCheck(Myself,STATE_FLAME_DEATH)
+  !StateCheck(Myself,STATE_EXPLODING_DEATH)
+  !StateCheck(Myself,STATE_STONE_DEATH)
+  !StateCheck(Myself,STATE_FROZEN_DEATH)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,40252) // Contingency - Protection from Magical Weapons
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    SetGlobal("Prep2","LOCALS",2)
+END
+
+IF
+  See([GOODCUTOFF.0.0.0.0.SUMMONED])
+  Global("summon","LOCALS",0)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy(Myself))
+    ReallyForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+    SetGlobal("summon","LOCALS",1)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  OR(2)
+    HaveSpell(WIZARD_NPC_SYMBOL_STUN)
+    HaveSpell(WIZARD_NPC_SYMBOL_FEAR)
+  Allegiance(Myself,ENEMY)
+  RandomNumGT(3,1)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    HasBounceEffects(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),5)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    HasBounceEffects(SecondNearestEnemyOf(Myself))
+  Range(SecondNearestEnemyOf(Myself),5)
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    HasBounceEffects(ThirdNearestEnemyOf(Myself))
+  Range(ThirdNearestEnemyOf(Myself),5)
+  OR(2)
+    !See(FourthNearestEnemyOf(Myself))
+    HasBounceEffects(FourthNearestEnemyOf(Myself))
+  Range(FourthNearestEnemyOf(Myself),5)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  Allegiance(Myself,ENEMY)
+  See(LastSeenBy(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),5)
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  HaveSpell(WIZARD_SYMBOL_STUN)
+  RandomNumGT(3,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_STUN)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  Allegiance(Myself,ENEMY)
+  See(LastSeenBy(Myself))
+  !HasBounceEffects(LastSeenBy(Myself))
+  !Range(LastSeenBy(Myself),5)
+  !StateCheck(LastSeenBy(Myself),STATE_PANIC)
+  HaveSpell(WIZARD_SYMBOL_FEAR)
+  RandomNumGT(3,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_FEAR)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  See(NearestEnemyOf(Myself))
+  NumCreatureVsPartyLT([ENEMY],0)
+  OR(2)
+    NumCreatureGT([GOODCUTOFF],3)
+    CheckStatGT(NearestEnemyOf(Myself),10,SAVEVSDEATH)
+  HaveSpell(WIZARD_WAIL_OF_THE_BANSHEE)
+  RandomNumGT(4,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(Myself,WIZARD_WAIL_OF_THE_BANSHEE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  Range(NearestEnemyOf(Myself),10)
+  OR(2)
+    Range(SecondNearestEnemyOf(Myself),10)
+    CheckStatLT(NearestEnemyOf(Myself),50,RESISTFIRE)
+  HaveSpell(WIZARD_SUN_FIRE)
+  RandomNumGT(7,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_SUN_FIRE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  HaveSpell(WIZARD_MAZE)
+  RandomNumGT(6,2)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_MAZE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  See(TenthNearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  HaveSpell(WIZARD_MAZE)
+  RandomNumGT(6,2)
+  RandomNum(2,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(TenthNearestEnemyOf(Myself),WIZARD_MAZE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  Allegiance(Myself,ENEMY)
+  RandomNumGT(8,3)
+  See(NearestEnemyOf(Myself))
+  OR(8)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+    RandomNumGT(10,3)
+  See(SecondNearestEnemyOf(Myself))
+  OR(8)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+    RandomNumGT(10,4)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(8)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+    RandomNumGT(10,5)
+  See(FourthNearestEnemyOf(Myself))
+  OR(8)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+    RandomNumGT(10,6)
+  See(FifthNearestEnemyOf(Myself))
+  OR(8)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+    RandomNumGT(10,7)
+  See(SixthNearestEnemyOf(Myself))
+  OR(8)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+    RandomNumGT(10,8)
+  See(SeventhNearestEnemyOf(Myself))
+  OR(8)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+    RandomNumGT(10,9)
+  See(EighthNearestEnemyOf(Myself))
+  OR(7)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+  See(NinthNearestEnemyOf(Myself))
+  OR(7)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+  See(TenthNearestEnemyOf(Myself))
+  OR(7)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),40,RESISTMAGIC)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  Allegiance(Myself,ENEMY)
+  See(LastSeenBy(Myself))
+  !CheckStatGT(LastSeenBy(Myself),1,116)
+  !CheckStatGT(LastSeenBy(Myself),1,129)
+  !CheckStatGT(LastSeenBy(Myself),0,164)
+  !CheckStatGT(LastSeenBy(Myself),0,123)
+  !HasItemEquiped("CLCK26",LastSeenBy(Myself))
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  RandomNumGT(8,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  Allegiance(Myself,ENEMY)
+  Range(NearestEnemyOf(Myself),10)
+  Range(SecondNearestEnemyOf(Myself),10)
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  RandomNumGT(8,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(Myself,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+  Allegiance(Myself,ENEMY)
+  See(NearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(SecondNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(FourthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(FifthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(SixthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(SeventhNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(EighthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(NinthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(TenthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),4,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(NearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),1,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(SecondNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),1,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),1,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(FourthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),1,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(FifthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),1,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(SixthNearestEnemyOf(Myself))
+  OR(12)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),7,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(NearestEnemyOf(Myself),1,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+    CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStat(LastSeenBy(Myself),1,SANCTUARY)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+  !CheckStatGT(LastSeenBy(Myself),1,116)
+  !CheckStatGT(LastSeenBy(Myself),1,129)
+  !CheckStatGT(LastSeenBy(Myself),0,164)
+  !CheckStatGT(LastSeenBy(Myself),0,123)
+  !CheckStat(LastSeenBy(Myself),7,162)
+  !HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+  !CheckStat(NearestEnemyOf(Myself),0,157)
+  !HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  CheckStatLT(LastSeenBy(Myself),75,RESISTMAGIC)
+  CheckStatGT(NearestEnemyOf(Myself),0,SAVEVSSPELL)
+  !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+  CheckStat(LastSeenBy(Myself),0,SANCTUARY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FINGER_OF_DEATH)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  HaveSpell(WIZARD_PRISMATIC_SPRAY)
+  RandomNumGT(5,2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_PRISMATIC_SPRAY)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    CheckStatGT(Myself,75,RESISTFIRE)
+    RandomNumGT(4,2)
+  NumCreatureLT([EVILCUTOFF.0.0.0.0.SUMMONED],7)
+  HaveSpell(WIZARD_SUMMON_EFREET)
+  RandomNumGT(6,3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(Myself,WIZARD_SUMMON_EFREET)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_FLESH_TO_STONE)
+  Allegiance(Myself,ENEMY)
+  See(NearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(SecondNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(FourthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(FifthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(SixthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(SeventhNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(EighthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(NinthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(TenthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,176)
+    StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_FLESH_TO_STONE)
+  Allegiance(Myself,ENEMY)
+  See(LastSeenBy(Myself))
+  !CheckStatGT(LastSeenBy(Myself),1,116)
+  !CheckStatGT(LastSeenBy(Myself),1,129)
+  !CheckStatGT(LastSeenBy(Myself),0,164)
+  !CheckStatGT(LastSeenBy(Myself),0,123)
+  !CheckStat(LastSeenBy(Myself),8,162)
+  !HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+  !CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+  !CheckStatGT(LastSeenBy(Myself),0,176)
+  !StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_FLESH_TO_STONE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_DISINTEGRATE)
+  Allegiance(Myself,ENEMY)
+  See(NearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(SecondNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(ThirdNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(FourthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(FifthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(SixthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(SeventhNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(EighthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(NinthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(TenthNearestEnemyOf(Myself))
+  OR(10)
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStat(LastSeenBy(Myself),8,162)
+    HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    CheckStatGT(LastSeenBy(Myself),0,157)
+    HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_DISINTEGRATE)
+  Allegiance(Myself,ENEMY)
+  See(LastSeenBy(Myself))
+  !CheckStatGT(LastSeenBy(Myself),1,116)
+  !CheckStatGT(LastSeenBy(Myself),1,129)
+  !CheckStatGT(LastSeenBy(Myself),0,164)
+  !CheckStatGT(LastSeenBy(Myself),0,123)
+  !CheckStat(LastSeenBy(Myself),8,162)
+  !HasItemEquiped("CLCK26",LastSeenBy(Myself)) // Cloak of Mirroring
+  !CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+  !CheckStatGT(LastSeenBy(Myself),0,157)
+  !HasItemEquipedReal("SW1H71",LastSeenBy(Myself)) // Hindo's Doom +4
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DISINTEGRATE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_DOMINATION)
+  Allegiance(Myself,ENEMY)
+  See(NearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SecondNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(FourthNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(FifthNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SixthNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SecondNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(ThirdNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(FourthNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(FifthNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(SixthNearestEnemyOf(Myself))
+  OR(27)
+    HasItemEquiped("clck26",LastSeenBy(Myself))
+    CheckStatGT(LastSeenBy(Myself),1,116)
+    CheckStatGT(LastSeenBy(Myself),1,129)
+    CheckStatGT(LastSeenBy(Myself),0,164)
+    CheckStatGT(LastSeenBy(Myself),0,123)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    CheckStat(LastSeenBy(Myself),1,158)
+    CheckStatGT(LastSeenBy(Myself),0,119)
+    CheckStat(LastSeenBy(Myself),4,162)
+    StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    Class(LastSeenBy(Myself),MONK)
+    Kit(LastSeenBy(Myself),INQUISITOR)
+    HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+    CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("CAST","LOCALS")
+    CheckStatGT(Myself,0,165)
+  HaveSpell(WIZARD_DOMINATION)
+  Allegiance(Myself,ENEMY)
+  See(LastSeenBy(Myself))
+  !HasItemEquiped("clck26",LastSeenBy(Myself))
+  !CheckStatGT(LastSeenBy(Myself),1,116)
+  !CheckStatGT(LastSeenBy(Myself),1,129)
+  !CheckStatGT(LastSeenBy(Myself),0,164)
+  !CheckStatGT(LastSeenBy(Myself),0,123)
+  !CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+  !CheckStat(LastSeenBy(Myself),1,158)
+  !CheckStatGT(LastSeenBy(Myself),0,119)
+  !CheckStat(LastSeenBy(Myself),4,162)
+  !StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+  !Class(LastSeenBy(Myself),MONK)
+  !Kit(LastSeenBy(Myself),INQUISITOR)
+  !HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+  !HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+  !HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+  !HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+  !HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+  !HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+  !HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+  !HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+  !HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+  !HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+  !CheckStatLT(LastSeenBy(Myself),3,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+  !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+  !CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CAST","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_DOMINATION)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    !Range(SecondNearestEnemyOf(Myself),7)
+    RandomNum(2,1)
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    !Range(ThirdNearestEnemyOf(Myself),7)
+    RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    AttackReevaluate(SecondNearestEnemyOf(Myself),15)
+END
+
+IF
+  See(ThirdNearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(ThirdNearestEnemyOf(Myself),15)
+END
+
+IF
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END

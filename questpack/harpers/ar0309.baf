@@ -1,0 +1,9 @@
+IF
+  GlobalGT("D0Harpers","GLOBAL",1)
+  Global("D0Deactivate","AR0309",0)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Deactivate","AR0309",0)
+    ActionOverride("Table 1",DestroyItem("scrlhp"))
+    TriggerActivation("Aviary Trigger",FALSE)
+END

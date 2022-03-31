@@ -1,0 +1,46 @@
+IF
+  OR(2)
+    AttackedBy([ANYONE],DEFAULT)
+    Allegiance(Myself,ENEMY)
+  Global("attacked","LOCALS",0)
+  Global("D0FlailRakshasas","GLOBAL",0)
+  Global("zahraajob","GLOBAL",0)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("attacked","LOCALS",1)
+    StartDialogNoSet([PC])
+END
+
+IF
+  Global("zahraajob","GLOBAL",1)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+IF
+  !Allegiance(Myself,ENEMY)
+  Global("D0FlailRakshasas","GLOBAL",0)
+  OR(15)
+    PartyHasItem("blun14")
+    PartyHasItem("blun14a")
+    PartyHasItem("blun14b")
+    PartyHasItem("blun14c")
+    PartyHasItem("blun14d")
+    PartyHasItem("blun14e")
+    PartyHasItem("blun14f")
+    PartyHasItem("blun14g")
+    PartyHasItem("blun14h")
+    PartyHasItem("blun14i")
+    PartyHasItem("blun30")
+    PartyHasItem("blun30a")
+    PartyHasItem("blun30b")
+    PartyHasItem("blun30c")
+    PartyHasItem("blun30d")
+THEN
+  RESPONSE #100
+    SetGlobal("D0FlailRakshasas","GLOBAL",1)
+    StartDialogNoSet([PC])
+END

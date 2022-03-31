@@ -1,0 +1,62 @@
+// -*- coding: utf-8 -*-
+
+@106 = ~Diese seltenen verzauberten Handschuhe werden nur an die hochrangisten Attentäter der Masken der Nacht ausgegeben. Es wird gemutmaßt, dass das Original von einem magie-nutzenden Attentäter aus Sembia entworfen wurde. Seitdem wurde es von verschieden Gilden auf dem ganzen Kontinent kopiert.  Dessen ungeachtet bedeuten diese Handschuhe, dass die hochrangigen Attentäter der Masken der Nacht gefährliche Gegner sind, mit denen gerechnet werden muss.
+
+EIGENSCHAFTEN:
+
+Der Multiplikator beim Hinterhältigen Angriff erhöht sich um 1.~
+@108 = ~Arans Unsichtbarkeitsring
+
+Diesen Ring habt Ihr vom Anführer der Schattendiebe, Aran Linvail, erhalten.  Seine Herstellung wurde vor einiger Zeit von einem führenden Schattendieb als Fluchtmöglichkeit für heikle Situationen in Auftrag gegeben; traurigerweise konnte dieser Ring seinem Träger nicht helfen, als Linvail in der politischen Leiter nach oben kletterte.
+
+EIGENSCHAFTEN:
+
+Unsichtbarkeit (3x täglich)
+ Bereich: Anwender~
+@143 = ~Erworben zu einem blutigen, gnadenlosen Preis, hätten nur wenige Abenteurer den Magen, um solch eine Trophäe mit sich herumzutragen. Als letzte Träne einer Dryade, die durch ihren letzten, kühlenden Atemhauch kristallisiert wurde, glüht dieser Stein in einem unheimlichen Licht. Die, die ihn tragen, fühlen sich vom bleibenden Vermächtnis der Schönheit berührt, aber dieser Segen kommt zu einem hohen Preis, denn der Edelstein spiegelt die Zerbrechlichkeit des Lebens des Opfers wieder, das durch eine grausame Hand vernichtet wurde.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Bezauberung.
+
+Konstitution: -1
+Charisma: +1~
+@144 = ~Dies ist der Siegelring, der von Rayic Gethras getragen wurde. Er trägt zwar eine kleinere Verzauberung, aber davon abgesehen ist er von rein sentimentalem Wert.
+
+EIGENSCHAFTEN:
+
+RW-Bonus: -1~
+@167 = ~Dieser Gürtel wurde Euch von Jadarath überreicht, der seither die Reiche mit unbekanntem Ziel verlassen hat. Er wurde mit einer kleinen Portion seltsamer Magie gefertig und kann den Träger vom beinahe sicheren Tod bewahren. Während Jadarath auf seine eigene, seltsame Weise ein Meister der Zauberei war, war er unglücklicherweise kein erfahrener Schneider und so ist der Gürtel schwierig und unbequem zu tragen.
+
+EIGENSCHAFTEN:
+
+Heilung (1x täglich)
+ Bereich: Anwender~
+@212 = ~Krummsäbel +1, Shazzellim
+Dieser Krummsäbel ist von ziemlich schlechter Qualität, aber unter seiner Oberfläche liegen große Macht und Bosheit.  Er wurde nur zum Zweck Harfner zu töten erschaffen und dieser Aufgabe ist Shazzellim mehr als gewachsen.  Bei jedem Streich dieser Klinge muss ein Harfner einen Rettungswurf gegen Zauber bestehen oder sterben.  Gefertigt von den Roten Magiern von Thay, verleiht dieses Schwert auch die Fähigkeit, wortlos zu zaubern, weshalb es oft an Kampfer-Magier im Dienste der Magier ausgegeben wurde.  Unnötig zu sagen, dass der Besitz dieser Waffe von den Harfnern nicht besonders gern gesehen wird.
+
+EIGENSCHAFTEN:
+
+Wird ein Harfner getroffen, stirbt dieser sofort (Rettungswurf gg. Zauber, -2 Malus).
+Auf dem Träger liegt Wortlos Zaubern.
+
+Schaden: 1W8 +1 (Klinge)
+ETW0-Bonus: -1
+Gewicht: 3
+Initiativefaktor: 4
+Fertigkeit: Krummsäbel
+Typ: 1-händig
+Mindeststärke: 10~
+@302 = ~Dieser Krummsäbel, der einen mattroten Farbton besitzt, ist aus keinem Metal gefertigt, das Ihr kennt. Während er etwas größer und schwerer ist, als man es von so einer Waffe erwarten würde, verhindert dies nicht seine perfekte Balance; es scheint beinahe so, als wäre er dafür geschaffen worden, einen schnellen Schlaghagel loszulassen, während der Träger die absolute Kontrolle behält.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erhält der Träger für 1 Runden einen ETW0-Bonus von -1.
+
+Schaden: 1W8 +3 (Klinge)
+ETW0-Bonus: -3
+Gewicht: 1
+Initiativefaktor: 2
+Fertigkeit: Krummsäbel
+Typ: 1-händig
+Mindeststärke: 10~

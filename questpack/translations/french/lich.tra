@@ -1,0 +1,26 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Il y a quelque chose qui cloche chez vous. Vous n'avez pas votre place ici.~
+@1    = ~Est-ce possible, après si longtemps ? L'air de la surface s'accroche encore à vous. Il m'en rapproche encore une fois.~
+@2    = ~Je dois être libre... c'est ma chance.~
+@3    = ~Quelle sorte de créature êtes-vous ?~
+@4    = ~Comment pouvez-vous dire que je n'ai pas ma place ici ?~
+@5    = ~Être libre ? C'est ce que vous voulez ?~
+@6    = ~Être libre ? Vous souhaitez voyager jusqu’à la surface ?~
+@7    = ~Encore plus de mal caché dans les profondeurs de l'Ombre-terre ? Cela ne finira-t-il jamais ?~
+@8    = ~Encore des créatures pathétiques qui se cachent dans les profondeurs de l'Ombre-terre ? Cela ne finira-t-il jamais ?~
+@9    = ~Au nom du Seigneur du Matin, je te bannis dans les profondeurs de l'Abîme, immonde abomination mort-vivante !~
+@10   = ~Au nom du Vigilant, je te bannis dans les profondeurs de l'Abîme, immonde abomination mort-vivante !~
+@11   = ~Je ne comprends même plus ma propre nature. Cela fait... si longtemps.~
+@12   = ~Une fois auparavant, il y a longtemps, je me suis approché de mon but. Ma vue, mon goût et mon odeur avaient disparu depuis longtemps, je sentais l'air de la liberté. Seul le combat des elfes infernaux a stoppé ma résolution, et j'ai été repoussé dans les profondeurs.~
+@13   = ~Je ne sais pas si des années ou des siècles se sont écoulés depuis lors. J'ai craint de m'aventurer dehors, car si les Drow me vainquaient, ils n'hésiteraient pas à emprisonner mon essence dans les confins de leur ville caverneuse.~
+@14   = ~Mais vous... vous retournerez à la surface. Enfin, peut-être que je pourrai me reposer, mon souhait accompli.~
+@15   = ~C'est fini, enfin. Vous en êtes capable. Libérez-moi.~
+@16   = ~Le dernier souhait de Nazariel.
+
+En explorant l'Ombre-terre, je suis tombé sur une liche nommée Nazariel. Elle a fait allusion au fait que je l'avais aidé à atteindre la surface, avant de m'attaquer. Je ne peux qu'imaginer qu'elle testait ma capacité à transporter son phylactère depuis l'ombre-terre après sa mort.~
+
+@17   = ~Le dernier souhait de Nazariel.
+
+J'ai porté à la surface le phylactère d'une liche que j'ai rencontrée dans l'ombre-terre, réalisant son dernier souhait avant de mourir. Lorsque l'air frais l'a touché, l'objet s'est dissous dans mes mains, libérant la créature.~
+@18 = ~Lorsque l'air frais de surface touche le phylactère de Nazarial, il s'effrite, libérant enfin l'ancienne liche.~

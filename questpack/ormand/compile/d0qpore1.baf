@@ -1,0 +1,435 @@
+IF
+	Global("D0Ormand","GLOBAL",4)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Global("D0Ormand","GLOBAL",5)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		FaceObject(Player1)
+		Continue()
+END
+
+IF
+	Global("SpawnItems","LOCALS",0)
+	DifficultyLT(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+	RESPONSE #150
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+	RESPONSE #200
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+	RESPONSE #250
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+END
+
+IF
+	Global("SpawnItems","LOCALS",0)
+	Difficulty(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+	RESPONSE #150
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+	RESPONSE #200
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+	RESPONSE #250
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		Continue()
+	RESPONSE #100
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+	RESPONSE #150
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+	RESPONSE #200
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+	RESPONSE #250
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+END
+
+IF
+	Global("SpawnItems","LOCALS",0)
+	DifficultyGT(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+	RESPONSE #150
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow02",20,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+	RESPONSE #200
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow11",10,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+	RESPONSE #250
+		SetGlobal("SpawnItems","LOCALS",1)
+		CreateItem("arow10",5,0,0)
+		FillSlot(SLOT_AMMO0)
+		CreateItem("arow01",40,0,0)
+		FillSlot(SLOT_AMMO1)
+		CreateItem("potn14",1,0,0)
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	!LOS([GOODCUTOFF],30)
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player1,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	!LOS([GOODCUTOFF],30)
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player2,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	!LOS([GOODCUTOFF],30)
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player3,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	!LOS([GOODCUTOFF],30)
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player4,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	!LOS([GOODCUTOFF],30)
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player5,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	!LOS([GOODCUTOFF],30)
+	!Detect([GOODCUTOFF])
+	!StateCheck(Player6,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+
+IF
+	HitBy([ANYONE],POISON)
+	!StateCheck(Myself,STATE_POISONED)
+	Class(LastHitter(Myself),MAGE_ALL)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		RandomWalk()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HaveSpell(ARCHER_CALL_SHOT)
+	See(NearestEnemyOf(Myself))
+	DifficultyGT(EASIEST)
+	RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		Spell(Myself,ARCHER_CALL_SHOT)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HasItem("potn10",Myself)
+	HPPercentLT(Myself,15)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		UseItem("potn10",Myself)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	HPPercentLT(Myself,50)
+	HasItem("potn52",Myself)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		UseItem("potn52",Myself)
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	See([GOODCUTOFF])
+	HasItem("potn14",Myself)
+	!StateCheck(Myself,STATE_HASTED)
+	RandomNum(2,1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",6)
+		UseItem("potn14",Myself)
+END
+
+IF
+	OR(4)
+		!See(LastSeenBy(Myself))
+		!GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+		StateCheck(Myself,STATE_CHARMED)
+		InMyGroup(LastSeenBy(Myself))
+	Detect(Myself)
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(4)
+		!See(LastSeenBy(Myself))
+		!GlobalTimerNotExpired("D0_ATTACK","LOCALS")
+		StateCheck(Myself,STATE_CHARMED)
+		InMyGroup(LastSeenBy(Myself))
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SecondNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SecondNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,4)
+	See(ThirdNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(ThirdNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,5)
+	See(FourthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FourthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(FifthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(FifthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(SixthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(SixthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	See(TenthNearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(TenthNearestEnemyOf(Myself),STATE_HELPLESS)
+		RandomNumGT(10,3)
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD_ALL]))
+	!See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	Global("D0_RUN","LOCALS",1)
+	!Range(NearestEnemyOf(Myself),7)
+THEN
+	RESPONSE #100
+		SetGlobal("D0_RUN","LOCALS",0)
+		Continue()
+END
+
+IF
+	OR(2)
+		!Range(LastSeenBy(Myself),7)
+		Range(LastSeenBy(Myself),7)
+	OR(2)
+		Range(NearestEnemyOf(Myself),7)
+		Range(LastSeenBy(Myself),7)
+	OR(4)
+		HasItem("arow01",Myself)
+		HasItem("arow02",Myself)
+		HasItem("arow10",Myself)
+		HasItem("arow11",Myself)
+THEN
+	RESPONSE #100
+		SetGlobal("D0_RUN","LOCALS",1)
+		RunAwayFromNoInterrupt(NearestEnemyOf(Myself),45)
+	RESPONSE #25
+		SetGlobalTimer("D0_ATTACK","LOCALS",5)
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+	RESPONSE #25
+		Continue()
+END
+
+IF
+	Global("D0_MOVE","LOCALS",0)
+	OR(4)
+		HasItem("arow01",Myself)
+		HasItem("arow02",Myself)
+		HasItem("arow10",Myself)
+		HasItem("arow11",Myself)
+	GlobalTimerExpired("D0_ATTACK","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("D0_MOVE","LOCALS",1)
+		RandomWalkContinuous()
+END
+
+IF
+	!Range(NearestEnemyOf(Myself),7)
+	OR(4)
+		HasItem("arow01",Myself)
+		HasItem("arow02",Myself)
+		HasItem("arow10",Myself)
+		HasItem("arow11",Myself)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",5)
+		SetGlobal("D0_MOVE","LOCALS",0)
+		EquipRanged()
+		Attack(LastSeenBy(Myself))
+END
+
+IF
+	Range(LastSeenBy(Myself),7)
+	!Range(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",5)
+		EquipMostDamagingMelee()
+		Attack(LastSeenBy(Myself))
+END
+
+IF
+	!Range(LastSeenBy(Myself),7)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D0_ATTACK","LOCALS",5)
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+END

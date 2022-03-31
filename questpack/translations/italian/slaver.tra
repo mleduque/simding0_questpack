@@ -1,0 +1,72 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Cosa sta succedendo qui? Cosa stai facendo con quest'uomo?~
+@1    = ~Sei un mostro! Libera questo povero schiavo, subito!~
+@2    = ~Mi dispiace. Me ne vado.~
+@3    = ~Non sono affari tuoi. Ora, farai meglio a girare al largo o te ne pentirai.~
+@4    = ~Questo è orribile! Riferirò tutto questo alle autorità. Si potranno anche corrompere le guardie, ma dubito che il consiglio sarà compiacente.~
+@5    = ~Molto bene. Scusa per il disturbo.~
+@6    = ~Forse potremmo trovare un accordo per liberare questo uomo?~
+@7    = ~Forse potrei girare al largo. Per un giusto compenso.~
+@8    = ~Farai meglio a girare al largo, subito, o te ne pentirai.~
+@9    = ~Temo di no. Se non liberi quest'uomo, ti costringerò io a farlo.~
+@10   = ~Questa è la tua ultima occasione. Non ficcare il naso in qualcosa che non ti compete.~
+@11   = ~Temo che tu abbia terminato la tua buona sorte . Se non liberi quest'uomo, ti costringerò io.~
+@12   = ~Che intenzioni abbiamo? A quanto pare qui ci sarà una bella lotta. Preparati!~
+@13   = ~Che intenzioni abbiamo? Non possiamo permetterlo. A quanto pare qui ci sarà una bella lotta. Preparati!~
+@14   = ~Va bene. Muoviti.~
+@15   = ~Questo non ha nulla a che fare con te. Non facciamo affari con gli sconosciuti, quindi sparisci.~
+@16   = ~Ti aspetti che ti paghiamo?! Sparisci, straniero!~
+@17   = ~Temo che ora dovrò fermarti.~
+@18   = ~In tal caso, tutto questo verrà segnalato all'autorità competente. Riferirò tutto questo alle autorità. Si potranno anche corrompere le guardie, ma dubito che il consiglio sarà compiacente.~
+@19   = ~Aspetta un momento! Che succede qui? Cos'è successo a questo pover'uomo?~
+@20   = ~Non puoi farlo! Lascia andare subito quest'uomo!~
+@21   = ~Bene. Non sto cercando guai.~
+@22   = ~Non ho tempo per fare inutili chiacchiere. Vattene da qui.~
+@23   = ~Bene. Ora togliti dai piedi!~
+@24   = ~Non so se ti può interessare, uhm, farsi carico di giovane orfana senzatetto?~
+@25   = ~(Hurmm). Sto... ascoltando. Dimmi qualcosa di questa sfortunata ragazza.~
+@26   = ~Al cimitero della città vive una giovane ragazza che è sotto la protezione di un chierico di Lathander. Forse, con un qualche accordo, potresti prenderla sotto le tue cure.~
+@27   = ~Forse tu non sei la persona adatta, dopo tutto. Non sono sicuro che il tuo tono mi piaccia.~
+@28   = ~In realtà, non importa. Era solo una domanda retorica.~
+@29   = ~Ah, capisco. (hurrm) Sì, offrirei volentieri un tetto ad una ragazza così. Forse uno dei miei... soci potrebbe fare una visita a questo chierico al cimitero?~
+@30   = ~Molto bene. Cercherò di convincere il chierico che lui è degno di prendersi cura della ragazza.~
+@31   = ~Favoloso. Cercherò il necessario... accordo.~
+@32   = ~(Hurmm). È un piacere fare affari con te. Credo che troverai questo... pagamento più che generoso per la ragazza.~
+@33   = ~Può essere un'eccellente donna di servizio, e chissà, forse, quando sarà maggiorenne potrà rendersi utile a Madame Nin. Ancora una volta, ti ringrazio....~
+@34   = ~Se c'è altro che desideri, non esitare a chiedere.~
+@35   = ~Forse potresti apprezzare anche alcuni dei nostri... intrattenimenti extra? (hurrrmm... hurrm) ~
+@36   = ~(Hurrm). È una disdetta vedere un affare sfumare via. Mi spiace, ma non posso darti nessun pagamento senza la ragazza. (hurrrrm) Un vero peccato che un paladino abbia scelto di intervenire.~
+@37   = ~Ah, <CHARNAME>. Mi ha mandato Lehtinan. Cerchiamo di non perdere tempo... Fai strada verso il sacerdote e l'orfana.~
+@38   = ~Saluti, buon prete. Io sono Tredor: ex marinaio mercantile e padre di due figli. <CHARNAME> mi ha informato che la piccola Risa ha bisogno di una casa e di qualcuno che si prenda cura di lei.~
+@39   = ~Inoltre sarei contento di offrirmi io stesso, se rendesse felice Risa.~
+@40   = ~Bah! Il nostro piano è fallito! Prendiamo la ragazza!~
+@41   = ~Grazie, gentile sacerdote. La mia unica speranza è che io riesca ad essere, per Risa, un tutore bravo come lo sei stato tu.~
+@42   = ~Farò una visita al Tempio di Lathander fra un paio di giorni, per farti sapere che tutto va bene. Vieni, Risa.~
+@43   = ~V-va bene... vengo.~
+@44   = ~... (sniff!)~
+@45   = ~Sei un cavaliere? Hai un'armatura bellissima e splendente.~
+@46   = ~Forse Lathander è benevolo con noi in questi giorni. Sì, Risa ha molto bisogno di un tutore adeguato.~
+@47   = ~Sì, sì. Forse sei davvero la scelta adatta. Non vorrei mai prendere una decisione che causi sofferenza alla povera Risa, ma ho fiducia nel giudizio di <CHARNAME> su questo argomento. Sembra che tu sia una persona di buon cuore.~
+@48   = ~Prendi Risa con te. Spero che sarai in grado di donarle la cura e la gioia che merita.~
+@49   = ~Allora, forse tu sei la giusta scelta. Non vorrei mai prendere una decisione che causi sofferenza alla povera Risa, ma sembra che tu sia una persona di buon cuore.~
+@50   = ~Hai tutta la mia gratitudine per questo, <CHARNAME>. Vai, Risa e goditi la tua nuova casa.~
+@51   = ~Fermi! Riconosco quest'uomo, anche se non so dove l'ho visto. Ha la fama di essere un tipo losco, e credo che il suo intento non sia quello che sembra!~
+@52   = ~Come sospettavo! Ha pessime intenzioni e probabilmente ha ingannato il suo complice! Non permettere che questa ragazza lasci la tua protezione, mio buon prete.~
+@53   = ~Come sospettavo! Ha pessime intenzioni, come il suo complice! Non permettere che questa ragazza lasci la tua protezione, mio buon prete.~
+@54   = ~Sono stanco di vedere l'ombra del male protendersi anche su questo suolo consacrato. Ho assistito all'approccio di quell'uomo ed intuito che c'era sotto qualcosa di losco. E così, sono rimasto ad osservare da lontano.~
+@55   = ~Ci sono stati altri strani avvenimenti, simili a questo, in città, recentemente. Sembra... sembra che i nostri figli non siano più al sicuro dai criminali.~
+@56   = ~Andiamo... ti indicherò la chiesa. Grazie, chierico... e tu, <LADYLORD>... sei stato fortunato oggi. Prega che le nostre strade non si incrociano nuovamente.~
+@57   = ~Sono contento per la svolta presa dagli eventi. Possa Lathander perdonarti, <LADYLORD>, per quel poco di buono che è venuto dalle tue azioni. A volte... a volte Faerûn può essere un posto gentile...~
+@58   = ~Indagare sulle attività nelle camere del Diadema di Rame.
+
+Lehtinan mi ha dato un altro compito: devo passare attraverso le fogne sotto il Diadema di Rame e ricevere una consegna di schiavi dal recinto che si trova all'altra estremità. Le fogne sono accessibili tramite un ingresso segreto nelle stanze sul retro.~
+@59   = ~Vendere Risa a Lehtinan.
+
+Lehtinan ha manifestato l'intenzione di comprare la povera orfanella Risa come merce per la sua attività di tratta degli s chiavi. Ha mandato inoltre un suo contatto al Cimitero per incontrare Risa e il suo attuale tutore.~
+@60   = ~Vendere Risa a Lehtinan.
+
+Sono riuscito ad ingannare il sacerdote di Lathander che aveva in custodia Risa e l'ho consegnata nelle mani dell'uomo di Lehtinan. Presumibilmente Lehtinan sarà in grado di farne un buon uso al Diadema di Rame.~
+@61   = ~Cercare un tutore per l'orfanella Risa.
+
+Mentre mi stavo occupando di una piccola tratta di schiavi, sono riuscito a far incontrare due persone che avevo conosciuto nel quartiere del Cimitero... un paladino di nome Kamir, che aveva perso il figlio, e una piccola fanciulla di nome Risa, rimasta orfana dopo la morte dei genitori. Il paladino ha accettato di crescere la fanciulla ed insieme se ne sono andati. Lehtinan sarà decisamente scontento del suo uomo di fiducia, che non è stato in grado di procurargli la piccola, ma d'altra parte Risa sarà felice.~

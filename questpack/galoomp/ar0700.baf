@@ -1,0 +1,10 @@
+IF
+  GlobalTimerExpired("A#IM5Kram2","GLOBAL")
+  Global("A#IM5Kram2Spawn","GLOBAL",0)
+  Global("CagedCreatures","AR0700",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A#IM5Kram2Spawn","GLOBAL",1)
+    CreateCreature("A#KRAM2",[3376.308],0)
+    Continue()
+END

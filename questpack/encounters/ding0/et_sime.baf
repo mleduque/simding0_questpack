@@ -1,0 +1,8 @@
+IF
+  GlobalGT("AsylumPlot","GLOBAL",43)
+  !InParty(Myself)
+  AreaCheck("ar1600")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

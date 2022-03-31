@@ -1,0 +1,18 @@
+IF
+  Global("D0OgresHelpPaladins","AR1100",1)
+  GlobalGT("OgreAlliance","GLOBAL",0)
+  Global("PaladinPlot","GLOBAL",1)
+  !Dead("madulf")
+  !Allegiance("madulf",ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("D0OgresHelpPaladins","AR1100",2)
+    Wait(1)
+    ActionOverride("madulf",JumpToPoint([1814.2054])
+    ActionOverride("uhogre02",JumpToPoint([1767.2905])
+    ActionOverride("uhogre03",JumpToPoint([1673.2145])
+    ActionOverride("uhogre04",JumpToPoint([1869.2099])
+    ActionOverride("uhogre05",JumpToPoint([1745.2156])
+    SmallWait(2)
+    ActionOverride("madulf",StartDialogNoSet(Player1))
+END

@@ -1,0 +1,35 @@
+IF
+  Global("BaiseraCrypt","GLOBAL",2)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("BaiseraCrypt","GLOBAL",3)
+    StartDialogNoSet([PC])
+END
+
+IF
+  Global("BesamenDead","GLOBAL",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("BesamenDead","GLOBAL",2)
+    StartDialogNoSet([PC])
+END
+
+IF
+  Global("D0BesamenTaunt","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("D0BesamenTaunt","LOCALS",3)
+    SpellNoDec(NearestEnemyOf(Myself),CLERIC_COMMAND)
+END
+
+IF
+  GlobalGT("D0BesamenTaunt","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END

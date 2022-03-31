@@ -1,0 +1,46 @@
+IF
+  Global("Seen","LOCALS",0)
+  OR(2)
+    Detect([GOODCUTOFF])
+    HitBy([GOODCUTOFF],CRUSHING)
+THEN
+  RESPONSE #100
+    SetGlobal("Seen","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("Seen","LOCALS",1)
+  !Range([PC],20)
+  !AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    MoveToObject([PC])
+END
+
+IF
+  !Allegiance(Myself,GOODCUTOFF)
+  Global("Seen","LOCALS",1)
+  !Range(NearestEnemyOf(Myself),20)
+  !AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+  !Allegiance(Myself,GOODCUTOFF)
+  OR(2)
+    AttackedBy([ANYONE],DEFAULT)
+    HitBy([ANYONE],CRUSHING)
+THEN
+  RESPONSE #100
+    RunAwayFrom(LastAttackerOf(Myself),15)
+END
+
+IF
+  !Allegiance(Myself,GOODCUTOFF)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END

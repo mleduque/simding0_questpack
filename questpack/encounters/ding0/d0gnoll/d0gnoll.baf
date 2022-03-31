@@ -1,0 +1,12 @@
+IF
+  Global("DiscoGnoll","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("DiscoGnoll","GLOBAL",0)
+    CreateVisualEffectObject("d0gnoll",Player1)
+    DisplayStringNoName(Player1,@327)
+    Wait(4)
+    DisplayStringHead(Player1,@328)
+END
+
+// I promise this does not appear ingame.

@@ -1,0 +1,15 @@
+IF
+	InMyArea(Player1)
+	InMyArea("GORTAN3")
+	HPLT("GORTAN3",30)
+	HPGT("GORTAN3",0)
+	!Global("YochChange","AR3012",1)
+THEN
+	RESPONSE #100
+		ActionOverride("GORTAN3",CreateVisualEffectObject("firenc01",Myself))
+		SmallWait(2)
+		ActionOverride("GORTAN3",Polymorph(SLIME_MUSTARD))
+		ActionOverride("GORTAN3",SetGlobal("Transform","LOCALS",1))
+		SetGlobal("YochChange","AR3012",1)
+END
+

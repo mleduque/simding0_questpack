@@ -1,0 +1,300 @@
+// -*- coding: cp1252 -*-
+
+@0    = ~Saluti! Così poche persone vengono a visitare Jadarath nel suo laboratorio.~
+@1    = ~Ora, sentiti libero di chiacchierare ma, per favore, cerca di non ostacolare il mio lavoro. Roger odia questo, e ho il sospetto che le autorità troverebbero il tuo corpo in un vicolo buio infilzato di frecce come un puntaspilli.~
+@2    = ~Whoa! Siamo un po' ostili oggi, vero? Non ti ho ancora fatto nulla.~
+@3    = ~Di quale laboratorio stai parlando? Io non ne vedo affatto. Perché stai qui, in questa squallida cloaca?~
+@4    = ~Laboratorio? Sei una specie di mago o di alchimista?~
+@5    = ~Che tipo lavoro potrai mai fare in questo buco?~
+@6    = ~Che affari fai con Roger?~
+@7    = ~Chi è Roger?~
+@8    = ~Uh, ti sei reso conto che c'era un enorme troll proprio dietro di te, vero?~
+@9    = ~Uh, ti sei reso conto che c'era un enorme troll proprio dietro di te, quando ci siamo conosciuti?~
+@10   = ~Ottimo. Ora me ne vado via.~
+@11   = ~Ah, sì. Ma nulla di cui preoccuparsi, non verrà più vicino. L'odore acre delle sostanze chimiche tiene lontano tutte le strane creature che abitano qui.~
+@12   = ~Aspetta, possiedi dei repellenti per troll?! Posso sperare che tu possa condividerli?~
+@13   = ~Mi sembravi un po' ostile prima? Io non ti ho fatto nulla.~
+@14   = ~Non vedo alcun laboratorio qui. Perché lavori in questa squallida cloaca?~
+@15   = ~Sei una sorta di mago o alchimista, allora?~
+@16   = ~Interessante. In ogni caso, ora me ne andrò.~
+@17   = ~Non ricordo esattamente che cosa è che li tiene a bada. Il controllo dei parassiti non è la mia priorità, temo.~
+@18   = ~Capisco. Sei una sorta di mago o alchimista, allora?~
+@19   = ~Ah, non importa. Ora me ne andrò.~
+@20   = ~Ora, sentiti libero di chiacchierare, ma per favore non ostacolare il mio lavoro. Roger odia questo, e ho il sospetto che il tuo amico troverebbe il tuo corpo in un vicolo buio infilzato di frecce come un puntaspilli.~
+@21   = ~Ora, sentiti libero di chiacchierare, ma per favore non ostacolare il mio lavoro. Roger odia questo, e ho il sospetto che i tuoi amici troverebbero il tuo corpo in un vicolo buio infilzato di frecce come un puntaspilli.~
+@22   = ~Ma potresti farlo. Chiunque potrebbe. Non posso permettere a nessuno di disturbare il mio lavoro. Basta che tu non interferisca con quello che sto facendo, e saremo amici. Buoni amici. Migliori amici.~
+@23   = ~In ogni caso, non vedo un laboratorio. Cosa stai facendo qui, in questa squallida cloaca?~
+@24   = ~Capisco. Beh, ora me ne andrò via.~
+@25   = ~L'affitto è basso, ed i buoni ristoranti sono solo ad una scala di distanza. E, a quanto pare, non sono l'unico a stare quaggiù!~
+@26   = ~Ho da fare, e non voglio che la gente interrompa il mio lavoro. Non ho bisogno di nessun laboratorio più complicato di quanto possano essere il corpo e la mente umana: una realtà che molti nel mio campo di lavoro sembrano dimenticare.~
+@27   = ~Anche se è abbastanza affollato quaggiù. C'è uno strano viavai ultimamente ... dunque non essere sprezzante con me!~
+@28   = ~Sei una specie di mago? Potresti creare qualche pozione per me?~
+@29   = ~Bene allora. Ora me ne andrò.~
+@30   = ~Non sono né saggio né mago, semplicemente un umile erborista che conosce qualche magia minore. Tutte le mie pozioni in eccesso sono vendute a Roger, che possiede un eccellente assortimento. Perché non compri da lui?~
+@31   = ~Oltre alla semplice creazione di pozioni, sarei molto interessato a sapere esattamente che lavoro ti tiene impegnato quaggiù.~
+@32   = ~Forse potrei essere convinto a condividere alcuni dei miei lavori. Forse no. In primo luogo, dovrai fare qualcosa per me.~
+@33   = ~Roger non mi può fornire tutti i materiali che mi servono, quindi, presumibilmente, avrei bisogno di qualcuno che possa viaggiare per trovarne. Tu potresti servire la causa della conoscenza e della ricerca.~
+@34   = ~Sarei felice di intraprendere questo compito per te.~
+@35   = ~Ma cosa c'è in cambio per me? La conoscenza è una cosa buona e giusta, ma ho bisogno di un incentivo ben maggiore di istruzione ed esercizio fisico, temo.~
+@36   = ~Fare commissioni per un uomo pazzo che se ne sta seduto in mezzo alle fogne? Suona come un meraviglioso uso del mio tempo. Ti auguro buona giornata.~
+@37   = ~Oppure, che ne dici se ti uccido ora?~
+@38   = ~Per favore. Non annoiarmi con vuote minacce. Ti assicuro che i contatti di Roger sono perfettamente in grado di far fronte ad ogni tipo di minaccia che tu possa costituire.~
+@39   = ~Io gli vendo le pozioni che creo e lui mi porta quello che mi serve per il mio lavoro. Naturalmente, ci sono alcune cosucce che uno zoticone come lui non riesce nemmeno a vedere in tutta la sua vita.~
+@40   = ~Hai bisogno di alcune pozioni? Forse posso aiutarti.~
+@41   = ~Oh, un venditore di pozioni, per lo più. Lo troverai da qualche parte qui intorno, credo. Alcune volte perdo traccia di dove esattamente vada a lavorare.~
+@42   = ~Anche se non opera esattamente sulla retta via, lui è l'unico socio disponibile in un posto come questo. Ha contatti in qualche gilda, da quanto ho capito ... nulla che mi possa preoccupare.~
+@43   = ~Mi sembravi un po' ostile prima? Io non ti ho fatto nulla.~
+@44   = ~Che lavoro potrai mai fare quaggiù?~
+@45   = ~Aspetta! Non andare ancora da nessuna parte! Per quello che Roger non riesce a procurarmi, potrei avvalermi dell'aiuto di un avventuriero esperto.~
+@46   = ~Qualcuno in grado di lasciare la fogna e recuperare l'assortimento di pozioni che mi manca sarebbe prezioso per me. Potresti certamente servire la causa della conoscenza e della ricerca.~
+@47   = ~Ti darò una lista delle pozioni che mi servono. Per ognuna che mi porterai io, naturalmente, ti elargirò un adeguato compenso.~
+@48   = ~Eh eh! Chissà. Se sarai fortunato, potrai anche testimoniare l'apice del mio lavoro e ricevere una fantastica ricompensa in potere e conoscenza!~
+@49   = ~Molto bene, tornerò con quello che ti serve.~
+@50   = ~Non ti voglio aiutare. Addio, pazzo lunatico. Mi dispiace di avere involontariamente inciampato nel tuo miserabile piccolo buco.~
+@51   = ~Lo vedo nei tuoi occhi. Nei hai bisogno: il desiderio atavico, che consuma ogni uomo, ma a cui pochi ammettono di anelare. Naturalmente, parlo del potere.~
+@52   = ~Credo di essere prossimo a liberare un potere che potrebbe far cadere tutta Faerûn in ginocchio. Portami quello che voglio, e lo dividerò con te.~
+@53   = ~Saresti sciocco ad aspettarti una parte uguale alla mia, naturalmente, e del resto io non te la offrirei mai. Ma sta tranquillo, tuttavia, che avrai il potere a cui aneli.~
+@54   = ~Molto bene, farò come vuoi. Ma farai bene a dirmi la verità, o te ne pentirai.~
+@55   = ~Condividi quello che sai con me, o preparati ad affrontare le terribili conseguenze!~
+@56   = ~Non voglio potere. Voglio ricchezza. Puoi offrirmi anche questo?~
+@57   = ~Fare commissioni per un pazzo che se ne sta seduto in mezzo alle fogne? Suona proprio come un utilizzo meraviglioso del mio tempo. Ti auguro buona giornata.~
+@58   = ~Parli come un malvagio forsennato ... esattamente il tipo di persona a cui do la caccia da una vita!~
+@59   = ~Come ho appreso ormai da una vita, il vero genio è raramente apprezzato. Naturalmente ci rimetterai tu. Naturalmente sarai il benvenuto, se deciderai di ritornare e accordarti con me.~
+@60   = ~Il tuo aiuto è molto apprezzato, e questa sarà sicuramente una decisione di cui non ti pentirai. Ecco l'elenco delle pozioni che mi servono.~
+@61   = ~Senti, senti... gli insulti sono certamente fuori luogo. Ma naturalmente sarai il benvenuto se dovessi decidere di tornare e accordarti con me.~
+@62   = ~D'altra parte, se tu vuoi solamente interrompermi bruscamente, allora ti ringrazierei se te ne stessi lontano dal mio laboratorio. Ogni sorta di "incidente" può verificarsi qui, e le autorità non apprezzerebbero.~
+@63   = ~Ah, minacce. Il simbolo eterno di inferiorità intellettuale. Eppure, a questo punto, non sono più costretto a condividere le mie scoperte con te. La tua... forzatura è debole.~
+@64   = ~Tutto molto interessante. Comunque ho intenzione di ucciderti.~
+@65   = ~Molto bene, porterò a termine il tuo banale incarico. Ma sarà meglio che tu mi abbia detto la verità, o te ne pentirai.~
+@66   = ~Non ti voglio aiutare. Addio, pazzo lunatico. Mi dispiace di avere involontariamente trovato il tuo miserabile piccolo buco.~
+@67   = ~Sospetto che non potrai farlo. Indipendentemente da ciò, questa sarà una decisione di cui ti pentirai.~
+@68   = ~Ha, ha.. i visitatori ritornano. Hai riconsiderato la mia semplice proposta, o stai solo godendo del putrido olezzo del mio laboratorio?~
+@69   = ~Va bene, andrò a cercare le pozioni che mi hai chiesto.~
+@70   = ~Sei una specie di mago o alchimista, allora?~
+@71   = ~Sono solo di passaggio. Ora me ne vado via.~
+@72   = ~Procede bene la raccolta delle risorse, mio avvoltoio?~
+@73   = ~Sì, ho una Pozione di Invisibilità.~
+@74   = ~Sì, ho l'Olio di Velocità.~
+@75   = ~Sì, ho una Pozione di Resistenza al Freddo.~
+@76   = ~Sì, ho una Pozione di Esplosioni.~
+@77   = ~Sì, ho una Pozione di Isolamento.~
+@78   = ~Sì, ho una Pozione di Coraggio.~
+@79   = ~Sì, ho una Pozione di Paralisi Magica.~
+@80   = ~Sì, ho una Pozione di Occhi Riflessi.~
+@81   = ~Sì, ho una Pozione di Potere.~
+@82   = ~Sì, ho una Pozione di Intuito.~
+@83   = ~Sì, ho una Pozione di Libertà. ~
+@84   = ~Sì, ho una Pozione di Forma di Pietra.~
+@85   = ~Non hai promesso una ricompensa più grande del solo denaro?~
+@86   = ~Beh, il tuo lavoro va avanti, ma sono sicuro che tu sei sempre più pazzo ogni volta che ti incontro.~
+@87   = ~Tu hai parlato di una famiglia: una moglie e un bambino. Che cosa è successo a loro?~
+@88   = ~Credo di aver trovato la tua famiglia, Jadarath. Li ho incontrato nel Distretto del Ponte non molto tempo fa.~
+@89   = ~Sei sicuro di non volermi parlare parlare della tua famiglia?~
+@90   = ~Non ho nulla per te.~
+@91   = ~Procede bene la raccolta delle risorse, mio avvoltoio?~
+@92   = ~Quindi, hai con te tutte le altre pozioni?~
+@93   = ~Ah, un passo più vicino alla perfezione! E, naturalmente, eccoti il pagamento promesso.~
+@94   = ~Allora, che cosa hai fatto là fuori?! Questa è una questione di vitale importanza. DEVI procurarmi quello che mi serve!~
+@95   = ~Ahh, finalmente qualche passo avanti. Dopo tanto tempo bloccato in questa putrida fogna... presto il dolce potere sarà mio. Molto presto.~
+@96   = ~Sembra che siamo in grado di lavorare insieme. Tu sei complementare al lavoro di Roger. E penso che tu abbia aspettato abbastanza a lungo, ora posso dirti quello che stiamo facendo qui.~
+@97   = ~Si dovrebbe già capire, amico mio, che prosperi tra avventure e battaglie. Hai mai assunto molte pozioni ... una dozzina di pozioni in rapida successione? Suppongo di no, perché è sempre stato detto come mescolare troppi effetti magici in una sola volta sia fatale.~
+@98   = ~Sono sempre stato indotto a credere in quello che veniva detto... che stupido!... Una volta vivevo a Imnesvale: una città non lontano da qui. Devi sapere che quando i ladri attaccano il tuo negozio e minacciano tua moglie e tua figlia, beh... tu non hai scelta.~
+@99   = ~E così, ho mescolato il maggior numero di pozioni che ho potuto afferrare al volo. A detta di tutti, avrei dovuto morire quella notte. Ed invece sono diventato qualcosa di più che umano. I ladri non erano più degli ostacoli ... sembrava come se nulla nei regni potesse fermarmi.~
+@100  = ~Niente mi poteva fermare, ho detto! Così ho... corso. Nei giorni seguenti, ho corso attraverso tutto l'Amn. Ho corso per il piacere di correre, uccidendo tutto ciò che si trovava sulla mia strada. Tale era l'effetto inebriante del potere.~
+@101  = ~Il seme delle follia, come saresti portato a pensare. Eppure, per un altro assaggio di tale pura estasi, avrei rinunciato a tutto. Per un ultimo assaggio, l'ho fatto veramente.~
+@102  = ~La logica mi ha suggerito che fosse puro caso ... che mai più avrei potuto duplicare la mia esperienza. Ma ora, credo di essere sulla strada per dipanare quel segreto una volta per tutte, grazie ai tuoi sforzi.~
+@103  = ~Quando ho fatto quella scoperta, le circostanze naturalmente non mi hanno permesso di registrare l'esatta combinazione di pozioni utilizzate. Tuttavia, presto riuscirò a trovare il componente e la combinazione cruciale.~
+@104  = ~Ma che succederebbe se qualcuno arrivasse alla stessa scoperta? Dobbiamo agire in fretta! La gloria sarà mia e il mio nome venerato per tutti i reami. Tutti sapranno che Jadarath non è pazzo!~
+@105  = ~Oh, come riderò in faccia agli altri quando avrò dimostrato che si sbagliavano. Jadarath tornerà in superficie, trionfante!~
+@106  = ~Ti ho detto che ne è stato della mia famiglia?~
+@107  = ~Quando i miei poteri hanno cominciato a svanire, sono tornato a Imnesvale, al rudere che un tempo era stata la mia casa. Per mia tristezza e disgusto, ho scoperto che tutti erano fuggiti.~
+@108  = ~Li dovrei cercare in lungo ed in largo, ma in realtà non sono più una mia preoccupazione. Non ho bisogno di loro per completare i miei esperimenti. Essi rimpiangeranno la loro perdita!~
+@109  = ~Credo che tornerò a Imnesvale quando il procedimento sarà completo. Per anni, ho sofferto in quella squallida discarica. Le fogne, in confronto, sono state un sollievo.~
+@110  = ~Scoprire che la città era piena soltanto di ladri e comuni briganti è stato un insulto. Pagheranno per quello che mi è successo.~
+@111  = ~Anche se ... suppongo che dovrei dire loro grazie. Non credo che l'attacco fosse una coincidenza. Era il destino che incombeva su di me, per condurmi a questa scoperta.~
+@112  = ~HAHAHAHAHA! Sì, è finalmente completo! Io sarò finalmente completo! E tu, amico mio ... sarai ben ricompensato per il tuo aiuto.~
+@113  = ~Ora che conosco la procedura corretta, sarà semplicemente questione di assimilare le pozioni, e ...~
+@114  = ~E che cosa? Mi hai fatto correre in giro per il mondo per questa robaccia. Bevi e falla finita.~
+@115  = ~Forse dovresti essere prudente, potrebbe essere fatale.~
+@116  = ~Aspetta! Non posso permettere che un tale piano abbia successo. Sei evidentemente folle e non ti dovrebbe essere mai affidato tanto potere. Ti fermerò! Con la forza, se necessario!~
+@117  = ~No! Dopo tutto questo tempo, non ti permetterò di interferire! Grazie al potere della pozione, non avrai alcuna possibilità di fermarmi.~
+@118  = ~Non ha senso ritardare ancora. Solo un momento e sarò nuovamente libero!~
+@119  = ~Ma temo che non sia così semplice. Io non posso essere sicuro di quello che succederà. Avere vissuto quaggiù per così tanto tempo, è stato tutt'altro che benefico per la mia salute. Ho il sospetto che anche il più piccolo errore potrebbe facilmente uccidermi.~
+@120  = ~Gli effetti di questo intruglio devono essere testati. Io devo osservare l'effetto che causa, bevendone una piccola parte ... facendolo bere a qualcuno a me vicino.~
+@121  = ~Solo allora potrò veramente sapere se tale miscela è quella in cui ero già incappato per caso. Oh, quanto è frustrante essere così vicino, ma ancora su un percorso offuscato dall'incertezza.~
+@122  = ~Non se ne parla! Non farò da cavia con quell'intruglio per te. Come faccio a sapere che non mi ucciderà?~
+@123  = ~Bene, lo farò. Ma la ricompensa sarà meglio sia adeguata.~
+@124  = ~Non vuoi ripensarci? La tua ossessione ti ha offuscato la mente. Abbandona questa ricerca e rientra nel mondo di superficie.~
+@125  = ~In una piccola porzione, dovrebbe avere ben poco effetto rilevante su un fisico resistente come il tuo.~
+@126  = ~Non vuoi ripensarci? Questo è ... questo è il culmine del mio lavoro!~
+@127  = ~Bene, lo farò. Ma per il potere, non per il denaro! E, in realtà, avrò anche il denaro.~
+@128  = ~Lascia perdere. Prova il tuo intruglio da solo!~
+@129  = ~Non posso permettere che un tale piano abbia successo. Sei evidentemente folle e non ti dovrebbe essere mai affidato tanto potere. Ti fermerò! Con la forza, se necessario!~
+@130  = ~Bene, bene! Il suono del tuo nome echeggerà attraverso i secoli per questo singolo atto. Di questo, io mi assicurerò.~
+@131  = ~Ora, devi bere le pozioni in rapida successione, e nella sequenza che ho predisposto. Fallo ora, prima di cambiare idea!~
+@132  = ~Aspetta, non sono sicuro che dovrei. Potrebbe...~
+@133  = ~Molto bene ... facciamola finita.~
+@134  = ~Poi lo farò anche io. Ti ringrazio per il tuo aiuto, nonostante qualche piccola riluttanza. Tuttavia, riceverai la ricompensa promessa.~
+@135  = ~L'hai fatto! E... sei vivo! Svelto, fammi prendere una goccia del tuo sangue per l'esame.~
+@136  = ~Mi sento strano ... più forte, ma più debole. Non sono sicuro di quello che mi hai fatto.~
+@137  = ~Che cosa è successo? Che male!~
+@138  = ~Hah! La mia analisi magica rivela il segreto nel tuo sangue! Era così ovvio. Così semplice.~
+@139  = ~Dammi solo un attimo ... e ... sì, questa è la combinazione! E no, non te la lascerò vedere. Tu non avrai il mio segreto!~
+@140  = ~Ma ti ricompenserò. Oh, sarai ricompensato per il tuo prezioso aiuto. Senza la tua assistenza questo glorioso risveglio non sarebbe mai avvenuto.~
+@141  = ~Ma non la formula! La formula è mia e mia lo sarà per sempre! Per sempre!~
+@142  = ~Io sono ... tutto. La potenza perduta viene ripristinata, e mi sento finalmente completo. Posso vedere chiaramente ancora una volta, e capisco il motivo per cui una volta mi credevate folle.~
+@143  = ~Ma anche la pazzia è servita allo scopo: mi ha reso quello che sono. No, io non sono un dio. Ma nemmeno un uomo.~
+@144  = ~In segno di rispetto per il coraggio e la stentorea robustezza che ti ha permesso di avere successo nell'esperimento che io avrei potuto fallire, ti dono questo oggetto. Guarda a questa cintura come un simbolo della protezione perpetua che ti meriti.~
+@145  = ~Forse ci incontreremo di nuovo, da qualche altra parte. Per il momento, ho fatto molto male nella mia vita precedente, male che ora devo riparare. Ti dico addio e ti auguro ogni bene, amico mio.~
+@146  = ~La mia famiglia mi ha abbandonato! Non mi importa del loro destino! Vivere o morire non è motivo di preoccupazione per me.~
+@147  = ~Ma sei stato tu ad abbandonarli per vagare per il mondo con i tuoi poteri.~
+@148  = ~Non vorresti sapere che cosa ne è stato di loro? Dimmi almeno i loro nomi. Forse posso trovarli.~
+@149  = ~Così sia. I tuoi affari personali non sono affari miei. Continuiamo con il nostro lavoro.~
+@150  = ~Capisco. Ora me ne andrò via.~
+@151  = ~Non contraddirmi, mercenario! Porta a termine il tuo compito! Ti ho già promesso una fantastica ricompensa. Ho promesso di condividere il mio potere con te! Vuoi avere anche la mia anima?~
+@152  = ~Bene, bene. Ora me ne andrò via.~
+@153  = ~Bene, se farà placare questo tua fastidiosa insistenza, vai a setacciare la terra intera cercando quella donna infedele e la mia cavolo di prole. Sidhe era la donna e Janie la ragazza, ed entrambe riceveranno quello che meritano quando sarò completo! Quando sarò di nuovo di un unico granitico pezzo! Yeeeessss!~
+@154  = ~Stai scherzando? Setacciare la terra intera? Sono proprio qui in città. Le ho incontrate nel Distretto del Ponte non molto tempo fa.~
+@155  = ~Se non ti curi di loro, non lo farò nemmeno io. Il tuo lavoro è di gran lunga più importante.~
+@156  = ~Interessante. Ora io me ne andrò via.~
+@157  = ~Finalmente! Qualcuno che capisce le priorità!~
+@158  = ~Al contrario, sono sempre più felice. Sono sempre più vicini alla meta agognata da tanti anni. Sono elettrizzato!~
+@159  = ~Da quanto tempo sei quaggiù?~
+@160  = ~Se lo dici tu. Sarà meglio che ci sia qualcosa di bello alla fine di tutto questo.~
+@161  = ~Ora io me ne andrò via.~
+@162  = ~Posso ricordare chiaramente il giorno in cui il miracolo mi ha beneficiato. Quel giorno sono diventato qualcosa di più grande di prima. Sono passati cinque anni e due mesi.~
+@163  = ~Il rapimento è durato appena tre settimane. In tutto, queste fogne sono state tutto il mio mondo per circa quattro anni.~
+@164  = ~Sarà triste lasciare il posto. Molte cose sono accadute quaggiù. Molto di quello che non si vede in superficie. Qui c'è sia avventura che serenità. Davvero un mondo meraviglioso!~
+@165  = ~Io ... suppongo. Torniamo al lavoro.~
+@166  = ~Questo è certamente insolito. Ora io me ne andrò via.~
+@167  = ~Sii paziente! Una volta completati i miei esperimenti, sarò quasi onnipotente! Sarò in grado di padroneggiare energie magiche enormi con un solo pensiero. Sarò in grado di creare reliquie con tremendi poteri, solo per capriccio!~
+@168  = ~E in ogni caso, io ti pago bene per ciascuna di queste pozioni.~
+@169  = ~Sarà meglio che dia risultati.~
+@170  = ~Molto bene, vai a trovare le pozioni che ti ho chiesto!~
+@171  = ~Cosa? Sono così vicini? Le ho sempre immaginate lontane, come schiave in? Thay o colone in Maztica. Non a poche centinaia di metri ...~
+@172  = ~Non importa! Non mi interessa più di loro. Il mio lavoro! Torniamo al lavoro!~
+@173  = ~Non dovresti almeno parlare con loro?~
+@174  = ~Stai meglio senza di loro. Sono povere e affamate, meri ostacoli sul tuo successo.~
+@175  = ~Sì, hai ragione. Il lavoro è più importante delle vicende personali di un uomo.~
+@176  = ~No! Il lavoro è più importante. Non ho bisogno o voglia di loro. Mi hanno scacciato, proprio come tutti gli altri!~
+@177  = ~Ora smettila di interrogarmi! Ti ho assunto per fare un lavoro, di per essere il mio confessore. Portami quello che ho chiesto!~
+@178  = ~No. Non voglio occuparmi delle tue preziose pozioni fino a quando non avrai almeno parlato con la famiglia che hai abbandonato.~
+@179  = ~Così sia, i tuoi affari personali non sono affari miei.~
+@180  = ~Sapevo che avrei fatto bene a sbarazzarmi di loro. Dunque. Torniamo al lavoro.~
+@181  = ~Tu potresti voltare le spalle al potere? Al potere immenso che posso offrirti ... solo per due donne che non significano nulla per me?~
+@182  = ~Il modo in cui ti stai nascondendo qui, non è giusto. Non è sano. Hai bisogno di riunirti alla vita normale. Hai bisogno almeno di parlare con loro.~
+@183  = ~Oh, capisco cosa intendi. Molto bene.~
+@184  = ~Bene, sciocco! Parlerò con loro.~
+@185  = ~Sono nel Distretto del Ponte, dici? Per quanto mi duole tornare in superficie, parlerò con loro e dirò a quella piagnucolosa marmocchia e a quella fastidiosa strega tutto quello che penso.~
+@186  = ~Fatto questo, torneremo qui e mi aiuterai a completare una delle più grandi imprese mai concepite dagli uomini mortali!~
+@187  = ~Per favore <SIRMAAM>, potreste dare una piccola moneta per la piccola Janie? Non resisterà ancora molto senza mangiare.~
+@188  = ~Janie? Tu sei la moglie di Jadarath, Sidhe? Porto notizie di tuo marito!~
+@189  = ~Le autorità non possono prendersi cura dei mendicanti per le strade?~
+@190  = ~Ecco, prendi.~
+@191  = ~Mi dispiace, io non ho nulla da dare.~
+@192  = ~Oh, ma certo, non esitate a prendere tutti i miei soldi. Perché non gettarli in un paio di oggetti magici? Ma per favore.~
+@193  = ~Noi ... aaah, ti prego <SIRMAAM>, lasciami stare. Io ... non discuto delle mie cose con gli sconosciuti ... soprattutto se possono ricordare il passato.~
+@194  = ~Noi ... aaah, ti prego <SIRMAAM>, lasciami stare. Gentile come sembri, io ... non discuto delle mie cose con gli sconosciuti ... soprattutto se possono ricordare il passato.~
+@195  = ~Le autorità non si occupano più dei mendicanti. Hanno cose più importanti da fare, suppongo. A me non piace affatto chiedere soldi agli sconosciuti.~
+@196  = ~Oh, grazie, gentile <SIRMAAM>! La tua generosità è benedetta!~
+@197  = ~La tua generosità è molto apprezzata, gentile <SIRMAAM>.~
+@198  = ~Prego.~
+@199  = ~Sarà bene che tu ne faccia tesoro. Non sprecare tutto con il loto nero.~
+@200  = ~Grazie!~
+@201  = ~Ti assicuro, non lo farò. Grazie!~
+@202  = ~(sigh) Non importa. Non mi aspetto nulla dagli sconosciuti.~
+@203  = ~Non posso parlare con gli sconosciuti.~
+@204  = ~Sidhe, tu baldracca infedele! Donnaccia ignorante! Sgualdrina svergognata! Puttana traditrice!~
+@205  = ~Mi hai abbandonato quando ne avevo più bisogno. Ti meritati tutta questa vita squallida!~
+@206  = ~Tu? Stai indietro! Non permetterò che ti avvicini a Janie!~
+@207  = ~Un uomo scompare dopo aver difeso la sua famiglia e tu lo abbandoni? Metti in vendita di tutti i suoi averi e gli porti via la sua bambina!~
+@208  = ~Difendere la tua famiglia?! Vattene, mostro!~
+@209  = ~Mamma? È questo...?~
+@210  = ~Stai indietro, Janie. Stai pronta a correre via con me.~
+@211  = ~Silenzio, sgualdrina. Non ho bisogno di nessuno di voi! Mi ci sono voluti cinque lunghi anni, ma vi ho rimosso dal mio cuore. Il mio lavoro mi darà molto più di di quanto una moglie infedele non abbia mai fatto.~
+@212  = ~E allora perché sei tornato? Per riaprire vecchie ferite? Che fegato hai a mostrare a Janie la tua faccia, dopo quello che hai fatto!~
+@213  = ~Cosa IO HO FATTO? Ho protetto la mia famiglia, e per cosa? Mi hai tradito!~
+@214  = ~Tu ... tu davvero credi che, non è vero? Non ti ricordi.~
+@215  = ~Ricordare che cosa? Ricordare del giorno in cui quei briganti ci hanno distrutto il negozio e vi hanno minacciate? È questo che vuoi dire?~
+@216  = ~Ricordo fin troppo vividamente, Sidhe. Ricordo l'impotenza provata, il non potere fermarli.~
+@217  = ~(sob) Tu ... non ti ricordi.~
+@218  = ~Non c'erano ladri, Jadarath.~
+@219  = ~L'hai fatto tutto tu... tu, e le tue pozioni infernali. Sei diventato pazzo. Tu hai distrutto la casa. Tu ... tu ... hai ucciso la piccola Leah sotto gli occhi di Janie.~
+@220  = ~Cosa? No! Tu menti! Io vi ho salvato. Cagna ingrata!~
+@221  = ~(sob) come si può dimenticare una cosa del genere? (Sniff) Come si può dimenticare dell'altra tua figlia?~
+@222  = ~Non ho mai avuto un'altra figlia, sgualdrina bugiarda!~
+@223  = ~Mamma! Ho paura!~
+@224  = ~Janie? Non preoccuparti, piccola.~
+@225  = ~Mammmma!~
+@226  = ~Scappa Janie! Ora!~
+@227  = ~Aspettate! Sidhe! Janie!~
+@228  = ~Che cosa dovrei fare, <CHARNAME>? Il mio lavoro... è tutto! Tutto! E ancora, all'aria aperta, sento che dovrei seguire la mia famiglia e risolvere questo mistero.~
+@229  = ~Mi fai schifo! Non voglio aver nulla a che fare con te! Puoi marcire nella tua putrida fogna per quello che mi riguarda.~
+@230  = ~Che il vostro lavoro sia dannato! Seguile, e forse ci sarà una possibilità di espiare le tue colpe immani.~
+@231  = ~Meglio che me ne vada via da te subito. È troppo tardi per te per fare ammenda.~
+@232  = ~Sei prossimo all'apice di qualcosa di glorioso! Ricordi come eri insoddisfatto della tua vecchia vita? Ricordi come detestavi il suo ricordo? Ora la tua famiglia è oltre la tua portata, allora... lasciale andare.~
+@233  = ~Non posso prendere questa decisione per te.~
+@234  = ~Ti disgusto? Pensi che il racconto di Sidhe sia vero? Devo pensarci su, <CHARNAME>. Non sentirai più parlare di me.~
+@235  = ~Non può un dio solitario invidiare un uomo amato?~
+@236  = ~Io resterò qui, non c'è altro destino per me. Mi non dispiace non poterti più offrire il potere promesso, ma almeno prendi la mia scorta di pozioni.~
+@237  = ~Ho il sospetto... che non avrò più bisogno di loro.~
+@238  = ~Il potere vale qualsiasi prezzo. La mia ricerca è più importante.~
+@239  = ~Addio, Sidhe. Addio, Janie. Mai paura... nelle fogne, io vedo tutto! Forse un giorno, tornerò per voi.~
+@240  = ~Andiamo, <CHARNAME>. Ti aspetterò nel mio laboratorio. Raccogli il resto dei componenti!~
+@241  = ~Forse hai, <CHARNAME>. La ragione sembra oltre a quella donna, e la mia ricerca è più importante.~
+@242  = ~Sì. Si tratta di una decisione che devo prendere da solo.~
+@243  = ~Chi è l'uomo... disturbato, nelle fogne? Jadarath?~
+@244  = ~Lui? Oh, lo ho trovato nelle fogne. Era affamato e delirante e attorno a lui era pieno di pozioni. Pozioni di tutti i tipi.~
+@245  = ~Gli ho dato alcuni componenti essenziali e ho guadagnato la sua fiducia. Così abbiamo avviato un commercio. Mi vende le sue pozioni in cambio di cibo e materiali.~
+@246  = ~Ma anche dopo tutto questo tempo, egli non mi dirà mai a cosa sta lavorando. Ha borbottato una o due volte qualcosa su una specie di famiglia, ma non posso dirti di più.~
+@247  = ~Li sto aspettando.~
+@248  = ~Sei il locandiere, deve sentire un sacco di voci su ciò che succede in città. Sai niente di un uomo chiamato Jadarath?~
+@249  = ~Mi spiace, ma temo di non ricordare di aver ami sentito questo nome. Credo di non poterti essere di alcun aiuto, <LADYLORD>.~
+@250  = ~Ah, io penso di ricordarmi.. lui. Alcune persone dicono che è stata la strega. È tornata, e Jadarath l'ha... offesa in qualche modo.~
+@251  = ~Bah! Ignora il ragazzo, <LADYLORD>. Egli non ha nessuna idea di quello che sta dicendo. C'è nulla che posso fare per te?~
+@252  = ~Ho udito di qualcosa d'importante qua, Vinny. Sì, posso dirti qualcosa di Jadarath se vuoi, <SIRMAAM>.~
+@253  = ~Viveva in una capanna con null'altro se non la famiglia e le pozioni. Un brav'uomo, si bravo. Poi un giorno è successo qualcosa. La casa distrutta.... la famiglia sparita. Qualcuno dice che le ha uccise tutte lui!~
+@254  = ~Ma ho anche sentito che hanno lasciato la città. Per andare a sud verso Tethyr. Poi c'era chi diceva che erano andate ad Athkatla. Chi lo sa, eh?~
+@255  = ~Io la so così, Vinny. Questo è stato anni fa, molti anni fa, già.~
+@256  = ~La Famiglia di Jadarath.
+
+Jadarath mi ha parlato di una famiglia con cui viveva ad Imnesvale. Sua moglie si chiamava Sidhe e la figlia Janie. Forse posso trovarle se troverò il tempo.~
+@257  = ~La Famiglia di Jadarath.
+
+Ho trovato la moglie di Jadarath e sua figlia nel Quartiere del Ponte ad Athkatla. Tuttavia, Sidhe non è sembrata molto felice quando le ho detto che conoscevo Jadarath... ed anzi, direi di averla vista piuttosto preoccupata.~
+@258  = ~La Famiglia di Jadarath.
+
+Secondo il resoconto di Sidhe, Jadarath non ha mai salvato la sua famiglia dai briganti, ma ha ucciso una figlia di cui non ha memoria, di fronte a Janie. Dopo questa scioccante rivelazione, non ho voluto avere più niente a che fare con quell'uomo e gli ho detto di andarsene per la sua strada. Se andrà dalla sua famiglia o se continuerà le sue ricerca, questo non mi è dato sapere.~
+@259  = ~Costituzione ridotta permanentemente.~
+@260  = ~Pozioni per Jadarath.
+
+Un erborista di nome Jadarath, che risiede nelle fogne, sotto il Quartiere del Tempio, mi ha chiesto di raccogliere per lui alcune pozioni per un suo strano esperimento. Mi ricompenserà per ognuna che riceverà inoltre ha anche fatto un'allusione a un ulteriore premio se gli porterò tutto quello di cui ha bisogno. Le pozioni che richiede sono le seguenti:
+
+1. Pozione di Invisibilità
+2. Olio di Velocità
+3. Pozione di Resistenza al Freddo
+4. Pozione di Esplosioni
+5. Pozione di Coraggio
+6. Pozione di Isolamento
+7. Pozione di Paralisi Magica
+8. Pozione di Occhi Riflessi
+9. Pozione di Potere
+10. Pozione di Intuito
+11. Pozione di Libertà
+12. Pozione di Forma di Pietra~
+
+@261  = ~Pozioni per Jadarath.
+
+Dopo avergli portato tutte le pozioni di cui aveva bisogno per il suo esperimento nelle fogne, Jadarath le ha mischiate e le ha bevute. Evidentemente ha sottovalutato le spaventose conseguenze di tale azione, visto che il suo corpo è stato distrutto dalla convergenza di tutto quel potere magico. Sembra che il potere su cui stava lavorando rimarrà per sempre un mistero. O forse non è mai esistito.~
+@262  = ~Pozioni per Jadarath.
+
+Dopo avergli portato tutte le pozioni di cui aveva bisogno per il suo esperimento nelle fogne, ho accettato di testare l'intruglio per Jadarath. La mistura sembra avesse qualche effetto collaterale spiacevole, ma egli afferma di aver completato il suo "lavoro". Dopo aver esaminato il mio sangue ha preso qualcosa che gli ha garantito una strana energia ed è scomparso. Posso solo immaginare quello che ho liberato sul mondo.~
+@263  = ~La Famiglia di Jadarath.
+
+Jadarath è andato ad affrontare Sidhe e Janie, sua moglie e sua figlia, nella zona sud-ovest del Quartiere del Ponte.~
+@264  = ~La famiglia di Jadarath.
+
+Secondo il resoconto di Sidhe, Jadarath non ha mai salvato la sua famiglia dai briganti, ma ha ucciso una figlia di cui non ha memoria di fronte a Janie. Dopo aver speso così tanto tempo con i suoi esperimenti nelle fogne, il mio intervento ha spinto Jadarath ad abbandonare le sue ricerche per cercare, in qualche modo, di rimediare alle sue spregevoli azioni.~
+@265  = ~La Famiglia di Jadarath.
+
+Secondo il resoconto di Sidhe, Jadarath non ha mai salvato la sua famiglia dai briganti, ma ha ucciso una figlia di cui non ha memoria di fronte a Janie. Dopo questa dolorosa riunione, Jadarath ha deciso di ritornare nel sottosuolo per continuare il suo lavoro nelle fogne.~

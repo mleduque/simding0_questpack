@@ -1,0 +1,275 @@
+IF
+  GlobalTimerExpired("D0SpawnAR1800","GLOBAL")
+  OR(2)
+    XPLT(Player1,1000001)
+    RandomNum(3,1)
+  TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player6,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("CATJAG01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("CATJAG01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("CATJAG01",Player1,0,0,0)
+  RESPONSE #300
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("SPIDGI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDGI01",[PC],0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player3,0,0,0)
+END
+
+IF
+  GlobalTimerExpired("D0SpawnAR1800","GLOBAL")
+  OR(2)
+    XPLT(Player1,1000001)
+    RandomNum(3,1)
+  !TimeOfDay(NIGHT)
+THEN
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("CATJAG01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("CATJAG01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("CATJAG01",Player1,0,0,0)
+  RESPONSE #300
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("SPIDGI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDGI01",[PC],0,0,0)
+  RESPONSE #400
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLF01",Player1,0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player3,0,0,0)
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",900)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player6,0,0,0)
+END
+
+IF
+  GlobalTimerExpired("D0SpawnAR1800","GLOBAL")
+  OR(2)
+    XPGT(Player1,1000000)
+    RandomNum(2,1)
+  OR(2)
+    XPLT(Player1,2000001)
+    RandomNum(2,1)
+  !TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player3,0,0,0)
+  RESPONSE #300
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #400
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player6,0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("TROLGI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLGI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLFR01",Player1,0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("WYVERN01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVERN01",Player2,0,0,0)
+  RESPONSE #150
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player3,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFGR01",Player6,0,0,0)
+END
+
+IF
+  GlobalTimerExpired("D0SpawnAR1800","GLOBAL")
+  OR(2)
+    XPGT(Player1,1000000)
+    RandomNum(2,1)
+  OR(2)
+    XPLT(Player1,2000001)
+    RandomNum(2,1)
+  TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #150
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFDI01",Player6,0,0,0)
+  RESPONSE #150
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player3,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFGR01",Player6,0,0,0)
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLL01",Player1,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player2,0,0,0)
+    CreateCreatureObjectOffScreen("WYVBAB01",Player3,0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("TROLGI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLGI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLFR01",Player1,0,0,0)
+  RESPONSE #50
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",1200)
+    CreateCreatureObjectOffScreen("WYVERN01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVERN01",Player2,0,0,0)
+END
+
+IF
+  GlobalTimerExpired("D0SpawnAR1800","GLOBAL")
+  XPGT(Player1,2000000)
+  TimeOfDay(NIGHT)
+THEN
+  RESPONSE #150
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFGR01",Player6,0,0,0)
+  RESPONSE #125
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player3,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("TROLGI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLGI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLFR01",Player1,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WYVERN01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVERN01",Player2,0,0,0)
+END
+
+IF
+  GlobalTimerExpired("D0SpawnAR1800","GLOBAL")
+  XPGT(Player1,2000000)
+  !TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("TROLGI01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("TROLGI01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("TROLFR01",Player1,0,0,0)
+  RESPONSE #200
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WYVERN01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WYVERN01",Player2,0,0,0)
+  RESPONSE #300
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player3,0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("SPIDSW01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("ETTER01",Player5,0,0,0)
+  RESPONSE #400
+    SetGlobalTimer("D0SpawnAR1800","GLOBAL",600)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",[PC],0,0,0)
+    CreateCreatureObjectOffScreen("WOLFWE01",Player1,0,0,0)
+    CreateCreatureObjectOffScreen("WOLFGR01",Player6,0,0,0)
+END

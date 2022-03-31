@@ -1,0 +1,31 @@
+IF
+  Global("Talk","LOCALS",0)
+  AreaCheck("ar0406")
+  OR(2)
+    Global("D0Poor2","GLOBAL",1)
+    GlobalGT("D0Poor","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  See([PC])
+  Global("Talk","LOCALS",0)
+  AreaCheck("ar0406")
+  See("D0Lender")
+THEN
+  RESPONSE #100
+    SetGlobal("Talk","LOCALS",1)
+    FaceObject("D0Lender")
+    ActionOverride("D0Lender",FaceObject("D0Boy"))
+    StartDialogNoSet("D0Lender")
+END
+
+IF
+  Global("D0Poor","GLOBAL",8)
+  !See("D0Poor")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

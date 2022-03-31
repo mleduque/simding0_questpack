@@ -1,0 +1,270 @@
+IF
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  !HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  !HaveSpell(CLERIC_HEAL)
+  !HaveSpell(CLERIC_FINGER_OF_DEATH)
+  !HaveSpell(CLERIC_NATURE_BEAUTY)
+  !HaveSpell(CLERIC_SUMMON_INSECTS)
+  !HaveSpell(CLERIC_CALL_LIGHTNING)
+  !HaveSpell(CLERIC_INSECT_PLAGUE)
+  !HaveSpell(CLERIC_ENTANGLE)
+  !HaveSpell(CLERIC_CONFUSION)
+  !HaveSpell(CLERIC_CREEPING_DOOM)
+  !HaveSpell(CLERIC_REGENERATE)
+  !HaveSpell(CLERIC_PHYSICAL_MIRROR)
+  !HaveSpell(CLERIC_IRONSKIN)
+  !HaveSpell(CLERIC_NEUTRALIZE_POISON)
+  !HaveSpell(CLERIC_SLOW_POISON)
+  HasItem("scrl07",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46153)
+    UseItem("scrl07",Myself)
+    Continue()
+END
+
+IF
+  HPPercentLT(Myself,50)
+  HasItem("potn55",Myself) // Potion of Superior Healing
+  !GlobalTimerNotExpired("Cast","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn55",Myself) // Potion of Superior Healing
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+  CheckStatGT(Myself,2,ARMORCLASS)
+  HasItem("potn11",Myself) // Potion of Invulnerability
+  !GlobalTimerNotExpired("Cast","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    DisplayStringHead(Myself,46150) // quaffs a potion
+    UseItem("potn11",Myself) // Potion of Invulnerability
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_SLOW_POISON)
+  See("d0jahre2")
+  StateCheck(LastSeenBy(Myself),STATE_POISONED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_SLOW_POISON)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_NEUTRALIZE_POISON)
+  See("d0jahre2")
+  StateCheck(LastSeenBy(Myself),STATE_POISONED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_NEUTRALIZE_POISON)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See("d0jahre2")
+  HPPercentLT(LastSeenBy(Myself),10)
+  HaveSpell(CLERIC_HEAL)
+  !StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_HEAL)
+END
+
+IF
+  RandomNum(2,1)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_IRONSKIN)
+  HPGT(LastSeenBy(Myself),20)
+  CheckStatLT(Myself,1,STONESKINS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_IRONSKIN)
+END
+
+IF
+  RandomNumGT(4,2)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_PHYSICAL_MIRROR)
+  HPGT(LastSeenBy(Myself),20)
+  !HasBounceEffects(Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_PHYSICAL_MIRROR)
+END
+
+IF
+  RandomNumGT(5,2)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_REGENERATE)
+  HPGT(LastSeenBy(Myself),20)
+  HPPercentLT(Myself,60)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_REGENERATE)
+END
+
+IF
+  RandomNumGT(6,2)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_CREEPING_DOOM)
+  HPGT(LastSeenBy(Myself),20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),CLERIC_CREEPING_DOOM)
+END
+
+IF
+  RandomNumGT(7,4)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_CONFUSION)
+  HPGT(LastSeenBy(Myself),20)
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),CLERIC_CONFUSION)
+END
+
+IF
+  RandomNumGT(5,3)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_ENTANGLE)
+  HPGT(LastSeenBy(Myself),20)
+  NumCreatureVsPartyGT([ENEMY],4)
+  AreaType(OUTDOOR)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_ENTANGLE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_INSECT_PLAGUE)
+  HPGT(LastSeenBy(Myself),20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),CLERIC_INSECT_PLAGUE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_CALL_LIGHTNING)
+  HPGT(LastSeenBy(Myself),20)
+  AreaType(OUTDOOR)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),CLERIC_CALL_LIGHTNING)
+END
+
+IF
+  RandomNumGT(4,2)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_SUMMON_INSECTS)
+  HPGT(LastSeenBy(Myself),20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),CLERIC_SUMMON_INSECTS)
+END
+
+IF
+  RandomNumGT(7,5)
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_NATURE_BEAUTY)
+  HPGT(LastSeenBy(Myself),20)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_NATURE_BEAUTY)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_FINGER_OF_DEATH)
+  HPGT(LastSeenBy(Myself),20)
+  HPLT(LastSeenBy(Myself),50)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),CLERIC_FINGER_OF_DEATH)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,10)
+  HaveSpell(CLERIC_HEAL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_HEAL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  HPPercentLT(Myself,60)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),4)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself),4)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END

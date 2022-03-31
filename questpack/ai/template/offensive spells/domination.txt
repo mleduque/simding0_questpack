@@ -1,0 +1,387 @@
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    HaveSpell(WIZARD_DOMINATION)
+	See(NearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(FourthNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(FifthNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(SixthNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),2,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),2,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),2,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(FourthNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),2,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(FifthNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),2,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(SixthNearestEnemyOf(Myself))
+    OR(26)
+		HasItemEquiped("clck26",LastSeenBy(Myself))
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+	    CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+	    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+	    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+	    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+	    CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+        CheckStatLT(LastSeenBy(Myself),2,SAVEVSSPELL)
+        CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+        StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+        CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+        Class(LastSeenBy(Myself),MONK)
+        CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+        CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+        HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+        HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+        HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+        HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+        HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+        HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+        HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+        HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+        HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+        HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+	    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	    CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+    OR(2)
+		!GlobalTimerNotExpired("CAST","LOCALS")
+        CheckStatGT(Myself,0,WIZARD_IMPROVED_ALACRITY)
+    HaveSpell(WIZARD_DOMINATION)
+	See(LastSeenBy(Myself))
+	!HasItemEquiped("clck26",LastSeenBy(Myself))
+    !CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_DEFLECTION)
+    !CheckStatGT(LastSeenBy(Myself),1,WIZARD_SPELL_TURNING)
+    !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+    !CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+    !CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    !CheckStatGT(LastSeenBy(Myself),0,SHIELDGLOBE)
+    !CheckStatLT(LastSeenBy(Myself),2,SAVEVSSPELL)
+    !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+    !StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+    !CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+    !Class(LastSeenBy(Myself),MONK)
+    !CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+    !CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+    !HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+    !HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor
+    !HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+    !HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver
+    !HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+    !HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi
+    !HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+    !HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer
+    !HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor
+    !HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor
+    !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    !CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CAST","LOCALS",6)
+		Spell(LastSeenBy(Myself),WIZARD_DOMINATION)
+END
+
+

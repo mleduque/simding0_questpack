@@ -1,0 +1,302 @@
+IF
+  Global("D0Harpers","GLOBAL",4)
+  Dead("Harpass1")
+THEN
+  RESPONSE #100
+    Wait(2)
+    StartDialogNoSet([PC])
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+  Global("Behavior","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",4)
+    Spell(SecondNearest([ENEMY]),WIZARD_LIGHTNING_BOLT)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",4)
+    Spell(ThirdNearest([ENEMY]),WIZARD_LIGHTNING_BOLT)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",4)
+    Spell([ENEMY],WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_FIREBALL)
+  !Range(NearestEnemyOf(Myself),8)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(ThirdNearest([ENEMY]),WIZARD_FIREBALL)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(SecondNearest([ENEMY]),WIZARD_FIREBALL)
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell([ENEMY],WIZARD_FIREBALL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_CONE_OF_COLD)
+  !Range(NearestEnemyOf(Myself),4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell([ENEMY],WIZARD_CONE_OF_COLD)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell([ENEMY],WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell([ENEMY],WIZARD_AGANNAZAR_SCORCHER)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_CHAOS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell([ENEMY],WIZARD_CHAOS)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell([ENEMY],WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  See([ENEMY])
+  AreaCheck("ar0308")
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Attack([ENEMY])
+END
+
+IF
+  !See([ENEMY])
+  !Allegiance(Myself,ENEMY)
+  CombatCounter(0)
+  AreaCheck("ar0308")
+  Global("D0Harpers","GLOBAL",9)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SHADOW_DOOR)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(Myself,WIZARD_SHADOW_DOOR)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  Global("Behavior","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",1)
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_MONSTER_SUMMONING_3)
+  Global("Behavior","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",2)
+    Spell(NearestEnemyOf(Myself),WIZARD_MONSTER_SUMMONING_3)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_POWER_WORD_SILENCE)
+  Detect([PC.0.0.MAGE])
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_SILENCE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_POWER_WORD_SILENCE)
+  Detect([PC.0.0.CLERIC_MAGE])
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_SILENCE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  Allegiance(Myself,ENEMY)
+  HaveSpell(WIZARD_POWER_WORD_SILENCE)
+  Detect([PC.0.0.CLERIC])
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_SILENCE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_HASTE)
+  Global("Behavior","LOCALS",2)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",3)
+    Spell(Myself,WIZARD_HASTE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+  Global("Behavior","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",4)
+    Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  Global("Behavior","LOCALS",4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    SetGlobal("Behavior","LOCALS",5)
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_FIREBALL)
+  !Range(NearestEnemyOf(Myself),8)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_FIREBALL)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_CONE_OF_COLD)
+  !Range(NearestEnemyOf(Myself),4)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_CHAOS)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+END
+
+IF
+  !GlobalTimerNotExpired("Cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Cast","LOCALS",6)
+    Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END

@@ -1,0 +1,29 @@
+IF
+  Exists("vaelasa")
+  Global("SUVaeHasTear", "AR1200",0)
+THEN
+  RESPONSE #100
+    GiveItemCreate("SUTEAR", "vaelasa",1,0,0)
+    SetGlobal("SUVaeHasTear", "AR1200",1)
+    Continue()
+END
+
+IF
+  Global("SUAcornPlot", "GLOBAL", 1)
+  Global("D0Visited1200","GLOBAL",0)
+  AreaCheckObject("AR1200",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0Visited1200","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("CloseTempleRuin","AR1200",1)
+  GlobalGT("DomainPaladinBattle","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CloseTempleRuin","AR1200",2)
+    TriggerActivation("TRAN1201",TRUE)
+    Continue()
+END

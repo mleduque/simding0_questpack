@@ -1,0 +1,180 @@
+IF
+	Global("D0AttackCouncil","GLOBAL",1)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(EASIEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",36)
+		CreateCreatureDoor("d0amnmag",[903.678],0)
+		CreateCreatureDoor("d0amnmag",[640.853],0)
+		CreateCreature("d0amnleg",[382.997],12)
+		CreateCreature("d0amnleg",[441.1044],13)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",1)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(EASY)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",30)
+		CreateCreatureDoor("d0amnmag",[903.678],0)
+		CreateCreatureDoor("d0amnmag",[640.853],0)
+		CreateCreature("d0amnleg",[382.997],12)
+		CreateCreature("d0amnleg",[441.1044],13)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",1)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",24)
+		CreateCreatureDoor("d0amnmag",[903.678],0)
+		CreateCreatureDoor("d0amnmag",[640.853],0)
+		CreateCreature("d0amnleg",[382.997],11)
+		CreateCreature("d0amnleg",[441.1044],13)
+		CreateCreature("d0amnleg",[399.1012],12)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",1)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(HARD)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",18)
+		CreateCreatureDoor("d0amnmag",[903.678],0)
+		CreateCreatureDoor("d0amnmag",[640.853],0)
+		CreateCreature("d0amnleg",[382.997],11)
+		CreateCreature("d0amnleg",[441.1044],13)
+		CreateCreature("d0amnleg",[399.1012],12)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",1)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",12)
+		CreateCreatureDoor("d0amnmag",[903.678],0)
+		CreateCreatureDoor("d0amnmag",[640.853],0)
+		CreateCreature("d0amnleg",[382.997],11)
+		CreateCreature("d0amnleg",[441.1044],13)
+		CreateCreature("d0amnleg",[399.1012],12)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",2)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(EASIEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",30)
+		CreateCreature("d0amnleg",[382.997],12)
+		CreateCreature("d0amnleg",[441.1044],13)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",2)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(EASY)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",24)
+		CreateCreature("d0amnleg",[382.997],12)
+		CreateCreature("d0amnleg",[441.1044],13)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",2)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",18)
+		CreateCreature("d0amnleg",[382.997],12)
+		CreateCreature("d0amnleg",[441.1044],13)
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",24)
+		CreateCreature("d0amnleg",[382.997],11)
+		CreateCreature("d0amnleg",[441.1044],13)
+		CreateCreature("d0amnleg",[399.1012],12)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",2)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(HARD)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",18)
+		CreateCreature("d0amnleg",[382.997],11)
+		CreateCreature("d0amnleg",[441.1044],13)
+		CreateCreature("d0amnleg",[399.1012],12)
+END
+
+IF
+	Global("D0AttackCouncil","GLOBAL",2)
+	InMyArea(Player1)
+	OR(2)
+		InMyArea([ENEMY])
+		!CombatCounter(0)
+	GlobalTimerExpired("CallTheGuard","AR1002")
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D0AttackCouncil","GLOBAL",2)
+		SetGlobalTimer("CallTheGuard","AR1002",12)
+		CreateCreature("d0amnleg",[382.997],11)
+		CreateCreature("d0amnleg",[441.1044],13)
+		CreateCreature("d0amnleg",[399.1012],12)
+END

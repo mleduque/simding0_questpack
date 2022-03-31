@@ -1,0 +1,25 @@
+Lightning machine - number of mephits depends on difficulty. Fix so mephits' lightning bolts don't always miss you.
+
+Proper ogre mage summoned by Aataquah, can cast spells. How to improve Gibberlings? Just more?
+
+Goblin wizards and priests?
+
+Goblins have patrolling scripts?
+
+Improve kbarch01.bcs koboldf.bcs
+
+Mephits can use their abilities more than once.
+
+Demonknight can cast spells.
+
+On harder settings some goblin archers are replaced by goblin elites which carry a couple of arrows of biting or something
+
+
+
+Secret "Heart of Fury" mode enabled by setting variable at console, provides stupid battles.
+
+Revisiting an obscure area after you first cleared it out spawns tough battle. (A la Serious Sam's "Secret Round Two".)
+
+
+presence of gibberlings adds spellcasting failure due to noise?
+need to add: silence disables gibberling casting failure, deafness grants immunity to it, gibberlings actually make gibbering sounds

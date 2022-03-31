@@ -1,0 +1,221 @@
+IF
+  !See(NearestEnemyOf(Myself))
+  !See([0.0.0.0.242])
+  !See([0.0.0.0.241])
+  !See([0.0.0.0.240])
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  Global("Escape","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Escape","LOCALS",1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  GlobalGT("MMissile","LOCALS",3)
+  GlobalGT("FArrow","LOCALS",2)
+  GlobalGT("Breach","LOCALS",0)
+  GlobalGT("PMagic","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  Global("Escape","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Escape","LOCALS",1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  OR(3)
+    Allegiance(Myself,ENEMY)
+    HitBy([GOODCUTOFF],CRUSHING)
+    AttackedBy([GOODCUTOFF],DEFAULT)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  Global("Escape","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Escape","LOCALS",1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  !See(SecondNearest)
+  OR(2)
+    RandomNumGT(10,4)
+    !Specifics(LastSeenBy(Myself),242)
+  OR(2)
+    RandomNumGT(10,4)
+    !Specifics(LastSeenBy(Myself),241)
+  OR(2)
+    RandomNumGT(10,4)
+    !Specifics(LastSeenBy(Myself),240)
+  !See(ThirdNearest)
+  OR(2)
+    RandomNumGT(9,5)
+    !Specifics(LastSeenBy(Myself),242)
+  OR(2)
+    RandomNumGT(9,5)
+    !Specifics(LastSeenBy(Myself),241)
+  OR(2)
+    RandomNumGT(9,5)
+    !Specifics(LastSeenBy(Myself),240)
+  !See(FourthNearest)
+  OR(2)
+    RandomNumGT(9,5)
+    !Specifics(LastSeenBy(Myself),242)
+  OR(2)
+    RandomNumGT(9,5)
+    !Specifics(LastSeenBy(Myself),241)
+  OR(2)
+    RandomNumGT(9,5)
+    !Specifics(LastSeenBy(Myself),240)
+  !See(FifthNearest)
+  OR(2)
+    RandomNumGT(7,6)
+    !Specifics(LastSeenBy(Myself),242)
+  OR(2)
+    RandomNumGT(7,6)
+    !Specifics(LastSeenBy(Myself),241)
+  OR(2)
+    RandomNumGT(7,6)
+    !Specifics(LastSeenBy(Myself),240)
+  !See(SixthNearest)
+  !Specifics(LastSeenBy(Myself),242)
+  !Specifics(LastSeenBy(Myself),241)
+  !Specifics(LastSeenBy(Myself),240)
+  !See(TenthNearest)
+  !Specifics(LastSeenBy(Myself),242)
+  !Specifics(LastSeenBy(Myself),241)
+  !Specifics(LastSeenBy(Myself),240)
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  See(LastSeenBy(Myself))
+  OR(3)
+    Specifics(LastSeenBy(Myself),242)
+    Specifics(LastSeenBy(Myself),241)
+    Specifics(LastSeenBy(Myself),240)
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+  GlobalLT("PMagic","LOCALS",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("PMagic","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_PIERCE_MAGIC)
+END
+
+IF
+  See(LastSeenBy(Myself))
+  OR(3)
+    Specifics(LastSeenBy(Myself),242)
+    Specifics(LastSeenBy(Myself),241)
+    Specifics(LastSeenBy(Myself),240)
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+  GlobalLT("Breach","LOCALS",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("Breach","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_BREACH)
+END
+
+IF
+  See(LastSeenBy(Myself))
+  OR(3)
+    Specifics(LastSeenBy(Myself),242)
+    Specifics(LastSeenBy(Myself),241)
+    Specifics(LastSeenBy(Myself),240)
+  GlobalLT("FArrow","LOCALS",3)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("FArrow","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+  See(LastSeenBy(Myself))
+  OR(3)
+    Specifics(LastSeenBy(Myself),242)
+    Specifics(LastSeenBy(Myself),241)
+    Specifics(LastSeenBy(Myself),240)
+  GlobalLT("MMissile","LOCALS",4)
+THEN
+  RESPONSE #100
+    IncrementGlobal("MMissile","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  OR(3)
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+    See([0.0.0.0.240])
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+  GlobalLT("PMagic","LOCALS",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("PMagic","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_PIERCE_MAGIC)
+END
+
+IF
+  OR(3)
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+    See([0.0.0.0.240])
+  OR(2)
+    HasBounceEffects(LastSeenBy(Myself))
+    HasImmunityEffects(LastSeenBy(Myself))
+  GlobalLT("Breach","LOCALS",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("Breach","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_BREACH)
+END
+
+IF
+  OR(4)
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+    See([0.0.0.0.240])
+    See(NearestEnemyOf(Myself))
+  GlobalLT("FArrow","LOCALS",3)
+  RandomNumGT(4,2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("FArrow","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+  OR(4)
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+    See([0.0.0.0.240])
+    See(NearestEnemyOf(Myself))
+  GlobalLT("MMissile","LOCALS",4)
+THEN
+  RESPONSE #100
+    IncrementGlobal("MMissile","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  OR(5)
+    See([0.0.0.0.242])
+    See([0.0.0.0.241])
+    See([0.0.0.0.240])
+    See(NearestEnemyOf(Myself))
+    See(LastAttackerOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(NearestEnemyOf(Myself))
+END

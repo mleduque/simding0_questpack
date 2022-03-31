@@ -1,0 +1,15 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("PITFEAR","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),DEMON_FEAR)
+		SetGlobal("PITFEAR","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END

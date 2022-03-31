@@ -1,0 +1,49 @@
+xmas todo:
+- return to chateau irenicus
+- blood war on carceri
+- 6oS's elves stuff
+- some teleport plot that takes you back to a BG1 area with familiar characters?
+- blades of brynnlaw!
+
+
+fix trolls
+6oS sahuagin
+
+
+AI ideas:
+- irenicus uses bhaalspawn powers?
+- what do vampires, liches and demiliches (all greater undead) do against pro-undead/negative plane protection?  (cast remove magic if they take damage from an unseen opponent)
+- liches - do something about slow movement? more in the way of minions?
+
+
+AI casts dispel magic on sanctuaried creatures
+
+
+Improved invisibility checks to avoid bug Sikret found.
+
+
+greater otyugh - insect plague on death? (stolen from tactics) disease?
+carrion crawlers - disease?
+
+
+
+problem with my mind flayers: Project Force can knock people through closed doors--which is especially awkward when Minsc has been buffeted into the Githyankis' locked cell and you have no legal way of getting him out.
+
+
+bodhi should avoid killing player in chapter 3 unless she has nothing else to do--try to incapacitate him, reduce him to really low HPs, etc, then go after and kill other party members
+
+
+bodhi's lair has dominated human allies: "Charmed Fodder"
+
+
+
+what's with the golem cloudkills? more appropriate ability?
+
+
+
+Have select bands of creatures use my patrolling scripting.
+
+
+
+Copy/paste errors in demilich AI (give Demiliches some new abilities or ways of getting round Spell Immunity and Protection from Undead?)
+
